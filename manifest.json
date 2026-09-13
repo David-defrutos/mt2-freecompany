@@ -1,0 +1,13 @@
+﻿{
+  "namespace": "David",
+  "name": "FreeCompany",
+  "description": "Adds The Free Company clan to Monster Train 2",
+  "version_number": "0.1.0",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100",
+    "MT2-Trainworks_Reloaded-0.7.2",
+    "Conductor-Conductor-0.4.1"
+  ],
+  "website_url": "",
+  "FullName": "David-FreeCompany"
+}

@@ -1,0 +1,60 @@
+name: Build DLL
+
+# Compila el plugin y deja el DLL como artefacto descargable.
+# Dispara con cada push a main que toque src/, y tambien a mano desde Actions.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar .NET 9
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      # La fuente monster-train-packages esta en GitHub Packages y pide
+      # credenciales aunque el paquete sea publico. Aqui las pone el runner solo.
+      - name: Credenciales de NuGet
+        run: |
+          dotnet nuget update source monster-train-packages \
+            --configfile src/nuget.config \
+            -u ${{ github.actor }} \
+            -p ${{ secrets.GITHUB_TOKEN }} \
+            --store-password-in-clear-text
+
+      - name: Restaurar dependencias
+        run: dotnet restore src
+
+      - name: Compilar
+        run: dotnet build src -c Release --no-restore --output build-out
+
+      # Solo el DLL del plugin: las dependencias ya las trae el juego
+      # via BepInEx, Trainworks y Conductor.
+      - name: Subir el DLL
+        uses: actions/upload-artifact@v4
+        with:
+          name: mt2_freecompany.Plugin
+          path: build-out/mt2_freecompany.Plugin.dll
+          if-no-files-found: error
+
+      - name: Resumen
+        run: |
+          echo "### DLL compilado" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Rutas JSON declaradas en Plugin.cs: **$(grep -oE '\"json/[A-Za-z0-9_/]+\.json\"' src/Plugin.cs | sort -u | wc -l)**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Descarga el artefacto \`mt2_freecompany.Plugin\` y copia el DLL a la raiz de la carpeta del mod." >> $GITHUB_STEP_SUMMARY

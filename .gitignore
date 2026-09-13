@@ -1,0 +1,16 @@
+# Artefactos de compilacion de .NET
+src/bin/
+src/obj/
+*.user
+
+# IMPORTANTE: la salida del build NUNCA debe quedar dentro de esta carpeta.
+# BepInEx escanea plugins\ en profundidad buscando DLLs, y una segunda copia
+# del plugin y sus dependencias en src\bin\ haria que intentase cargarlo dos veces.
+# Compilar siempre con --output fuera:
+#   dotnet build .\src -c Release --output D:\Juegos\MT2_mod\_dll-build\out
+
+# Ficheros sueltos del gestor de mods y del sistema
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak

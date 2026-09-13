@@ -1,0 +1,233 @@
+﻿{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "classes": [
+    {
+      "id": "ClassFreeCompany",
+      "titles": {
+        "english": "The Free Company"
+      },
+      "descriptions": {
+        "english": "A band of sellswords and hedge-mages who took the last contract on offer. Martial steel and arcane craft, paid up front."
+      },
+      "subclass_descriptions": {
+        "english": "A band of sellswords and hedge-mages who took the last contract on offer. Martial steel and arcane craft, paid up front."
+      },
+      "icons": {
+        "small": "@FreeCompanyIconSmall",
+        "medium": "@FreeCompanyIconRegular",
+        "large": "@FreeCompanyIconLarge",
+        "silhouette": "@FreeCompanySilhouette"
+      },
+      "class_select_character_displays": [],
+      "card_style": "@FreeCompany",
+      "ui_color": {
+        "r": 0.72,
+        "g": 0.55,
+        "b": 0.3
+      },
+      "ui_color_dark": {
+        "r": 0.45,
+        "g": 0.33,
+        "b": 0.18
+      },
+      "ui_gradient": [
+        {
+          "time": 0.0,
+          "color": {
+            "r": 0.85,
+            "g": 0.7,
+            "b": 0.42
+          }
+        },
+        {
+          "time": 1.0,
+          "color": {
+            "r": 0.45,
+            "g": 0.33,
+            "b": 0.18
+          }
+        }
+      ],
+      "champions": []
+    }
+  ],
+  "subtypes": [
+    {
+      "id": "Sub_Martial",
+      "names": {
+        "english": "Martial"
+      }
+    },
+    {
+      "id": "Sub_Arcane",
+      "names": {
+        "english": "Arcane"
+      }
+    },
+    {
+      "id": "Sub_Warrior",
+      "names": {
+        "english": "Warrior"
+      }
+    },
+    {
+      "id": "Sub_Barbarian",
+      "names": {
+        "english": "Barbarian"
+      }
+    },
+    {
+      "id": "Sub_Ranger",
+      "names": {
+        "english": "Ranger"
+      }
+    },
+    {
+      "id": "Sub_Wizard",
+      "names": {
+        "english": "Wizard"
+      }
+    },
+    {
+      "id": "Sub_Cleric",
+      "names": {
+        "english": "Cleric"
+      }
+    },
+    {
+      "id": "Sub_Rogue",
+      "names": {
+        "english": "Rogue"
+      }
+    }
+  ],
+  "map_nodes": [
+    {
+      "id": "RewardNodeUnitPackFreeCompany",
+      "type": "reward",
+      "map_icon": "@FreeCompanyIconSmall",
+      "minimap_icon": "@FreeCompanyIconSmall",
+      "prefab": "@FreeCompanyMapIcon",
+      "titles": {
+        "english": "Free Company Banner"
+      },
+      "descriptions": {
+        "english": "Gain a Free Company Unit"
+      },
+      "pools": [
+        "RandomChosenMainClassUnit",
+        "RandomChosenSubClassUnit"
+      ],
+      "is_banner_node": true,
+      "extensions": [
+        {
+          "reward": {
+            "class": "@ClassFreeCompany",
+            "rewards": [
+              {
+                "id": "@FreeCompanyBannerReward"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "card_pools": [
+    {
+      "id": "FreeCompanyBannerCardPool",
+      "cards": []
+    }
+  ],
+  "rewards": [
+    {
+      "id": "FreeCompanyBannerReward",
+      "type": "draft",
+      "costs": [
+        100
+      ],
+      "extensions": [
+        {
+          "draft": {
+            "draft_pool": "@FreeCompanyBannerCardPool",
+            "class_type": "main|subclass|nonclass",
+            "draft_options_count": 2,
+            "rarity_floor": "uncommon",
+            "ignore_relic_rarity_override": true,
+            "is_service_merchant_reward": true
+          }
+        }
+      ]
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "FreeCompanyMapIcon",
+      "type": "map_node_icon",
+      "extensions": {
+        "map_node_icon": {
+          "disabled_sprite": "@FreeCompanyBanner",
+          "enabled_sprite": "@FreeCompanyBanner",
+          "frozen_sprite": "@FreeCompanyBanner",
+          "visited_sprite_disabled": "@FreeCompanyBanner",
+          "visited_sprite_enabled": "@FreeCompanyBanner"
+        }
+      }
+    }
+  ],
+  "class_card_styles": [
+    {
+      "id": "FreeCompany",
+      "equipment_card_frame_sprite": "@FreeCompanyEquipmentRoomBorder",
+      "unit_card_frame_sprite": "@FreeCompanyUnitBorder",
+      "room_card_frame_sprite": "@FreeCompanyEquipmentRoomBorder",
+      "spell_card_frame_sprite": "@FreeCompanySpellBorder"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FreeCompanyBanner",
+      "path": "textures/FreeCompanyBanner.png"
+    },
+    {
+      "id": "FreeCompanyIconSmall",
+      "path": "textures/FreeCompanyIconSmall.png"
+    },
+    {
+      "id": "FreeCompanyIconRegular",
+      "path": "textures/FreeCompanyIconRegular.png"
+    },
+    {
+      "id": "FreeCompanyIconLarge",
+      "path": "textures/FreeCompanyIconLarge.png"
+    },
+    {
+      "id": "FreeCompanySilhouette",
+      "path": "textures/FreeCompanySilhouette.png"
+    },
+    {
+      "id": "ClanIcon",
+      "path": "textures/FreeCompanyClanIcon.png"
+    },
+    {
+      "id": "ClanLockedIcon",
+      "path": "textures/FreeCompanyClanLockedIcon.png"
+    },
+    {
+      "id": "Portrait",
+      "path": "textures/FreeCompanyPortrait.png"
+    },
+    {
+      "id": "FreeCompanyEquipmentRoomBorder",
+      "path": "textures/BorderEquipmentRoom.png"
+    },
+    {
+      "id": "FreeCompanyUnitBorder",
+      "path": "textures/BorderUnit.png"
+    },
+    {
+      "id": "FreeCompanySpellBorder",
+      "path": "textures/BorderSpell.png"
+    }
+  ]
+}
