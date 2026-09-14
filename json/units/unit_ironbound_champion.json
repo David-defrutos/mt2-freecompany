@@ -2,116 +2,122 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "SpawnBerserker",
+      "id": "SpawnIronboundChampion",
       "names": {
-        "english": "Berserker"
+        "english": "Ironbound Champion"
       },
-      "card_art": "@Berserker",
-      "cost": 3,
+      "descriptions": {
+        "english": "<b>Summon</b>: apply <b>10</b>[armor] to all friendly units in this room."
+      },
+      "card_art": "@IronboundChampion",
+      "cost": 4,
       "card_type": "monster",
-      "rarity": "uncommon",
+      "rarity": "rare",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnBerserkerEffect"
+        "@SpawnIronboundChampionEffect"
       ],
       "lore_tooltips": [
         {
-          "english": "Did not read the contract. Did not need to."
+          "english": "Paid double. Worth triple."
         }
       ],
       "pools": [
         "UnitsAllBanner"
       ],
-      "descriptions": {
-        "english": "<b>Slay</b>: gain <b>3</b>[buff]."
-      },
       "traits": [
-        "@BerserkerDeploy"
+        "@IronboundChampionDeploy"
       ]
     }
   ],
   "characters": [
     {
-      "id": "Berserker",
+      "id": "IronboundChampion",
       "names": {
-        "english": "Berserker"
+        "english": "Ironbound Champion"
       },
-      "character_art": "@BerserkerCharacterArt",
+      "character_art": "@IronboundChampionCharacterArt",
       "size": 1,
-      "attack_damage": 12,
-      "health": 12,
+      "attack_damage": 10,
+      "health": 40,
       "subtypes": [
         "SubtypesData_BannerUnit",
         "@Sub_Melee",
-        "@Sub_Barbarian"
+        "@Sub_Warrior"
       ],
       "triggers": [
         {
-          "id": "@BerserkerKillTrigger"
+          "id": "@IronboundChampionTrigger"
         }
       ]
     }
   ],
+  "traits": [
+    {
+      "id": "IronboundChampionDeploy",
+      "name": "CardTraitDrawInDeploymentPhase"
+    }
+  ],
   "effects": [
     {
-      "id": "SpawnBerserkerEffect",
+      "id": "SpawnIronboundChampionEffect",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
-      "param_character": "@Berserker"
+      "param_character": "@IronboundChampion"
     },
     {
-      "id": "BerserkerRage",
+      "id": "IronboundChampionArmor",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "self",
+      "target_mode": "room",
       "target_team": "monsters",
       "param_status_effects": [
         {
-          "status": "buff",
-          "count": 3
+          "status": "armor",
+          "count": 10
         }
       ]
     }
   ],
   "character_triggers": [
     {
-      "id": "BerserkerKillTrigger",
-      "trigger": "on_kill",
+      "id": "IronboundChampionTrigger",
+      "trigger": "on_spawn",
       "descriptions": {
-        "english": "Gain <b>3</b>[buff]."
+        "english": "Apply <b>10</b>[armor] to all friendly units in this room."
       },
       "effects": [
-        "@BerserkerRage"
+        "@IronboundChampionArmor"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "Berserker",
-      "path": "textures/BerserkerCardArt.png"
+      "id": "IronboundChampion",
+      "path": "textures/IronboundChampionCardArt.png"
     },
     {
-      "id": "BerserkerCharacterArt",
-      "path": "textures/BerserkerCharacterArt.png"
+      "id": "IronboundChampionCharacterArt",
+      "path": "textures/IronboundChampionCharacterArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "Berserker",
+      "id": "IronboundChampion",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@Berserker"
+          "sprite": "@IronboundChampion"
         }
       }
     },
     {
-      "id": "BerserkerCharacterArt",
+      "id": "IronboundChampionCharacterArt",
       "type": "character_art",
       "extensions": {
         "character_art": {
-          "sprite": "@BerserkerCharacterArt",
+          "sprite": "@IronboundChampionCharacterArt",
           "transform": {
             "position": {
               "x": 0,
@@ -126,12 +132,6 @@
           }
         }
       }
-    }
-  ],
-  "traits": [
-    {
-      "id": "BerserkerDeploy",
-      "name": "CardTraitDrawInDeploymentPhase"
     }
   ]
 }

@@ -2,43 +2,46 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "SpawnCutpurse",
+      "id": "SpawnMasterOfCoin",
       "names": {
-        "english": "Cutpurse"
+        "english": "Master of Coin"
       },
-      "card_art": "@Cutpurse",
-      "cost": 2,
+      "descriptions": {
+        "english": "Starts with <b>3</b>[avarice]."
+      },
+      "card_art": "@MasterOfCoin",
+      "cost": 3,
       "card_type": "monster",
-      "rarity": "uncommon",
+      "rarity": "rare",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnCutpurseEffect"
+        "@SpawnMasterOfCoinEffect"
       ],
       "lore_tooltips": [
         {
-          "english": "Charges a finder's fee on your own purse."
+          "english": "Keeps the ledger. Keeps the difference."
         }
       ],
       "pools": [
         "UnitsAllBanner"
       ],
       "traits": [
-        "@CutpurseDeploy"
+        "@MasterOfCoinDeploy"
       ]
     }
   ],
   "characters": [
     {
-      "id": "Cutpurse",
+      "id": "MasterOfCoin",
       "names": {
-        "english": "Cutpurse"
+        "english": "Master of Coin"
       },
-      "character_art": "@CutpurseCharacterArt",
+      "character_art": "@MasterOfCoinCharacterArt",
       "size": 1,
-      "attack_damage": 6,
-      "health": 10,
+      "attack_damage": 10,
+      "health": 18,
       "subtypes": [
         "SubtypesData_BannerUnit",
         "@Sub_Melee",
@@ -47,49 +50,51 @@
       "starting_status_effects": [
         {
           "status": "avarice",
-          "count": 1
-        },
-        {
-          "status": "stealth",
-          "count": 2
+          "count": 3
         }
       ]
     }
   ],
+  "traits": [
+    {
+      "id": "MasterOfCoinDeploy",
+      "name": "CardTraitDrawInDeploymentPhase"
+    }
+  ],
   "effects": [
     {
-      "id": "SpawnCutpurseEffect",
+      "id": "SpawnMasterOfCoinEffect",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
-      "param_character": "@Cutpurse"
+      "param_character": "@MasterOfCoin"
     }
   ],
   "sprites": [
     {
-      "id": "Cutpurse",
-      "path": "textures/CutpurseCardArt.png"
+      "id": "MasterOfCoin",
+      "path": "textures/MasterOfCoinCardArt.png"
     },
     {
-      "id": "CutpurseCharacterArt",
-      "path": "textures/CutpurseCharacterArt.png"
+      "id": "MasterOfCoinCharacterArt",
+      "path": "textures/MasterOfCoinCharacterArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "Cutpurse",
+      "id": "MasterOfCoin",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@Cutpurse"
+          "sprite": "@MasterOfCoin"
         }
       }
     },
     {
-      "id": "CutpurseCharacterArt",
+      "id": "MasterOfCoinCharacterArt",
       "type": "character_art",
       "extensions": {
         "character_art": {
-          "sprite": "@CutpurseCharacterArt",
+          "sprite": "@MasterOfCoinCharacterArt",
           "transform": {
             "position": {
               "x": 0,
@@ -104,12 +109,6 @@
           }
         }
       }
-    }
-  ],
-  "traits": [
-    {
-      "id": "CutpurseDeploy",
-      "name": "CardTraitDrawInDeploymentPhase"
     }
   ]
 }

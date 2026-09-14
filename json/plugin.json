@@ -188,12 +188,15 @@
     {
       "id": "FreeCompanyBannerCardPool",
       "cards": [
-        "@SpawnShieldbearer",
+        "@SpawnBattleChaplain",
         "@SpawnBerserker",
         "@SpawnCutpurse",
-        "@SpawnHedgeMage",
         "@SpawnFieldMedic",
-        "@SpawnLongbowman"
+        "@SpawnHedgeMage",
+        "@SpawnIronboundChampion",
+        "@SpawnLongbowman",
+        "@SpawnMasterOfCoin",
+        "@SpawnShieldbearer"
       ]
     },
     {

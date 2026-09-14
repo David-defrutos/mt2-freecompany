@@ -2,46 +2,46 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "SpawnFieldMedic",
+      "id": "SpawnBattleChaplain",
       "names": {
-        "english": "Field Medic"
+        "english": "Battle Chaplain"
       },
-      "card_art": "@FieldMedic",
-      "cost": 2,
+      "descriptions": {
+        "english": "<b>End of Turn</b>: restore <b>8</b> health to all friendly units in this room."
+      },
+      "card_art": "@BattleChaplain",
+      "cost": 4,
       "card_type": "monster",
-      "rarity": "uncommon",
+      "rarity": "rare",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnFieldMedicEffect"
+        "@SpawnBattleChaplainEffect"
       ],
       "lore_tooltips": [
         {
-          "english": "Keeps a tally of who still owes her."
+          "english": "Prays for the company. Bills the company."
         }
       ],
       "pools": [
         "UnitsAllBanner"
       ],
-      "descriptions": {
-        "english": "<b>End of Turn</b>: restore <b>4</b> health to the weakest friendly unit."
-      },
       "traits": [
-        "@FieldMedicDeploy"
+        "@BattleChaplainDeploy"
       ]
     }
   ],
   "characters": [
     {
-      "id": "FieldMedic",
+      "id": "BattleChaplain",
       "names": {
-        "english": "Field Medic"
+        "english": "Battle Chaplain"
       },
-      "character_art": "@FieldMedicCharacterArt",
+      "character_art": "@BattleChaplainCharacterArt",
       "size": 1,
-      "attack_damage": 3,
-      "health": 18,
+      "attack_damage": 6,
+      "health": 28,
       "subtypes": [
         "SubtypesData_BannerUnit",
         "@Sub_Ranged",
@@ -49,64 +49,70 @@
       ],
       "triggers": [
         {
-          "id": "@FieldMedicEndTrigger"
+          "id": "@BattleChaplainTrigger"
         }
       ]
     }
   ],
+  "traits": [
+    {
+      "id": "BattleChaplainDeploy",
+      "name": "CardTraitDrawInDeploymentPhase"
+    }
+  ],
   "effects": [
     {
-      "id": "SpawnFieldMedicEffect",
+      "id": "SpawnBattleChaplainEffect",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
-      "param_character": "@FieldMedic"
+      "param_character": "@BattleChaplain"
     },
     {
-      "id": "FieldMedicHeal",
+      "id": "BattleChaplainHeal",
       "name": "CardEffectHeal",
-      "target_mode": "weakest",
+      "target_mode": "room",
       "target_team": "monsters",
-      "param_int": 4
+      "param_int": 8
     }
   ],
   "character_triggers": [
     {
-      "id": "FieldMedicEndTrigger",
+      "id": "BattleChaplainTrigger",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>4</b> health to the weakest friendly unit."
+        "english": "Restore <b>8</b> health to all friendly units in this room."
       },
       "effects": [
-        "@FieldMedicHeal"
+        "@BattleChaplainHeal"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "FieldMedic",
-      "path": "textures/FieldMedicCardArt.png"
+      "id": "BattleChaplain",
+      "path": "textures/BattleChaplainCardArt.png"
     },
     {
-      "id": "FieldMedicCharacterArt",
-      "path": "textures/FieldMedicCharacterArt.png"
+      "id": "BattleChaplainCharacterArt",
+      "path": "textures/BattleChaplainCharacterArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "FieldMedic",
+      "id": "BattleChaplain",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@FieldMedic"
+          "sprite": "@BattleChaplain"
         }
       }
     },
     {
-      "id": "FieldMedicCharacterArt",
+      "id": "BattleChaplainCharacterArt",
       "type": "character_art",
       "extensions": {
         "character_art": {
-          "sprite": "@FieldMedicCharacterArt",
+          "sprite": "@BattleChaplainCharacterArt",
           "transform": {
             "position": {
               "x": 0,
@@ -121,12 +127,6 @@
           }
         }
       }
-    }
-  ],
-  "traits": [
-    {
-      "id": "FieldMedicDeploy",
-      "name": "CardTraitDrawInDeploymentPhase"
     }
   ]
 }
