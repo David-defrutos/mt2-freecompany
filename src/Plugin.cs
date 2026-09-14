@@ -23,7 +23,17 @@ namespace mt2_freecompany.Plugin
                     // Anadir aqui CADA fichero nuevo y recompilar: si no esta en
                     // esta lista, el juego no lo lee. Ver docs/64.
                     c.AddMergedJsonFile(
-                        "json/plugin.json"
+                        "json/plugin.json",
+                        "json/champions/champion_roderic.json",
+                        "json/champions/champion_vesper.json",
+                        "json/cards/card_shield_wall.json",
+                        "json/cards/card_magic_missile.json",
+                        "json/units/unit_shieldbearer.json",
+                        "json/units/unit_berserker.json",
+                        "json/units/unit_cutpurse.json",
+                        "json/units/unit_hedgemage.json",
+                        "json/units/unit_fieldmedic.json",
+                        "json/units/unit_longbowman.json"
                     );
                 }
             );

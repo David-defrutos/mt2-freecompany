@@ -1,0 +1,129 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnBerserker",
+      "names": {
+        "english": "Berserker"
+      },
+      "card_art": "@Berserker",
+      "cost": 3,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnBerserkerEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Did not read the contract. Did not need to."
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "UnitsAllBanner"
+      ],
+      "descriptions": {
+        "english": "<b>Slay</b>: gain <b>3</b>[buff]."
+      }
+    }
+  ],
+  "characters": [
+    {
+      "id": "Berserker",
+      "names": {
+        "english": "Berserker"
+      },
+      "character_art": "@BerserkerCharacterArt",
+      "size": 1,
+      "attack_damage": 12,
+      "health": 12,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "@Sub_Melee",
+        "@Sub_Barbarian"
+      ],
+      "triggers": [
+        {
+          "id": "@BerserkerKillTrigger"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnBerserkerEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@Berserker"
+    },
+    {
+      "id": "BerserkerRage",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "BerserkerKillTrigger",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Gain <b>3</b>[buff]."
+      },
+      "effects": [
+        "@BerserkerRage"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Berserker",
+      "path": "textures/BerserkerCardArt.png"
+    },
+    {
+      "id": "BerserkerCharacterArt",
+      "path": "textures/BerserkerCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Berserker",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Berserker"
+        }
+      }
+    },
+    {
+      "id": "BerserkerCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@BerserkerCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 0.5,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}

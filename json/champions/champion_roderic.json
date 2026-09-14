@@ -1,0 +1,432 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnRoderic",
+      "names": {
+        "english": "Roderic"
+      },
+      "descriptions": {
+        "english": "<b>Rally</b>: gain <b>+2</b>[attack] for the rest of combat."
+      },
+      "card_art": "@Roderic",
+      "cost": 0,
+      "card_type": "monster",
+      "rarity": "champion",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnRodericEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Signed the contract first. Read it later."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "Roderic",
+      "names": {
+        "english": "Roderic"
+      },
+      "character_art": "@RodericCharacterArt",
+      "size": 1,
+      "attack_damage": 8,
+      "health": 30,
+      "death_type": "large",
+      "subtypes": [
+        "@Sub_Melee",
+        "@Sub_Warrior"
+      ],
+      "triggers": [
+        {
+          "id": "@RodericMusterTrigger"
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "RodericMusterTrigger",
+      "trigger": "card_monster_played",
+      "descriptions": {
+        "english": "Gain <b>+2</b>[attack] for the rest of combat."
+      },
+      "effects": [
+        "@RodericMusterBuff"
+      ]
+    },
+    {
+      "id": "WallTrigger1",
+      "trigger": "on_turn_begin",
+      "descriptions": {
+        "english": "Apply <b>3</b>[armor] to all friendly units in this room."
+      },
+      "effects": [
+        "@WallArmor1"
+      ]
+    },
+    {
+      "id": "WallTrigger2",
+      "trigger": "on_turn_begin",
+      "descriptions": {
+        "english": "Apply <b>6</b>[armor] to all friendly units in this room."
+      },
+      "effects": [
+        "@WallArmor2"
+      ]
+    },
+    {
+      "id": "WallTrigger3",
+      "trigger": "on_turn_begin",
+      "descriptions": {
+        "english": "Apply <b>10</b>[armor] to all friendly units in this room."
+      },
+      "effects": [
+        "@WallArmor3"
+      ]
+    },
+    {
+      "id": "BloodwageTrigger1",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Restore <b>3</b> health."
+      },
+      "effects": [
+        "@BloodwageHeal1"
+      ]
+    },
+    {
+      "id": "BloodwageTrigger2",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Restore <b>6</b> health."
+      },
+      "effects": [
+        "@BloodwageHeal2"
+      ]
+    },
+    {
+      "id": "BloodwageTrigger3",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Restore <b>10</b> health and gain <b>3</b>[buff]."
+      },
+      "effects": [
+        "@BloodwageHeal3",
+        "@BloodwageRage3"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnRodericEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@Roderic"
+    },
+    {
+      "id": "RodericMusterBuff",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_upgrade": "@RodericMusterUpgrade"
+    },
+    {
+      "id": "WallArmor1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "WallArmor2",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": "WallArmor3",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": "BloodwageHeal1",
+      "name": "CardEffectHeal",
+      "target_mode": "self",
+      "target_team": "none",
+      "param_int": 3
+    },
+    {
+      "id": "BloodwageHeal2",
+      "name": "CardEffectHeal",
+      "target_mode": "self",
+      "target_team": "none",
+      "param_int": 6
+    },
+    {
+      "id": "BloodwageHeal3",
+      "name": "CardEffectHeal",
+      "target_mode": "self",
+      "target_team": "none",
+      "param_int": 10
+    },
+    {
+      "id": "BloodwageRage3",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "RodericMusterUpgrade",
+      "bonus_damage": 2
+    },
+    {
+      "id": "upg_Wall1",
+      "titles": {
+        "english": "Shield Wall"
+      },
+      "descriptions": {
+        "english": "Holds the line for everyone."
+      },
+      "bonus_hp": 10,
+      "trigger_upgrades": [
+        "@WallTrigger1"
+      ]
+    },
+    {
+      "id": "upg_Wall2",
+      "titles": {
+        "english": "Shield Wall II"
+      },
+      "descriptions": {
+        "english": "Holds the line for everyone."
+      },
+      "bonus_hp": 20,
+      "remove_upgrades": [
+        "@upg_Wall1"
+      ],
+      "trigger_upgrades": [
+        "@WallTrigger2"
+      ]
+    },
+    {
+      "id": "upg_Wall3",
+      "titles": {
+        "english": "Shield Wall III"
+      },
+      "descriptions": {
+        "english": "Holds the line for everyone."
+      },
+      "bonus_hp": 35,
+      "remove_upgrades": [
+        "@upg_Wall2"
+      ],
+      "trigger_upgrades": [
+        "@WallTrigger3"
+      ]
+    },
+    {
+      "id": "upg_Bloodwage1",
+      "titles": {
+        "english": "Bloodwage"
+      },
+      "descriptions": {
+        "english": "Paid in blood."
+      },
+      "bonus_damage": 8,
+      "trigger_upgrades": [
+        "@BloodwageTrigger1"
+      ]
+    },
+    {
+      "id": "upg_Bloodwage2",
+      "titles": {
+        "english": "Bloodwage II"
+      },
+      "descriptions": {
+        "english": "Paid in blood."
+      },
+      "bonus_damage": 18,
+      "remove_upgrades": [
+        "@upg_Bloodwage1"
+      ],
+      "trigger_upgrades": [
+        "@BloodwageTrigger2"
+      ]
+    },
+    {
+      "id": "upg_Bloodwage3",
+      "titles": {
+        "english": "Bloodwage III"
+      },
+      "descriptions": {
+        "english": "Paid in blood."
+      },
+      "bonus_damage": 32,
+      "remove_upgrades": [
+        "@upg_Bloodwage2"
+      ],
+      "trigger_upgrades": [
+        "@BloodwageTrigger3"
+      ]
+    },
+    {
+      "id": "upg_Plunder1",
+      "titles": {
+        "english": "Plunder"
+      },
+      "descriptions": {
+        "english": "Takes his cut."
+      },
+      "bonus_damage": 5,
+      "bonus_hp": 5,
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "upg_Plunder2",
+      "titles": {
+        "english": "Plunder II"
+      },
+      "descriptions": {
+        "english": "Takes his cut."
+      },
+      "bonus_damage": 12,
+      "bonus_hp": 10,
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "upg_Plunder3",
+      "titles": {
+        "english": "Plunder III"
+      },
+      "descriptions": {
+        "english": "Takes his cut."
+      },
+      "bonus_damage": 20,
+      "bonus_hp": 15,
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 4
+        },
+        {
+          "status": "ambush",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Roderic",
+      "path": "textures/RodericCardArt.png"
+    },
+    {
+      "id": "RodericCharacterArt",
+      "path": "textures/RodericCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Roderic",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Roderic"
+        }
+      }
+    },
+    {
+      "id": "RodericCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@RodericCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 0.5,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "chatter": [
+    {
+      "id": "CTR_Roderic",
+      "gender": "male",
+      "added_expressions": [
+        {
+          "english": "Form up!"
+        },
+        {
+          "english": "Hold the line."
+        },
+        {
+          "english": "Payment first."
+        }
+      ],
+      "idle_expressions": [
+        {
+          "english": "Steady, lads."
+        },
+        {
+          "english": "We have been paid. We finish the job."
+        },
+        {
+          "english": "Shields up."
+        },
+        {
+          "english": "I have seen worse contracts."
+        }
+      ]
+    }
+  ]
+}

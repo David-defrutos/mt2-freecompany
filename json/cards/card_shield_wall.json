@@ -1,0 +1,60 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "ShieldWall",
+      "names": {
+        "english": "Shield Wall"
+      },
+      "descriptions": {
+        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+      },
+      "card_art": "@ShieldWall",
+      "cost": 1,
+      "card_type": "spell",
+      "rarity": "starter",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@ShieldWallArmor"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Cheaper than a funeral."
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ShieldWallArmor",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ShieldWall",
+      "path": "textures/ShieldWallArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "ShieldWall",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@ShieldWall"
+        }
+      }
+    }
+  ]
+}

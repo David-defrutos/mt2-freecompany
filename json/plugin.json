@@ -48,20 +48,71 @@
           }
         }
       ],
-      "champions": []
+      "champions": [
+        {
+          "id": "RodericChampion",
+          "card_data": "@SpawnRoderic",
+          "starter_card": "@ShieldWall",
+          "upgrade_tree": [
+            [
+              "@upg_Wall1",
+              "@upg_Wall2",
+              "@upg_Wall3"
+            ],
+            [
+              "@upg_Bloodwage1",
+              "@upg_Bloodwage2",
+              "@upg_Bloodwage3"
+            ],
+            [
+              "@upg_Plunder1",
+              "@upg_Plunder2",
+              "@upg_Plunder3"
+            ]
+          ],
+          "icon": "@RodericIcon",
+          "locked_icon": "@RodericLockedIcon",
+          "portrait": "@RodericPortrait"
+        },
+        {
+          "id": "VesperChampion",
+          "card_data": "@SpawnVesper",
+          "starter_card": "@MagicMissile",
+          "upgrade_tree": [
+            [
+              "@upg_Grimoire1",
+              "@upg_Grimoire2",
+              "@upg_Grimoire3"
+            ],
+            [
+              "@upg_Chirurgeon1",
+              "@upg_Chirurgeon2",
+              "@upg_Chirurgeon3"
+            ],
+            [
+              "@upg_Volley1",
+              "@upg_Volley2",
+              "@upg_Volley3"
+            ]
+          ],
+          "icon": "@VesperIcon",
+          "locked_icon": "@VesperLockedIcon",
+          "portrait": "@VesperPortrait"
+        }
+      ]
     }
   ],
   "subtypes": [
     {
-      "id": "Sub_Martial",
+      "id": "Sub_Melee",
       "names": {
-        "english": "Martial"
+        "english": "Melee"
       }
     },
     {
-      "id": "Sub_Arcane",
+      "id": "Sub_Ranged",
       "names": {
-        "english": "Arcane"
+        "english": "Ranged"
       }
     },
     {
@@ -77,9 +128,9 @@
       }
     },
     {
-      "id": "Sub_Ranger",
+      "id": "Sub_Rogue",
       "names": {
-        "english": "Ranger"
+        "english": "Rogue"
       }
     },
     {
@@ -95,9 +146,9 @@
       }
     },
     {
-      "id": "Sub_Rogue",
+      "id": "Sub_Ranger",
       "names": {
-        "english": "Rogue"
+        "english": "Ranger"
       }
     }
   ],
@@ -136,7 +187,14 @@
   "card_pools": [
     {
       "id": "FreeCompanyBannerCardPool",
-      "cards": []
+      "cards": [
+        "@SpawnShieldbearer",
+        "@SpawnBerserker",
+        "@SpawnCutpurse",
+        "@SpawnHedgeMage",
+        "@SpawnFieldMedic",
+        "@SpawnLongbowman"
+      ]
     }
   ],
   "rewards": [
@@ -206,18 +264,6 @@
       "path": "textures/FreeCompanySilhouette.png"
     },
     {
-      "id": "ClanIcon",
-      "path": "textures/FreeCompanyClanIcon.png"
-    },
-    {
-      "id": "ClanLockedIcon",
-      "path": "textures/FreeCompanyClanLockedIcon.png"
-    },
-    {
-      "id": "Portrait",
-      "path": "textures/FreeCompanyPortrait.png"
-    },
-    {
       "id": "FreeCompanyEquipmentRoomBorder",
       "path": "textures/BorderEquipmentRoom.png"
     },
@@ -228,6 +274,30 @@
     {
       "id": "FreeCompanySpellBorder",
       "path": "textures/BorderSpell.png"
+    },
+    {
+      "id": "RodericIcon",
+      "path": "textures/RodericIcon.png"
+    },
+    {
+      "id": "RodericLockedIcon",
+      "path": "textures/RodericLockedIcon.png"
+    },
+    {
+      "id": "RodericPortrait",
+      "path": "textures/RodericPortrait.png"
+    },
+    {
+      "id": "VesperIcon",
+      "path": "textures/VesperIcon.png"
+    },
+    {
+      "id": "VesperLockedIcon",
+      "path": "textures/VesperLockedIcon.png"
+    },
+    {
+      "id": "VesperPortrait",
+      "path": "textures/VesperPortrait.png"
     }
   ]
 }

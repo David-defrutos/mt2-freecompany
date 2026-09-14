@@ -1,0 +1,124 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnHedgeMage",
+      "names": {
+        "english": "Hedge-Mage"
+      },
+      "card_art": "@HedgeMage",
+      "cost": 3,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnHedgeMageEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Self-taught. It shows, but it works."
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "UnitsAllBanner"
+      ],
+      "descriptions": {
+        "english": "<b>Incant</b>: deal <b>2</b> damage to a random enemy."
+      }
+    }
+  ],
+  "characters": [
+    {
+      "id": "HedgeMage",
+      "names": {
+        "english": "Hedge-Mage"
+      },
+      "character_art": "@HedgeMageCharacterArt",
+      "size": 1,
+      "attack_damage": 4,
+      "health": 14,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "@Sub_Ranged",
+        "@Sub_Wizard"
+      ],
+      "triggers": [
+        {
+          "id": "@HedgeMageSpellTrigger"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnHedgeMageEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@HedgeMage"
+    },
+    {
+      "id": "HedgeMageBolt",
+      "name": "CardEffectDamage",
+      "target_mode": "random_in_room",
+      "target_team": "heroes",
+      "param_int": 2
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "HedgeMageSpellTrigger",
+      "trigger": "card_spell_played",
+      "descriptions": {
+        "english": "Deal <b>2</b> damage to a random enemy."
+      },
+      "effects": [
+        "@HedgeMageBolt"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "HedgeMage",
+      "path": "textures/HedgeMageCardArt.png"
+    },
+    {
+      "id": "HedgeMageCharacterArt",
+      "path": "textures/HedgeMageCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "HedgeMage",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@HedgeMage"
+        }
+      }
+    },
+    {
+      "id": "HedgeMageCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@HedgeMageCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 0.5,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}

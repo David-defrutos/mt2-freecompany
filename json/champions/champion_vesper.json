@@ -1,0 +1,416 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnVesper",
+      "names": {
+        "english": "Vesper"
+      },
+      "descriptions": {
+        "english": "<b>Start of Turn</b>: gain <b>1</b>[ember]."
+      },
+      "card_art": "@Vesper",
+      "cost": 0,
+      "card_type": "monster",
+      "rarity": "champion",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnVesperEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Charges by the hour. Collects in advance."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "Vesper",
+      "names": {
+        "english": "Vesper"
+      },
+      "character_art": "@VesperCharacterArt",
+      "size": 1,
+      "attack_damage": 5,
+      "health": 22,
+      "death_type": "large",
+      "subtypes": [
+        "@Sub_Ranged",
+        "@Sub_Wizard"
+      ],
+      "triggers": [
+        {
+          "id": "@VesperRetainerTrigger"
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "VesperRetainerTrigger",
+      "trigger": "pre_combat",
+      "descriptions": {
+        "english": "Gain <b>1</b>[ember]."
+      },
+      "effects": [
+        "@VesperRetainer"
+      ]
+    },
+    {
+      "id": "GrimoireTrigger1",
+      "trigger": "card_spell_played",
+      "descriptions": {
+        "english": "Gain <b>+1</b>[attack] for the rest of combat."
+      },
+      "effects": [
+        "@GrimoireBuff1"
+      ]
+    },
+    {
+      "id": "GrimoireTrigger2",
+      "trigger": "card_spell_played",
+      "descriptions": {
+        "english": "Gain <b>+2</b>[attack] for the rest of combat."
+      },
+      "effects": [
+        "@GrimoireBuff2"
+      ]
+    },
+    {
+      "id": "GrimoireTrigger3",
+      "trigger": "card_spell_played",
+      "descriptions": {
+        "english": "Gain <b>+4</b>[attack] for the rest of combat."
+      },
+      "effects": [
+        "@GrimoireBuff3"
+      ]
+    },
+    {
+      "id": "ChirurgeonTrigger1",
+      "trigger": "end_turn_pre_hand_discard",
+      "descriptions": {
+        "english": "Restore <b>5</b> health to the weakest friendly unit."
+      },
+      "effects": [
+        "@ChirurgeonHeal1"
+      ]
+    },
+    {
+      "id": "ChirurgeonTrigger2",
+      "trigger": "end_turn_pre_hand_discard",
+      "descriptions": {
+        "english": "Restore <b>10</b> health to the weakest friendly unit."
+      },
+      "effects": [
+        "@ChirurgeonHeal2"
+      ]
+    },
+    {
+      "id": "ChirurgeonTrigger3",
+      "trigger": "end_turn_pre_hand_discard",
+      "descriptions": {
+        "english": "Restore <b>20</b> health to the weakest friendly unit."
+      },
+      "effects": [
+        "@ChirurgeonHeal3"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnVesperEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@Vesper"
+    },
+    {
+      "id": "VesperRetainer",
+      "name": "CardEffectGainEnergy",
+      "target_mode": "self",
+      "param_int": 1
+    },
+    {
+      "id": "GrimoireBuff1",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_upgrade": "@GrimoireUpgrade1"
+    },
+    {
+      "id": "GrimoireBuff2",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_upgrade": "@GrimoireUpgrade2"
+    },
+    {
+      "id": "GrimoireBuff3",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_upgrade": "@GrimoireUpgrade3"
+    },
+    {
+      "id": "ChirurgeonHeal1",
+      "name": "CardEffectHeal",
+      "target_mode": "weakest",
+      "target_team": "monsters",
+      "param_int": 5
+    },
+    {
+      "id": "ChirurgeonHeal2",
+      "name": "CardEffectHeal",
+      "target_mode": "weakest",
+      "target_team": "monsters",
+      "param_int": 10
+    },
+    {
+      "id": "ChirurgeonHeal3",
+      "name": "CardEffectHeal",
+      "target_mode": "weakest",
+      "target_team": "monsters",
+      "param_int": 20
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GrimoireUpgrade1",
+      "bonus_damage": 1
+    },
+    {
+      "id": "GrimoireUpgrade2",
+      "bonus_damage": 2
+    },
+    {
+      "id": "GrimoireUpgrade3",
+      "bonus_damage": 4
+    },
+    {
+      "id": "upg_Grimoire1",
+      "titles": {
+        "english": "Grimoire"
+      },
+      "descriptions": {
+        "english": "Grows with every spell."
+      },
+      "bonus_damage": 4,
+      "trigger_upgrades": [
+        "@GrimoireTrigger1"
+      ]
+    },
+    {
+      "id": "upg_Grimoire2",
+      "titles": {
+        "english": "Grimoire II"
+      },
+      "descriptions": {
+        "english": "Grows with every spell."
+      },
+      "bonus_damage": 10,
+      "remove_upgrades": [
+        "@upg_Grimoire1"
+      ],
+      "trigger_upgrades": [
+        "@GrimoireTrigger2"
+      ]
+    },
+    {
+      "id": "upg_Grimoire3",
+      "titles": {
+        "english": "Grimoire III"
+      },
+      "descriptions": {
+        "english": "Grows with every spell."
+      },
+      "bonus_damage": 18,
+      "remove_upgrades": [
+        "@upg_Grimoire2"
+      ],
+      "trigger_upgrades": [
+        "@GrimoireTrigger3"
+      ]
+    },
+    {
+      "id": "upg_Chirurgeon1",
+      "titles": {
+        "english": "Chirurgeon"
+      },
+      "descriptions": {
+        "english": "Keeps the company standing."
+      },
+      "bonus_hp": 10,
+      "trigger_upgrades": [
+        "@ChirurgeonTrigger1"
+      ]
+    },
+    {
+      "id": "upg_Chirurgeon2",
+      "titles": {
+        "english": "Chirurgeon II"
+      },
+      "descriptions": {
+        "english": "Keeps the company standing."
+      },
+      "bonus_hp": 20,
+      "remove_upgrades": [
+        "@upg_Chirurgeon1"
+      ],
+      "trigger_upgrades": [
+        "@ChirurgeonTrigger2"
+      ]
+    },
+    {
+      "id": "upg_Chirurgeon3",
+      "titles": {
+        "english": "Chirurgeon III"
+      },
+      "descriptions": {
+        "english": "Keeps the company standing."
+      },
+      "bonus_hp": 30,
+      "remove_upgrades": [
+        "@upg_Chirurgeon2"
+      ],
+      "trigger_upgrades": [
+        "@ChirurgeonTrigger3"
+      ]
+    },
+    {
+      "id": "upg_Volley1",
+      "titles": {
+        "english": "Volley"
+      },
+      "descriptions": {
+        "english": "Shoots for the back of the room."
+      },
+      "bonus_damage": 6,
+      "status_effect_upgrades": [
+        {
+          "status": "sniper",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "upg_Volley2",
+      "titles": {
+        "english": "Volley II"
+      },
+      "descriptions": {
+        "english": "Shoots for the back of the room."
+      },
+      "bonus_damage": 14,
+      "status_effect_upgrades": [
+        {
+          "status": "sniper",
+          "count": 1
+        },
+        {
+          "status": "piercing",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "upg_Volley3",
+      "titles": {
+        "english": "Volley III"
+      },
+      "descriptions": {
+        "english": "Shoots for the back of the room."
+      },
+      "bonus_damage": 24,
+      "status_effect_upgrades": [
+        {
+          "status": "sniper",
+          "count": 1
+        },
+        {
+          "status": "piercing",
+          "count": 4
+        },
+        {
+          "status": "sweep",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Vesper",
+      "path": "textures/VesperCardArt.png"
+    },
+    {
+      "id": "VesperCharacterArt",
+      "path": "textures/VesperCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Vesper",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Vesper"
+        }
+      }
+    },
+    {
+      "id": "VesperCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@VesperCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 0.5,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "chatter": [
+    {
+      "id": "CTR_Vesper",
+      "gender": "female",
+      "added_expressions": [
+        {
+          "english": "Terms agreed."
+        },
+        {
+          "english": "Mind the blast radius."
+        },
+        {
+          "english": "I bill by the hour."
+        }
+      ],
+      "idle_expressions": [
+        {
+          "english": "Do not stand in front of me."
+        },
+        {
+          "english": "Expenses are extra."
+        },
+        {
+          "english": "I read the contract. Did you?"
+        },
+        {
+          "english": "Hold still."
+        }
+      ]
+    }
+  ]
+}

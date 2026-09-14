@@ -1,0 +1,107 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnCutpurse",
+      "names": {
+        "english": "Cutpurse"
+      },
+      "card_art": "@Cutpurse",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnCutpurseEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Charges a finder's fee on your own purse."
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "UnitsAllBanner"
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "Cutpurse",
+      "names": {
+        "english": "Cutpurse"
+      },
+      "character_art": "@CutpurseCharacterArt",
+      "size": 1,
+      "attack_damage": 6,
+      "health": 10,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "@Sub_Melee",
+        "@Sub_Rogue"
+      ],
+      "starting_status_effects": [
+        {
+          "status": "avarice",
+          "count": 1
+        },
+        {
+          "status": "stealth",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnCutpurseEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@Cutpurse"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Cutpurse",
+      "path": "textures/CutpurseCardArt.png"
+    },
+    {
+      "id": "CutpurseCharacterArt",
+      "path": "textures/CutpurseCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Cutpurse",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Cutpurse"
+        }
+      }
+    },
+    {
+      "id": "CutpurseCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@CutpurseCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 0.5,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}

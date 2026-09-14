@@ -1,0 +1,124 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnFieldMedic",
+      "names": {
+        "english": "Field Medic"
+      },
+      "card_art": "@FieldMedic",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnFieldMedicEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Keeps a tally of who still owes her."
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "UnitsAllBanner"
+      ],
+      "descriptions": {
+        "english": "<b>End of Turn</b>: restore <b>4</b> health to the weakest friendly unit."
+      }
+    }
+  ],
+  "characters": [
+    {
+      "id": "FieldMedic",
+      "names": {
+        "english": "Field Medic"
+      },
+      "character_art": "@FieldMedicCharacterArt",
+      "size": 1,
+      "attack_damage": 3,
+      "health": 18,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "@Sub_Ranged",
+        "@Sub_Cleric"
+      ],
+      "triggers": [
+        {
+          "id": "@FieldMedicEndTrigger"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnFieldMedicEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@FieldMedic"
+    },
+    {
+      "id": "FieldMedicHeal",
+      "name": "CardEffectHeal",
+      "target_mode": "weakest",
+      "target_team": "monsters",
+      "param_int": 4
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "FieldMedicEndTrigger",
+      "trigger": "end_turn_pre_hand_discard",
+      "descriptions": {
+        "english": "Restore <b>4</b> health to the weakest friendly unit."
+      },
+      "effects": [
+        "@FieldMedicHeal"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FieldMedic",
+      "path": "textures/FieldMedicCardArt.png"
+    },
+    {
+      "id": "FieldMedicCharacterArt",
+      "path": "textures/FieldMedicCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "FieldMedic",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@FieldMedic"
+        }
+      }
+    },
+    {
+      "id": "FieldMedicCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@FieldMedicCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 0.5,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}

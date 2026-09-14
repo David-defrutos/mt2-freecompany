@@ -1,0 +1,71 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "MagicMissile",
+      "names": {
+        "english": "Magic Missile"
+      },
+      "descriptions": {
+        "english": "Deal <b>3</b> damage to a random enemy three times."
+      },
+      "card_art": "@MagicMissile",
+      "cost": 1,
+      "card_type": "spell",
+      "rarity": "starter",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@MagicMissileDart1",
+        "@MagicMissileDart2",
+        "@MagicMissileDart3"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "It never misses. That is the whole trick."
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MagicMissileDart1",
+      "name": "CardEffectDamage",
+      "target_mode": "random_in_room",
+      "target_team": "heroes",
+      "param_int": 3
+    },
+    {
+      "id": "MagicMissileDart2",
+      "name": "CardEffectDamage",
+      "target_mode": "random_in_room",
+      "target_team": "heroes",
+      "param_int": 3
+    },
+    {
+      "id": "MagicMissileDart3",
+      "name": "CardEffectDamage",
+      "target_mode": "random_in_room",
+      "target_team": "heroes",
+      "param_int": 3
+    }
+  ],
+  "sprites": [
+    {
+      "id": "MagicMissile",
+      "path": "textures/MagicMissileArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "MagicMissile",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@MagicMissile"
+        }
+      }
+    }
+  ]
+}

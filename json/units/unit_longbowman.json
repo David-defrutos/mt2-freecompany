@@ -1,0 +1,103 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnLongbowman",
+      "names": {
+        "english": "Longbowman"
+      },
+      "card_art": "@Longbowman",
+      "cost": 3,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnLongbowmanEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Aims past the noise at the back of the room."
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "UnitsAllBanner"
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "Longbowman",
+      "names": {
+        "english": "Longbowman"
+      },
+      "character_art": "@LongbowmanCharacterArt",
+      "size": 1,
+      "attack_damage": 8,
+      "health": 10,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "@Sub_Ranged",
+        "@Sub_Ranger"
+      ],
+      "starting_status_effects": [
+        {
+          "status": "sniper",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnLongbowmanEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@Longbowman"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Longbowman",
+      "path": "textures/LongbowmanCardArt.png"
+    },
+    {
+      "id": "LongbowmanCharacterArt",
+      "path": "textures/LongbowmanCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Longbowman",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Longbowman"
+        }
+      }
+    },
+    {
+      "id": "LongbowmanCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@LongbowmanCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 0.5,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}

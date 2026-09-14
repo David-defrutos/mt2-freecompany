@@ -1,0 +1,129 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnShieldbearer",
+      "names": {
+        "english": "Shieldbearer"
+      },
+      "card_art": "@Shieldbearer",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnShieldbearerEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Paid to stand still and be hit."
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "UnitsAllBanner"
+      ],
+      "descriptions": {
+        "english": "<b>Summon</b>: apply <b>5</b>[armor] to itself."
+      }
+    }
+  ],
+  "characters": [
+    {
+      "id": "Shieldbearer",
+      "names": {
+        "english": "Shieldbearer"
+      },
+      "character_art": "@ShieldbearerCharacterArt",
+      "size": 1,
+      "attack_damage": 5,
+      "health": 25,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "@Sub_Melee",
+        "@Sub_Warrior"
+      ],
+      "triggers": [
+        {
+          "id": "@ShieldbearerSpawnTrigger"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnShieldbearerEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@Shieldbearer"
+    },
+    {
+      "id": "ShieldbearerArmor",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 5
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ShieldbearerSpawnTrigger",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Apply <b>5</b>[armor] to itself."
+      },
+      "effects": [
+        "@ShieldbearerArmor"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Shieldbearer",
+      "path": "textures/ShieldbearerCardArt.png"
+    },
+    {
+      "id": "ShieldbearerCharacterArt",
+      "path": "textures/ShieldbearerCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Shieldbearer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Shieldbearer"
+        }
+      }
+    },
+    {
+      "id": "ShieldbearerCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@ShieldbearerCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 0.5,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}
