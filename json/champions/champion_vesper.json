@@ -33,6 +33,7 @@
         "english": "Vesper"
       },
       "character_art": "@VesperCharacterArt",
+      "chatter": "@CTR_Vesper",
       "size": 1,
       "attack_damage": 5,
       "health": 22,

@@ -33,6 +33,7 @@
         "english": "Roderic"
       },
       "character_art": "@RodericCharacterArt",
+      "chatter": "@CTR_Roderic",
       "size": 1,
       "attack_damage": 8,
       "health": 30,
