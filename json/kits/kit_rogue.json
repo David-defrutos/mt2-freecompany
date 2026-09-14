@@ -1,0 +1,223 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Lockpicks",
+      "names": {
+        "english": "Lockpicks"
+      },
+      "descriptions": {
+        "english": "<b>+4</b>[attack]. Apply <b>1</b>[avarice] and <b>2</b>[stealth]."
+      },
+      "card_art": "@Lockpicks",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipLockpicks"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Opens most things. Including people."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "PoisonedDagger",
+      "names": {
+        "english": "Poisoned Dagger"
+      },
+      "descriptions": {
+        "english": "<b>+9</b>[attack]. Apply <b>2</b>[avarice] and <b>4</b>[stealth]."
+      },
+      "card_art": "@PoisonedDagger",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipPoisonedDagger"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "The fee is per cut."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "ThiefsMantle",
+      "names": {
+        "english": "Thief's Mantle"
+      },
+      "descriptions": {
+        "english": "<b>+15</b>[attack]. Apply <b>4</b>[avarice] and <b>6</b>[stealth]."
+      },
+      "card_art": "@ThiefsMantle",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipThiefsMantle"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "You paid for it. You just do not remember."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UpgLockpicks",
+      "titles": {
+        "english": "Lockpicks"
+      },
+      "descriptions": {
+        "english": "<b>+4</b>[attack]. Apply <b>1</b>[avarice] and <b>2</b>[stealth]."
+      },
+      "icon": "@Lockpicks",
+      "bonus_damage": 4,
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 1
+        },
+        {
+          "status": "stealth",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "UpgPoisonedDagger",
+      "titles": {
+        "english": "Poisoned Dagger"
+      },
+      "descriptions": {
+        "english": "<b>+9</b>[attack]. Apply <b>2</b>[avarice] and <b>4</b>[stealth]."
+      },
+      "icon": "@PoisonedDagger",
+      "bonus_damage": 9,
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 2
+        },
+        {
+          "status": "stealth",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "UpgThiefsMantle",
+      "titles": {
+        "english": "Thief's Mantle"
+      },
+      "descriptions": {
+        "english": "<b>+15</b>[attack]. Apply <b>4</b>[avarice] and <b>6</b>[stealth]."
+      },
+      "icon": "@ThiefsMantle",
+      "bonus_damage": 15,
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 4
+        },
+        {
+          "status": "stealth",
+          "count": 6
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EquipLockpicks",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgLockpicks"
+    },
+    {
+      "id": "EquipPoisonedDagger",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgPoisonedDagger"
+    },
+    {
+      "id": "EquipThiefsMantle",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgThiefsMantle"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Lockpicks",
+      "path": "textures/LockpicksArt.png"
+    },
+    {
+      "id": "PoisonedDagger",
+      "path": "textures/PoisonedDaggerArt.png"
+    },
+    {
+      "id": "ThiefsMantle",
+      "path": "textures/ThiefsMantleArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Lockpicks",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Lockpicks"
+        }
+      }
+    },
+    {
+      "id": "PoisonedDagger",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@PoisonedDagger"
+        }
+      }
+    },
+    {
+      "id": "ThiefsMantle",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@ThiefsMantle"
+        }
+      }
+    }
+  ]
+}

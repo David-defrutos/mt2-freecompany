@@ -25,6 +25,9 @@
         {
           "english": "It never misses. That is the whole trick."
         }
+      ],
+      "pools": [
+        "StarterCardsOnly"
       ]
     }
   ],

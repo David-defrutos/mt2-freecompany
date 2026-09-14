@@ -2,60 +2,60 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "ShieldWall",
+      "id": "Grease",
       "names": {
-        "english": "Shield Wall"
+        "english": "Grease"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+        "english": "Apply <b>1</b>[rooted] to all enemies in a room."
       },
-      "card_art": "@ShieldWall",
+      "card_art": "@Grease",
       "cost": 1,
       "card_type": "spell",
-      "rarity": "starter",
+      "rarity": "common",
       "class": "@ClassFreeCompany",
       "targets_room": true,
-      "targetless": false,
+      "targetless": true,
       "effects": [
-        "@ShieldWallArmor"
+        "@GreaseRooted"
       ],
       "lore_tooltips": [
         {
-          "english": "Cheaper than a funeral."
+          "english": "Bosses keep their footing."
         }
       ],
       "pools": [
-        "StarterCardsOnly"
+        "MegaPool"
       ]
     }
   ],
   "effects": [
     {
-      "id": "ShieldWallArmor",
+      "id": "GreaseRooted",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
-      "target_team": "monsters",
+      "target_team": "heroes",
       "param_status_effects": [
         {
-          "status": "armor",
-          "count": 3
+          "status": "rooted",
+          "count": 1
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "ShieldWall",
-      "path": "textures/ShieldWallArt.png"
+      "id": "Grease",
+      "path": "textures/GreaseArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "ShieldWall",
+      "id": "Grease",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@ShieldWall"
+          "sprite": "@Grease"
         }
       }
     }

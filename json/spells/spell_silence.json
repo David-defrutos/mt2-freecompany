@@ -2,60 +2,60 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "ShieldWall",
+      "id": "Silence",
       "names": {
-        "english": "Shield Wall"
+        "english": "Silence"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+        "english": "Apply <b>1</b>[silenced] to an enemy."
       },
-      "card_art": "@ShieldWall",
+      "card_art": "@Silence",
       "cost": 1,
       "card_type": "spell",
-      "rarity": "starter",
+      "rarity": "uncommon",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@ShieldWallArmor"
+        "@SilenceEnemy"
       ],
       "lore_tooltips": [
         {
-          "english": "Cheaper than a funeral."
+          "english": "The quiet is the point."
         }
       ],
       "pools": [
-        "StarterCardsOnly"
+        "MegaPool"
       ]
     }
   ],
   "effects": [
     {
-      "id": "ShieldWallArmor",
+      "id": "SilenceEnemy",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
-      "target_team": "monsters",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
       "param_status_effects": [
         {
-          "status": "armor",
-          "count": 3
+          "status": "silenced",
+          "count": 1
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "ShieldWall",
-      "path": "textures/ShieldWallArt.png"
+      "id": "Silence",
+      "path": "textures/SilenceArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "ShieldWall",
+      "id": "Silence",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@ShieldWall"
+          "sprite": "@Silence"
         }
       }
     }

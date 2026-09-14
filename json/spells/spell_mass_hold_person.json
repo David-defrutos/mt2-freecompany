@@ -2,60 +2,60 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "ShieldWall",
+      "id": "MassHoldPerson",
       "names": {
-        "english": "Shield Wall"
+        "english": "Mass Hold Person"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+        "english": "Apply <b>2</b>[dazed] to all enemies in a room."
       },
-      "card_art": "@ShieldWall",
-      "cost": 1,
+      "card_art": "@MassHoldPerson",
+      "cost": 4,
       "card_type": "spell",
-      "rarity": "starter",
+      "rarity": "rare",
       "class": "@ClassFreeCompany",
       "targets_room": true,
-      "targetless": false,
+      "targetless": true,
       "effects": [
-        "@ShieldWallArmor"
+        "@MassHoldDazed"
       ],
       "lore_tooltips": [
         {
-          "english": "Cheaper than a funeral."
+          "english": "Nobody moves. Nobody pays."
         }
       ],
       "pools": [
-        "StarterCardsOnly"
+        "MegaPool"
       ]
     }
   ],
   "effects": [
     {
-      "id": "ShieldWallArmor",
+      "id": "MassHoldDazed",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
-      "target_team": "monsters",
+      "target_team": "heroes",
       "param_status_effects": [
         {
-          "status": "armor",
-          "count": 3
+          "status": "dazed",
+          "count": 2
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "ShieldWall",
-      "path": "textures/ShieldWallArt.png"
+      "id": "MassHoldPerson",
+      "path": "textures/MassHoldPersonArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "ShieldWall",
+      "id": "MassHoldPerson",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@ShieldWall"
+          "sprite": "@MassHoldPerson"
         }
       }
     }

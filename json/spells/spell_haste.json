@@ -2,60 +2,60 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "ShieldWall",
+      "id": "Haste",
       "names": {
-        "english": "Shield Wall"
+        "english": "Haste"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+        "english": "Apply <b>2</b>[burst] to a friendly unit."
       },
-      "card_art": "@ShieldWall",
-      "cost": 1,
+      "card_art": "@Haste",
+      "cost": 2,
       "card_type": "spell",
-      "rarity": "starter",
+      "rarity": "uncommon",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@ShieldWallArmor"
+        "@HasteBurst"
       ],
       "lore_tooltips": [
         {
-          "english": "Cheaper than a funeral."
+          "english": "One more swing, paid in advance."
         }
       ],
       "pools": [
-        "StarterCardsOnly"
+        "MegaPool"
       ]
     }
   ],
   "effects": [
     {
-      "id": "ShieldWallArmor",
+      "id": "HasteBurst",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
+      "target_mode": "drop_target_character",
       "target_team": "monsters",
       "param_status_effects": [
         {
-          "status": "armor",
-          "count": 3
+          "status": "burst",
+          "count": 2
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "ShieldWall",
-      "path": "textures/ShieldWallArt.png"
+      "id": "Haste",
+      "path": "textures/HasteArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "ShieldWall",
+      "id": "Haste",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@ShieldWall"
+          "sprite": "@Haste"
         }
       }
     }

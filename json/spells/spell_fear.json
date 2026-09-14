@@ -1,0 +1,58 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Fear",
+      "names": {
+        "english": "Fear"
+      },
+      "descriptions": {
+        "english": "Move an enemy unit to another floor."
+      },
+      "card_art": "@Fear",
+      "cost": 2,
+      "card_type": "spell",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@FearRearrange"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "They run. They always run."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "FearRearrange",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "param_int": 0
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Fear",
+      "path": "textures/FearArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Fear",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Fear"
+        }
+      }
+    }
+  ]
+}

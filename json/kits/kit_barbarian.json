@@ -1,0 +1,274 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "NotchedAxe",
+      "names": {
+        "english": "Notched Axe"
+      },
+      "descriptions": {
+        "english": "<b>+5</b>[attack]. <b>Slay</b>: gain <b>2</b>[buff]."
+      },
+      "card_art": "@NotchedAxe",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipNotchedAxe"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Every notch a name."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "TwinAxes",
+      "names": {
+        "english": "Twin Axes"
+      },
+      "descriptions": {
+        "english": "<b>+10</b>[attack]. <b>Slay</b>: gain <b>4</b>[buff]."
+      },
+      "card_art": "@TwinAxes",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipTwinAxes"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "One for each hand."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "ReaversMaul",
+      "names": {
+        "english": "Reaver's Maul"
+      },
+      "descriptions": {
+        "english": "<b>+18</b>[attack]. <b>Slay</b>: gain <b>6</b>[buff] and <b>1</b>[burst]."
+      },
+      "card_art": "@ReaversMaul",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipReaversMaul"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "It does not cut. It does not need to."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UpgNotchedAxe",
+      "titles": {
+        "english": "Notched Axe"
+      },
+      "descriptions": {
+        "english": "<b>+5</b>[attack]. <b>Slay</b>: gain <b>2</b>[buff]."
+      },
+      "icon": "@NotchedAxe",
+      "bonus_damage": 5,
+      "trigger_upgrades": [
+        "@NotchedAxeTrigger"
+      ]
+    },
+    {
+      "id": "UpgTwinAxes",
+      "titles": {
+        "english": "Twin Axes"
+      },
+      "descriptions": {
+        "english": "<b>+10</b>[attack]. <b>Slay</b>: gain <b>4</b>[buff]."
+      },
+      "icon": "@TwinAxes",
+      "bonus_damage": 10,
+      "trigger_upgrades": [
+        "@TwinAxesTrigger"
+      ]
+    },
+    {
+      "id": "UpgReaversMaul",
+      "titles": {
+        "english": "Reaver's Maul"
+      },
+      "descriptions": {
+        "english": "<b>+18</b>[attack]. <b>Slay</b>: gain <b>6</b>[buff] and <b>1</b>[burst]."
+      },
+      "icon": "@ReaversMaul",
+      "bonus_damage": 18,
+      "trigger_upgrades": [
+        "@ReaversMaulTrigger"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "NotchedAxeTrigger",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Gain <b>2</b>[buff]."
+      },
+      "effects": [
+        "@NotchedAxeTrigEffect"
+      ]
+    },
+    {
+      "id": "TwinAxesTrigger",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Gain <b>4</b>[buff]."
+      },
+      "effects": [
+        "@TwinAxesTrigEffect"
+      ]
+    },
+    {
+      "id": "ReaversMaulTrigger",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Gain <b>6</b>[buff] and <b>1</b>[burst]."
+      },
+      "effects": [
+        "@ReaversMaulTrigEffect"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "NotchedAxeTrigEffect",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "EquipNotchedAxe",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgNotchedAxe"
+    },
+    {
+      "id": "TwinAxesTrigEffect",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "EquipTwinAxes",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgTwinAxes"
+    },
+    {
+      "id": "ReaversMaulTrigEffect",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 6
+        },
+        {
+          "status": "burst",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "EquipReaversMaul",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgReaversMaul"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "NotchedAxe",
+      "path": "textures/NotchedAxeArt.png"
+    },
+    {
+      "id": "TwinAxes",
+      "path": "textures/TwinAxesArt.png"
+    },
+    {
+      "id": "ReaversMaul",
+      "path": "textures/ReaversMaulArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "NotchedAxe",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@NotchedAxe"
+        }
+      }
+    },
+    {
+      "id": "TwinAxes",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@TwinAxes"
+        }
+      }
+    },
+    {
+      "id": "ReaversMaul",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@ReaversMaul"
+        }
+      }
+    }
+  ]
+}

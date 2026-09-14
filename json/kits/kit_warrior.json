@@ -1,0 +1,223 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Buckler",
+      "names": {
+        "english": "Buckler"
+      },
+      "descriptions": {
+        "english": "<b>+8</b>[health]. Apply <b>3</b>[armor]."
+      },
+      "card_art": "@Buckler",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipBuckler"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Better than nothing. Barely."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "KiteShield",
+      "names": {
+        "english": "Kite Shield"
+      },
+      "descriptions": {
+        "english": "<b>+15</b>[health]. Apply <b>6</b>[armor] and <b>2</b>[steelguard]."
+      },
+      "card_art": "@KiteShield",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipKiteShield"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Now we are talking."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "BulwarkPlate",
+      "names": {
+        "english": "Bulwark Plate"
+      },
+      "descriptions": {
+        "english": "<b>+25</b>[health]. Apply <b>10</b>[armor], <b>3</b>[steelguard] and <b>1</b>[titanskin]."
+      },
+      "card_art": "@BulwarkPlate",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipBulwarkPlate"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Two men to carry it. One to wear it."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UpgBuckler",
+      "titles": {
+        "english": "Buckler"
+      },
+      "descriptions": {
+        "english": "<b>+8</b>[health]. Apply <b>3</b>[armor]."
+      },
+      "icon": "@Buckler",
+      "bonus_hp": 8,
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "UpgKiteShield",
+      "titles": {
+        "english": "Kite Shield"
+      },
+      "descriptions": {
+        "english": "<b>+15</b>[health]. Apply <b>6</b>[armor] and <b>2</b>[steelguard]."
+      },
+      "icon": "@KiteShield",
+      "bonus_hp": 15,
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 6
+        },
+        {
+          "status": "steelguard",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "UpgBulwarkPlate",
+      "titles": {
+        "english": "Bulwark Plate"
+      },
+      "descriptions": {
+        "english": "<b>+25</b>[health]. Apply <b>10</b>[armor], <b>3</b>[steelguard] and <b>1</b>[titanskin]."
+      },
+      "icon": "@BulwarkPlate",
+      "bonus_hp": 25,
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 10
+        },
+        {
+          "status": "steelguard",
+          "count": 3
+        },
+        {
+          "status": "titanskin",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EquipBuckler",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgBuckler"
+    },
+    {
+      "id": "EquipKiteShield",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgKiteShield"
+    },
+    {
+      "id": "EquipBulwarkPlate",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgBulwarkPlate"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Buckler",
+      "path": "textures/BucklerArt.png"
+    },
+    {
+      "id": "KiteShield",
+      "path": "textures/KiteShieldArt.png"
+    },
+    {
+      "id": "BulwarkPlate",
+      "path": "textures/BulwarkPlateArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Buckler",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Buckler"
+        }
+      }
+    },
+    {
+      "id": "KiteShield",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@KiteShield"
+        }
+      }
+    },
+    {
+      "id": "BulwarkPlate",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@BulwarkPlate"
+        }
+      }
+    }
+  ]
+}

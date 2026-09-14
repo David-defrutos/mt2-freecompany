@@ -2,60 +2,55 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "ShieldWall",
+      "id": "CureWounds",
       "names": {
-        "english": "Shield Wall"
+        "english": "Cure Wounds"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+        "english": "Restore <b>8</b> health to a friendly unit."
       },
-      "card_art": "@ShieldWall",
+      "card_art": "@CureWounds",
       "cost": 1,
       "card_type": "spell",
-      "rarity": "starter",
+      "rarity": "common",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@ShieldWallArmor"
+        "@CureWoundsHeal"
       ],
       "lore_tooltips": [
         {
-          "english": "Cheaper than a funeral."
+          "english": "Billed separately."
         }
       ],
       "pools": [
-        "StarterCardsOnly"
+        "MegaPool"
       ]
     }
   ],
   "effects": [
     {
-      "id": "ShieldWallArmor",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
+      "id": "CureWoundsHeal",
+      "name": "CardEffectHeal",
+      "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_status_effects": [
-        {
-          "status": "armor",
-          "count": 3
-        }
-      ]
+      "param_int": 8
     }
   ],
   "sprites": [
     {
-      "id": "ShieldWall",
-      "path": "textures/ShieldWallArt.png"
+      "id": "CureWounds",
+      "path": "textures/CureWoundsArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "ShieldWall",
+      "id": "CureWounds",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@ShieldWall"
+          "sprite": "@CureWounds"
         }
       }
     }

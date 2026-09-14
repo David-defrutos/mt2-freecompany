@@ -2,60 +2,55 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "ShieldWall",
+      "id": "DimensionDoor",
       "names": {
-        "english": "Shield Wall"
+        "english": "Dimension Door"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+        "english": "Move a friendly unit to another floor."
       },
-      "card_art": "@ShieldWall",
+      "card_art": "@DimensionDoor",
       "cost": 1,
       "card_type": "spell",
-      "rarity": "starter",
+      "rarity": "uncommon",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@ShieldWallArmor"
+        "@DimensionDoorRearrange"
       ],
       "lore_tooltips": [
         {
-          "english": "Cheaper than a funeral."
+          "english": "Mind the step."
         }
       ],
       "pools": [
-        "StarterCardsOnly"
+        "MegaPool"
       ]
     }
   ],
   "effects": [
     {
-      "id": "ShieldWallArmor",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
+      "id": "DimensionDoorRearrange",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_status_effects": [
-        {
-          "status": "armor",
-          "count": 3
-        }
-      ]
+      "param_int": 0
     }
   ],
   "sprites": [
     {
-      "id": "ShieldWall",
-      "path": "textures/ShieldWallArt.png"
+      "id": "DimensionDoor",
+      "path": "textures/DimensionDoorArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "ShieldWall",
+      "id": "DimensionDoor",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@ShieldWall"
+          "sprite": "@DimensionDoor"
         }
       }
     }

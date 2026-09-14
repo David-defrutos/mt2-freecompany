@@ -2,60 +2,60 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "ShieldWall",
+      "id": "Resurrection",
       "names": {
-        "english": "Shield Wall"
+        "english": "Resurrection"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+        "english": "Apply <b>1</b>[undying] to a friendly unit."
       },
-      "card_art": "@ShieldWall",
-      "cost": 1,
+      "card_art": "@Resurrection",
+      "cost": 2,
       "card_type": "spell",
-      "rarity": "starter",
+      "rarity": "rare",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@ShieldWallArmor"
+        "@ResurrectionUndying"
       ],
       "lore_tooltips": [
         {
-          "english": "Cheaper than a funeral."
+          "english": "The contract does not end at death."
         }
       ],
       "pools": [
-        "StarterCardsOnly"
+        "MegaPool"
       ]
     }
   ],
   "effects": [
     {
-      "id": "ShieldWallArmor",
+      "id": "ResurrectionUndying",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
+      "target_mode": "drop_target_character",
       "target_team": "monsters",
       "param_status_effects": [
         {
-          "status": "armor",
-          "count": 3
+          "status": "undying",
+          "count": 1
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "ShieldWall",
-      "path": "textures/ShieldWallArt.png"
+      "id": "Resurrection",
+      "path": "textures/ResurrectionArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "ShieldWall",
+      "id": "Resurrection",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@ShieldWall"
+          "sprite": "@Resurrection"
         }
       }
     }

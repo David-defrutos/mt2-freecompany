@@ -1,0 +1,82 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "ThePit",
+      "names": {
+        "english": "The Pit"
+      },
+      "descriptions": {
+        "english": "Enemies in this room have <b>1</b>[rooted]."
+      },
+      "card_art": "@ThePit",
+      "cost": 1,
+      "card_type": "room",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@ThePitRoomEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Deep enough. Not deep enough to matter."
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_RoomPool",
+        "RoomAndEquipmentDraftPool",
+        "TrainRoomPool"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ThePitRoomUpgrade",
+      "titles": {
+        "english": "The Pit"
+      },
+      "descriptions": {
+        "english": "Enemies in this room have <b>1</b>[rooted]."
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "rooted",
+          "count": 1
+        }
+      ],
+      "hide_icon_on_card": true,
+      "icon": "@ThePit"
+    }
+  ],
+  "effects": [
+    {
+      "id": "ThePitRoomEffect",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_upgrade": "@ThePitRoomUpgrade",
+      "param_bool": false,
+      "param_bool_2": false
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ThePit",
+      "path": "textures/ThePitArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "ThePit",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@ThePit"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Cloudkill",
+      "names": {
+        "english": "Cloudkill"
+      },
+      "descriptions": {
+        "english": "Apply <b>6</b>[poison] and <b>3</b>[witherbloom] to all enemies in a room."
+      },
+      "card_art": "@Cloudkill",
+      "cost": 3,
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@CloudkillPoison",
+        "@CloudkillWither"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Do not breathe in."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "CloudkillPoison",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": "CloudkillWither",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "witherbloom",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Cloudkill",
+      "path": "textures/CloudkillArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Cloudkill",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Cloudkill"
+        }
+      }
+    }
+  ]
+}

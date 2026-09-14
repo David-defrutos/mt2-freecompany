@@ -2,42 +2,42 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "ShieldWall",
+      "id": "Invisibility",
       "names": {
-        "english": "Shield Wall"
+        "english": "Invisibility"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+        "english": "Apply <b>3</b>[stealth] to a friendly unit."
       },
-      "card_art": "@ShieldWall",
+      "card_art": "@Invisibility",
       "cost": 1,
       "card_type": "spell",
-      "rarity": "starter",
+      "rarity": "uncommon",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@ShieldWallArmor"
+        "@InvisibilityStealth"
       ],
       "lore_tooltips": [
         {
-          "english": "Cheaper than a funeral."
+          "english": "Still charges full rate."
         }
       ],
       "pools": [
-        "StarterCardsOnly"
+        "MegaPool"
       ]
     }
   ],
   "effects": [
     {
-      "id": "ShieldWallArmor",
+      "id": "InvisibilityStealth",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
+      "target_mode": "drop_target_character",
       "target_team": "monsters",
       "param_status_effects": [
         {
-          "status": "armor",
+          "status": "stealth",
           "count": 3
         }
       ]
@@ -45,17 +45,17 @@
   ],
   "sprites": [
     {
-      "id": "ShieldWall",
-      "path": "textures/ShieldWallArt.png"
+      "id": "Invisibility",
+      "path": "textures/InvisibilityArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "ShieldWall",
+      "id": "Invisibility",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@ShieldWall"
+          "sprite": "@Invisibility"
         }
       }
     }

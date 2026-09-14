@@ -1,0 +1,82 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Caltrops",
+      "names": {
+        "english": "Caltrops"
+      },
+      "descriptions": {
+        "english": "Enemies in this room have <b>2</b>[decay]."
+      },
+      "card_art": "@Caltrops",
+      "cost": 1,
+      "card_type": "room",
+      "rarity": "common",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@CaltropsRoomEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Cheap, and it never stops working."
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_RoomPool",
+        "RoomAndEquipmentDraftPool",
+        "TrainRoomPool"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "CaltropsRoomUpgrade",
+      "titles": {
+        "english": "Caltrops"
+      },
+      "descriptions": {
+        "english": "Enemies in this room have <b>2</b>[decay]."
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "decay",
+          "count": 2
+        }
+      ],
+      "hide_icon_on_card": true,
+      "icon": "@Caltrops"
+    }
+  ],
+  "effects": [
+    {
+      "id": "CaltropsRoomEffect",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_upgrade": "@CaltropsRoomUpgrade",
+      "param_bool": false,
+      "param_bool_2": false
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Caltrops",
+      "path": "textures/CaltropsArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Caltrops",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Caltrops"
+        }
+      }
+    }
+  ]
+}

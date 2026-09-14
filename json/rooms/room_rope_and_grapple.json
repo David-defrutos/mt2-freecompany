@@ -1,0 +1,82 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "RopeAndGrapple",
+      "names": {
+        "english": "Rope & Grapple"
+      },
+      "descriptions": {
+        "english": "Friendly units in this room have <b>1</b>[haste]."
+      },
+      "card_art": "@RopeAndGrapple",
+      "cost": 1,
+      "card_type": "room",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@RopeAndGrappleRoomEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Up you go."
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_RoomPool",
+        "RoomAndEquipmentDraftPool",
+        "TrainRoomPool"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "RopeAndGrappleRoomUpgrade",
+      "titles": {
+        "english": "Rope & Grapple"
+      },
+      "descriptions": {
+        "english": "Friendly units in this room have <b>1</b>[haste]."
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "haste",
+          "count": 1
+        }
+      ],
+      "hide_icon_on_card": true,
+      "icon": "@RopeAndGrapple"
+    }
+  ],
+  "effects": [
+    {
+      "id": "RopeAndGrappleRoomEffect",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_upgrade": "@RopeAndGrappleRoomUpgrade",
+      "param_bool": false,
+      "param_bool_2": false
+    }
+  ],
+  "sprites": [
+    {
+      "id": "RopeAndGrapple",
+      "path": "textures/RopeAndGrappleArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "RopeAndGrapple",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@RopeAndGrapple"
+        }
+      }
+    }
+  ]
+}

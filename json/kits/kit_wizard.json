@@ -1,0 +1,214 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "ChalkCircle",
+      "names": {
+        "english": "Chalk Circle"
+      },
+      "descriptions": {
+        "english": "Apply <b>1</b>[conduit]."
+      },
+      "card_art": "@ChalkCircle",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipChalkCircle"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Draw it twice. It is never right the first time."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "Grimoire",
+      "names": {
+        "english": "Grimoire"
+      },
+      "descriptions": {
+        "english": "<b>+6</b>[attack]. Apply <b>2</b>[conduit]."
+      },
+      "card_art": "@Grimoire",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipGrimoire"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Somebody else's notes."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "ArchmagesStaff",
+      "names": {
+        "english": "Archmage's Staff"
+      },
+      "descriptions": {
+        "english": "<b>+12</b>[attack]. Apply <b>3</b>[conduit] and <b>2</b>[mageblade]."
+      },
+      "card_art": "@ArchmagesStaff",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipArchmagesStaff"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "The archmage is not using it."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UpgChalkCircle",
+      "titles": {
+        "english": "Chalk Circle"
+      },
+      "descriptions": {
+        "english": "Apply <b>1</b>[conduit]."
+      },
+      "icon": "@ChalkCircle",
+      "status_effect_upgrades": [
+        {
+          "status": "conduit",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "UpgGrimoire",
+      "titles": {
+        "english": "Grimoire"
+      },
+      "descriptions": {
+        "english": "<b>+6</b>[attack]. Apply <b>2</b>[conduit]."
+      },
+      "icon": "@Grimoire",
+      "bonus_damage": 6,
+      "status_effect_upgrades": [
+        {
+          "status": "conduit",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "UpgArchmagesStaff",
+      "titles": {
+        "english": "Archmage's Staff"
+      },
+      "descriptions": {
+        "english": "<b>+12</b>[attack]. Apply <b>3</b>[conduit] and <b>2</b>[mageblade]."
+      },
+      "icon": "@ArchmagesStaff",
+      "bonus_damage": 12,
+      "status_effect_upgrades": [
+        {
+          "status": "conduit",
+          "count": 3
+        },
+        {
+          "status": "mageblade",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EquipChalkCircle",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgChalkCircle"
+    },
+    {
+      "id": "EquipGrimoire",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgGrimoire"
+    },
+    {
+      "id": "EquipArchmagesStaff",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgArchmagesStaff"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ChalkCircle",
+      "path": "textures/ChalkCircleArt.png"
+    },
+    {
+      "id": "Grimoire",
+      "path": "textures/GrimoireArt.png"
+    },
+    {
+      "id": "ArchmagesStaff",
+      "path": "textures/ArchmagesStaffArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "ChalkCircle",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@ChalkCircle"
+        }
+      }
+    },
+    {
+      "id": "Grimoire",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Grimoire"
+        }
+      }
+    },
+    {
+      "id": "ArchmagesStaff",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@ArchmagesStaff"
+        }
+      }
+    }
+  ]
+}

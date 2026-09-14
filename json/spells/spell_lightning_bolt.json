@@ -1,0 +1,58 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "LightningBolt",
+      "names": {
+        "english": "Lightning Bolt"
+      },
+      "descriptions": {
+        "english": "Deal <b>25</b> damage to the front enemy on every floor."
+      },
+      "card_art": "@LightningBolt",
+      "cost": 3,
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@LightningBoltDamage"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Straight down the line."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "LightningBoltDamage",
+      "name": "CardEffectDamage",
+      "target_mode": "front_in_all_rooms",
+      "target_team": "heroes",
+      "param_int": 25
+    }
+  ],
+  "sprites": [
+    {
+      "id": "LightningBolt",
+      "path": "textures/LightningBoltArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "LightningBolt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@LightningBolt"
+        }
+      }
+    }
+  ]
+}

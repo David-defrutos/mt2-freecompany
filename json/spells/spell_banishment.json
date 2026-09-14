@@ -1,0 +1,78 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Banishment",
+      "names": {
+        "english": "Banishment"
+      },
+      "descriptions": {
+        "english": "Apply <b>1</b>[untouchable] and <b>3</b>[doom] to an enemy. Cannot target bosses."
+      },
+      "card_art": "@Banishment",
+      "cost": 3,
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@BanishmentStasis",
+        "@BanishmentDoom"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Sent somewhere else. Not invited back."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "BanishmentStasis",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "target_ignore_bosses": true,
+      "param_status_effects": [
+        {
+          "status": "untouchable",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "BanishmentDoom",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "target_ignore_bosses": true,
+      "param_status_effects": [
+        {
+          "status": "doom",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Banishment",
+      "path": "textures/BanishmentArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Banishment",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Banishment"
+        }
+      }
+    }
+  ]
+}

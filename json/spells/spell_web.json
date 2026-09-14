@@ -1,0 +1,76 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Web",
+      "names": {
+        "english": "Web"
+      },
+      "descriptions": {
+        "english": "Apply <b>1</b>[rooted] and <b>1</b>[restricted] to all enemies in a room."
+      },
+      "card_art": "@Web",
+      "cost": 2,
+      "card_type": "spell",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@WebRooted",
+        "@WebRestricted"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Sticky work."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "WebRooted",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "rooted",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "WebRestricted",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "restricted",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Web",
+      "path": "textures/WebArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Web",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Web"
+        }
+      }
+    }
+  ]
+}

@@ -195,6 +195,29 @@
         "@SpawnFieldMedic",
         "@SpawnLongbowman"
       ]
+    },
+    {
+      "id": "FreeCompanyKitPool",
+      "cards": [
+        "@NotchedAxe",
+        "@TwinAxes",
+        "@ReaversMaul",
+        "@Bandages",
+        "@HolySymbol",
+        "@Reliquary",
+        "@Shortbow",
+        "@Longbow",
+        "@GreatBow",
+        "@Lockpicks",
+        "@PoisonedDagger",
+        "@ThiefsMantle",
+        "@Buckler",
+        "@KiteShield",
+        "@BulwarkPlate",
+        "@ChalkCircle",
+        "@Grimoire",
+        "@ArchmagesStaff"
+      ]
     }
   ],
   "rewards": [

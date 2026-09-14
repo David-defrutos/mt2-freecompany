@@ -1,0 +1,66 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Fireball",
+      "names": {
+        "english": "Fireball"
+      },
+      "descriptions": {
+        "english": "Deal <b>20</b> damage to all enemies in a room and <b>10</b> damage to all friendly units there."
+      },
+      "card_art": "@Fireball",
+      "cost": 3,
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@FireballEnemies",
+        "@FireballAllies"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Vesper did warn you about the blast radius."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "FireballEnemies",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 20
+    },
+    {
+      "id": "FireballAllies",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_int": 10
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Fireball",
+      "path": "textures/FireballArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Fireball",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Fireball"
+        }
+      }
+    }
+  ]
+}

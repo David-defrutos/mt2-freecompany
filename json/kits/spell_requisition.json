@@ -1,0 +1,57 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Requisition",
+      "names": {
+        "english": "Requisition"
+      },
+      "descriptions": {
+        "english": "Issue a friendly unit the next piece of kit for its role."
+      },
+      "card_art": "@Requisition",
+      "cost": 1,
+      "card_type": "spell",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@RequisitionEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Sign for it. You break it, you buy it."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "RequisitionEffect",
+      "name": "@CardEffectRequisition",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Requisition",
+      "path": "textures/RequisitionArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Requisition",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Requisition"
+        }
+      }
+    }
+  ]
+}

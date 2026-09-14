@@ -1,0 +1,223 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Shortbow",
+      "names": {
+        "english": "Shortbow"
+      },
+      "descriptions": {
+        "english": "<b>+5</b>[attack]. Apply <b>1</b>[sniper]."
+      },
+      "card_art": "@Shortbow",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipShortbow"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Short range. Long grudge."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "Longbow",
+      "names": {
+        "english": "Longbow"
+      },
+      "descriptions": {
+        "english": "<b>+12</b>[attack]. Apply <b>1</b>[sniper] and <b>2</b>[piercing]."
+      },
+      "card_art": "@Longbow",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipLongbow"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Pull it and you will know why they train for years."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "GreatBow",
+      "names": {
+        "english": "Great Bow"
+      },
+      "descriptions": {
+        "english": "<b>+20</b>[attack]. Apply <b>1</b>[sniper], <b>4</b>[piercing] and <b>1</b>[sweep]."
+      },
+      "card_art": "@GreatBow",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipGreatBow"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "One arrow. The whole rank."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UpgShortbow",
+      "titles": {
+        "english": "Shortbow"
+      },
+      "descriptions": {
+        "english": "<b>+5</b>[attack]. Apply <b>1</b>[sniper]."
+      },
+      "icon": "@Shortbow",
+      "bonus_damage": 5,
+      "status_effect_upgrades": [
+        {
+          "status": "sniper",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "UpgLongbow",
+      "titles": {
+        "english": "Longbow"
+      },
+      "descriptions": {
+        "english": "<b>+12</b>[attack]. Apply <b>1</b>[sniper] and <b>2</b>[piercing]."
+      },
+      "icon": "@Longbow",
+      "bonus_damage": 12,
+      "status_effect_upgrades": [
+        {
+          "status": "sniper",
+          "count": 1
+        },
+        {
+          "status": "piercing",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "UpgGreatBow",
+      "titles": {
+        "english": "Great Bow"
+      },
+      "descriptions": {
+        "english": "<b>+20</b>[attack]. Apply <b>1</b>[sniper], <b>4</b>[piercing] and <b>1</b>[sweep]."
+      },
+      "icon": "@GreatBow",
+      "bonus_damage": 20,
+      "status_effect_upgrades": [
+        {
+          "status": "sniper",
+          "count": 1
+        },
+        {
+          "status": "piercing",
+          "count": 4
+        },
+        {
+          "status": "sweep",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EquipShortbow",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgShortbow"
+    },
+    {
+      "id": "EquipLongbow",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgLongbow"
+    },
+    {
+      "id": "EquipGreatBow",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgGreatBow"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Shortbow",
+      "path": "textures/ShortbowArt.png"
+    },
+    {
+      "id": "Longbow",
+      "path": "textures/LongbowArt.png"
+    },
+    {
+      "id": "GreatBow",
+      "path": "textures/GreatBowArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Shortbow",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Shortbow"
+        }
+      }
+    },
+    {
+      "id": "Longbow",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Longbow"
+        }
+      }
+    },
+    {
+      "id": "GreatBow",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@GreatBow"
+        }
+      }
+    }
+  ]
+}

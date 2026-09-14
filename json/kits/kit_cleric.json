@@ -1,0 +1,215 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Bandages",
+      "names": {
+        "english": "Bandages"
+      },
+      "descriptions": {
+        "english": "<b>+10</b>[health]. Apply <b>2</b>[regen]."
+      },
+      "card_art": "@Bandages",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipBandages"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Clean ones, even."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "HolySymbol",
+      "names": {
+        "english": "Holy Symbol"
+      },
+      "descriptions": {
+        "english": "<b>+18</b>[health]. Apply <b>4</b>[regen]."
+      },
+      "card_art": "@HolySymbol",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipHolySymbol"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Whose, exactly, is not asked."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    },
+    {
+      "id": "Reliquary",
+      "names": {
+        "english": "Reliquary"
+      },
+      "descriptions": {
+        "english": "<b>+30</b>[health]. Apply <b>6</b>[regen] and <b>1</b>[undying]."
+      },
+      "card_art": "@Reliquary",
+      "cost": 0,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipReliquary"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "A finger bone and a very good story."
+        }
+      ],
+      "pools": [
+        "@FreeCompanyKitPool"
+      ],
+      "unlock_level": 99,
+      "hide_in_logbook": true
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UpgBandages",
+      "titles": {
+        "english": "Bandages"
+      },
+      "descriptions": {
+        "english": "<b>+10</b>[health]. Apply <b>2</b>[regen]."
+      },
+      "icon": "@Bandages",
+      "bonus_hp": 10,
+      "status_effect_upgrades": [
+        {
+          "status": "regen",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "UpgHolySymbol",
+      "titles": {
+        "english": "Holy Symbol"
+      },
+      "descriptions": {
+        "english": "<b>+18</b>[health]. Apply <b>4</b>[regen]."
+      },
+      "icon": "@HolySymbol",
+      "bonus_hp": 18,
+      "status_effect_upgrades": [
+        {
+          "status": "regen",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "UpgReliquary",
+      "titles": {
+        "english": "Reliquary"
+      },
+      "descriptions": {
+        "english": "<b>+30</b>[health]. Apply <b>6</b>[regen] and <b>1</b>[undying]."
+      },
+      "icon": "@Reliquary",
+      "bonus_hp": 30,
+      "status_effect_upgrades": [
+        {
+          "status": "regen",
+          "count": 6
+        },
+        {
+          "status": "undying",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EquipBandages",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgBandages"
+    },
+    {
+      "id": "EquipHolySymbol",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgHolySymbol"
+    },
+    {
+      "id": "EquipReliquary",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgReliquary"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Bandages",
+      "path": "textures/BandagesArt.png"
+    },
+    {
+      "id": "HolySymbol",
+      "path": "textures/HolySymbolArt.png"
+    },
+    {
+      "id": "Reliquary",
+      "path": "textures/ReliquaryArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Bandages",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Bandages"
+        }
+      }
+    },
+    {
+      "id": "HolySymbol",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@HolySymbol"
+        }
+      }
+    },
+    {
+      "id": "Reliquary",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Reliquary"
+        }
+      }
+    }
+  ]
+}

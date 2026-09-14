@@ -1,0 +1,82 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "PaymastersTent",
+      "names": {
+        "english": "Paymaster's Tent"
+      },
+      "descriptions": {
+        "english": "Friendly units in this room have <b>1</b>[avarice]."
+      },
+      "card_art": "@PaymastersTent",
+      "cost": 2,
+      "card_type": "room",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@PaymastersTentRoomEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Sign here. And here."
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_RoomPool",
+        "RoomAndEquipmentDraftPool",
+        "TrainRoomPool"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "PaymastersTentRoomUpgrade",
+      "titles": {
+        "english": "Paymaster's Tent"
+      },
+      "descriptions": {
+        "english": "Friendly units in this room have <b>1</b>[avarice]."
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 1
+        }
+      ],
+      "hide_icon_on_card": true,
+      "icon": "@PaymastersTent"
+    }
+  ],
+  "effects": [
+    {
+      "id": "PaymastersTentRoomEffect",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_upgrade": "@PaymastersTentRoomUpgrade",
+      "param_bool": false,
+      "param_bool_2": false
+    }
+  ],
+  "sprites": [
+    {
+      "id": "PaymastersTent",
+      "path": "textures/PaymastersTentArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "PaymastersTent",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@PaymastersTent"
+        }
+      }
+    }
+  ]
+}
