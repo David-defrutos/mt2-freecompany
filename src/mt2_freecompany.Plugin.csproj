@@ -15,16 +15,13 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
-    <!-- BepInEx.Core trae HarmonyX: hace falta para el parche del logbook -->
-    <PackageReference Include="BepInEx.Core" Version="5.4.21" />
     <PackageReference Include="MonsterTrain2.Api" Version="4.5.21908879" />
-    <!-- Tipos de Unity (Transform, RectTransform, Vector2). UnityEngine.UI NO hace
-         falta: el GridLayoutGroup se toca por reflexion. Mismo criterio que
-         CustomClanHelper. -->
-    <PackageReference Include="UnityEngine.Modules" Version="2022.3.62" IncludeAssets="compile" />
     <PackageReference Include="TrainworksReloaded.Base" Version="0.7.8" />
     <PackageReference Include="Conductor" Version="0.5.2" />
   </ItemGroup>
+
+  <!-- BepInEx.Core (HarmonyX) y UnityEngine.Modules estuvieron aqui el 15-sep por el
+       parche del logbook. Se fueron con el, a David-CustomClanUIFixes. -->
 
   <!-- Mismo criterio que en Sandscourged: json/ y textures/ cuelgan de la raiz
        del mod, no de src/. El build solo produce el DLL. -->

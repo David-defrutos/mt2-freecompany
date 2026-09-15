@@ -1,6 +1,5 @@
 using BepInEx;
 using BepInEx.Logging;
-using HarmonyLib;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
 
@@ -72,40 +71,10 @@ namespace mt2_freecompany.Plugin
                 }
             );
 
-            // --- apano de la pagina de mejoras del logbook (LogbookClanFit.cs) ---
-            // No tiene nada que ver con el clan: es una correccion de interfaz para que
-            // se vean todos los clanes instalados. Se apaga desde el config de BepInEx.
-            var cfgActivo = Config.Bind(
-                "LogbookFit", "Enabled", true,
-                "Encaja los rombos de clan de la pagina de mejoras del logbook cuando no caben.");
-            var cfgEscalaMinima = Config.Bind(
-                "LogbookFit", "MinScale", 0.45f,
-                "Hasta donde se deja encoger un rombo. 1 = tamano original.");
-            var cfgColumnas = Config.Bind(
-                "LogbookFit", "MaxAutoColumns", 2,
-                "2 = no se toca la rejilla del juego, solo se escala (lo probado). 3 o mas = rejilla propia, experimental.");
-            var cfgSeparacion = Config.Bind(
-                "LogbookFit", "ColumnSpacing", 16f,
-                "Separacion entre columnas cuando se pasa de dos. La del juego son 96 px.");
-            var cfgAlto = Config.Bind(
-                "LogbookFit", "HeightBudget", 0f,
-                "Alto util de la hoja en pixeles. 0 = detectarlo solo (medido: 1000).");
-            var cfgAncho = Config.Bind(
-                "LogbookFit", "WidthBudget", 0f,
-                "Ancho util de la hoja en pixeles. 0 = detectarlo solo (medido: 400).");
-            var cfgTraza = Config.Bind(
-                "LogbookFit", "Verbose", true,
-                "Escribe en LogOutput.log lo que mide y lo que ajusta.");
-
-            LogbookClanFit.Enabled = cfgActivo.Value;
-            LogbookClanFit.MinScale = cfgEscalaMinima.Value;
-            LogbookClanFit.MaxAutoColumns = cfgColumnas.Value;
-            LogbookClanFit.ColumnSpacing = cfgSeparacion.Value;
-            LogbookClanFit.HeightBudget = cfgAlto.Value;
-            LogbookClanFit.WidthBudget = cfgAncho.Value;
-            LogbookClanFit.Verbose = cfgTraza.Value;
-
-            new Harmony(MyPluginInfo.PLUGIN_GUID).PatchAll();
+            // El arreglo de la pantalla de mejoras del logbook VIVIA AQUI hasta el 15-sep.
+            // Se saco a su propio mod, David-CustomClanUIFixes
+            // (https://github.com/David-defrutos/mt2-custom-clan-ui-fixes), porque no tiene
+            // nada que ver con este clan y debe funcionar sin el.
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
         }
