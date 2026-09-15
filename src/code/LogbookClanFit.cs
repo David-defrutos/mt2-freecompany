@@ -105,10 +105,10 @@ namespace mt2_freecompany.Plugin
                 if (hayCrew) botones.AddRange(Hijos(c2!));
                 if (botones.Count == 0) return;
 
-                float zonaAncho = 0f, zonaAlto = 0f;
-                Zona(padre, ref zonaAncho, ref zonaAlto);
-                if (HeightBudget > 1f) zonaAlto = HeightBudget;
-                if (WidthBudget > 1f) zonaAncho = WidthBudget;
+                var zona = Zona(padre);
+                if (zona == null) return;
+                float zonaAncho = WidthBudget > 1f ? WidthBudget : zona.rect.width;
+                float zonaAlto = HeightBudget > 1f ? HeightBudget : zona.rect.height;
                 if (zonaAlto <= 1f || zonaAncho <= 1f) return;
 
                 // --- camino seguro: la rejilla la sigue haciendo el juego y aqui solo se
@@ -160,30 +160,42 @@ namespace mt2_freecompany.Plugin
                 }
                 mejorK = Mathf.Clamp(mejorK, MinScale, 1f);
 
-                // --- colocar, columna a columna, de arriba abajo
+                // La escala va en el contenedor: encoge tambien los huecos entre columnas.
+                // Se aplica ANTES de colocar, porque la colocacion va en coordenadas de mundo
+                // y necesita la escala ya puesta.
+                c1.localScale = Vector3.one;
+                if (c2 != null) c2.localScale = Vector3.one;
+                padre.localScale = new Vector3(mejorK, mejorK, 1f);
+
+                // --- colocar la rejilla CENTRADA EN LA ZONA, en coordenadas de mundo.
+                // Nada de calcular una esquina de salida a partir de la primera columna: eso
+                // depende de anclas, pivotes y del tamano de unos padres que cambian al
+                // apagarles el layout, y fue lo que dejo los rombos sobre el encabezado.
                 int filasFinal = Mathf.CeilToInt((float)total / mejorN);
                 float hgap = mejorN > 2 ? ColumnSpacing : hgapNatural;
+
+                float f = zona.lossyScale.x != 0f ? padre.lossyScale.x / zona.lossyScale.x : mejorK;
+                float pasoX = (itemNatural + hgap) * f;
+                float pasoY = (itemNatural + vgapNatural) * f;
+                float rombo = itemNatural * f;
+                float anchoRejilla = (mejorN - 1) * pasoX + rombo;
+                float altoRejilla = (filasFinal - 1) * pasoY + rombo;
+
+                float x0 = zona.rect.center.x - anchoRejilla / 2f + rombo / 2f;
+                float y0 = zona.rect.center.y + altoRejilla / 2f - rombo / 2f;
+
                 for (int i = 0; i < total; i++)
                 {
                     int col = i / filasFinal;
                     int fila = i % filasFinal;
                     var boton = botones[i];
-                    var raiz = boton.parent;
-                    if (raiz == null) continue;
-
-                    float x = origen.x + col * (itemNatural + hgap) - raiz.localPosition.x;
-                    float y = origen.y - fila * (itemNatural + vgapNatural) - raiz.localPosition.y;
-                    boton.localPosition = new Vector3(x, y, boton.localPosition.z);
+                    boton.position = zona.TransformPoint(
+                        new Vector3(x0 + col * pasoX, y0 - fila * pasoY, 0f));
                     boton.localScale = Vector3.one;
-                    if (i == 0)
-                        Log($"primer rombo: celda (0,0) en ({x:0}, {y:0}) dentro de {raiz.name} " +
-                            $"(raiz en {raiz.localPosition.x:0}, {raiz.localPosition.y:0})");
                 }
 
-                // La escala va en el contenedor: encoge tambien los huecos entre columnas.
-                c1.localScale = Vector3.one;
-                if (c2 != null) c2.localScale = Vector3.one;
-                padre.localScale = new Vector3(mejorK, mejorK, 1f);
+                Log($"rejilla {anchoRejilla:0}x{altoRejilla:0} centrada en {zona.name} " +
+                    $"({zona.rect.width:0}x{zona.rect.height:0}), salida ({x0:0}, {y0:0})");
 
                 Log($"{total} rombos en {mejorN} columnas de {filasFinal}, factor {mejorK:0.00} " +
                     $"(zona {zonaAncho:0}x{zonaAlto:0}, rombo {itemNatural:0}, huecos {vgapNatural:0}/{hgap:0})");
@@ -257,7 +269,7 @@ namespace mt2_freecompany.Plugin
         /// La zona visible: el primer ancestro con rect. Medido: "Clan selection", 400 x 1000.
         /// La raiz de columnas no vale, se autoexpande con sus hijos.
         /// </summary>
-        static void Zona(RectTransform desde, ref float ancho, ref float alto)
+        static RectTransform? Zona(RectTransform desde)
         {
             var traza = new StringBuilder();
             var p = desde.parent as RectTransform;
@@ -265,17 +277,11 @@ namespace mt2_freecompany.Plugin
             while (p != null && saltos++ < 8)
             {
                 traza.Append($" <- {p.name} {p.rect.width:0}x{p.rect.height:0}");
-                if (p.rect.width > 1f && p.rect.height > 1f)
-                {
-                    ancho = p.rect.width;
-                    alto = p.rect.height;
-                    return;
-                }
+                if (p.rect.width > 1f && p.rect.height > 1f) return p;
                 p = p.parent as RectTransform;
             }
-            Log($"zona: ningun ancestro mide;{traza}; se tira de la pantalla");
-            ancho = Screen.width * 0.30f;
-            alto = Screen.height * 0.70f;
+            Log($"zona: ningun ancestro mide;{traza}", true);
+            return null;
         }
 
         /// <summary>
