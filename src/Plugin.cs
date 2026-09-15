@@ -1,5 +1,6 @@
-﻿using BepInEx;
+using BepInEx;
 using BepInEx.Logging;
+using HarmonyLib;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
 
@@ -70,6 +71,29 @@ namespace mt2_freecompany.Plugin
                     );
                 }
             );
+
+            // --- apano de la pagina de mejoras del logbook (LogbookClanFit.cs) ---
+            // No tiene nada que ver con el clan: es una correccion de interfaz para que
+            // se vean todos los clanes instalados. Se apaga desde el config de BepInEx.
+            var cfgActivo = Config.Bind(
+                "LogbookFit", "Enabled", true,
+                "Encaja los rombos de clan de la pagina de mejoras del logbook cuando no caben.");
+            var cfgEscalaMinima = Config.Bind(
+                "LogbookFit", "MinScale", 0.45f,
+                "Hasta donde se deja encoger un rombo. 1 = tamano original.");
+            var cfgColumnas = Config.Bind(
+                "LogbookFit", "MaxColumns", 0,
+                "Columnas a forzar en la rejilla. 0 = dejar las que ponga el juego.");
+            var cfgTraza = Config.Bind(
+                "LogbookFit", "Verbose", true,
+                "Escribe en LogOutput.log lo que mide y lo que ajusta.");
+
+            LogbookClanFit.Enabled = cfgActivo.Value;
+            LogbookClanFit.MinScale = cfgEscalaMinima.Value;
+            LogbookClanFit.MaxColumns = cfgColumnas.Value;
+            LogbookClanFit.Verbose = cfgTraza.Value;
+
+            new Harmony(MyPluginInfo.PLUGIN_GUID).PatchAll();
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
         }

@@ -15,6 +15,8 @@ namespace mt2_freecompany.Plugin
     /// </summary>
     public sealed class CardEffectRequisition : CardEffectBase
     {
+        // AllGameData NO tiene .Instance: se llega por ICoreGameManagers.GetAllGameData(),
+        // que ya llega como parametro de ApplyEffect. Ver docs/43-api-csharp.md.
         // rol -> los tres escalones, en orden. Los ids son los de json/kits/*.json.
         private static readonly Dictionary<string, string[]> Escaleras = new()
         {
@@ -54,20 +56,20 @@ namespace mt2_freecompany.Plugin
                 int actual = 0;
                 for (int i = 0; i < escalera.Length; i++)
                 {
-                    var data = AllGameData.Instance.FindCardUpgradeData(escalera[i]);
+                    var data = coreGameManagers.GetAllGameData().FindCardUpgradeData(escalera[i]);
                     if (data != null && target.HasUpgrade(data)) actual = i + 1;
                 }
                 if (actual >= escalera.Length)
                     continue;   // ya esta al maximo
 
-                var siguiente = AllGameData.Instance.FindCardUpgradeData(escalera[actual]);
+                var siguiente = coreGameManagers.GetAllGameData().FindCardUpgradeData(escalera[actual]);
                 if (siguiente == null)
                     continue;
 
                 // fuera el anterior, dentro el nuevo
                 if (actual > 0)
                 {
-                    var anterior = AllGameData.Instance.FindCardUpgradeData(escalera[actual - 1]);
+                    var anterior = coreGameManagers.GetAllGameData().FindCardUpgradeData(escalera[actual - 1]);
                     if (anterior != null) target.RemoveCardUpgrade(anterior);
                 }
 
