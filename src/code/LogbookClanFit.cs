@@ -13,39 +13,49 @@ namespace mt2_freecompany.Plugin
     /// (CompendiumSectionChampUpgrades) cuando hay mas clanes de los que cabian.
     ///
     /// Como esta montada la pantalla, medido en partida el 15-sep-2026:
-    ///   - Dos raices, y son LAS DOS COLUMNAS que se ven en la hoja:
-    ///     classesOptionRoot (clanes normales) y crewClassesOptionRoot (tripulacion).
-    ///   - NO hay GridLayoutGroup. Cada raiz es una columna que se autoexpande: con 12
-    ///     clanes medía 136 x 1720 (12 x 136 + 11 x 8 de separacion).
-    ///   - Esa seccion NO hereda de PaginatedCompendiumSection: no pagina, asi que la
-    ///     columna se sale de la hoja por abajo.
+    ///   - Dos raices, y son LAS DOS COLUMNAS de la hoja: classesOptionRoot (clanes
+    ///     normales) y crewClassesOptionRoot (tripulacion). NO hay GridLayoutGroup: cada una
+    ///     es una columna vertical que se autoexpande.
+    ///   - Cuelgan de "Clans layout root", y ese de "Clan selection", que mide **400 x 1000**:
+    ///     esa es la zona visible de la hoja.
+    ///   - Rombo de 136 x 136, 8 px entre filas, 96 px entre columnas (368 = 2x136 + 96).
+    ///   - La seccion NO hereda de PaginatedCompendiumSection: no pagina.
     ///
-    /// Lo que se hace: medir el contenido de cada columna, buscar el hueco real (el primer
-    /// ancestro que acote), y reescalar LAS DOS columnas con el mismo factor, para que no
-    /// queden de tamanos distintos.
+    /// Lo que se hace:
+    ///   1. Se juntan todos los rombos y se reparten entre N columnas, creando columnas
+    ///      extra si hacen falta (el ancho de la hoja da para tres).
+    ///   2. Se escala **el contenedor**, no cada columna: asi encoge tambien la separacion
+    ///      entre columnas y se aprovecha el ancho.
+    ///   3. Se elige el N que deja los rombos mas grandes.
     ///
-    /// Es un apano visual: no toca datos de partida ni guardado. Si algo no cuadra,
-    /// [LogbookFit] Enabled = false en el config de BepInEx y todo queda como estaba.
+    /// Es un apano visual: no toca datos de partida ni guardado, y `clanOptionButtons` ya
+    /// esta construida cuando corre esto y guarda referencias, no posiciones, asi que mover
+    /// rombos de columna no descoloca el clan que abre cada uno.
+    /// Para desactivarlo: [LogbookFit] Enabled = false en el config de BepInEx.
     /// </summary>
     [HarmonyPatch]
     public static class LogbookClanFit
     {
         // --- ajustes, los rellena Plugin.Awake desde el config de BepInEx ---
         public static bool Enabled = true;
-        public static float MinScale = 0.45f;   // hasta donde se deja encoger una columna
-        public static int MaxColumns = 0;       // solo aplica si algun dia hubiera grid
-        public static bool BalanceColumns = true; // repartir los clanes entre las dos columnas
-        public static float HeightBudget = 0f;  // alto util en px; 0 = detectarlo
-        public static float SafetyMargin = 0.85f; // del hueco detectado, cuanto se usa
-        public static bool Verbose = true;      // deja la traza en LogOutput.log
+        public static float MinScale = 0.45f;     // hasta donde se deja encoger
+        public static int MaxAutoColumns = 3;     // 2 = como el juego, sin columnas extra
+        public static float ColumnSpacing = 16f;  // separacion entre columnas al pasar de 2
+        public static float HeightBudget = 0f;    // alto util en px; 0 = detectarlo
+        public static float WidthBudget = 0f;     // ancho util en px; 0 = detectarlo
+        public static bool Verbose = true;
+
+        const string NOMBRE_EXTRA = "LogbookFitColumn";
 
         static readonly FieldInfo? FClasses =
             AccessTools.Field(typeof(CompendiumSectionChampUpgrades), "classesOptionRoot");
         static readonly FieldInfo? FCrew =
             AccessTools.Field(typeof(CompendiumSectionChampUpgrades), "crewClassesOptionRoot");
+        static readonly FieldInfo? FClases =
+            AccessTools.Field(typeof(CompendiumSectionChampUpgrades), "availableClasses");
 
-        // medidas originales de cada grid, por si alguna version del juego trae uno
-        static readonly Dictionary<int, float[]> Originales = new();
+        static bool yaListado;
+        static float separacionOriginal = float.NaN;
 
         [HarmonyPatch(typeof(CompendiumSectionChampUpgrades), "InitializeImpl")]
         [HarmonyPostfix]
@@ -60,8 +70,7 @@ namespace mt2_freecompany.Plugin
             if (!Enabled || seccion == null) return;
             Encajar(seccion);
             // Al abrir, el layout puede no estar resuelto en el primer frame. Se repite al
-            // siguiente, pero solo si el objeto esta activo: en InitializeImpl todavia no lo
-            // esta y StartCoroutine soltaria un error rojo en el log.
+            // siguiente, y solo si el objeto esta activo: en InitializeImpl aun no lo esta.
             if (seccion.isActiveAndEnabled)
             {
                 try { seccion.StartCoroutine(EncajarAlSiguienteFrame(seccion)); }
@@ -79,18 +88,81 @@ namespace mt2_freecompany.Plugin
         {
             try
             {
-                var clanes = ComoTransform(FClasses?.GetValue(seccion));
-                var crew = ComoTransform(FCrew?.GetValue(seccion));
+                ListarClanes(seccion);
 
-                // Primero repartir, que asi hacen falta menos filas y el factor sale mejor.
-                if (BalanceColumns) Equilibrar(clanes, crew);
+                var c1 = ComoTransform(FClasses?.GetValue(seccion));
+                var c2 = ComoTransform(FCrew?.GetValue(seccion));
+                if (c1 == null) return;
+                if (c1.parent is not RectTransform padre) return;
 
-                // Mismo factor para las dos columnas: manda la que peor lo tiene.
-                float k = Mathf.Min(Factor(clanes, "clanes"), Factor(crew, "tripulacion"));
-                k = Mathf.Clamp(k, MinScale, 1f);
+                // Columnas de las que se puede tirar: las del juego (la de tripulacion solo
+                // si esta activa; si no lo esta, meter algo alli seria hacerlo desaparecer)
+                // mas las que hayamos creado antes.
+                var columnas = new List<Transform> { c1 };
+                if (c2 != null && c2.gameObject.activeInHierarchy) columnas.Add(c2);
+                columnas.AddRange(Extras(padre));
 
-                Aplicar(clanes, k, "clanes");
-                Aplicar(crew, k, "tripulacion");
+                var botones = new List<Transform>();
+                foreach (var col in columnas)
+                    foreach (Transform hijo in col)
+                        if (hijo.gameObject.activeSelf) botones.Add(hijo);
+                if (botones.Count == 0) return;
+
+                // --- medidas, sacadas de los propios rombos, no de rects que se autoexpanden
+                var primero = botones[0] as RectTransform;
+                float alto = primero != null && primero.rect.height > 1f ? primero.rect.height : 136f;
+                float ancho = primero != null && primero.rect.width > 1f ? primero.rect.width : 136f;
+                float vgap = SeparacionVertical(columnas[0], alto);
+                float hgap = columnas.Count > 1
+                    ? Mathf.Abs(columnas[1].localPosition.x - columnas[0].localPosition.x) - ancho
+                    : 96f;
+                if (hgap < 0f || hgap > 400f) hgap = 96f;
+
+                float zonaAlto = 0f, zonaAncho = 0f;
+                Zona(padre, ref zonaAncho, ref zonaAlto);
+                if (HeightBudget > 1f) zonaAlto = HeightBudget;
+                if (WidthBudget > 1f) zonaAncho = WidthBudget;
+                if (zonaAlto <= 1f || zonaAncho <= 1f) return;
+
+                // --- elegir el numero de columnas que deja los rombos mas grandes
+                int total = botones.Count;
+                int mejorN = columnas.Count;
+                float mejorK = 0f;
+                for (int n = 1; n <= Mathf.Max(2, MaxAutoColumns); n++)
+                {
+                    int filas = Mathf.CeilToInt((float)total / n);
+                    float sep = n > 2 ? ColumnSpacing : hgap;
+                    float h = filas * alto + (filas - 1) * vgap;
+                    float w = n * ancho + (n - 1) * sep;
+                    float k = Mathf.Min(1f, Mathf.Min(zonaAlto / h, zonaAncho / w));
+                    if (k > mejorK + 0.001f) { mejorK = k; mejorN = n; }
+                }
+                mejorK = Mathf.Clamp(mejorK, MinScale, 1f);
+
+                // --- ajustar cuantas columnas hay y repartir
+                AjustarColumnas(padre, columnas, c1, mejorN);
+                Repartir(columnas, botones, mejorN);
+
+                float sepFinal = mejorN > 2 ? ColumnSpacing : hgap;
+                if (!Separacion(padre, mejorN > 2 ? ColumnSpacing : (float?)null))
+                {
+                    // Sin layout horizontal que las coloque, se colocan a mano: si no, la
+                    // columna clonada se queda justo encima de la primera.
+                    for (int c = 1; c < mejorN && c < columnas.Count; c++)
+                    {
+                        var pos = columnas[0].localPosition;
+                        pos.x += c * (ancho + sepFinal);
+                        columnas[c].localPosition = pos;
+                    }
+                }
+
+                // --- escalar EL CONTENEDOR: asi encoge tambien el hueco entre columnas
+                foreach (var col in columnas) col.localScale = Vector3.one;
+                padre.localScale = new Vector3(mejorK, mejorK, 1f);
+
+                int filasFinal = Mathf.CeilToInt((float)total / mejorN);
+                Log($"{total} rombos en {mejorN} columnas de {filasFinal}, factor {mejorK:0.00} " +
+                    $"(zona {zonaAncho:0}x{zonaAlto:0}, rombo {ancho:0} + {vgap:0}/{hgap:0} de hueco)");
             }
             catch (Exception e)
             {
@@ -98,147 +170,159 @@ namespace mt2_freecompany.Plugin
             }
         }
 
-        /// <summary>
-        /// Pasa rombos de la columna larga a la corta hasta dejarlas iguales (o a uno de
-        /// diferencia). Con 12 y 6 quedan 9 y 9, o sea tres filas menos que encoger.
-        ///
-        /// Es seguro porque `clanOptionButtons` ya esta construida cuando corre el parche y
-        /// guarda REFERENCIAS a los botones, no posiciones: el indice de clan que usa el
-        /// juego al pulsar no se mueve. Solo cambia donde se dibuja cada rombo.
-        ///
-        /// Idempotente: al repetir, la diferencia ya es <= 1 y no mueve nada.
-        /// </summary>
-        static void Equilibrar(Transform? a, Transform? b)
+        /// <summary>Paso entre dos rombos de la misma columna, menos el propio rombo.</summary>
+        static float SeparacionVertical(Transform columna, float alto)
         {
-            if (a == null || b == null) return;
-            // Si la tripulacion no esta desbloqueada, el juego apaga esa raiz y todos los
-            // clanes van a la primera. Mover algo alli seria hacerlo desaparecer.
-            if (!a.gameObject.activeInHierarchy || !b.gameObject.activeInHierarchy) return;
-
-            int na = Activos(a), nb = Activos(b);
-            int movidos = 0;
-            while (na - nb > 1 && movidos < 40)
+            Transform? a = null;
+            foreach (Transform hijo in columna)
             {
-                var ultimo = UltimoActivo(a);
-                if (ultimo == null) break;
-                ultimo.SetParent(b, false);
-                ultimo.SetAsLastSibling();
-                na--; nb++; movidos++;
+                if (!hijo.gameObject.activeSelf) continue;
+                if (a == null) { a = hijo; continue; }
+                float paso = Mathf.Abs(hijo.localPosition.y - a.localPosition.y);
+                float gap = paso - alto;
+                return gap >= 0f && gap < 200f ? gap : 8f;
             }
-            if (movidos > 0)
-                Log($"equilibrado: {movidos} rombos pasados a la segunda columna ({na} / {nb})");
+            return 8f;
         }
 
-        static int Activos(Transform raiz)
+        static List<Transform> Extras(Transform padre)
         {
-            int n = 0;
-            foreach (Transform hijo in raiz)
-                if (hijo.gameObject.activeSelf) n++;
-            return n;
+            var lista = new List<Transform>();
+            foreach (Transform hijo in padre)
+                if (hijo.name.StartsWith(NOMBRE_EXTRA, StringComparison.Ordinal)) lista.Add(hijo);
+            return lista;
         }
 
-        static Transform? UltimoActivo(Transform raiz)
+        /// <summary>Crea o quita columnas nuestras hasta tener las que se han decidido.</summary>
+        static void AjustarColumnas(RectTransform padre, List<Transform> columnas, Transform modelo, int objetivo)
         {
-            Transform? ultimo = null;
-            foreach (Transform hijo in raiz)
-                if (hijo.gameObject.activeSelf) ultimo = hijo;
-            return ultimo;
+            while (columnas.Count < objetivo)
+            {
+                var clon = UnityEngine.Object.Instantiate(modelo.gameObject, padre);
+                clon.name = NOMBRE_EXTRA + columnas.Count;
+                // El clon viene con COPIAS de los rombos: fuera, y desenganchados ya, para
+                // que no los cuente nadie mientras Destroy hace su trabajo a fin de frame.
+                var sobran = new List<Transform>();
+                foreach (Transform hijo in clon.transform) sobran.Add(hijo);
+                foreach (var hijo in sobran)
+                {
+                    hijo.SetParent(null, false);
+                    UnityEngine.Object.Destroy(hijo.gameObject);
+                }
+                clon.transform.localScale = Vector3.one;
+                clon.SetActive(true);
+                columnas.Add(clon.transform);
+                Log($"columna extra creada: {clon.name}");
+            }
+
+            while (columnas.Count > objetivo)
+            {
+                var ultima = columnas[columnas.Count - 1];
+                if (!ultima.name.StartsWith(NOMBRE_EXTRA, StringComparison.Ordinal)) break; // del juego, no se toca
+                columnas.RemoveAt(columnas.Count - 1);
+                var sueltos = new List<Transform>();
+                foreach (Transform hijo in ultima) sueltos.Add(hijo);
+                foreach (var hijo in sueltos) hijo.SetParent(columnas[0], false);
+                UnityEngine.Object.Destroy(ultima.gameObject);
+                Log($"columna extra retirada: {ultima.name}");
+            }
         }
 
-        /// <summary>Cuanto hay que encoger esta columna para que quepa. 1 = cabe tal cual.</summary>
-        static float Factor(Transform? raiz, string etiqueta)
+        /// <summary>Reparte los rombos en orden entre las columnas, a partes iguales.</summary>
+        static void Repartir(List<Transform> columnas, List<Transform> botones, int cols)
         {
-            if (raiz == null || !raiz.gameObject.activeInHierarchy) return 1f;
-
-            int botones = 0;
-            foreach (Transform hijo in raiz)
-                if (hijo.gameObject.activeSelf) botones++;
-            if (botones == 0) return 1f;
-
-            var rt = raiz as RectTransform;
-            if (rt == null) return 1f;
-
-            float contenido = rt.rect.height;
-            if (contenido <= 1f) return 1f;             // todavia sin resolver el layout
-
-            // El ancestro que acota NO es la zona visible de la hoja: suele ser mayor. Por eso
-            // el margen, y por eso HeightBudget, que lo fija a mano sin recompilar.
-            float hueco = HeightBudget > 1f ? HeightBudget : Hueco(rt, contenido, etiqueta) * SafetyMargin;
-            if (hueco <= 1f || hueco >= contenido) return 1f;
-
-            float k = hueco / contenido;
-            Log($"{etiqueta}: {botones} botones, contenido {rt.rect.width:0}x{contenido:0}, " +
-                $"presupuesto {hueco:0}, factor {k:0.00} -> quedaria en {contenido * k:0} px de alto");
-            return k;
+            if (cols <= 0) return;
+            int porColumna = Mathf.CeilToInt((float)botones.Count / cols);
+            int i = 0;
+            for (int c = 0; c < cols && c < columnas.Count; c++)
+            {
+                for (int n = 0; n < porColumna && i < botones.Count; n++, i++)
+                {
+                    var boton = botones[i];
+                    if (boton.parent != columnas[c]) boton.SetParent(columnas[c], false);
+                    boton.SetSiblingIndex(n);
+                }
+            }
         }
 
         /// <summary>
-        /// El alto disponible de verdad: el primer ancestro que ACOTE, es decir el primero
-        /// que mida menos que el contenido. La raiz no vale: se autoexpande con sus hijos.
+        /// Ajusta la separacion del layout horizontal del contenedor (null = la original).
+        /// Devuelve false si el contenedor no tiene layout horizontal, y entonces las
+        /// columnas hay que colocarlas a mano.
         /// </summary>
-        static float Hueco(RectTransform raiz, float contenido, string etiqueta)
+        static bool Separacion(RectTransform padre, float? valor)
+        {
+            Component? layout = null;
+            foreach (var c in padre.GetComponents<Component>())
+            {
+                if (c == null) continue;
+                var n = c.GetType().Name;
+                if (n.Contains("HorizontalLayoutGroup")) { layout = c; break; }
+            }
+            if (layout == null) return false;
+
+            var p = layout.GetType().GetProperty("spacing");
+            if (p == null || p.PropertyType != typeof(float)) return true;
+
+            if (float.IsNaN(separacionOriginal)) separacionOriginal = (float)p.GetValue(layout, null);
+            float nuevo = valor ?? separacionOriginal;
+            if (!Mathf.Approximately((float)p.GetValue(layout, null), nuevo))
+            {
+                p.SetValue(layout, nuevo, null);
+                Log($"separacion entre columnas: {nuevo:0}");
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// La zona visible: el primer ancestro con un rect razonable. Medido: "Clan selection",
+        /// 400 x 1000. La raiz de columnas NO vale, se autoexpande con sus hijos.
+        /// </summary>
+        static void Zona(RectTransform desde, ref float ancho, ref float alto)
         {
             var traza = new StringBuilder();
-            var p = raiz.parent as RectTransform;
+            var p = desde.parent as RectTransform;
             int saltos = 0;
             while (p != null && saltos++ < 8)
             {
                 traza.Append($" <- {p.name} {p.rect.width:0}x{p.rect.height:0}");
-                if (p.rect.height > 1f && p.rect.height < contenido - 1f)
+                if (p.rect.width > 1f && p.rect.height > 1f)
                 {
-                    Log($"{etiqueta}: acota {p.name}{traza}");
-                    return p.rect.height;
+                    ancho = p.rect.width;
+                    alto = p.rect.height;
+                    Log($"zona: {p.name}{traza}");
+                    return;
                 }
                 p = p.parent as RectTransform;
             }
-            Log($"{etiqueta}: ningun padre acota;{traza}; se tira del 70% de la pantalla");
-            return Screen.height * 0.70f;
+            Log($"zona: ningun ancestro mide;{traza}; se tira de la pantalla");
+            ancho = Screen.width * 0.30f;
+            alto = Screen.height * 0.70f;
         }
 
-        static void Aplicar(Transform? raiz, float k, string etiqueta)
+        /// <summary>
+        /// Vuelca una vez por sesion los clanes que el juego ha registrado. El filtro de
+        /// `availableClasses` coge TODAS las clases (solo aparta las de tripulacion si no
+        /// esta desbloqueada), asi que si aqui falta un clan instalado, el problema esta en
+        /// que su ClassData no se registra, no en esta pantalla.
+        /// </summary>
+        static void ListarClanes(CompendiumSectionChampUpgrades seccion)
         {
-            if (raiz == null) return;
+            if (yaListado || !Verbose || FClases == null) return;
+            if (FClases.GetValue(seccion) is not IEnumerable lista) return;
 
-            // Si algun dia la pantalla trae GridLayoutGroup, mejor tocar la celda que la escala.
-            var grid = raiz.GetComponent("GridLayoutGroup");
-            if (grid != null) { AplicarEnGrid(grid, k, etiqueta); return; }
-
-            raiz.localScale = new Vector3(k, k, 1f);
-            Log($"{etiqueta}: escala {k:0.00}");
-        }
-
-        static void AplicarEnGrid(Component grid, float k, string etiqueta)
-        {
-            var t = grid.GetType();
-            var pCelda = t.GetProperty("cellSize");
-            var pHueco = t.GetProperty("spacing");
-            if (pCelda == null || pHueco == null) return;
-
-            int id = grid.GetInstanceID();
-            Vector2 celda = (Vector2)pCelda.GetValue(grid, null);
-            Vector2 hueco = (Vector2)pHueco.GetValue(grid, null);
-            if (!Originales.TryGetValue(id, out var orig))
+            var nombres = new List<string>();
+            foreach (var clase in lista)
             {
-                orig = [celda.x, celda.y, hueco.x, hueco.y];
-                Originales[id] = orig;
+                if (clase == null) continue;
+                var mTitulo = clase.GetType().GetMethod("GetTitle", Type.EmptyTypes);
+                var mCrew = clase.GetType().GetMethod("IsCrew", Type.EmptyTypes);
+                string titulo = mTitulo?.Invoke(clase, null) as string ?? clase.ToString();
+                bool crew = mCrew?.Invoke(clase, null) is true;
+                nombres.Add(crew ? titulo + " (crew)" : titulo);
             }
-            celda = new Vector2(orig[0], orig[1]);
-            hueco = new Vector2(orig[2], orig[3]);
-
-            if (MaxColumns > 0)
-            {
-                var pRestriccion = t.GetProperty("constraint");
-                var pCuantas = t.GetProperty("constraintCount");
-                if (pRestriccion != null && pCuantas != null)
-                {
-                    pRestriccion.SetValue(grid, 1, null);   // FixedColumnCount
-                    pCuantas.SetValue(grid, MaxColumns, null);
-                }
-            }
-
-            pCelda.SetValue(grid, celda * k, null);
-            pHueco.SetValue(grid, hueco * k, null);
-            Log($"{etiqueta}: grid, celda {celda.x:0}x{celda.y:0} -> {celda.x * k:0}x{celda.y * k:0}");
+            yaListado = true;
+            Log($"clases registradas ({nombres.Count}): " + string.Join(", ", nombres));
         }
 
         static Transform? ComoTransform(object? o) => o switch

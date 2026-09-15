@@ -82,27 +82,27 @@ namespace mt2_freecompany.Plugin
                 "LogbookFit", "MinScale", 0.45f,
                 "Hasta donde se deja encoger un rombo. 1 = tamano original.");
             var cfgColumnas = Config.Bind(
-                "LogbookFit", "MaxColumns", 0,
-                "Columnas a forzar en la rejilla. 0 = dejar las que ponga el juego.");
-            var cfgPresupuesto = Config.Bind(
+                "LogbookFit", "MaxAutoColumns", 3,
+                "Columnas como mucho. 2 = como el juego, sin columnas extra; 3 aprovecha el ancho de la hoja.");
+            var cfgSeparacion = Config.Bind(
+                "LogbookFit", "ColumnSpacing", 16f,
+                "Separacion entre columnas cuando se pasa de dos. La del juego son 96 px.");
+            var cfgAlto = Config.Bind(
                 "LogbookFit", "HeightBudget", 0f,
-                "Alto util de la hoja en pixeles. 0 = detectarlo solo. Ponlo a mano si los rombos se salen.");
-            var cfgMargen = Config.Bind(
-                "LogbookFit", "SafetyMargin", 0.85f,
-                "Del hueco detectado, que parte se usa. Bajalo si se siguen saliendo por abajo.");
-            var cfgEquilibrar = Config.Bind(
-                "LogbookFit", "BalanceColumns", true,
-                "Reparte los rombos entre las dos columnas de la hoja para que no quede una larga y otra corta.");
+                "Alto util de la hoja en pixeles. 0 = detectarlo solo (medido: 1000).");
+            var cfgAncho = Config.Bind(
+                "LogbookFit", "WidthBudget", 0f,
+                "Ancho util de la hoja en pixeles. 0 = detectarlo solo (medido: 400).");
             var cfgTraza = Config.Bind(
                 "LogbookFit", "Verbose", true,
                 "Escribe en LogOutput.log lo que mide y lo que ajusta.");
 
             LogbookClanFit.Enabled = cfgActivo.Value;
             LogbookClanFit.MinScale = cfgEscalaMinima.Value;
-            LogbookClanFit.MaxColumns = cfgColumnas.Value;
-            LogbookClanFit.HeightBudget = cfgPresupuesto.Value;
-            LogbookClanFit.SafetyMargin = cfgMargen.Value;
-            LogbookClanFit.BalanceColumns = cfgEquilibrar.Value;
+            LogbookClanFit.MaxAutoColumns = cfgColumnas.Value;
+            LogbookClanFit.ColumnSpacing = cfgSeparacion.Value;
+            LogbookClanFit.HeightBudget = cfgAlto.Value;
+            LogbookClanFit.WidthBudget = cfgAncho.Value;
             LogbookClanFit.Verbose = cfgTraza.Value;
 
             new Harmony(MyPluginInfo.PLUGIN_GUID).PatchAll();
