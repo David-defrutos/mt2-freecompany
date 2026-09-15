@@ -13,24 +13,26 @@ namespace mt2_freecompany.Plugin
     /// (CompendiumSectionChampUpgrades) cuando hay mas clanes de los que cabian.
     ///
     /// Como esta montada la pantalla, medido en partida el 15-sep-2026:
-    ///   - Dos raices, y son LAS DOS COLUMNAS de la hoja: classesOptionRoot (clanes
+    ///   - Dos raices, y son las dos columnas de la hoja: classesOptionRoot (clanes
     ///     normales) y crewClassesOptionRoot (tripulacion). NO hay GridLayoutGroup: cada una
-    ///     es una columna vertical que se autoexpande.
+    ///     es una columna vertical con su layout.
     ///   - Cuelgan de "Clans layout root", y ese de "Clan selection", que mide **400 x 1000**:
     ///     esa es la zona visible de la hoja.
-    ///   - Rombo de 136 x 136, 8 px entre filas, 96 px entre columnas (368 = 2x136 + 96).
-    ///   - La seccion NO hereda de PaginatedCompendiumSection: no pagina.
+    ///   - Rombo de 136 x 136, 8 px entre filas, 96 px entre columnas.
+    ///   - La seccion NO hereda de PaginatedCompendiumSection: no pagina, asi que la columna
+    ///     se sale de la hoja por abajo.
     ///
-    /// Lo que se hace:
-    ///   1. Se juntan todos los rombos y se reparten entre N columnas, creando columnas
-    ///      extra si hacen falta (el ancho de la hoja da para tres).
-    ///   2. Se escala **el contenedor**, no cada columna: asi encoge tambien la separacion
-    ///      entre columnas y se aprovecha el ancho.
-    ///   3. Se elige el N que deja los rombos mas grandes.
+    /// REGLA QUE COSTO UN INTENTO: **no se toca la jerarquia**. Mover rombos de una raiz a
+    /// otra parece funcionar la primera vez y luego rompe la pantalla: el juego RECONSTRUYE
+    /// los botones al abrirla, no encuentra los que le han quitado, crea otros nuevos, y los
+    /// viejos se quedan ahi como rombos muertos (18 clanes -> 26 rombos, unos pulsables y
+    /// otros no). Nada de SetParent, nada de clonar columnas.
     ///
-    /// Es un apano visual: no toca datos de partida ni guardado, y `clanOptionButtons` ya
-    /// esta construida cuando corre esto y guarda referencias, no posiciones, asi que mover
-    /// rombos de columna no descoloca el clan que abre cada uno.
+    /// Lo que se hace en su lugar: apagar los layouts de las dos columnas y del contenedor,
+    /// y **colocar cada rombo a mano dentro de su propia raiz**, en la rejilla de N columnas
+    /// que mejor aproveche la hoja. Cada boton sigue donde el juego lo puso, asi que su
+    /// reconstruccion sigue funcionando; solo cambia donde se dibuja.
+    ///
     /// Para desactivarlo: [LogbookFit] Enabled = false en el config de BepInEx.
     /// </summary>
     [HarmonyPatch]
@@ -39,13 +41,11 @@ namespace mt2_freecompany.Plugin
         // --- ajustes, los rellena Plugin.Awake desde el config de BepInEx ---
         public static bool Enabled = true;
         public static float MinScale = 0.45f;     // hasta donde se deja encoger
-        public static int MaxAutoColumns = 3;     // 2 = como el juego, sin columnas extra
-        public static float ColumnSpacing = 16f;  // separacion entre columnas al pasar de 2
-        public static float HeightBudget = 0f;    // alto util en px; 0 = detectarlo
-        public static float WidthBudget = 0f;     // ancho util en px; 0 = detectarlo
+        public static int MaxAutoColumns = 3;     // 2 = las dos del juego
+        public static float ColumnSpacing = 16f;  // separacion al pasar de dos columnas
+        public static float HeightBudget = 0f;    // alto util en px; 0 = detectarlo (1000)
+        public static float WidthBudget = 0f;     // ancho util en px; 0 = detectarlo (400)
         public static bool Verbose = true;
-
-        const string NOMBRE_EXTRA = "LogbookFitColumn";
 
         static readonly FieldInfo? FClasses =
             AccessTools.Field(typeof(CompendiumSectionChampUpgrades), "classesOptionRoot");
@@ -54,8 +54,10 @@ namespace mt2_freecompany.Plugin
         static readonly FieldInfo? FClases =
             AccessTools.Field(typeof(CompendiumSectionChampUpgrades), "availableClasses");
 
+        // Medidas naturales, tomadas UNA vez con el layout del juego todavia vivo.
+        static float itemNatural, vgapNatural, hgapNatural;
+        static Vector2 origen;
         static bool yaListado;
-        static float separacionOriginal = float.NaN;
 
         [HarmonyPatch(typeof(CompendiumSectionChampUpgrades), "InitializeImpl")]
         [HarmonyPostfix]
@@ -92,77 +94,71 @@ namespace mt2_freecompany.Plugin
 
                 var c1 = ComoTransform(FClasses?.GetValue(seccion));
                 var c2 = ComoTransform(FCrew?.GetValue(seccion));
-                if (c1 == null) return;
-                if (c1.parent is not RectTransform padre) return;
+                if (c1 == null || c1.parent is not RectTransform padre) return;
+                bool hayCrew = c2 != null && c2.gameObject.activeInHierarchy;
 
-                // Columnas de las que se puede tirar: las del juego (la de tripulacion solo
-                // si esta activa; si no lo esta, meter algo alli seria hacerlo desaparecer)
-                // mas las que hayamos creado antes.
-                var columnas = new List<Transform> { c1 };
-                if (c2 != null && c2.gameObject.activeInHierarchy) columnas.Add(c2);
-                columnas.AddRange(Extras(padre));
-
+                // Los rombos, cada uno donde el juego lo dejo. NO se mueven de raiz.
                 var botones = new List<Transform>();
-                foreach (var col in columnas)
-                    foreach (Transform hijo in col)
-                        if (hijo.gameObject.activeSelf) botones.Add(hijo);
+                botones.AddRange(Hijos(c1));
+                if (hayCrew) botones.AddRange(Hijos(c2!));
                 if (botones.Count == 0) return;
 
-                // --- medidas, sacadas de los propios rombos, no de rects que se autoexpanden
-                var primero = botones[0] as RectTransform;
-                float alto = primero != null && primero.rect.height > 1f ? primero.rect.height : 136f;
-                float ancho = primero != null && primero.rect.width > 1f ? primero.rect.width : 136f;
-                float vgap = SeparacionVertical(columnas[0], alto);
-                float hgap = columnas.Count > 1
-                    ? Mathf.Abs(columnas[1].localPosition.x - columnas[0].localPosition.x) - ancho
-                    : 96f;
-                if (hgap < 0f || hgap > 400f) hgap = 96f;
+                // Medidas naturales: hay que cogerlas antes de apagar nada, y solo valen si
+                // el layout ya ha corrido (si no, las posiciones vienen a cero).
+                if (!Medir(c1, hayCrew ? c2 : null)) return;
 
-                float zonaAlto = 0f, zonaAncho = 0f;
+                float zonaAncho = 0f, zonaAlto = 0f;
                 Zona(padre, ref zonaAncho, ref zonaAlto);
                 if (HeightBudget > 1f) zonaAlto = HeightBudget;
                 if (WidthBudget > 1f) zonaAncho = WidthBudget;
                 if (zonaAlto <= 1f || zonaAncho <= 1f) return;
 
-                // --- elegir el numero de columnas que deja los rombos mas grandes
+                // A partir de aqui la rejilla la llevamos nosotros: fuera los layouts, que si
+                // no recolocan y reescalan los rombos por su cuenta (fue lo que los dejo en
+                // 112 px al meter una tercera columna).
+                ApagarLayouts(c1);
+                if (hayCrew) ApagarLayouts(c2!);
+                ApagarLayouts(padre);
+
+                // --- cuantas columnas dejan los rombos mas grandes
                 int total = botones.Count;
-                int mejorN = columnas.Count;
+                int mejorN = 2;
                 float mejorK = 0f;
-                for (int n = 1; n <= Mathf.Max(2, MaxAutoColumns); n++)
+                for (int n = 1; n <= Mathf.Max(1, MaxAutoColumns); n++)
                 {
                     int filas = Mathf.CeilToInt((float)total / n);
-                    float sep = n > 2 ? ColumnSpacing : hgap;
-                    float h = filas * alto + (filas - 1) * vgap;
-                    float w = n * ancho + (n - 1) * sep;
+                    float sep = n > 2 ? ColumnSpacing : hgapNatural;
+                    float h = filas * itemNatural + (filas - 1) * vgapNatural;
+                    float w = n * itemNatural + (n - 1) * sep;
                     float k = Mathf.Min(1f, Mathf.Min(zonaAlto / h, zonaAncho / w));
                     if (k > mejorK + 0.001f) { mejorK = k; mejorN = n; }
                 }
                 mejorK = Mathf.Clamp(mejorK, MinScale, 1f);
 
-                // --- ajustar cuantas columnas hay y repartir
-                AjustarColumnas(padre, columnas, c1, mejorN);
-                Repartir(columnas, botones, mejorN);
-
-                float sepFinal = mejorN > 2 ? ColumnSpacing : hgap;
-                if (!Separacion(padre, mejorN > 2 ? ColumnSpacing : (float?)null))
+                // --- colocar, columna a columna, de arriba abajo
+                int filasFinal = Mathf.CeilToInt((float)total / mejorN);
+                float hgap = mejorN > 2 ? ColumnSpacing : hgapNatural;
+                for (int i = 0; i < total; i++)
                 {
-                    // Sin layout horizontal que las coloque, se colocan a mano: si no, la
-                    // columna clonada se queda justo encima de la primera.
-                    for (int c = 1; c < mejorN && c < columnas.Count; c++)
-                    {
-                        var pos = columnas[0].localPosition;
-                        pos.x += c * (ancho + sepFinal);
-                        columnas[c].localPosition = pos;
-                    }
+                    int col = i / filasFinal;
+                    int fila = i % filasFinal;
+                    var boton = botones[i];
+                    var raiz = boton.parent;
+                    if (raiz == null) continue;
+
+                    float x = origen.x + col * (itemNatural + hgap) - raiz.localPosition.x;
+                    float y = origen.y - fila * (itemNatural + vgapNatural) - raiz.localPosition.y;
+                    boton.localPosition = new Vector3(x, y, boton.localPosition.z);
+                    boton.localScale = Vector3.one;
                 }
 
-                // --- escalar EL CONTENEDOR: asi encoge tambien el hueco entre columnas
-                foreach (var col in columnas) col.localScale = Vector3.one;
+                // La escala va en el contenedor: encoge tambien los huecos entre columnas.
+                c1.localScale = Vector3.one;
+                if (c2 != null) c2.localScale = Vector3.one;
                 padre.localScale = new Vector3(mejorK, mejorK, 1f);
 
-                int filasFinal = Mathf.CeilToInt((float)total / mejorN);
                 Log($"{total} rombos en {mejorN} columnas de {filasFinal}, factor {mejorK:0.00} " +
-                    $"(zona {zonaAncho:0}x{zonaAlto:0}, rombo {ancho:0} + {vgap:0}/{hgap:0} de hueco)");
+                    $"(zona {zonaAncho:0}x{zonaAlto:0}, rombo {itemNatural:0}, huecos {vgapNatural:0}/{hgap:0})");
             }
             catch (Exception e)
             {
@@ -170,113 +166,68 @@ namespace mt2_freecompany.Plugin
             }
         }
 
-        /// <summary>Paso entre dos rombos de la misma columna, menos el propio rombo.</summary>
-        static float SeparacionVertical(Transform columna, float alto)
-        {
-            Transform? a = null;
-            foreach (Transform hijo in columna)
-            {
-                if (!hijo.gameObject.activeSelf) continue;
-                if (a == null) { a = hijo; continue; }
-                float paso = Mathf.Abs(hijo.localPosition.y - a.localPosition.y);
-                float gap = paso - alto;
-                return gap >= 0f && gap < 200f ? gap : 8f;
-            }
-            return 8f;
-        }
-
-        static List<Transform> Extras(Transform padre)
+        static List<Transform> Hijos(Transform raiz)
         {
             var lista = new List<Transform>();
-            foreach (Transform hijo in padre)
-                if (hijo.name.StartsWith(NOMBRE_EXTRA, StringComparison.Ordinal)) lista.Add(hijo);
+            foreach (Transform hijo in raiz)
+                if (hijo.gameObject.activeSelf) lista.Add(hijo);
             return lista;
         }
 
-        /// <summary>Crea o quita columnas nuestras hasta tener las que se han decidido.</summary>
-        static void AjustarColumnas(RectTransform padre, List<Transform> columnas, Transform modelo, int objetivo)
-        {
-            while (columnas.Count < objetivo)
-            {
-                var clon = UnityEngine.Object.Instantiate(modelo.gameObject, padre);
-                clon.name = NOMBRE_EXTRA + columnas.Count;
-                // El clon viene con COPIAS de los rombos: fuera, y desenganchados ya, para
-                // que no los cuente nadie mientras Destroy hace su trabajo a fin de frame.
-                var sobran = new List<Transform>();
-                foreach (Transform hijo in clon.transform) sobran.Add(hijo);
-                foreach (var hijo in sobran)
-                {
-                    hijo.SetParent(null, false);
-                    UnityEngine.Object.Destroy(hijo.gameObject);
-                }
-                clon.transform.localScale = Vector3.one;
-                clon.SetActive(true);
-                columnas.Add(clon.transform);
-                Log($"columna extra creada: {clon.name}");
-            }
-
-            while (columnas.Count > objetivo)
-            {
-                var ultima = columnas[columnas.Count - 1];
-                if (!ultima.name.StartsWith(NOMBRE_EXTRA, StringComparison.Ordinal)) break; // del juego, no se toca
-                columnas.RemoveAt(columnas.Count - 1);
-                var sueltos = new List<Transform>();
-                foreach (Transform hijo in ultima) sueltos.Add(hijo);
-                foreach (var hijo in sueltos) hijo.SetParent(columnas[0], false);
-                UnityEngine.Object.Destroy(ultima.gameObject);
-                Log($"columna extra retirada: {ultima.name}");
-            }
-        }
-
-        /// <summary>Reparte los rombos en orden entre las columnas, a partes iguales.</summary>
-        static void Repartir(List<Transform> columnas, List<Transform> botones, int cols)
-        {
-            if (cols <= 0) return;
-            int porColumna = Mathf.CeilToInt((float)botones.Count / cols);
-            int i = 0;
-            for (int c = 0; c < cols && c < columnas.Count; c++)
-            {
-                for (int n = 0; n < porColumna && i < botones.Count; n++, i++)
-                {
-                    var boton = botones[i];
-                    if (boton.parent != columnas[c]) boton.SetParent(columnas[c], false);
-                    boton.SetSiblingIndex(n);
-                }
-            }
-        }
-
         /// <summary>
-        /// Ajusta la separacion del layout horizontal del contenedor (null = la original).
-        /// Devuelve false si el contenedor no tiene layout horizontal, y entonces las
-        /// columnas hay que colocarlas a mano.
+        /// Rombo, separacion entre filas, separacion entre columnas y esquina de salida, en
+        /// el espacio del contenedor. Se toma UNA vez, con el layout del juego aun activo.
         /// </summary>
-        static bool Separacion(RectTransform padre, float? valor)
+        static bool Medir(Transform c1, Transform? c2)
         {
-            Component? layout = null;
-            foreach (var c in padre.GetComponents<Component>())
-            {
-                if (c == null) continue;
-                var n = c.GetType().Name;
-                if (n.Contains("HorizontalLayoutGroup")) { layout = c; break; }
-            }
-            if (layout == null) return false;
+            if (itemNatural > 0f) return true;
 
-            var p = layout.GetType().GetProperty("spacing");
-            if (p == null || p.PropertyType != typeof(float)) return true;
+            var hijos = Hijos(c1);
+            if (hijos.Count < 2) return false;
+            if (hijos[0] is not RectTransform a || hijos[1] is not RectTransform b) return false;
 
-            if (float.IsNaN(separacionOriginal)) separacionOriginal = (float)p.GetValue(layout, null);
-            float nuevo = valor ?? separacionOriginal;
-            if (!Mathf.Approximately((float)p.GetValue(layout, null), nuevo))
+            float alto = a.rect.height, ancho = a.rect.width;
+            float paso = Mathf.Abs(b.localPosition.y - a.localPosition.y);
+            if (alto < 10f || ancho < 10f || paso < 10f) return false;   // aun sin colocar
+
+            itemNatural = alto;
+            vgapNatural = Mathf.Clamp(paso - alto, 0f, 200f);
+            hgapNatural = 96f;
+            if (c2 != null)
             {
-                p.SetValue(layout, nuevo, null);
-                Log($"separacion entre columnas: {nuevo:0}");
+                float pasoX = Mathf.Abs(c2.localPosition.x - c1.localPosition.x);
+                if (pasoX > ancho && pasoX - ancho < 400f) hgapNatural = pasoX - ancho;
             }
+            origen = new Vector2(c1.localPosition.x + a.localPosition.x,
+                                 c1.localPosition.y + a.localPosition.y);
+
+            Log($"medidas naturales: rombo {itemNatural:0}x{ancho:0}, fila {vgapNatural:0}, " +
+                $"columna {hgapNatural:0}, salida ({origen.x:0}, {origen.y:0})");
             return true;
         }
 
         /// <summary>
-        /// La zona visible: el primer ancestro con un rect razonable. Medido: "Clan selection",
-        /// 400 x 1000. La raiz de columnas NO vale, se autoexpande con sus hijos.
+        /// Apaga los LayoutGroup y ContentSizeFitter del objeto. Behaviour.enabled es de
+        /// UnityEngine, asi que no hace falta referenciar UnityEngine.UI para esto.
+        /// </summary>
+        static void ApagarLayouts(Transform t)
+        {
+            foreach (var c in t.GetComponents<Component>())
+            {
+                if (c == null) continue;
+                var n = c.GetType().Name;
+                if (!n.Contains("LayoutGroup") && !n.Contains("ContentSizeFitter")) continue;
+                if (c is Behaviour b && b.enabled)
+                {
+                    b.enabled = false;
+                    Log($"layout apagado en {t.name}: {n}");
+                }
+            }
+        }
+
+        /// <summary>
+        /// La zona visible: el primer ancestro con rect. Medido: "Clan selection", 400 x 1000.
+        /// La raiz de columnas no vale, se autoexpande con sus hijos.
         /// </summary>
         static void Zona(RectTransform desde, ref float ancho, ref float alto)
         {
@@ -290,7 +241,6 @@ namespace mt2_freecompany.Plugin
                 {
                     ancho = p.rect.width;
                     alto = p.rect.height;
-                    Log($"zona: {p.name}{traza}");
                     return;
                 }
                 p = p.parent as RectTransform;
