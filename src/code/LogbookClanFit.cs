@@ -41,7 +41,9 @@ namespace mt2_freecompany.Plugin
         // --- ajustes, los rellena Plugin.Awake desde el config de BepInEx ---
         public static bool Enabled = true;
         public static float MinScale = 0.45f;     // hasta donde se deja encoger
-        public static int MaxAutoColumns = 3;     // 2 = las dos del juego
+        // 2 (por defecto) = NO se toca nada: se deja la rejilla del juego y solo se escala.
+        // 3 o mas = rejilla propia, que reaprovecha el ancho pero es terreno experimental.
+        public static int MaxAutoColumns = 2;
         public static float ColumnSpacing = 16f;  // separacion al pasar de dos columnas
         public static float HeightBudget = 0f;    // alto util en px; 0 = detectarlo (1000)
         public static float WidthBudget = 0f;     // ancho util en px; 0 = detectarlo (400)
@@ -103,15 +105,38 @@ namespace mt2_freecompany.Plugin
                 if (hayCrew) botones.AddRange(Hijos(c2!));
                 if (botones.Count == 0) return;
 
-                // Medidas naturales: hay que cogerlas antes de apagar nada, y solo valen si
-                // el layout ya ha corrido (si no, las posiciones vienen a cero).
-                if (!Medir(c1, hayCrew ? c2 : null)) return;
-
                 float zonaAncho = 0f, zonaAlto = 0f;
                 Zona(padre, ref zonaAncho, ref zonaAlto);
                 if (HeightBudget > 1f) zonaAlto = HeightBudget;
                 if (WidthBudget > 1f) zonaAncho = WidthBudget;
                 if (zonaAlto <= 1f || zonaAncho <= 1f) return;
+
+                // --- camino seguro: la rejilla la sigue haciendo el juego y aqui solo se
+                // escala el contenedor hasta que quepa. Es lo unico que hay que hacer
+                // mientras las dos columnas del juego basten.
+                if (MaxAutoColumns <= 2)
+                {
+                    float contenido = c1 is RectTransform r1 ? r1.rect.height : 0f;
+                    if (hayCrew && c2 is RectTransform r2) contenido = Mathf.Max(contenido, r2.rect.height);
+                    float anchoContenido = padre.rect.width;
+                    if (contenido <= 1f) return;
+
+                    float ks = Mathf.Min(1f, zonaAlto / contenido);
+                    if (anchoContenido > 1f) ks = Mathf.Min(ks, zonaAncho / anchoContenido);
+                    ks = Mathf.Clamp(ks, MinScale, 1f);
+
+                    c1.localScale = Vector3.one;
+                    if (c2 != null) c2.localScale = Vector3.one;
+                    padre.localScale = new Vector3(ks, ks, 1f);
+                    Log($"{botones.Count} rombos, rejilla del juego, contenido " +
+                        $"{anchoContenido:0}x{contenido:0}, zona {zonaAncho:0}x{zonaAlto:0}, factor {ks:0.00}");
+                    return;
+                }
+
+                // --- camino experimental: rejilla propia de 3+ columnas.
+                // Medidas naturales: hay que cogerlas antes de apagar nada, y solo valen si
+                // el layout ya ha corrido (si no, las posiciones vienen a cero).
+                if (!Medir(c1, hayCrew ? c2 : null)) return;
 
                 // A partir de aqui la rejilla la llevamos nosotros: fuera los layouts, que si
                 // no recolocan y reescalan los rombos por su cuenta (fue lo que los dejo en
@@ -150,6 +175,9 @@ namespace mt2_freecompany.Plugin
                     float y = origen.y - fila * (itemNatural + vgapNatural) - raiz.localPosition.y;
                     boton.localPosition = new Vector3(x, y, boton.localPosition.z);
                     boton.localScale = Vector3.one;
+                    if (i == 0)
+                        Log($"primer rombo: celda (0,0) en ({x:0}, {y:0}) dentro de {raiz.name} " +
+                            $"(raiz en {raiz.localPosition.x:0}, {raiz.localPosition.y:0})");
                 }
 
                 // La escala va en el contenedor: encoge tambien los huecos entre columnas.

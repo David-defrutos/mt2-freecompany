@@ -82,8 +82,8 @@ namespace mt2_freecompany.Plugin
                 "LogbookFit", "MinScale", 0.45f,
                 "Hasta donde se deja encoger un rombo. 1 = tamano original.");
             var cfgColumnas = Config.Bind(
-                "LogbookFit", "MaxAutoColumns", 3,
-                "Columnas como mucho. 2 = como el juego, sin columnas extra; 3 aprovecha el ancho de la hoja.");
+                "LogbookFit", "MaxAutoColumns", 2,
+                "2 = no se toca la rejilla del juego, solo se escala (lo probado). 3 o mas = rejilla propia, experimental.");
             var cfgSeparacion = Config.Bind(
                 "LogbookFit", "ColumnSpacing", 16f,
                 "Separacion entre columnas cuando se pasa de dos. La del juego son 96 px.");
