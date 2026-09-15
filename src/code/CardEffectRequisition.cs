@@ -66,11 +66,27 @@ namespace mt2_freecompany.Plugin
                 if (siguiente == null)
                     continue;
 
-                // fuera el anterior, dentro el nuevo
+                // Fuera el anterior, dentro el nuevo.
+                // OJO: RemoveCardUpgrade pide el CardUpgradeState QUE LLEVA PUESTO, no el
+                // CardUpgradeData (eso NO compila: CS1503). El state se localiza entre los
+                // aplicados comparando su GetSourceCardUpgradeData(), y se quita FUERA del
+                // bucle, porque RemoveCardUpgrade toca la lista que se esta recorriendo.
                 if (actual > 0)
                 {
                     var anterior = coreGameManagers.GetAllGameData().FindCardUpgradeData(escalera[actual - 1]);
-                    if (anterior != null) target.RemoveCardUpgrade(anterior);
+                    if (anterior != null)
+                    {
+                        CardUpgradeState? puesta = null;
+                        foreach (var aplicada in target.GetAppliedCardUpgrades())
+                        {
+                            if (aplicada != null && aplicada.GetSourceCardUpgradeData() == anterior)
+                            {
+                                puesta = aplicada;
+                                break;
+                            }
+                        }
+                        if (puesta != null) target.RemoveCardUpgrade(puesta);
+                    }
                 }
 
                 var estado = new CardUpgradeState();
