@@ -35,6 +35,8 @@ namespace mt2_freecompany.Plugin
         public static float MinScale = 0.45f;   // hasta donde se deja encoger una columna
         public static int MaxColumns = 0;       // solo aplica si algun dia hubiera grid
         public static bool BalanceColumns = true; // repartir los clanes entre las dos columnas
+        public static float HeightBudget = 0f;  // alto util en px; 0 = detectarlo
+        public static float SafetyMargin = 0.85f; // del hueco detectado, cuanto se usa
         public static bool Verbose = true;      // deja la traza en LogOutput.log
 
         static readonly FieldInfo? FClasses =
@@ -159,12 +161,14 @@ namespace mt2_freecompany.Plugin
             float contenido = rt.rect.height;
             if (contenido <= 1f) return 1f;             // todavia sin resolver el layout
 
-            float hueco = Hueco(rt, contenido, etiqueta);
+            // El ancestro que acota NO es la zona visible de la hoja: suele ser mayor. Por eso
+            // el margen, y por eso HeightBudget, que lo fija a mano sin recompilar.
+            float hueco = HeightBudget > 1f ? HeightBudget : Hueco(rt, contenido, etiqueta) * SafetyMargin;
             if (hueco <= 1f || hueco >= contenido) return 1f;
 
             float k = hueco / contenido;
             Log($"{etiqueta}: {botones} botones, contenido {rt.rect.width:0}x{contenido:0}, " +
-                $"hueco {hueco:0}, factor {k:0.00}");
+                $"presupuesto {hueco:0}, factor {k:0.00} -> quedaria en {contenido * k:0} px de alto");
             return k;
         }
 

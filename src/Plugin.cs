@@ -84,6 +84,12 @@ namespace mt2_freecompany.Plugin
             var cfgColumnas = Config.Bind(
                 "LogbookFit", "MaxColumns", 0,
                 "Columnas a forzar en la rejilla. 0 = dejar las que ponga el juego.");
+            var cfgPresupuesto = Config.Bind(
+                "LogbookFit", "HeightBudget", 0f,
+                "Alto util de la hoja en pixeles. 0 = detectarlo solo. Ponlo a mano si los rombos se salen.");
+            var cfgMargen = Config.Bind(
+                "LogbookFit", "SafetyMargin", 0.85f,
+                "Del hueco detectado, que parte se usa. Bajalo si se siguen saliendo por abajo.");
             var cfgEquilibrar = Config.Bind(
                 "LogbookFit", "BalanceColumns", true,
                 "Reparte los rombos entre las dos columnas de la hoja para que no quede una larga y otra corta.");
@@ -94,6 +100,8 @@ namespace mt2_freecompany.Plugin
             LogbookClanFit.Enabled = cfgActivo.Value;
             LogbookClanFit.MinScale = cfgEscalaMinima.Value;
             LogbookClanFit.MaxColumns = cfgColumnas.Value;
+            LogbookClanFit.HeightBudget = cfgPresupuesto.Value;
+            LogbookClanFit.SafetyMargin = cfgMargen.Value;
             LogbookClanFit.BalanceColumns = cfgEquilibrar.Value;
             LogbookClanFit.Verbose = cfgTraza.Value;
 
