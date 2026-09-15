@@ -84,6 +84,9 @@ namespace mt2_freecompany.Plugin
             var cfgColumnas = Config.Bind(
                 "LogbookFit", "MaxColumns", 0,
                 "Columnas a forzar en la rejilla. 0 = dejar las que ponga el juego.");
+            var cfgEquilibrar = Config.Bind(
+                "LogbookFit", "BalanceColumns", true,
+                "Reparte los rombos entre las dos columnas de la hoja para que no quede una larga y otra corta.");
             var cfgTraza = Config.Bind(
                 "LogbookFit", "Verbose", true,
                 "Escribe en LogOutput.log lo que mide y lo que ajusta.");
@@ -91,6 +94,7 @@ namespace mt2_freecompany.Plugin
             LogbookClanFit.Enabled = cfgActivo.Value;
             LogbookClanFit.MinScale = cfgEscalaMinima.Value;
             LogbookClanFit.MaxColumns = cfgColumnas.Value;
+            LogbookClanFit.BalanceColumns = cfgEquilibrar.Value;
             LogbookClanFit.Verbose = cfgTraza.Value;
 
             new Harmony(MyPluginInfo.PLUGIN_GUID).PatchAll();

@@ -34,6 +34,7 @@ namespace mt2_freecompany.Plugin
         public static bool Enabled = true;
         public static float MinScale = 0.45f;   // hasta donde se deja encoger una columna
         public static int MaxColumns = 0;       // solo aplica si algun dia hubiera grid
+        public static bool BalanceColumns = true; // repartir los clanes entre las dos columnas
         public static bool Verbose = true;      // deja la traza en LogOutput.log
 
         static readonly FieldInfo? FClasses =
@@ -79,6 +80,9 @@ namespace mt2_freecompany.Plugin
                 var clanes = ComoTransform(FClasses?.GetValue(seccion));
                 var crew = ComoTransform(FCrew?.GetValue(seccion));
 
+                // Primero repartir, que asi hacen falta menos filas y el factor sale mejor.
+                if (BalanceColumns) Equilibrar(clanes, crew);
+
                 // Mismo factor para las dos columnas: manda la que peor lo tiene.
                 float k = Mathf.Min(Factor(clanes, "clanes"), Factor(crew, "tripulacion"));
                 k = Mathf.Clamp(k, MinScale, 1f);
@@ -90,6 +94,53 @@ namespace mt2_freecompany.Plugin
             {
                 Log("fallo encajando la pagina: " + e, true);
             }
+        }
+
+        /// <summary>
+        /// Pasa rombos de la columna larga a la corta hasta dejarlas iguales (o a uno de
+        /// diferencia). Con 12 y 6 quedan 9 y 9, o sea tres filas menos que encoger.
+        ///
+        /// Es seguro porque `clanOptionButtons` ya esta construida cuando corre el parche y
+        /// guarda REFERENCIAS a los botones, no posiciones: el indice de clan que usa el
+        /// juego al pulsar no se mueve. Solo cambia donde se dibuja cada rombo.
+        ///
+        /// Idempotente: al repetir, la diferencia ya es <= 1 y no mueve nada.
+        /// </summary>
+        static void Equilibrar(Transform? a, Transform? b)
+        {
+            if (a == null || b == null) return;
+            // Si la tripulacion no esta desbloqueada, el juego apaga esa raiz y todos los
+            // clanes van a la primera. Mover algo alli seria hacerlo desaparecer.
+            if (!a.gameObject.activeInHierarchy || !b.gameObject.activeInHierarchy) return;
+
+            int na = Activos(a), nb = Activos(b);
+            int movidos = 0;
+            while (na - nb > 1 && movidos < 40)
+            {
+                var ultimo = UltimoActivo(a);
+                if (ultimo == null) break;
+                ultimo.SetParent(b, false);
+                ultimo.SetAsLastSibling();
+                na--; nb++; movidos++;
+            }
+            if (movidos > 0)
+                Log($"equilibrado: {movidos} rombos pasados a la segunda columna ({na} / {nb})");
+        }
+
+        static int Activos(Transform raiz)
+        {
+            int n = 0;
+            foreach (Transform hijo in raiz)
+                if (hijo.gameObject.activeSelf) n++;
+            return n;
+        }
+
+        static Transform? UltimoActivo(Transform raiz)
+        {
+            Transform? ultimo = null;
+            foreach (Transform hijo in raiz)
+                if (hijo.gameObject.activeSelf) ultimo = hijo;
+            return ultimo;
         }
 
         /// <summary>Cuanto hay que encoger esta columna para que quepa. 1 = cabe tal cual.</summary>
