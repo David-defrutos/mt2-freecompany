@@ -23,12 +23,6 @@
       ],
       "pools": [
         "UnitsAllBanner"
-      ],
-      "descriptions": {
-        "english": "<b>Incant</b>: deal <b>2</b> damage to a random enemy."
-      },
-      "traits": [
-        "@HedgeMageDeploy"
       ]
     }
   ],
@@ -121,12 +115,6 @@
           }
         }
       }
-    }
-  ],
-  "traits": [
-    {
-      "id": "HedgeMageDeploy",
-      "name": "CardTraitDrawInDeploymentPhase"
     }
   ]
 }

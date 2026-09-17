@@ -2,105 +2,104 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "SpawnFieldMedic",
+      "id": "SpawnChapelAcolyte",
       "names": {
-        "english": "Field Medic"
+        "english": "Chapel Acolyte"
       },
-      "card_art": "@FieldMedic",
+      "card_art": "@ChapelAcolyte",
       "cost": 2,
       "card_type": "monster",
-      "rarity": "uncommon",
+      "rarity": "common",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnFieldMedicEffect"
+        "@SpawnChapelAcolyteEffect"
       ],
       "lore_tooltips": [
         {
-          "english": "Keeps a tally of who still owes her."
+          "english": "Took vows. Took a retainer too."
         }
       ],
       "pools": [
-        "UnitsAllBanner"
+        "MegaPool"
       ]
     }
   ],
   "characters": [
     {
-      "id": "FieldMedic",
+      "id": "ChapelAcolyte",
       "names": {
-        "english": "Field Medic"
+        "english": "Chapel Acolyte"
       },
-      "character_art": "@FieldMedicCharacterArt",
+      "character_art": "@ChapelAcolyteCharacterArt",
       "size": 1,
-      "attack_damage": 3,
-      "health": 18,
+      "attack_damage": 2,
+      "health": 14,
       "subtypes": [
-        "SubtypesData_BannerUnit",
         "@Sub_Ranged",
         "@Sub_Cleric"
       ],
       "triggers": [
         {
-          "id": "@FieldMedicEndTrigger"
+          "id": "@ChapelAcolyteTrigger"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "SpawnFieldMedicEffect",
+      "id": "SpawnChapelAcolyteEffect",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
-      "param_character": "@FieldMedic"
+      "param_character": "@ChapelAcolyte"
     },
     {
-      "id": "FieldMedicHeal",
+      "id": "ChapelAcolyteAbility",
       "name": "CardEffectHeal",
       "target_mode": "weakest",
       "target_team": "monsters",
-      "param_int": 4
+      "param_int": 3
     }
   ],
   "character_triggers": [
     {
-      "id": "FieldMedicEndTrigger",
+      "id": "ChapelAcolyteTrigger",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>4</b> health to the weakest friendly unit."
+        "english": "Restore <b>3</b> health to the weakest friendly unit."
       },
       "effects": [
-        "@FieldMedicHeal"
+        "@ChapelAcolyteAbility"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "FieldMedic",
-      "path": "textures/FieldMedicCardArt.png"
+      "id": "ChapelAcolyte",
+      "path": "textures/ChapelAcolyteCardArt.png"
     },
     {
-      "id": "FieldMedicCharacterArt",
-      "path": "textures/FieldMedicCharacterArt.png"
+      "id": "ChapelAcolyteCharacterArt",
+      "path": "textures/ChapelAcolyteCharacterArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "FieldMedic",
+      "id": "ChapelAcolyte",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@FieldMedic"
+          "sprite": "@ChapelAcolyte"
         }
       }
     },
     {
-      "id": "FieldMedicCharacterArt",
+      "id": "ChapelAcolyteCharacterArt",
       "type": "character_art",
       "extensions": {
         "character_art": {
-          "sprite": "@FieldMedicCharacterArt",
+          "sprite": "@ChapelAcolyteCharacterArt",
           "transform": {
             "position": {
               "x": 0,

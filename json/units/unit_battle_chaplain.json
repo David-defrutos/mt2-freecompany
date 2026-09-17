@@ -6,9 +6,6 @@
       "names": {
         "english": "Battle Chaplain"
       },
-      "descriptions": {
-        "english": "<b>End of Turn</b>: restore <b>8</b> health to all friendly units in this room."
-      },
       "card_art": "@BattleChaplain",
       "cost": 4,
       "card_type": "monster",
@@ -26,9 +23,6 @@
       ],
       "pools": [
         "UnitsAllBanner"
-      ],
-      "traits": [
-        "@BattleChaplainDeploy"
       ]
     }
   ],
@@ -52,12 +46,6 @@
           "id": "@BattleChaplainTrigger"
         }
       ]
-    }
-  ],
-  "traits": [
-    {
-      "id": "BattleChaplainDeploy",
-      "name": "CardTraitDrawInDeploymentPhase"
     }
   ],
   "effects": [

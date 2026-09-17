@@ -6,9 +6,6 @@
       "names": {
         "english": "Roderic"
       },
-      "descriptions": {
-        "english": "<b>Rally</b>: gain <b>+2</b>[attack] for the rest of combat."
-      },
       "card_art": "@Roderic",
       "cost": 0,
       "card_type": "monster",

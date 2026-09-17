@@ -2,105 +2,109 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "SpawnFieldMedic",
+      "id": "SpawnFreeLance",
       "names": {
-        "english": "Field Medic"
+        "english": "Free Lance"
       },
-      "card_art": "@FieldMedic",
-      "cost": 2,
+      "card_art": "@FreeLance",
+      "cost": 1,
       "card_type": "monster",
-      "rarity": "uncommon",
+      "rarity": "common",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnFieldMedicEffect"
+        "@SpawnFreeLanceEffect"
       ],
       "lore_tooltips": [
         {
-          "english": "Keeps a tally of who still owes her."
+          "english": "Cheapest steel that still holds a line."
         }
       ],
       "pools": [
-        "UnitsAllBanner"
+        "MegaPool"
       ]
     }
   ],
   "characters": [
     {
-      "id": "FieldMedic",
+      "id": "FreeLance",
       "names": {
-        "english": "Field Medic"
+        "english": "Free Lance"
       },
-      "character_art": "@FieldMedicCharacterArt",
+      "character_art": "@FreeLanceCharacterArt",
       "size": 1,
-      "attack_damage": 3,
-      "health": 18,
+      "attack_damage": 4,
+      "health": 12,
       "subtypes": [
-        "SubtypesData_BannerUnit",
-        "@Sub_Ranged",
-        "@Sub_Cleric"
+        "@Sub_Melee",
+        "@Sub_Warrior"
       ],
       "triggers": [
         {
-          "id": "@FieldMedicEndTrigger"
+          "id": "@FreeLanceTrigger"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "SpawnFieldMedicEffect",
+      "id": "SpawnFreeLanceEffect",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
-      "param_character": "@FieldMedic"
+      "param_character": "@FreeLance"
     },
     {
-      "id": "FieldMedicHeal",
-      "name": "CardEffectHeal",
-      "target_mode": "weakest",
+      "id": "FreeLanceAbility",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
       "target_team": "monsters",
-      "param_int": 4
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 3
+        }
+      ]
     }
   ],
   "character_triggers": [
     {
-      "id": "FieldMedicEndTrigger",
-      "trigger": "end_turn_pre_hand_discard",
+      "id": "FreeLanceTrigger",
+      "trigger": "on_spawn",
       "descriptions": {
-        "english": "Restore <b>4</b> health to the weakest friendly unit."
+        "english": "Apply <b>3</b>[armor] to itself."
       },
       "effects": [
-        "@FieldMedicHeal"
+        "@FreeLanceAbility"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "FieldMedic",
-      "path": "textures/FieldMedicCardArt.png"
+      "id": "FreeLance",
+      "path": "textures/FreeLanceCardArt.png"
     },
     {
-      "id": "FieldMedicCharacterArt",
-      "path": "textures/FieldMedicCharacterArt.png"
+      "id": "FreeLanceCharacterArt",
+      "path": "textures/FreeLanceCharacterArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "FieldMedic",
+      "id": "FreeLance",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@FieldMedic"
+          "sprite": "@FreeLance"
         }
       }
     },
     {
-      "id": "FieldMedicCharacterArt",
+      "id": "FreeLanceCharacterArt",
       "type": "character_art",
       "extensions": {
         "character_art": {
-          "sprite": "@FieldMedicCharacterArt",
+          "sprite": "@FreeLanceCharacterArt",
           "transform": {
             "position": {
               "x": 0,

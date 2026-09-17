@@ -23,9 +23,6 @@
       ],
       "pools": [
         "UnitsAllBanner"
-      ],
-      "traits": [
-        "@LongbowmanDeploy"
       ]
     }
   ],
@@ -100,12 +97,6 @@
           }
         }
       }
-    }
-  ],
-  "traits": [
-    {
-      "id": "LongbowmanDeploy",
-      "name": "CardTraitDrawInDeploymentPhase"
     }
   ]
 }

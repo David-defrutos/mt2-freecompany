@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "SpawnFieldMedic",
+      "id": "SpawnHedgeConjurer",
       "names": {
-        "english": "Field Medic"
+        "english": "Hedge Conjurer"
       },
-      "card_art": "@FieldMedic",
+      "card_art": "@HedgeConjurer",
       "cost": 2,
       "card_type": "monster",
       "rarity": "uncommon",
@@ -14,93 +14,98 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnFieldMedicEffect"
+        "@SpawnHedgeConjurerEffect"
       ],
       "lore_tooltips": [
         {
-          "english": "Keeps a tally of who still owes her."
+          "english": "Self-taught, and it shows. Still cheaper than a guild mage."
         }
       ],
       "pools": [
-        "UnitsAllBanner"
+        "MegaPool"
       ]
     }
   ],
   "characters": [
     {
-      "id": "FieldMedic",
+      "id": "HedgeConjurer",
       "names": {
-        "english": "Field Medic"
+        "english": "Hedge Conjurer"
       },
-      "character_art": "@FieldMedicCharacterArt",
+      "character_art": "@HedgeConjurerCharacterArt",
       "size": 1,
-      "attack_damage": 3,
-      "health": 18,
+      "attack_damage": 5,
+      "health": 12,
       "subtypes": [
-        "SubtypesData_BannerUnit",
         "@Sub_Ranged",
-        "@Sub_Cleric"
+        "@Sub_Wizard"
       ],
       "triggers": [
         {
-          "id": "@FieldMedicEndTrigger"
+          "id": "@HedgeConjurerTrigger"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "SpawnFieldMedicEffect",
+      "id": "SpawnHedgeConjurerEffect",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
-      "param_character": "@FieldMedic"
+      "param_character": "@HedgeConjurer"
     },
     {
-      "id": "FieldMedicHeal",
-      "name": "CardEffectHeal",
-      "target_mode": "weakest",
+      "id": "HedgeConjurerAbility",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
       "target_team": "monsters",
-      "param_int": 4
+      "param_upgrade": "@HedgeConjurerFocus"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "HedgeConjurerFocus",
+      "bonus_damage": 1
     }
   ],
   "character_triggers": [
     {
-      "id": "FieldMedicEndTrigger",
-      "trigger": "end_turn_pre_hand_discard",
+      "id": "HedgeConjurerTrigger",
+      "trigger": "card_spell_played",
       "descriptions": {
-        "english": "Restore <b>4</b> health to the weakest friendly unit."
+        "english": "Gain <b>+1</b>[attack] for the rest of combat."
       },
       "effects": [
-        "@FieldMedicHeal"
+        "@HedgeConjurerAbility"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "FieldMedic",
-      "path": "textures/FieldMedicCardArt.png"
+      "id": "HedgeConjurer",
+      "path": "textures/HedgeConjurerCardArt.png"
     },
     {
-      "id": "FieldMedicCharacterArt",
-      "path": "textures/FieldMedicCharacterArt.png"
+      "id": "HedgeConjurerCharacterArt",
+      "path": "textures/HedgeConjurerCharacterArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "FieldMedic",
+      "id": "HedgeConjurer",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@FieldMedic"
+          "sprite": "@HedgeConjurer"
         }
       }
     },
     {
-      "id": "FieldMedicCharacterArt",
+      "id": "HedgeConjurerCharacterArt",
       "type": "character_art",
       "extensions": {
         "character_art": {
-          "sprite": "@FieldMedicCharacterArt",
+          "sprite": "@HedgeConjurerCharacterArt",
           "transform": {
             "position": {
               "x": 0,

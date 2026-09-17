@@ -23,12 +23,6 @@
       ],
       "pools": [
         "UnitsAllBanner"
-      ],
-      "descriptions": {
-        "english": "<b>Slay</b>: gain <b>3</b>[buff]."
-      },
-      "traits": [
-        "@BerserkerDeploy"
       ]
     }
   ],
@@ -126,12 +120,6 @@
           }
         }
       }
-    }
-  ],
-  "traits": [
-    {
-      "id": "BerserkerDeploy",
-      "name": "CardTraitDrawInDeploymentPhase"
     }
   ]
 }

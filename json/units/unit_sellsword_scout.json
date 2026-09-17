@@ -2,91 +2,86 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "SpawnCutpurse",
+      "id": "SpawnSellswordScout",
       "names": {
-        "english": "Cutpurse"
+        "english": "Sellsword Scout"
       },
-      "card_art": "@Cutpurse",
-      "cost": 2,
+      "card_art": "@SellswordScout",
+      "cost": 1,
       "card_type": "monster",
-      "rarity": "uncommon",
+      "rarity": "common",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnCutpurseEffect"
+        "@SpawnSellswordScoutEffect"
       ],
       "lore_tooltips": [
         {
-          "english": "Charges a finder's fee on your own purse."
+          "english": "Paid to be somewhere else, quietly."
         }
       ],
       "pools": [
-        "UnitsAllBanner"
+        "MegaPool"
       ]
     }
   ],
   "characters": [
     {
-      "id": "Cutpurse",
+      "id": "SellswordScout",
       "names": {
-        "english": "Cutpurse"
+        "english": "Sellsword Scout"
       },
-      "character_art": "@CutpurseCharacterArt",
+      "character_art": "@SellswordScoutCharacterArt",
       "size": 1,
-      "attack_damage": 6,
-      "health": 10,
+      "attack_damage": 4,
+      "health": 8,
       "subtypes": [
-        "SubtypesData_BannerUnit",
         "@Sub_Melee",
         "@Sub_Rogue"
       ],
       "starting_status_effects": [
         {
-          "status": "avarice",
-          "count": 1
-        },
-        {
           "status": "stealth",
-          "count": 2
+          "count": 1
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "SpawnCutpurseEffect",
+      "id": "SpawnSellswordScoutEffect",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
-      "param_character": "@Cutpurse"
+      "param_character": "@SellswordScout"
     }
   ],
   "sprites": [
     {
-      "id": "Cutpurse",
-      "path": "textures/CutpurseCardArt.png"
+      "id": "SellswordScout",
+      "path": "textures/SellswordScoutCardArt.png"
     },
     {
-      "id": "CutpurseCharacterArt",
-      "path": "textures/CutpurseCharacterArt.png"
+      "id": "SellswordScoutCharacterArt",
+      "path": "textures/SellswordScoutCharacterArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "Cutpurse",
+      "id": "SellswordScout",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@Cutpurse"
+          "sprite": "@SellswordScout"
         }
       }
     },
     {
-      "id": "CutpurseCharacterArt",
+      "id": "SellswordScoutCharacterArt",
       "type": "character_art",
       "extensions": {
         "character_art": {
-          "sprite": "@CutpurseCharacterArt",
+          "sprite": "@SellswordScoutCharacterArt",
           "transform": {
             "position": {
               "x": 0,

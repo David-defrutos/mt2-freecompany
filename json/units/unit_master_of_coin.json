@@ -6,9 +6,6 @@
       "names": {
         "english": "Master of Coin"
       },
-      "descriptions": {
-        "english": "Starts with <b>3</b>[avarice]."
-      },
       "card_art": "@MasterOfCoin",
       "cost": 3,
       "card_type": "monster",
@@ -26,9 +23,6 @@
       ],
       "pools": [
         "UnitsAllBanner"
-      ],
-      "traits": [
-        "@MasterOfCoinDeploy"
       ]
     }
   ],
@@ -53,12 +47,6 @@
           "count": 3
         }
       ]
-    }
-  ],
-  "traits": [
-    {
-      "id": "MasterOfCoinDeploy",
-      "name": "CardTraitDrawInDeploymentPhase"
     }
   ],
   "effects": [

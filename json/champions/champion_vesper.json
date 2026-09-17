@@ -6,9 +6,6 @@
       "names": {
         "english": "Vesper"
       },
-      "descriptions": {
-        "english": "<b>Start of Turn</b>: gain <b>1</b>[ember]."
-      },
       "card_art": "@Vesper",
       "cost": 0,
       "card_type": "monster",

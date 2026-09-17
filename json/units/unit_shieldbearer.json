@@ -23,12 +23,6 @@
       ],
       "pools": [
         "UnitsAllBanner"
-      ],
-      "descriptions": {
-        "english": "<b>Summon</b>: apply <b>5</b>[armor] to itself."
-      },
-      "traits": [
-        "@ShieldbearerDeploy"
       ]
     }
   ],
@@ -126,12 +120,6 @@
           }
         }
       }
-    }
-  ],
-  "traits": [
-    {
-      "id": "ShieldbearerDeploy",
-      "name": "CardTraitDrawInDeploymentPhase"
     }
   ]
 }

@@ -2,105 +2,109 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "SpawnFieldMedic",
+      "id": "SpawnBountyHunter",
       "names": {
-        "english": "Field Medic"
+        "english": "Bounty Hunter"
       },
-      "card_art": "@FieldMedic",
-      "cost": 2,
+      "card_art": "@BountyHunter",
+      "cost": 3,
       "card_type": "monster",
-      "rarity": "uncommon",
+      "rarity": "rare",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnFieldMedicEffect"
+        "@SpawnBountyHunterEffect"
       ],
       "lore_tooltips": [
         {
-          "english": "Keeps a tally of who still owes her."
+          "english": "Names on a list. Coin per name."
         }
       ],
       "pools": [
-        "UnitsAllBanner"
+        "MegaPool"
       ]
     }
   ],
   "characters": [
     {
-      "id": "FieldMedic",
+      "id": "BountyHunter",
       "names": {
-        "english": "Field Medic"
+        "english": "Bounty Hunter"
       },
-      "character_art": "@FieldMedicCharacterArt",
+      "character_art": "@BountyHunterCharacterArt",
       "size": 1,
-      "attack_damage": 3,
-      "health": 18,
+      "attack_damage": 7,
+      "health": 16,
       "subtypes": [
-        "SubtypesData_BannerUnit",
         "@Sub_Ranged",
-        "@Sub_Cleric"
+        "@Sub_Ranger"
       ],
       "triggers": [
         {
-          "id": "@FieldMedicEndTrigger"
+          "id": "@BountyHunterTrigger"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "SpawnFieldMedicEffect",
+      "id": "SpawnBountyHunterEffect",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
-      "param_character": "@FieldMedic"
+      "param_character": "@BountyHunter"
     },
     {
-      "id": "FieldMedicHeal",
-      "name": "CardEffectHeal",
-      "target_mode": "weakest",
+      "id": "BountyHunterAbility",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
       "target_team": "monsters",
-      "param_int": 4
+      "param_status_effects": [
+        {
+          "status": "avarice",
+          "count": 3
+        }
+      ]
     }
   ],
   "character_triggers": [
     {
-      "id": "FieldMedicEndTrigger",
-      "trigger": "end_turn_pre_hand_discard",
+      "id": "BountyHunterTrigger",
+      "trigger": "on_kill",
       "descriptions": {
-        "english": "Restore <b>4</b> health to the weakest friendly unit."
+        "english": "Gain <b>3</b>[avarice]."
       },
       "effects": [
-        "@FieldMedicHeal"
+        "@BountyHunterAbility"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "FieldMedic",
-      "path": "textures/FieldMedicCardArt.png"
+      "id": "BountyHunter",
+      "path": "textures/BountyHunterCardArt.png"
     },
     {
-      "id": "FieldMedicCharacterArt",
-      "path": "textures/FieldMedicCharacterArt.png"
+      "id": "BountyHunterCharacterArt",
+      "path": "textures/BountyHunterCharacterArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "FieldMedic",
+      "id": "BountyHunter",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@FieldMedic"
+          "sprite": "@BountyHunter"
         }
       }
     },
     {
-      "id": "FieldMedicCharacterArt",
+      "id": "BountyHunterCharacterArt",
       "type": "character_art",
       "extensions": {
         "character_art": {
-          "sprite": "@FieldMedicCharacterArt",
+          "sprite": "@BountyHunterCharacterArt",
           "transform": {
             "position": {
               "x": 0,

@@ -6,9 +6,6 @@
       "names": {
         "english": "Ironbound Champion"
       },
-      "descriptions": {
-        "english": "<b>Summon</b>: apply <b>10</b>[armor] to all friendly units in this room."
-      },
       "card_art": "@IronboundChampion",
       "cost": 4,
       "card_type": "monster",
@@ -26,9 +23,6 @@
       ],
       "pools": [
         "UnitsAllBanner"
-      ],
-      "traits": [
-        "@IronboundChampionDeploy"
       ]
     }
   ],
@@ -52,12 +46,6 @@
           "id": "@IronboundChampionTrigger"
         }
       ]
-    }
-  ],
-  "traits": [
-    {
-      "id": "IronboundChampionDeploy",
-      "name": "CardTraitDrawInDeploymentPhase"
     }
   ],
   "effects": [
