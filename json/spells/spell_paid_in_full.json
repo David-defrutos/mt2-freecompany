@@ -1,0 +1,70 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "PaidInFull",
+      "names": {
+        "english": "Paid in Full"
+      },
+      "descriptions": {
+        "english": "A friendly unit gains <b>1</b>[attack] for every <b>50</b> gold you have spent this run."
+      },
+      "card_art": "@PaidInFull",
+      "cost": 2,
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@PaidInFullUpgrade"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "The books balance. The captain smiles."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "PaidInFullEdge",
+      "titles": {
+        "english": "Paid in Full"
+      },
+      "bonus_damage": 1,
+      "hide_icon_on_card": true,
+      "icon": "@PaidInFull"
+    }
+  ],
+  "effects": [
+    {
+      "id": "PaidInFullUpgrade",
+      "name": "CardEffectAddCardUpgradeToUnitPerGoldSpent",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_int": 50,
+      "param_upgrade": "@PaidInFullEdge"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "PaidInFull",
+      "path": "textures/PaidInFullArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "PaidInFull",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@PaidInFull"
+        }
+      }
+    }
+  ]
+}

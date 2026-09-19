@@ -221,6 +221,17 @@
         "@Grimoire",
         "@ArchmagesStaff"
       ]
+    },
+    {
+      "id": "FreeCompanyRoomCardPool",
+      "cards": [
+        "@ThePit",
+        "@RopeAndGrapple",
+        "@Caltrops",
+        "@PaymastersTent",
+        "@Watchtower",
+        "@QuartermastersStore"
+      ]
     }
   ],
   "rewards": [

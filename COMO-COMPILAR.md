@@ -2,7 +2,8 @@
 
 > El DLL lleva dentro la lista de ficheros JSON que carga el clan. **Cada JSON nuevo
 > obliga a recompilar**, aunque el JSON en si no necesite compilacion.
-> Procedimiento general en `D:\Juegos\MT2_mod\docs\64-anadir-json-nuevos-y-recompilar.md`.
+> Procedimiento general en `D:\Juegos\MT2_mod\docs\guias\compilar-e-instalar.md`
+> (antes `docs\64-anadir-json-nuevos-y-recompilar.md`; la documentacion se reorganizo el 18-sep).
 
 ## 1. Anadir un JSON nuevo
 

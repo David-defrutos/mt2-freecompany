@@ -2,60 +2,60 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "ShieldWall",
+      "id": "SpoilsOfWar",
       "names": {
-        "english": "Shield Wall"
+        "english": "Spoils of War"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+        "english": "Apply <b>1</b>[avarice] to all friendly units in a room."
       },
-      "card_art": "@ShieldWall",
-      "cost": 1,
+      "card_art": "@SpoilsOfWar",
+      "cost": 2,
       "card_type": "spell",
-      "rarity": "common",
+      "rarity": "uncommon",
       "class": "@ClassFreeCompany",
       "targets_room": true,
-      "targetless": false,
+      "targetless": true,
       "effects": [
-        "@ShieldWallArmor"
+        "@SpoilsOfWarAvarice"
       ],
       "lore_tooltips": [
         {
-          "english": "Cheaper than a funeral."
+          "english": "Everyone counts their own."
         }
       ],
       "pools": [
-        "StarterCardsOnly"
+        "MegaPool"
       ]
     }
   ],
   "effects": [
     {
-      "id": "ShieldWallArmor",
+      "id": "SpoilsOfWarAvarice",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "monsters",
       "param_status_effects": [
         {
-          "status": "armor",
-          "count": 3
+          "status": "avarice",
+          "count": 1
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "ShieldWall",
-      "path": "textures/ShieldWallArt.png"
+      "id": "SpoilsOfWar",
+      "path": "textures/SpoilsOfWarArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "ShieldWall",
+      "id": "SpoilsOfWar",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@ShieldWall"
+          "sprite": "@SpoilsOfWar"
         }
       }
     }

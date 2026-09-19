@@ -1,0 +1,61 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "ScoutsMapEffect",
+      "name": "RelicEffectAddBattleCardToHandOnUnitTrigger",
+      "param_card_pool": "@FreeCompanyRoomCardPool",
+      "param_trigger": "on_spawn",
+      "param_subtype": "@Sub_Rogue",
+      "param_int": 1,
+      "source_team": "monsters"
+    }
+  ],
+  "relics": [
+    {
+      "id": "ScoutsMap",
+      "type": "collectable",
+      "names": {
+        "english": "Scout's Map"
+      },
+      "descriptions": {
+        "english": "Whenever a <b>Rogue</b> is summoned, add a random Free Company Room card to your hand."
+      },
+      "relic_activated_texts": {
+        "english": "This way."
+      },
+      "lore_tooltips": [
+        {
+          "english": "Drawn in soot, sold twice."
+        }
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@ScoutsMapEffect"
+      ],
+      "icon": "@ScoutsMapIcon",
+      "icon_small": "@ScoutsMapIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassFreeCompany",
+            "pools": [
+              "MegaRelicPool"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ScoutsMapIcon",
+      "path": "textures/ScoutsMapIcon.png"
+    },
+    {
+      "id": "ScoutsMapIconSmall",
+      "path": "textures/ScoutsMapIconSmall.png"
+    }
+  ]
+}

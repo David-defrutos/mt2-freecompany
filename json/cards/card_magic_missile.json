@@ -12,7 +12,7 @@
       "card_art": "@MagicMissile",
       "cost": 1,
       "card_type": "spell",
-      "rarity": "starter",
+      "rarity": "common",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,

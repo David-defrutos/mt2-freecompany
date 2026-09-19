@@ -1,0 +1,58 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "QuartermastersSealEffect",
+      "name": "RelicEffectAddEquipmentLimit",
+      "param_int": 1,
+      "param_bool": false
+    }
+  ],
+  "relics": [
+    {
+      "id": "QuartermastersSeal",
+      "type": "collectable",
+      "names": {
+        "english": "Quartermaster's Seal"
+      },
+      "descriptions": {
+        "english": "Friendly units can hold <b>1</b> additional piece of equipment."
+      },
+      "relic_activated_texts": {
+        "english": "Stamped and issued."
+      },
+      "lore_tooltips": [
+        {
+          "english": "Nothing leaves the store without it."
+        }
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@QuartermastersSealEffect"
+      ],
+      "icon": "@QuartermastersSealIcon",
+      "icon_small": "@QuartermastersSealIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassFreeCompany",
+            "pools": [
+              "MegaRelicPool"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "QuartermastersSealIcon",
+      "path": "textures/QuartermastersSealIcon.png"
+    },
+    {
+      "id": "QuartermastersSealIconSmall",
+      "path": "textures/QuartermastersSealIconSmall.png"
+    }
+  ]
+}

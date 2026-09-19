@@ -1,0 +1,57 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "MarchingOrdersEffect",
+      "name": "RelicEffectFirstRoomCardIsPlayedOnAllFloors",
+      "param_int_2": 1
+    }
+  ],
+  "relics": [
+    {
+      "id": "MarchingOrders",
+      "type": "collectable",
+      "names": {
+        "english": "Marching Orders"
+      },
+      "descriptions": {
+        "english": "The first Room card you play each battle is played on every floor."
+      },
+      "relic_activated_texts": {
+        "english": "All floors. Move."
+      },
+      "lore_tooltips": [
+        {
+          "english": "One order, three camps."
+        }
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@MarchingOrdersEffect"
+      ],
+      "icon": "@MarchingOrdersIcon",
+      "icon_small": "@MarchingOrdersIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassFreeCompany",
+            "pools": [
+              "MegaRelicPool"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "MarchingOrdersIcon",
+      "path": "textures/MarchingOrdersIcon.png"
+    },
+    {
+      "id": "MarchingOrdersIconSmall",
+      "path": "textures/MarchingOrdersIconSmall.png"
+    }
+  ]
+}

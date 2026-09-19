@@ -57,14 +57,18 @@ namespace mt2_freecompany.Plugin
                         "json/spells/spell_invisibility.json",
                         "json/spells/spell_lightning_bolt.json",
                         "json/spells/spell_mass_hold_person.json",
+                        "json/spells/spell_mercenarys_contract.json",
+                        "json/spells/spell_paid_in_full.json",
                         "json/spells/spell_resurrection.json",
                         "json/spells/spell_shield.json",
                         "json/spells/spell_silence.json",
+                        "json/spells/spell_spoils_of_war.json",
                         "json/spells/spell_web.json",
                         "json/rooms/room_caltrops.json",
                         "json/rooms/room_paymasters_tent.json",
                         "json/rooms/room_rope_and_grapple.json",
                         "json/rooms/room_the_pit.json",
+                        "json/rooms/room_quartermasters_store.json",
                         "json/rooms/room_watchtower.json",
                         "json/kits/kit_barbarian.json",
                         "json/kits/kit_cleric.json",
@@ -72,7 +76,10 @@ namespace mt2_freecompany.Plugin
                         "json/kits/kit_rogue.json",
                         "json/kits/kit_warrior.json",
                         "json/kits/kit_wizard.json",
-                        "json/kits/spell_requisition.json"
+                        "json/kits/spell_requisition.json",
+                        "json/relics/relic_marching_orders.json",
+                        "json/relics/relic_quartermasters_seal.json",
+                        "json/relics/relic_scouts_map.json"
                     );
                 }
             );

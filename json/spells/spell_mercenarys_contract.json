@@ -2,14 +2,14 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "ShieldWall",
+      "id": "MercenarysContract",
       "names": {
-        "english": "Shield Wall"
+        "english": "Mercenary's Contract"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+        "english": "Apply <b>3</b>[avarice] to a friendly unit."
       },
-      "card_art": "@ShieldWall",
+      "card_art": "@MercenarysContract",
       "cost": 1,
       "card_type": "spell",
       "rarity": "common",
@@ -17,27 +17,27 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@ShieldWallArmor"
+        "@MercenarysContractAvarice"
       ],
       "lore_tooltips": [
         {
-          "english": "Cheaper than a funeral."
+          "english": "Terms, rates, and a clause about dying."
         }
       ],
       "pools": [
-        "StarterCardsOnly"
+        "MegaPool"
       ]
     }
   ],
   "effects": [
     {
-      "id": "ShieldWallArmor",
+      "id": "MercenarysContractAvarice",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
+      "target_mode": "drop_target_character",
       "target_team": "monsters",
       "param_status_effects": [
         {
-          "status": "armor",
+          "status": "avarice",
           "count": 3
         }
       ]
@@ -45,17 +45,17 @@
   ],
   "sprites": [
     {
-      "id": "ShieldWall",
-      "path": "textures/ShieldWallArt.png"
+      "id": "MercenarysContract",
+      "path": "textures/MercenarysContractArt.png"
     }
   ],
   "game_objects": [
     {
-      "id": "ShieldWall",
+      "id": "MercenarysContract",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@ShieldWall"
+          "sprite": "@MercenarysContract"
         }
       }
     }
