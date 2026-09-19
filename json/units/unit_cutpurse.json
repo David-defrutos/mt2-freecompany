@@ -24,6 +24,25 @@
       "pools": [
         "UnitsAllBanner"
       ]
+    },
+    {
+      "id": "CutpurseAbility",
+      "names": {
+        "english": "Lift the Purse"
+      },
+      "descriptions": {
+        "english": "Gain <b>1</b> [stealth] and <b>10</b> gold."
+      },
+      "card_art": "@Cutpurse",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@CutpurseAbilityStealth",
+        "@CutpurseAbilityGold"
+      ]
     }
   ],
   "characters": [
@@ -50,7 +69,8 @@
           "status": "stealth",
           "count": 2
         }
-      ]
+      ],
+      "ability": "@CutpurseAbility"
     }
   ],
   "effects": [
@@ -59,6 +79,25 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "param_character": "@Cutpurse"
+    },
+    {
+      "id": "CutpurseAbilityStealth",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "stealth",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "CutpurseAbilityGold",
+      "name": "CardEffectRewardGold",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 10
     }
   ],
   "sprites": [

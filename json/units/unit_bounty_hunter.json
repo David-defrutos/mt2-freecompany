@@ -44,6 +44,12 @@
         {
           "id": "@BountyHunterTrigger"
         }
+      ],
+      "starting_status_effects": [
+        {
+          "status": "ambush",
+          "count": 1
+        }
       ]
     }
   ],

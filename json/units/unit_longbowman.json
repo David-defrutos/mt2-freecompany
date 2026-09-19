@@ -7,7 +7,7 @@
         "english": "Longbowman"
       },
       "card_art": "@Longbowman",
-      "cost": 3,
+      "cost": 2,
       "card_type": "monster",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",

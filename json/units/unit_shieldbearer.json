@@ -24,6 +24,25 @@
       "pools": [
         "UnitsAllBanner"
       ]
+    },
+    {
+      "id": "ShieldbearerAbility",
+      "names": {
+        "english": "Last Stand"
+      },
+      "descriptions": {
+        "english": "Deal damage to all enemy units in this room equal to twice this unit's [health]. Then deal damage to this unit equal to its [health]."
+      },
+      "card_art": "@Shieldbearer",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@ShieldbearerAbilityBlast",
+        "@ShieldbearerAbilityRecoil"
+      ]
     }
   ],
   "characters": [
@@ -45,7 +64,8 @@
         {
           "id": "@ShieldbearerSpawnTrigger"
         }
-      ]
+      ],
+      "ability": "@ShieldbearerAbility"
     }
   ],
   "effects": [
@@ -66,6 +86,20 @@
           "count": 5
         }
       ]
+    },
+    {
+      "id": "ShieldbearerAbilityBlast",
+      "name": "CardEffectDamagePerHp",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 2
+    },
+    {
+      "id": "ShieldbearerAbilityRecoil",
+      "name": "CardEffectDamagePerHp",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 1
     }
   ],
   "character_triggers": [
@@ -73,7 +107,7 @@
       "id": "ShieldbearerSpawnTrigger",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Apply <b>5</b>[armor] to itself."
+        "english": "Apply <b>5</b> [armor] to itself."
       },
       "effects": [
         "@ShieldbearerArmor"
