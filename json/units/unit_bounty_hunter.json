@@ -7,7 +7,7 @@
         "english": "Bounty Hunter"
       },
       "card_art": "@BountyHunter",
-      "cost": 3,
+      "cost": 1,
       "card_type": "monster",
       "rarity": "rare",
       "class": "@ClassFreeCompany",
@@ -72,7 +72,7 @@
       "id": "BountyHunterTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain <b>3</b>[avarice]."
+        "english": "Gain <b>3</b> [avarice]."
       },
       "effects": [
         "@BountyHunterAbility"
@@ -108,12 +108,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 0.5,
+              "y": 0.524,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 0.733,
+              "y": 0.733,
               "z": 1
             }
           }

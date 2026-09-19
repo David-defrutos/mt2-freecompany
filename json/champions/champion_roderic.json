@@ -36,6 +36,7 @@
       "health": 30,
       "death_type": "large",
       "subtypes": [
+        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34",
         "@Sub_Melee",
         "@Sub_Warrior"
       ],
@@ -51,7 +52,7 @@
       "id": "RodericMusterTrigger",
       "trigger": "card_monster_played",
       "descriptions": {
-        "english": "Gain <b>+2</b>[attack] for the rest of combat."
+        "english": "Gain <b>+1</b> [health] and <b>1</b> [armor] permanently."
       },
       "effects": [
         "@RodericMusterBuff"
@@ -61,7 +62,7 @@
       "id": "WallTrigger1",
       "trigger": "on_turn_begin",
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in this room."
+        "english": "Apply <b>3</b> [armor] to all friendly units in this room."
       },
       "effects": [
         "@WallArmor1"
@@ -71,7 +72,7 @@
       "id": "WallTrigger2",
       "trigger": "on_turn_begin",
       "descriptions": {
-        "english": "Apply <b>6</b>[armor] to all friendly units in this room."
+        "english": "Apply <b>6</b> [armor] to all friendly units in this room."
       },
       "effects": [
         "@WallArmor2"
@@ -81,7 +82,7 @@
       "id": "WallTrigger3",
       "trigger": "on_turn_begin",
       "descriptions": {
-        "english": "Apply <b>10</b>[armor] to all friendly units in this room."
+        "english": "Apply <b>10</b> [armor] to all friendly units in this room."
       },
       "effects": [
         "@WallArmor3"
@@ -89,7 +90,7 @@
     },
     {
       "id": "BloodwageTrigger1",
-      "trigger": "on_kill",
+      "trigger": "on_any_unit_death_on_floor",
       "descriptions": {
         "english": "Restore <b>3</b> health."
       },
@@ -99,7 +100,7 @@
     },
     {
       "id": "BloodwageTrigger2",
-      "trigger": "on_kill",
+      "trigger": "on_any_unit_death_on_floor",
       "descriptions": {
         "english": "Restore <b>6</b> health."
       },
@@ -109,9 +110,9 @@
     },
     {
       "id": "BloodwageTrigger3",
-      "trigger": "on_kill",
+      "trigger": "on_any_unit_death_on_floor",
       "descriptions": {
-        "english": "Restore <b>10</b> health and gain <b>3</b>[buff]."
+        "english": "Restore <b>10</b> health and gain <b>3</b> [rage]."
       },
       "effects": [
         "@BloodwageHeal3",
@@ -128,10 +129,11 @@
     },
     {
       "id": "RodericMusterBuff",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
       "target_team": "monsters",
-      "param_upgrade": "@RodericMusterUpgrade"
+      "param_upgrade": "@RodericMusterUpgrade",
+      "param_int_3": 2
     },
     {
       "id": "WallArmor1",
@@ -206,7 +208,13 @@
   "upgrades": [
     {
       "id": "RodericMusterUpgrade",
-      "bonus_damage": 2
+      "bonus_hp": 1,
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 1
+        }
+      ]
     },
     {
       "id": "upg_Wall1",
@@ -219,6 +227,12 @@
       "bonus_hp": 10,
       "trigger_upgrades": [
         "@WallTrigger1"
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 2
+        }
       ]
     },
     {
@@ -235,6 +249,12 @@
       ],
       "trigger_upgrades": [
         "@WallTrigger2"
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 4
+        }
       ]
     },
     {
@@ -251,6 +271,12 @@
       ],
       "trigger_upgrades": [
         "@WallTrigger3"
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 6
+        }
       ]
     },
     {
@@ -264,6 +290,12 @@
       "bonus_damage": 8,
       "trigger_upgrades": [
         "@BloodwageTrigger1"
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 2
+        }
       ]
     },
     {
@@ -280,6 +312,12 @@
       ],
       "trigger_upgrades": [
         "@BloodwageTrigger2"
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 4
+        }
       ]
     },
     {
@@ -296,6 +334,12 @@
       ],
       "trigger_upgrades": [
         "@BloodwageTrigger3"
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 6
+        }
       ]
     },
     {
@@ -311,7 +355,11 @@
       "status_effect_upgrades": [
         {
           "status": "avarice",
-          "count": 1
+          "count": 5
+        },
+        {
+          "status": "titanskin",
+          "count": 2
         }
       ]
     },
@@ -328,8 +376,15 @@
       "status_effect_upgrades": [
         {
           "status": "avarice",
-          "count": 2
+          "count": 10
+        },
+        {
+          "status": "titanskin",
+          "count": 4
         }
+      ],
+      "remove_upgrades": [
+        "@upg_Plunder1"
       ]
     },
     {
@@ -345,12 +400,19 @@
       "status_effect_upgrades": [
         {
           "status": "avarice",
-          "count": 4
+          "count": 15
         },
         {
           "status": "ambush",
           "count": 1
+        },
+        {
+          "status": "titanskin",
+          "count": 6
         }
+      ],
+      "remove_upgrades": [
+        "@upg_Plunder2"
       ]
     }
   ],
@@ -383,12 +445,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 0.5,
+              "y": 0.502,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 0.687,
+              "y": 0.687,
               "z": 1
             }
           }

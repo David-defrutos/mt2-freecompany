@@ -1,0 +1,57 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "SappersChargesEffect",
+      "name": "RelicEffectDamageEnemyOnAscend",
+      "param_int": 10
+    }
+  ],
+  "relics": [
+    {
+      "id": "SappersCharges",
+      "type": "collectable",
+      "names": {
+        "english": "Sapper's Charges"
+      },
+      "descriptions": {
+        "english": "Whenever a friendly unit ascends a floor, deal <b>10</b> damage to a random enemy."
+      },
+      "relic_activated_texts": {
+        "english": "Fire in the hole."
+      },
+      "lore_tooltips": [
+        {
+          "english": "Paid by the barrel, not by the hour."
+        }
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@SappersChargesEffect"
+      ],
+      "icon": "@SappersChargesIcon",
+      "icon_small": "@SappersChargesIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassFreeCompany",
+            "pools": [
+              "MegaRelicPool"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SappersChargesIcon",
+      "path": "textures/SappersChargesIcon.png"
+    },
+    {
+      "id": "SappersChargesIconSmall",
+      "path": "textures/SappersChargesIconSmall.png"
+    }
+  ]
+}

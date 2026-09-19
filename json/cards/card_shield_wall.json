@@ -7,7 +7,7 @@
         "english": "Shield Wall"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[armor] to all friendly units in a room."
+        "english": "Apply <b>3</b> [armor] to all friendly units in a room."
       },
       "card_art": "@ShieldWall",
       "cost": 1,

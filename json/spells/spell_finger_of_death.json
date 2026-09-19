@@ -7,7 +7,7 @@
         "english": "Finger of Death"
       },
       "descriptions": {
-        "english": "Apply <b>1</b>[fragile] to an enemy. Cannot target bosses."
+        "english": "Apply <b>1</b> [fragile] to an enemy. Cannot target bosses."
       },
       "card_art": "@FingerOfDeath",
       "cost": 2,

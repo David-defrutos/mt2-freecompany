@@ -73,7 +73,7 @@
       "id": "BerserkerKillTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain <b>3</b>[buff]."
+        "english": "Gain <b>3</b> [buff]."
       },
       "effects": [
         "@BerserkerRage"
@@ -109,12 +109,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 0.5,
+              "y": 0.493,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 0.638,
+              "y": 0.638,
               "z": 1
             }
           }

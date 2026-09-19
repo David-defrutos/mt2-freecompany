@@ -7,7 +7,7 @@
         "english": "Resurrection"
       },
       "descriptions": {
-        "english": "Apply <b>1</b>[undying] to a friendly unit."
+        "english": "Apply <b>1</b> [undying] to a friendly unit."
       },
       "card_art": "@Resurrection",
       "cost": 2,

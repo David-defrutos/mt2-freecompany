@@ -7,7 +7,7 @@
         "english": "Master of Coin"
       },
       "card_art": "@MasterOfCoin",
-      "cost": 3,
+      "cost": 1,
       "card_type": "monster",
       "rarity": "rare",
       "class": "@ClassFreeCompany",
@@ -46,6 +46,14 @@
           "status": "avarice",
           "count": 3
         }
+      ],
+      "triggers": [
+        {
+          "id": "@MasterOfCoinAvariceTrigger"
+        },
+        {
+          "id": "@MasterOfCoinCelebrate"
+        }
       ]
     }
   ],
@@ -55,6 +63,26 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "param_character": "@MasterOfCoin"
+    },
+    {
+      "id": "MasterOfCoinAvariceGain",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "avarice",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "MasterOfCoinCelebrateGain",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_upgrade": "@MasterOfCoinCelebrateUpgrade",
+      "param_int_3": 2
     }
   ],
   "sprites": [
@@ -86,17 +114,50 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 0.5,
+              "y": 0.505,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 0.641,
+              "y": 0.641,
               "z": 1
             }
           }
         }
       }
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "MasterOfCoinAvariceTrigger",
+      "trigger": "on_turn_begin",
+      "descriptions": {
+        "english": "Apply <b>1</b> [avarice] to all friendly units in this room."
+      },
+      "effects": [
+        "@MasterOfCoinAvariceGain"
+      ]
+    },
+    {
+      "id": "MasterOfCoinCelebrate",
+      "trigger": "on_encounter_complete",
+      "descriptions": {
+        "english": "Gain <b>2</b> [avarice] permanently."
+      },
+      "effects": [
+        "@MasterOfCoinCelebrateGain"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MasterOfCoinCelebrateUpgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 2
+        }
+      ]
     }
   ]
 }

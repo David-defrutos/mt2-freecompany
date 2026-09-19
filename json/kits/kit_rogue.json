@@ -7,7 +7,7 @@
         "english": "Lockpicks"
       },
       "descriptions": {
-        "english": "<b>+4</b>[attack]. Apply <b>1</b>[avarice] and <b>2</b>[stealth]."
+        "english": "<b>+4</b> [attack]. Apply <b>1</b> [avarice] and <b>2</b> [stealth]."
       },
       "card_art": "@Lockpicks",
       "cost": 0,
@@ -36,7 +36,7 @@
         "english": "Poisoned Dagger"
       },
       "descriptions": {
-        "english": "<b>+9</b>[attack]. Apply <b>2</b>[avarice] and <b>4</b>[stealth]."
+        "english": "<b>+9</b> [attack]. Apply <b>2</b> [avarice] and <b>4</b> [stealth]."
       },
       "card_art": "@PoisonedDagger",
       "cost": 0,
@@ -65,7 +65,7 @@
         "english": "Thief's Mantle"
       },
       "descriptions": {
-        "english": "<b>+15</b>[attack]. Apply <b>4</b>[avarice] and <b>6</b>[stealth]."
+        "english": "<b>+15</b> [attack]. Apply <b>4</b> [avarice] and <b>6</b> [stealth]."
       },
       "card_art": "@ThiefsMantle",
       "cost": 0,
@@ -96,7 +96,7 @@
         "english": "Lockpicks"
       },
       "descriptions": {
-        "english": "<b>+4</b>[attack]. Apply <b>1</b>[avarice] and <b>2</b>[stealth]."
+        "english": "<b>+4</b> [attack]. Apply <b>1</b> [avarice] and <b>2</b> [stealth]."
       },
       "icon": "@Lockpicks",
       "bonus_damage": 4,
@@ -117,7 +117,7 @@
         "english": "Poisoned Dagger"
       },
       "descriptions": {
-        "english": "<b>+9</b>[attack]. Apply <b>2</b>[avarice] and <b>4</b>[stealth]."
+        "english": "<b>+9</b> [attack]. Apply <b>2</b> [avarice] and <b>4</b> [stealth]."
       },
       "icon": "@PoisonedDagger",
       "bonus_damage": 9,
@@ -138,7 +138,7 @@
         "english": "Thief's Mantle"
       },
       "descriptions": {
-        "english": "<b>+15</b>[attack]. Apply <b>4</b>[avarice] and <b>6</b>[stealth]."
+        "english": "<b>+15</b> [attack]. Apply <b>4</b> [avarice] and <b>6</b> [stealth]."
       },
       "icon": "@ThiefsMantle",
       "bonus_damage": 15,

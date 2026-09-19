@@ -1,0 +1,59 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "ButchersBillEffect",
+      "name": "RelicEffectGoldOnTrigger",
+      "param_trigger": "on_kill",
+      "param_int": 5,
+      "source_team": "monsters"
+    }
+  ],
+  "relics": [
+    {
+      "id": "ButchersBill",
+      "type": "collectable",
+      "names": {
+        "english": "Butcher's Bill"
+      },
+      "descriptions": {
+        "english": "Whenever a friendly unit slays an enemy, gain <b>5</b> [coin]."
+      },
+      "relic_activated_texts": {
+        "english": "Tally it."
+      },
+      "lore_tooltips": [
+        {
+          "english": "Every name on the list has a price beside it."
+        }
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@ButchersBillEffect"
+      ],
+      "icon": "@ButchersBillIcon",
+      "icon_small": "@ButchersBillIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassFreeCompany",
+            "pools": [
+              "MegaRelicPool"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ButchersBillIcon",
+      "path": "textures/ButchersBillIcon.png"
+    },
+    {
+      "id": "ButchersBillIconSmall",
+      "path": "textures/ButchersBillIconSmall.png"
+    }
+  ]
+}

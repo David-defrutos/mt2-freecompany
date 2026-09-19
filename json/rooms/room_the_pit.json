@@ -7,7 +7,7 @@
         "english": "The Pit"
       },
       "descriptions": {
-        "english": "Enemies in this room have <b>1</b>[rooted]."
+        "english": "Enemies in this room have <b>1</b> [rooted]."
       },
       "card_art": "@ThePit",
       "cost": 1,
@@ -39,7 +39,7 @@
         "english": "The Pit"
       },
       "descriptions": {
-        "english": "Enemies in this room have <b>1</b>[rooted]."
+        "english": "Enemies in this room have <b>1</b> [rooted]."
       },
       "status_effect_upgrades": [
         {

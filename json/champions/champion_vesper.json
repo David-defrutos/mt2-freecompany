@@ -36,32 +36,18 @@
       "health": 22,
       "death_type": "large",
       "subtypes": [
+        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34",
         "@Sub_Ranged",
         "@Sub_Wizard"
-      ],
-      "triggers": [
-        {
-          "id": "@VesperRetainerTrigger"
-        }
       ]
     }
   ],
   "character_triggers": [
     {
-      "id": "VesperRetainerTrigger",
-      "trigger": "pre_combat",
-      "descriptions": {
-        "english": "Gain <b>1</b>[ember]."
-      },
-      "effects": [
-        "@VesperRetainer"
-      ]
-    },
-    {
       "id": "GrimoireTrigger1",
       "trigger": "card_spell_played",
       "descriptions": {
-        "english": "Gain <b>+1</b>[attack] for the rest of combat."
+        "english": "Gain <b>+1</b> [attack] for the rest of combat."
       },
       "effects": [
         "@GrimoireBuff1"
@@ -71,7 +57,7 @@
       "id": "GrimoireTrigger2",
       "trigger": "card_spell_played",
       "descriptions": {
-        "english": "Gain <b>+2</b>[attack] for the rest of combat."
+        "english": "Gain <b>+2</b> [attack] for the rest of combat."
       },
       "effects": [
         "@GrimoireBuff2"
@@ -81,7 +67,7 @@
       "id": "GrimoireTrigger3",
       "trigger": "card_spell_played",
       "descriptions": {
-        "english": "Gain <b>+4</b>[attack] for the rest of combat."
+        "english": "Gain <b>+4</b> [attack] for the rest of combat."
       },
       "effects": [
         "@GrimoireBuff3"
@@ -91,30 +77,76 @@
       "id": "ChirurgeonTrigger1",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>5</b> health to the weakest friendly unit."
+        "english": "Restore <b>3</b> health to all friendly units in this room, then remove all [debuff] effects from <b>1</b> random debuffed friendly unit in this room."
       },
       "effects": [
-        "@ChirurgeonHeal1"
+        "@ChirurgeonHeal1",
+        "@ChirurgeonCleanse1_1"
       ]
     },
     {
       "id": "ChirurgeonTrigger2",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>10</b> health to the weakest friendly unit."
+        "english": "Restore <b>12</b> health to all friendly units in this room, then remove all [debuff] effects from <b>2</b> random debuffed friendly units anywhere."
       },
       "effects": [
-        "@ChirurgeonHeal2"
+        "@ChirurgeonHeal2",
+        "@ChirurgeonCleanse2_1",
+        "@ChirurgeonCleanse2_2"
       ]
     },
     {
       "id": "ChirurgeonTrigger3",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>20</b> health to the weakest friendly unit."
+        "english": "Restore <b>24</b> health to all friendly units in this room, then remove all [debuff] effects from <b>3</b> random debuffed friendly units anywhere."
       },
       "effects": [
-        "@ChirurgeonHeal3"
+        "@ChirurgeonHeal3",
+        "@ChirurgeonCleanse3_1",
+        "@ChirurgeonCleanse3_2",
+        "@ChirurgeonCleanse3_3"
+      ]
+    },
+    {
+      "id": "GrimoireCardsTrigger1",
+      "trigger": "pre_combat",
+      "descriptions": {
+        "english": "Add <b>2</b> <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
+      },
+      "effects": [
+        "@GrimoireCards1"
+      ]
+    },
+    {
+      "id": "GrimoireCardsTrigger2",
+      "trigger": "pre_combat",
+      "descriptions": {
+        "english": "Add <b>4</b> <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
+      },
+      "effects": [
+        "@GrimoireCards2"
+      ]
+    },
+    {
+      "id": "GrimoireCardsTrigger3",
+      "trigger": "pre_combat",
+      "descriptions": {
+        "english": "Add <b>6</b> <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
+      },
+      "effects": [
+        "@GrimoireCards3"
+      ]
+    },
+    {
+      "id": "GrimoireCelebrate",
+      "trigger": "on_encounter_complete",
+      "descriptions": {
+        "english": "Gain <b>2</b> [conduit] permanently."
+      },
+      "effects": [
+        "@GrimoireCelebrateGain"
       ]
     }
   ],
@@ -124,12 +156,6 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "param_character": "@Vesper"
-    },
-    {
-      "id": "VesperRetainer",
-      "name": "CardEffectGainEnergy",
-      "target_mode": "self",
-      "param_int": 1
     },
     {
       "id": "GrimoireBuff1",
@@ -155,23 +181,493 @@
     {
       "id": "ChirurgeonHeal1",
       "name": "CardEffectHeal",
-      "target_mode": "weakest",
+      "target_mode": "room",
       "target_team": "monsters",
-      "param_int": 5
+      "param_int": 3
     },
     {
       "id": "ChirurgeonHeal2",
       "name": "CardEffectHeal",
-      "target_mode": "weakest",
+      "target_mode": "room",
       "target_team": "monsters",
-      "param_int": 10
+      "param_int": 12
     },
     {
       "id": "ChirurgeonHeal3",
       "name": "CardEffectHeal",
-      "target_mode": "weakest",
+      "target_mode": "room",
       "target_team": "monsters",
-      "param_int": 20
+      "param_int": 24
+    },
+    {
+      "id": "ChirurgeonCleanse1_1",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_in_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    },
+    {
+      "id": "ChirurgeonCleanse2_1",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_from_any_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    },
+    {
+      "id": "ChirurgeonCleanse2_2",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_from_any_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    },
+    {
+      "id": "ChirurgeonCleanse3_1",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_from_any_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    },
+    {
+      "id": "ChirurgeonCleanse3_2",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_from_any_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    },
+    {
+      "id": "ChirurgeonCleanse3_3",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_from_any_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    },
+    {
+      "id": "GrimoireCards1",
+      "name": "CardEffectAddBattleCard",
+      "param_card_pool": "@FreeCompanyMagicMissilePool",
+      "param_int": 3,
+      "param_int_2": 2,
+      "param_upgrade": "@GrimoireFreeMissile"
+    },
+    {
+      "id": "GrimoireCards2",
+      "name": "CardEffectAddBattleCard",
+      "param_card_pool": "@FreeCompanyMagicMissilePool",
+      "param_int": 3,
+      "param_int_2": 4,
+      "param_upgrade": "@GrimoireFreeMissile"
+    },
+    {
+      "id": "GrimoireCards3",
+      "name": "CardEffectAddBattleCard",
+      "param_card_pool": "@FreeCompanyMagicMissilePool",
+      "param_int": 3,
+      "param_int_2": 6,
+      "param_upgrade": "@GrimoireFreeMissile"
+    },
+    {
+      "id": "GrimoireCelebrateGain",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_upgrade": "@GrimoireCelebrateUpgrade",
+      "param_int_3": 2
     }
   ],
   "upgrades": [
@@ -197,7 +693,9 @@
       },
       "bonus_damage": 4,
       "trigger_upgrades": [
-        "@GrimoireTrigger1"
+        "@GrimoireTrigger1",
+        "@GrimoireCardsTrigger1",
+        "@GrimoireCelebrate"
       ]
     },
     {
@@ -213,7 +711,9 @@
         "@upg_Grimoire1"
       ],
       "trigger_upgrades": [
-        "@GrimoireTrigger2"
+        "@GrimoireTrigger2",
+        "@GrimoireCardsTrigger2",
+        "@GrimoireCelebrate"
       ]
     },
     {
@@ -229,7 +729,9 @@
         "@upg_Grimoire2"
       ],
       "trigger_upgrades": [
-        "@GrimoireTrigger3"
+        "@GrimoireTrigger3",
+        "@GrimoireCardsTrigger3",
+        "@GrimoireCelebrate"
       ]
     },
     {
@@ -290,6 +792,10 @@
         {
           "status": "sniper",
           "count": 1
+        },
+        {
+          "status": "piercing",
+          "count": 2
         }
       ]
     },
@@ -309,7 +815,11 @@
         },
         {
           "status": "piercing",
-          "count": 2
+          "count": 3
+        },
+        {
+          "status": "ambush",
+          "count": 1
         }
       ]
     },
@@ -319,21 +829,41 @@
         "english": "Volley III"
       },
       "descriptions": {
-        "english": "Shoots for the back of the room."
+        "english": "Hits everything, and hits first."
       },
       "bonus_damage": 24,
       "status_effect_upgrades": [
-        {
-          "status": "sniper",
-          "count": 1
-        },
         {
           "status": "piercing",
           "count": 4
         },
         {
+          "status": "ambush",
+          "count": 1
+        },
+        {
           "status": "sweep",
           "count": 1
+        }
+      ]
+    },
+    {
+      "id": "GrimoireFreeMissile",
+      "titles": {
+        "english": "Grimoire"
+      },
+      "cost_reduction": 1,
+      "trait_upgrades": [
+        "@GrimoireEphemeralTrait"
+      ],
+      "hide_icon_on_card": true
+    },
+    {
+      "id": "GrimoireCelebrateUpgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "conduit",
+          "count": 2
         }
       ]
     }
@@ -367,12 +897,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 0.5,
+              "y": 0.527,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 0.646,
+              "y": 0.646,
               "z": 1
             }
           }
@@ -409,6 +939,12 @@
           "english": "Hold still."
         }
       ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "GrimoireEphemeralTrait",
+      "name": "CardTraitEphemeral"
     }
   ]
 }

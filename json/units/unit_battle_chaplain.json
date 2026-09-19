@@ -7,7 +7,7 @@
         "english": "Battle Chaplain"
       },
       "card_art": "@BattleChaplain",
-      "cost": 4,
+      "cost": 2,
       "card_type": "monster",
       "rarity": "rare",
       "class": "@ClassFreeCompany",
@@ -23,6 +23,24 @@
       ],
       "pools": [
         "UnitsAllBanner"
+      ]
+    },
+    {
+      "id": "BattleChaplainAbility",
+      "names": {
+        "english": "Last Rites"
+      },
+      "descriptions": {
+        "english": "Restore <b>18</b> health to all friendly units on all floors."
+      },
+      "card_art": "@BattleChaplain",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@BattleChaplainAbilityHeal"
       ]
     }
   ],
@@ -45,7 +63,8 @@
         {
           "id": "@BattleChaplainTrigger"
         }
-      ]
+      ],
+      "ability": "@BattleChaplainAbility"
     }
   ],
   "effects": [
@@ -61,6 +80,14 @@
       "target_mode": "room",
       "target_team": "monsters",
       "param_int": 8
+    },
+    {
+      "id": "BattleChaplainAbilityHeal",
+      "name": "@CardEffectAllRooms",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectHeal",
+      "param_int": 18
     }
   ],
   "character_triggers": [
@@ -104,12 +131,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 0.5,
+              "y": 0.517,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 0.591,
+              "y": 0.591,
               "z": 1
             }
           }

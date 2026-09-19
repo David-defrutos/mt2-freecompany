@@ -7,7 +7,7 @@
         "english": "Banishment"
       },
       "descriptions": {
-        "english": "Apply <b>1</b>[untouchable] and <b>3</b>[doom] to an enemy. Cannot target bosses."
+        "english": "Apply <b>1</b> [stasis] and <b>3 Doom</b> to an enemy. Cannot target bosses."
       },
       "card_art": "@Banishment",
       "cost": 3,

@@ -7,7 +7,7 @@
         "english": "Shortbow"
       },
       "descriptions": {
-        "english": "<b>+5</b>[attack]. Apply <b>1</b>[sniper]."
+        "english": "<b>+5</b> [attack]. Apply <b>Sniper</b>."
       },
       "card_art": "@Shortbow",
       "cost": 0,
@@ -36,7 +36,7 @@
         "english": "Longbow"
       },
       "descriptions": {
-        "english": "<b>+12</b>[attack]. Apply <b>1</b>[sniper] and <b>2</b>[piercing]."
+        "english": "<b>+12</b> [attack]. Apply <b>Sniper</b> and <b>2</b> [piercing]."
       },
       "card_art": "@Longbow",
       "cost": 0,
@@ -65,7 +65,7 @@
         "english": "Great Bow"
       },
       "descriptions": {
-        "english": "<b>+20</b>[attack]. Apply <b>1</b>[sniper], <b>4</b>[piercing] and <b>1</b>[sweep]."
+        "english": "<b>+20</b> [attack]. Apply <b>Sniper</b>, <b>4</b> [piercing] and <b>1</b> [sweep]."
       },
       "card_art": "@GreatBow",
       "cost": 0,
@@ -96,7 +96,7 @@
         "english": "Shortbow"
       },
       "descriptions": {
-        "english": "<b>+5</b>[attack]. Apply <b>1</b>[sniper]."
+        "english": "<b>+5</b> [attack]. Apply <b>Sniper</b>."
       },
       "icon": "@Shortbow",
       "bonus_damage": 5,
@@ -113,7 +113,7 @@
         "english": "Longbow"
       },
       "descriptions": {
-        "english": "<b>+12</b>[attack]. Apply <b>1</b>[sniper] and <b>2</b>[piercing]."
+        "english": "<b>+12</b> [attack]. Apply <b>Sniper</b> and <b>2</b> [piercing]."
       },
       "icon": "@Longbow",
       "bonus_damage": 12,
@@ -134,7 +134,7 @@
         "english": "Great Bow"
       },
       "descriptions": {
-        "english": "<b>+20</b>[attack]. Apply <b>1</b>[sniper], <b>4</b>[piercing] and <b>1</b>[sweep]."
+        "english": "<b>+20</b> [attack]. Apply <b>Sniper</b>, <b>4</b> [piercing] and <b>1</b> [sweep]."
       },
       "icon": "@GreatBow",
       "bonus_damage": 20,

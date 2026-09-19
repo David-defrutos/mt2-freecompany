@@ -7,7 +7,7 @@
         "english": "Buckler"
       },
       "descriptions": {
-        "english": "<b>+8</b>[health]. Apply <b>3</b>[armor]."
+        "english": "<b>+8</b> [health]. Apply <b>3</b> [armor]."
       },
       "card_art": "@Buckler",
       "cost": 0,
@@ -36,7 +36,7 @@
         "english": "Kite Shield"
       },
       "descriptions": {
-        "english": "<b>+15</b>[health]. Apply <b>6</b>[armor] and <b>2</b>[steelguard]."
+        "english": "<b>+15</b> [health]. Apply <b>6</b> [armor] and <b>2</b> [steelguard]."
       },
       "card_art": "@KiteShield",
       "cost": 0,
@@ -65,7 +65,7 @@
         "english": "Bulwark Plate"
       },
       "descriptions": {
-        "english": "<b>+25</b>[health]. Apply <b>10</b>[armor], <b>3</b>[steelguard] and <b>1</b>[titanskin]."
+        "english": "<b>+25</b> [health]. Apply <b>10</b> [armor], <b>3</b> [steelguard] and <b>1</b> [titanskin]."
       },
       "card_art": "@BulwarkPlate",
       "cost": 0,
@@ -96,7 +96,7 @@
         "english": "Buckler"
       },
       "descriptions": {
-        "english": "<b>+8</b>[health]. Apply <b>3</b>[armor]."
+        "english": "<b>+8</b> [health]. Apply <b>3</b> [armor]."
       },
       "icon": "@Buckler",
       "bonus_hp": 8,
@@ -113,7 +113,7 @@
         "english": "Kite Shield"
       },
       "descriptions": {
-        "english": "<b>+15</b>[health]. Apply <b>6</b>[armor] and <b>2</b>[steelguard]."
+        "english": "<b>+15</b> [health]. Apply <b>6</b> [armor] and <b>2</b> [steelguard]."
       },
       "icon": "@KiteShield",
       "bonus_hp": 15,
@@ -134,7 +134,7 @@
         "english": "Bulwark Plate"
       },
       "descriptions": {
-        "english": "<b>+25</b>[health]. Apply <b>10</b>[armor], <b>3</b>[steelguard] and <b>1</b>[titanskin]."
+        "english": "<b>+25</b> [health]. Apply <b>10</b> [armor], <b>3</b> [steelguard] and <b>1</b> [titanskin]."
       },
       "icon": "@BulwarkPlate",
       "bonus_hp": 25,

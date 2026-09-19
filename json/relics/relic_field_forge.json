@@ -1,0 +1,59 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "FieldForgeEffect",
+      "name": "RelicEffectModifyCardTypeCost",
+      "param_card_type": "equipment",
+      "param_int": -1,
+      "param_bool": true
+    }
+  ],
+  "relics": [
+    {
+      "id": "FieldForge",
+      "type": "collectable",
+      "names": {
+        "english": "Field Forge"
+      },
+      "descriptions": {
+        "english": "Equipment cards cost <b>1</b> less [ember]."
+      },
+      "relic_activated_texts": {
+        "english": "Struck while hot."
+      },
+      "lore_tooltips": [
+        {
+          "english": "A stump, a hammer and somebody who owes you a favour."
+        }
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@FieldForgeEffect"
+      ],
+      "icon": "@FieldForgeIcon",
+      "icon_small": "@FieldForgeIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassFreeCompany",
+            "pools": [
+              "MegaRelicPool"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FieldForgeIcon",
+      "path": "textures/FieldForgeIcon.png"
+    },
+    {
+      "id": "FieldForgeIconSmall",
+      "path": "textures/FieldForgeIconSmall.png"
+    }
+  ]
+}

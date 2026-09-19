@@ -1,0 +1,58 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "WarChestEffect",
+      "name": "RelicEffectModifyGoldEndOfBattle",
+      "param_int": 15,
+      "param_bool": false
+    }
+  ],
+  "relics": [
+    {
+      "id": "WarChest",
+      "type": "collectable",
+      "names": {
+        "english": "War Chest"
+      },
+      "descriptions": {
+        "english": "Gain <b>15</b> [coin] after each battle."
+      },
+      "relic_activated_texts": {
+        "english": "Paid on delivery."
+      },
+      "lore_tooltips": [
+        {
+          "english": "Nobody counts it twice. Nobody dares."
+        }
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@WarChestEffect"
+      ],
+      "icon": "@WarChestIcon",
+      "icon_small": "@WarChestIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassFreeCompany",
+            "pools": [
+              "MegaRelicPool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "WarChestIcon",
+      "path": "textures/WarChestIcon.png"
+    },
+    {
+      "id": "WarChestIconSmall",
+      "path": "textures/WarChestIconSmall.png"
+    }
+  ]
+}

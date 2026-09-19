@@ -7,7 +7,7 @@
         "english": "Web"
       },
       "descriptions": {
-        "english": "Apply <b>1</b>[rooted] and <b>1</b>[restricted] to all enemies in a room."
+        "english": "Apply <b>1</b> [rooted] and <b>Suppressed</b> to all enemies in a room."
       },
       "card_art": "@Web",
       "cost": 2,

@@ -7,7 +7,7 @@
         "english": "Spoils of War"
       },
       "descriptions": {
-        "english": "Apply <b>1</b>[avarice] to all friendly units in a room."
+        "english": "Apply <b>1</b> [avarice] to all friendly units in a room."
       },
       "card_art": "@SpoilsOfWar",
       "cost": 2,

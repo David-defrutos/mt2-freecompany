@@ -232,6 +232,18 @@
         "@Watchtower",
         "@QuartermastersStore"
       ]
+    },
+    {
+      "id": "FreeCompanyRequisitionPool",
+      "cards": [
+        "@Requisition"
+      ]
+    },
+    {
+      "id": "FreeCompanyMagicMissilePool",
+      "cards": [
+        "@MagicMissile"
+      ]
     }
   ],
   "rewards": [

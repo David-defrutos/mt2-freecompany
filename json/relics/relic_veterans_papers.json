@@ -1,0 +1,56 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "VeteransPapersEffect",
+      "name": "RelicEffectAddUnitUpgradeSlot"
+    }
+  ],
+  "relics": [
+    {
+      "id": "VeteransPapers",
+      "type": "collectable",
+      "names": {
+        "english": "Veteran's Papers"
+      },
+      "descriptions": {
+        "english": "Unit cards have <b>1</b> additional upgrade slot."
+      },
+      "relic_activated_texts": {
+        "english": "Signed and countersigned."
+      },
+      "lore_tooltips": [
+        {
+          "english": "Years of service, written down where it counts."
+        }
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@VeteransPapersEffect"
+      ],
+      "icon": "@VeteransPapersIcon",
+      "icon_small": "@VeteransPapersIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassFreeCompany",
+            "pools": [
+              "MegaRelicPool"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "VeteransPapersIcon",
+      "path": "textures/VeteransPapersIcon.png"
+    },
+    {
+      "id": "VeteransPapersIconSmall",
+      "path": "textures/VeteransPapersIconSmall.png"
+    }
+  ]
+}

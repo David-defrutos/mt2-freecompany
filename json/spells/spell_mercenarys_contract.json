@@ -7,7 +7,7 @@
         "english": "Mercenary's Contract"
       },
       "descriptions": {
-        "english": "Apply <b>3</b>[avarice] to a friendly unit."
+        "english": "Apply <b>3</b> [avarice] to a friendly unit."
       },
       "card_art": "@MercenarysContract",
       "cost": 1,

@@ -7,7 +7,7 @@
         "english": "Silence"
       },
       "descriptions": {
-        "english": "Apply <b>1</b>[silenced] to an enemy."
+        "english": "Apply <b>1</b> [silence] to an enemy."
       },
       "card_art": "@Silence",
       "cost": 1,

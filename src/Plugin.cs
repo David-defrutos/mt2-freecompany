@@ -77,9 +77,17 @@ namespace mt2_freecompany.Plugin
                         "json/kits/kit_warrior.json",
                         "json/kits/kit_wizard.json",
                         "json/kits/spell_requisition.json",
+                        "json/relics/relic_butchers_bill.json",
+                        "json/relics/relic_expanded_billet.json",
+                        "json/relics/relic_field_forge.json",
+                        "json/relics/relic_hazard_pay.json",
+                        "json/relics/relic_letter_of_marque.json",
                         "json/relics/relic_marching_orders.json",
                         "json/relics/relic_quartermasters_seal.json",
-                        "json/relics/relic_scouts_map.json"
+                        "json/relics/relic_sappers_charges.json",
+                        "json/relics/relic_scouts_map.json",
+                        "json/relics/relic_veterans_papers.json",
+                        "json/relics/relic_war_chest.json"
                     );
                 }
             );

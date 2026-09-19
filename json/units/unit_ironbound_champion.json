@@ -7,7 +7,7 @@
         "english": "Ironbound Champion"
       },
       "card_art": "@IronboundChampion",
-      "cost": 4,
+      "cost": 2,
       "card_type": "monster",
       "rarity": "rare",
       "class": "@ClassFreeCompany",
@@ -23,6 +23,24 @@
       ],
       "pools": [
         "UnitsAllBanner"
+      ]
+    },
+    {
+      "id": "IronboundChampionAbility",
+      "names": {
+        "english": "Ironbound Oath"
+      },
+      "descriptions": {
+        "english": "Apply <b>22</b> [armor] to all friendly units on all floors."
+      },
+      "card_art": "@IronboundChampion",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@IronboundChampionAbilityArmor"
       ]
     }
   ],
@@ -45,7 +63,8 @@
         {
           "id": "@IronboundChampionTrigger"
         }
-      ]
+      ],
+      "ability": "@IronboundChampionAbility"
     }
   ],
   "effects": [
@@ -66,6 +85,19 @@
           "count": 10
         }
       ]
+    },
+    {
+      "id": "IronboundChampionAbilityArmor",
+      "name": "@CardEffectAllRooms",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddStatusEffect",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 22
+        }
+      ]
     }
   ],
   "character_triggers": [
@@ -73,7 +105,7 @@
       "id": "IronboundChampionTrigger",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Apply <b>10</b>[armor] to all friendly units in this room."
+        "english": "Apply <b>10</b> [armor] to all friendly units in this room."
       },
       "effects": [
         "@IronboundChampionArmor"
@@ -109,12 +141,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 0.5,
+              "y": 0.468,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 0.683,
+              "y": 0.683,
               "z": 1
             }
           }

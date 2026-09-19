@@ -72,7 +72,7 @@
       "id": "CampBrawlerTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain <b>2</b>[buff]."
+        "english": "Gain <b>2</b> [buff]."
       },
       "effects": [
         "@CampBrawlerAbility"
@@ -108,12 +108,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 0.5,
+              "y": 0.541,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 0.633,
+              "y": 0.633,
               "z": 1
             }
           }
