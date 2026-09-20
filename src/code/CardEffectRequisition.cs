@@ -142,20 +142,24 @@ namespace mt2_freecompany.Plugin
                 yield break;
             }
 
+            // `CardManager.AddCard` NO EXISTE: el metodo publico es `AddNewCard`, y los de
+            // 8-10 parametros que se le parecen son `AddNewCardWithSpecialPlacement`
+            // (con indice y numero de cartas a lucir) y el privado `AddCardImpl`.
+            // Comprobado en los metadatos del juego el 20-sep-2026:
+            //   AddNewCard(CardData, CardPile, bool fromRelic, bool permanent,
+            //              AddCardUpgradingInfo, bool animate) -> CardState
+            // Devuelve CardState, NO IEnumerator: aqui no hay corrutina que recorrer.
             // addCardUpgradingInfo a null: el coste 1 y el ephemeral van en el propio JSON
             // de la carta, no hace falta parchearlos al darla.
-            var creada = cardManager.AddCard(
+            var creada = cardManager.AddNewCard(
                 data,                 // cardData
                 CardPile.HandPile,    // targetPile
-                0,                    // currentCardIndex
-                1,                    // maxCardsToShowcase
                 false,                // fromRelic
                 false,                // permanent
                 null,                 // addCardUpgradingInfo
-                true,                 // animate
-                1f);                  // animationTimeScale
+                true);                // animate
 
-            if (creada == null) Log($"Requisition: AddCard devolvio null para {cartaId} (mano llena?).");
+            if (creada == null) Log($"Requisition: AddNewCard devolvio null para {cartaId} (mano llena?).");
             else Log($"Requisition: a la mano {cartaId} (escalon {escalon}).");
 
             yield break;
