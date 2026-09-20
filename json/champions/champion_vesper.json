@@ -28,7 +28,7 @@
         "english": "Call of the Wild"
       },
       "descriptions": {
-        "english": "Draw a <b>Troll</b> from your draw pile. It costs <b>0</b>."
+        "english": "Draw a <b>Troll</b> from your draw pile."
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
@@ -769,7 +769,6 @@
       "target_card_selection_mode": "random_to_hand",
       "target_subtype": "@Sub_Troll",
       "param_int": 1,
-      "param_upgrade": "@TrollFreeCall",
       "should_test": true,
       "should_fail_to_cast_if_test_fails": true,
       "should_cancel_subsequent_effects_if_test_fails": false
@@ -962,14 +961,6 @@
       "trait_upgrades": [
         "@TrollOfferEphemeral"
       ],
-      "hide_icon_on_card": true
-    },
-    {
-      "id": "TrollFreeCall",
-      "titles": {
-        "english": "Called"
-      },
-      "cost_reduction": 6,
       "hide_icon_on_card": true
     }
   ],

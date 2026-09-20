@@ -20,6 +20,9 @@
         {
           "english": "Old, patient and very hard to kill."
         }
+      ],
+      "initial_upgrades": [
+        "@TrollCostZero"
       ]
     },
     {
@@ -41,6 +44,9 @@
         {
           "english": "It was part of the mountain until she called it."
         }
+      ],
+      "initial_upgrades": [
+        "@TrollCostZero"
       ]
     },
     {
@@ -69,7 +75,10 @@
       ],
       "descriptions": {
         "english": "Enters with +<b>3</b> [attack] and +<b>3</b> [health] for each <b>Goblin</b> in your deck."
-      }
+      },
+      "initial_upgrades": [
+        "@TrollCostZero"
+      ]
     },
     {
       "id": "SpawnCautiousTroll",
@@ -90,6 +99,9 @@
         {
           "english": "It has survived everything by not being there."
         }
+      ],
+      "initial_upgrades": [
+        "@TrollCostZero"
       ]
     },
     {
@@ -111,6 +123,9 @@
         {
           "english": "They never agree, and both are hungry."
         }
+      ],
+      "initial_upgrades": [
+        "@TrollCostZero"
       ]
     },
     {
@@ -603,6 +618,14 @@
       "id": "TrollCelebrate3",
       "bonus_damage": 10,
       "bonus_hp": 10
+    },
+    {
+      "id": "TrollCostZero",
+      "titles": {
+        "english": "Beastmaster's Bond"
+      },
+      "cost_reduction": 6,
+      "hide_icon_on_card": true
     }
   ],
   "traits": [
