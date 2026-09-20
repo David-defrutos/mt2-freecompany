@@ -14,8 +14,7 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnBogTrollEffect",
-        "@KeepBogTroll"
+        "@SpawnBogTrollEffect"
       ],
       "lore_tooltips": [
         {
@@ -36,8 +35,7 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnStoneTrollEffect",
-        "@KeepStoneTroll"
+        "@SpawnStoneTrollEffect"
       ],
       "lore_tooltips": [
         {
@@ -58,8 +56,7 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnWarTrollEffect",
-        "@KeepWarTroll"
+        "@SpawnWarTrollEffect"
       ],
       "lore_tooltips": [
         {
@@ -87,8 +84,7 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnCautiousTrollEffect",
-        "@KeepCautiousTroll"
+        "@SpawnCautiousTrollEffect"
       ],
       "lore_tooltips": [
         {
@@ -109,8 +105,7 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@SpawnTwoHeadedTrollEffect",
-        "@KeepTwoHeadedTroll"
+        "@SpawnTwoHeadedTrollEffect"
       ],
       "lore_tooltips": [
         {
@@ -134,6 +129,101 @@
       "card_type": "spell",
       "effects": [
         "@StoneTrollBoulder"
+      ]
+    },
+    {
+      "id": "TameBogTroll",
+      "names": {
+        "english": "Tame the Bog Troll"
+      },
+      "descriptions": {
+        "english": "Add <b>Bog Troll</b> to your deck."
+      },
+      "card_art": "@BogTroll",
+      "cost": 0,
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@KeepBogTroll"
+      ]
+    },
+    {
+      "id": "TameStoneTroll",
+      "names": {
+        "english": "Tame the Stone Troll"
+      },
+      "descriptions": {
+        "english": "Add <b>Stone Troll</b> to your deck."
+      },
+      "card_art": "@StoneTroll",
+      "cost": 0,
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@KeepStoneTroll"
+      ]
+    },
+    {
+      "id": "TameWarTroll",
+      "names": {
+        "english": "Tame the War Troll"
+      },
+      "descriptions": {
+        "english": "Add <b>War Troll</b> to your deck."
+      },
+      "card_art": "@WarTroll",
+      "cost": 0,
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@KeepWarTroll"
+      ]
+    },
+    {
+      "id": "TameCautiousTroll",
+      "names": {
+        "english": "Tame the Cautious Troll"
+      },
+      "descriptions": {
+        "english": "Add <b>Cautious Troll</b> to your deck."
+      },
+      "card_art": "@CautiousTroll",
+      "cost": 0,
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@KeepCautiousTroll"
+      ]
+    },
+    {
+      "id": "TameTwoHeadedTroll",
+      "names": {
+        "english": "Tame the Two-Headed Troll"
+      },
+      "descriptions": {
+        "english": "Add <b>Two-Headed Troll</b> to your deck."
+      },
+      "card_art": "@TwoHeadedTroll",
+      "cost": 0,
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [
+        "@KeepTwoHeadedTroll"
       ]
     }
   ],
@@ -406,7 +496,7 @@
     {
       "id": "KeepBogTroll",
       "name": "@CardEffectGrantOnce",
-      "target_mode": "self",
+      "target_mode": "pyre",
       "target_team": "monsters",
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
@@ -416,7 +506,7 @@
     {
       "id": "KeepStoneTroll",
       "name": "@CardEffectGrantOnce",
-      "target_mode": "self",
+      "target_mode": "pyre",
       "target_team": "monsters",
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
@@ -426,7 +516,7 @@
     {
       "id": "KeepWarTroll",
       "name": "@CardEffectGrantOnce",
-      "target_mode": "self",
+      "target_mode": "pyre",
       "target_team": "monsters",
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
@@ -436,7 +526,7 @@
     {
       "id": "KeepCautiousTroll",
       "name": "@CardEffectGrantOnce",
-      "target_mode": "self",
+      "target_mode": "pyre",
       "target_team": "monsters",
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
@@ -446,7 +536,7 @@
     {
       "id": "KeepTwoHeadedTroll",
       "name": "@CardEffectGrantOnce",
-      "target_mode": "self",
+      "target_mode": "pyre",
       "target_team": "monsters",
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",

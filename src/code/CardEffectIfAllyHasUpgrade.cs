@@ -95,7 +95,12 @@ namespace mt2_freecompany.Plugin
             var interno = new CardEffectAddCardUpgradeToUnits();
             interno.Setup(cardEffectState);
             Log($"IfAllyHasUpgrade: hay un aliado con '{idBuscado}'; aplicando la mejora.");
-            yield return interno.ApplyEffect(cardEffectState, cardEffectParams, coreGameManagers, sysManagers);
+            // Corrutina: se recorre a mano en vez de con un "yield return" pelado, que
+            // depende de que quien conduzca este efecto entienda enumeradores anidados.
+            // 20-sep-2026: ApplyCardUpgrade/RemoveCardUpgrade devuelven IEnumerator y
+            // Requisition no hacia nada justo por esto. Ver CardEffectRequisition.cs.
+            var ejecutar = interno.ApplyEffect(cardEffectState, cardEffectParams, coreGameManagers, sysManagers);
+            while (ejecutar.MoveNext()) yield return ejecutar.Current;
         }
 
         private static CardUpgradeData? BuscarMejora(AllGameData gameData, string upgradeId)

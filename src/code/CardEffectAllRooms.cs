@@ -119,7 +119,12 @@ namespace mt2_freecompany.Plugin
             lista.AddRange(vivos);
 
             Log($"CardEffectAllRooms: {nombre} sobre {vivos.Count} unidades de todos los pisos.");
-            yield return interno.ApplyEffect(cardEffectState, cardEffectParams, coreGameManagers, sysManagers);
+            // Corrutina: se recorre a mano en vez de con un "yield return" pelado, que
+            // depende de que quien conduzca este efecto entienda enumeradores anidados.
+            // 20-sep-2026: ApplyCardUpgrade/RemoveCardUpgrade devuelven IEnumerator y
+            // Requisition no hacia nada justo por esto. Ver CardEffectRequisition.cs.
+            var ejecutar = interno.ApplyEffect(cardEffectState, cardEffectParams, coreGameManagers, sysManagers);
+            while (ejecutar.MoveNext()) yield return ejecutar.Current;
 
             lista.Clear();
             lista.AddRange(previos);

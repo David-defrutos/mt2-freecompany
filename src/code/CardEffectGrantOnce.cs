@@ -146,7 +146,12 @@ namespace mt2_freecompany.Plugin
             interno.Setup(cardEffectState);
 
             Log($"GrantOnce: la carta no estaba en el mazo; ejecutando {nombre}.");
-            yield return interno.ApplyEffect(cardEffectState, cardEffectParams, coreGameManagers, sysManagers);
+            // Corrutina: se recorre a mano en vez de con un "yield return" pelado, que
+            // depende de que quien conduzca este efecto entienda enumeradores anidados.
+            // 20-sep-2026: ApplyCardUpgrade/RemoveCardUpgrade devuelven IEnumerator y
+            // Requisition no hacia nada justo por esto. Ver CardEffectRequisition.cs.
+            var ejecutar = interno.ApplyEffect(cardEffectState, cardEffectParams, coreGameManagers, sysManagers);
+            while (ejecutar.MoveNext()) yield return ejecutar.Current;
         }
 
         private static void Log(string mensaje)

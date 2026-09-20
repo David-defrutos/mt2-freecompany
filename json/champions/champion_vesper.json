@@ -21,6 +21,24 @@
           "english": "Charges by the hour. Collects in advance."
         }
       ]
+    },
+    {
+      "id": "BeastmasterCall",
+      "names": {
+        "english": "Call of the Wild"
+      },
+      "descriptions": {
+        "english": "Draw a <b>Troll</b> from your draw pile. It costs <b>0</b>."
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "cooldown": 4,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@BeastmasterCallDraw"
+      ]
     }
   ],
   "characters": [
@@ -154,7 +172,7 @@
       "id": "BeastmasterGrantTrigger",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "The first time, five <b>Trolls</b> join your hand for free. The one you play is yours for the rest of the run."
+        "english": "The first time, five <b>Tame</b> spells join your hand. The one you play adds that <b>Troll</b> to your deck for the rest of the run."
       },
       "effects": [
         "@BeastmasterOffer1",
@@ -691,7 +709,7 @@
       "target_team": "monsters",
       "param_str": "CardEffectAddBattleCard",
       "param_subtype": "@Sub_Troll",
-      "param_card_pool": "@FreeCompanyOnlyBogTrollPool",
+      "param_card_pool": "@FreeCompanyTameBogTrollPool",
       "param_int": 3,
       "param_int_2": 1,
       "param_upgrade": "@TrollOffer"
@@ -703,7 +721,7 @@
       "target_team": "monsters",
       "param_str": "CardEffectAddBattleCard",
       "param_subtype": "@Sub_Troll",
-      "param_card_pool": "@FreeCompanyOnlyStoneTrollPool",
+      "param_card_pool": "@FreeCompanyTameStoneTrollPool",
       "param_int": 3,
       "param_int_2": 1,
       "param_upgrade": "@TrollOffer"
@@ -715,7 +733,7 @@
       "target_team": "monsters",
       "param_str": "CardEffectAddBattleCard",
       "param_subtype": "@Sub_Troll",
-      "param_card_pool": "@FreeCompanyOnlyWarTrollPool",
+      "param_card_pool": "@FreeCompanyTameWarTrollPool",
       "param_int": 3,
       "param_int_2": 1,
       "param_upgrade": "@TrollOffer"
@@ -727,7 +745,7 @@
       "target_team": "monsters",
       "param_str": "CardEffectAddBattleCard",
       "param_subtype": "@Sub_Troll",
-      "param_card_pool": "@FreeCompanyOnlyCautiousTrollPool",
+      "param_card_pool": "@FreeCompanyTameCautiousTrollPool",
       "param_int": 3,
       "param_int_2": 1,
       "param_upgrade": "@TrollOffer"
@@ -739,10 +757,22 @@
       "target_team": "monsters",
       "param_str": "CardEffectAddBattleCard",
       "param_subtype": "@Sub_Troll",
-      "param_card_pool": "@FreeCompanyOnlyTwoHeadedTrollPool",
+      "param_card_pool": "@FreeCompanyTameTwoHeadedTrollPool",
       "param_int": 3,
       "param_int_2": 1,
       "param_upgrade": "@TrollOffer"
+    },
+    {
+      "id": "BeastmasterCallDraw",
+      "name": "CardEffectRecursion",
+      "target_mode": "draw_pile",
+      "target_card_selection_mode": "random_to_hand",
+      "target_subtype": "@Sub_Troll",
+      "param_int": 1,
+      "param_upgrade": "@TrollFreeCall",
+      "should_test": true,
+      "should_fail_to_cast_if_test_fails": true,
+      "should_cancel_subsequent_effects_if_test_fails": false
     }
   ],
   "upgrades": [
@@ -860,12 +890,13 @@
         "english": "Beastmaster"
       },
       "descriptions": {
-        "english": "The first time, five <b>Trolls</b> join your hand for free; the one you play is yours for the rest of the run. While she lives, a summoned Troll enters with +<b>20</b> [attack] and +<b>20</b> [health] for the rest of combat, on any floor."
+        "english": "The first time, five <b>Tame</b> spells join your hand; the one you play adds that <b>Troll</b> to your deck for the rest of the run. While she lives, a summoned Troll enters with +<b>20</b> [attack] and +<b>20</b> [health] for the rest of combat, on any floor."
       },
       "bonus_hp": 6,
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
-      ]
+      ],
+      "ability_upgrade": "@BeastmasterCall"
     },
     {
       "id": "upg_Beastmaster2",
@@ -882,7 +913,8 @@
       ],
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
-      ]
+      ],
+      "ability_upgrade": "@BeastmasterCall"
     },
     {
       "id": "upg_Beastmaster3",
@@ -899,7 +931,8 @@
       ],
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
-      ]
+      ],
+      "ability_upgrade": "@BeastmasterCall"
     },
     {
       "id": "GrimoireFreeMissile",
@@ -926,10 +959,17 @@
       "titles": {
         "english": "Beastmaster"
       },
-      "cost_reduction": 6,
       "trait_upgrades": [
         "@TrollOfferEphemeral"
       ],
+      "hide_icon_on_card": true
+    },
+    {
+      "id": "TrollFreeCall",
+      "titles": {
+        "english": "Called"
+      },
+      "cost_reduction": 6,
       "hide_icon_on_card": true
     }
   ],

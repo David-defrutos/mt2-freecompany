@@ -27,6 +27,22 @@ namespace mt2_freecompany.Plugin
     /// Antes se comparaba contra "Sub_Warrior" y se buscaba "UpgBuckler" pelados, asi que
     /// NUNCA coincidia nada: la carta se jugaba, costaba su ember y no hacia absolutamente
     /// nada, sin error en el log ni aviso del validador. Ahora los nombres se componen.
+    ///
+    /// 20-sep-2026: SEGUNDO FALLO, EL QUE DE VERDAD LA DEJABA MUDA.
+    ///
+    /// CharacterState.ApplyCardUpgrade y CharacterState.RemoveCardUpgrade **devuelven
+    /// IEnumerator**: son corrutinas. Comprobado en los metadatos del juego, el tipo de
+    /// retorno de las dos es System.Collections.IEnumerator. Llamarlas y tirar el
+    /// resultado construye la maquina de estados y NO EJECUTA NADA.
+    ///
+    /// Sintoma exacto en el log: "Requisition: aplicado UpgBandages (escalon 1)" una y
+    /// otra vez sobre la misma unidad, porque la mejora nunca llegaba a aplicarse y
+    /// HasUpgrade seguia diciendo que no la llevaba.
+    ///
+    /// Se recorren con MoveNext y se reenvia el Current, que funciona lo conduzca quien
+    /// lo conduzca. HasUpgrade compara por el id de la mejora
+    /// (PrimaryStateInformation.appliedCardUpgrades + GetUpgradesWithDataIdCount), y ese
+    /// id ya lo deja puesto Setup(upgradeData, ...) al llamar a GetID().
     /// --------------------------------------------------------------------------------
     /// </summary>
     public sealed class CardEffectRequisition : CardEffectBase
@@ -124,13 +140,22 @@ namespace mt2_freecompany.Plugin
                                 break;
                             }
                         }
-                        if (puesta != null) target.RemoveCardUpgrade(puesta);
+                        if (puesta != null)
+                        {
+                            // Corrutina: hay que recorrerla o no quita nada.
+                            var quitar = target.RemoveCardUpgrade(puesta);
+                            while (quitar.MoveNext()) yield return quitar.Current;
+                        }
                     }
                 }
 
                 var estado = new CardUpgradeState();
                 estado.Setup(siguiente, false, false);
-                target.ApplyCardUpgrade(estado);
+
+                // Corrutina tambien: sin recorrerla la carta se juega y no pasa nada.
+                var aplicar = target.ApplyCardUpgrade(estado);
+                while (aplicar.MoveNext()) yield return aplicar.Current;
+
                 Log($"Requisition: aplicado {escalera[actual]} (escalon {actual + 1}).");
             }
             yield break;

@@ -296,6 +296,36 @@
       "cards": [
         "@SpawnTwoHeadedTroll"
       ]
+    },
+    {
+      "id": "FreeCompanyTameBogTrollPool",
+      "cards": [
+        "@TameBogTroll"
+      ]
+    },
+    {
+      "id": "FreeCompanyTameStoneTrollPool",
+      "cards": [
+        "@TameStoneTroll"
+      ]
+    },
+    {
+      "id": "FreeCompanyTameWarTrollPool",
+      "cards": [
+        "@TameWarTroll"
+      ]
+    },
+    {
+      "id": "FreeCompanyTameCautiousTrollPool",
+      "cards": [
+        "@TameCautiousTroll"
+      ]
+    },
+    {
+      "id": "FreeCompanyTameTwoHeadedTrollPool",
+      "cards": [
+        "@TameTwoHeadedTroll"
+      ]
     }
   ],
   "rewards": [
