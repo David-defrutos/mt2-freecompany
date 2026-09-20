@@ -28,7 +28,7 @@
         "english": "Call of the Wild"
       },
       "descriptions": {
-        "english": "Draw a <b>Troll</b> from your draw pile. <b>Trolls</b> in your hand cost <b>0</b> [ember] this combat."
+        "english": "Draw a <b>Troll</b> from your draw pile. It costs <b>0</b> [ember] this combat."
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
@@ -37,8 +37,7 @@
       "targets_room": false,
       "card_type": "spell",
       "effects": [
-        "@BeastmasterCallDraw",
-        "@BeastmasterCallFree"
+        "@BeastmasterCallDraw"
       ]
     }
   ],
@@ -185,11 +184,6 @@
     }
   ],
   "effects": [
-    {
-      "id": "BeastmasterCallFree",
-      "name": "CardEffectAddTempCardUpgradeToCardsInHand",
-      "param_upgrade": "@TrollFreeSummon"
-    },
     {
       "id": "SpawnVesperEffect",
       "name": "CardEffectSpawnMonster",
@@ -773,7 +767,8 @@
       "name": "CardEffectRecursion",
       "target_mode": "draw_pile",
       "target_card_selection_mode": "random_to_hand",
-      "target_subtype": "@Sub_Troll",
+      "param_card_filter": "@TrollOnlyMask",
+      "param_upgrade": "@TrollFreeSummon",
       "param_int": 1,
       "should_test": true,
       "should_fail_to_cast_if_test_fails": false,

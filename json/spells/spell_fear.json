@@ -7,7 +7,7 @@
         "english": "Fear"
       },
       "descriptions": {
-        "english": "Move an enemy unit to another floor."
+        "english": "Move an enemy unit to the back of its floor."
       },
       "card_art": "@Fear",
       "cost": 2,
@@ -35,7 +35,7 @@
       "name": "CardEffectFloorRearrange",
       "target_mode": "drop_target_character",
       "target_team": "heroes",
-      "param_int": 0
+      "param_int": 1
     }
   ],
   "sprites": [

@@ -60,9 +60,9 @@
               "@upg_Wall3"
             ],
             [
-              "@upg_Bloodwage1",
-              "@upg_Bloodwage2",
-              "@upg_Bloodwage3"
+              "@upg_Quarter1",
+              "@upg_Quarter2",
+              "@upg_Quarter3"
             ],
             [
               "@upg_Plunder1",
@@ -255,6 +255,16 @@
       "id": "FreeCompanyMagicMissilePool",
       "cards": [
         "@MagicMissile"
+      ]
+    },
+    {
+      "id": "FreeCompanyTameOffersPool",
+      "cards": [
+        "@TameBogTroll",
+        "@TameStoneTroll",
+        "@TameWarTroll",
+        "@TameCautiousTroll",
+        "@TameTwoHeadedTroll"
       ]
     },
     {

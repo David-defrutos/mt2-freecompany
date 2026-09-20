@@ -21,6 +21,79 @@
           "english": "Signed the contract first. Read it later."
         }
       ]
+    },
+    {
+      "id": "RodericSlam",
+      "names": {
+        "english": "Slam"
+      },
+      "descriptions": {
+        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor]."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericSlamAdvance",
+        "@RodericSlamHit"
+      ]
+    },
+    {
+      "id": "RodericRequisition",
+      "names": {
+        "english": "Requisition"
+      },
+      "descriptions": {
+        "english": "Issue the front friendly unit the next piece of kit for its role."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 4,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericRequisitionOne"
+      ]
+    },
+    {
+      "id": "RodericRequisition2",
+      "names": {
+        "english": "Requisition"
+      },
+      "descriptions": {
+        "english": "Issue the front friendly unit the next piece of kit for its role."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericRequisitionOne"
+      ]
+    },
+    {
+      "id": "RodericRequisition3",
+      "names": {
+        "english": "Requisition"
+      },
+      "descriptions": {
+        "english": "Issue every friendly unit in this room the next piece of kit for its role."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericRequisitionAll"
+      ]
     }
   ],
   "characters": [
@@ -88,37 +161,6 @@
       },
       "effects": [
         "@WallArmor3"
-      ]
-    },
-    {
-      "id": "BloodwageTrigger1",
-      "trigger": "on_any_unit_death_on_floor",
-      "descriptions": {
-        "english": "Restore <b>3</b> health."
-      },
-      "effects": [
-        "@BloodwageHeal1"
-      ]
-    },
-    {
-      "id": "BloodwageTrigger2",
-      "trigger": "on_any_unit_death_on_floor",
-      "descriptions": {
-        "english": "Restore <b>6</b> health."
-      },
-      "effects": [
-        "@BloodwageHeal2"
-      ]
-    },
-    {
-      "id": "BloodwageTrigger3",
-      "trigger": "on_any_unit_death_on_floor",
-      "descriptions": {
-        "english": "Restore <b>10</b> health and gain <b>3</b> [rage]."
-      },
-      "effects": [
-        "@BloodwageHeal3",
-        "@BloodwageRage3"
       ]
     }
   ],
@@ -190,37 +232,31 @@
       ]
     },
     {
-      "id": "BloodwageHeal1",
-      "name": "CardEffectHeal",
-      "target_mode": "self",
-      "target_team": "none",
-      "param_int": 3
+      "id": "RodericRequisitionOne",
+      "name": "@CardEffectRequisition",
+      "target_mode": "front_in_room",
+      "target_team": "monsters"
     },
     {
-      "id": "BloodwageHeal2",
-      "name": "CardEffectHeal",
-      "target_mode": "self",
-      "target_team": "none",
-      "param_int": 6
+      "id": "RodericRequisitionAll",
+      "name": "@CardEffectRequisition",
+      "target_mode": "room",
+      "target_team": "monsters"
     },
     {
-      "id": "BloodwageHeal3",
-      "name": "CardEffectHeal",
-      "target_mode": "self",
-      "target_team": "none",
-      "param_int": 10
-    },
-    {
-      "id": "BloodwageRage3",
-      "name": "CardEffectAddStatusEffect",
+      "id": "RodericSlamAdvance",
+      "name": "CardEffectFloorRearrange",
       "target_mode": "self",
       "target_team": "monsters",
-      "param_status_effects": [
-        {
-          "status": "buff",
-          "count": 3
-        }
-      ]
+      "param_int": 0
+    },
+    {
+      "id": "RodericSlamHit",
+      "name": "CardEffectDamagePerHp",
+      "target_mode": "front_in_room",
+      "target_team": "heroes",
+      "param_int": 1,
+      "param_bool_2": true
     }
   ],
   "upgrades": [
@@ -231,6 +267,7 @@
     },
     {
       "id": "upg_Wall1",
+      "ability_upgrade": "@RodericSlam",
       "titles": {
         "english": "Shield Wall"
       },
@@ -250,6 +287,7 @@
     },
     {
       "id": "upg_Wall2",
+      "ability_upgrade": "@RodericSlam",
       "titles": {
         "english": "Shield Wall II"
       },
@@ -272,6 +310,7 @@
     },
     {
       "id": "upg_Wall3",
+      "ability_upgrade": "@RodericSlam",
       "titles": {
         "english": "Shield Wall III"
       },
@@ -293,17 +332,17 @@
       ]
     },
     {
-      "id": "upg_Bloodwage1",
+      "id": "upg_Quarter1",
       "titles": {
-        "english": "Bloodwage"
+        "english": "Quartermaster"
       },
       "descriptions": {
-        "english": "Paid in blood."
+        "english": "Signs for the whole company's kit."
       },
-      "bonus_damage": 8,
-      "trigger_upgrades": [
-        "@BloodwageTrigger1"
-      ],
+      "bonus_hp": 8,
+      "bonus_damage": 3,
+      "bonus_equipment": 1,
+      "ability_upgrade": "@RodericRequisition",
       "status_effect_upgrades": [
         {
           "status": "titanskin",
@@ -312,19 +351,19 @@
       ]
     },
     {
-      "id": "upg_Bloodwage2",
+      "id": "upg_Quarter2",
       "titles": {
-        "english": "Bloodwage II"
+        "english": "Quartermaster II"
       },
       "descriptions": {
-        "english": "Paid in blood."
+        "english": "Signs for the whole company's kit."
       },
-      "bonus_damage": 18,
+      "bonus_hp": 16,
+      "bonus_damage": 8,
+      "bonus_equipment": 2,
+      "ability_upgrade": "@RodericRequisition2",
       "remove_upgrades": [
-        "@upg_Bloodwage1"
-      ],
-      "trigger_upgrades": [
-        "@BloodwageTrigger2"
+        "@upg_Quarter1"
       ],
       "status_effect_upgrades": [
         {
@@ -334,19 +373,19 @@
       ]
     },
     {
-      "id": "upg_Bloodwage3",
+      "id": "upg_Quarter3",
       "titles": {
-        "english": "Bloodwage III"
+        "english": "Quartermaster III"
       },
       "descriptions": {
-        "english": "Paid in blood."
+        "english": "Signs for the whole company's kit."
       },
-      "bonus_damage": 32,
+      "bonus_hp": 28,
+      "bonus_damage": 14,
+      "bonus_equipment": 3,
+      "ability_upgrade": "@RodericRequisition3",
       "remove_upgrades": [
-        "@upg_Bloodwage2"
-      ],
-      "trigger_upgrades": [
-        "@BloodwageTrigger3"
+        "@upg_Quarter2"
       ],
       "status_effect_upgrades": [
         {

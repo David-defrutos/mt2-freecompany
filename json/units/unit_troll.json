@@ -147,7 +147,8 @@
       "targets_room": true,
       "targetless": true,
       "effects": [
-        "@KeepBogTroll"
+        "@KeepBogTroll",
+        "@TameConsumeOthers"
       ]
     },
     {
@@ -166,7 +167,8 @@
       "targets_room": true,
       "targetless": true,
       "effects": [
-        "@KeepStoneTroll"
+        "@KeepStoneTroll",
+        "@TameConsumeOthers"
       ]
     },
     {
@@ -185,7 +187,8 @@
       "targets_room": true,
       "targetless": true,
       "effects": [
-        "@KeepWarTroll"
+        "@KeepWarTroll",
+        "@TameConsumeOthers"
       ]
     },
     {
@@ -204,7 +207,8 @@
       "targets_room": true,
       "targetless": true,
       "effects": [
-        "@KeepCautiousTroll"
+        "@KeepCautiousTroll",
+        "@TameConsumeOthers"
       ]
     },
     {
@@ -223,7 +227,8 @@
       "targets_room": true,
       "targetless": true,
       "effects": [
-        "@KeepTwoHeadedTroll"
+        "@KeepTwoHeadedTroll",
+        "@TameConsumeOthers"
       ]
     }
   ],
@@ -418,6 +423,13 @@
     }
   ],
   "effects": [
+    {
+      "id": "TameConsumeOthers",
+      "name": "@CardEffectConsumeFromHand",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_card_pool": "@FreeCompanyTameOffersPool"
+    },
     {
       "id": "SpawnBogTrollEffect",
       "name": "CardEffectSpawnMonster",
