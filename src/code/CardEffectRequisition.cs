@@ -156,7 +156,7 @@ namespace mt2_freecompany.Plugin
                 var aplicar = target.ApplyCardUpgrade(estado);
                 while (aplicar.MoveNext()) yield return aplicar.Current;
 
-                Log($"Requisition: aplicado {escalera[actual]} (escalon {actual + 1}).");
+                Log($"Requisition: aplicado {escalera[actual]} (escalon {actual + 1}). [corrutina]");
             }
             yield break;
         }
