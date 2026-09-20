@@ -764,9 +764,12 @@
     },
     {
       "id": "BeastmasterCallDraw",
-      "name": "CardEffectRecursion",
+      "name": "@CardEffectIfSubtypeInDrawPile",
+      "param_str": "CardEffectRecursion",
+      "param_subtype": "@Sub_Troll",
       "target_mode": "draw_pile",
       "target_card_selection_mode": "random_to_hand",
+      "target_subtype": "@Sub_Troll",
       "param_card_filter": "@TrollOnlyMask",
       "param_upgrade": "@TrollFreeSummon",
       "param_int": 1,

@@ -147,8 +147,7 @@
       "targets_room": true,
       "targetless": true,
       "effects": [
-        "@KeepBogTroll",
-        "@TameConsumeOthers"
+        "@KeepBogTroll"
       ]
     },
     {
@@ -167,8 +166,7 @@
       "targets_room": true,
       "targetless": true,
       "effects": [
-        "@KeepStoneTroll",
-        "@TameConsumeOthers"
+        "@KeepStoneTroll"
       ]
     },
     {
@@ -187,8 +185,7 @@
       "targets_room": true,
       "targetless": true,
       "effects": [
-        "@KeepWarTroll",
-        "@TameConsumeOthers"
+        "@KeepWarTroll"
       ]
     },
     {
@@ -207,8 +204,7 @@
       "targets_room": true,
       "targetless": true,
       "effects": [
-        "@KeepCautiousTroll",
-        "@TameConsumeOthers"
+        "@KeepCautiousTroll"
       ]
     },
     {
@@ -227,8 +223,7 @@
       "targets_room": true,
       "targetless": true,
       "effects": [
-        "@KeepTwoHeadedTroll",
-        "@TameConsumeOthers"
+        "@KeepTwoHeadedTroll"
       ]
     }
   ],
@@ -424,13 +419,6 @@
   ],
   "effects": [
     {
-      "id": "TameConsumeOthers",
-      "name": "@CardEffectConsumeFromHand",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_card_pool": "@FreeCompanyTameOffersPool"
-    },
-    {
       "id": "SpawnBogTrollEffect",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
@@ -513,7 +501,7 @@
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
       "param_card_pool": "@FreeCompanyOnlyBogTrollPool",
-      "param_int": 0
+      "param_int": 7
     },
     {
       "id": "KeepStoneTroll",
@@ -523,7 +511,7 @@
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
       "param_card_pool": "@FreeCompanyOnlyStoneTrollPool",
-      "param_int": 0
+      "param_int": 7
     },
     {
       "id": "KeepWarTroll",
@@ -533,7 +521,7 @@
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
       "param_card_pool": "@FreeCompanyOnlyWarTrollPool",
-      "param_int": 0
+      "param_int": 7
     },
     {
       "id": "KeepCautiousTroll",
@@ -543,7 +531,7 @@
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
       "param_card_pool": "@FreeCompanyOnlyCautiousTrollPool",
-      "param_int": 0
+      "param_int": 7
     },
     {
       "id": "KeepTwoHeadedTroll",
@@ -553,7 +541,7 @@
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
       "param_card_pool": "@FreeCompanyOnlyTwoHeadedTrollPool",
-      "param_int": 0
+      "param_int": 7
     },
     {
       "id": "BogTrollRoot",

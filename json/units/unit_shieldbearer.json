@@ -31,7 +31,7 @@
         "english": "Last Stand"
       },
       "descriptions": {
-        "english": "Deal damage to all enemy units in this room equal to twice this unit's [health]. Then deal damage to this unit equal to its [health]."
+        "english": "Deal damage to the enemy in front equal to twice this unit's [health]. This unit is slain."
       },
       "card_art": "@Shieldbearer",
       "is_an_ability": true,
@@ -91,16 +91,16 @@
     {
       "id": "ShieldbearerAbilityBlast",
       "name": "CardEffectDamagePerHp",
-      "target_mode": "room",
-      "target_team": "heroes",
+      "target_mode": "self",
+      "target_team": "monsters",
       "param_int": 2
     },
     {
       "id": "ShieldbearerAbilityRecoil",
-      "name": "CardEffectDamagePerHp",
+      "name": "CardEffectDamageByPercentRemainingHealth",
       "target_mode": "self",
       "target_team": "monsters",
-      "param_int": 1
+      "param_int": 100
     }
   ],
   "character_triggers": [

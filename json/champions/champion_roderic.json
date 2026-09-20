@@ -246,9 +246,9 @@
     {
       "id": "RodericSlamAdvance",
       "name": "CardEffectFloorRearrange",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_int": 0
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "applied_to_self_vfx": "@RodericSlamAdvanceVFX"
     },
     {
       "id": "RodericSlamHit",
@@ -256,7 +256,26 @@
       "target_mode": "self",
       "target_team": "monsters",
       "param_int": 1,
-      "param_bool_2": true
+      "param_bool_2": true,
+      "applied_vfx": "@RodericSlamHitVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "RodericSlamAdvanceVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/SteadfastCrusader/FX_SteadfastCrusader.prefab",
+        "asset_guid": "32a4025b924311e4995d1dc47611df0f"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "RodericSlamHitVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
+        "asset_guid": "b856194664a6e4b4da8f1c47c5a0e765"
+      },
+      "spawn_location": "character_center"
     }
   ],
   "upgrades": [
