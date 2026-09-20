@@ -253,8 +253,8 @@
     {
       "id": "RodericSlamHit",
       "name": "CardEffectDamagePerHp",
-      "target_mode": "front_in_room",
-      "target_team": "heroes",
+      "target_mode": "self",
+      "target_team": "monsters",
       "param_int": 1,
       "param_bool_2": true
     }
