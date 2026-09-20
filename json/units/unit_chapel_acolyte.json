@@ -35,7 +35,8 @@
       "health": 14,
       "subtypes": [
         "@Sub_Ranged",
-        "@Sub_Cleric"
+        "@Sub_Cleric",
+        "@Sub_Goblin"
       ],
       "triggers": [
         {

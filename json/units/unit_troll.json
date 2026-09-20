@@ -65,7 +65,14 @@
         {
           "english": "Someone taught it to swing first."
         }
-      ]
+      ],
+      "traits": [
+        "@WarTrollScaleAttack",
+        "@WarTrollScaleHealth"
+      ],
+      "descriptions": {
+        "english": "Enters with +<b>3</b> [attack] and +<b>3</b> [health] for each <b>Goblin</b> in your deck."
+      }
     },
     {
       "id": "SpawnCautiousTroll",
@@ -110,6 +117,24 @@
           "english": "They never agree, and both are hungry."
         }
       ]
+    },
+    {
+      "id": "StoneTrollAbility",
+      "names": {
+        "english": "Boulder"
+      },
+      "descriptions": {
+        "english": "Attack the enemy unit with the lowest [health]."
+      },
+      "card_art": "@StoneTroll",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@StoneTrollBoulder"
+      ]
     }
   ],
   "characters": [
@@ -139,6 +164,9 @@
         },
         {
           "id": "@TrollBeastmasterCelebrate"
+        },
+        {
+          "id": "@BogTrollStrike"
         }
       ]
     },
@@ -169,7 +197,8 @@
         {
           "id": "@TrollBeastmasterCelebrate"
         }
-      ]
+      ],
+      "ability": "@StoneTrollAbility"
     },
     {
       "id": "WarTroll",
@@ -217,7 +246,7 @@
       "starting_status_effects": [
         {
           "status": "regen",
-          "count": 10
+          "count": 20
         }
       ],
       "triggers": [
@@ -247,6 +276,10 @@
         {
           "status": "regen",
           "count": 10
+        },
+        {
+          "status": "multistrike",
+          "count": 1
         }
       ],
       "triggers": [
@@ -281,6 +314,16 @@
       "effects": [
         "@TrollCeleb2",
         "@TrollCeleb3"
+      ]
+    },
+    {
+      "id": "BogTrollStrike",
+      "trigger": "on_attacking",
+      "descriptions": {
+        "english": "Apply <b>1</b> [rooted] to the unit it attacks."
+      },
+      "effects": [
+        "@BogTrollRoot"
       ]
     }
   ],
@@ -409,6 +452,24 @@
       "param_subtype": "@Sub_Troll",
       "param_card_pool": "@FreeCompanyOnlyTwoHeadedTrollPool",
       "param_int": 0
+    },
+    {
+      "id": "BogTrollRoot",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_attacked_character",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "rooted",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "StoneTrollBoulder",
+      "name": "CardEffectAttackTargetsWithSelfUnit",
+      "target_mode": "weakest",
+      "target_team": "heroes"
     }
   ],
   "upgrades": [
@@ -452,6 +513,22 @@
       "id": "TrollCelebrate3",
       "bonus_damage": 10,
       "bonus_hp": 10
+    }
+  ],
+  "traits": [
+    {
+      "id": "WarTrollScaleAttack",
+      "name": "CardTraitScalingUpgradeUnitAttack",
+      "param_tracked_value": "subtype_in_deck",
+      "param_subtype": "@Sub_Goblin",
+      "param_int": 3
+    },
+    {
+      "id": "WarTrollScaleHealth",
+      "name": "CardTraitScalingUpgradeUnitHealth",
+      "param_tracked_value": "subtype_in_deck",
+      "param_subtype": "@Sub_Goblin",
+      "param_int": 3
     }
   ],
   "sprites": [

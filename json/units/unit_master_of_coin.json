@@ -39,7 +39,8 @@
       "subtypes": [
         "SubtypesData_BannerUnit",
         "@Sub_Melee",
-        "@Sub_Rogue"
+        "@Sub_Rogue",
+        "@Sub_Goblin"
       ],
       "starting_status_effects": [
         {

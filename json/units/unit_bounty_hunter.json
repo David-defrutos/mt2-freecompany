@@ -38,7 +38,8 @@
       "health": 16,
       "subtypes": [
         "@Sub_Ranged",
-        "@Sub_Ranger"
+        "@Sub_Ranger",
+        "@Sub_Goblin"
       ],
       "triggers": [
         {

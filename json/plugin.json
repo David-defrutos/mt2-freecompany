@@ -156,6 +156,12 @@
       "names": {
         "english": "Troll"
       }
+    },
+    {
+      "id": "Sub_Goblin",
+      "names": {
+        "english": "Goblin"
+      }
     }
   ],
   "map_nodes": [

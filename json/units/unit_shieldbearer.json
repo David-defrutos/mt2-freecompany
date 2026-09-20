@@ -58,7 +58,8 @@
       "subtypes": [
         "SubtypesData_BannerUnit",
         "@Sub_Melee",
-        "@Sub_Warrior"
+        "@Sub_Warrior",
+        "@Sub_Goblin"
       ],
       "triggers": [
         {

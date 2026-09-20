@@ -39,7 +39,8 @@
       "subtypes": [
         "SubtypesData_BannerUnit",
         "@Sub_Ranged",
-        "@Sub_Wizard"
+        "@Sub_Wizard",
+        "@Sub_Goblin"
       ],
       "triggers": [
         {

@@ -38,7 +38,8 @@
       "subtypes": [
         "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34",
         "@Sub_Melee",
-        "@Sub_Warrior"
+        "@Sub_Warrior",
+        "@Sub_Goblin"
       ],
       "triggers": [
         {
@@ -52,9 +53,10 @@
       "id": "RodericMusterTrigger",
       "trigger": "card_monster_played",
       "descriptions": {
-        "english": "Gain <b>+1</b> [health] and <b>1</b> [armor] permanently."
+        "english": "When a <b>Goblin</b> is summoned on this floor, it gains <b>1</b> [armor] and this unit gains <b>+2</b> [attack] and <b>+2</b> [health] permanently."
       },
       "effects": [
+        "@RodericMusterGate",
         "@RodericMusterBuff"
       ]
     },
@@ -126,6 +128,22 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "param_character": "@Roderic"
+    },
+    {
+      "id": "RodericMusterGate",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_spawned_character",
+      "target_team": "monsters",
+      "target_subtype": "@Sub_Goblin",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 1
+        }
+      ],
+      "param_bool": true,
+      "should_test": true,
+      "should_cancel_subsequent_effects_if_test_fails": true
     },
     {
       "id": "RodericMusterBuff",
@@ -208,13 +226,8 @@
   "upgrades": [
     {
       "id": "RodericMusterUpgrade",
-      "bonus_hp": 1,
-      "status_effect_upgrades": [
-        {
-          "status": "armor",
-          "count": 1
-        }
-      ]
+      "bonus_damage": 2,
+      "bonus_hp": 2
     },
     {
       "id": "upg_Wall1",

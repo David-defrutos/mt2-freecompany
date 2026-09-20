@@ -38,7 +38,8 @@
       "health": 12,
       "subtypes": [
         "@Sub_Ranged",
-        "@Sub_Wizard"
+        "@Sub_Wizard",
+        "@Sub_Goblin"
       ],
       "triggers": [
         {
@@ -73,7 +74,7 @@
       "id": "HedgeConjurerTrigger",
       "trigger": "card_spell_played",
       "descriptions": {
-        "english": "Gain <b>+1</b>[attack] for the rest of combat."
+        "english": "Gain <b>+1</b> [attack] for the rest of combat."
       },
       "effects": [
         "@HedgeConjurerAbility"
