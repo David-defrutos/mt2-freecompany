@@ -47,16 +47,16 @@
         "english": "Requisition"
       },
       "descriptions": {
-        "english": "Issue the front friendly unit the next piece of kit for its role."
+        "english": "Add the <b>I</b> kit for that unit's role to your hand."
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
-      "cooldown": 4,
-      "targetless": true,
-      "targets_room": false,
+      "cooldown": 2,
+      "targetless": false,
+      "targets_room": true,
       "card_type": "spell",
       "effects": [
-        "@RodericRequisitionOne"
+        "@RodericKitI"
       ]
     },
     {
@@ -65,16 +65,16 @@
         "english": "Requisition"
       },
       "descriptions": {
-        "english": "Issue the front friendly unit the next piece of kit for its role."
+        "english": "Add the <b>II</b> kit for that unit's role to your hand."
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
-      "cooldown": 3,
-      "targetless": true,
-      "targets_room": false,
+      "cooldown": 2,
+      "targetless": false,
+      "targets_room": true,
       "card_type": "spell",
       "effects": [
-        "@RodericRequisitionOne"
+        "@RodericKitII"
       ]
     },
     {
@@ -83,16 +83,16 @@
         "english": "Requisition"
       },
       "descriptions": {
-        "english": "Issue every friendly unit in this room the next piece of kit for its role."
+        "english": "Add the <b>III</b> kit for that unit's role to your hand."
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
-      "cooldown": 3,
-      "targetless": true,
-      "targets_room": false,
+      "cooldown": 2,
+      "targetless": false,
+      "targets_room": true,
       "card_type": "spell",
       "effects": [
-        "@RodericRequisitionAll"
+        "@RodericKitIII"
       ]
     }
   ],
@@ -232,50 +232,40 @@
       ]
     },
     {
-      "id": "RodericRequisitionOne",
+      "id": "RodericKitI",
       "name": "@CardEffectRequisition",
-      "target_mode": "front_in_room",
-      "target_team": "monsters"
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_int": 1
     },
     {
-      "id": "RodericRequisitionAll",
+      "id": "RodericKitII",
       "name": "@CardEffectRequisition",
-      "target_mode": "room",
-      "target_team": "monsters"
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_int": 2
+    },
+    {
+      "id": "RodericKitIII",
+      "name": "@CardEffectRequisition",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_int": 3
     },
     {
       "id": "RodericSlamAdvance",
       "name": "CardEffectFloorRearrange",
-      "target_mode": "drop_target_character",
-      "target_team": "both",
-      "applied_to_self_vfx": "@RodericSlamAdvanceVFX"
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 0
     },
     {
       "id": "RodericSlamHit",
       "name": "CardEffectDamagePerHp",
-      "target_mode": "self",
-      "target_team": "monsters",
+      "target_mode": "front_in_room",
+      "target_team": "heroes",
       "param_int": 1,
-      "param_bool_2": true,
-      "applied_vfx": "@RodericSlamHitVFX"
-    }
-  ],
-  "vfxs": [
-    {
-      "id": "RodericSlamAdvanceVFX",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/Abilities/SteadfastCrusader/FX_SteadfastCrusader.prefab",
-        "asset_guid": "32a4025b924311e4995d1dc47611df0f"
-      },
-      "spawn_location": "character_center"
-    },
-    {
-      "id": "RodericSlamHitVFX",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
-        "asset_guid": "b856194664a6e4b4da8f1c47c5a0e765"
-      },
-      "spawn_location": "character_center"
+      "param_bool_2": true
     }
   ],
   "upgrades": [

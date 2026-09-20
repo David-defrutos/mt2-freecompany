@@ -10,7 +10,10 @@
         "english": "<b>+5</b> [attack]. Apply <b>Sniper</b>."
       },
       "card_art": "@Shortbow",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -39,7 +42,10 @@
         "english": "<b>+12</b> [attack]. Apply <b>Sniper</b> and <b>2</b> [piercing]."
       },
       "card_art": "@Longbow",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -68,7 +74,10 @@
         "english": "<b>+20</b> [attack]. Apply <b>Sniper</b>, <b>4</b> [piercing] and <b>1</b> [sweep]."
       },
       "card_art": "@GreatBow",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",

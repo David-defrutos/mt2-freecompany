@@ -10,7 +10,10 @@
         "english": "<b>+4</b> [attack]. Apply <b>1</b> [avarice] and <b>2</b> [stealth]."
       },
       "card_art": "@Lockpicks",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -39,7 +42,10 @@
         "english": "<b>+9</b> [attack]. Apply <b>2</b> [avarice] and <b>4</b> [stealth]."
       },
       "card_art": "@PoisonedDagger",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -68,7 +74,10 @@
         "english": "<b>+15</b> [attack]. Apply <b>4</b> [avarice] and <b>6</b> [stealth]."
       },
       "card_art": "@ThiefsMantle",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",

@@ -10,7 +10,10 @@
         "english": "<b>+5</b> [attack]. <b>Slay</b>: gain <b>2</b> [rage]."
       },
       "card_art": "@NotchedAxe",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -39,7 +42,10 @@
         "english": "<b>+10</b> [attack]. <b>Slay</b>: gain <b>4</b> [rage]."
       },
       "card_art": "@TwinAxes",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -68,7 +74,10 @@
         "english": "<b>+18</b> [attack]. <b>Slay</b>: gain <b>6</b> [rage] and <b>1</b> [burst]."
       },
       "card_art": "@ReaversMaul",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",

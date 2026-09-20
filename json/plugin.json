@@ -235,6 +235,17 @@
       ]
     },
     {
+      "id": "FreeCompanyKitPoolIII",
+      "cards": [
+        "@ReaversMaul",
+        "@Reliquary",
+        "@GreatBow",
+        "@ThiefsMantle",
+        "@BulwarkPlate",
+        "@ArchmagesStaff"
+      ]
+    },
+    {
       "id": "FreeCompanyRoomCardPool",
       "cards": [
         "@ThePit",
@@ -243,12 +254,6 @@
         "@PaymastersTent",
         "@Watchtower",
         "@QuartermastersStore"
-      ]
-    },
-    {
-      "id": "FreeCompanyRequisitionPool",
-      "cards": [
-        "@Requisition"
       ]
     },
     {
@@ -336,6 +341,12 @@
       "cards": [
         "@TameTwoHeadedTroll"
       ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "KitEphemeral",
+      "name": "CardTraitEphemeral"
     }
   ],
   "rewards": [

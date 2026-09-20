@@ -10,7 +10,10 @@
         "english": "Apply <b>1</b> [conduit]."
       },
       "card_art": "@ChalkCircle",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -39,7 +42,10 @@
         "english": "<b>+6</b> [attack]. Apply <b>2</b> [conduit]."
       },
       "card_art": "@Grimoire",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -68,7 +74,10 @@
         "english": "<b>+12</b> [attack]. Apply <b>3</b> [conduit] and <b>2</b> [mageblade]."
       },
       "card_art": "@ArchmagesStaff",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",

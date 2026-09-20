@@ -10,7 +10,10 @@
         "english": "<b>+8</b> [health]. Apply <b>3</b> [armor]."
       },
       "card_art": "@Buckler",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -39,7 +42,10 @@
         "english": "<b>+15</b> [health]. Apply <b>6</b> [armor] and <b>2</b> [steelguard]."
       },
       "card_art": "@KiteShield",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -68,7 +74,10 @@
         "english": "<b>+25</b> [health]. Apply <b>10</b> [armor], <b>3</b> [steelguard] and <b>1</b> [titanskin]."
       },
       "card_art": "@BulwarkPlate",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",

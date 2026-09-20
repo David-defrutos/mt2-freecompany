@@ -10,7 +10,10 @@
         "english": "<b>+10</b> [health]. Apply <b>2</b> [regen]."
       },
       "card_art": "@Bandages",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -39,7 +42,10 @@
         "english": "<b>+18</b> [health]. Apply <b>4</b> [regen]."
       },
       "card_art": "@HolySymbol",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",
@@ -68,7 +74,10 @@
         "english": "<b>+30</b> [health]. Apply <b>6</b> [regen] and <b>1</b> [undying]."
       },
       "card_art": "@Reliquary",
-      "cost": 0,
+      "cost": 1,
+      "traits": [
+        "@KitEphemeral"
+      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",

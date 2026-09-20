@@ -77,7 +77,6 @@ namespace mt2_freecompany.Plugin
                         "json/kits/kit_rogue.json",
                         "json/kits/kit_warrior.json",
                         "json/kits/kit_wizard.json",
-                        "json/kits/spell_requisition.json",
                         "json/relics/relic_butchers_bill.json",
                         "json/relics/relic_expanded_billet.json",
                         "json/relics/relic_field_forge.json",

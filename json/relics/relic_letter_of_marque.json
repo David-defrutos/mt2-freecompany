@@ -4,7 +4,7 @@
     {
       "id": "LetterOfMarqueEffect",
       "name": "RelicEffectAddCardsStartOfBattle",
-      "param_card_pool": "@FreeCompanyRequisitionPool",
+      "param_card_pool": "@FreeCompanyKitPoolIII",
       "param_bool": true,
       "param_bool_2": false,
       "param_bool_3": true
@@ -18,7 +18,7 @@
         "english": "Letter of Marque"
       },
       "descriptions": {
-        "english": "Start each battle with a <b>Requisition</b> in your hand."
+        "english": "Start each battle with a random <b>III</b> piece of kit in your hand."
       },
       "relic_activated_texts": {
         "english": "By order of the company."
