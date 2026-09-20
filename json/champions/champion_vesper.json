@@ -37,6 +37,7 @@
       "targets_room": false,
       "card_type": "spell",
       "effects": [
+        "@BeastmasterCallGate",
         "@BeastmasterCallDraw"
       ]
     }
@@ -763,10 +764,18 @@
       "param_upgrade": "@TrollOffer"
     },
     {
-      "id": "BeastmasterCallDraw",
+      "id": "BeastmasterCallGate",
       "name": "@CardEffectIfSubtypeInDrawPile",
-      "param_str": "CardEffectRecursion",
       "param_subtype": "@Sub_Troll",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "should_test": true,
+      "should_fail_to_cast_if_test_fails": true,
+      "should_cancel_subsequent_effects_if_test_fails": true
+    },
+    {
+      "id": "BeastmasterCallDraw",
+      "name": "CardEffectRecursion",
       "target_mode": "draw_pile",
       "target_card_selection_mode": "random_to_hand",
       "target_subtype": "@Sub_Troll",

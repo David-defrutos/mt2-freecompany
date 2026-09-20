@@ -146,8 +146,12 @@
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": true,
+      "traits": [
+        "@TameEphemeral"
+      ],
       "effects": [
-        "@KeepBogTroll"
+        "@KeepBogTroll",
+        "@TameConsumeOthers"
       ]
     },
     {
@@ -165,8 +169,12 @@
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": true,
+      "traits": [
+        "@TameEphemeral"
+      ],
       "effects": [
-        "@KeepStoneTroll"
+        "@KeepStoneTroll",
+        "@TameConsumeOthers"
       ]
     },
     {
@@ -184,8 +192,12 @@
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": true,
+      "traits": [
+        "@TameEphemeral"
+      ],
       "effects": [
-        "@KeepWarTroll"
+        "@KeepWarTroll",
+        "@TameConsumeOthers"
       ]
     },
     {
@@ -203,8 +215,12 @@
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": true,
+      "traits": [
+        "@TameEphemeral"
+      ],
       "effects": [
-        "@KeepCautiousTroll"
+        "@KeepCautiousTroll",
+        "@TameConsumeOthers"
       ]
     },
     {
@@ -222,8 +238,12 @@
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": true,
+      "traits": [
+        "@TameEphemeral"
+      ],
       "effects": [
-        "@KeepTwoHeadedTroll"
+        "@KeepTwoHeadedTroll",
+        "@TameConsumeOthers"
       ]
     }
   ],
@@ -419,6 +439,13 @@
   ],
   "effects": [
     {
+      "id": "TameConsumeOthers",
+      "name": "@CardEffectConsumeFromHand",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_card_pool": "@FreeCompanyTameOffersPool"
+    },
+    {
       "id": "SpawnBogTrollEffect",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
@@ -606,6 +633,10 @@
     }
   ],
   "traits": [
+    {
+      "id": "TameEphemeral",
+      "name": "CardTraitEphemeral"
+    },
     {
       "id": "WarTrollScaleAttack",
       "name": "CardTraitScalingUpgradeUnitAttack",
