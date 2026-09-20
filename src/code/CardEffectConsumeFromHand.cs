@@ -29,9 +29,17 @@ namespace mt2_freecompany.Plugin
     /// `CardManager.ConsumeCardWithoutPlaying`, que **devuelve IEnumerator**: es una
     /// corrutina y hay que recorrerla (hallazgo del 20-sep con ApplyCardUpgrade).
     ///
+    /// `param_bool` a true incluye **la carta que se acaba de jugar**. Hace falta porque el
+    /// juego no la esta sacando de la mano por si mismo: se queda ahi y se puede volver a
+    /// jugar. Comprobado en partida el 20-sep-2026, y el trait `CardTraitEphemeral`
+    /// -"Purges when played, discarded, or at end of turn"- tampoco la quita. Cuando la
+    /// llamada llega, la carta jugada SIGUE en la mano: se comprobo contando, porque el
+    /// efecto consumia 4 de 5 saltandose la jugada por referencia.
+    ///
     /// Json:
     ///   { "id": "TameConsumeOthers", "name": "@CardEffectConsumeFromHand",
     ///     "target_mode": "self", "target_team": "monsters",
+    ///     "param_bool": true,
     ///     "param_card_pool": "@FreeCompanyTameOffersPool" }
     /// --------------------------------------------------------------------------------
     /// </summary>
@@ -41,6 +49,13 @@ namespace mt2_freecompany.Plugin
         {
             return new PropDescriptions();
         }
+
+        /// <summary>
+        /// `CardEffectBase` lo devuelve **true** por defecto, y este efecto consume cartas
+        /// de verdad: en una pasada de vista previa se las llevaria por delante sin que el
+        /// jugador haya jugado nada. Se apaga a proposito.
+        /// </summary>
+        public override bool CanApplyInPreviewMode => false;
 
         // Nunca falla: si fallase, cancelaria los efectos siguientes de la carta.
         public override bool TestEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers)
@@ -64,16 +79,25 @@ namespace mt2_freecompany.Plugin
                 yield break;
             }
 
+            // param_bool: consumir tambien la carta que se acaba de jugar.
+            bool incluirJugada = cardEffectState.GetParamBool();
             var jugada = cardEffectParams.playedCard;
-            var mano = new List<CardState>(cardManager.GetHand(true));
+            // GetHand(true) ya devuelve una copia; no hace falta duplicarla otra vez.
+            var mano = cardManager.GetHand(true);
 
             int consumidas = 0;
             foreach (var carta in mano)
             {
-                if (carta == null || carta == jugada) continue;
+                if (carta == null) continue;
+                if (carta == jugada && !incluirJugada) continue;
 
                 string id = carta.GetCardDataID();
                 if (string.IsNullOrEmpty(id) || !pool.Contains(id)) continue;
+
+                // GetHand(true) da una copia: para cuando llega el turno de esta carta, la
+                // mano de verdad ya ha cambiado (la hemos tocado nosotros, o el juego ha
+                // purgado la jugada por su trait Ephemeral). Se vuelve a preguntar.
+                if (!cardManager.IsCardInHand(carta)) continue;
 
                 var parametros = new CardManager.DiscardCardParams
                 {
@@ -86,7 +110,7 @@ namespace mt2_freecompany.Plugin
                 consumidas++;
             }
 
-            Log($"ConsumeFromHand: consumidas {consumidas} cartas de la mano.");
+            Log($"ConsumeFromHand: consumidas {consumidas} cartas de la mano (jugada incluida: {incluirJugada}).");
         }
 
         private static void Log(string mensaje)

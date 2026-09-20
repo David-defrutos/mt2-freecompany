@@ -443,6 +443,7 @@
       "name": "@CardEffectConsumeFromHand",
       "target_mode": "self",
       "target_team": "monsters",
+      "param_bool": true,
       "param_card_pool": "@FreeCompanyTameOffersPool"
     },
     {
@@ -713,12 +714,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 1.1,
+              "y": 1.713,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 1.25,
+              "y": 1.25,
               "z": 1
             }
           }
@@ -743,12 +744,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 1.1,
+              "y": 1.8,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 1.25,
+              "y": 1.25,
               "z": 1
             }
           }
@@ -773,12 +774,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 1.1,
+              "y": 1.713,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 1.25,
+              "y": 1.25,
               "z": 1
             }
           }
@@ -803,12 +804,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 1.1,
+              "y": 1.512,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 1.25,
+              "y": 1.25,
               "z": 1
             }
           }
@@ -833,12 +834,12 @@
           "transform": {
             "position": {
               "x": 0,
-              "y": 1.1,
+              "y": 1.5,
               "z": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0,
+              "x": 1.25,
+              "y": 1.25,
               "z": 1
             }
           }

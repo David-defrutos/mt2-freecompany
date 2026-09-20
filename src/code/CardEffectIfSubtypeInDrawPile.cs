@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
+using System.Reflection;
 
 namespace mt2_freecompany.Plugin
 {
@@ -58,6 +60,14 @@ namespace mt2_freecompany.Plugin
             return new PropDescriptions();
         }
 
+        // GetSubtypes() de CharacterData resuelve contra TODOS los subtipos registrados
+        // (bucle anidado dentro de SubtypeManager) y construye una lista nueva por carta.
+        // Este TestEffect lo llama la interfaz cada vez que refresca la mano, asi que se
+        // leen las claves en crudo y se compara texto. Si el campo cambiara de nombre en
+        // una version del juego, se cae al camino lento, que siempre funciona.
+        private static readonly FieldInfo? ClavesDeSubtipo =
+            typeof(CharacterData).GetField("subtypeKeys", BindingFlags.NonPublic | BindingFlags.Instance);
+
         /// <summary>
         /// Aqui SI se devuelve false a proposito: es justo lo contrario que en el resto de
         /// las clases del clan. El valor lo consumen `should_fail_to_cast_if_test_fails`
@@ -67,26 +77,37 @@ namespace mt2_freecompany.Plugin
         public override bool TestEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers)
         {
             var subtipo = cardEffectState.GetParamSubtype();
-            if (subtipo == null || subtipo.IsNone)
-            {
-                Log("IfSubtypeInDrawPile: falta param_subtype.");
-                return false;
-            }
+            if (subtipo == null || subtipo.IsNone) return false;
 
             var cardManager = coreGameManagers.GetCardManager();
             if (cardManager == null) return false;
 
-            // shouldCopy a true: no queremos tocar la lista de verdad.
-            foreach (var carta in cardManager.GetDrawPile(true))
+            string buscado = subtipo.Key;
+
+            // shouldCopy a false: la pila solo se recorre, no se toca.
+            var pila = cardManager.GetDrawPile(false);
+            if (pila == null) return false;
+
+            foreach (var carta in pila)
             {
                 if (carta == null) continue;
 
                 var personaje = carta.GetSpawnCharacterData();
                 if (personaje == null) continue;
 
-                foreach (var st in personaje.GetSubtypes())
+                if (ClavesDeSubtipo?.GetValue(personaje) is List<string> claves)
                 {
-                    if (st != null && st.Key == subtipo.Key) return true;
+                    foreach (var clave in claves)
+                    {
+                        if (clave == buscado) return true;
+                    }
+                }
+                else
+                {
+                    foreach (var st in personaje.GetSubtypes())
+                    {
+                        if (st != null && st.Key == buscado) return true;
+                    }
                 }
             }
             return false;

@@ -28,11 +28,12 @@
         "english": "Call of the Wild"
       },
       "descriptions": {
-        "english": "Draw a <b>Troll</b> from your draw pile. It costs <b>0</b> [ember] this combat."
+        "english": "Draw a <b>Troll</b>. It costs <b>0</b> [ember]."
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
       "cooldown": 4,
+      "initial_cooldown": 4,
       "targetless": true,
       "targets_room": false,
       "card_type": "spell",
@@ -778,6 +779,7 @@
       "name": "CardEffectRecursion",
       "target_mode": "draw_pile",
       "target_card_selection_mode": "random_to_hand",
+      "target_card_type": "monster",
       "target_subtype": "@Sub_Troll",
       "param_card_filter": "@TrollOnlyMask",
       "param_upgrade": "@TrollFreeSummon",
@@ -917,7 +919,7 @@
         "english": "Beastmaster"
       },
       "descriptions": {
-        "english": "The first time, five <b>Tame</b> spells join your hand; the one you play adds that <b>Troll</b> to your deck for the rest of the run. While she lives, a summoned Troll enters with +<b>20</b> [attack] and +<b>20</b> [health] for the rest of combat, on any floor."
+        "english": "Vesper arrives with a tamed <b>Troll</b>. Trolls enter with +<b>20</b> [attack] and +<b>20</b> [health]."
       },
       "bonus_hp": 6,
       "trigger_upgrades": [
@@ -931,7 +933,7 @@
         "english": "Beastmaster II"
       },
       "descriptions": {
-        "english": "The Troll enters with +<b>40</b> [attack], +<b>40</b> [health] and [trample]. <b>Celebrate</b>: if both survive, the Troll gains +<b>5</b> [attack] and +<b>5</b> [health] permanently."
+        "english": "Trolls enter with +<b>40</b> [attack], +<b>40</b> [health] and [trample].\n<b>Celebrate</b>: +<b>5</b> [attack] and +<b>5</b> [health] permanently."
       },
       "bonus_hp": 12,
       "bonus_damage": 4,
@@ -949,7 +951,7 @@
         "english": "Beastmaster III"
       },
       "descriptions": {
-        "english": "The Troll enters with +<b>60</b> [attack], +<b>60</b> [health], [trample] and [sweep]. <b>Celebrate</b>: if both survive, the Troll gains +<b>10</b> [attack] and +<b>10</b> [health] permanently."
+        "english": "Trolls enter with +<b>60</b> [attack], +<b>60</b> [health], [trample] and [sweep].\n<b>Celebrate</b>: +<b>10</b> [attack] and +<b>10</b> [health] permanently."
       },
       "bonus_hp": 18,
       "bonus_damage": 8,
