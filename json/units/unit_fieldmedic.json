@@ -61,6 +61,79 @@
       "target_mode": "weakest",
       "target_team": "monsters",
       "param_int": 4
+    },
+    {
+      "id": "FieldMedicCleanse",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_in_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
     }
   ],
   "character_triggers": [
@@ -68,10 +141,11 @@
       "id": "FieldMedicEndTrigger",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>4</b> health to the weakest friendly unit."
+        "english": "Restore <b>4</b> health to the weakest friendly unit and remove a random debuff from a friendly unit."
       },
       "effects": [
-        "@FieldMedicHeal"
+        "@FieldMedicHeal",
+        "@FieldMedicCleanse"
       ]
     }
   ],

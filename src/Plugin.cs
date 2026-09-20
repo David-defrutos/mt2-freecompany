@@ -43,6 +43,7 @@ namespace mt2_freecompany.Plugin
                         "json/units/unit_master_of_coin.json",
                         "json/units/unit_sellsword_scout.json",
                         "json/units/unit_shieldbearer.json",
+                        "json/units/unit_troll.json",
                         "json/spells/spell_banishment.json",
                         "json/spells/spell_bless.json",
                         "json/spells/spell_cloudkill.json",

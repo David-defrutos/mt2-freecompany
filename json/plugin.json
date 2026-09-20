@@ -90,9 +90,9 @@
               "@upg_Chirurgeon3"
             ],
             [
-              "@upg_Volley1",
-              "@upg_Volley2",
-              "@upg_Volley3"
+              "@upg_Beastmaster1",
+              "@upg_Beastmaster2",
+              "@upg_Beastmaster3"
             ]
           ],
           "icon": "@VesperIcon",
@@ -149,6 +149,12 @@
       "id": "Sub_Ranger",
       "names": {
         "english": "Ranger"
+      }
+    },
+    {
+      "id": "Sub_Troll",
+      "names": {
+        "english": "Troll"
       }
     }
   ],
@@ -243,6 +249,46 @@
       "id": "FreeCompanyMagicMissilePool",
       "cards": [
         "@MagicMissile"
+      ]
+    },
+    {
+      "id": "FreeCompanyTrollPool",
+      "cards": [
+        "@SpawnBogTroll",
+        "@SpawnStoneTroll",
+        "@SpawnWarTroll",
+        "@SpawnCautiousTroll",
+        "@SpawnTwoHeadedTroll"
+      ]
+    },
+    {
+      "id": "FreeCompanyOnlyBogTrollPool",
+      "cards": [
+        "@SpawnBogTroll"
+      ]
+    },
+    {
+      "id": "FreeCompanyOnlyStoneTrollPool",
+      "cards": [
+        "@SpawnStoneTroll"
+      ]
+    },
+    {
+      "id": "FreeCompanyOnlyWarTrollPool",
+      "cards": [
+        "@SpawnWarTroll"
+      ]
+    },
+    {
+      "id": "FreeCompanyOnlyCautiousTrollPool",
+      "cards": [
+        "@SpawnCautiousTroll"
+      ]
+    },
+    {
+      "id": "FreeCompanyOnlyTwoHeadedTrollPool",
+      "cards": [
+        "@SpawnTwoHeadedTroll"
       ]
     }
   ],

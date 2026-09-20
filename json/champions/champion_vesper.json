@@ -148,6 +148,20 @@
       "effects": [
         "@GrimoireCelebrateGain"
       ]
+    },
+    {
+      "id": "BeastmasterGrantTrigger",
+      "trigger": "pre_combat",
+      "descriptions": {
+        "english": "The first time, five <b>Trolls</b> join your hand for free. The one you play is yours for the rest of the run."
+      },
+      "effects": [
+        "@BeastmasterOffer1",
+        "@BeastmasterOffer2",
+        "@BeastmasterOffer3",
+        "@BeastmasterOffer4",
+        "@BeastmasterOffer5"
+      ]
     }
   ],
   "effects": [
@@ -668,6 +682,66 @@
       "target_team": "monsters",
       "param_upgrade": "@GrimoireCelebrateUpgrade",
       "param_int_3": 2
+    },
+    {
+      "id": "BeastmasterOffer1",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddBattleCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyOnlyBogTrollPool",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_upgrade": "@TrollOffer"
+    },
+    {
+      "id": "BeastmasterOffer2",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddBattleCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyOnlyStoneTrollPool",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_upgrade": "@TrollOffer"
+    },
+    {
+      "id": "BeastmasterOffer3",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddBattleCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyOnlyWarTrollPool",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_upgrade": "@TrollOffer"
+    },
+    {
+      "id": "BeastmasterOffer4",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddBattleCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyOnlyCautiousTrollPool",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_upgrade": "@TrollOffer"
+    },
+    {
+      "id": "BeastmasterOffer5",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddBattleCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyOnlyTwoHeadedTrollPool",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_upgrade": "@TrollOffer"
     }
   ],
   "upgrades": [
@@ -780,71 +854,50 @@
       ]
     },
     {
-      "id": "upg_Volley1",
+      "id": "upg_Beastmaster1",
       "titles": {
-        "english": "Volley"
+        "english": "Beastmaster"
       },
       "descriptions": {
-        "english": "Shoots for the back of the room."
+        "english": "The first time, five <b>Trolls</b> join your hand for free; the one you play is yours for the rest of the run. While she lives, a summoned Troll enters with +<b>20</b> [attack] and +<b>20</b> [health] for the rest of combat, on any floor."
       },
-      "bonus_damage": 6,
-      "status_effect_upgrades": [
-        {
-          "status": "sniper",
-          "count": 1
-        },
-        {
-          "status": "piercing",
-          "count": 2
-        }
+      "bonus_hp": 6,
+      "trigger_upgrades": [
+        "@BeastmasterGrantTrigger"
       ]
     },
     {
-      "id": "upg_Volley2",
+      "id": "upg_Beastmaster2",
       "titles": {
-        "english": "Volley II"
+        "english": "Beastmaster II"
       },
       "descriptions": {
-        "english": "Shoots for the back of the room."
+        "english": "The Troll enters with +<b>40</b> [attack], +<b>40</b> [health] and [trample]. <b>Celebrate</b>: if both survive, the Troll gains +<b>5</b> [attack] and +<b>5</b> [health] permanently."
       },
-      "bonus_damage": 14,
-      "status_effect_upgrades": [
-        {
-          "status": "sniper",
-          "count": 1
-        },
-        {
-          "status": "piercing",
-          "count": 3
-        },
-        {
-          "status": "ambush",
-          "count": 1
-        }
+      "bonus_hp": 12,
+      "bonus_damage": 4,
+      "remove_upgrades": [
+        "@upg_Beastmaster1"
+      ],
+      "trigger_upgrades": [
+        "@BeastmasterGrantTrigger"
       ]
     },
     {
-      "id": "upg_Volley3",
+      "id": "upg_Beastmaster3",
       "titles": {
-        "english": "Volley III"
+        "english": "Beastmaster III"
       },
       "descriptions": {
-        "english": "Hits everything, and hits first."
+        "english": "The Troll enters with +<b>60</b> [attack], +<b>60</b> [health], [trample] and [sweep]. <b>Celebrate</b>: if both survive, the Troll gains +<b>10</b> [attack] and +<b>10</b> [health] permanently."
       },
-      "bonus_damage": 24,
-      "status_effect_upgrades": [
-        {
-          "status": "piercing",
-          "count": 4
-        },
-        {
-          "status": "ambush",
-          "count": 1
-        },
-        {
-          "status": "sweep",
-          "count": 1
-        }
+      "bonus_hp": 18,
+      "bonus_damage": 8,
+      "remove_upgrades": [
+        "@upg_Beastmaster2"
+      ],
+      "trigger_upgrades": [
+        "@BeastmasterGrantTrigger"
       ]
     },
     {
@@ -866,6 +919,17 @@
           "count": 2
         }
       ]
+    },
+    {
+      "id": "TrollOffer",
+      "titles": {
+        "english": "Beastmaster"
+      },
+      "cost_reduction": 6,
+      "trait_upgrades": [
+        "@TrollOfferEphemeral"
+      ],
+      "hide_icon_on_card": true
     }
   ],
   "sprites": [
@@ -944,6 +1008,10 @@
   "traits": [
     {
       "id": "GrimoireEphemeralTrait",
+      "name": "CardTraitEphemeral"
+    },
+    {
+      "id": "TrollOfferEphemeral",
       "name": "CardTraitEphemeral"
     }
   ]

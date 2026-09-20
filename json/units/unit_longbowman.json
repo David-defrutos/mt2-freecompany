@@ -45,6 +45,14 @@
         {
           "status": "sniper",
           "count": 1
+        },
+        {
+          "status": "multistrike",
+          "count": 1
+        },
+        {
+          "status": "ambush",
+          "count": 1
         }
       ]
     }

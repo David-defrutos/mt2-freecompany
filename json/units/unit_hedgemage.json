@@ -56,7 +56,21 @@
       "param_character": "@HedgeMage"
     },
     {
-      "id": "HedgeMageBolt",
+      "id": "HedgeMageBolt1",
+      "name": "CardEffectDamage",
+      "target_mode": "random_in_room",
+      "target_team": "heroes",
+      "param_int": 2
+    },
+    {
+      "id": "HedgeMageBolt2",
+      "name": "CardEffectDamage",
+      "target_mode": "random_in_room",
+      "target_team": "heroes",
+      "param_int": 2
+    },
+    {
+      "id": "HedgeMageBolt3",
       "name": "CardEffectDamage",
       "target_mode": "random_in_room",
       "target_team": "heroes",
@@ -68,10 +82,12 @@
       "id": "HedgeMageSpellTrigger",
       "trigger": "card_spell_played",
       "descriptions": {
-        "english": "Deal <b>2</b> damage to a random enemy."
+        "english": "Deal <b>2</b> damage to <b>3</b> random enemies."
       },
       "effects": [
-        "@HedgeMageBolt"
+        "@HedgeMageBolt1",
+        "@HedgeMageBolt2",
+        "@HedgeMageBolt3"
       ]
     }
   ],

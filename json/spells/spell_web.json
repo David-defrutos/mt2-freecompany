@@ -7,7 +7,7 @@
         "english": "Web"
       },
       "descriptions": {
-        "english": "Apply <b>1</b> [rooted] and <b>Suppressed</b> to all enemies in a room."
+        "english": "Apply <b>1</b> [rooted] and <b>4</b> [sap] to all enemies in a room."
       },
       "card_art": "@Web",
       "cost": 2,
@@ -18,7 +18,7 @@
       "targetless": true,
       "effects": [
         "@WebRooted",
-        "@WebRestricted"
+        "@WebSap"
       ],
       "lore_tooltips": [
         {
@@ -44,14 +44,14 @@
       ]
     },
     {
-      "id": "WebRestricted",
+      "id": "WebSap",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",
       "param_status_effects": [
         {
-          "status": "restricted",
-          "count": 1
+          "status": "debuff",
+          "count": 4
         }
       ]
     }

@@ -31,15 +31,17 @@
         "english": "Ironbound Oath"
       },
       "descriptions": {
-        "english": "Apply <b>22</b> [armor] to all friendly units on all floors."
+        "english": "Apply <b>2</b> [damageshield] and <b>20</b> [armor] to itself."
       },
       "card_art": "@IronboundChampion",
       "is_an_ability": true,
       "cooldown": 3,
+      "initial_cooldown": 3,
       "targetless": true,
       "targets_room": false,
       "card_type": "spell",
       "effects": [
+        "@IronboundChampionAbilityGuard",
         "@IronboundChampionAbilityArmor"
       ]
     }
@@ -87,15 +89,26 @@
       ]
     },
     {
-      "id": "IronboundChampionAbilityArmor",
-      "name": "@CardEffectAllRooms",
+      "id": "IronboundChampionAbilityGuard",
+      "name": "CardEffectAddStatusEffect",
       "target_mode": "self",
       "target_team": "monsters",
-      "param_str": "CardEffectAddStatusEffect",
+      "param_status_effects": [
+        {
+          "status": "damage shield",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "IronboundChampionAbilityArmor",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
       "param_status_effects": [
         {
           "status": "armor",
-          "count": 22
+          "count": 20
         }
       ]
     }

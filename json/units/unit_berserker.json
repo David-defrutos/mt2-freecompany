@@ -44,6 +44,15 @@
       "triggers": [
         {
           "id": "@BerserkerKillTrigger"
+        },
+        {
+          "id": "@BerserkerRevengeTrigger"
+        }
+      ],
+      "starting_status_effects": [
+        {
+          "status": "sweep",
+          "count": 1
         }
       ]
     }
@@ -73,7 +82,17 @@
       "id": "BerserkerKillTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain <b>3</b> [buff]."
+        "english": "Gain <b>3</b> [rage]."
+      },
+      "effects": [
+        "@BerserkerRage"
+      ]
+    },
+    {
+      "id": "BerserkerRevengeTrigger",
+      "trigger": "on_hit",
+      "descriptions": {
+        "english": "Gain <b>3</b> [rage]."
       },
       "effects": [
         "@BerserkerRage"

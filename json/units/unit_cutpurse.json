@@ -7,7 +7,7 @@
         "english": "Cutpurse"
       },
       "card_art": "@Cutpurse",
-      "cost": 2,
+      "cost": 1,
       "card_type": "monster",
       "rarity": "uncommon",
       "class": "@ClassFreeCompany",

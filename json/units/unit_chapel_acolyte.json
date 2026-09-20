@@ -7,7 +7,7 @@
         "english": "Chapel Acolyte"
       },
       "card_art": "@ChapelAcolyte",
-      "cost": 2,
+      "cost": 1,
       "card_type": "monster",
       "rarity": "common",
       "class": "@ClassFreeCompany",
@@ -20,9 +20,6 @@
         {
           "english": "Took vows. Took a retainer too."
         }
-      ],
-      "pools": [
-        "MegaPool"
       ]
     }
   ],

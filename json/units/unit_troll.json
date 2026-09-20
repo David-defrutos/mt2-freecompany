@@ -1,0 +1,651 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnBogTroll",
+      "names": {
+        "english": "Bog Troll"
+      },
+      "card_art": "@BogTroll",
+      "cost": 6,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnBogTrollEffect",
+        "@KeepBogTroll"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Old, patient and very hard to kill."
+        }
+      ]
+    },
+    {
+      "id": "SpawnStoneTroll",
+      "names": {
+        "english": "Stone Troll"
+      },
+      "card_art": "@StoneTroll",
+      "cost": 6,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnStoneTrollEffect",
+        "@KeepStoneTroll"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "It was part of the mountain until she called it."
+        }
+      ]
+    },
+    {
+      "id": "SpawnWarTroll",
+      "names": {
+        "english": "War Troll"
+      },
+      "card_art": "@WarTroll",
+      "cost": 6,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnWarTrollEffect",
+        "@KeepWarTroll"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Someone taught it to swing first."
+        }
+      ]
+    },
+    {
+      "id": "SpawnCautiousTroll",
+      "names": {
+        "english": "Cautious Troll"
+      },
+      "card_art": "@CautiousTroll",
+      "cost": 6,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnCautiousTrollEffect",
+        "@KeepCautiousTroll"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "It has survived everything by not being there."
+        }
+      ]
+    },
+    {
+      "id": "SpawnTwoHeadedTroll",
+      "names": {
+        "english": "Two-Headed Troll"
+      },
+      "card_art": "@TwoHeadedTroll",
+      "cost": 6,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnTwoHeadedTrollEffect",
+        "@KeepTwoHeadedTroll"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "They never agree, and both are hungry."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "BogTroll",
+      "names": {
+        "english": "Bog Troll"
+      },
+      "character_art": "@BogTrollCharacterArt",
+      "size": 4,
+      "attack_damage": 20,
+      "health": 30,
+      "subtypes": [
+        "@Sub_Melee",
+        "@Sub_Barbarian",
+        "@Sub_Troll"
+      ],
+      "starting_status_effects": [
+        {
+          "status": "regen",
+          "count": 10
+        }
+      ],
+      "triggers": [
+        {
+          "id": "@TrollBeastmasterSpawn"
+        },
+        {
+          "id": "@TrollBeastmasterCelebrate"
+        }
+      ]
+    },
+    {
+      "id": "StoneTroll",
+      "names": {
+        "english": "Stone Troll"
+      },
+      "character_art": "@StoneTrollCharacterArt",
+      "size": 4,
+      "attack_damage": 20,
+      "health": 30,
+      "subtypes": [
+        "@Sub_Melee",
+        "@Sub_Barbarian",
+        "@Sub_Troll"
+      ],
+      "starting_status_effects": [
+        {
+          "status": "regen",
+          "count": 10
+        }
+      ],
+      "triggers": [
+        {
+          "id": "@TrollBeastmasterSpawn"
+        },
+        {
+          "id": "@TrollBeastmasterCelebrate"
+        }
+      ]
+    },
+    {
+      "id": "WarTroll",
+      "names": {
+        "english": "War Troll"
+      },
+      "character_art": "@WarTrollCharacterArt",
+      "size": 4,
+      "attack_damage": 20,
+      "health": 30,
+      "subtypes": [
+        "@Sub_Melee",
+        "@Sub_Barbarian",
+        "@Sub_Troll"
+      ],
+      "starting_status_effects": [
+        {
+          "status": "regen",
+          "count": 10
+        }
+      ],
+      "triggers": [
+        {
+          "id": "@TrollBeastmasterSpawn"
+        },
+        {
+          "id": "@TrollBeastmasterCelebrate"
+        }
+      ]
+    },
+    {
+      "id": "CautiousTroll",
+      "names": {
+        "english": "Cautious Troll"
+      },
+      "character_art": "@CautiousTrollCharacterArt",
+      "size": 4,
+      "attack_damage": 20,
+      "health": 30,
+      "subtypes": [
+        "@Sub_Melee",
+        "@Sub_Barbarian",
+        "@Sub_Troll"
+      ],
+      "starting_status_effects": [
+        {
+          "status": "regen",
+          "count": 10
+        }
+      ],
+      "triggers": [
+        {
+          "id": "@TrollBeastmasterSpawn"
+        },
+        {
+          "id": "@TrollBeastmasterCelebrate"
+        }
+      ]
+    },
+    {
+      "id": "TwoHeadedTroll",
+      "names": {
+        "english": "Two-Headed Troll"
+      },
+      "character_art": "@TwoHeadedTrollCharacterArt",
+      "size": 4,
+      "attack_damage": 20,
+      "health": 30,
+      "subtypes": [
+        "@Sub_Melee",
+        "@Sub_Barbarian",
+        "@Sub_Troll"
+      ],
+      "starting_status_effects": [
+        {
+          "status": "regen",
+          "count": 10
+        }
+      ],
+      "triggers": [
+        {
+          "id": "@TrollBeastmasterSpawn"
+        },
+        {
+          "id": "@TrollBeastmasterCelebrate"
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "TrollBeastmasterSpawn",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "If a <b>Beastmaster</b> is in play on any floor, this unit enters stronger for the rest of combat."
+      },
+      "effects": [
+        "@TrollBeast1",
+        "@TrollBeast2",
+        "@TrollBeast3"
+      ]
+    },
+    {
+      "id": "TrollBeastmasterCelebrate",
+      "trigger": "on_encounter_complete",
+      "descriptions": {
+        "english": "If a <b>Beastmaster</b> is alive on any floor, this unit permanently gains [attack] and [health]."
+      },
+      "effects": [
+        "@TrollCeleb2",
+        "@TrollCeleb3"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnBogTrollEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@BogTroll"
+    },
+    {
+      "id": "SpawnStoneTrollEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@StoneTroll"
+    },
+    {
+      "id": "SpawnWarTrollEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@WarTroll"
+    },
+    {
+      "id": "SpawnCautiousTrollEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@CautiousTroll"
+    },
+    {
+      "id": "SpawnTwoHeadedTrollEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@TwoHeadedTroll"
+    },
+    {
+      "id": "TrollBeast1",
+      "name": "@CardEffectIfAllyHasUpgrade",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "upg_Beastmaster1",
+      "param_upgrade": "@TrollBuff1",
+      "param_int_3": 0
+    },
+    {
+      "id": "TrollBeast2",
+      "name": "@CardEffectIfAllyHasUpgrade",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "upg_Beastmaster2",
+      "param_upgrade": "@TrollBuff2",
+      "param_int_3": 0
+    },
+    {
+      "id": "TrollBeast3",
+      "name": "@CardEffectIfAllyHasUpgrade",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "upg_Beastmaster3",
+      "param_upgrade": "@TrollBuff3",
+      "param_int_3": 0
+    },
+    {
+      "id": "TrollCeleb2",
+      "name": "@CardEffectIfAllyHasUpgrade",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "upg_Beastmaster2",
+      "param_upgrade": "@TrollCelebrate2",
+      "param_int_3": 2
+    },
+    {
+      "id": "TrollCeleb3",
+      "name": "@CardEffectIfAllyHasUpgrade",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "upg_Beastmaster3",
+      "param_upgrade": "@TrollCelebrate3",
+      "param_int_3": 2
+    },
+    {
+      "id": "KeepBogTroll",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddRunCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyOnlyBogTrollPool",
+      "param_int": 0
+    },
+    {
+      "id": "KeepStoneTroll",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddRunCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyOnlyStoneTrollPool",
+      "param_int": 0
+    },
+    {
+      "id": "KeepWarTroll",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddRunCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyOnlyWarTrollPool",
+      "param_int": 0
+    },
+    {
+      "id": "KeepCautiousTroll",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddRunCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyOnlyCautiousTrollPool",
+      "param_int": 0
+    },
+    {
+      "id": "KeepTwoHeadedTroll",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddRunCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyOnlyTwoHeadedTrollPool",
+      "param_int": 0
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TrollBuff1",
+      "bonus_damage": 20,
+      "bonus_hp": 20
+    },
+    {
+      "id": "TrollBuff2",
+      "bonus_damage": 40,
+      "bonus_hp": 40,
+      "status_effect_upgrades": [
+        {
+          "status": "trample",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "TrollBuff3",
+      "bonus_damage": 60,
+      "bonus_hp": 60,
+      "status_effect_upgrades": [
+        {
+          "status": "trample",
+          "count": 1
+        },
+        {
+          "status": "sweep",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "TrollCelebrate2",
+      "bonus_damage": 5,
+      "bonus_hp": 5
+    },
+    {
+      "id": "TrollCelebrate3",
+      "bonus_damage": 10,
+      "bonus_hp": 10
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BogTroll",
+      "path": "textures/BogTrollArt.png"
+    },
+    {
+      "id": "BogTrollCharacterArt",
+      "path": "textures/BogTrollCharacterArt.png"
+    },
+    {
+      "id": "StoneTroll",
+      "path": "textures/StoneTrollArt.png"
+    },
+    {
+      "id": "StoneTrollCharacterArt",
+      "path": "textures/StoneTrollCharacterArt.png"
+    },
+    {
+      "id": "WarTroll",
+      "path": "textures/WarTrollArt.png"
+    },
+    {
+      "id": "WarTrollCharacterArt",
+      "path": "textures/WarTrollCharacterArt.png"
+    },
+    {
+      "id": "CautiousTroll",
+      "path": "textures/CautiousTrollArt.png"
+    },
+    {
+      "id": "CautiousTrollCharacterArt",
+      "path": "textures/CautiousTrollCharacterArt.png"
+    },
+    {
+      "id": "TwoHeadedTroll",
+      "path": "textures/TwoHeadedTrollArt.png"
+    },
+    {
+      "id": "TwoHeadedTrollCharacterArt",
+      "path": "textures/TwoHeadedTrollCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "BogTroll",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@BogTroll"
+        }
+      }
+    },
+    {
+      "id": "BogTrollCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@BogTrollCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.1,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "StoneTroll",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@StoneTroll"
+        }
+      }
+    },
+    {
+      "id": "StoneTrollCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@StoneTrollCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.1,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "WarTroll",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@WarTroll"
+        }
+      }
+    },
+    {
+      "id": "WarTrollCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@WarTrollCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.1,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "CautiousTroll",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CautiousTroll"
+        }
+      }
+    },
+    {
+      "id": "CautiousTrollCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@CautiousTrollCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.1,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "TwoHeadedTroll",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@TwoHeadedTroll"
+        }
+      }
+    },
+    {
+      "id": "TwoHeadedTrollCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@TwoHeadedTrollCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.1,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}
