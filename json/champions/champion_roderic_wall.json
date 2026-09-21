@@ -65,7 +65,7 @@
   "character_triggers": [
     {
       "id": "WallTrigger1",
-      "trigger": "on_turn_begin",
+      "trigger": "on_team_turn_begin",
       "descriptions": {
         "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room."
       },
@@ -75,7 +75,7 @@
     },
     {
       "id": "WallTrigger2",
-      "trigger": "on_turn_begin",
+      "trigger": "on_team_turn_begin",
       "descriptions": {
         "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room."
       },
@@ -85,7 +85,7 @@
     },
     {
       "id": "WallTrigger3",
-      "trigger": "on_turn_begin",
+      "trigger": "on_team_turn_begin",
       "descriptions": {
         "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room."
       },
