@@ -88,28 +88,36 @@ namespace mt2_freecompany.Plugin
             return new PropDescriptions();
         }
 
-        // NUNCA falla: si fallase, cancelaria los efectos siguientes de la carta.
+        /// <summary>
+        /// Solo falla en modo vista previa. Fuera de la vista previa nunca, para no
+        /// cancelar los efectos siguientes de la carta.
+        ///
+        /// 21-sep-2026, LOS DOS INTENTOS:
+        ///
+        ///   1) `CanApplyInPreviewMode => false`. ROMPIO EL APUNTADO: la carta decia
+        ///      "no valid target" sobre CUALQUIER unidad, incluido Roderic. La causa esta
+        ///      en el IL de GameEffectHelper.TestEffect, que hace
+        ///          ok = efecto.TestEffect(...);
+        ///          if (esPreview) ok = ok && efecto.CanApplyInPreviewMode;
+        ///      o sea que ese flag en false no solo evita ejecutar: invalida el objetivo.
+        ///      Para un efecto SIN objetivo (CardEffectAddBattleCard, CardEffectDraw) da
+        ///      igual y por eso ellos lo usan; para uno con drop_target no se puede.
+        ///      Sintoma en el log: ni una linea de esta clase, ApplyEffect no llegaba a
+        ///      correr nunca.
+        ///
+        ///   2) Esto: la guarda que usa el juego base en un efecto que SI apunta.
+        ///      CardEffectGrantEquipmentFromPool.TestEffect empieza exactamente asi:
+        ///          var save = coreGameManagers.GetSaveManager();
+        ///          if (save != null && save.PreviewMode) return false;
+        ///      Copiado tal cual, que es el unico patron comprobado del juego para
+        ///      "efecto con objetivo que no se debe simular".
+        /// </summary>
         public override bool TestEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers)
         {
+            var save = coreGameManagers.GetSaveManager();
+            if (save != null && save.PreviewMode) return false;
             return true;
         }
-
-        // NO se ejecuta en modo vista previa.
-        //
-        // 21-sep-2026: sin esto, el juego aplicaba el efecto CADA VEZ que la flecha de
-        // apuntado pasaba por encima de una unidad, sin llegar a soltar. Una sola
-        // activacion de la habilidad llenaba la mano de objetos.
-        //
-        // CardEffectBase.CanApplyInPreviewMode devuelve TRUE por defecto, que es lo
-        // correcto para un efecto que solo calcula numeros (CardEffectDamage,
-        // CardEffectRewardGold): la vista previa necesita ejecutarlo para enseñarte el
-        // resultado. Pero TODOS los efectos del juego base que anaden cartas lo ponen en
-        // false: CardEffectAddBattleCard, CardEffectAddRunCard, CardEffectDraw,
-        // CardEffectGrantEquipmentFromPool. Comprobado en el IL.
-        //
-        // Regla para las clases propias: si el efecto CAMBIA ESTADO QUE PERSISTE -cartas,
-        // mazo, oro, energia-, esto va a false. Si solo calcula, se deja como esta.
-        public override bool CanApplyInPreviewMode => false;
 
         public override IEnumerator ApplyEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers, ISystemManagers sysManagers)
         {
@@ -119,6 +127,12 @@ namespace mt2_freecompany.Plugin
                 Log($"Requisition: param_int={escalon} fuera de 1..3; se usa 1.");
                 escalon = 1;
             }
+
+            // Cinturon y tirantes: la guarda de verdad esta en TestEffect, pero si algun
+            // camino conduce ApplyEffect igualmente en vista previa, aqui no se da carta.
+            // Dar una carta no se puede simular: o se da o no se da.
+            var saveManager = coreGameManagers.GetSaveManager();
+            if (saveManager != null && saveManager.PreviewMode) yield break;
 
             var gameData = coreGameManagers.GetAllGameData();
             var cardManager = coreGameManagers.GetCardManager();
@@ -224,3 +238,4 @@ namespace mt2_freecompany.Plugin
 }
 // 2026-09-20-2308||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||reescrita: da la carta de kit a la mano en vez de equipar
 // 2026-09-21-0005||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||anadido CanApplyInPreviewMode => false
+// 2026-09-21-2017||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||revertido CanApplyInPreviewMode (rompia el apuntado) y puesta la guarda SaveManager.PreviewMode en TestEffect y en ApplyEffect

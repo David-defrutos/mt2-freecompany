@@ -83,6 +83,7 @@ namespace mt2_freecompany.Plugin
                         "json/kits/kit_rogue.json",
                         "json/kits/kit_warrior.json",
                         "json/kits/kit_wizard.json",
+                        "json/equipment/equip_letter_of_credit.json",
                         "json/relics/relic_butchers_bill.json",
                         "json/relics/relic_expanded_billet.json",
                         "json/relics/relic_field_forge.json",
@@ -108,3 +109,4 @@ namespace mt2_freecompany.Plugin
     }
 }
 // 2026-09-20-2308||claude-mt2-the-free-company2-roderic-quartermaster||src/Plugin.cs||fuera la ruta json/kits/spell_requisition.json
+// 2026-09-21-2035||claude-mt2-the-free-company2-varios||src/Plugin.cs||alta de la ruta json/equipment/equip_letter_of_credit.json: 71 --> 72 rutas

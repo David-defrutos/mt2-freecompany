@@ -1,0 +1,90 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "LetterOfCredit",
+      "names": {
+        "english": "Letter of Credit"
+      },
+      "descriptions": {
+        "english": "Apply <b>2</b> [avarice]. The equipped unit gains <b>+1</b> [attack] per <b>100</b> [coin] you started the turn with."
+      },
+      "card_art": "@LetterOfCredit",
+      "cost": 1,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipLetterOfCredit"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Good for the sum named, at any branch still standing."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EquipLetterOfCredit",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgLetterOfCredit"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UpgLetterOfCredit",
+      "titles": {
+        "english": "Letter of Credit"
+      },
+      "descriptions": {
+        "english": "Apply <b>2</b> [avarice]. <b>+1</b> [attack] per <b>100</b> [coin] you started the turn with."
+      },
+      "icon": "@LetterOfCredit",
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 2
+        }
+      ],
+      "room_modifier_upgrades": [
+        "@LetterOfCreditGoldAttack"
+      ]
+    }
+  ],
+  "room_modifiers": [
+    {
+      "id": "LetterOfCreditGoldAttack",
+      "name": "RoomStateSelfDamagePerGoldModifier",
+      "descriptions": {
+        "english": "+[power][attack] per [secondarypower][coin] you started the turn with."
+      },
+      "param_int": 1,
+      "param_int_2": 100
+    }
+  ],
+  "sprites": [
+    {
+      "id": "LetterOfCredit",
+      "path": "textures/SpoilsOfWarArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "LetterOfCredit",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@LetterOfCredit"
+        }
+      }
+    }
+  ]
+}
