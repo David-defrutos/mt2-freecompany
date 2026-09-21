@@ -441,8 +441,9 @@
     {
       "id": "TameConsumeOthers",
       "name": "@CardEffectConsumeFromHand",
-      "target_mode": "self",
+      "target_mode": "pyre",
       "target_team": "monsters",
+      "should_test": false,
       "param_bool": true,
       "param_card_pool": "@FreeCompanyTameOffersPool"
     },

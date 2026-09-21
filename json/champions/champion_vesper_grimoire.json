@@ -1,5 +1,64 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "GrimoireSpell1",
+      "names": {
+        "english": "Prepare Spell"
+      },
+      "descriptions": {
+        "english": "Add a random <b>Common</b> spell to your hand. It costs <b>0</b> [ember] and is [ephemeral]."
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "initial_cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@GrimoireDraw1"
+      ]
+    },
+    {
+      "id": "GrimoireSpell2",
+      "names": {
+        "english": "Prepare Spell"
+      },
+      "descriptions": {
+        "english": "Add a random <b>Common</b> or <b>Uncommon</b> spell to your hand. It costs <b>0</b> [ember] and is [ephemeral]."
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "initial_cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@GrimoireDraw2"
+      ]
+    },
+    {
+      "id": "GrimoireSpell3",
+      "names": {
+        "english": "Prepare Spell"
+      },
+      "descriptions": {
+        "english": "Add a random spell to your hand. It costs <b>0</b> [ember] and is [ephemeral]."
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "initial_cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@GrimoireDraw3"
+      ]
+    }
+  ],
   "character_triggers": [
     {
       "id": "GrimoireTrigger1",
@@ -29,36 +88,6 @@
       },
       "effects": [
         "@GrimoireBuff3"
-      ]
-    },
-    {
-      "id": "GrimoireCardsTrigger1",
-      "trigger": "pre_combat",
-      "descriptions": {
-        "english": "Add [effect0.secondarypower] <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
-      },
-      "effects": [
-        "@GrimoireCards1"
-      ]
-    },
-    {
-      "id": "GrimoireCardsTrigger2",
-      "trigger": "pre_combat",
-      "descriptions": {
-        "english": "Add [effect0.secondarypower] <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
-      },
-      "effects": [
-        "@GrimoireCards2"
-      ]
-    },
-    {
-      "id": "GrimoireCardsTrigger3",
-      "trigger": "pre_combat",
-      "descriptions": {
-        "english": "Add [effect0.secondarypower] <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
-      },
-      "effects": [
-        "@GrimoireCards3"
       ]
     },
     {
@@ -95,28 +124,28 @@
       "param_upgrade": "@GrimoireUpgrade3"
     },
     {
-      "id": "GrimoireCards1",
+      "id": "GrimoireDraw1",
       "name": "CardEffectAddBattleCard",
-      "param_card_pool": "@FreeCompanyMagicMissilePool",
+      "param_card_pool": "@FreeCompanySpellsCommonPool",
       "param_int": 3,
-      "param_int_2": 2,
-      "param_upgrade": "@GrimoireFreeMissile"
+      "param_int_2": 1,
+      "param_upgrade": "@GrimoireFreeSpell"
     },
     {
-      "id": "GrimoireCards2",
+      "id": "GrimoireDraw2",
       "name": "CardEffectAddBattleCard",
-      "param_card_pool": "@FreeCompanyMagicMissilePool",
+      "param_card_pool": "@FreeCompanySpellsUncommonPool",
       "param_int": 3,
-      "param_int_2": 4,
-      "param_upgrade": "@GrimoireFreeMissile"
+      "param_int_2": 1,
+      "param_upgrade": "@GrimoireFreeSpell"
     },
     {
-      "id": "GrimoireCards3",
+      "id": "GrimoireDraw3",
       "name": "CardEffectAddBattleCard",
-      "param_card_pool": "@FreeCompanyMagicMissilePool",
+      "param_card_pool": "@FreeCompanySpellsAllPool",
       "param_int": 3,
-      "param_int_2": 6,
-      "param_upgrade": "@GrimoireFreeMissile"
+      "param_int_2": 1,
+      "param_upgrade": "@GrimoireFreeSpell"
     },
     {
       "id": "GrimoireCelebrateGain",
@@ -151,9 +180,9 @@
       "bonus_damage": 4,
       "trigger_upgrades": [
         "@GrimoireTrigger1",
-        "@GrimoireCardsTrigger1",
         "@GrimoireCelebrate"
-      ]
+      ],
+      "ability_upgrade": "@GrimoireSpell1"
     },
     {
       "id": "upg_Grimoire2",
@@ -169,9 +198,9 @@
       ],
       "trigger_upgrades": [
         "@GrimoireTrigger2",
-        "@GrimoireCardsTrigger2",
         "@GrimoireCelebrate"
-      ]
+      ],
+      "ability_upgrade": "@GrimoireSpell2"
     },
     {
       "id": "upg_Grimoire3",
@@ -187,16 +216,16 @@
       ],
       "trigger_upgrades": [
         "@GrimoireTrigger3",
-        "@GrimoireCardsTrigger3",
         "@GrimoireCelebrate"
-      ]
+      ],
+      "ability_upgrade": "@GrimoireSpell3"
     },
     {
-      "id": "GrimoireFreeMissile",
+      "id": "GrimoireFreeSpell",
       "titles": {
         "english": "Grimoire"
       },
-      "cost_reduction": 1,
+      "cost_reduction": 4,
       "trait_upgrades": [
         "@GrimoireEphemeralTrait"
       ],

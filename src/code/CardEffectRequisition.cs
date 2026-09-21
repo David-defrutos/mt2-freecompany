@@ -119,6 +119,24 @@ namespace mt2_freecompany.Plugin
             return true;
         }
 
+        /// <summary>
+        /// No se puede activar con la mano llena.
+        ///
+        /// 21-sep-2026: CardEffectBase lo devuelve TRUE por defecto, asi que la habilidad
+        /// se activaba, se comia su recarga de dos turnos y no daba nada, porque AddNewCard
+        /// devuelve null cuando la mano esta llena y la carta no es permanente.
+        ///
+        /// El mismo GameEffectHelper.TestEffect que rompio el apuntado con
+        /// CanApplyInPreviewMode hace tambien:
+        ///     if (!cardManager.GetBelowHandSize()) ok = ok && efecto.CanPlayWhenHandFull;
+        /// o sea que este flag SOLO se mira cuando la mano esta llena. Con la mano a medias
+        /// no interviene, asi que aqui no hay el riesgo que tenia el otro: no puede
+        /// invalidar objetivos salvo en el caso en que precisamente queremos invalidarlos.
+        ///
+        /// CardEffectAddBattleCard lo trae como campo configurable justo para esto.
+        /// </summary>
+        public override bool CanPlayWhenHandFull => false;
+
         public override IEnumerator ApplyEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers, ISystemManagers sysManagers)
         {
             int escalon = cardEffectState.GetParamInt();
@@ -239,3 +257,4 @@ namespace mt2_freecompany.Plugin
 // 2026-09-20-2308||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||reescrita: da la carta de kit a la mano en vez de equipar
 // 2026-09-21-0005||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||anadido CanApplyInPreviewMode => false
 // 2026-09-21-2017||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||revertido CanApplyInPreviewMode (rompia el apuntado) y puesta la guarda SaveManager.PreviewMode en TestEffect y en ApplyEffect
+// 2026-09-21-2041||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||anadido CanPlayWhenHandFull => false: con la mano llena la habilidad se gastaba la recarga sin dar nada

@@ -263,6 +263,59 @@
       ]
     },
     {
+      "id": "FreeCompanySpellsCommonPool",
+      "cards": [
+        "@Bless",
+        "@CureWounds",
+        "@Grease",
+        "@MercenarysContract",
+        "@Shield"
+      ]
+    },
+    {
+      "id": "FreeCompanySpellsUncommonPool",
+      "cards": [
+        "@Bless",
+        "@CureWounds",
+        "@Grease",
+        "@MercenarysContract",
+        "@Shield",
+        "@DimensionDoor",
+        "@Fear",
+        "@Haste",
+        "@Invisibility",
+        "@Silence",
+        "@SpoilsOfWar",
+        "@Web"
+      ]
+    },
+    {
+      "id": "FreeCompanySpellsAllPool",
+      "cards": [
+        "@Bless",
+        "@CureWounds",
+        "@Grease",
+        "@MercenarysContract",
+        "@Shield",
+        "@DimensionDoor",
+        "@Fear",
+        "@Haste",
+        "@Invisibility",
+        "@Silence",
+        "@SpoilsOfWar",
+        "@Web",
+        "@Banishment",
+        "@Cloudkill",
+        "@DelayedBlastFireball",
+        "@FingerOfDeath",
+        "@Fireball",
+        "@LightningBolt",
+        "@MassHoldPerson",
+        "@PaidInFull",
+        "@Resurrection"
+      ]
+    },
+    {
       "id": "FreeCompanyTameOffersPool",
       "cards": [
         "@TameBogTroll",
