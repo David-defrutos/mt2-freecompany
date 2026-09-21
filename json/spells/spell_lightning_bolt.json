@@ -7,7 +7,7 @@
         "english": "Lightning Bolt"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to the front enemy on every floor."
+        "english": "Deal [effect0.power] damage to the front enemy on every floor and apply [effect1.status0.power] [spellweakness]."
       },
       "card_art": "@LightningBolt",
       "cost": 3,
@@ -16,8 +16,12 @@
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": true,
+      "traits": [
+        "@LightningBoltExplosive"
+      ],
       "effects": [
-        "@LightningBoltDamage"
+        "@LightningBoltDamage",
+        "@LightningBoltWeakness"
       ],
       "lore_tooltips": [
         {
@@ -36,6 +40,24 @@
       "target_mode": "front_in_all_rooms",
       "target_team": "heroes",
       "param_int": 25
+    },
+    {
+      "id": "LightningBoltWeakness",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "front_in_all_rooms",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "spell weakness",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "LightningBoltExplosive",
+      "name": "CardTraitDamageOverflow"
     }
   ],
   "sprites": [

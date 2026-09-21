@@ -66,14 +66,26 @@
       "param_character": "@Berserker"
     },
     {
-      "id": "BerserkerRage",
+      "id": "BerserkerRageKill",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "self",
       "target_team": "monsters",
       "param_status_effects": [
         {
           "status": "buff",
-          "count": 3
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "BerserkerRageRevenge",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 2
         }
       ]
     }
@@ -86,7 +98,7 @@
         "english": "Gain [effect0.status0.power] [rage]."
       },
       "effects": [
-        "@BerserkerRage"
+        "@BerserkerRageKill"
       ]
     },
     {
@@ -96,7 +108,7 @@
         "english": "Gain [effect0.status0.power] [rage]."
       },
       "effects": [
-        "@BerserkerRage"
+        "@BerserkerRageRevenge"
       ]
     }
   ],

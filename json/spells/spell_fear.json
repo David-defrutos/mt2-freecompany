@@ -7,7 +7,7 @@
         "english": "Fear"
       },
       "descriptions": {
-        "english": "Move an enemy unit to the back of its floor."
+        "english": "Move an enemy unit to the back of its floor and apply [effect1.status0.power] [sap]."
       },
       "card_art": "@Fear",
       "cost": 2,
@@ -17,7 +17,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@FearRearrange"
+        "@FearRearrange",
+        "@FearSap"
       ],
       "lore_tooltips": [
         {
@@ -36,6 +37,18 @@
       "target_mode": "drop_target_character",
       "target_team": "heroes",
       "param_int": 1
+    },
+    {
+      "id": "FearSap",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "debuff",
+          "count": 3
+        }
+      ]
     }
   ],
   "sprites": [

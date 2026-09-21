@@ -7,7 +7,7 @@
         "english": "Dimension Door"
       },
       "descriptions": {
-        "english": "Move a friendly unit up one floor."
+        "english": "Move a friendly unit up one floor, or an enemy unit down one floor."
       },
       "card_art": "@DimensionDoor",
       "cost": 1,
@@ -17,7 +17,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@DimensionDoorBump"
+        "@DimensionDoorBumpAlly",
+        "@DimensionDoorBumpEnemy"
       ],
       "lore_tooltips": [
         {
@@ -31,11 +32,18 @@
   ],
   "effects": [
     {
-      "id": "DimensionDoorBump",
+      "id": "DimensionDoorBumpAlly",
       "name": "CardEffectBump",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
       "param_int": 1
+    },
+    {
+      "id": "DimensionDoorBumpEnemy",
+      "name": "CardEffectBump",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "param_int": -1
     }
   ],
   "sprites": [

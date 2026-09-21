@@ -35,7 +35,7 @@
       },
       "card_art": "@Shieldbearer",
       "is_an_ability": true,
-      "cooldown": 3,
+      "cooldown": 2,
       "targetless": true,
       "targets_room": false,
       "card_type": "spell",
