@@ -1,0 +1,549 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "character_triggers": [
+    {
+      "id": "ChirurgeonTrigger1",
+      "trigger": "end_turn_pre_hand_discard",
+      "descriptions": {
+        "english": "Restore <b>3</b> health to all friendly units in this room, then remove all [debuff] effects from <b>1</b> random debuffed friendly unit in this room."
+      },
+      "effects": [
+        "@ChirurgeonHeal1",
+        "@ChirurgeonCleanse1_1"
+      ]
+    },
+    {
+      "id": "ChirurgeonTrigger2",
+      "trigger": "end_turn_pre_hand_discard",
+      "descriptions": {
+        "english": "Restore <b>12</b> health to all friendly units in this room, then remove all [debuff] effects from <b>2</b> random debuffed friendly units anywhere."
+      },
+      "effects": [
+        "@ChirurgeonHeal2",
+        "@ChirurgeonCleanse2_1",
+        "@ChirurgeonCleanse2_2"
+      ]
+    },
+    {
+      "id": "ChirurgeonTrigger3",
+      "trigger": "end_turn_pre_hand_discard",
+      "descriptions": {
+        "english": "Restore <b>24</b> health to all friendly units in this room, then remove all [debuff] effects from <b>3</b> random debuffed friendly units anywhere."
+      },
+      "effects": [
+        "@ChirurgeonHeal3",
+        "@ChirurgeonCleanse3_1",
+        "@ChirurgeonCleanse3_2",
+        "@ChirurgeonCleanse3_3"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ChirurgeonHeal1",
+      "name": "CardEffectHeal",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_int": 3
+    },
+    {
+      "id": "ChirurgeonHeal2",
+      "name": "CardEffectHeal",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_int": 12
+    },
+    {
+      "id": "ChirurgeonHeal3",
+      "name": "CardEffectHeal",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_int": 24
+    },
+    {
+      "id": "ChirurgeonCleanse1_1",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_in_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    },
+    {
+      "id": "ChirurgeonCleanse2_1",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_from_any_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    },
+    {
+      "id": "ChirurgeonCleanse2_2",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_from_any_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    },
+    {
+      "id": "ChirurgeonCleanse3_1",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_from_any_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    },
+    {
+      "id": "ChirurgeonCleanse3_2",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_from_any_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    },
+    {
+      "id": "ChirurgeonCleanse3_3",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "random_from_any_room",
+      "target_team": "monsters",
+      "param_int": 1,
+      "param_bool": false,
+      "target_mode_status_effects_filter": [
+        {
+          "status": "dazed"
+        },
+        {
+          "status": "debuff"
+        },
+        {
+          "status": "decay"
+        },
+        {
+          "status": "doom"
+        },
+        {
+          "status": "fragile"
+        },
+        {
+          "status": "heal immunity"
+        },
+        {
+          "status": "immobile"
+        },
+        {
+          "status": "malaise"
+        },
+        {
+          "status": "melee weakness"
+        },
+        {
+          "status": "muted"
+        },
+        {
+          "status": "poison"
+        },
+        {
+          "status": "pyregel"
+        },
+        {
+          "status": "pyrestain"
+        },
+        {
+          "status": "restricted"
+        },
+        {
+          "status": "rooted"
+        },
+        {
+          "status": "scorch"
+        },
+        {
+          "status": "silenced"
+        },
+        {
+          "status": "spell weakness"
+        },
+        {
+          "status": "timebomb"
+        },
+        {
+          "status": "unstable"
+        },
+        {
+          "status": "witherbloom"
+        }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_Chirurgeon1",
+      "titles": {
+        "english": "Chirurgeon"
+      },
+      "descriptions": {
+        "english": "Keeps the company standing."
+      },
+      "bonus_hp": 10,
+      "trigger_upgrades": [
+        "@ChirurgeonTrigger1"
+      ]
+    },
+    {
+      "id": "upg_Chirurgeon2",
+      "titles": {
+        "english": "Chirurgeon II"
+      },
+      "descriptions": {
+        "english": "Keeps the company standing."
+      },
+      "bonus_hp": 20,
+      "remove_upgrades": [
+        "@upg_Chirurgeon1"
+      ],
+      "trigger_upgrades": [
+        "@ChirurgeonTrigger2"
+      ]
+    },
+    {
+      "id": "upg_Chirurgeon3",
+      "titles": {
+        "english": "Chirurgeon III"
+      },
+      "descriptions": {
+        "english": "Keeps the company standing."
+      },
+      "bonus_hp": 30,
+      "remove_upgrades": [
+        "@upg_Chirurgeon2"
+      ],
+      "trigger_upgrades": [
+        "@ChirurgeonTrigger3"
+      ]
+    }
+  ]
+}

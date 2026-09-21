@@ -1,0 +1,260 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "RodericSlam",
+      "names": {
+        "english": "Power Slam"
+      },
+      "descriptions": {
+        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and <b>5</b> damage to all enemy units in this room."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericSlamAdvance",
+        "@RodericSlamHit",
+        "@RodericSlamSweep1"
+      ]
+    },
+    {
+      "id": "RodericSlam2",
+      "names": {
+        "english": "Power Slam"
+      },
+      "descriptions": {
+        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and <b>10</b> damage to all enemy units in this room."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericSlamAdvance",
+        "@RodericSlamHit",
+        "@RodericSlamSweep2"
+      ]
+    },
+    {
+      "id": "RodericSlam3",
+      "names": {
+        "english": "Power Slam"
+      },
+      "descriptions": {
+        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and <b>15</b> damage to all enemy units in this room."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericSlamAdvance",
+        "@RodericSlamHit",
+        "@RodericSlamSweep3"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "WallTrigger1",
+      "trigger": "on_turn_begin",
+      "descriptions": {
+        "english": "Apply <b>3</b> [armor] to all friendly units in this room."
+      },
+      "effects": [
+        "@WallArmor1"
+      ]
+    },
+    {
+      "id": "WallTrigger2",
+      "trigger": "on_turn_begin",
+      "descriptions": {
+        "english": "Apply <b>6</b> [armor] to all friendly units in this room."
+      },
+      "effects": [
+        "@WallArmor2"
+      ]
+    },
+    {
+      "id": "WallTrigger3",
+      "trigger": "on_turn_begin",
+      "descriptions": {
+        "english": "Apply <b>10</b> [armor] to all friendly units in this room."
+      },
+      "effects": [
+        "@WallArmor3"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "WallArmor1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "WallArmor2",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": "WallArmor3",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": "RodericSlamAdvance",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "applied_to_self_vfx": "@RodericSlamAdvanceVFX"
+    },
+    {
+      "id": "RodericSlamHit",
+      "name": "CardEffectDamagePerHp",
+      "target_mode": "self",
+      "param_int": 1,
+      "param_bool_2": true,
+      "applied_vfx": "@RodericSlamHitVFX"
+    },
+    {
+      "id": "RodericSlamSweep1",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 5,
+      "applied_vfx": "@RodericSlamHitVFX"
+    },
+    {
+      "id": "RodericSlamSweep2",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 10,
+      "applied_vfx": "@RodericSlamHitVFX"
+    },
+    {
+      "id": "RodericSlamSweep3",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 15,
+      "applied_vfx": "@RodericSlamHitVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "RodericSlamAdvanceVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/SteadfastCrusader/FX_SteadfastCrusader.prefab",
+        "asset_guid": "32a4025b924311e4995d1dc47611df0f"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "RodericSlamHitVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
+        "asset_guid": "b856194664a6e4b4da8f1c47c5a0e765"
+      },
+      "spawn_location": "character_center"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_Wall1",
+      "ability_upgrade": "@RodericSlam",
+      "titles": {
+        "english": "Shield Wall"
+      },
+      "descriptions": {
+        "english": "Holds the line for everyone."
+      },
+      "bonus_hp": 10,
+      "trigger_upgrades": [
+        "@WallTrigger1"
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "upg_Wall2",
+      "ability_upgrade": "@RodericSlam2",
+      "titles": {
+        "english": "Shield Wall II"
+      },
+      "descriptions": {
+        "english": "Holds the line for everyone."
+      },
+      "bonus_hp": 20,
+      "remove_upgrades": [
+        "@upg_Wall1"
+      ],
+      "trigger_upgrades": [
+        "@WallTrigger2"
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "upg_Wall3",
+      "ability_upgrade": "@RodericSlam3",
+      "titles": {
+        "english": "Shield Wall III"
+      },
+      "descriptions": {
+        "english": "Holds the line for everyone."
+      },
+      "bonus_hp": 35,
+      "remove_upgrades": [
+        "@upg_Wall2"
+      ],
+      "trigger_upgrades": [
+        "@WallTrigger3"
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 6
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "BeastmasterCall",
+      "names": {
+        "english": "Call of the Wild"
+      },
+      "descriptions": {
+        "english": "Draw a <b>Troll</b>. It costs <b>0</b> [ember]."
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "cooldown": 4,
+      "initial_cooldown": 4,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@BeastmasterCallGate",
+        "@BeastmasterCallDraw"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "BeastmasterGrantTrigger",
+      "trigger": "pre_combat",
+      "descriptions": {
+        "english": "The first time, five <b>Tame</b> spells join your hand. The one you play adds that <b>Troll</b> to your deck for the rest of the run."
+      },
+      "effects": [
+        "@BeastmasterOffer1",
+        "@BeastmasterOffer2",
+        "@BeastmasterOffer3",
+        "@BeastmasterOffer4",
+        "@BeastmasterOffer5"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "BeastmasterOffer1",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddBattleCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyTameBogTrollPool",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_upgrade": "@TrollOffer"
+    },
+    {
+      "id": "BeastmasterOffer2",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddBattleCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyTameStoneTrollPool",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_upgrade": "@TrollOffer"
+    },
+    {
+      "id": "BeastmasterOffer3",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddBattleCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyTameWarTrollPool",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_upgrade": "@TrollOffer"
+    },
+    {
+      "id": "BeastmasterOffer4",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddBattleCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyTameCautiousTrollPool",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_upgrade": "@TrollOffer"
+    },
+    {
+      "id": "BeastmasterOffer5",
+      "name": "@CardEffectGrantOnce",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_str": "CardEffectAddBattleCard",
+      "param_subtype": "@Sub_Troll",
+      "param_card_pool": "@FreeCompanyTameTwoHeadedTrollPool",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_upgrade": "@TrollOffer"
+    },
+    {
+      "id": "BeastmasterCallGate",
+      "name": "@CardEffectIfSubtypeInDrawPile",
+      "param_subtype": "@Sub_Troll",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "should_test": true,
+      "should_fail_to_cast_if_test_fails": true,
+      "should_cancel_subsequent_effects_if_test_fails": true
+    },
+    {
+      "id": "BeastmasterCallDraw",
+      "name": "CardEffectRecursion",
+      "target_mode": "draw_pile",
+      "target_card_selection_mode": "random_to_hand",
+      "target_card_type": "monster",
+      "target_subtype": "@Sub_Troll",
+      "param_upgrade": "@TrollFreeSummon",
+      "param_int": 1,
+      "should_test": true,
+      "should_fail_to_cast_if_test_fails": false,
+      "should_cancel_subsequent_effects_if_test_fails": false
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TrollFreeSummon",
+      "cost_reduction": 6
+    },
+    {
+      "id": "upg_Beastmaster1",
+      "titles": {
+        "english": "Beastmaster"
+      },
+      "descriptions": {
+        "english": "Vesper arrives with a tamed <b>Troll</b>. Trolls enter with +<b>20</b> [attack] and +<b>20</b> [health]."
+      },
+      "bonus_hp": 6,
+      "trigger_upgrades": [
+        "@BeastmasterGrantTrigger"
+      ],
+      "ability_upgrade": "@BeastmasterCall"
+    },
+    {
+      "id": "upg_Beastmaster2",
+      "titles": {
+        "english": "Beastmaster II"
+      },
+      "descriptions": {
+        "english": "Trolls enter with +<b>40</b> [attack], +<b>40</b> [health] and [trample].\n<b>Celebrate</b>: +<b>5</b> [attack] and +<b>5</b> [health] permanently."
+      },
+      "bonus_hp": 12,
+      "bonus_damage": 4,
+      "remove_upgrades": [
+        "@upg_Beastmaster1"
+      ],
+      "trigger_upgrades": [
+        "@BeastmasterGrantTrigger"
+      ],
+      "ability_upgrade": "@BeastmasterCall"
+    },
+    {
+      "id": "upg_Beastmaster3",
+      "titles": {
+        "english": "Beastmaster III"
+      },
+      "descriptions": {
+        "english": "Trolls enter with +<b>60</b> [attack], +<b>60</b> [health], [trample] and [sweep].\n<b>Celebrate</b>: +<b>10</b> [attack] and +<b>10</b> [health] permanently."
+      },
+      "bonus_hp": 18,
+      "bonus_damage": 8,
+      "remove_upgrades": [
+        "@upg_Beastmaster2"
+      ],
+      "trigger_upgrades": [
+        "@BeastmasterGrantTrigger"
+      ],
+      "ability_upgrade": "@BeastmasterCall"
+    },
+    {
+      "id": "TrollOffer",
+      "titles": {
+        "english": "Beastmaster"
+      },
+      "trait_upgrades": [
+        "@TrollOfferEphemeral"
+      ],
+      "hide_icon_on_card": true
+    }
+  ],
+  "traits": [
+    {
+      "id": "TrollOfferEphemeral",
+      "name": "CardTraitEphemeral"
+    }
+  ]
+}

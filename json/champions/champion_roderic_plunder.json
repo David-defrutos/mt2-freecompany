@@ -1,0 +1,78 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "upgrades": [
+    {
+      "id": "upg_Plunder1",
+      "titles": {
+        "english": "Plunder"
+      },
+      "descriptions": {
+        "english": "Takes his cut."
+      },
+      "bonus_damage": 5,
+      "bonus_hp": 5,
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 5
+        },
+        {
+          "status": "titanskin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "upg_Plunder2",
+      "titles": {
+        "english": "Plunder II"
+      },
+      "descriptions": {
+        "english": "Takes his cut."
+      },
+      "bonus_damage": 12,
+      "bonus_hp": 10,
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 10
+        },
+        {
+          "status": "titanskin",
+          "count": 4
+        }
+      ],
+      "remove_upgrades": [
+        "@upg_Plunder1"
+      ]
+    },
+    {
+      "id": "upg_Plunder3",
+      "titles": {
+        "english": "Plunder III"
+      },
+      "descriptions": {
+        "english": "Takes his cut."
+      },
+      "bonus_damage": 20,
+      "bonus_hp": 15,
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 15
+        },
+        {
+          "status": "ambush",
+          "count": 1
+        },
+        {
+          "status": "titanskin",
+          "count": 6
+        }
+      ],
+      "remove_upgrades": [
+        "@upg_Plunder2"
+      ]
+    }
+  ]
+}

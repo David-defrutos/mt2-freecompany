@@ -1,0 +1,147 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "RodericRequisition",
+      "names": {
+        "english": "Requisition"
+      },
+      "descriptions": {
+        "english": "Add the <b>I</b> kit for that unit's role to your hand."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": false,
+      "targets_room": true,
+      "card_type": "spell",
+      "effects": [
+        "@RodericKitI"
+      ]
+    },
+    {
+      "id": "RodericRequisition2",
+      "names": {
+        "english": "Requisition"
+      },
+      "descriptions": {
+        "english": "Add the <b>II</b> kit for that unit's role to your hand."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": false,
+      "targets_room": true,
+      "card_type": "spell",
+      "effects": [
+        "@RodericKitII"
+      ]
+    },
+    {
+      "id": "RodericRequisition3",
+      "names": {
+        "english": "Requisition"
+      },
+      "descriptions": {
+        "english": "Add the <b>III</b> kit for that unit's role to your hand."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": false,
+      "targets_room": true,
+      "card_type": "spell",
+      "effects": [
+        "@RodericKitIII"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "RodericKitI",
+      "name": "@CardEffectRequisition",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_int": 1
+    },
+    {
+      "id": "RodericKitII",
+      "name": "@CardEffectRequisition",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_int": 2
+    },
+    {
+      "id": "RodericKitIII",
+      "name": "@CardEffectRequisition",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_int": 3
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_Quarter1",
+      "titles": {
+        "english": "Quartermaster"
+      },
+      "descriptions": {
+        "english": "Signs for the whole company's kit."
+      },
+      "bonus_hp": 8,
+      "bonus_damage": 3,
+      "bonus_equipment": 1,
+      "ability_upgrade": "@RodericRequisition",
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "upg_Quarter2",
+      "titles": {
+        "english": "Quartermaster II"
+      },
+      "descriptions": {
+        "english": "Signs for the whole company's kit."
+      },
+      "bonus_hp": 16,
+      "bonus_damage": 8,
+      "bonus_equipment": 2,
+      "ability_upgrade": "@RodericRequisition2",
+      "remove_upgrades": [
+        "@upg_Quarter1"
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "upg_Quarter3",
+      "titles": {
+        "english": "Quartermaster III"
+      },
+      "descriptions": {
+        "english": "Signs for the whole company's kit."
+      },
+      "bonus_hp": 28,
+      "bonus_damage": 14,
+      "bonus_equipment": 3,
+      "ability_upgrade": "@RodericRequisition3",
+      "remove_upgrades": [
+        "@upg_Quarter2"
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 6
+        }
+      ]
+    }
+  ]
+}

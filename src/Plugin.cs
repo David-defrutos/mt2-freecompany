@@ -25,7 +25,13 @@ namespace mt2_freecompany.Plugin
                     c.AddMergedJsonFile(
                         "json/plugin.json",
                         "json/champions/champion_roderic.json",
+                        "json/champions/champion_roderic_wall.json",
+                        "json/champions/champion_roderic_quartermaster.json",
+                        "json/champions/champion_roderic_plunder.json",
                         "json/champions/champion_vesper.json",
+                        "json/champions/champion_vesper_grimoire.json",
+                        "json/champions/champion_vesper_chirurgeon.json",
+                        "json/champions/champion_vesper_beastmaster.json",
                         "json/cards/card_magic_missile.json",
                         "json/cards/card_shield_wall.json",
                         "json/units/unit_battle_chaplain.json",

@@ -1,0 +1,221 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "character_triggers": [
+    {
+      "id": "GrimoireTrigger1",
+      "trigger": "card_spell_played",
+      "descriptions": {
+        "english": "Gain <b>+1</b> [attack] for the rest of combat."
+      },
+      "effects": [
+        "@GrimoireBuff1"
+      ]
+    },
+    {
+      "id": "GrimoireTrigger2",
+      "trigger": "card_spell_played",
+      "descriptions": {
+        "english": "Gain <b>+2</b> [attack] for the rest of combat."
+      },
+      "effects": [
+        "@GrimoireBuff2"
+      ]
+    },
+    {
+      "id": "GrimoireTrigger3",
+      "trigger": "card_spell_played",
+      "descriptions": {
+        "english": "Gain <b>+4</b> [attack] for the rest of combat."
+      },
+      "effects": [
+        "@GrimoireBuff3"
+      ]
+    },
+    {
+      "id": "GrimoireCardsTrigger1",
+      "trigger": "pre_combat",
+      "descriptions": {
+        "english": "Add <b>2</b> <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
+      },
+      "effects": [
+        "@GrimoireCards1"
+      ]
+    },
+    {
+      "id": "GrimoireCardsTrigger2",
+      "trigger": "pre_combat",
+      "descriptions": {
+        "english": "Add <b>4</b> <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
+      },
+      "effects": [
+        "@GrimoireCards2"
+      ]
+    },
+    {
+      "id": "GrimoireCardsTrigger3",
+      "trigger": "pre_combat",
+      "descriptions": {
+        "english": "Add <b>6</b> <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
+      },
+      "effects": [
+        "@GrimoireCards3"
+      ]
+    },
+    {
+      "id": "GrimoireCelebrate",
+      "trigger": "on_encounter_complete",
+      "descriptions": {
+        "english": "Gain <b>2</b> [conduit] permanently."
+      },
+      "effects": [
+        "@GrimoireCelebrateGain"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "GrimoireBuff1",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_upgrade": "@GrimoireUpgrade1"
+    },
+    {
+      "id": "GrimoireBuff2",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_upgrade": "@GrimoireUpgrade2"
+    },
+    {
+      "id": "GrimoireBuff3",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_upgrade": "@GrimoireUpgrade3"
+    },
+    {
+      "id": "GrimoireCards1",
+      "name": "CardEffectAddBattleCard",
+      "param_card_pool": "@FreeCompanyMagicMissilePool",
+      "param_int": 3,
+      "param_int_2": 2,
+      "param_upgrade": "@GrimoireFreeMissile"
+    },
+    {
+      "id": "GrimoireCards2",
+      "name": "CardEffectAddBattleCard",
+      "param_card_pool": "@FreeCompanyMagicMissilePool",
+      "param_int": 3,
+      "param_int_2": 4,
+      "param_upgrade": "@GrimoireFreeMissile"
+    },
+    {
+      "id": "GrimoireCards3",
+      "name": "CardEffectAddBattleCard",
+      "param_card_pool": "@FreeCompanyMagicMissilePool",
+      "param_int": 3,
+      "param_int_2": 6,
+      "param_upgrade": "@GrimoireFreeMissile"
+    },
+    {
+      "id": "GrimoireCelebrateGain",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_upgrade": "@GrimoireCelebrateUpgrade",
+      "param_int_3": 2
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GrimoireUpgrade1",
+      "bonus_damage": 1
+    },
+    {
+      "id": "GrimoireUpgrade2",
+      "bonus_damage": 2
+    },
+    {
+      "id": "GrimoireUpgrade3",
+      "bonus_damage": 4
+    },
+    {
+      "id": "upg_Grimoire1",
+      "titles": {
+        "english": "Grimoire"
+      },
+      "descriptions": {
+        "english": "Grows with every spell."
+      },
+      "bonus_damage": 4,
+      "trigger_upgrades": [
+        "@GrimoireTrigger1",
+        "@GrimoireCardsTrigger1",
+        "@GrimoireCelebrate"
+      ]
+    },
+    {
+      "id": "upg_Grimoire2",
+      "titles": {
+        "english": "Grimoire II"
+      },
+      "descriptions": {
+        "english": "Grows with every spell."
+      },
+      "bonus_damage": 10,
+      "remove_upgrades": [
+        "@upg_Grimoire1"
+      ],
+      "trigger_upgrades": [
+        "@GrimoireTrigger2",
+        "@GrimoireCardsTrigger2",
+        "@GrimoireCelebrate"
+      ]
+    },
+    {
+      "id": "upg_Grimoire3",
+      "titles": {
+        "english": "Grimoire III"
+      },
+      "descriptions": {
+        "english": "Grows with every spell."
+      },
+      "bonus_damage": 18,
+      "remove_upgrades": [
+        "@upg_Grimoire2"
+      ],
+      "trigger_upgrades": [
+        "@GrimoireTrigger3",
+        "@GrimoireCardsTrigger3",
+        "@GrimoireCelebrate"
+      ]
+    },
+    {
+      "id": "GrimoireFreeMissile",
+      "titles": {
+        "english": "Grimoire"
+      },
+      "cost_reduction": 1,
+      "trait_upgrades": [
+        "@GrimoireEphemeralTrait"
+      ],
+      "hide_icon_on_card": true
+    },
+    {
+      "id": "GrimoireCelebrateUpgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "conduit",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "GrimoireEphemeralTrait",
+      "name": "CardTraitEphemeral"
+    }
+  ]
+}
