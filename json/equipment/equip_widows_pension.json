@@ -1,0 +1,92 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "WidowsPension",
+      "names": {
+        "english": "Widow's Pension"
+      },
+      "descriptions": {
+        "english": "<b>Extinguish</b>: summon a <b>Free Lance</b> on this floor."
+      },
+      "card_art": "@WidowsPension",
+      "cost": 1,
+      "card_type": "equipment",
+      "rarity": "rare",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@EquipWidowsPension"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "The company does not lose a place in the line. Only a name."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EquipWidowsPension",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@UpgWidowsPension"
+    },
+    {
+      "id": "WidowsPensionSummon",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_character": "@FreeLance"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UpgWidowsPension",
+      "titles": {
+        "english": "Widow's Pension"
+      },
+      "descriptions": {
+        "english": "<b>Extinguish</b>: summon a <b>Free Lance</b> on this floor."
+      },
+      "icon": "@WidowsPension",
+      "trigger_upgrades": [
+        "@WidowsPensionTrigger"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "WidowsPensionTrigger",
+      "trigger": "on_death",
+      "descriptions": {
+        "english": "Summon a <b>Free Lance</b> on this floor."
+      },
+      "effects": [
+        "@WidowsPensionSummon"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "WidowsPension",
+      "path": "textures/SpoilsOfWarArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "WidowsPension",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@WidowsPension"
+        }
+      }
+    }
+  ]
+}

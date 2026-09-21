@@ -113,7 +113,7 @@
   "character_triggers": [
     {
       "id": "LongbowmanSniperBack",
-      "trigger": "on_team_turn_begin",
+      "trigger": "pre_combat",
       "descriptions": {
         "english": "Regain <b>Sniper</b>."
       },

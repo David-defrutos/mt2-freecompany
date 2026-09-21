@@ -1,0 +1,128 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnTheNewGuy",
+      "names": {
+        "english": "The New Guy"
+      },
+      "card_art": "@TheNewGuy",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "common",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnTheNewGuyEffect"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Nobody has learned his name yet. There has not been time."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "TheNewGuy",
+      "names": {
+        "english": "The New Guy"
+      },
+      "character_art": "@TheNewGuyCharacterArt",
+      "size": 1,
+      "attack_damage": 1,
+      "health": 1,
+      "subtypes": [
+        "@Sub_Melee",
+        "@Sub_Warrior",
+        "@Sub_Goblin"
+      ],
+      "triggers": [
+        {
+          "id": "@TheNewGuyTrigger"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnTheNewGuyEffect",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@TheNewGuy"
+    },
+    {
+      "id": "TheNewGuyPromotion",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_upgrade": "@TheNewGuyUpgrade",
+      "param_int_3": 2
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "TheNewGuyTrigger",
+      "trigger": "on_any_monster_death_on_floor",
+      "descriptions": {
+        "english": "When a friendly unit on this floor dies, this unit gains <b>+3</b> [attack] and <b>+3</b> [health] permanently."
+      },
+      "effects": [
+        "@TheNewGuyPromotion"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TheNewGuyUpgrade",
+      "bonus_damage": 3,
+      "bonus_hp": 3
+    }
+  ],
+  "sprites": [
+    {
+      "id": "TheNewGuy",
+      "path": "textures/TheNewGuyCardArt.png"
+    },
+    {
+      "id": "TheNewGuyCharacterArt",
+      "path": "textures/LanceroCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "TheNewGuy",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@TheNewGuy"
+        }
+      }
+    },
+    {
+      "id": "TheNewGuyCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@TheNewGuyCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 0.417,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.607,
+              "y": 0.607,
+              "z": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}
