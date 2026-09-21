@@ -7,7 +7,7 @@
         "english": "Silence"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [silence] to an enemy."
+        "english": "Apply [effect0.status0.power] [mute] to an enemy."
       },
       "card_art": "@Silence",
       "cost": 1,
@@ -37,8 +37,8 @@
       "target_team": "heroes",
       "param_status_effects": [
         {
-          "status": "silenced",
-          "count": 1
+          "status": "muted",
+          "count": 3
         }
       ]
     }
