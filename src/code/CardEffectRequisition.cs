@@ -222,3 +222,5 @@ namespace mt2_freecompany.Plugin
         }
     }
 }
+// 2026-09-20-2308||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||reescrita: da la carta de kit a la mano en vez de equipar
+// 2026-09-21-0005||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||anadido CanApplyInPreviewMode => false

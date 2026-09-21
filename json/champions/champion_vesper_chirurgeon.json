@@ -69,6 +69,12 @@
       "param_bool": false,
       "target_mode_status_effects_filter": [
         {
+          "status": "corrupt_poison"
+        },
+        {
+          "status": "corruption"
+        },
+        {
           "status": "dazed"
         },
         {
@@ -81,13 +87,7 @@
           "status": "doom"
         },
         {
-          "status": "fragile"
-        },
-        {
           "status": "heal immunity"
-        },
-        {
-          "status": "immobile"
         },
         {
           "status": "malaise"
@@ -108,16 +108,10 @@
           "status": "pyrestain"
         },
         {
-          "status": "restricted"
-        },
-        {
           "status": "rooted"
         },
         {
           "status": "scorch"
-        },
-        {
-          "status": "silenced"
         },
         {
           "status": "spell weakness"
@@ -142,6 +136,12 @@
       "param_bool": false,
       "target_mode_status_effects_filter": [
         {
+          "status": "corrupt_poison"
+        },
+        {
+          "status": "corruption"
+        },
+        {
           "status": "dazed"
         },
         {
@@ -154,13 +154,7 @@
           "status": "doom"
         },
         {
-          "status": "fragile"
-        },
-        {
           "status": "heal immunity"
-        },
-        {
-          "status": "immobile"
         },
         {
           "status": "malaise"
@@ -181,16 +175,10 @@
           "status": "pyrestain"
         },
         {
-          "status": "restricted"
-        },
-        {
           "status": "rooted"
         },
         {
           "status": "scorch"
-        },
-        {
-          "status": "silenced"
         },
         {
           "status": "spell weakness"
@@ -215,6 +203,12 @@
       "param_bool": false,
       "target_mode_status_effects_filter": [
         {
+          "status": "corrupt_poison"
+        },
+        {
+          "status": "corruption"
+        },
+        {
           "status": "dazed"
         },
         {
@@ -227,13 +221,7 @@
           "status": "doom"
         },
         {
-          "status": "fragile"
-        },
-        {
           "status": "heal immunity"
-        },
-        {
-          "status": "immobile"
         },
         {
           "status": "malaise"
@@ -254,16 +242,10 @@
           "status": "pyrestain"
         },
         {
-          "status": "restricted"
-        },
-        {
           "status": "rooted"
         },
         {
           "status": "scorch"
-        },
-        {
-          "status": "silenced"
         },
         {
           "status": "spell weakness"
@@ -288,6 +270,12 @@
       "param_bool": false,
       "target_mode_status_effects_filter": [
         {
+          "status": "corrupt_poison"
+        },
+        {
+          "status": "corruption"
+        },
+        {
           "status": "dazed"
         },
         {
@@ -300,13 +288,7 @@
           "status": "doom"
         },
         {
-          "status": "fragile"
-        },
-        {
           "status": "heal immunity"
-        },
-        {
-          "status": "immobile"
         },
         {
           "status": "malaise"
@@ -327,16 +309,10 @@
           "status": "pyrestain"
         },
         {
-          "status": "restricted"
-        },
-        {
           "status": "rooted"
         },
         {
           "status": "scorch"
-        },
-        {
-          "status": "silenced"
         },
         {
           "status": "spell weakness"
@@ -361,6 +337,12 @@
       "param_bool": false,
       "target_mode_status_effects_filter": [
         {
+          "status": "corrupt_poison"
+        },
+        {
+          "status": "corruption"
+        },
+        {
           "status": "dazed"
         },
         {
@@ -373,13 +355,7 @@
           "status": "doom"
         },
         {
-          "status": "fragile"
-        },
-        {
           "status": "heal immunity"
-        },
-        {
-          "status": "immobile"
         },
         {
           "status": "malaise"
@@ -400,16 +376,10 @@
           "status": "pyrestain"
         },
         {
-          "status": "restricted"
-        },
-        {
           "status": "rooted"
         },
         {
           "status": "scorch"
-        },
-        {
-          "status": "silenced"
         },
         {
           "status": "spell weakness"
@@ -434,6 +404,12 @@
       "param_bool": false,
       "target_mode_status_effects_filter": [
         {
+          "status": "corrupt_poison"
+        },
+        {
+          "status": "corruption"
+        },
+        {
           "status": "dazed"
         },
         {
@@ -446,13 +422,7 @@
           "status": "doom"
         },
         {
-          "status": "fragile"
-        },
-        {
           "status": "heal immunity"
-        },
-        {
-          "status": "immobile"
         },
         {
           "status": "malaise"
@@ -473,16 +443,10 @@
           "status": "pyrestain"
         },
         {
-          "status": "restricted"
-        },
-        {
           "status": "rooted"
         },
         {
           "status": "scorch"
-        },
-        {
-          "status": "silenced"
         },
         {
           "status": "spell weakness"

@@ -107,3 +107,4 @@ namespace mt2_freecompany.Plugin
         }
     }
 }
+// 2026-09-20-2308||claude-mt2-the-free-company2-roderic-quartermaster||src/Plugin.cs||fuera la ruta json/kits/spell_requisition.json
