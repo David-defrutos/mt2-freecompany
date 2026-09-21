@@ -7,7 +7,7 @@
         "english": "Rope & Grapple"
       },
       "descriptions": {
-        "english": "Friendly units in this room have <b>1</b> [haste]."
+        "english": "Friendly units on this floor have <b>1</b> [haste]."
       },
       "card_art": "@RopeAndGrapple",
       "cost": 1,
@@ -39,7 +39,7 @@
         "english": "Rope & Grapple"
       },
       "descriptions": {
-        "english": "Friendly units in this room have <b>1</b> [haste]."
+        "english": "Friendly units on this floor have <b>1</b> [haste]."
       },
       "status_effect_upgrades": [
         {

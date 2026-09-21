@@ -7,7 +7,7 @@
         "english": "Paymaster's Tent"
       },
       "descriptions": {
-        "english": "Friendly units in this room have <b>1</b> [avarice]."
+        "english": "Friendly units on this floor have <b>1</b> [avarice]."
       },
       "card_art": "@PaymastersTent",
       "cost": 0,
@@ -39,7 +39,7 @@
         "english": "Paymaster's Tent"
       },
       "descriptions": {
-        "english": "Friendly units in this room have <b>1</b> [avarice]."
+        "english": "Friendly units on this floor have <b>1</b> [avarice]."
       },
       "status_effect_upgrades": [
         {

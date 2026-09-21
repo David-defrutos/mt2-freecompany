@@ -96,7 +96,7 @@
       "id": "BattleChaplainTrigger",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore [effect0.power] health to all friendly units in this room."
+        "english": "Restore [effect0.power] health to all friendly units on this floor."
       },
       "effects": [
         "@BattleChaplainHeal"

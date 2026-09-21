@@ -7,7 +7,7 @@
         "english": "Bless"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [valor] to all friendly units in a room."
+        "english": "Apply [effect0.status0.power] [valor] to all friendly units on this floor."
       },
       "card_art": "@Bless",
       "cost": 1,

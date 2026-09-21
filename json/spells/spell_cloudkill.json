@@ -7,7 +7,7 @@
         "english": "Cloudkill"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [frostbite] and [effect1.status0.power] [witherbloom] to all enemies in a room."
+        "english": "Apply [effect0.status0.power] [frostbite] and [effect1.status0.power] [witherbloom] to all enemies on this floor."
       },
       "card_art": "@Cloudkill",
       "cost": 3,

@@ -7,7 +7,7 @@
         "english": "Web"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [rooted] and [effect1.status0.power] [sap] to all enemies in a room."
+        "english": "Apply [effect0.status0.power] [rooted] and [effect1.status0.power] [sap] to all enemies on this floor."
       },
       "card_art": "@Web",
       "cost": 2,

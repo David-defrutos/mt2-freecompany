@@ -7,7 +7,7 @@
         "english": "Watchtower"
       },
       "descriptions": {
-        "english": "Friendly units in this room have <b>Sniper</b>."
+        "english": "Friendly units on this floor have <b>Sniper</b>."
       },
       "card_art": "@Watchtower",
       "cost": 1,
@@ -39,7 +39,7 @@
         "english": "Watchtower"
       },
       "descriptions": {
-        "english": "Friendly units in this room have <b>Sniper</b>."
+        "english": "Friendly units on this floor have <b>Sniper</b>."
       },
       "status_effect_upgrades": [
         {

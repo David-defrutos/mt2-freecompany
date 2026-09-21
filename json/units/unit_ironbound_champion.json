@@ -119,7 +119,7 @@
       "id": "IronboundChampionTrigger",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room."
+        "english": "Apply [effect0.status0.power] [armor] to all friendly units on this floor."
       },
       "effects": [
         "@IronboundChampionArmor"
