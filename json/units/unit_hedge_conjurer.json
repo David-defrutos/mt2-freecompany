@@ -63,16 +63,15 @@
     },
     {
       "id": "HedgeConjurerAbility",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "name": "CardEffectAddStatusEffect",
       "target_mode": "self",
       "target_team": "monsters",
-      "param_upgrade": "@HedgeConjurerFocus"
-    }
-  ],
-  "upgrades": [
-    {
-      "id": "HedgeConjurerFocus",
-      "bonus_damage": 1
+      "param_status_effects": [
+        {
+          "status": "conduit",
+          "count": 1
+        }
+      ]
     }
   ],
   "character_triggers": [
@@ -80,7 +79,7 @@
       "id": "HedgeConjurerTrigger",
       "trigger": "card_spell_played",
       "descriptions": {
-        "english": "Gain <b>+1</b> [attack] for the rest of combat."
+        "english": "Gain [effect0.status0.power] [conduit]."
       },
       "effects": [
         "@HedgeConjurerAbility"

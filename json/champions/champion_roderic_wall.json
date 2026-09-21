@@ -7,7 +7,7 @@
         "english": "Power Slam"
       },
       "descriptions": {
-        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and <b>5</b> damage to all enemy units in this room."
+        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and [effect2.power] damage to all enemy units in this room."
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -27,7 +27,7 @@
         "english": "Power Slam"
       },
       "descriptions": {
-        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and <b>10</b> damage to all enemy units in this room."
+        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and [effect2.power] damage to all enemy units in this room."
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -47,7 +47,7 @@
         "english": "Power Slam"
       },
       "descriptions": {
-        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and <b>15</b> damage to all enemy units in this room."
+        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and [effect2.power] damage to all enemy units in this room."
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -67,7 +67,7 @@
       "id": "WallTrigger1",
       "trigger": "on_turn_begin",
       "descriptions": {
-        "english": "Apply <b>3</b> [armor] to all friendly units in this room."
+        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room."
       },
       "effects": [
         "@WallArmor1"
@@ -77,7 +77,7 @@
       "id": "WallTrigger2",
       "trigger": "on_turn_begin",
       "descriptions": {
-        "english": "Apply <b>6</b> [armor] to all friendly units in this room."
+        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room."
       },
       "effects": [
         "@WallArmor2"
@@ -87,7 +87,7 @@
       "id": "WallTrigger3",
       "trigger": "on_turn_begin",
       "descriptions": {
-        "english": "Apply <b>10</b> [armor] to all friendly units in this room."
+        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room."
       },
       "effects": [
         "@WallArmor3"

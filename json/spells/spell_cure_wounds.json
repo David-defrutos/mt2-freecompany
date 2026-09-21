@@ -7,7 +7,7 @@
         "english": "Cure Wounds"
       },
       "descriptions": {
-        "english": "Restore <b>8</b> health to a friendly unit."
+        "english": "Restore [effect0.power] health to a friendly unit."
       },
       "card_art": "@CureWounds",
       "cost": 1,

@@ -108,7 +108,7 @@
       "id": "ShieldbearerSpawnTrigger",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Apply <b>5</b> [armor] to itself."
+        "english": "Apply [effect0.status0.power] [armor] to itself."
       },
       "effects": [
         "@ShieldbearerArmor"

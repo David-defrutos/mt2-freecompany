@@ -31,7 +31,7 @@
         "english": "Last Rites"
       },
       "descriptions": {
-        "english": "Restore <b>18</b> health to all friendly units on all floors."
+        "english": "Restore [effect0.power] health to all friendly units on all floors."
       },
       "card_art": "@BattleChaplain",
       "is_an_ability": true,
@@ -96,7 +96,7 @@
       "id": "BattleChaplainTrigger",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>8</b> health to all friendly units in this room."
+        "english": "Restore [effect0.power] health to all friendly units in this room."
       },
       "effects": [
         "@BattleChaplainHeal"

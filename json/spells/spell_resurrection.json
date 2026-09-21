@@ -7,7 +7,7 @@
         "english": "Resurrection"
       },
       "descriptions": {
-        "english": "Apply <b>1</b> [undying] and <b>10</b> [regen] to a friendly unit."
+        "english": "Apply [effect0.status0.power] [undying] and [effect1.status0.power] [regen] to a friendly unit."
       },
       "card_art": "@Resurrection",
       "cost": 2,

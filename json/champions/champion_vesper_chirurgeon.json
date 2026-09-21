@@ -5,7 +5,7 @@
       "id": "ChirurgeonTrigger1",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>3</b> health to all friendly units in this room, then remove all [debuff] effects from <b>1</b> random debuffed friendly unit in this room."
+        "english": "Restore [effect0.power] health to all friendly units in this room, then remove all [debuff] effects from [effect1.power] random debuffed friendly unit in this room."
       },
       "effects": [
         "@ChirurgeonHeal1",
@@ -16,7 +16,7 @@
       "id": "ChirurgeonTrigger2",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>12</b> health to all friendly units in this room, then remove all [debuff] effects from <b>2</b> random debuffed friendly units anywhere."
+        "english": "Restore [effect0.power] health to all friendly units in this room, then remove all [debuff] effects from <b>2</b> random debuffed friendly units anywhere."
       },
       "effects": [
         "@ChirurgeonHeal2",
@@ -28,7 +28,7 @@
       "id": "ChirurgeonTrigger3",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>24</b> health to all friendly units in this room, then remove all [debuff] effects from <b>3</b> random debuffed friendly units anywhere."
+        "english": "Restore [effect0.power] health to all friendly units in this room, then remove all [debuff] effects from <b>3</b> random debuffed friendly units anywhere."
       },
       "effects": [
         "@ChirurgeonHeal3",

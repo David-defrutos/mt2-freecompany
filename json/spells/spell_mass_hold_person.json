@@ -7,7 +7,7 @@
         "english": "Mass Hold Person"
       },
       "descriptions": {
-        "english": "Apply <b>2</b> [dazed] to all enemies in a room."
+        "english": "Apply [effect0.status0.power] [dazed] to all enemies in a room."
       },
       "card_art": "@MassHoldPerson",
       "cost": 4,

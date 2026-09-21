@@ -70,7 +70,7 @@
       "id": "CampBrawlerTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain <b>2</b> [buff]."
+        "english": "Gain [effect0.status0.power] [buff]."
       },
       "effects": [
         "@CampBrawlerAbility"

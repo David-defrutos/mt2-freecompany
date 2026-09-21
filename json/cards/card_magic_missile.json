@@ -7,7 +7,7 @@
         "english": "Magic Missile"
       },
       "descriptions": {
-        "english": "Deal <b>3</b> damage to a random enemy three times."
+        "english": "Deal [effect0.power] damage to a random enemy three times."
       },
       "card_art": "@MagicMissile",
       "cost": 1,

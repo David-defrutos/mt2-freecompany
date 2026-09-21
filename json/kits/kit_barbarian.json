@@ -147,7 +147,7 @@
       "id": "NotchedAxeTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain <b>2</b> [rage]."
+        "english": "Gain [effect0.status0.power] [rage]."
       },
       "effects": [
         "@NotchedAxeTrigEffect"
@@ -157,7 +157,7 @@
       "id": "TwinAxesTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain <b>4</b> [rage]."
+        "english": "Gain [effect0.status0.power] [rage]."
       },
       "effects": [
         "@TwinAxesTrigEffect"
@@ -167,7 +167,7 @@
       "id": "ReaversMaulTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain <b>6</b> [rage] and <b>1</b> [burst]."
+        "english": "Gain [effect0.status0.power] [rage] and [effect0.status1.power] [burst]."
       },
       "effects": [
         "@ReaversMaulTrigEffect"

@@ -108,7 +108,7 @@
       "id": "BountyHunterTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Reduce this unit's ability cooldown by <b>1</b> and gain <b>5</b> [coin]."
+        "english": "Reduce this unit's ability cooldown by <b>1</b> and gain [effect1.power] [coin]."
       },
       "effects": [
         "@BountyHunterCooldown",

@@ -83,7 +83,7 @@
       "id": "BerserkerKillTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain <b>3</b> [rage]."
+        "english": "Gain [effect0.status0.power] [rage]."
       },
       "effects": [
         "@BerserkerRage"
@@ -93,7 +93,7 @@
       "id": "BerserkerRevengeTrigger",
       "trigger": "on_hit",
       "descriptions": {
-        "english": "Gain <b>3</b> [rage]."
+        "english": "Gain [effect0.status0.power] [rage]."
       },
       "effects": [
         "@BerserkerRage"

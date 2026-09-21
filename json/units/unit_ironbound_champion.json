@@ -31,7 +31,7 @@
         "english": "Ironbound Oath"
       },
       "descriptions": {
-        "english": "Apply <b>2</b> [damageshield] and <b>20</b> [armor] to itself."
+        "english": "Apply [effect0.status0.power] [damageshield] and [effect1.status0.power] [armor] to itself."
       },
       "card_art": "@IronboundChampion",
       "is_an_ability": true,
@@ -119,7 +119,7 @@
       "id": "IronboundChampionTrigger",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Apply <b>10</b> [armor] to all friendly units in this room."
+        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room."
       },
       "effects": [
         "@IronboundChampionArmor"

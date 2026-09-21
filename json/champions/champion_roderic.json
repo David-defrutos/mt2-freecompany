@@ -53,7 +53,7 @@
       "id": "RodericMusterTrigger",
       "trigger": "card_monster_played",
       "descriptions": {
-        "english": "When a unit is summoned on this floor, it gains <b>3</b> [armor] and this unit gains <b>+2</b> [attack] and <b>+2</b> [health] permanently."
+        "english": "When a unit is summoned on this floor, it gains [effect0.status0.power] [armor] and this unit gains <b>+2</b> [attack] and <b>+2</b> [health] permanently."
       },
       "effects": [
         "@RodericMusterGate",

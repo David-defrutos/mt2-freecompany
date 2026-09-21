@@ -142,7 +142,7 @@
       "id": "FieldMedicEndTrigger",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>4</b> health to the weakest friendly unit and remove a random debuff from a friendly unit."
+        "english": "Restore [effect0.power] health to the weakest friendly unit and remove a random debuff from a friendly unit."
       },
       "effects": [
         "@FieldMedicHeal",

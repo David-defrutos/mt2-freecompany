@@ -7,7 +7,7 @@
         "english": "Invisibility"
       },
       "descriptions": {
-        "english": "Apply <b>3</b> [stealth] to a friendly unit."
+        "english": "Apply [effect0.status0.power] [stealth] to a friendly unit."
       },
       "card_art": "@Invisibility",
       "cost": 1,

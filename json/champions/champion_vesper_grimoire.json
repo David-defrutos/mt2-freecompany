@@ -35,7 +35,7 @@
       "id": "GrimoireCardsTrigger1",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Add <b>2</b> <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
+        "english": "Add [effect0.secondarypower] <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
       },
       "effects": [
         "@GrimoireCards1"
@@ -45,7 +45,7 @@
       "id": "GrimoireCardsTrigger2",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Add <b>4</b> <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
+        "english": "Add [effect0.secondarypower] <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
       },
       "effects": [
         "@GrimoireCards2"
@@ -55,7 +55,7 @@
       "id": "GrimoireCardsTrigger3",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Add <b>6</b> <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
+        "english": "Add [effect0.secondarypower] <b>Magic Missile</b> to your hand. They cost <b>0</b> and are [ephemeral]."
       },
       "effects": [
         "@GrimoireCards3"

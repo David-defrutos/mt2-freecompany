@@ -147,7 +147,7 @@
       "id": "MasterOfCoinAvariceTrigger",
       "trigger": "on_team_turn_begin",
       "descriptions": {
-        "english": "Apply <b>1</b> [avarice] to all friendly units in this room."
+        "english": "Apply [effect0.status0.power] [avarice] to all friendly units in this room."
       },
       "effects": [
         "@MasterOfCoinAvariceGain"

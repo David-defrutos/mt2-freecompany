@@ -7,7 +7,7 @@
         "english": "Shield"
       },
       "descriptions": {
-        "english": "Apply <b>5</b> [armor] to a friendly unit."
+        "english": "Apply [effect0.status0.power] [armor] to a friendly unit."
       },
       "card_art": "@Shield",
       "cost": 0,

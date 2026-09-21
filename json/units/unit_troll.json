@@ -430,7 +430,7 @@
       "id": "BogTrollStrike",
       "trigger": "on_attacking",
       "descriptions": {
-        "english": "Apply <b>1</b> [rooted] to the unit it attacks."
+        "english": "Apply [effect0.status0.power] [rooted] to the unit it attacks."
       },
       "effects": [
         "@BogTrollRoot"

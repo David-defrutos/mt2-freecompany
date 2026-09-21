@@ -7,7 +7,7 @@
         "english": "Grease"
       },
       "descriptions": {
-        "english": "Apply <b>1</b> [rooted] to all enemies in a room."
+        "english": "Apply [effect0.status0.power] [rooted] to all enemies in a room."
       },
       "card_art": "@Grease",
       "cost": 1,

@@ -7,7 +7,7 @@
         "english": "Paid in Full"
       },
       "descriptions": {
-        "english": "A friendly unit gains <b>1</b> [attack] for every <b>50</b> gold you have spent this run."
+        "english": "A friendly unit gains <b>1</b> [attack] for every [effect0.power] gold you have spent this run."
       },
       "card_art": "@PaidInFull",
       "cost": 2,

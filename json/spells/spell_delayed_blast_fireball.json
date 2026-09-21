@@ -7,7 +7,7 @@
         "english": "Delayed Blast Fireball"
       },
       "descriptions": {
-        "english": "Apply <b>3</b> [timebomb] to an enemy. Cannot target bosses."
+        "english": "Apply [effect0.status0.power] [timebomb] to an enemy. Cannot target bosses."
       },
       "card_art": "@DelayedBlastFireball",
       "cost": 3,

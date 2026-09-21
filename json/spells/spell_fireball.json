@@ -7,7 +7,7 @@
         "english": "Fireball"
       },
       "descriptions": {
-        "english": "Deal <b>20</b> damage to all enemies in a room and <b>10</b> damage to all friendly units there."
+        "english": "Deal [effect0.power] damage to all enemies in a room and [effect1.power] damage to all friendly units there."
       },
       "card_art": "@Fireball",
       "cost": 3,

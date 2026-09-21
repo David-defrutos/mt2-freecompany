@@ -31,7 +31,7 @@
         "english": "Lift the Purse"
       },
       "descriptions": {
-        "english": "Gain <b>1</b> [stealth] and <b>10</b> gold."
+        "english": "Gain [effect0.status0.power] [stealth] and [effect1.power] gold."
       },
       "card_art": "@Cutpurse",
       "is_an_ability": true,

@@ -7,7 +7,7 @@
         "english": "Lightning Bolt"
       },
       "descriptions": {
-        "english": "Deal <b>25</b> damage to the front enemy on every floor."
+        "english": "Deal [effect0.power] damage to the front enemy on every floor."
       },
       "card_art": "@LightningBolt",
       "cost": 3,

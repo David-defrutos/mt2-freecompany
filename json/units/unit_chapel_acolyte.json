@@ -65,7 +65,7 @@
       "id": "ChapelAcolyteTrigger",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore <b>3</b> health to the weakest friendly unit."
+        "english": "Restore [effect0.power] health to the weakest friendly unit."
       },
       "effects": [
         "@ChapelAcolyteAbility"
