@@ -7,7 +7,7 @@
         "english": "Fireball"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to all enemies in a room and [effect1.power] damage to all friendly units there."
+        "english": "Deal [effect0.power] damage to all enemies on this floor."
       },
       "card_art": "@Fireball",
       "cost": 3,
@@ -17,8 +17,7 @@
       "targets_room": true,
       "targetless": true,
       "effects": [
-        "@FireballEnemies",
-        "@FireballAllies"
+        "@FireballEnemies"
       ],
       "lore_tooltips": [
         {
@@ -37,13 +36,6 @@
       "target_mode": "room",
       "target_team": "heroes",
       "param_int": 20
-    },
-    {
-      "id": "FireballAllies",
-      "name": "CardEffectDamage",
-      "target_mode": "room",
-      "target_team": "monsters",
-      "param_int": 10
     }
   ],
   "sprites": [
