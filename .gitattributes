@@ -1,0 +1,5 @@
+# Los JSON de este clan llevan BOM UTF-8 y CRLF; los .cs van sin BOM y con LF.
+# Git no debe tocar ninguna de las dos cosas: se guardan y se restauran byte a byte.
+# Sin esto, autocrlf convierte los finales de linea al hacer checkout o restore y
+# rompe la convencion (hallazgo 18 del clan).
+* -text

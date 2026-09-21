@@ -167,7 +167,7 @@
       "id": "RodericMusterTrigger",
       "trigger": "card_monster_played",
       "descriptions": {
-        "english": "When a <b>Goblin</b> is summoned on this floor, it gains <b>1</b> [armor] and this unit gains <b>+2</b> [attack] and <b>+2</b> [health] permanently."
+        "english": "When a unit is summoned on this floor, it gains <b>3</b> [armor] and this unit gains <b>+2</b> [attack] and <b>+2</b> [health] permanently."
       },
       "effects": [
         "@RodericMusterGate",
@@ -217,16 +217,12 @@
       "name": "CardEffectAddStatusEffect",
       "target_mode": "last_spawned_character",
       "target_team": "monsters",
-      "target_subtype": "@Sub_Goblin",
       "param_status_effects": [
         {
           "status": "armor",
-          "count": 1
+          "count": 3
         }
-      ],
-      "param_bool": true,
-      "should_test": true,
-      "should_cancel_subsequent_effects_if_test_fails": true
+      ]
     },
     {
       "id": "RodericMusterBuff",
