@@ -27,77 +27,22 @@
       "id": "BeastmasterGrantTrigger",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "The first time, five <b>Tame</b> spells join your hand. The one you play adds that <b>Troll</b> to your deck for the rest of the run."
+        "english": "The first time, <b>3</b> random <b>Tame</b> spells join your hand. The one you play keeps that <b>Troll</b> for the run."
       },
       "effects": [
-        "@BeastmasterOffer1",
-        "@BeastmasterOffer2",
-        "@BeastmasterOffer3",
-        "@BeastmasterOffer4",
-        "@BeastmasterOffer5"
+        "@BeastmasterOffer"
       ]
     }
   ],
   "effects": [
     {
-      "id": "BeastmasterOffer1",
-      "name": "@CardEffectGrantOnce",
-      "target_mode": "self",
+      "id": "BeastmasterOffer",
+      "name": "@CardEffectOfferRandomFromPool",
+      "target_mode": "pyre",
       "target_team": "monsters",
-      "param_str": "CardEffectAddBattleCard",
+      "param_card_pool": "@FreeCompanyTameOffersPool",
       "param_subtype": "@Sub_Troll",
-      "param_card_pool": "@FreeCompanyTameBogTrollPool",
-      "param_int": 3,
-      "param_int_2": 1,
-      "param_upgrade": "@TrollOffer"
-    },
-    {
-      "id": "BeastmasterOffer2",
-      "name": "@CardEffectGrantOnce",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_str": "CardEffectAddBattleCard",
-      "param_subtype": "@Sub_Troll",
-      "param_card_pool": "@FreeCompanyTameStoneTrollPool",
-      "param_int": 3,
-      "param_int_2": 1,
-      "param_upgrade": "@TrollOffer"
-    },
-    {
-      "id": "BeastmasterOffer3",
-      "name": "@CardEffectGrantOnce",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_str": "CardEffectAddBattleCard",
-      "param_subtype": "@Sub_Troll",
-      "param_card_pool": "@FreeCompanyTameWarTrollPool",
-      "param_int": 3,
-      "param_int_2": 1,
-      "param_upgrade": "@TrollOffer"
-    },
-    {
-      "id": "BeastmasterOffer4",
-      "name": "@CardEffectGrantOnce",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_str": "CardEffectAddBattleCard",
-      "param_subtype": "@Sub_Troll",
-      "param_card_pool": "@FreeCompanyTameCautiousTrollPool",
-      "param_int": 3,
-      "param_int_2": 1,
-      "param_upgrade": "@TrollOffer"
-    },
-    {
-      "id": "BeastmasterOffer5",
-      "name": "@CardEffectGrantOnce",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_str": "CardEffectAddBattleCard",
-      "param_subtype": "@Sub_Troll",
-      "param_card_pool": "@FreeCompanyTameTwoHeadedTrollPool",
-      "param_int": 3,
-      "param_int_2": 1,
-      "param_upgrade": "@TrollOffer"
+      "param_int": 3
     },
     {
       "id": "BeastmasterCallGate",
@@ -134,7 +79,7 @@
         "english": "Beastmaster"
       },
       "descriptions": {
-        "english": "Vesper arrives with a tamed <b>Troll</b>. Trolls enter with +<b>20</b> [attack] and +<b>20</b> [health]."
+        "english": "Vesper arrives with a tamed <b>Troll</b>.\nTrolls: +<b>20</b> [attack]/[health]."
       },
       "bonus_hp": 6,
       "trigger_upgrades": [
@@ -148,7 +93,7 @@
         "english": "Beastmaster II"
       },
       "descriptions": {
-        "english": "Trolls enter with +<b>40</b> [attack], +<b>40</b> [health] and [trample].\n<b>Celebrate</b>: +<b>5</b> [attack] and +<b>5</b> [health] permanently."
+        "english": "Trolls: +<b>40</b> [attack]/[health], [trample].\n<b>Celebrate</b>: +<b>5</b> [attack]/[health], permanent."
       },
       "bonus_hp": 12,
       "bonus_damage": 4,
@@ -166,7 +111,7 @@
         "english": "Beastmaster III"
       },
       "descriptions": {
-        "english": "Trolls enter with +<b>60</b> [attack], +<b>60</b> [health], [trample] and [sweep].\n<b>Celebrate</b>: +<b>10</b> [attack] and +<b>10</b> [health] permanently."
+        "english": "Trolls: +<b>60</b> [attack]/[health], [trample], [sweep].\n<b>Celebrate</b>: +<b>10</b> [attack]/[health], permanent."
       },
       "bonus_hp": 18,
       "bonus_damage": 8,

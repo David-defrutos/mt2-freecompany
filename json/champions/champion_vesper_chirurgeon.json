@@ -1,5 +1,64 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "ChirurgeonSurgery1",
+      "names": {
+        "english": "Field Surgery"
+      },
+      "descriptions": {
+        "english": "Apply [effect0.status0.power] [undying] to a unit."
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "cooldown": 5,
+      "initial_cooldown": 0,
+      "targetless": false,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@ChirurgeonSurgeryUndying"
+      ]
+    },
+    {
+      "id": "ChirurgeonSurgery2",
+      "names": {
+        "english": "Field Surgery"
+      },
+      "descriptions": {
+        "english": "Apply [effect0.status0.power] [undying] to a unit."
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "cooldown": 4,
+      "initial_cooldown": 0,
+      "targetless": false,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@ChirurgeonSurgeryUndying"
+      ]
+    },
+    {
+      "id": "ChirurgeonSurgery3",
+      "names": {
+        "english": "Field Surgery"
+      },
+      "descriptions": {
+        "english": "Apply [effect0.status0.power] [undying] to a unit."
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "initial_cooldown": 0,
+      "targetless": false,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@ChirurgeonSurgeryUndying"
+      ]
+    }
+  ],
   "character_triggers": [
     {
       "id": "ChirurgeonTrigger1",
@@ -461,6 +520,18 @@
           "status": "witherbloom"
         }
       ]
+    },
+    {
+      "id": "ChirurgeonSurgeryUndying",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "undying",
+          "count": 1
+        }
+      ]
     }
   ],
   "upgrades": [
@@ -475,7 +546,8 @@
       "bonus_hp": 10,
       "trigger_upgrades": [
         "@ChirurgeonTrigger1"
-      ]
+      ],
+      "ability_upgrade": "@ChirurgeonSurgery1"
     },
     {
       "id": "upg_Chirurgeon2",
@@ -491,7 +563,8 @@
       ],
       "trigger_upgrades": [
         "@ChirurgeonTrigger2"
-      ]
+      ],
+      "ability_upgrade": "@ChirurgeonSurgery2"
     },
     {
       "id": "upg_Chirurgeon3",
@@ -507,7 +580,8 @@
       ],
       "trigger_upgrades": [
         "@ChirurgeonTrigger3"
-      ]
+      ],
+      "ability_upgrade": "@ChirurgeonSurgery3"
     }
   ]
 }

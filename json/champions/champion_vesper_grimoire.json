@@ -91,6 +91,16 @@
       ]
     },
     {
+      "id": "GrimoireStarterTrigger",
+      "trigger": "pre_combat",
+      "descriptions": {
+        "english": "Add a <b>Magic Missile</b> to your hand. It costs <b>0</b> [ember] and is [ephemeral]."
+      },
+      "effects": [
+        "@GrimoireStarterCard"
+      ]
+    },
+    {
       "id": "GrimoireCelebrate",
       "trigger": "on_encounter_complete",
       "descriptions": {
@@ -122,6 +132,14 @@
       "target_mode": "self",
       "target_team": "monsters",
       "param_upgrade": "@GrimoireUpgrade3"
+    },
+    {
+      "id": "GrimoireStarterCard",
+      "name": "CardEffectAddBattleCard",
+      "param_card_pool": "@FreeCompanyMagicMissilePool",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_upgrade": "@GrimoireFreeSpell"
     },
     {
       "id": "GrimoireDraw1",
@@ -180,6 +198,7 @@
       "bonus_damage": 4,
       "trigger_upgrades": [
         "@GrimoireTrigger1",
+        "@GrimoireStarterTrigger",
         "@GrimoireCelebrate"
       ],
       "ability_upgrade": "@GrimoireSpell1"
@@ -198,6 +217,7 @@
       ],
       "trigger_upgrades": [
         "@GrimoireTrigger2",
+        "@GrimoireStarterTrigger",
         "@GrimoireCelebrate"
       ],
       "ability_upgrade": "@GrimoireSpell2"
@@ -216,6 +236,7 @@
       ],
       "trigger_upgrades": [
         "@GrimoireTrigger3",
+        "@GrimoireStarterTrigger",
         "@GrimoireCelebrate"
       ],
       "ability_upgrade": "@GrimoireSpell3"
