@@ -7,7 +7,7 @@
         "english": "Bounty Hunter"
       },
       "card_art": "@BountyHunter",
-      "cost": 1,
+      "cost": 2,
       "card_type": "monster",
       "rarity": "rare",
       "class": "@ClassFreeCompany",

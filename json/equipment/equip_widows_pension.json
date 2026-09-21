@@ -12,7 +12,7 @@
       "card_art": "@WidowsPension",
       "cost": 1,
       "card_type": "equipment",
-      "rarity": "rare",
+      "rarity": "common",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,
@@ -75,7 +75,7 @@
   "sprites": [
     {
       "id": "WidowsPension",
-      "path": "textures/SpoilsOfWarArt.png"
+      "path": "textures/WidowsPensionArt.png"
     }
   ],
   "game_objects": [

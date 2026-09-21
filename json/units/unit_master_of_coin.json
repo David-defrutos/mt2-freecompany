@@ -7,7 +7,7 @@
         "english": "Master of Coin"
       },
       "card_art": "@MasterOfCoin",
-      "cost": 1,
+      "cost": 2,
       "card_type": "monster",
       "rarity": "rare",
       "class": "@ClassFreeCompany",

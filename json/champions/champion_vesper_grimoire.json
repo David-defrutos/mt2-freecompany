@@ -4,7 +4,7 @@
     {
       "id": "GrimoireSpell1",
       "names": {
-        "english": "Prepare Spell"
+        "english": "Prepare Spell I"
       },
       "descriptions": {
         "english": "Add a random <b>Common</b> spell to your hand. It costs <b>0</b> [ember] and is [ephemeral]."
@@ -23,7 +23,7 @@
     {
       "id": "GrimoireSpell2",
       "names": {
-        "english": "Prepare Spell"
+        "english": "Prepare Spell II"
       },
       "descriptions": {
         "english": "Add a random <b>Common</b> or <b>Uncommon</b> spell to your hand. It costs <b>0</b> [ember] and is [ephemeral]."
@@ -42,7 +42,7 @@
     {
       "id": "GrimoireSpell3",
       "names": {
-        "english": "Prepare Spell"
+        "english": "Prepare Spell III"
       },
       "descriptions": {
         "english": "Add a random spell to your hand. It costs <b>0</b> [ember] and is [ephemeral]."

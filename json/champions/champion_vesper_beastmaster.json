@@ -7,7 +7,7 @@
         "english": "Call of the Wild"
       },
       "descriptions": {
-        "english": "Draw a <b>Troll</b>. It costs <b>0</b> [ember]."
+        "english": "Put a <b>Troll</b> in your hand. It costs <b>0</b> [ember]."
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
@@ -18,7 +18,9 @@
       "card_type": "spell",
       "effects": [
         "@BeastmasterCallGate",
-        "@BeastmasterCallDraw"
+        "@BeastmasterCallFromDraw",
+        "@BeastmasterCallFromDiscard",
+        "@BeastmasterCallZero"
       ]
     }
   ],
@@ -55,23 +57,58 @@
       "should_cancel_subsequent_effects_if_test_fails": true
     },
     {
-      "id": "BeastmasterCallDraw",
+      "id": "BeastmasterCallFromDraw",
       "name": "CardEffectRecursion",
       "target_mode": "draw_pile",
       "target_card_selection_mode": "random_to_hand",
       "target_card_type": "monster",
       "target_subtype": "@Sub_Troll",
-      "param_upgrade": "@TrollFreeSummon",
       "param_int": 1,
       "should_test": true,
       "should_fail_to_cast_if_test_fails": false,
       "should_cancel_subsequent_effects_if_test_fails": false
+    },
+    {
+      "id": "BeastmasterCallFromDiscard",
+      "name": "CardEffectRecursion",
+      "target_mode": "discard",
+      "target_card_selection_mode": "random_to_hand",
+      "target_card_type": "monster",
+      "target_subtype": "@Sub_Troll",
+      "param_int": 1,
+      "should_test": true,
+      "should_fail_to_cast_if_test_fails": false,
+      "should_cancel_subsequent_effects_if_test_fails": false
+    },
+    {
+      "id": "BeastmasterCallZero",
+      "name": "CardEffectAddTempCardUpgradeToCardsInHand",
+      "target_mode": "pyre",
+      "target_team": "monsters",
+      "param_upgrade": "@TrollFreeSummon",
+      "should_test": false
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "TrollOnlyMask",
+      "card_type": "monster",
+      "cost_range": {
+        "x": 0,
+        "y": 99
+      },
+      "required_subtypes": [
+        "@Sub_Troll"
+      ]
     }
   ],
   "upgrades": [
     {
       "id": "TrollFreeSummon",
-      "cost_reduction": 6
+      "cost_reduction": 6,
+      "filters": [
+        "@TrollOnlyMask"
+      ]
     },
     {
       "id": "upg_Beastmaster1",
