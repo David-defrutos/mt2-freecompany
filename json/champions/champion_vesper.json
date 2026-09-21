@@ -781,7 +781,6 @@
       "target_card_selection_mode": "random_to_hand",
       "target_card_type": "monster",
       "target_subtype": "@Sub_Troll",
-      "param_card_filter": "@TrollOnlyMask",
       "param_upgrade": "@TrollFreeSummon",
       "param_int": 1,
       "should_test": true,
@@ -792,6 +791,11 @@
   "upgrade_masks": [
     {
       "id": "TrollOnlyMask",
+      "card_type": "monster",
+      "cost_range": {
+        "x": 0,
+        "y": 99
+      },
       "required_subtypes": [
         "@Sub_Troll"
       ]
@@ -800,10 +804,7 @@
   "upgrades": [
     {
       "id": "TrollFreeSummon",
-      "cost_reduction": 6,
-      "filters": [
-        "@TrollOnlyMask"
-      ]
+      "cost_reduction": 6
     },
     {
       "id": "GrimoireUpgrade1",

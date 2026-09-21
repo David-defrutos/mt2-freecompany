@@ -7,7 +7,7 @@
         "english": "Resurrection"
       },
       "descriptions": {
-        "english": "Apply <b>1</b> [undying] to a friendly unit."
+        "english": "Apply <b>1</b> [undying] and <b>10</b> [regen] to a friendly unit."
       },
       "card_art": "@Resurrection",
       "cost": 2,
@@ -17,7 +17,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@ResurrectionUndying"
+        "@ResurrectionUndying",
+        "@ResurrectionRegen"
       ],
       "lore_tooltips": [
         {
@@ -39,6 +40,18 @@
         {
           "status": "undying",
           "count": 1
+        }
+      ]
+    },
+    {
+      "id": "ResurrectionRegen",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "regen",
+          "count": 10
         }
       ]
     }

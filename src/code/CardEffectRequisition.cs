@@ -94,6 +94,23 @@ namespace mt2_freecompany.Plugin
             return true;
         }
 
+        // NO se ejecuta en modo vista previa.
+        //
+        // 21-sep-2026: sin esto, el juego aplicaba el efecto CADA VEZ que la flecha de
+        // apuntado pasaba por encima de una unidad, sin llegar a soltar. Una sola
+        // activacion de la habilidad llenaba la mano de objetos.
+        //
+        // CardEffectBase.CanApplyInPreviewMode devuelve TRUE por defecto, que es lo
+        // correcto para un efecto que solo calcula numeros (CardEffectDamage,
+        // CardEffectRewardGold): la vista previa necesita ejecutarlo para enseñarte el
+        // resultado. Pero TODOS los efectos del juego base que anaden cartas lo ponen en
+        // false: CardEffectAddBattleCard, CardEffectAddRunCard, CardEffectDraw,
+        // CardEffectGrantEquipmentFromPool. Comprobado en el IL.
+        //
+        // Regla para las clases propias: si el efecto CAMBIA ESTADO QUE PERSISTE -cartas,
+        // mazo, oro, energia-, esto va a false. Si solo calcula, se deja como esta.
+        public override bool CanApplyInPreviewMode => false;
+
         public override IEnumerator ApplyEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers, ISystemManagers sysManagers)
         {
             int escalon = cardEffectState.GetParamInt();

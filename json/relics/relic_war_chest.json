@@ -4,7 +4,7 @@
     {
       "id": "WarChestEffect",
       "name": "RelicEffectModifyGoldEndOfBattle",
-      "param_int": 15,
+      "param_int": 99,
       "param_bool": false
     }
   ],
@@ -16,7 +16,7 @@
         "english": "War Chest"
       },
       "descriptions": {
-        "english": "Gain <b>15</b> [coin] after each battle."
+        "english": "Gain <b>99</b> [coin] after each battle."
       },
       "relic_activated_texts": {
         "english": "Paid on delivery."

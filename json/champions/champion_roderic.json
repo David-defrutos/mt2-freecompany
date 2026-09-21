@@ -25,20 +25,61 @@
     {
       "id": "RodericSlam",
       "names": {
-        "english": "Slam"
+        "english": "Power Slam"
       },
       "descriptions": {
-        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor]."
+        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and <b>5</b> damage to all enemy units in this room."
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
-      "cooldown": 3,
+      "cooldown": 2,
       "targetless": true,
       "targets_room": false,
       "card_type": "spell",
       "effects": [
         "@RodericSlamAdvance",
-        "@RodericSlamHit"
+        "@RodericSlamHit",
+        "@RodericSlamSweep1"
+      ]
+    },
+    {
+      "id": "RodericSlam2",
+      "names": {
+        "english": "Power Slam"
+      },
+      "descriptions": {
+        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and <b>10</b> damage to all enemy units in this room."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericSlamAdvance",
+        "@RodericSlamHit",
+        "@RodericSlamSweep2"
+      ]
+    },
+    {
+      "id": "RodericSlam3",
+      "names": {
+        "english": "Power Slam"
+      },
+      "descriptions": {
+        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and <b>15</b> damage to all enemy units in this room."
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericSlamAdvance",
+        "@RodericSlamHit",
+        "@RodericSlamSweep3"
       ]
     },
     {
@@ -255,17 +296,59 @@
     {
       "id": "RodericSlamAdvance",
       "name": "CardEffectFloorRearrange",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_int": 0
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "applied_to_self_vfx": "@RodericSlamAdvanceVFX"
     },
     {
       "id": "RodericSlamHit",
       "name": "CardEffectDamagePerHp",
-      "target_mode": "front_in_room",
-      "target_team": "heroes",
+      "target_mode": "self",
       "param_int": 1,
-      "param_bool_2": true
+      "param_bool_2": true,
+      "applied_vfx": "@RodericSlamHitVFX"
+    },
+    {
+      "id": "RodericSlamSweep1",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 5,
+      "applied_vfx": "@RodericSlamHitVFX"
+    },
+    {
+      "id": "RodericSlamSweep2",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 10,
+      "applied_vfx": "@RodericSlamHitVFX"
+    },
+    {
+      "id": "RodericSlamSweep3",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 15,
+      "applied_vfx": "@RodericSlamHitVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "RodericSlamAdvanceVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/SteadfastCrusader/FX_SteadfastCrusader.prefab",
+        "asset_guid": "32a4025b924311e4995d1dc47611df0f"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "RodericSlamHitVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
+        "asset_guid": "b856194664a6e4b4da8f1c47c5a0e765"
+      },
+      "spawn_location": "character_center"
     }
   ],
   "upgrades": [
@@ -296,7 +379,7 @@
     },
     {
       "id": "upg_Wall2",
-      "ability_upgrade": "@RodericSlam",
+      "ability_upgrade": "@RodericSlam2",
       "titles": {
         "english": "Shield Wall II"
       },
@@ -319,7 +402,7 @@
     },
     {
       "id": "upg_Wall3",
-      "ability_upgrade": "@RodericSlam",
+      "ability_upgrade": "@RodericSlam3",
       "titles": {
         "english": "Shield Wall III"
       },

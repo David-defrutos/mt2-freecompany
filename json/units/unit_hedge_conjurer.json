@@ -41,6 +41,12 @@
         "@Sub_Wizard",
         "@Sub_Goblin"
       ],
+      "starting_status_effects": [
+        {
+          "status": "mageblade",
+          "count": 2
+        }
+      ],
       "triggers": [
         {
           "id": "@HedgeConjurerTrigger"

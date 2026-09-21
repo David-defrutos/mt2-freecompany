@@ -24,6 +24,26 @@
       "pools": [
         "MegaPool"
       ]
+    },
+    {
+      "id": "BountyHunterShot",
+      "names": {
+        "english": "Claim the Bounty"
+      },
+      "descriptions": {
+        "english": "Attack an enemy unit of your choice on any floor."
+      },
+      "card_art": "@BountyHunter",
+      "is_an_ability": true,
+      "cooldown": 1,
+      "initial_cooldown": 1,
+      "targetless": false,
+      "targets_room": false,
+      "can_ability_target_other_floors": true,
+      "card_type": "spell",
+      "effects": [
+        "@BountyHunterShotAttack"
+      ]
     }
   ],
   "characters": [
@@ -51,7 +71,8 @@
           "status": "ambush",
           "count": 1
         }
-      ]
+      ],
+      "ability": "@BountyHunterShot"
     }
   ],
   "effects": [
@@ -62,16 +83,24 @@
       "param_character": "@BountyHunter"
     },
     {
-      "id": "BountyHunterAbility",
-      "name": "CardEffectAddStatusEffect",
+      "id": "BountyHunterShotAttack",
+      "name": "CardEffectAttackTargetsWithSelfUnit",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes"
+    },
+    {
+      "id": "BountyHunterCooldown",
+      "name": "CardEffectAdjustAbilityCooldown",
       "target_mode": "self",
       "target_team": "monsters",
-      "param_status_effects": [
-        {
-          "status": "avarice",
-          "count": 3
-        }
-      ]
+      "param_int": -1
+    },
+    {
+      "id": "BountyHunterGold",
+      "name": "CardEffectRewardGold",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 5
     }
   ],
   "character_triggers": [
@@ -79,10 +108,11 @@
       "id": "BountyHunterTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain <b>3</b> [avarice]."
+        "english": "Reduce this unit's ability cooldown by <b>1</b> and gain <b>5</b> [coin]."
       },
       "effects": [
-        "@BountyHunterAbility"
+        "@BountyHunterCooldown",
+        "@BountyHunterGold"
       ]
     }
   ],

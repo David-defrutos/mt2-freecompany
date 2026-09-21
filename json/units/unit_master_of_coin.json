@@ -48,6 +48,9 @@
           "count": 3
         }
       ],
+      "room_modifiers": [
+        "@MasterOfCoinGoldAttack"
+      ],
       "triggers": [
         {
           "id": "@MasterOfCoinAvariceTrigger"
@@ -84,6 +87,17 @@
       "target_team": "monsters",
       "param_upgrade": "@MasterOfCoinCelebrateUpgrade",
       "param_int_3": 2
+    }
+  ],
+  "room_modifiers": [
+    {
+      "id": "MasterOfCoinGoldAttack",
+      "name": "RoomStateSelfDamagePerGoldModifier",
+      "descriptions": {
+        "english": "+[power][attack] per [secondarypower][coin] you started the turn with."
+      },
+      "param_int": 5,
+      "param_int_2": 100
     }
   ],
   "sprites": [
@@ -131,7 +145,7 @@
   "character_triggers": [
     {
       "id": "MasterOfCoinAvariceTrigger",
-      "trigger": "on_turn_begin",
+      "trigger": "on_team_turn_begin",
       "descriptions": {
         "english": "Apply <b>1</b> [avarice] to all friendly units in this room."
       },

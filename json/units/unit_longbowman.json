@@ -24,6 +24,24 @@
       "pools": [
         "UnitsAllBanner"
       ]
+    },
+    {
+      "id": "LongbowmanShiftAim",
+      "names": {
+        "english": "Shift Aim"
+      },
+      "descriptions": {
+        "english": "This unit loses <b>Sniper</b> until the start of your next turn, and attacks the front enemy instead."
+      },
+      "card_art": "@Longbowman",
+      "is_an_ability": true,
+      "cooldown": 1,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@LongbowmanSniperOff"
+      ]
     }
   ],
   "characters": [
@@ -55,6 +73,12 @@
           "status": "ambush",
           "count": 1
         }
+      ],
+      "ability": "@LongbowmanShiftAim",
+      "triggers": [
+        {
+          "id": "@LongbowmanSniperBack"
+        }
       ]
     }
   ],
@@ -64,6 +88,42 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "param_character": "@Longbowman"
+    },
+    {
+      "id": "LongbowmanSniperOff",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "sniper",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "LongbowmanSniperOn",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "sniper",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "LongbowmanSniperBack",
+      "trigger": "on_team_turn_begin",
+      "descriptions": {
+        "english": "Regain <b>Sniper</b>."
+      },
+      "effects": [
+        "@LongbowmanSniperOn"
+      ]
     }
   ],
   "sprites": [

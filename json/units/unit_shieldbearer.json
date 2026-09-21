@@ -31,7 +31,7 @@
         "english": "Last Stand"
       },
       "descriptions": {
-        "english": "Deal damage to the enemy in front equal to twice this unit's [health]. This unit is slain."
+        "english": "Deal damage to the enemy in front equal to twice this unit's [health]. Then this unit loses half its remaining [health]."
       },
       "card_art": "@Shieldbearer",
       "is_an_ability": true,
@@ -100,7 +100,7 @@
       "name": "CardEffectDamageByPercentRemainingHealth",
       "target_mode": "self",
       "target_team": "monsters",
-      "param_int": 100
+      "param_int": 50
     }
   ],
   "character_triggers": [
