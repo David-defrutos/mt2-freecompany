@@ -1,6 +1,13 @@
 # Changelog
 
-## 0.1.0 — 2026-09-23 — primera versión pública (ALPHA)
+## 0.2.1 — 2026-09-23
+
+- **Créditos**: el README nombra ahora a Trainworks Reloaded y Conductor, del Monster Train
+  2 Modding Group, sobre los que funciona el clan.
+- Corregida la frase de autoría: lo propio son las cartas, unidades, campeones y reliquias
+  y los efectos a medida del DLL; el resto de efectos son del juego base y de Conductor.
+
+## 0.2.0 — 2026-09-23 — primera versión pública (ALPHA)
 
 Primera subida. El clan carga, se selecciona y se juega de principio a fin, pero se publica
 **sin balancear** y con buena parte del contenido probado solo en mis propias partidas.

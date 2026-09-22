@@ -50,11 +50,16 @@ Units, spells, rooms, equipment and artifacts, built around three pillars: **for
 
 ## Credits and license
 
+Runs on [Trainworks Reloaded](https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded)
+and [Conductor](https://github.com/Monster-Train-2-Modding-Group/Conductor), both by the
+Monster Train 2 Modding Group (MIT). This clan would not exist without them: Trainworks loads
+every card, unit and champion from JSON, and Conductor adds effects the base game does not have.
+
 Built on the scaffolding of [StewardClan](https://github.com/Monster-Train-2-Modding-Group/StewardClan),
 the official example mod by the Monster Train 2 Modding Group — MIT, Copyright (c) 2025.
 Its three card frame textures (`BorderUnit`, `BorderSpell`, `BorderEquipmentRoom`) are still
-in use here and are their work. Everything else — cards, units, champions, relics, effects —
-is my own. Full licence in `LICENSE`, detail in `NOTICE.md`.
+in use here and are their work. Everything else — the cards, units, champions and relics, and
+the custom effects in the DLL — is my own. Full licence in `LICENSE`, detail in `NOTICE.md`.
 
 ---
 
@@ -113,8 +118,13 @@ Unidades, hechizos, salas, equipo y artefactos, alrededor de tres pilares: **for
 
 ## Créditos y licencia
 
+Funciona sobre [Trainworks Reloaded](https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded)
+y [Conductor](https://github.com/Monster-Train-2-Modding-Group/Conductor), los dos del
+Monster Train 2 Modding Group (MIT). Sin ellos este clan no existiría: Trainworks carga desde
+JSON cada carta, unidad y campeón, y Conductor añade efectos que el juego base no tiene.
+
 Parte del andamiaje de [StewardClan](https://github.com/Monster-Train-2-Modding-Group/StewardClan),
 el mod de ejemplo oficial del Monster Train 2 Modding Group — MIT, Copyright (c) 2025. Sus
 tres texturas de marco de carta (`BorderUnit`, `BorderSpell`, `BorderEquipmentRoom`) siguen
-en uso aquí y son obra suya. Todo lo demás —cartas, unidades, campeones, reliquias,
-efectos— es propio. Licencia completa en `LICENSE`, detalle en `NOTICE.md`.
+en uso aquí y son obra suya. Todo lo demás —las cartas, unidades, campeones y reliquias, y
+los efectos a medida del DLL— es propio. Licencia completa en `LICENSE`, detalle en `NOTICE.md`.
