@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.1 — 2026-09-23
+## 0.2.2 — 2026-09-23
 
 - **Créditos**: el README nombra ahora a Trainworks Reloaded y Conductor, del Monster Train
   2 Modding Group, sobre los que funciona el clan.

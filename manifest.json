@@ -2,7 +2,7 @@
   "namespace": "frutos",
   "name": "FreeCompany",
   "description": "ALPHA. Adds The Free Company: a mercenary clan built on formation, loot and gold. Playable but unfinished - bug reports and balance feedback very welcome.",
-  "version_number": "0.2.1",
+  "version_number": "0.2.2",
   "dependencies": [
     "BepInEx-BepInExPack-5.4.2100",
     "MT2-Trainworks_Reloaded-0.7.25",
