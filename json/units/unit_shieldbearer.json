@@ -52,9 +52,9 @@
         "english": "Shieldbearer"
       },
       "character_art": "@ShieldbearerCharacterArt",
-      "size": 1,
-      "attack_damage": 5,
-      "health": 25,
+      "size": 2,
+      "attack_damage": 6,
+      "health": 30,
       "subtypes": [
         "SubtypesData_BannerUnit",
         "@Sub_Melee",

@@ -1,0 +1,61 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "KitBash",
+      "names": {
+        "english": "Kit Bash"
+      },
+      "descriptions": {
+        "english": "Add a random tier <b>I</b> piece of kit to your hand."
+      },
+      "card_art": "@KitBash",
+      "cost": 0,
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "@ClassFreeCompany",
+      "targets_room": false,
+      "targetless": true,
+      "effects": [
+        "@KitBashDraw"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Whatever was on top of the pile."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "KitBashDraw",
+      "name": "CardEffectAddBattleCard",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_card_pool": "@FreeCompanyKitPoolI",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_bool": true
+    }
+  ],
+  "sprites": [
+    {
+      "id": "KitBash",
+      "path": "textures/KitBashArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "KitBash",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@KitBash"
+        }
+      }
+    }
+  ]
+}

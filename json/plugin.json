@@ -235,6 +235,17 @@
       ]
     },
     {
+      "id": "FreeCompanyKitPoolI",
+      "cards": [
+        "@NotchedAxe",
+        "@Bandages",
+        "@Shortbow",
+        "@Lockpicks",
+        "@Buckler",
+        "@ChalkCircle"
+      ]
+    },
+    {
       "id": "FreeCompanyKitPoolIII",
       "cards": [
         "@ReaversMaul",

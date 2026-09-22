@@ -1,0 +1,76 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SeverancePay",
+      "names": {
+        "english": "Severance Pay"
+      },
+      "descriptions": {
+        "english": "Gain <b>150</b> gold. Your Pyre takes <b>5</b> damage for every Ring left, this one included."
+      },
+      "card_art": "@SeverancePay",
+      "cost": 0,
+      "card_type": "spell",
+      "rarity": "uncommon",
+      "class": "@ClassFreeCompany",
+      "targets_room": false,
+      "targetless": true,
+      "traits": [
+        "@SeverancePayPurge"
+      ],
+      "effects": [
+        "@SeverancePayPyreDamage",
+        "@SeverancePayGold"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Paid in full. Don't come back."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SeverancePayPyreDamage",
+      "name": "@CardEffectRingPyreDamage",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 5,
+      "param_int_2": 11
+    },
+    {
+      "id": "SeverancePayGold",
+      "name": "CardEffectRewardGold",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 150
+    }
+  ],
+  "traits": [
+    {
+      "id": "SeverancePayPurge",
+      "name": "CardTraitSelfPurge"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SeverancePay",
+      "path": "textures/SeverancePayArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "SeverancePay",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@SeverancePay"
+        }
+      }
+    }
+  ]
+}

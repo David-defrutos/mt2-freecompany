@@ -61,36 +61,6 @@
   ],
   "character_triggers": [
     {
-      "id": "GrimoireTrigger1",
-      "trigger": "card_spell_played",
-      "descriptions": {
-        "english": "Gain <b>+1</b> [attack] for the rest of combat."
-      },
-      "effects": [
-        "@GrimoireBuff1"
-      ]
-    },
-    {
-      "id": "GrimoireTrigger2",
-      "trigger": "card_spell_played",
-      "descriptions": {
-        "english": "Gain <b>+2</b> [attack] for the rest of combat."
-      },
-      "effects": [
-        "@GrimoireBuff2"
-      ]
-    },
-    {
-      "id": "GrimoireTrigger3",
-      "trigger": "card_spell_played",
-      "descriptions": {
-        "english": "Gain <b>+4</b> [attack] for the rest of combat."
-      },
-      "effects": [
-        "@GrimoireBuff3"
-      ]
-    },
-    {
       "id": "GrimoireStarterTrigger",
       "trigger": "pre_combat",
       "descriptions": {
@@ -112,27 +82,6 @@
     }
   ],
   "effects": [
-    {
-      "id": "GrimoireBuff1",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_upgrade": "@GrimoireUpgrade1"
-    },
-    {
-      "id": "GrimoireBuff2",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_upgrade": "@GrimoireUpgrade2"
-    },
-    {
-      "id": "GrimoireBuff3",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_upgrade": "@GrimoireUpgrade3"
-    },
     {
       "id": "GrimoireStarterCard",
       "name": "CardEffectAddBattleCard",
@@ -176,28 +125,15 @@
   ],
   "upgrades": [
     {
-      "id": "GrimoireUpgrade1",
-      "bonus_damage": 1
-    },
-    {
-      "id": "GrimoireUpgrade2",
-      "bonus_damage": 2
-    },
-    {
-      "id": "GrimoireUpgrade3",
-      "bonus_damage": 4
-    },
-    {
       "id": "upg_Grimoire1",
       "titles": {
         "english": "Grimoire"
       },
       "descriptions": {
-        "english": "Grows with every spell."
+        "english": "Free spells, every turn."
       },
       "bonus_damage": 4,
       "trigger_upgrades": [
-        "@GrimoireTrigger1",
         "@GrimoireStarterTrigger",
         "@GrimoireCelebrate"
       ],
@@ -209,14 +145,13 @@
         "english": "Grimoire II"
       },
       "descriptions": {
-        "english": "Grows with every spell."
+        "english": "Free spells, every turn."
       },
       "bonus_damage": 10,
       "remove_upgrades": [
         "@upg_Grimoire1"
       ],
       "trigger_upgrades": [
-        "@GrimoireTrigger2",
         "@GrimoireStarterTrigger",
         "@GrimoireCelebrate"
       ],
@@ -228,14 +163,13 @@
         "english": "Grimoire III"
       },
       "descriptions": {
-        "english": "Grows with every spell."
+        "english": "Free spells, every turn."
       },
       "bonus_damage": 18,
       "remove_upgrades": [
         "@upg_Grimoire2"
       ],
       "trigger_upgrades": [
-        "@GrimoireTrigger3",
         "@GrimoireStarterTrigger",
         "@GrimoireCelebrate"
       ],

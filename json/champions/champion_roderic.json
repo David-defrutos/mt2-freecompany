@@ -31,9 +31,9 @@
       },
       "character_art": "@RodericCharacterArt",
       "chatter": "@CTR_Roderic",
-      "size": 1,
+      "size": 2,
       "attack_damage": 8,
-      "health": 30,
+      "health": 36,
       "death_type": "large",
       "subtypes": [
         "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34",

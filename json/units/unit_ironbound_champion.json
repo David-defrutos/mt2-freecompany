@@ -53,7 +53,7 @@
         "english": "Ironbound Champion"
       },
       "character_art": "@IronboundChampionCharacterArt",
-      "size": 1,
+      "size": 2,
       "attack_damage": 10,
       "health": 40,
       "subtypes": [

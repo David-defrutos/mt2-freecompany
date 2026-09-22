@@ -33,9 +33,9 @@
         "english": "Berserker"
       },
       "character_art": "@BerserkerCharacterArt",
-      "size": 1,
+      "size": 2,
       "attack_damage": 12,
-      "health": 12,
+      "health": 16,
       "subtypes": [
         "SubtypesData_BannerUnit",
         "@Sub_Melee",

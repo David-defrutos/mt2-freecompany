@@ -72,6 +72,9 @@ namespace mt2_freecompany.Plugin
                         "json/spells/spell_silence.json",
                         "json/spells/spell_spoils_of_war.json",
                         "json/spells/spell_web.json",
+                        "json/spells/spell_severance_pay.json",
+                        "json/spells/spell_kit_bash.json",
+                        "json/spells/spell_double_shift.json",
                         "json/rooms/room_caltrops.json",
                         "json/rooms/room_paymasters_tent.json",
                         "json/rooms/room_rope_and_grapple.json",
@@ -112,3 +115,4 @@ namespace mt2_freecompany.Plugin
 // 2026-09-20-2308||claude-mt2-the-free-company2-roderic-quartermaster||src/Plugin.cs||fuera la ruta json/kits/spell_requisition.json
 // 2026-09-21-2035||claude-mt2-the-free-company2-varios||src/Plugin.cs||alta de la ruta json/equipment/equip_letter_of_credit.json: 71 --> 72 rutas
 // 2026-09-21-2210||claude-mt2-the-free-company2-varios||src/Plugin.cs||ruta equip_letter_of_credit.json --> equip_widows_pension.json; alta de json/units/unit_the_new_guy.json: 72 --> 73 rutas
+// 2026-09-22-2219||claude-mt2-the-free-company2-roderic-quartermaster||src/Plugin.cs||alta de json/spells/spell_severance_pay.json, spell_kit_bash.json y spell_double_shift.json: 73 --> 76 rutas
