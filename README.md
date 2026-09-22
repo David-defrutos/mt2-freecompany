@@ -1,7 +1,7 @@
 # The Free Company
 
-A clan of D&D mercenaries for Monster Train 2: sellswords and hedge-mages who took the
-last contract on offer. Martial steel and arcane craft, paid up front.
+A mercenary clan for Monster Train 2: sellswords and hedge-mages who took the last
+contract on offer. Martial steel and arcane craft, paid up front.
 
 ## ⚠ ALPHA
 
@@ -46,7 +46,6 @@ Units, spells, rooms, equipment and artifacts, built around three pillars: **for
 ## Known rough edges
 
 - **Balance is unmeasured.** Some cards have never been drafted in a real run.
-- The card art is AI-generated. The five trolls still carry rough placeholders.
 - The three card frames are still the ones from StewardClan (see credits).
 
 ## Credits and license
@@ -61,7 +60,7 @@ is my own. Full licence in `LICENSE`, detail in `NOTICE.md`.
 
 # The Free Company
 
-Un clan de mercenarios de D&D para Monster Train 2: espadas de alquiler y magos de seto que
+Un clan de mercenarios para Monster Train 2: espadas de alquiler y magos de seto que
 aceptaron el último contrato que quedaba. Acero y magia, cobrado por adelantado.
 
 ## ⚠ ALPHA
@@ -110,8 +109,6 @@ Unidades, hechizos, salas, equipo y artefactos, alrededor de tres pilares: **for
 ## Lo que ya sé que está verde
 
 - **El equilibrio está sin medir.** Hay cartas que no se han drafteado nunca en una partida.
-- El arte de carta está generado con IA. Los cinco trolls llevan todavía un marcador de
-  posición tosco.
 - Los tres marcos de carta siguen siendo los de StewardClan (ver créditos).
 
 ## Créditos y licencia

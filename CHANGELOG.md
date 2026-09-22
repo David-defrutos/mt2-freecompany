@@ -17,7 +17,6 @@ Primera subida. El clan carga, se selecciona y se juega de principio a fin, pero
 ### Lo que falta, y por eso es alpha
 
 - El equilibrio está sin medir: hay cartas que no se han drafteado nunca.
-- Los cinco trolls llevan todavía un marcador de posición por arte de carta.
 - Los tres marcos de carta son todavía los de StewardClan.
 
 ### Se agradece

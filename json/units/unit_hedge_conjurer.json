@@ -24,6 +24,28 @@
       "pools": [
         "MegaPool"
       ]
+    },
+    {
+      "id": "ConjurerVolatile",
+      "names": {
+        "english": "Volatile Reagents"
+      },
+      "descriptions": {
+        "english": "Draw a damage spell. It becomes <b>Explosive</b>."
+      },
+      "rarity": "common",
+      "card_art": "@HedgeConjurer",
+      "is_an_ability": true,
+      "cooldown": 5,
+      "initial_cooldown": 4,
+      "targetless": false,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@ConjurerVolatileMark",
+        "@ConjurerVolatileDraw"
+      ],
+      "initial_keyboard_target": "front_friendly"
     }
   ],
   "characters": [
@@ -51,7 +73,8 @@
         {
           "id": "@HedgeConjurerTrigger"
         }
-      ]
+      ],
+      "ability": "@ConjurerVolatile"
     }
   ],
   "effects": [
@@ -72,6 +95,17 @@
           "count": 1
         }
       ]
+    },
+    {
+      "id": "ConjurerVolatileMark",
+      "name": "CardEffectAddTempCardUpgradeToNextDrawnCard",
+      "param_upgrade": "@ExplosiveSpell"
+    },
+    {
+      "id": "ConjurerVolatileDraw",
+      "name": "CardEffectDrawType",
+      "param_card_filter": "@DamageSpellMask",
+      "param_int": 1
     }
   ],
   "character_triggers": [
@@ -126,6 +160,45 @@
           }
         }
       }
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "DamageSpellMask",
+      "card_type": "spell",
+      "cost_range": {
+        "x": 0,
+        "y": 99
+      },
+      "required_effects": [
+        "CardEffectDamage",
+        "CardEffectDamageByPercentRemainingHealth",
+        "CardEffectDamageByUnitsKilled",
+        "CardEffectDamagePerHp",
+        "CardEffectDamagePerSourceAttack",
+        "CardEffectDamagePerTargetAttack",
+        "CardEffectDamageWithTrample",
+        "CardEffectHealAndDamageRelative"
+      ],
+      "required_effects_operator": "or"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ExplosiveSpell",
+      "titles": {
+        "english": "Volatile"
+      },
+      "trait_upgrades": [
+        "@ExplosiveOverflow"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "ExplosiveOverflow",
+      "name": "CardTraitDamageOverflow",
+      "param_int": 2
     }
   ]
 }
