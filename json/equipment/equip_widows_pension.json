@@ -7,7 +7,7 @@
         "english": "Widow's Pension"
       },
       "descriptions": {
-        "english": "<b>Extinguish</b>: summon a <b>Free Lance</b> on this floor."
+        "english": "<b>Extinguish</b>: gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>."
       },
       "card_art": "@WidowsPension",
       "cost": 1,
@@ -38,11 +38,11 @@
       "param_upgrade": "@UpgWidowsPension"
     },
     {
-      "id": "WidowsPensionSummon",
-      "name": "CardEffectSpawnMonster",
-      "target_mode": "room",
+      "id": "WidowsPensionGold",
+      "name": "@CardEffectWidowsPension",
+      "target_mode": "self",
       "target_team": "monsters",
-      "param_character": "@FreeLance"
+      "param_int": 5
     }
   ],
   "upgrades": [
@@ -52,7 +52,7 @@
         "english": "Widow's Pension"
       },
       "descriptions": {
-        "english": "<b>Extinguish</b>: summon a <b>Free Lance</b> on this floor."
+        "english": "<b>Extinguish</b>: gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>."
       },
       "icon": "@WidowsPension",
       "trigger_upgrades": [
@@ -65,10 +65,10 @@
       "id": "WidowsPensionTrigger",
       "trigger": "on_death",
       "descriptions": {
-        "english": "Summon a <b>Free Lance</b> on this floor."
+        "english": "Gain [coin] equal to this unit's base [attack] + [health], rounded to <b>5</b>."
       },
       "effects": [
-        "@WidowsPensionSummon"
+        "@WidowsPensionGold"
       ]
     }
   ],

@@ -56,7 +56,7 @@
         {
           "id": "RodericChampion",
           "card_data": "@SpawnRoderic",
-          "starter_card": "@ShieldWall",
+          "starter_card": "@SeverancePay",
           "upgrade_tree": [
             [
               "@upg_Wall1",
@@ -490,6 +490,12 @@
       "id": "FreeCompanyTestEmber",
       "name": "RelicEffectModifyEnergy",
       "param_int": 10
+    },
+    {
+      "id": "FreeCompanyTestGold",
+      "name": "RelicEffectModifyGoldEndOfBattle",
+      "param_int": 500,
+      "param_bool": false
     }
   ],
   "relics": [
@@ -500,14 +506,15 @@
         "english": "Test Orders"
       },
       "descriptions": {
-        "english": "TEST: <b>+10</b> [ember] every turn."
+        "english": "TEST: <b>+10</b> [ember] every turn. Gain <b>500</b> [coin] after each battle."
       },
       "relic_activated_texts": {
         "english": "Test orders."
       },
       "lore_style": "herzal",
       "relic_effects": [
-        "@FreeCompanyTestEmber"
+        "@FreeCompanyTestEmber",
+        "@FreeCompanyTestGold"
       ],
       "icon": "@FreeCompanyIconRegular",
       "icon_small": "@FreeCompanyIconSmall",

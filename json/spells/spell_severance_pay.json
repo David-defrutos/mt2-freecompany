@@ -12,7 +12,7 @@
       "card_art": "@SeverancePay",
       "cost": 0,
       "card_type": "spell",
-      "rarity": "uncommon",
+      "rarity": "common",
       "class": "@ClassFreeCompany",
       "targets_room": false,
       "targetless": true,
@@ -29,7 +29,7 @@
         }
       ],
       "pools": [
-        "MegaPool"
+        "StarterCardsOnly"
       ]
     }
   ],

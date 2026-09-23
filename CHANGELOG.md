@@ -20,6 +20,9 @@ Correcciones tras la primera partida con las cartas nuevas.
   - **Delayed Blast Fireball** aplica **Fuse 2**: al perder la última, **100** de daño
     **Explosive**. Se puede lanzar a jefes. El daño se calcula al lanzar la carta, con sus
     mejoras.
+- **Widow's Pension**: ya no invoca un Free Lance (el sustituto heredaba la pensión y se
+  encadenaba sin fin). Ahora, al morir quien la lleva, da oro: ataque + vida de su carta,
+  con las mejoras permanentes y sin el equipo, redondeado a 5.
 - La pantalla de botín ya no enseña un cuadrado blanco en las recompensas de carta del clan.
 
 ## 0.2.2 — 2026-09-23
