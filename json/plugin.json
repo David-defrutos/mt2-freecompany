@@ -20,6 +20,9 @@
       },
       "class_select_character_displays": [],
       "card_style": "@FreeCompany",
+      "starter_relics": [
+        "@FreeCompanyTestDeck"
+      ],
       "ui_color": {
         "r": 0.72,
         "g": 0.55,
@@ -197,6 +200,23 @@
     }
   ],
   "card_pools": [
+    {
+      "id": "FreeCompanyTestDeckPool",
+      "cards": [
+        "@KitBash",
+        "@SeverancePay",
+        "@DimensionDoor",
+        "@DoubleShift",
+        "@RopeAndGrapple",
+        "@SpawnTheNewGuy",
+        "@WidowsPension",
+        "@SpawnBountyHunter",
+        "@DelayedBlastFireball",
+        "@Fireball",
+        "@LightningBolt",
+        "@MassHoldPerson"
+      ]
+    },
     {
       "id": "FreeCompanyBannerCardPool",
       "cards": [
@@ -456,6 +476,49 @@
       "unit_card_frame_sprite": "@FreeCompanyUnitBorder",
       "room_card_frame_sprite": "@FreeCompanyEquipmentRoomBorder",
       "spell_card_frame_sprite": "@FreeCompanySpellBorder"
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "FreeCompanyTestDeckEffect",
+      "name": "RelicEffectAddCardsStartOfRun",
+      "param_card_pool": "@FreeCompanyTestDeckPool",
+      "param_bool": true
+    },
+    {
+      "id": "FreeCompanyTestEmber",
+      "name": "RelicEffectModifyEnergy",
+      "param_int": 10
+    }
+  ],
+  "relics": [
+    {
+      "id": "FreeCompanyTestDeck",
+      "type": "collectable",
+      "names": {
+        "english": "Test Orders"
+      },
+      "descriptions": {
+        "english": "TEST: <b>+10</b> [ember] every turn."
+      },
+      "relic_activated_texts": {
+        "english": "Test orders."
+      },
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@FreeCompanyTestEmber"
+      ],
+      "icon": "@FreeCompanyIconRegular",
+      "icon_small": "@FreeCompanyIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassFreeCompany",
+            "pools": [],
+            "rarity": "common"
+          }
+        }
+      ]
     }
   ],
   "sprites": [

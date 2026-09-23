@@ -37,7 +37,7 @@
     {
       "id": "SeverancePayPyreDamage",
       "name": "@CardEffectRingPyreDamage",
-      "target_mode": "self",
+      "target_mode": "pyre",
       "target_team": "monsters",
       "param_int": 5,
       "param_int_2": 11
@@ -45,7 +45,7 @@
     {
       "id": "SeverancePayGold",
       "name": "CardEffectRewardGold",
-      "target_mode": "self",
+      "target_mode": "pyre",
       "target_team": "monsters",
       "param_int": 150
     }

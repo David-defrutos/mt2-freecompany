@@ -58,7 +58,7 @@
       "in_play_descriptions": {
         "english": "Equipment cards cost <b>0</b> on this floor."
       },
-      "param_int": 0
+      "param_int": -10
     }
   ],
   "effects": [

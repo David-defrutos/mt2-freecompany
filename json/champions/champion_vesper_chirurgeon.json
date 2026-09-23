@@ -14,7 +14,7 @@
       "cooldown": 5,
       "initial_cooldown": 0,
       "targetless": false,
-      "targets_room": false,
+      "targets_room": true,
       "card_type": "spell",
       "effects": [
         "@ChirurgeonSurgeryUndying"
@@ -33,7 +33,7 @@
       "cooldown": 4,
       "initial_cooldown": 0,
       "targetless": false,
-      "targets_room": false,
+      "targets_room": true,
       "card_type": "spell",
       "effects": [
         "@ChirurgeonSurgeryUndying"
@@ -52,7 +52,7 @@
       "cooldown": 3,
       "initial_cooldown": 0,
       "targetless": false,
-      "targets_room": false,
+      "targets_room": true,
       "card_type": "spell",
       "effects": [
         "@ChirurgeonSurgeryUndying"

@@ -33,8 +33,6 @@
     {
       "id": "KitBashDraw",
       "name": "CardEffectAddBattleCard",
-      "target_mode": "self",
-      "target_team": "monsters",
       "param_card_pool": "@FreeCompanyKitPoolI",
       "param_int": 3,
       "param_int_2": 1,

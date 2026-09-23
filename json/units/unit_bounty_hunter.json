@@ -38,7 +38,7 @@
       "cooldown": 1,
       "initial_cooldown": 1,
       "targetless": false,
-      "targets_room": false,
+      "targets_room": true,
       "can_ability_target_other_floors": true,
       "card_type": "spell",
       "effects": [
@@ -64,6 +64,12 @@
       "triggers": [
         {
           "id": "@BountyHunterTrigger"
+        },
+        {
+          "id": "@BountyHunterPreAbility"
+        },
+        {
+          "id": "@BountyHunterAfterAbility"
         }
       ],
       "starting_status_effects": [
@@ -90,10 +96,24 @@
     },
     {
       "id": "BountyHunterCooldown",
-      "name": "CardEffectAdjustAbilityCooldown",
+      "name": "@CardEffectRefreshAbilityOnKill",
       "target_mode": "self",
       "target_team": "monsters",
-      "param_int": -1
+      "param_int": 1
+    },
+    {
+      "id": "BountyHunterMarkAbility",
+      "name": "@CardEffectRefreshAbilityOnKill",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 0
+    },
+    {
+      "id": "BountyHunterRefreshAbility",
+      "name": "@CardEffectRefreshAbilityOnKill",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 2
     },
     {
       "id": "BountyHunterGold",
@@ -108,11 +128,27 @@
       "id": "BountyHunterTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Reduce this unit's ability cooldown by <b>1</b> and gain [effect1.power] [coin]."
+        "english": "Its ability is ready again. Gain [effect1.power] [coin]."
       },
       "effects": [
         "@BountyHunterCooldown",
         "@BountyHunterGold"
+      ]
+    },
+    {
+      "id": "BountyHunterPreAbility",
+      "trigger": "on_pre_own_ability_activated",
+      "hide_visual_and_ignore_silence": true,
+      "effects": [
+        "@BountyHunterMarkAbility"
+      ]
+    },
+    {
+      "id": "BountyHunterAfterAbility",
+      "trigger": "on_own_ability_activated",
+      "hide_visual_and_ignore_silence": true,
+      "effects": [
+        "@BountyHunterRefreshAbility"
       ]
     }
   ],

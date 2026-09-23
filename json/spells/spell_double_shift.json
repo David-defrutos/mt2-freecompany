@@ -56,13 +56,6 @@
           "count": 1
         }
       ]
-    },
-    {
-      "id": "DoubleShiftClear",
-      "name": "CardEffectRemoveTempUpgradeFromUnit",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_upgrade": "@DoubleShiftOvertime"
     }
   ],
   "upgrades": [
@@ -87,9 +80,9 @@
         "english": "Gain <b>1</b> [dazed]."
       },
       "effects": [
-        "@DoubleShiftDaze",
-        "@DoubleShiftClear"
-      ]
+        "@DoubleShiftDaze"
+      ],
+      "trigger_once": true
     }
   ],
   "sprites": [

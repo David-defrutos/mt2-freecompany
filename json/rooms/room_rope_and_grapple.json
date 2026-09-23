@@ -7,7 +7,7 @@
         "english": "Rope & Grapple"
       },
       "descriptions": {
-        "english": "Friendly units on this floor have <b>1</b> [haste]."
+        "english": "After combat, friendly units on this floor climb to the floor above."
       },
       "card_art": "@RopeAndGrapple",
       "cost": 1,
@@ -39,13 +39,10 @@
         "english": "Rope & Grapple"
       },
       "descriptions": {
-        "english": "Friendly units on this floor have <b>1</b> [haste]."
+        "english": "After combat, friendly units on this floor climb to the floor above."
       },
-      "status_effect_upgrades": [
-        {
-          "status": "haste",
-          "count": 1
-        }
+      "trigger_upgrades": [
+        "@RopeAndGrappleClimbTrigger"
       ],
       "hide_icon_on_card": true,
       "icon": "@RopeAndGrapple"
@@ -60,6 +57,25 @@
       "param_upgrade": "@RopeAndGrappleRoomUpgrade",
       "param_bool": false,
       "param_bool_2": false
+    },
+    {
+      "id": "RopeAndGrappleClimb",
+      "name": "CardEffectBump",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 1
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "RopeAndGrappleClimbTrigger",
+      "trigger": "post_combat",
+      "descriptions": {
+        "english": "Climb to the floor above."
+      },
+      "effects": [
+        "@RopeAndGrappleClimb"
+      ]
     }
   ],
   "sprites": [
