@@ -81,6 +81,9 @@ namespace mt2_freecompany.Plugin
     /// </summary>
     public class CardEffectPlantCountdown : CardEffectDamage
     {
+        // Solo para escribir una vez en el log que la vista previa se salta la tabla.
+        private static bool avisoPrevia;
+
         public override IEnumerator ApplyEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers, ISystemManagers sysManagers)
         {
             // Modificado por las mejoras de la carta: es lo que se hereda de CardEffectDamage.
@@ -106,6 +109,11 @@ namespace mt2_freecompany.Plugin
                 // En previa solo se pone el estado, para que se vea; la tabla no se toca.
                 if (unidad.PreviewMode)
                 {
+                    if (!avisoPrevia)
+                    {
+                        avisoPrevia = true;
+                        Countdowns.Log("PlantCountdown: [previa sin acumular] la vista previa pone el estado pero no apunta dano.");
+                    }
                     foreach (var e in estados)
                     {
                         if (e != null && !string.IsNullOrEmpty(e.statusId)) unidad.AddStatusEffect(e.statusId, e.count);
@@ -253,3 +261,4 @@ namespace mt2_freecompany.Plugin
 }
 // 2026-09-23-2130||claude-mt2-the-free-company2-mazo-pruebas||src/code/CountdownOnFloorChange.cs||fichero nuevo: CardEffectPlantCountdown (hereda de CardEffectDamage), CardEffectCountdownTick y StatusEffectFreeCompanyCountdownState, para Banished y Fuse
 // 2026-09-23-2155||claude-mt2-the-free-company2-mazo-pruebas||src/code/CountdownOnFloorChange.cs||PlantCountdown: en PreviewMode no se apunta el dano (la previa lo acumulaba: 100 -> 300)
+// 2026-09-23-2210||claude-mt2-the-free-company2-mazo-pruebas||src/code/CountdownOnFloorChange.cs||literal de log "[previa sin acumular]" (una vez por sesion) como marca de compilacion: un comentario no llega al DLL

@@ -4,7 +4,7 @@
     {
       "id": "RodericRequisition",
       "names": {
-        "english": "Requisition"
+        "english": "Requisition I"
       },
       "descriptions": {
         "english": "Add the <b>I</b> kit for that unit's role to your hand."
@@ -22,7 +22,7 @@
     {
       "id": "RodericRequisition2",
       "names": {
-        "english": "Requisition"
+        "english": "Requisition II"
       },
       "descriptions": {
         "english": "Add the <b>II</b> kit for that unit's role to your hand."
@@ -40,7 +40,7 @@
     {
       "id": "RodericRequisition3",
       "names": {
-        "english": "Requisition"
+        "english": "Requisition III"
       },
       "descriptions": {
         "english": "Add the <b>III</b> kit for that unit's role to your hand."

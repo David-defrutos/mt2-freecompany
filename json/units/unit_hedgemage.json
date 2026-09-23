@@ -24,6 +24,29 @@
       "pools": [
         "UnitsAllBanner"
       ]
+    },
+    {
+      "id": "HedgeMageVolley",
+      "names": {
+        "english": "Arcane Volley"
+      },
+      "descriptions": {
+        "english": "Deal <b>2</b> damage per [mt2_freecompany.Plugin_arcane_charge] to <b>3</b> random enemies on this floor, then lose all [mt2_freecompany.Plugin_arcane_charge]."
+      },
+      "rarity": "common",
+      "card_art": "@HedgeMage",
+      "is_an_ability": true,
+      "cooldown": 1,
+      "targetless": true,
+      "card_type": "spell",
+      "effects": [
+        "@HedgeMageVolleyGate",
+        "@HedgeMageBolt1",
+        "@HedgeMageBolt2",
+        "@HedgeMageBolt3",
+        "@HedgeMageSpend"
+      ],
+      "initial_keyboard_target": "front_friendly"
     }
   ],
   "characters": [
@@ -46,7 +69,8 @@
         {
           "id": "@HedgeMageSpellTrigger"
         }
-      ]
+      ],
+      "ability": "@HedgeMageVolley"
     }
   ],
   "effects": [
@@ -57,25 +81,73 @@
       "param_character": "@HedgeMage"
     },
     {
+      "id": "HedgeMageVolleyGate",
+      "name": {
+        "id": "@CardEffectRequireStatusThreshold",
+        "mod_reference": "Conductor"
+      },
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_bool": true,
+      "param_status_effects": [
+        {
+          "status": "@arcane_charge",
+          "count": 1
+        }
+      ],
+      "should_fail_to_cast_if_test_fails": true,
+      "should_cancel_subsequent_effects_if_test_fails": true
+    },
+    {
       "id": "HedgeMageBolt1",
       "name": "CardEffectDamage",
       "target_mode": "random_in_room",
       "target_team": "heroes",
-      "param_int": 2
+      "param_int": 2,
+      "use_status_effect_multiplier": true,
+      "status_effect_multiplier": "@arcane_charge"
     },
     {
       "id": "HedgeMageBolt2",
       "name": "CardEffectDamage",
       "target_mode": "random_in_room",
       "target_team": "heroes",
-      "param_int": 2
+      "param_int": 2,
+      "use_status_effect_multiplier": true,
+      "status_effect_multiplier": "@arcane_charge"
     },
     {
       "id": "HedgeMageBolt3",
       "name": "CardEffectDamage",
       "target_mode": "random_in_room",
       "target_team": "heroes",
-      "param_int": 2
+      "param_int": 2,
+      "use_status_effect_multiplier": true,
+      "status_effect_multiplier": "@arcane_charge"
+    },
+    {
+      "id": "HedgeMageSpend",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "@arcane_charge",
+          "count": 99
+        }
+      ]
+    },
+    {
+      "id": "HedgeMageGainCharge",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "@arcane_charge",
+          "count": 1
+        }
+      ]
     }
   ],
   "character_triggers": [
@@ -83,12 +155,10 @@
       "id": "HedgeMageSpellTrigger",
       "trigger": "card_spell_played",
       "descriptions": {
-        "english": "Deal <b>2</b> damage to <b>3</b> random enemies."
+        "english": "Gain <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge]."
       },
       "effects": [
-        "@HedgeMageBolt1",
-        "@HedgeMageBolt2",
-        "@HedgeMageBolt3"
+        "@HedgeMageGainCharge"
       ]
     }
   ],
@@ -100,6 +170,10 @@
     {
       "id": "HedgeMageCharacterArt",
       "path": "textures/HedgeMageCharacterArt.png"
+    },
+    {
+      "id": "StatusArcaneCharge",
+      "path": "textures/StatusArcaneCharge.png"
     }
   ],
   "game_objects": [
@@ -132,6 +206,42 @@
           }
         }
       }
+    }
+  ],
+  "status_effects": [
+    {
+      "id": "arcane_charge",
+      "class_name": "@StatusEffectFreeCompanyCountdownState",
+      "names": {
+        "english": "Arcane Charge"
+      },
+      "stackable_names": {
+        "english": "<nobr>Arcane Charge {0}</nobr>"
+      },
+      "card_tooltips": {
+        "english": "Stored power for Arcane Volley."
+      },
+      "character_tooltips": {
+        "english": "Stored power for Arcane Volley."
+      },
+      "replacement_texts": {
+        "english": "<b>Arcane Charge</b>"
+      },
+      "notifications": {
+        "english": "Arcane Charge"
+      },
+      "display_category": "positive",
+      "trigger_stage": "none",
+      "is_stackable": true,
+      "remove_stack_at_end_of_turn": false,
+      "param_int": 0,
+      "icon": "@StatusArcaneCharge"
+    }
+  ],
+  "atlas_icons": [
+    {
+      "id": "StatusArcaneCharge",
+      "path": "textures/StatusArcaneCharge.png"
     }
   ]
 }

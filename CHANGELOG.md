@@ -4,6 +4,12 @@
 
 Correcciones tras la primera partida con las cartas nuevas.
 
+Gracias a **lostone**, **Brandon**, **fohnjarmery**, **Chéradénine** y al resto de modders del
+canal de Discord por las pruebas y los informes.
+
+- **Dónde avisar de fallos**: Thunderstore no permite comentarios en la ficha. Ahora el README
+  remite a las incidencias de GitHub y al canal de modding del Discord de Monster Train.
+
 - **Kit Bash** y **Severance Pay** ya no dicen *"No valid target"*.
 - **Bounty Hunter**: *Claim the Bounty* ya no cuelga la partida al apuntar a otro piso, y
   ahora cumple lo que dice: si mata, la habilidad vuelve a estar lista. Además es
@@ -23,6 +29,13 @@ Correcciones tras la primera partida con las cartas nuevas.
 - **Widow's Pension**: ya no invoca un Free Lance (el sustituto heredaba la pensión y se
   encadenaba sin fin). Ahora, al morir quien la lleva, da oro: ataque + vida de su carta,
   con las mejoras permanentes y sin el equipo, redondeado a 5.
+- **Hedge-Mage**: rehecho. Cada hechizo le da **1 Arcane Charge**; su habilidad nueva,
+  **Arcane Volley**, hace **2** de daño por carga a **3** enemigos al azar de su piso y gasta
+  las cargas. Antes el daño al azar saltaba al lanzar un hechizo y la vista previa no
+  coincidía con lo que pasaba.
+- **Field Medic**: cura y limpia al **empezar** el turno en lugar de al acabarlo, por el mismo
+  motivo.
+- **Roderic**: las tres habilidades de Quartermaster se llaman ahora Requisition I, II y III.
 - La pantalla de botín ya no enseña un cuadrado blanco en las recompensas de carta del clan.
 
 ## 0.2.2 — 2026-09-23

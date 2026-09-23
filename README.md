@@ -15,7 +15,7 @@ numbers that are off. **If you want a polished experience, wait for a later vers
 Found something, or think a card is absurd in either direction? Either place works:
 
 - GitHub issues: https://github.com/David-defrutos/mt2-freecompany/issues
-- The comments on this Thunderstore page
+- The modding channel on the Monster Train Discord: https://discord.com/channels/336546996779483136/1377778943674810368
 
 A screenshot and what you were doing is plenty. If the game logged something, the file is
 `...\BepInEx\LogOutput.log`.
@@ -47,6 +47,12 @@ Units, spells, rooms, equipment and artifacts, built around three pillars: **for
 
 - **Balance is unmeasured.** Some cards have never been drafted in a real run.
 - The three card frames are still the ones from StewardClan (see credits).
+
+## Thanks
+
+To **lostone**, **Brandon**, **fohnjarmery** and **Chéradénine**, and to the rest of the
+modders in the Discord channel, for testing the clan, reporting what broke and suggesting how
+to fix it. Several of the changes in this version are theirs.
 
 ## Credits and license
 
@@ -82,7 +88,7 @@ desajustados. **Si prefieres jugar sin fallos, espera a una versión más pulida
 vienen bien los dos sitios:
 
 - Incidencias de GitHub: https://github.com/David-defrutos/mt2-freecompany/issues
-- Los comentarios de esta ficha de Thunderstore
+- El canal de modding del Discord de Monster Train: https://discord.com/channels/336546996779483136/1377778943674810368
 
 Con una captura y qué estabas haciendo me sobra. Si el juego escribió algo, el fichero es
 `...\BepInEx\LogOutput.log`.
@@ -115,6 +121,12 @@ Unidades, hechizos, salas, equipo y artefactos, alrededor de tres pilares: **for
 
 - **El equilibrio está sin medir.** Hay cartas que no se han drafteado nunca en una partida.
 - Los tres marcos de carta siguen siendo los de StewardClan (ver créditos).
+
+## Agradecimientos
+
+A **lostone**, **Brandon**, **fohnjarmery** y **Chéradénine**, y al resto de modders del canal
+de Discord, por probar el clan, avisar de lo que se rompía y proponer cómo arreglarlo. Varios
+de los cambios de esta versión son suyos.
 
 ## Créditos y licencia
 

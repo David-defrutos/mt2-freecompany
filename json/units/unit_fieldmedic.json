@@ -134,7 +134,7 @@
   "character_triggers": [
     {
       "id": "FieldMedicEndTrigger",
-      "trigger": "end_turn_pre_hand_discard",
+      "trigger": "pre_combat",
       "descriptions": {
         "english": "Restore [effect0.power] health to the weakest friendly unit and remove all debuffs from a random debuffed friendly unit."
       },
