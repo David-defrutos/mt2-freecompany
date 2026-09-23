@@ -5,7 +5,7 @@
       "id": "LetterOfMarqueEffect",
       "name": "RelicEffectAddCardsStartOfBattle",
       "param_card_pool": "@FreeCompanyKitPoolIII",
-      "param_bool": true,
+      "param_bool": false,
       "param_bool_2": false,
       "param_bool_3": true
     }

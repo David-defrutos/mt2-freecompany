@@ -21,9 +21,6 @@
       "class_select_character_displays": [],
       "card_draft_icon": "@FreeCompanyCardDraftIcon",
       "card_style": "@FreeCompany",
-      "starter_relics": [
-        "@FreeCompanyTestDeck"
-      ],
       "ui_color": {
         "r": 0.72,
         "g": 0.55,

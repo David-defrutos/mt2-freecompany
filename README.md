@@ -50,9 +50,11 @@ Units, spells, rooms, equipment and artifacts, built around three pillars: **for
 
 ## Thanks
 
-To **lostone**, **Brandon**, **fohnjarmery** and **Chéradénine**, and to the rest of the
-modders in the Discord channel, for testing the clan, reporting what broke and suggesting how
-to fix it. Several of the changes in this version are theirs.
+Big thanks to **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone**, and to everyone else
+on Discord's MT2 mod channel (https://discord.com/channels/336546996779483136/1377778943674810368), for testing The Free Company and pointing out what broke.
+
+Since Thunderstore has no comments, feedback is best on Discord or on GitHub issues:
+https://github.com/David-defrutos/mt2-freecompany/issues
 
 ## Credits and license
 
@@ -124,9 +126,12 @@ Unidades, hechizos, salas, equipo y artefactos, alrededor de tres pilares: **for
 
 ## Agradecimientos
 
-A **lostone**, **Brandon**, **fohnjarmery** y **Chéradénine**, y al resto de modders del canal
-de Discord, por probar el clan, avisar de lo que se rompía y proponer cómo arreglarlo. Varios
-de los cambios de esta versión son suyos.
+Muchas gracias a **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** y a todos los demás
+del canal de mods de MT2 en Discord (https://discord.com/channels/336546996779483136/1377778943674810368) por probar The Free Company y avisar de lo que se
+rompía.
+
+Como Thunderstore no tiene comentarios, lo mejor para dar opiniones es Discord o las
+incidencias de GitHub: https://github.com/David-defrutos/mt2-freecompany/issues
 
 ## Créditos y licencia
 

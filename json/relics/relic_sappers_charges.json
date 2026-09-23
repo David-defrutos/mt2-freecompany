@@ -3,7 +3,10 @@
   "relic_effects": [
     {
       "id": "SappersChargesEffect",
-      "name": "RelicEffectDamageEnemyOnAscend",
+      "name": "RelicEffectDamageEnemyOnFriendlyTrigger",
+      "param_trigger": "post_ascension",
+      "source_team": "monsters",
+      "target_mode": "front_in_room",
       "param_int": 10
     }
   ],
@@ -15,7 +18,7 @@
         "english": "Sapper's Charges"
       },
       "descriptions": {
-        "english": "Whenever a friendly unit ascends a floor, deal <b>10</b> damage to a random enemy."
+        "english": "Whenever a friendly unit ascends a floor, deal <b>10</b> damage to the front enemy on its new floor."
       },
       "relic_activated_texts": {
         "english": "Fire in the hole."

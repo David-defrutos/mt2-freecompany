@@ -4,7 +4,7 @@
     {
       "id": "MarchingOrdersEffect",
       "name": "RelicEffectFirstRoomCardIsPlayedOnAllFloors",
-      "param_int_2": 1
+      "param_int_2": 0
     }
   ],
   "relics": [

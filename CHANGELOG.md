@@ -36,6 +36,12 @@ canal de Discord por las pruebas y los informes.
 - **Field Medic**: cura y limpia al **empezar** el turno en lugar de al acabarlo, por el mismo
   motivo.
 - **Roderic**: las tres habilidades de Quartermaster se llaman ahora Requisition I, II y III.
+- **Sapper's Charges**: rehecho. Hacía otra cosa (dañaba a cada enemigo que cambiaba de
+  piso); ahora, cuando una unidad tuya sube de piso, hace **10** de daño al primer enemigo de
+  su piso nuevo.
+- **Marching Orders**: las copias de la sala en los otros pisos se pueden sustituir después.
+- **Letter of Marque**: daba las seis piezas de equipo III al empezar cada combate; ahora da
+  una al azar, como dice su texto.
 - La pantalla de botín ya no enseña un cuadrado blanco en las recompensas de carta del clan.
 
 ## 0.2.2 — 2026-09-23
