@@ -98,6 +98,21 @@ namespace mt2_freecompany.Plugin
             foreach (var unidad in objetivos)
             {
                 if (unidad == null || unidad.IsDestroyed || !unidad.IsAlive) continue;
+
+                // 23-sep-2026: la vista previa del hechizo pasa por aqui con la MISMA
+                // CharacterState (PreviewMode activo), una vez por cada vez que el juego
+                // recalcula la previa. Apuntar el dano en esas pasadas lo acumulaba: el log dio
+                // "dano pendiente 100, 200, 300" para un solo lanzamiento y la explosion hizo 300.
+                // En previa solo se pone el estado, para que se vea; la tabla no se toca.
+                if (unidad.PreviewMode)
+                {
+                    foreach (var e in estados)
+                    {
+                        if (e != null && !string.IsNullOrEmpty(e.statusId)) unidad.AddStatusEffect(e.statusId, e.count);
+                    }
+                    continue;
+                }
+
                 var info = Countdowns.tabla.GetOrCreateValue(unidad);
 
                 foreach (var e in estados)
@@ -237,3 +252,4 @@ namespace mt2_freecompany.Plugin
     }
 }
 // 2026-09-23-2130||claude-mt2-the-free-company2-mazo-pruebas||src/code/CountdownOnFloorChange.cs||fichero nuevo: CardEffectPlantCountdown (hereda de CardEffectDamage), CardEffectCountdownTick y StatusEffectFreeCompanyCountdownState, para Banished y Fuse
+// 2026-09-23-2155||claude-mt2-the-free-company2-mazo-pruebas||src/code/CountdownOnFloorChange.cs||PlantCountdown: en PreviewMode no se apunta el dano (la previa lo acumulaba: 100 -> 300)
