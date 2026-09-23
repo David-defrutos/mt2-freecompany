@@ -19,6 +19,7 @@
         "silhouette": "@FreeCompanySilhouette"
       },
       "class_select_character_displays": [],
+      "card_draft_icon": "@FreeCompanyCardDraftIcon",
       "card_style": "@FreeCompany",
       "starter_relics": [
         "@FreeCompanyTestDeck"
@@ -525,6 +526,10 @@
     {
       "id": "FreeCompanyBanner",
       "path": "textures/FreeCompanyBanner.png"
+    },
+    {
+      "id": "FreeCompanyCardDraftIcon",
+      "path": "textures/FreeCompanyCardDraftIcon.png"
     },
     {
       "id": "FreeCompanyIconSmall",

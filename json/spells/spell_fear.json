@@ -7,7 +7,7 @@
         "english": "Fear"
       },
       "descriptions": {
-        "english": "Move an enemy unit to the back of its floor and apply [effect1.status0.power] [sap]."
+        "english": "Move an enemy unit to the back of its floor and apply [effect0.status0.power] [sap]."
       },
       "card_art": "@Fear",
       "cost": 2,
@@ -17,8 +17,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@FearRearrange",
-        "@FearSap"
+        "@FearSap",
+        "@FearRearrange"
       ],
       "lore_tooltips": [
         {

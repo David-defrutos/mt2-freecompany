@@ -7,7 +7,7 @@
         "english": "Delayed Blast Fireball"
       },
       "descriptions": {
-        "english": "Apply <b>Timebomb [effect0.status0.power]</b> to an enemy. Cannot target bosses."
+        "english": "Apply <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] to an enemy. When it runs out, deal <b>[effect0.power]</b> damage to it."
       },
       "card_art": "@DelayedBlastFireball",
       "cost": 3,
@@ -17,7 +17,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@DelayedTimebomb"
+        "@DelayedFusePlant",
+        "@DelayedFuseTicker"
       ],
       "lore_tooltips": [
         {
@@ -26,22 +27,33 @@
       ],
       "pools": [
         "MegaPool"
+      ],
+      "traits": [
+        "@DelayedExplosive"
       ]
     }
   ],
   "effects": [
     {
-      "id": "DelayedTimebomb",
-      "name": "CardEffectAddStatusEffect",
+      "id": "DelayedFusePlant",
+      "name": "@CardEffectPlantCountdown",
       "target_mode": "drop_target_character",
       "target_team": "heroes",
-      "target_ignore_bosses": true,
+      "param_int": 100,
       "param_status_effects": [
         {
-          "status": "timebomb",
-          "count": 3
+          "status": "@fuse",
+          "count": 2
         }
       ]
+    },
+    {
+      "id": "DelayedFuseTicker",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "param_upgrade": "@CountdownTicker",
+      "param_int_3": 0
     }
   ],
   "sprites": [
@@ -59,6 +71,13 @@
           "sprite": "@DelayedBlastFireball"
         }
       }
+    }
+  ],
+  "traits": [
+    {
+      "id": "DelayedExplosive",
+      "name": "CardTraitDamageOverflow",
+      "param_int": 2
     }
   ]
 }

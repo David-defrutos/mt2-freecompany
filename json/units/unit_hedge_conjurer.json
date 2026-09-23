@@ -38,8 +38,7 @@
       "is_an_ability": true,
       "cooldown": 5,
       "initial_cooldown": 4,
-      "targetless": false,
-      "targets_room": false,
+      "targetless": true,
       "card_type": "spell",
       "effects": [
         "@ConjurerVolatileMark",
@@ -59,6 +58,7 @@
       "attack_damage": 5,
       "health": 12,
       "subtypes": [
+        "SubtypesData_BannerUnit",
         "@Sub_Ranged",
         "@Sub_Wizard",
         "@Sub_Goblin"

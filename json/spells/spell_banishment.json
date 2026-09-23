@@ -7,7 +7,7 @@
         "english": "Banishment"
       },
       "descriptions": {
-        "english": "Apply <b>Stasis</b> and <b>[effect1.status0.power]</b> [timebomb] to an enemy. Cannot target bosses."
+        "english": "Apply <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished] to an enemy. Cannot target bosses."
       },
       "card_art": "@Banishment",
       "cost": 3,
@@ -17,8 +17,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@BanishmentStasis",
-        "@BanishmentTimebomb"
+        "@BanishmentPlant",
+        "@BanishmentTicker"
       ],
       "lore_tooltips": [
         {
@@ -32,30 +32,27 @@
   ],
   "effects": [
     {
-      "id": "BanishmentStasis",
-      "name": "CardEffectAddStatusEffect",
+      "id": "BanishmentPlant",
+      "name": "@CardEffectPlantCountdown",
       "target_mode": "drop_target_character",
       "target_team": "heroes",
       "target_ignore_bosses": true,
+      "param_int": 9999,
       "param_status_effects": [
         {
-          "status": "untouchable",
-          "count": 1
+          "status": "@banished",
+          "count": 2
         }
       ]
     },
     {
-      "id": "BanishmentTimebomb",
-      "name": "CardEffectAddStatusEffect",
+      "id": "BanishmentTicker",
+      "target_ignore_bosses": true,
+      "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "drop_target_character",
       "target_team": "heroes",
-      "target_ignore_bosses": true,
-      "param_status_effects": [
-        {
-          "status": "timebomb",
-          "count": 3
-        }
-      ]
+      "param_upgrade": "@CountdownTicker",
+      "param_int_3": 0
     }
   ],
   "sprites": [

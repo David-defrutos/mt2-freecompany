@@ -1,0 +1,129 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "status_effects": [
+    {
+      "id": "fuse",
+      "class_name": "@StatusEffectFreeCompanyCountdownState",
+      "names": {
+        "english": "Fuse"
+      },
+      "stackable_names": {
+        "english": "<nobr>Fuse {0}</nobr>"
+      },
+      "card_tooltips": {
+        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, it explodes."
+      },
+      "character_tooltips": {
+        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, takes [codeint0] damage."
+      },
+      "replacement_texts": {
+        "english": "<b>Fuse</b>"
+      },
+      "notifications": {
+        "english": "Fuse"
+      },
+      "display_category": "negative",
+      "trigger_stage": "none",
+      "is_stackable": true,
+      "remove_stack_at_end_of_turn": false,
+      "param_int": 100,
+      "icon": "@StatusFuse"
+    },
+    {
+      "id": "banished",
+      "class_name": "@StatusEffectFreeCompanyCountdownState",
+      "names": {
+        "english": "Banished"
+      },
+      "stackable_names": {
+        "english": "<nobr>Banished {0}</nobr>"
+      },
+      "card_tooltips": {
+        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, the unit is banished."
+      },
+      "character_tooltips": {
+        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, the unit is banished."
+      },
+      "replacement_texts": {
+        "english": "<b>Banished</b>"
+      },
+      "notifications": {
+        "english": "Banished"
+      },
+      "display_category": "negative",
+      "trigger_stage": "none",
+      "is_stackable": true,
+      "remove_stack_at_end_of_turn": false,
+      "param_int": 9999,
+      "icon": "@StatusBanished"
+    }
+  ],
+  "effects": [
+    {
+      "id": "CountdownTickEffect",
+      "name": "@CardEffectCountdownTick",
+      "target_mode": "self",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "@fuse",
+          "count": 1
+        },
+        {
+          "status": "@banished",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "CountdownTicker",
+      "titles": {
+        "english": "Countdown"
+      },
+      "trigger_upgrades": [
+        "@CountdownTickUp",
+        "@CountdownTickDown"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "CountdownTickUp",
+      "trigger": "post_ascension",
+      "hide_visual_and_ignore_silence": true,
+      "effects": [
+        "@CountdownTickEffect"
+      ]
+    },
+    {
+      "id": "CountdownTickDown",
+      "trigger": "post_descension",
+      "hide_visual_and_ignore_silence": true,
+      "effects": [
+        "@CountdownTickEffect"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "StatusFuse",
+      "path": "textures/StatusFuse.png"
+    },
+    {
+      "id": "StatusBanished",
+      "path": "textures/StatusBanished.png"
+    }
+  ],
+  "atlas_icons": [
+    {
+      "id": "StatusFuse",
+      "path": "textures/StatusFuse.png"
+    },
+    {
+      "id": "StatusBanished",
+      "path": "textures/StatusBanished.png"
+    }
+  ]
+}

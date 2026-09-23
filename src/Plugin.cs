@@ -98,7 +98,8 @@ namespace mt2_freecompany.Plugin
                         "json/relics/relic_sappers_charges.json",
                         "json/relics/relic_scouts_map.json",
                         "json/relics/relic_veterans_papers.json",
-                        "json/relics/relic_war_chest.json"
+                        "json/relics/relic_war_chest.json",
+                        "json/status/status_countdown.json"
                     );
                 }
             );
@@ -116,3 +117,4 @@ namespace mt2_freecompany.Plugin
 // 2026-09-21-2035||claude-mt2-the-free-company2-varios||src/Plugin.cs||alta de la ruta json/equipment/equip_letter_of_credit.json: 71 --> 72 rutas
 // 2026-09-21-2210||claude-mt2-the-free-company2-varios||src/Plugin.cs||ruta equip_letter_of_credit.json --> equip_widows_pension.json; alta de json/units/unit_the_new_guy.json: 72 --> 73 rutas
 // 2026-09-22-2219||claude-mt2-the-free-company2-roderic-quartermaster||src/Plugin.cs||alta de json/spells/spell_severance_pay.json, spell_kit_bash.json y spell_double_shift.json: 73 --> 76 rutas
+// 2026-09-23-2130||claude-mt2-the-free-company2-mazo-pruebas||src/Plugin.cs||alta de json/status/status_countdown.json (estados Fuse y Banished)

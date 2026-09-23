@@ -86,7 +86,7 @@
         "english": "Quartermaster"
       },
       "descriptions": {
-        "english": "Signs for the whole company's kit."
+        "english": "Can hold <b>1</b> additional piece of equipment. Signs for the whole company's kit."
       },
       "bonus_hp": 8,
       "bonus_damage": 3,
@@ -105,7 +105,7 @@
         "english": "Quartermaster II"
       },
       "descriptions": {
-        "english": "Signs for the whole company's kit."
+        "english": "Can hold <b>2</b> additional pieces of equipment. Signs for the whole company's kit."
       },
       "bonus_hp": 16,
       "bonus_damage": 8,
@@ -127,7 +127,7 @@
         "english": "Quartermaster III"
       },
       "descriptions": {
-        "english": "Signs for the whole company's kit."
+        "english": "Can hold <b>3</b> additional pieces of equipment. Signs for the whole company's kit."
       },
       "bonus_hp": 28,
       "bonus_damage": 14,
