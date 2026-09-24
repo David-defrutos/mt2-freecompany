@@ -66,6 +66,17 @@ namespace mt2_freecompany.Plugin
             return new PropDescriptions();
         }
 
+        // El texto de rasgo se muestra aun cuando la carta tiene una descripcion propia.
+        // Se calcula con los mismos parametros y el mismo Anillo que ApplyEffect.
+        public override string GetDescriptionAsTrait(CardEffectState cardEffectState)
+        {
+            var save = AllGameManagers.Instance?.GetSaveManager();
+            if (save == null) return string.Empty;
+
+            int dano = CalcularDano(cardEffectState, save.GetDisplayDistance());
+            return $"Pyre damage this Ring: <b>{dano}</b>.";
+        }
+
         // Nunca falla: si fallase, cancelaria los efectos siguientes de la carta, y el
         // siguiente es el que da el oro.
         public override bool TestEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers)
@@ -93,14 +104,8 @@ namespace mt2_freecompany.Plugin
                 yield break;
             }
 
-            int porAnillo = cardEffectState.GetParamInt();
-            if (porAnillo <= 0) porAnillo = PorAnilloPorDefecto;
-
-            int tope = cardEffectState.GetAdditionalParamInt();
-            if (tope <= 0) tope = TopePorDefecto;
-
             int anillo = save.GetDisplayDistance();
-            int dano = porAnillo * (tope - anillo);
+            int dano = CalcularDano(cardEffectState, anillo);
             if (dano <= 0)
             {
                 Log($"RingPyreDamage: anillo {anillo}, dano {dano} -> no se aplica nada.");
@@ -108,7 +113,20 @@ namespace mt2_freecompany.Plugin
             }
 
             jugador.AdjustTowerHP(-dano, true);
+            int porAnillo = cardEffectState.GetParamInt();
+            if (porAnillo <= 0) porAnillo = PorAnilloPorDefecto;
+            int tope = cardEffectState.GetAdditionalParamInt();
+            if (tope <= 0) tope = TopePorDefecto;
             Log($"RingPyreDamage: anillo {anillo}, {porAnillo} x ({tope} - {anillo}) = {dano} de dano a la pira.");
+        }
+
+        private static int CalcularDano(CardEffectState cardEffectState, int anillo)
+        {
+            int porAnillo = cardEffectState.GetParamInt();
+            if (porAnillo <= 0) porAnillo = PorAnilloPorDefecto;
+            int tope = cardEffectState.GetAdditionalParamInt();
+            if (tope <= 0) tope = TopePorDefecto;
+            return Math.Max(0, porAnillo * (tope - anillo));
         }
 
         private static void Log(string mensaje)
