@@ -74,7 +74,7 @@ namespace mt2_freecompany.Plugin
             if (save == null) return string.Empty;
 
             int dano = CalcularDano(cardEffectState, save.GetDisplayDistance());
-            return $"Pyre damage this Ring: <b>{dano}</b>.";
+            return $"Pyre damage this Ring: <b>{dano}</b>";
         }
 
         // Nunca falla: si fallase, cancelaria los efectos siguientes de la carta, y el
