@@ -31,7 +31,7 @@
         "english": "Shift Aim"
       },
       "descriptions": {
-        "english": "This unit loses <b>Sniper</b> until the start of your next turn, and attacks the front enemy instead."
+        "english": "Until the start of your next turn, this unit loses <b>Sniper</b> and targets the front enemy when it attacks."
       },
       "card_art": "@Longbowman",
       "is_an_ability": true,

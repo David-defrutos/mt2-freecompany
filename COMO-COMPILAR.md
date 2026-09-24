@@ -52,39 +52,42 @@ recursivo.
 
 ## 5. Empaquetar para Thunderstore
 
-El paquete es un **zip plano**: los siete ficheros sueltos en la raiz, mas `json\` y
-`textures\` como carpetas. **Sin `src\`, sin `.git`, sin `screenshots\` y sin el `.dll.bak`.**
+El ZIP lleva `manifest.json`, `icon.png`, `README.md`, `CHANGELOG.md` y `LICENSE` en la
+raiz. El DLL, `NOTICE.md`, `json/` y `textures/` van **dentro de `plugins/`**. Asi los
+gestores de mods BepInEx conservan las subcarpetas junto al DLL. Si `json/` queda en la
+raiz del ZIP, Gale puede cargar el DLL sin encontrar `json/plugin.json`: el clan no aparece.
+No incluir `src/`, `.git/`, `.github/`, `screenshots/`, copias `.dll.bak` ni JSON apartados.
 Las capturas viven en el repo, no en el zip: el README las enlaza con URL absoluta de
 `raw.githubusercontent.com` porque una ruta relativa sale rota en Thunderstore.
 
+Ejecutar desde este repositorio, con el DLL ya compilado y sincronizado:
+
 ```powershell
-$mod  = "$env:APPDATA\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany"
-$ver  = "0.2.0"
-$dest = "D:\Juegos\MT2_mod\salidas\frutos-FreeCompany-$ver.zip"
-$tmp  = "D:\Juegos\MT2_mod\tmp\pkg"
-Remove-Item $tmp -Recurse -Force -ErrorAction SilentlyContinue
-New-Item -ItemType Directory -Path $tmp -Force | Out-Null
-foreach ($f in 'manifest.json','icon.png','README.md','CHANGELOG.md','LICENSE','NOTICE.md','mt2_freecompany.Plugin.dll') {
-    Copy-Item (Join-Path $mod $f) $tmp -Force
-}
-Copy-Item (Join-Path $mod 'json')     $tmp -Recurse -Force
-Copy-Item (Join-Path $mod 'textures') $tmp -Recurse -Force
-Remove-Item $dest -Force -ErrorAction SilentlyContinue
-Compress-Archive -Path "$tmp\*" -DestinationPath $dest
+$ver = (Get-Content .\manifest.json -Raw | ConvertFrom-Json).version_number
+& .\scripts\crear-paquete-thunderstore.ps1 `
+    -Destination "D:\Juegos\MT2_mod\salidas\frutos-FreeCompany-$ver.zip"
 ```
 
-Y **mirar dentro antes de subir**, que es lo unico que Thunderstore rechaza sin explicarse
-(el `manifest.json` tiene que estar en la raiz, no dentro de una carpeta):
+El script usa el `manifest.json` y los recursos de este repositorio; por defecto toma
+`mt2_freecompany.Plugin.dll` de aqui. Para un DLL compilado en otra ruta, pasar
+`-DllPath`. Antes de publicar, incrementar la version y usar el nombre final
+correspondiente. El script se niega a sobrescribir un ZIP existente y comprueba que los
+JSON declarados en `Plugin.cs` coincidan con el disco y entren en `plugins/json/`.
+
+El script verifica la estructura. Para mirarla manualmente antes de subir:
 
 ```powershell
 Add-Type -AssemblyName System.IO.Compression.FileSystem
+$dest = "D:\Juegos\MT2_mod\salidas\frutos-FreeCompany-$ver.zip"
 $zip = [System.IO.Compression.ZipFile]::OpenRead($dest)
-$zip.Entries | Where-Object { $_.FullName -notmatch '/' } | Select-Object FullName, Length
+$zip.Entries | Where-Object { $_.FullName -match '^(manifest.json|icon.png|README.md|plugins/mt2_freecompany.Plugin.dll|plugins/json/plugin.json|plugins/textures/)' } | Select-Object -First 12 FullName, Length
 $zip.Entries.Count
 $zip.Dispose()
 ```
 
-Tienen que salir los siete, y el total ronda las 230 entradas.
+`manifest.json`, `icon.png` y `README.md` deben estar en la raiz; DLL, JSON y texturas
+deben aparecer bajo `plugins/`. Probar el ZIP en un perfil limpio con Gale o Thunderstore
+Mod Manager y comprobar que el clan aparece en la seleccion y en el libro de registro.
 
 ## 6. Subir una version nueva
 

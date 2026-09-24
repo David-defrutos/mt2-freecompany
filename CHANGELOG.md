@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.4 — 2026-09-24
+
+- El paquete conserva `json/` y `textures/` junto al DLL al instalarse con Gale y otros
+  gestores de mods BepInEx. Corrige el caso en que el plugin cargaba, pero el clan no aparecia.
+- Severance Pay muestra el dano actual de la Pyre en la descripcion, con un solo punto final.
+- Shift Aim aclara que el Longbowman cambiara de objetivo cuando ataque; la habilidad no
+  realiza un ataque inmediato.
+- Se excluyen dos JSON de cartas descartadas que el DLL no cargaba.
+
 ## 0.2.3 — 2026-09-23
 
 Correcciones tras la primera partida con las cartas nuevas.
