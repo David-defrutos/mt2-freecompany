@@ -99,7 +99,8 @@ namespace mt2_freecompany.Plugin
                         "json/relics/relic_scouts_map.json",
                         "json/relics/relic_veterans_papers.json",
                         "json/relics/relic_war_chest.json",
-                        "json/status/status_countdown.json"
+                        "json/status/status_countdown.json",
+                        "json/status/status_dizzy.json"
                     );
                 }
             );

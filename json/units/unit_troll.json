@@ -132,6 +132,24 @@
       ]
     },
     {
+      "id": "TwoHeadedWrath",
+      "names": {
+        "english": "Wrath"
+      },
+      "descriptions": {
+        "english": "Attack immediately."
+      },
+      "card_art": "@TwoHeadedTroll",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@TwoHeadedWrathAttack"
+      ]
+    },
+    {
       "id": "TameBogTroll",
       "names": {
         "english": "Tame the Bog Troll"
@@ -273,9 +291,6 @@
           "id": "@TrollBeastmasterSpawn"
         },
         {
-          "id": "@TrollBeastmasterCelebrate"
-        },
-        {
           "id": "@BogTrollStrike"
         }
       ]
@@ -303,9 +318,6 @@
       "triggers": [
         {
           "id": "@TrollBeastmasterSpawn"
-        },
-        {
-          "id": "@TrollBeastmasterCelebrate"
         }
       ],
       "ability": "@StoneTrollAbility"
@@ -333,9 +345,6 @@
       "triggers": [
         {
           "id": "@TrollBeastmasterSpawn"
-        },
-        {
-          "id": "@TrollBeastmasterCelebrate"
         }
       ]
     },
@@ -362,9 +371,6 @@
       "triggers": [
         {
           "id": "@TrollBeastmasterSpawn"
-        },
-        {
-          "id": "@TrollBeastmasterCelebrate"
         }
       ]
     },
@@ -386,20 +392,14 @@
         {
           "status": "regen",
           "count": 10
-        },
-        {
-          "status": "multistrike",
-          "count": 1
         }
       ],
       "triggers": [
         {
           "id": "@TrollBeastmasterSpawn"
-        },
-        {
-          "id": "@TrollBeastmasterCelebrate"
         }
-      ]
+      ],
+      "ability": "@TwoHeadedWrath"
     }
   ],
   "character_triggers": [
@@ -410,20 +410,9 @@
         "english": "If a <b>Beastmaster</b> is in play on any floor, this unit enters stronger for the rest of combat."
       },
       "effects": [
-        "@TrollBeast1",
+        "@TrollRingBonus",
         "@TrollBeast2",
         "@TrollBeast3"
-      ]
-    },
-    {
-      "id": "TrollBeastmasterCelebrate",
-      "trigger": "on_encounter_complete",
-      "descriptions": {
-        "english": "If a <b>Beastmaster</b> is alive on any floor, this unit permanently gains [attack] and [health]."
-      },
-      "effects": [
-        "@TrollCeleb2",
-        "@TrollCeleb3"
       ]
     },
     {
@@ -478,12 +467,13 @@
       "param_character": "@TwoHeadedTroll"
     },
     {
-      "id": "TrollBeast1",
+      "id": "TrollRingBonus",
       "name": "@CardEffectIfAllyHasUpgrade",
       "target_mode": "self",
       "target_team": "monsters",
-      "param_str": "upg_Beastmaster1",
-      "param_upgrade": "@TrollBuff1",
+      "param_str": "upg_Beastmaster1,upg_Beastmaster2,upg_Beastmaster3",
+      "param_upgrade": "@TrollPerRing",
+      "param_int_2": 1,
       "param_int_3": 0
     },
     {
@@ -503,24 +493,6 @@
       "param_str": "upg_Beastmaster3",
       "param_upgrade": "@TrollBuff3",
       "param_int_3": 0
-    },
-    {
-      "id": "TrollCeleb2",
-      "name": "@CardEffectIfAllyHasUpgrade",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_str": "upg_Beastmaster2",
-      "param_upgrade": "@TrollCelebrate2",
-      "param_int_3": 2
-    },
-    {
-      "id": "TrollCeleb3",
-      "name": "@CardEffectIfAllyHasUpgrade",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_str": "upg_Beastmaster3",
-      "param_upgrade": "@TrollCelebrate3",
-      "param_int_3": 2
     },
     {
       "id": "KeepBogTroll",
@@ -589,18 +561,22 @@
       "name": "CardEffectAttackTargetsWithSelfUnit",
       "target_mode": "weakest",
       "target_team": "heroes"
+    },
+    {
+      "id": "TwoHeadedWrathAttack",
+      "name": "CardEffectAttackWithUnit",
+      "target_mode": "drop_target_character",
+      "target_team": "both"
     }
   ],
   "upgrades": [
     {
-      "id": "TrollBuff1",
-      "bonus_damage": 20,
-      "bonus_hp": 20
+      "id": "TrollPerRing",
+      "bonus_damage": 10,
+      "bonus_hp": 10
     },
     {
       "id": "TrollBuff2",
-      "bonus_damage": 40,
-      "bonus_hp": 40,
       "status_effect_upgrades": [
         {
           "status": "trample",
@@ -610,28 +586,12 @@
     },
     {
       "id": "TrollBuff3",
-      "bonus_damage": 60,
-      "bonus_hp": 60,
       "status_effect_upgrades": [
         {
           "status": "trample",
           "count": 1
-        },
-        {
-          "status": "sweep",
-          "count": 1
         }
       ]
-    },
-    {
-      "id": "TrollCelebrate2",
-      "bonus_damage": 5,
-      "bonus_hp": 5
-    },
-    {
-      "id": "TrollCelebrate3",
-      "bonus_damage": 10,
-      "bonus_hp": 10
     }
   ],
   "traits": [

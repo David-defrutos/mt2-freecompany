@@ -10,7 +10,7 @@
         "english": "Add a random tier <b>I</b> piece of kit to your hand."
       },
       "card_art": "@KitBash",
-      "cost": 0,
+      "cost": 1,
       "card_type": "spell",
       "rarity": "common",
       "class": "@ClassFreeCompany",

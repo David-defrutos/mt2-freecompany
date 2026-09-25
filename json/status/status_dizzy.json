@@ -1,0 +1,45 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "status_effects": [
+    {
+      "id": "dizzy",
+      "class_name": "@StatusEffectFreeCompanyDizzyState",
+      "names": {
+        "english": "Dizzy"
+      },
+      "stackable_names": {
+        "english": "<nobr>Dizzy {0}</nobr>"
+      },
+      "card_tooltips": {
+        "english": "At the start of your next turn, convert all Dizzy into an equal amount of [dazed]."
+      },
+      "character_tooltips": {
+        "english": "At the start of your next turn, convert all Dizzy into an equal amount of [dazed]."
+      },
+      "replacement_texts": {
+        "english": "<b>Dizzy</b>"
+      },
+      "notifications": {
+        "english": "Dizzy"
+      },
+      "display_category": "negative",
+      "trigger_stage": "on_monster_team_turn_begin",
+      "is_stackable": true,
+      "is_propagatable": false,
+      "remove_stack_at_end_of_turn": false,
+      "icon": "@StatusDizzy"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "StatusDizzy",
+      "path": "textures/StatusDizzy.png"
+    }
+  ],
+  "atlas_icons": [
+    {
+      "id": "StatusDizzy",
+      "path": "textures/StatusDizzy.png"
+    }
+  ]
+}

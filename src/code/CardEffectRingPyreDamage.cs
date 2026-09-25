@@ -8,19 +8,17 @@ namespace mt2_freecompany.Plugin
     ///
     ///     dano = param_int * (param_int_2 - anillo)
     ///
-    /// Con param_int = 5 y param_int_2 = 11 (Finiquito / Severance Pay), y los 10 Anillos
-    /// del juego, sale:
+    /// Con param_int = 5 y param_int_2 = 8 (Severance Pay), sale:
     ///
-    ///     Anillo  1 -> 5 * 10 = 50        Anillo  6 -> 5 * 5 = 25
-    ///     Anillo  2 -> 5 *  9 = 45        Anillo  7 -> 5 * 4 = 20
-    ///     Anillo  3 -> 5 *  8 = 40        Anillo  8 -> 5 * 3 = 15
-    ///     Anillo  4 -> 5 *  7 = 35        Anillo  9 -> 5 * 2 = 10
-    ///     Anillo  5 -> 5 *  6 = 30        Anillo 10 -> 5 * 1 =  5
+    ///     Anillo 1 -> 35     Anillo 5 -> 15
+    ///     Anillo 2 -> 30     Anillo 6 -> 10
+    ///     Anillo 3 -> 25     Anillo 7 ->  5
+    ///     Anillo 4 -> 20     Anillo 8 ->  0 (Seraph)
     ///
     /// Json:
     ///   { "id": "SeverancePayPyreDamage", "name": "@CardEffectRingPyreDamage",
     ///     "target_mode": "self", "target_team": "monsters",
-    ///     "param_int": 5, "param_int_2": 11 }
+    ///     "param_int": 5, "param_int_2": 8 }
     ///
     /// Los dos numeros van en el JSON a proposito: se retocan sin recompilar.
     ///
@@ -59,7 +57,7 @@ namespace mt2_freecompany.Plugin
     public sealed class CardEffectRingPyreDamage : CardEffectBase
     {
         private const int PorAnilloPorDefecto = 5;
-        private const int TopePorDefecto = 11;
+        private const int TopePorDefecto = 8;
 
         public override PropDescriptions CreateEditorInspectorDescriptions()
         {

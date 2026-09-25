@@ -84,6 +84,9 @@
           "status": "debuff"
         },
         {
+          "status": "@dizzy"
+        },
+        {
           "status": "decay"
         },
         {

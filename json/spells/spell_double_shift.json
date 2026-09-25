@@ -7,7 +7,7 @@
         "english": "Double Shift"
       },
       "descriptions": {
-        "english": "The unit attacks immediately. At the start of next turn, it gains <b>1</b> [dazed]."
+        "english": "A friendly unit attacks immediately and gains <b>[effect1.status0.power]</b> [mt2_freecompany.Plugin_dizzy]."
       },
       "card_art": "@DoubleShift",
       "cost": 1,
@@ -18,7 +18,7 @@
       "targetless": false,
       "effects": [
         "@DoubleShiftStrike",
-        "@DoubleShiftMark"
+        "@DoubleShiftApplyDizzy"
       ],
       "lore_tooltips": [
         {
@@ -26,7 +26,8 @@
         }
       ],
       "pools": [
-        "MegaPool"
+        "MegaPool",
+        "CardsExcludedFromJuice"
       ]
     }
   ],
@@ -38,51 +39,17 @@
       "target_team": "monsters"
     },
     {
-      "id": "DoubleShiftMark",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "id": "DoubleShiftApplyDizzy",
+      "name": "CardEffectAddStatusEffect",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "@DoubleShiftOvertime",
-      "param_int_3": 0
-    },
-    {
-      "id": "DoubleShiftDaze",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "self",
-      "target_team": "monsters",
+      "param_bool_2": true,
       "param_status_effects": [
         {
-          "status": "dazed",
+          "status": "@dizzy",
           "count": 1
         }
       ]
-    }
-  ],
-  "upgrades": [
-    {
-      "id": "DoubleShiftOvertime",
-      "titles": {
-        "english": "Overtime"
-      },
-      "descriptions": {
-        "english": "At the start of next turn, gain <b>1</b> [dazed]."
-      },
-      "trigger_upgrades": [
-        "@DoubleShiftOvertimeTrigger"
-      ]
-    }
-  ],
-  "character_triggers": [
-    {
-      "id": "DoubleShiftOvertimeTrigger",
-      "trigger": "pre_combat",
-      "descriptions": {
-        "english": "Gain <b>1</b> [dazed]."
-      },
-      "effects": [
-        "@DoubleShiftDaze"
-      ],
-      "trigger_once": true
     }
   ],
   "sprites": [

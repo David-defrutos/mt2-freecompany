@@ -7,7 +7,7 @@
         "english": "Severance Pay"
       },
       "descriptions": {
-        "english": "Gain <b>150</b> gold. Your Pyre takes <b>5</b> damage for every Ring left, this one included."
+        "english": "Gain <b>97</b> gold. Your Pyre takes <b>5</b> damage for each Ring remaining before the final Ring."
       },
       "card_art": "@SeverancePay",
       "cost": 0,
@@ -40,14 +40,14 @@
       "target_mode": "pyre",
       "target_team": "monsters",
       "param_int": 5,
-      "param_int_2": 11
+      "param_int_2": 8
     },
     {
       "id": "SeverancePayGold",
       "name": "CardEffectRewardGold",
       "target_mode": "pyre",
       "target_team": "monsters",
-      "param_int": 150
+      "param_int": 97
     }
   ],
   "traits": [

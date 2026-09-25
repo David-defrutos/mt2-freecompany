@@ -62,11 +62,37 @@ namespace mt2_freecompany.Plugin
     /// con el id pelado del JSON. Es el mismo fallo que tuvo Requisition callado durante
     /// dias: ver la seccion 7.0.13 del diseno.
     ///
+    /// --------------------------------------------------------------------------------
+    /// 25-sep-2026: VARIAS MEJORAS Y BONO POR ANILLO
+    ///
+    /// `param_str` admite **varios ids separados por comas**: basta con que un aliado lleve
+    /// cualquiera de ellos. Sirve para "cualquier escalon de la senda" sin repetir el
+    /// efecto tres veces.
+    ///
+    /// `param_int_2` activa el **modo por anillo**. Si vale 0 o no esta, la mejora se aplica
+    /// una vez, como siempre. Si vale N > 0, se aplica **(anillo - N) veces**, con el anillo
+    /// de `SaveManager.GetDisplayDistance()` (el que ve el jugador: 1 en el primero; es la
+    /// misma llamada que usa `CardEffectRingPyreDamage`). Con N = 1 y una mejora de +10/+10:
+    /// anillo 1 -> nada, anillo 2 -> +10/+10, anillo 10 -> +90/+90.
+    ///
+    /// Por que aplicar N veces una mejora pequena en vez de construir una a medida: una
+    /// mejora de JSON es un dato fijo, y **las mejoras se apilan**. Leido el IL de
+    /// `CharacterState.ApplyCardUpgrade`: solo rechaza un duplicado si la mejora es
+    /// `IsUnique()` (entonces mira `CardUpgradeHelper.ContainsUpgradeWithDataId`), y
+    /// `ApplyCardUpgradeImpl` suma `GetAttackDamage()` y `GetAdditionalHP()` en cada
+    /// aplicacion. Asi los numeros siguen en el JSON.
+    ///
+    /// `CardEffectAddCardUpgradeToUnits`, en el que se delega, solo lee `param_int_3` (la
+    /// vida de la mejora, en `Setup` via `GetAdditionalParamInt1`) y `param_bool`
+    /// (`scaleUpgrade`): `param_str` y `param_int_2` estan libres para esta clase.
+    /// --------------------------------------------------------------------------------
+    ///
     /// Json (en el troll):
-    ///   { "id": "TrollBeast1", "name": "@CardEffectIfAllyHasUpgrade",
+    ///   { "id": "TrollRingBonus", "name": "@CardEffectIfAllyHasUpgrade",
     ///     "target_mode": "self", "target_team": "monsters",
-    ///     "param_str": "upg_Beastmaster1",
-    ///     "param_upgrade": "@TrollBuff1",
+    ///     "param_str": "upg_Beastmaster1,upg_Beastmaster2,upg_Beastmaster3",
+    ///     "param_upgrade": "@TrollPerRing",
+    ///     "param_int_2": 1,
     ///     "param_int_3": 0 }
     /// --------------------------------------------------------------------------------
     /// </summary>
@@ -91,19 +117,31 @@ namespace mt2_freecompany.Plugin
 
         public override IEnumerator ApplyEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers, ISystemManagers sysManagers)
         {
-            string idBuscado = cardEffectState.GetParamStr();
-            if (string.IsNullOrEmpty(idBuscado))
+            string texto = cardEffectState.GetParamStr();
+            if (string.IsNullOrEmpty(texto))
             {
                 Log("IfAllyHasUpgrade: falta param_str con el id de la mejora a buscar.");
                 yield break;
             }
 
-            var mejoraBuscada = BuscarMejora(coreGameManagers.GetAllGameData(), idBuscado);
-            if (mejoraBuscada == null)
+            // Uno o varios ids separados por comas.
+            var buscadas = new List<CardUpgradeData>();
+            var nombres = new List<string>();
+            foreach (var trozo in texto.Split(','))
             {
-                Log($"IfAllyHasUpgrade: NO ENCUENTRO la mejora {NombreMejora(idBuscado)}.");
-                yield break;
+                string id = trozo.Trim();
+                if (id.Length == 0) continue;
+                var mejora = BuscarMejora(coreGameManagers.GetAllGameData(), id);
+                if (mejora == null)
+                {
+                    Log($"IfAllyHasUpgrade: NO ENCUENTRO la mejora {NombreMejora(id)}.");
+                    continue;
+                }
+                buscadas.Add(mejora);
+                nombres.Add(id);
             }
+            if (buscadas.Count == 0) yield break;
+            string idBuscado = string.Join(",", nombres);
 
             var aliados = new List<CharacterState>();
             coreGameManagers.GetMonsterManager().AddCharactersToList(aliados);
@@ -115,25 +153,26 @@ namespace mt2_freecompany.Plugin
             foreach (var aliado in aliados)
             {
                 if (aliado == null || aliado.IsDead) continue;
-
-                // (a) mejora aplicada SOBRE LA UNIDAD, con CharacterState.ApplyCardUpgrade.
-                if (aliado.HasUpgrade(mejoraBuscada))
-                {
-                    Log($"IfAllyHasUpgrade: '{aliado.GetName()}' lleva '{idBuscado}' en la unidad.");
-                    hay = true;
-                    break;
-                }
-
-                // (b) mejora aplicada SOBRE LA CARTA que la invoco. Es el caso de las
-                // sendas de campeon: la del arbol se pone en la carta del campeon y nunca
-                // pasa por appliedCardUpgrades.
                 var carta = aliado.GetSpawnerCard();
-                if (carta != null && carta.HasUpgrade(mejoraBuscada))
+
+                for (int k = 0; k < buscadas.Count && !hay; k++)
                 {
-                    Log($"IfAllyHasUpgrade: '{aliado.GetName()}' lleva '{idBuscado}' en la carta que la invoco.");
-                    hay = true;
-                    break;
+                    // (a) mejora aplicada SOBRE LA UNIDAD, con CharacterState.ApplyCardUpgrade.
+                    if (aliado.HasUpgrade(buscadas[k]))
+                    {
+                        Log($"IfAllyHasUpgrade: '{aliado.GetName()}' lleva '{nombres[k]}' en la unidad.");
+                        hay = true;
+                    }
+                    // (b) mejora aplicada SOBRE LA CARTA que la invoco. Es el caso de las
+                    // sendas de campeon: la del arbol se pone en la carta del campeon y
+                    // nunca pasa por appliedCardUpgrades.
+                    else if (carta != null && carta.HasUpgrade(buscadas[k]))
+                    {
+                        Log($"IfAllyHasUpgrade: '{aliado.GetName()}' lleva '{nombres[k]}' en la carta que la invoco.");
+                        hay = true;
+                    }
                 }
+                if (hay) break;
             }
             if (!hay)
             {
@@ -141,15 +180,39 @@ namespace mt2_freecompany.Plugin
                 yield break;
             }
 
+            // Cuantas veces se aplica: 1, o (anillo - param_int_2) en el modo por anillo.
+            int veces = 1;
+            int anilloBase = cardEffectState.GetAdditionalParamInt();
+            if (anilloBase > 0)
+            {
+                var save = coreGameManagers.GetSaveManager();
+                if (save == null)
+                {
+                    Log("IfAllyHasUpgrade: modo por anillo sin SaveManager; no se aplica nada.");
+                    yield break;
+                }
+                int anillo = save.GetDisplayDistance();
+                veces = anillo - anilloBase;
+                if (veces <= 0)
+                {
+                    Log($"IfAllyHasUpgrade: anillo {anillo}, base {anilloBase} -> bono por anillo 0, no se aplica nada.");
+                    yield break;
+                }
+                Log($"IfAllyHasUpgrade: anillo {anillo}, base {anilloBase} -> la mejora se aplica {veces} veces (bono por anillo).");
+            }
+
             var interno = new CardEffectAddCardUpgradeToUnits();
             interno.Setup(cardEffectState);
-            Log($"IfAllyHasUpgrade: hay un aliado con '{idBuscado}'; aplicando la mejora.");
+            Log($"IfAllyHasUpgrade: hay un aliado con '{idBuscado}'; aplicando la mejora x{veces}.");
             // Corrutina: se recorre a mano en vez de con un "yield return" pelado, que
             // depende de que quien conduzca este efecto entienda enumeradores anidados.
             // 20-sep-2026: ApplyCardUpgrade/RemoveCardUpgrade devuelven IEnumerator y
             // Requisition no hacia nada justo por esto. Ver CardEffectRequisition.cs.
-            var ejecutar = interno.ApplyEffect(cardEffectState, cardEffectParams, coreGameManagers, sysManagers);
-            while (ejecutar.MoveNext()) yield return ejecutar.Current;
+            for (int v = 0; v < veces; v++)
+            {
+                var ejecutar = interno.ApplyEffect(cardEffectState, cardEffectParams, coreGameManagers, sysManagers);
+                while (ejecutar.MoveNext()) yield return ejecutar.Current;
+            }
         }
 
         private static string ContarVivos(List<CharacterState> aliados)
@@ -182,3 +245,4 @@ namespace mt2_freecompany.Plugin
     }
 }
 // 2026-09-21-2050||claude-mt2-the-free-company2-vesper-beastmaster||src/code/CardEffectIfAllyHasUpgrade.cs||anadida la comprobacion (b): GetSpawnerCard().HasUpgrade, porque las mejoras de senda de campeon no pasan por appliedCardUpgrades y CharacterState.HasUpgrade era siempre false
+// 2026-09-25-1903||claude-mt2-the-free-company2-vesper-beastmaster||src/code/CardEffectIfAllyHasUpgrade.cs||param_str admite varios ids separados por comas; param_int_2 > 0 activa el modo por anillo: la mejora se aplica (anillo - param_int_2) veces con SaveManager.GetDisplayDistance()

@@ -22,6 +22,28 @@
         "@BeastmasterCallFromDiscard",
         "@BeastmasterCallZero"
       ]
+    },
+    {
+      "id": "BeastmasterCall3",
+      "names": {
+        "english": "Call of the Wild"
+      },
+      "descriptions": {
+        "english": "Put a <b>Troll</b> in your hand. It costs <b>0</b> [ember]."
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "cooldown": 4,
+      "initial_cooldown": 3,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@BeastmasterCallGate",
+        "@BeastmasterCallFromDraw",
+        "@BeastmasterCallFromDiscard",
+        "@BeastmasterCallZero"
+      ]
     }
   ],
   "character_triggers": [
@@ -116,7 +138,7 @@
         "english": "Beastmaster"
       },
       "descriptions": {
-        "english": "Vesper arrives with a tamed <b>Troll</b>.\nTrolls: +<b>20</b> [attack]/[health]."
+        "english": "Vesper arrives with a tamed <b>Troll</b>.\nTrolls: +<b>10</b> [attack]/[health] per Ring after the first."
       },
       "bonus_hp": 6,
       "trigger_upgrades": [
@@ -130,7 +152,7 @@
         "english": "Beastmaster II"
       },
       "descriptions": {
-        "english": "Trolls: +<b>40</b> [attack]/[health], [trample].\n<b>Celebrate</b>: +<b>5</b> [attack]/[health], permanent."
+        "english": "Trolls: +<b>10</b> [attack]/[health] per Ring after the first, and [trample]."
       },
       "bonus_hp": 12,
       "bonus_damage": 4,
@@ -148,7 +170,7 @@
         "english": "Beastmaster III"
       },
       "descriptions": {
-        "english": "Trolls: +<b>60</b> [attack]/[health], [trample], [sweep].\n<b>Celebrate</b>: +<b>10</b> [attack]/[health], permanent."
+        "english": "Trolls: +<b>10</b> [attack]/[health] per Ring after the first, and [trample].\n<b>Call of the Wild</b> is ready a turn sooner."
       },
       "bonus_hp": 18,
       "bonus_damage": 8,
@@ -158,7 +180,7 @@
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
       ],
-      "ability_upgrade": "@BeastmasterCall"
+      "ability_upgrade": "@BeastmasterCall3"
     },
     {
       "id": "TrollOffer",
