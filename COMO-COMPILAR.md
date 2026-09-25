@@ -52,15 +52,24 @@ recursivo.
 
 ## 5. Empaquetar para Thunderstore
 
+**Ejecutar desde esta carpeta `David-FreeCompany`, el directorio de trabajo del perfil.**
+`D:\Juegos\MT2_mod\repos\david\mt2-freecompany` es un respaldo y puede contener codigo,
+JSON o DLL de otra tanda. El artefacto ZIP de GitHub Actions solo trae el DLL: descargarlo
+al PC e instalarlo aqui, o indicar su ruta con `-DllPath`; no subir ese artefacto como
+paquete de Thunderstore.
+
 El ZIP lleva `manifest.json`, `icon.png`, `README.md`, `CHANGELOG.md` y `LICENSE` en la
 raiz. El DLL, `NOTICE.md`, `json/` y `textures/` van **dentro de `plugins/`**. Asi los
 gestores de mods BepInEx conservan las subcarpetas junto al DLL. Si `json/` queda en la
 raiz del ZIP, Gale puede cargar el DLL sin encontrar `json/plugin.json`: el clan no aparece.
+Esto ocurrio en el paquete 0.2.3. El 0.2.4 corrigio las rutas del ZIP sin cambiar las rutas
+relativas que usan `Plugin.cs` y los JSON. Una linea de log que confirme la carga del DLL
+no confirma que se haya cargado el clan.
 No incluir `src/`, `.git/`, `.github/`, `screenshots/`, copias `.dll.bak` ni JSON apartados.
 Las capturas viven en el repo, no en el zip: el README las enlaza con URL absoluta de
 `raw.githubusercontent.com` porque una ruta relativa sale rota en Thunderstore.
 
-Ejecutar desde este repositorio, con el DLL ya compilado y sincronizado:
+Ejecutar desde esta carpeta de trabajo, con el DLL ya compilado y sincronizado:
 
 ```powershell
 $ver = (Get-Content .\manifest.json -Raw | ConvertFrom-Json).version_number
@@ -68,7 +77,7 @@ $ver = (Get-Content .\manifest.json -Raw | ConvertFrom-Json).version_number
     -Destination "D:\Juegos\MT2_mod\salidas\frutos-FreeCompany-$ver.zip"
 ```
 
-El script usa el `manifest.json` y los recursos de este repositorio; por defecto toma
+El script usa el `manifest.json` y los recursos de esta carpeta; por defecto toma
 `mt2_freecompany.Plugin.dll` de aqui. Para un DLL compilado en otra ruta, pasar
 `-DllPath`. Antes de publicar, incrementar la version y usar el nombre final
 correspondiente. El script se niega a sobrescribir un ZIP existente y comprueba que los
@@ -88,6 +97,9 @@ $zip.Dispose()
 `manifest.json`, `icon.png` y `README.md` deben estar en la raiz; DLL, JSON y texturas
 deben aparecer bajo `plugins/`. Probar el ZIP en un perfil limpio con Gale o Thunderstore
 Mod Manager y comprobar que el clan aparece en la seleccion y en el libro de registro.
+Para probarlo en `Default` sin arriesgar el trabajo, ver
+`D:\Juegos\MT2_mod\docs\guias\mods-versiones-y-perfiles.md`: primero desactivar la DLL
+local y renombrar `David-FreeCompany`, luego instalar `frutos-FreeCompany` desde el gestor.
 
 ## 6. Subir una version nueva
 

@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.2.5 — 2026-09-25
+
+Reequilibrio de la senda **Beastmaster** de Vesper y del Two-Headed Troll.
+
+- **Beastmaster**: los trolls ya no crecen con Celebrate al acabar cada combate. Ahora,
+  con Vesper Beastmaster en juego, entran con **+10** de ataque y vida **por cada anillo
+  después del primero**.
+- **Beastmaster II y III**: los trolls ganan solo **Trample**; se quita Sweep.
+- **Beastmaster III**: *Call of the Wild* está lista **un turno antes** (recarga 4, empieza
+  en 3).
+- **Two-Headed Troll**: pierde Multistrike y gana la habilidad **Wrath** (atacar de
+  inmediato, recarga 3), que se puede usar el mismo turno en que sale.
+- **Double Shift**: ahora aplica **Dizzy**, un estado nuevo del clan con icono propio, que
+  al empezar tu siguiente turno se convierte en la misma cantidad de Dazed.
+- **Kit Bash**: cuesta **1** en lugar de 0.
+- **Invisibility**: aplica **Stealth 2** en lugar de 3.
+- **Field Medic**: cura y limpia al **empezar el combate** del piso.
+- **Severance Pay** pasa a ser carta inicial de Roderic.
+- Arte nuevo en 16 cartas.
+
 ## 0.2.4 — 2026-09-24
 
 - El paquete conserva `json/` y `textures/` junto al DLL al instalarse con Gale y otros
@@ -83,3 +103,7 @@ Primera subida. El clan carga, se selecciona y se juega de principio a fin, pero
 
 Informes de fallos y opiniones de equilibrio, en las incidencias de GitHub o en los
 comentarios de la ficha.
+
+<!-- 2026-09-25-2019||claude-mt2-the-free-company2-vesper-beastmaster||CHANGELOG.md||entrada 0.2.5: Beastmaster por anillo, fuera Celebrate y Sweep, Call of the Wild III antes, Two-Headed Troll con Wrath, Double Shift con Dizzy, Kit Bash 1, Field Medic, Severance Pay inicial, 16 artes -->
+
+<!-- 2026-09-25-2040||david||CHANGELOG.md||entrada 0.2.5: linea nueva de Invisibility (Stealth 2 en lugar de 3) -->
