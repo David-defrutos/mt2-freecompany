@@ -130,7 +130,7 @@
         "english": "Grimoire"
       },
       "descriptions": {
-        "english": "Free spells, every turn."
+        "english": "Prepare free Common spells; gain permanent [conduit] after combat."
       },
       "bonus_damage": 4,
       "trigger_upgrades": [
@@ -145,7 +145,7 @@
         "english": "Grimoire II"
       },
       "descriptions": {
-        "english": "Free spells, every turn."
+        "english": "Prepare free Common or Uncommon spells; gain permanent [conduit] after combat."
       },
       "bonus_damage": 10,
       "remove_upgrades": [
@@ -163,7 +163,7 @@
         "english": "Grimoire III"
       },
       "descriptions": {
-        "english": "Free spells, every turn."
+        "english": "Prepare free spells of any rarity; gain permanent [conduit] after combat."
       },
       "bonus_damage": 18,
       "remove_upgrades": [

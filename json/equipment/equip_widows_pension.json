@@ -7,7 +7,7 @@
         "english": "Widow's Pension"
       },
       "descriptions": {
-        "english": "<b>Extinguish</b>: gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>."
+        "english": "<b>Extinguish</b>: gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>. Once per battle."
       },
       "card_art": "@WidowsPension",
       "cost": 1,
@@ -52,7 +52,7 @@
         "english": "Widow's Pension"
       },
       "descriptions": {
-        "english": "<b>Extinguish</b>: gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>."
+        "english": "<b>Extinguish</b>: gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>. Once per battle."
       },
       "icon": "@WidowsPension",
       "trigger_upgrades": [
@@ -65,11 +65,12 @@
       "id": "WidowsPensionTrigger",
       "trigger": "on_death",
       "descriptions": {
-        "english": "Gain [coin] equal to this unit's base [attack] + [health], rounded to <b>5</b>."
+        "english": "Gain [coin] equal to this unit's base [attack] + [health], rounded to <b>5</b>. Once per battle."
       },
       "effects": [
         "@WidowsPensionGold"
-      ]
+      ],
+      "trigger_once": true
     }
   ],
   "sprites": [

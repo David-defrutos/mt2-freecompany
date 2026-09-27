@@ -138,7 +138,7 @@
         "english": "Beastmaster"
       },
       "descriptions": {
-        "english": "Vesper arrives with a tamed <b>Troll</b>.\nTrolls: +<b>10</b> [attack]/[health] per Ring after the first."
+        "english": "Choose a Troll for your deck. Trolls grow stronger each Ring."
       },
       "bonus_hp": 6,
       "trigger_upgrades": [
@@ -152,7 +152,7 @@
         "english": "Beastmaster II"
       },
       "descriptions": {
-        "english": "Trolls: +<b>10</b> [attack]/[health] per Ring after the first, and [trample]."
+        "english": "Trolls grow stronger each Ring and gain [trample]."
       },
       "bonus_hp": 12,
       "bonus_damage": 4,
@@ -170,7 +170,7 @@
         "english": "Beastmaster III"
       },
       "descriptions": {
-        "english": "Trolls: +<b>10</b> [attack]/[health] per Ring after the first, and [trample].\n<b>Call of the Wild</b> is ready a turn sooner."
+        "english": "Trolls grow stronger each Ring and gain [trample]. Call of the Wild is ready sooner."
       },
       "bonus_hp": 18,
       "bonus_damage": 8,

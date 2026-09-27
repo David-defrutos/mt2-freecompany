@@ -10,9 +10,9 @@
         "english": "Apply <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] to an enemy. When it runs out, deal <b>[effect0.power]</b> damage to it."
       },
       "card_art": "@DelayedBlastFireball",
-      "cost": 3,
+      "cost": 2,
       "card_type": "spell",
-      "rarity": "rare",
+      "rarity": "uncommon",
       "class": "@ClassFreeCompany",
       "targets_room": true,
       "targetless": false,

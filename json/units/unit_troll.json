@@ -407,7 +407,7 @@
       "id": "TrollBeastmasterSpawn",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "If a <b>Beastmaster</b> is in play on any floor, this unit enters stronger for the rest of combat."
+        "english": "If <b>Beastmaster</b> Vesper is in play, gain +<b>10</b> [attack] and [health] for each Ring after the first. <b>Beastmaster II</b> or higher: also gain [trample]."
       },
       "effects": [
         "@TrollRingBonus",

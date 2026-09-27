@@ -7,7 +7,7 @@
         "english": "Plunder"
       },
       "descriptions": {
-        "english": "Takes his cut."
+        "english": "Gain [avarice] and [titanskin]."
       },
       "bonus_damage": 5,
       "bonus_hp": 5,
@@ -28,7 +28,7 @@
         "english": "Plunder II"
       },
       "descriptions": {
-        "english": "Takes his cut."
+        "english": "Gain more [avarice] and [titanskin]."
       },
       "bonus_damage": 12,
       "bonus_hp": 10,
@@ -52,7 +52,7 @@
         "english": "Plunder III"
       },
       "descriptions": {
-        "english": "Takes his cut."
+        "english": "Gain [avarice], [titanskin], and [ambush]."
       },
       "bonus_damage": 20,
       "bonus_hp": 15,

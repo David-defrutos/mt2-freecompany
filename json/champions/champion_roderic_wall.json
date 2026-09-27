@@ -7,7 +7,7 @@
         "english": "Power Slam I"
       },
       "descriptions": {
-        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and [effect2.power] damage to all enemy units in this room."
+        "english": "[advance]. Deal current [health] + [armor] damage to the front enemy and [effect2.power] to all enemies here."
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -27,7 +27,7 @@
         "english": "Power Slam II"
       },
       "descriptions": {
-        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and [effect2.power] damage to all enemy units in this room."
+        "english": "[advance]. Deal current [health] + [armor] damage to the front enemy and [effect2.power] to all enemies here."
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -47,7 +47,7 @@
         "english": "Power Slam III"
       },
       "descriptions": {
-        "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor], and [effect2.power] damage to all enemy units in this room."
+        "english": "[advance]. Deal current [health] + [armor] damage to the front enemy and [effect2.power] to all enemies here."
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -197,7 +197,7 @@
         "english": "Shield Wall"
       },
       "descriptions": {
-        "english": "Holds the line for everyone."
+        "english": "Give allies here <b>3</b> [armor] before combat. Power Slam hits enemies here."
       },
       "bonus_hp": 10,
       "trigger_upgrades": [
@@ -217,7 +217,7 @@
         "english": "Shield Wall II"
       },
       "descriptions": {
-        "english": "Holds the line for everyone."
+        "english": "Give allies here <b>6</b> [armor] before combat. Power Slam hits enemies here."
       },
       "bonus_hp": 20,
       "remove_upgrades": [
@@ -240,7 +240,7 @@
         "english": "Shield Wall III"
       },
       "descriptions": {
-        "english": "Holds the line for everyone."
+        "english": "Give allies here <b>10</b> [armor] before combat. Power Slam hits enemies here."
       },
       "bonus_hp": 35,
       "remove_upgrades": [

@@ -64,7 +64,7 @@
       "id": "ChirurgeonTrigger1",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore [effect0.power] health to all friendly units on this floor, then remove all [debuff] effects from [effect1.power] random debuffed friendly unit on this floor."
+        "english": "Restore [effect0.power] health to all allies here. Cleanse <b>1</b> random debuffed ally here."
       },
       "effects": [
         "@ChirurgeonHeal1",
@@ -75,7 +75,7 @@
       "id": "ChirurgeonTrigger2",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore [effect0.power] health to all friendly units on this floor, then remove all [debuff] effects from <b>2</b> random debuffed friendly units anywhere."
+        "english": "Restore [effect0.power] health to all allies here. Cleanse <b>2</b> random debuffed allies anywhere."
       },
       "effects": [
         "@ChirurgeonHeal2",
@@ -87,7 +87,7 @@
       "id": "ChirurgeonTrigger3",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore [effect0.power] health to all friendly units on this floor, then remove all [debuff] effects from <b>3</b> random debuffed friendly units anywhere."
+        "english": "Restore [effect0.power] health to all allies here. Cleanse <b>3</b> random debuffed allies anywhere."
       },
       "effects": [
         "@ChirurgeonHeal3",
@@ -541,7 +541,7 @@
         "english": "Chirurgeon"
       },
       "descriptions": {
-        "english": "Keeps the company standing."
+        "english": "Heal allies here and cleanse <b>1</b> ally each turn. Field Surgery grants [undying]."
       },
       "bonus_hp": 10,
       "trigger_upgrades": [
@@ -555,7 +555,7 @@
         "english": "Chirurgeon II"
       },
       "descriptions": {
-        "english": "Keeps the company standing."
+        "english": "Heal allies here and cleanse <b>2</b> allies anywhere each turn. Field Surgery grants [undying]."
       },
       "bonus_hp": 20,
       "remove_upgrades": [
@@ -572,7 +572,7 @@
         "english": "Chirurgeon III"
       },
       "descriptions": {
-        "english": "Keeps the company standing."
+        "english": "Heal allies here and cleanse <b>3</b> allies anywhere each turn. Field Surgery grants [undying]."
       },
       "bonus_hp": 30,
       "remove_upgrades": [
