@@ -157,6 +157,7 @@
   "effects": [
     {
       "id": "EquipChalkCircle",
+      "applied_vfx": "@KitWizardArcaneVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -164,6 +165,7 @@
     },
     {
       "id": "EquipGrimoire",
+      "applied_vfx": "@KitWizardArcaneVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -171,6 +173,7 @@
     },
     {
       "id": "EquipArchmagesStaff",
+      "applied_vfx": "@KitWizardArcaneVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -218,6 +221,16 @@
           "sprite": "@ArchmagesStaff"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "KitWizardArcaneVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Ancient Magic Impact_PS.prefab",
+        "asset_guid": "cb226d23beb7dfd4f8bd15c19efeebfc"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

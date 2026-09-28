@@ -29,6 +29,7 @@
   "effects": [
     {
       "id": "SpoilsOfWarAvarice",
+      "applied_vfx": "@SpellSpoilsOfWarGreedVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "monsters",
@@ -55,6 +56,16 @@
           "sprite": "@SpoilsOfWar"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellSpoilsOfWarGreedVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/Pyreborne/Greed/FX_Greed.prefab",
+        "asset_guid": "0ed94d97470cdda4ea1af178010b635f"
+      },
+      "spawn_location": "character_bottom"
     }
   ]
 }

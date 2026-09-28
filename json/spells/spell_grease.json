@@ -32,6 +32,7 @@
   "effects": [
     {
       "id": "GreaseRooted",
+      "applied_vfx": "@SpellGreaseRootVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",
@@ -58,6 +59,16 @@
           "sprite": "@Grease"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellGreaseRootVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_EncaseVines_PS.prefab",
+        "asset_guid": "5c17914b9ad92cf4f88666384ae72cb4"
+      },
+      "spawn_location": "character_bottom"
     }
   ]
 }

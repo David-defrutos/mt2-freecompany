@@ -100,6 +100,7 @@
   "effects": [
     {
       "id": "ChirurgeonHeal1",
+      "applied_vfx": "@ChampionVesperChirurgeonHealVFX",
       "name": "CardEffectHeal",
       "target_mode": "room",
       "target_team": "monsters",
@@ -107,6 +108,7 @@
     },
     {
       "id": "ChirurgeonHeal2",
+      "applied_vfx": "@ChampionVesperChirurgeonHealVFX",
       "name": "CardEffectHeal",
       "target_mode": "room",
       "target_team": "monsters",
@@ -114,6 +116,7 @@
     },
     {
       "id": "ChirurgeonHeal3",
+      "applied_vfx": "@ChampionVesperChirurgeonHealVFX",
       "name": "CardEffectHeal",
       "target_mode": "room",
       "target_team": "monsters",
@@ -121,6 +124,7 @@
     },
     {
       "id": "ChirurgeonCleanse1_1",
+      "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
       "name": "CardEffectRemoveAllStatusEffects",
       "target_mode": "random_in_room",
       "target_team": "monsters",
@@ -188,6 +192,7 @@
     },
     {
       "id": "ChirurgeonCleanse2_1",
+      "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
       "name": "CardEffectRemoveAllStatusEffects",
       "target_mode": "random_from_any_room",
       "target_team": "monsters",
@@ -255,6 +260,7 @@
     },
     {
       "id": "ChirurgeonCleanse2_2",
+      "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
       "name": "CardEffectRemoveAllStatusEffects",
       "target_mode": "random_from_any_room",
       "target_team": "monsters",
@@ -322,6 +328,7 @@
     },
     {
       "id": "ChirurgeonCleanse3_1",
+      "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
       "name": "CardEffectRemoveAllStatusEffects",
       "target_mode": "random_from_any_room",
       "target_team": "monsters",
@@ -389,6 +396,7 @@
     },
     {
       "id": "ChirurgeonCleanse3_2",
+      "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
       "name": "CardEffectRemoveAllStatusEffects",
       "target_mode": "random_from_any_room",
       "target_team": "monsters",
@@ -456,6 +464,7 @@
     },
     {
       "id": "ChirurgeonCleanse3_3",
+      "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
       "name": "CardEffectRemoveAllStatusEffects",
       "target_mode": "random_from_any_room",
       "target_team": "monsters",
@@ -523,6 +532,7 @@
     },
     {
       "id": "ChirurgeonSurgeryUndying",
+      "applied_vfx": "@ChampionVesperChirurgeonUndyingVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "drop_target_character",
       "target_team": "both",
@@ -582,6 +592,32 @@
         "@ChirurgeonTrigger3"
       ],
       "ability_upgrade": "@ChirurgeonSurgery3"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "ChampionVesperChirurgeonHealVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_HealImpactNormal_PS.prefab",
+        "asset_guid": "a1b4834936900f44c97dcde93697e47b"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "ChampionVesperChirurgeonCleanseVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Cleanse_PS.prefab",
+        "asset_guid": "fa43d9994ecafc64a938d8d0656c50e2"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "ChampionVesperChirurgeonUndyingVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/LunaCoven/Fae'sBlessing/FX_FaeBlessing.prefab",
+        "asset_guid": "154b24d57e7cd4f4d9b1b927165c4ab4"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

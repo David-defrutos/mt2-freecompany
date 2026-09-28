@@ -558,6 +558,7 @@
     },
     {
       "id": "StoneTrollBoulder",
+      "applied_vfx": "@UnitTrollHeavyVFX",
       "name": "CardEffectAttackTargetsWithSelfUnit",
       "target_mode": "weakest",
       "target_team": "heroes"
@@ -806,6 +807,16 @@
           }
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "UnitTrollHeavyVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_HeavyImpact_PS.prefab",
+        "asset_guid": "3b00d03f85e88874a92970fc9034cd1a"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

@@ -32,6 +32,7 @@
   "effects": [
     {
       "id": "BlessValor",
+      "applied_vfx": "@SpellBlessHolyRoomVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "monsters",
@@ -58,6 +59,16 @@
           "sprite": "@Bless"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellBlessHolyRoomVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/Banished/Benediction/FX_Benediction2.prefab",
+        "asset_guid": "3d548e3361144c5499df32be4489441f"
+      },
+      "spawn_location": "room_center"
     }
   ]
 }

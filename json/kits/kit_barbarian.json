@@ -189,6 +189,7 @@
     },
     {
       "id": "EquipNotchedAxe",
+      "applied_vfx": "@KitBarbarianBuffVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -208,6 +209,7 @@
     },
     {
       "id": "EquipTwinAxes",
+      "applied_vfx": "@KitBarbarianBuffVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -231,6 +233,7 @@
     },
     {
       "id": "EquipReaversMaul",
+      "applied_vfx": "@KitBarbarianBuffVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -278,6 +281,16 @@
           "sprite": "@ReaversMaul"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "KitBarbarianBuffVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Buff_Attack_PS.prefab",
+        "asset_guid": "75491630f33039343baa202d7f6f7a30"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

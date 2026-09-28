@@ -77,6 +77,7 @@
     },
     {
       "id": "BattleChaplainHeal",
+      "applied_vfx": "@UnitBattleChaplainHealLargeVFX",
       "name": "CardEffectHeal",
       "target_mode": "room",
       "target_team": "monsters",
@@ -143,6 +144,16 @@
           }
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "UnitBattleChaplainHealLargeVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_HealImpactLarge_PS.prefab",
+        "asset_guid": "da89d764437b23145875547344957522"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

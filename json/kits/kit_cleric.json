@@ -158,6 +158,7 @@
   "effects": [
     {
       "id": "EquipBandages",
+      "applied_vfx": "@KitClericHealVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -165,6 +166,7 @@
     },
     {
       "id": "EquipHolySymbol",
+      "applied_vfx": "@KitClericHealVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -172,6 +174,7 @@
     },
     {
       "id": "EquipReliquary",
+      "applied_vfx": "@KitClericHealVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -219,6 +222,16 @@
           "sprite": "@Reliquary"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "KitClericHealVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_HealImpactNormal_PS.prefab",
+        "asset_guid": "a1b4834936900f44c97dcde93697e47b"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

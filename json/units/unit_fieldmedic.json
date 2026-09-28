@@ -58,6 +58,7 @@
     },
     {
       "id": "FieldMedicHeal",
+      "applied_vfx": "@UnitFieldmedicHealVFX",
       "name": "CardEffectHeal",
       "target_mode": "weakest",
       "target_team": "monsters",
@@ -65,6 +66,7 @@
     },
     {
       "id": "FieldMedicCleanse",
+      "applied_vfx": "@UnitFieldmedicCleanseVFX",
       "name": "CardEffectRemoveAllStatusEffects",
       "target_mode": "random_in_room",
       "target_team": "monsters",
@@ -187,6 +189,24 @@
           }
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "UnitFieldmedicHealVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_HealImpactNormal_PS.prefab",
+        "asset_guid": "a1b4834936900f44c97dcde93697e47b"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "UnitFieldmedicCleanseVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Cleanse_PS.prefab",
+        "asset_guid": "fa43d9994ecafc64a938d8d0656c50e2"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

@@ -32,6 +32,7 @@
   "effects": [
     {
       "id": "MassHoldDazed",
+      "applied_vfx": "@SpellMassHoldPersonDazeVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",
@@ -58,6 +59,16 @@
           "sprite": "@MassHoldPerson"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellMassHoldPersonDazeVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_WaxImpact_PS.prefab",
+        "asset_guid": "16baf7e5a46cc9748b8b32ab3aabec0f"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

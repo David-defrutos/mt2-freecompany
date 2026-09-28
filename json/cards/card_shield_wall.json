@@ -32,6 +32,7 @@
   "effects": [
     {
       "id": "ShieldWallArmor",
+      "applied_vfx": "@CardShieldWallSanctuaryVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "monsters",
@@ -58,6 +59,16 @@
           "sprite": "@ShieldWall"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "CardShieldWallSanctuaryVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/Banished/Sanctuary/FX_Sanctuary.prefab",
+        "asset_guid": "76644c90ff01eac449740aa5aaadf56e"
+      },
+      "spawn_location": "room_center"
     }
   ]
 }

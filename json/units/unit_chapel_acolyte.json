@@ -54,6 +54,7 @@
     },
     {
       "id": "ChapelAcolyteAbility",
+      "applied_vfx": "@UnitChapelAcolyteHealSmallVFX",
       "name": "CardEffectHeal",
       "target_mode": "weakest",
       "target_team": "monsters",
@@ -112,6 +113,16 @@
           }
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "UnitChapelAcolyteHealSmallVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_HealImpactSmall_PS.prefab",
+        "asset_guid": "43d81144eb85739409501ee485f55b0f"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

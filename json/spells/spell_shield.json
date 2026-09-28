@@ -32,6 +32,7 @@
   "effects": [
     {
       "id": "ShieldArmor",
+      "applied_vfx": "@SpellShieldArmorVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -58,6 +59,16 @@
           "sprite": "@Shield"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellShieldArmorVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/Wurmkin/EchoInfusion/FX_WurmkinBuff.prefab",
+        "asset_guid": "24aff4cc201a62e41838f1d11b277562"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

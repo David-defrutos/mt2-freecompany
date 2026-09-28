@@ -15,6 +15,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+    <PackageReference Include="BepInEx.Core" Version="5.4.21" />
     <PackageReference Include="MonsterTrain2.Api" Version="4.5.21908879" />
     <PackageReference Include="TrainworksReloaded.Base" Version="0.7.8" />
     <PackageReference Include="Conductor" Version="0.5.2" />
@@ -26,3 +27,4 @@
   <!-- Mismo criterio que en Sandscourged: json/ y textures/ cuelgan de la raiz
        del mod, no de src/. El build solo produce el DLL. -->
 </Project>
+<!-- 2026-09-28-2313||codex-freecompany-fx||src/mt2_freecompany.Plugin.csproj||referencia BepInEx.Core para parche Harmony de cues originales -->

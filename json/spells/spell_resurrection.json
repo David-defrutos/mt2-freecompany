@@ -33,6 +33,7 @@
   "effects": [
     {
       "id": "ResurrectionUndying",
+      "applied_vfx": "@SpellResurrectionUndyingVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -71,6 +72,16 @@
           "sprite": "@Resurrection"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellResurrectionUndyingVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/LunaCoven/Fae'sBlessing/FX_FaeBlessing.prefab",
+        "asset_guid": "154b24d57e7cd4f4d9b1b927165c4ab4"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

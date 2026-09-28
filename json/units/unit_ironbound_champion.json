@@ -91,6 +91,7 @@
     },
     {
       "id": "IronboundChampionAbilityGuard",
+      "applied_vfx": "@UnitIronboundChampionArmorVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "self",
       "target_team": "monsters",
@@ -166,6 +167,16 @@
           }
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "UnitIronboundChampionArmorVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/Wurmkin/EchoInfusion/FX_WurmkinBuff.prefab",
+        "asset_guid": "24aff4cc201a62e41838f1d11b277562"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

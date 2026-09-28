@@ -32,6 +32,7 @@
   "effects": [
     {
       "id": "CureWoundsHeal",
+      "applied_vfx": "@SpellCureWoundsHealVFX",
       "name": "CardEffectHeal",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -53,6 +54,16 @@
           "sprite": "@CureWounds"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellCureWoundsHealVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_HealImpactNormal_PS.prefab",
+        "asset_guid": "a1b4834936900f44c97dcde93697e47b"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

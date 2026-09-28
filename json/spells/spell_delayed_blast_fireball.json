@@ -36,6 +36,7 @@
   "effects": [
     {
       "id": "DelayedFusePlant",
+      "applied_vfx": "@SpellDelayedBlastFireballFireSpellVFX",
       "name": "@CardEffectPlantCountdown",
       "target_mode": "drop_target_character",
       "target_team": "heroes",
@@ -78,6 +79,16 @@
       "id": "DelayedExplosive",
       "name": "CardTraitDamageOverflow",
       "param_int": 2
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellDelayedBlastFireballFireSpellVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_FireSpellImpact_PS.prefab",
+        "asset_guid": "8cf67fd667051b649b76811fe44a4577"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

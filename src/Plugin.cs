@@ -1,5 +1,6 @@
 using BepInEx;
 using BepInEx.Logging;
+using HarmonyLib;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
 
@@ -111,6 +112,7 @@ namespace mt2_freecompany.Plugin
             // nada que ver con este clan y debe funcionar sin el.
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
+            new Harmony(MyPluginInfo.PLUGIN_GUID).PatchAll();
         }
     }
 }
@@ -119,3 +121,4 @@ namespace mt2_freecompany.Plugin
 // 2026-09-21-2210||claude-mt2-the-free-company2-varios||src/Plugin.cs||ruta equip_letter_of_credit.json --> equip_widows_pension.json; alta de json/units/unit_the_new_guy.json: 72 --> 73 rutas
 // 2026-09-22-2219||claude-mt2-the-free-company2-roderic-quartermaster||src/Plugin.cs||alta de json/spells/spell_severance_pay.json, spell_kit_bash.json y spell_double_shift.json: 73 --> 76 rutas
 // 2026-09-23-2130||claude-mt2-the-free-company2-mazo-pruebas||src/Plugin.cs||alta de json/status/status_countdown.json (estados Fuse y Banished)
+// 2026-09-28-2313||codex-freecompany-fx||src/Plugin.cs||activa parche Harmony de cues sonoros al jugar cartas del clan

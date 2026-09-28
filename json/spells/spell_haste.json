@@ -32,6 +32,7 @@
   "effects": [
     {
       "id": "HasteBurst",
+      "applied_vfx": "@SpellHasteBuffVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -58,6 +59,16 @@
           "sprite": "@Haste"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellHasteBuffVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Buff_Attack_PS.prefab",
+        "asset_guid": "75491630f33039343baa202d7f6f7a30"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

@@ -32,6 +32,7 @@
   "effects": [
     {
       "id": "InvisibilityStealth",
+      "applied_vfx": "@SpellInvisibilityShadowVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -58,6 +59,16 @@
           "sprite": "@Invisibility"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellInvisibilityShadowVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_ShadowImpact_PS.prefab",
+        "asset_guid": "7fc4324c349cb2b4f81e9ed0e62eb115"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

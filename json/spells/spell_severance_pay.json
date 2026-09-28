@@ -44,6 +44,7 @@
     },
     {
       "id": "SeverancePayGold",
+      "applied_vfx": "@SeverancePayCoinVFX",
       "name": "CardEffectRewardGold",
       "target_mode": "pyre",
       "target_team": "monsters",
@@ -71,6 +72,16 @@
           "sprite": "@SeverancePay"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SeverancePayCoinVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_CoinGain_PS.prefab",
+        "asset_guid": "f5a595ac3f2ede94483684d774afd444"
+      },
+      "spawn_location": "room_center"
     }
   ]
 }

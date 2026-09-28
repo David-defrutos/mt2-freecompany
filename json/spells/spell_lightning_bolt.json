@@ -36,6 +36,7 @@
   "effects": [
     {
       "id": "LightningBoltDamage",
+      "applied_vfx": "@SpellLightningBoltLightningVFX",
       "name": "CardEffectDamage",
       "target_mode": "front_in_all_rooms",
       "target_team": "heroes",
@@ -75,6 +76,16 @@
           "sprite": "@LightningBolt"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellLightningBoltLightningVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/LunaCoven/CosmicBolt/FX_CosmicBolt.prefab",
+        "asset_guid": "85dba38171e8d5e40a39b73fa7d6accd"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

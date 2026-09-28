@@ -36,6 +36,7 @@
   "effects": [
     {
       "id": "FireballEnemies",
+      "applied_vfx": "@SpellFireballFireVFX",
       "name": "CardEffectDamage",
       "target_mode": "room",
       "target_team": "heroes",
@@ -72,6 +73,16 @@
           "sprite": "@Fireball"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellFireballFireVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_ImpactFire_PS.prefab",
+        "asset_guid": "2d1444371baed9a4e94156b585c6c64e"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

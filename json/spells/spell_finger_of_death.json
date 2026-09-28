@@ -32,6 +32,7 @@
   "effects": [
     {
       "id": "FingerFragile",
+      "applied_vfx": "@SpellFingerOfDeathDeathVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "drop_target_character",
       "target_team": "heroes",
@@ -59,6 +60,16 @@
           "sprite": "@FingerOfDeath"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellFingerOfDeathDeathVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_MementoMori_PS.prefab",
+        "asset_guid": "501b8e250e260384e9ef16f6ae8a9fdd"
+      },
+      "spawn_location": "character_bottom"
     }
   ]
 }

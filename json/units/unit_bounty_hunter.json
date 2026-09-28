@@ -91,6 +91,7 @@
     },
     {
       "id": "BountyHunterShotAttack",
+      "applied_vfx": "@UnitBountyHunterImpactVFX",
       "name": "CardEffectAttackTargetsWithSelfUnit",
       "target_mode": "drop_target_character",
       "target_team": "heroes"
@@ -193,6 +194,16 @@
           }
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "UnitBountyHunterImpactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_SmallImpact_PS.prefab",
+        "asset_guid": "83810142b01f4fc40af3a3f4030a2c35"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

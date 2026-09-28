@@ -166,6 +166,7 @@
   "effects": [
     {
       "id": "EquipLockpicks",
+      "applied_vfx": "@KitRogueShadowVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -173,6 +174,7 @@
     },
     {
       "id": "EquipPoisonedDagger",
+      "applied_vfx": "@KitRogueShadowVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -180,6 +182,7 @@
     },
     {
       "id": "EquipThiefsMantle",
+      "applied_vfx": "@KitRogueShadowVFX",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -227,6 +230,16 @@
           "sprite": "@ThiefsMantle"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "KitRogueShadowVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_ShadowImpact_PS.prefab",
+        "asset_guid": "7fc4324c349cb2b4f81e9ed0e62eb115"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

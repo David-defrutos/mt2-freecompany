@@ -33,6 +33,7 @@
   "effects": [
     {
       "id": "CloudkillPoison",
+      "applied_vfx": "@SpellCloudkillPoisonVFX",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",
@@ -71,6 +72,16 @@
           "sprite": "@Cloudkill"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellCloudkillPoisonVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/UnderLegion/MushroomCloud/FX_MushroomCloud.prefab",
+        "asset_guid": "9e7a7f36278be71419ebc3bbae5ca044"
+      },
+      "spawn_location": "character_bottom"
     }
   ]
 }

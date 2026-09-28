@@ -33,6 +33,7 @@
   "effects": [
     {
       "id": "DimensionDoorBumpAlly",
+      "applied_vfx": "@SpellDimensionDoorGravityVFX",
       "name": "CardEffectBump",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
@@ -40,6 +41,7 @@
     },
     {
       "id": "DimensionDoorBumpEnemy",
+      "applied_vfx": "@SpellDimensionDoorGravityVFX",
       "name": "CardEffectBump",
       "target_mode": "drop_target_character",
       "target_team": "heroes",
@@ -61,6 +63,16 @@
           "sprite": "@DimensionDoor"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SpellDimensionDoorGravityVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/LunaCoven/Gravity/FX_Gravity.prefab",
+        "asset_guid": "e6cd81e0f780c9a4a91d3baa28bb8c18"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }

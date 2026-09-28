@@ -34,6 +34,7 @@
   "effects": [
     {
       "id": "MagicMissileDart1",
+      "applied_vfx": "@CardMagicMissileArcaneVFX",
       "name": "CardEffectDamage",
       "target_mode": "random_in_room",
       "target_team": "heroes",
@@ -41,6 +42,7 @@
     },
     {
       "id": "MagicMissileDart2",
+      "applied_vfx": "@CardMagicMissileArcaneVFX",
       "name": "CardEffectDamage",
       "target_mode": "random_in_room",
       "target_team": "heroes",
@@ -48,6 +50,7 @@
     },
     {
       "id": "MagicMissileDart3",
+      "applied_vfx": "@CardMagicMissileArcaneVFX",
       "name": "CardEffectDamage",
       "target_mode": "random_in_room",
       "target_team": "heroes",
@@ -69,6 +72,16 @@
           "sprite": "@MagicMissile"
         }
       }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "CardMagicMissileArcaneVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Ancient Magic Impact_PS.prefab",
+        "asset_guid": "cb226d23beb7dfd4f8bd15c19efeebfc"
+      },
+      "spawn_location": "character_center"
     }
   ]
 }
