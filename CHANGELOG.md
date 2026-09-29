@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.6 — 2026-09-29
+
+- **Vesper y Roderic**: ilustraciones de carta y sprites de unidad animados. Las
+  transiciones incluyen fotogramas intermedios; se ajustaron el tamaño y la proporción
+  de Vesper en combate.
+- **Chirurgeon**: cura y limpia al inicio del turno para que la elección aleatoria no
+  altere la vista previa de combate. También puede eliminar **Dizzy**.
+- Las cartas del clan tienen efectos visuales y sonidos acordes con su acción.
+- **Delayed Blast Fireball** cuesta **2** Ember en vez de 3 y pasa de rara a infrecuente.
+  **Haste** aplica **Burst 1** en vez de 2.
+- Textos de cartas y mejoras revisados para explicar mejor los efectos de Roderic,
+  Vesper y varias unidades.
+- Dependencias mínimas: **Trainworks Reloaded 0.7.26** y **Conductor 0.5.14**.
+
 ## 0.2.5 — 2026-09-25
 
 Reequilibrio de la senda **Beastmaster** de Vesper y del Two-Headed Troll.
@@ -107,3 +121,5 @@ comentarios de la ficha.
 <!-- 2026-09-25-2019||claude-mt2-the-free-company2-vesper-beastmaster||CHANGELOG.md||entrada 0.2.5: Beastmaster por anillo, fuera Celebrate y Sweep, Call of the Wild III antes, Two-Headed Troll con Wrath, Double Shift con Dizzy, Kit Bash 1, Field Medic, Severance Pay inicial, 16 artes -->
 
 <!-- 2026-09-25-2040||david||CHANGELOG.md||entrada 0.2.5: linea nueva de Invisibility (Stealth 2 en lugar de 3) -->
+
+<!-- 2026-09-29-2349||codex-freecompany-fx||CHANGELOG.md||añade entrada 0.2.6 con animaciones, Chirurgeon, FX, balance y dependencias -->

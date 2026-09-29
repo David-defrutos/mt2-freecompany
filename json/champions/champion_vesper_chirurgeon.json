@@ -62,7 +62,7 @@
   "character_triggers": [
     {
       "id": "ChirurgeonTrigger1",
-      "trigger": "end_turn_pre_hand_discard",
+      "trigger": "pre_combat",
       "descriptions": {
         "english": "Restore [effect0.power] health to all allies here. Cleanse <b>1</b> random debuffed ally here."
       },
@@ -73,7 +73,7 @@
     },
     {
       "id": "ChirurgeonTrigger2",
-      "trigger": "end_turn_pre_hand_discard",
+      "trigger": "pre_combat",
       "descriptions": {
         "english": "Restore [effect0.power] health to all allies here. Cleanse <b>2</b> random debuffed allies anywhere."
       },
@@ -85,7 +85,7 @@
     },
     {
       "id": "ChirurgeonTrigger3",
-      "trigger": "end_turn_pre_hand_discard",
+      "trigger": "pre_combat",
       "descriptions": {
         "english": "Restore [effect0.power] health to all allies here. Cleanse <b>3</b> random debuffed allies anywhere."
       },
@@ -142,6 +142,9 @@
         },
         {
           "status": "debuff"
+        },
+        {
+          "status": "@dizzy"
         },
         {
           "status": "decay"
@@ -212,6 +215,9 @@
           "status": "debuff"
         },
         {
+          "status": "@dizzy"
+        },
+        {
           "status": "decay"
         },
         {
@@ -278,6 +284,9 @@
         },
         {
           "status": "debuff"
+        },
+        {
+          "status": "@dizzy"
         },
         {
           "status": "decay"
@@ -348,6 +357,9 @@
           "status": "debuff"
         },
         {
+          "status": "@dizzy"
+        },
+        {
           "status": "decay"
         },
         {
@@ -414,6 +426,9 @@
         },
         {
           "status": "debuff"
+        },
+        {
+          "status": "@dizzy"
         },
         {
           "status": "decay"
@@ -484,6 +499,9 @@
           "status": "debuff"
         },
         {
+          "status": "@dizzy"
+        },
+        {
           "status": "decay"
         },
         {
@@ -551,7 +569,7 @@
         "english": "Chirurgeon"
       },
       "descriptions": {
-        "english": "Heal allies here and cleanse <b>1</b> ally each turn. Field Surgery grants [undying]."
+        "english": "At start of turn, heal allies here and cleanse <b>1</b> ally. Field Surgery grants [undying]."
       },
       "bonus_hp": 10,
       "trigger_upgrades": [
@@ -565,7 +583,7 @@
         "english": "Chirurgeon II"
       },
       "descriptions": {
-        "english": "Heal allies here and cleanse <b>2</b> allies anywhere each turn. Field Surgery grants [undying]."
+        "english": "At start of turn, heal allies here and cleanse <b>2</b> allies anywhere. Field Surgery grants [undying]."
       },
       "bonus_hp": 20,
       "remove_upgrades": [
@@ -582,7 +600,7 @@
         "english": "Chirurgeon III"
       },
       "descriptions": {
-        "english": "Heal allies here and cleanse <b>3</b> allies anywhere each turn. Field Surgery grants [undying]."
+        "english": "At start of turn, heal allies here and cleanse <b>3</b> allies anywhere. Field Surgery grants [undying]."
       },
       "bonus_hp": 30,
       "remove_upgrades": [

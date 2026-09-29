@@ -104,6 +104,38 @@
     {
       "id": "RodericCharacterArt",
       "path": "textures/RodericCharacterArt.png"
+    },
+    {
+      "id": "RodericCardFrame1",
+      "path": "textures/RodericCardFrame1.png"
+    },
+    {
+      "id": "RodericCardFrame2",
+      "path": "textures/RodericCardFrame2.png"
+    },
+    {
+      "id": "RodericUnitIdleFrame1",
+      "path": "textures/RodericUnitIdleFrame1.png"
+    },
+    {
+      "id": "RodericUnitIdleFrame2",
+      "path": "textures/RodericUnitIdleFrame2.png"
+    },
+    {
+      "id": "RodericUnitBlend33",
+      "path": "textures/RodericUnitBlend33.png"
+    },
+    {
+      "id": "RodericUnitBlend67",
+      "path": "textures/RodericUnitBlend67.png"
+    },
+    {
+      "id": "RodericCardBlend33",
+      "path": "textures/RodericCardBlend33.png"
+    },
+    {
+      "id": "RodericCardBlend67",
+      "path": "textures/RodericCardBlend67.png"
     }
   ],
   "game_objects": [
@@ -112,7 +144,28 @@
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@Roderic"
+          "sprite": "@Roderic",
+          "animation_clip": {
+            "id": "RodericCardIdle",
+            "sample_rate": 8,
+            "loop_time": "loop",
+            "frames": [
+              "@RodericCardFrame1",
+              "@RodericCardFrame1",
+              "@RodericCardFrame1",
+              "@RodericCardFrame1",
+              "@RodericCardFrame1",
+              "@RodericCardFrame1",
+              "@RodericCardFrame1",
+              "@RodericCardFrame1",
+              "@RodericCardBlend33",
+              "@RodericCardBlend67",
+              "@RodericCardFrame2",
+              "@RodericCardBlend67",
+              "@RodericCardBlend33",
+              "@RodericCardFrame1"
+            ]
+          }
         }
       }
     },
@@ -122,15 +175,67 @@
       "extensions": {
         "character_art": {
           "sprite": "@RodericCharacterArt",
+          "animations": [
+            {
+              "animation": "idle",
+              "frames": [
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitBlend33",
+                "@RodericUnitBlend67",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitBlend67",
+                "@RodericUnitBlend33",
+                "@RodericUnitIdleFrame1"
+              ],
+              "framerate": 8
+            },
+            {
+              "animation": "attack",
+              "frames": [
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitBlend33",
+                "@RodericUnitBlend67",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitBlend67",
+                "@RodericUnitBlend33",
+                "@RodericUnitIdleFrame1"
+              ],
+              "framerate": 16
+            },
+            {
+              "animation": "hit_react",
+              "frames": [
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitBlend33",
+                "@RodericUnitBlend67",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitBlend67",
+                "@RodericUnitBlend33",
+                "@RodericUnitIdleFrame1"
+              ],
+              "framerate": 16
+            }
+          ],
           "transform": {
             "position": {
               "x": 0,
-              "y": 0.502,
+              "y": 0.975,
               "z": 0
             },
             "scale": {
-              "x": 0.687,
-              "y": 0.687,
+              "x": 2.85,
+              "y": 2.85,
               "z": 1
             }
           }

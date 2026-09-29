@@ -59,6 +59,54 @@
     {
       "id": "VesperCharacterArt",
       "path": "textures/VesperCharacterArt.png"
+    },
+    {
+      "id": "VesperCardFrame1",
+      "path": "textures/VesperCardFrame1.png"
+    },
+    {
+      "id": "VesperCardFrame2",
+      "path": "textures/VesperCardFrame2.png"
+    },
+    {
+      "id": "VesperCardFrame3",
+      "path": "textures/VesperCardFrame3.png"
+    },
+    {
+      "id": "VesperCardFrame4",
+      "path": "textures/VesperCardFrame4.png"
+    },
+    {
+      "id": "VesperUnitIdleFrame1",
+      "path": "textures/VesperUnitIdleFrame1.png"
+    },
+    {
+      "id": "VesperUnitIdleFrame2",
+      "path": "textures/VesperUnitIdleFrame2.png"
+    },
+    {
+      "id": "VesperUnitBlend33",
+      "path": "textures/VesperUnitBlend33.png"
+    },
+    {
+      "id": "VesperUnitBlend67",
+      "path": "textures/VesperUnitBlend67.png"
+    },
+    {
+      "id": "VesperCardBlend12",
+      "path": "textures/VesperCardBlend12.png"
+    },
+    {
+      "id": "VesperCardBlend23",
+      "path": "textures/VesperCardBlend23.png"
+    },
+    {
+      "id": "VesperCardBlend34",
+      "path": "textures/VesperCardBlend34.png"
+    },
+    {
+      "id": "VesperCardBlend41",
+      "path": "textures/VesperCardBlend41.png"
     }
   ],
   "game_objects": [
@@ -67,7 +115,25 @@
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@Vesper"
+          "sprite": "@Vesper",
+          "animation_clip": {
+            "id": "VesperCardIdle",
+            "sample_rate": 8,
+            "loop_time": "loop",
+            "frames": [
+              "@VesperCardFrame1",
+              "@VesperCardFrame1",
+              "@VesperCardFrame1",
+              "@VesperCardFrame1",
+              "@VesperCardBlend12",
+              "@VesperCardFrame2",
+              "@VesperCardBlend23",
+              "@VesperCardFrame3",
+              "@VesperCardBlend34",
+              "@VesperCardFrame4",
+              "@VesperCardBlend41"
+            ]
+          }
         }
       }
     },
@@ -77,15 +143,54 @@
       "extensions": {
         "character_art": {
           "sprite": "@VesperCharacterArt",
+          "animations": [
+            {
+              "animation": "idle",
+              "frames": [
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitBlend33",
+                "@VesperUnitBlend67",
+                "@VesperUnitIdleFrame2",
+                "@VesperUnitBlend67",
+                "@VesperUnitBlend33",
+                "@VesperUnitIdleFrame1"
+              ],
+              "framerate": 8
+            },
+            {
+              "animation": "attack",
+              "frames": [
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitBlend33",
+                "@VesperUnitBlend67",
+                "@VesperUnitIdleFrame2",
+                "@VesperUnitBlend67",
+                "@VesperUnitBlend33",
+                "@VesperUnitIdleFrame1"
+              ],
+              "framerate": 16
+            }
+          ],
           "transform": {
             "position": {
               "x": 0,
-              "y": 0.527,
+              "y": 1.0,
               "z": 0
             },
             "scale": {
-              "x": 0.646,
-              "y": 0.646,
+              "x": 2.14,
+              "y": 2.85,
               "z": 1
             }
           }
