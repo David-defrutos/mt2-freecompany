@@ -4,10 +4,28 @@
     {
       "id": "BeastmasterCall",
       "names": {
-        "english": "Call of the Wild"
+        "english": "Call of the Wild",
+        "french": "Appel de la nature",
+        "german": "Ruf der Wildnis",
+        "russian": "Зов дикой природы",
+        "portuguese": "Chamado da Natureza",
+        "chinese": "野性呼唤",
+        "spanish": "Llamada de lo salvaje",
+        "chinese_traditional": "野性呼喚",
+        "korean": "야생의 부름",
+        "japanese": "野生の呼び声"
       },
       "descriptions": {
-        "english": "Put a <b>Troll</b> in your hand. It costs <b>0</b> [ember]."
+        "english": "Put a <b>Troll</b> in your hand. It costs <b>0</b> [ember].",
+        "french": "Ajoutez un <b>Troll</b> à votre main. Il coûte <b>0</b> [ember].",
+        "german": "Füge deiner Hand einen <b>Troll</b> hinzu. Er kostet <b>0</b> [ember].",
+        "russian": "Добавьте в руку <b>Тролль</b>. Он стоит <b>0</b> [ember].",
+        "portuguese": "Adicione um <b>Troll</b> à sua mão. Ele custa <b>0</b> [ember].",
+        "chinese": "将一个<b>巨魔</b>加入手牌。其费用为<b>0</b> [ember]。",
+        "spanish": "Añade un <b>Trol</b> a tu mano. Cuesta <b>0</b> [ember].",
+        "chinese_traditional": "將一個<b>巨魔</b>加入手牌。其費用為<b>0</b> [ember]。",
+        "korean": "손에 <b>트롤</b> 추가. 비용은 <b>0</b> [ember].",
+        "japanese": "手札に<b>トロール</b>を追加。コストは<b>0</b> [ember]。"
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
@@ -26,10 +44,28 @@
     {
       "id": "BeastmasterCall3",
       "names": {
-        "english": "Call of the Wild"
+        "english": "Call of the Wild",
+        "french": "Appel de la nature",
+        "german": "Ruf der Wildnis",
+        "russian": "Зов дикой природы",
+        "portuguese": "Chamado da Natureza",
+        "chinese": "野性呼唤",
+        "spanish": "Llamada de lo salvaje",
+        "chinese_traditional": "野性呼喚",
+        "korean": "야생의 부름",
+        "japanese": "野生の呼び声"
       },
       "descriptions": {
-        "english": "Put a <b>Troll</b> in your hand. It costs <b>0</b> [ember]."
+        "english": "Put a <b>Troll</b> in your hand. It costs <b>0</b> [ember].",
+        "french": "Ajoutez un <b>Troll</b> à votre main. Il coûte <b>0</b> [ember].",
+        "german": "Füge deiner Hand einen <b>Troll</b> hinzu. Er kostet <b>0</b> [ember].",
+        "russian": "Добавьте в руку <b>Тролль</b>. Он стоит <b>0</b> [ember].",
+        "portuguese": "Adicione um <b>Troll</b> à sua mão. Ele custa <b>0</b> [ember].",
+        "chinese": "将一个<b>巨魔</b>加入手牌。其费用为<b>0</b> [ember]。",
+        "spanish": "Añade un <b>Trol</b> a tu mano. Cuesta <b>0</b> [ember].",
+        "chinese_traditional": "將一個<b>巨魔</b>加入手牌。其費用為<b>0</b> [ember]。",
+        "korean": "손에 <b>트롤</b> 추가. 비용은 <b>0</b> [ember].",
+        "japanese": "手札に<b>トロール</b>を追加。コストは<b>0</b> [ember]。"
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
@@ -51,7 +87,16 @@
       "id": "BeastmasterGrantTrigger",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "The first time, <b>3</b> random <b>Tame</b> spells join your hand. The one you play keeps that <b>Troll</b> for the run."
+        "english": "The first time, <b>3</b> random <b>Tame</b> spells join your hand. The one you play keeps that <b>Troll</b> for the run.",
+        "french": "La première fois, ajoute <b>3</b> sorts d’<b>Apprivoisement</b> aléatoires à votre main. Celui que vous jouez conserve ce <b>Troll</b> pour la partie.",
+        "german": "Beim ersten Mal werden deiner Hand <b>3</b> zufällige <b>Zähmen</b>-Zauber hinzugefügt. Der gespielte Zauber behält diesen <b>Troll</b> für den Lauf.",
+        "russian": "В первый раз в руку добавляются <b>3</b> случайных заклинания <b>Приручения</b>. Разыгранное заклинание сохраняет этого <b>Тролль</b> на весь забег.",
+        "portuguese": "Na primeira vez, adiciona <b>3</b> feitiços aleatórios de <b>Domar</b> à sua mão. O que você jogar mantém esse <b>Troll</b> durante a partida.",
+        "chinese": "首次使用时，将<b>3</b>张随机<b>驯服</b>法术加入手牌。打出的法术会为本次旅程保留对应的<b>巨魔</b>。",
+        "spanish": "La primera vez, añade <b>3</b> hechizos aleatorios de <b>Domar</b> a tu mano. El que juegues conserva ese <b>Trol</b> para la partida.",
+        "chinese_traditional": "首次使用時，將<b>3</b>張隨機<b>馴服</b>法術加入手牌。打出的法術會為本次旅程保留對應的<b>巨魔</b>。",
+        "korean": "처음 사용 시 무작위 <b>길들이기</b> 주문 <b>3</b>장을 손에 추가. 사용한 주문의 <b>트롤</b>을 이번 여정 동안 보유.",
+        "japanese": "初回はランダムな<b>手なずける</b>呪文<b>3</b>枚を手札に追加。使用した呪文の<b>トロール</b>をこのプレイ中保持する。"
       },
       "effects": [
         "@BeastmasterOffer"
@@ -135,10 +180,28 @@
     {
       "id": "upg_Beastmaster1",
       "titles": {
-        "english": "Beastmaster"
+        "english": "Beastmaster",
+        "french": "Maître des bêtes",
+        "german": "Bestienmeister",
+        "russian": "Повелитель зверей",
+        "portuguese": "Mestre das Feras",
+        "chinese": "驯兽师",
+        "spanish": "Maestro de bestias",
+        "chinese_traditional": "馴獸師",
+        "korean": "야수 조련사",
+        "japanese": "獣使い"
       },
       "descriptions": {
-        "english": "Choose a Troll for your deck. Trolls grow stronger each Ring."
+        "english": "Choose a Troll for your deck. Trolls grow stronger each Ring.",
+        "french": "Choisissez un troll pour votre deck. Les trolls deviennent plus forts à chaque cercle.",
+        "german": "Wähle einen Troll für dein Deck. Trolle werden mit jedem Ring stärker.",
+        "russian": "Выберите тролля для своей колоды. Тролли усиливаются с каждым кругом.",
+        "portuguese": "Escolha um troll para seu deck. Os trolls ficam mais fortes a cada anel.",
+        "chinese": "为你的牌组选择一个巨魔。巨魔每环都会变强。",
+        "spanish": "Elige un trol para tu mazo. Los troles se hacen más fuertes con cada anillo.",
+        "chinese_traditional": "為你的牌組選擇一個巨魔。巨魔每環都會變強。",
+        "korean": "덱에 넣을 트롤을 선택. 트롤은 고리마다 강해짐.",
+        "japanese": "デッキに加えるトロールを選ぶ。トロールはリングごとに強くなる。"
       },
       "bonus_hp": 6,
       "trigger_upgrades": [
@@ -149,10 +212,28 @@
     {
       "id": "upg_Beastmaster2",
       "titles": {
-        "english": "Beastmaster II"
+        "english": "Beastmaster II",
+        "french": "Maître des bêtes II",
+        "german": "Bestienmeister II",
+        "russian": "Повелитель зверей II",
+        "portuguese": "Mestre das Feras II",
+        "chinese": "驯兽师 II",
+        "spanish": "Maestro de bestias II",
+        "chinese_traditional": "馴獸師 II",
+        "korean": "야수 조련사 II",
+        "japanese": "獣使い II"
       },
       "descriptions": {
-        "english": "Trolls grow stronger each Ring and gain [trample]."
+        "english": "Trolls grow stronger each Ring and gain [trample].",
+        "french": "Les trolls deviennent plus forts à chaque cercle et gagnent [trample].",
+        "german": "Trolle werden mit jedem Ring stärker und erhalten [trample].",
+        "russian": "Тролли усиливаются с каждым кругом и получают [trample].",
+        "portuguese": "Os trolls ficam mais fortes a cada anel e ganham [trample].",
+        "chinese": "巨魔每环都会变强，并获得[trample]。",
+        "spanish": "Los troles se hacen más fuertes con cada anillo y ganan [trample].",
+        "chinese_traditional": "巨魔每環都會變強，並獲得[trample]。",
+        "korean": "트롤은 고리마다 강해지고 [trample] 획득.",
+        "japanese": "トロールはリングごとに強くなり、[trample]を得る。"
       },
       "bonus_hp": 12,
       "bonus_damage": 4,
@@ -167,10 +248,28 @@
     {
       "id": "upg_Beastmaster3",
       "titles": {
-        "english": "Beastmaster III"
+        "english": "Beastmaster III",
+        "french": "Maître des bêtes III",
+        "german": "Bestienmeister III",
+        "russian": "Повелитель зверей III",
+        "portuguese": "Mestre das Feras III",
+        "chinese": "驯兽师 III",
+        "spanish": "Maestro de bestias III",
+        "chinese_traditional": "馴獸師 III",
+        "korean": "야수 조련사 III",
+        "japanese": "獣使い III"
       },
       "descriptions": {
-        "english": "Trolls grow stronger each Ring and gain [trample]. Call of the Wild is ready sooner."
+        "english": "Trolls grow stronger each Ring and gain [trample]. Call of the Wild is ready sooner.",
+        "french": "Les trolls deviennent plus forts à chaque cercle et gagnent [trample]. Appel de la nature est disponible plus tôt.",
+        "german": "Trolle werden mit jedem Ring stärker und erhalten [trample]. Ruf der Wildnis ist früher bereit.",
+        "russian": "Тролли усиливаются с каждым кругом и получают [trample]. Зов дикой природы готов раньше.",
+        "portuguese": "Os trolls ficam mais fortes a cada anel e ganham [trample]. Chamado da Natureza fica disponível mais cedo.",
+        "chinese": "巨魔每环都会变强，并获得[trample]。 野性呼唤更早就绪。",
+        "spanish": "Los troles se hacen más fuertes con cada anillo y ganan [trample]. Llamada de lo salvaje está lista antes.",
+        "chinese_traditional": "巨魔每環都會變強，並獲得[trample]。 野性呼喚更早就緒。",
+        "korean": "트롤은 고리마다 강해지고 [trample] 획득. 야생의 부름이 더 빨리 준비됨.",
+        "japanese": "トロールはリングごとに強くなり、[trample]を得る。 野生の呼び声が早く使用可能になる。"
       },
       "bonus_hp": 18,
       "bonus_damage": 8,
@@ -185,7 +284,16 @@
     {
       "id": "TrollOffer",
       "titles": {
-        "english": "Beastmaster"
+        "english": "Beastmaster",
+        "french": "Maître des bêtes",
+        "german": "Bestienmeister",
+        "russian": "Повелитель зверей",
+        "portuguese": "Mestre das Feras",
+        "chinese": "驯兽师",
+        "spanish": "Maestro de bestias",
+        "chinese_traditional": "馴獸師",
+        "korean": "야수 조련사",
+        "japanese": "獣使い"
       },
       "trait_upgrades": [
         "@TrollOfferEphemeral"

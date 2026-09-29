@@ -15,17 +15,53 @@
       "id": "SappersCharges",
       "type": "collectable",
       "names": {
-        "english": "Sapper's Charges"
+        "english": "Sapper's Charges",
+        "french": "Charges du sapeur",
+        "german": "Pioniersprengladungen",
+        "russian": "Заряды сапёра",
+        "portuguese": "Cargas do Sapador",
+        "chinese": "工兵炸药",
+        "spanish": "Cargas del zapador",
+        "chinese_traditional": "工兵炸藥",
+        "korean": "공병의 폭약",
+        "japanese": "工兵の爆薬"
       },
       "descriptions": {
-        "english": "Whenever a friendly unit ascends a floor, deal <b>10</b> damage to the front enemy on its new floor."
+        "english": "Whenever a friendly unit ascends a floor, deal <b>10</b> damage to the front enemy on its new floor.",
+        "french": "Lorsqu’une unité alliée monte d’un étage, infligez <b>10</b> dégâts à l’ennemi de tête de son nouvel étage.",
+        "german": "Wenn eine verbündete Einheit ein Stockwerk aufsteigt, füge dem vordersten Gegner auf ihrem neuen Stockwerk <b>10</b> Schaden zu.",
+        "russian": "Когда союзная боевая единица поднимается на этаж выше, нанесите <b>10</b> урона переднему врагу на новом этаже.",
+        "portuguese": "Sempre que uma unidade aliada sobe um andar, cause <b>10</b> de dano ao inimigo da frente do novo andar.",
+        "chinese": "每次友方单位上移一层时，对其新楼层最前方的敌人造成<b>10</b>点伤害。",
+        "spanish": "Cada vez que una unidad aliada sube de piso, inflige <b>10</b> de daño al primer enemigo de su nuevo piso.",
+        "chinese_traditional": "每次友方單位上移一層時，對其新樓層最前方的敵人造成<b>10</b>點傷害。",
+        "korean": "아군 유닛이 위층으로 이동할 때마다 새 층의 맨 앞 적에게 <b>10</b> 피해를 가함.",
+        "japanese": "味方ユニットが1階上へ移動するたび、移動先の階の先頭の敵に<b>10</b>ダメージを与える。"
       },
       "relic_activated_texts": {
-        "english": "Fire in the hole."
+        "english": "Fire in the hole.",
+        "french": "Un feu dans le trou.",
+        "german": "Feuer im Loch.",
+        "russian": "Огонь в дыре.",
+        "portuguese": "Fogo no buraco.",
+        "chinese": "坑里有火.",
+        "spanish": "¡Fuego en el agujero!",
+        "chinese_traditional": "這是一場火災.",
+        "korean": "덩어리에 불을 붙여",
+        "japanese": "穴に火!"
       },
       "lore_tooltips": [
         {
-          "english": "Paid by the barrel, not by the hour."
+          "english": "Paid by the barrel, not by the hour.",
+          "french": "Payé par baril, pas par heure.",
+          "german": "Bezahlt nach Barrel, nicht nach Stunde.",
+          "russian": "Заплачивается за бочку, а не за час.",
+          "portuguese": "Pagado pelo barril, não pela hora.",
+          "chinese": "按桶支付,不是按小时支付.",
+          "spanish": "Cobra por barril, no por hora.",
+          "chinese_traditional": "按桶支付,而不是按小時支付.",
+          "korean": "배럴에 의해 지불, 시간으로 지불하지 않습니다.",
+          "japanese": "給与は時間ではなく 給与はバレルです"
         }
       ],
       "lore_style": "herzal",

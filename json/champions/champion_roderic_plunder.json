@@ -4,10 +4,28 @@
     {
       "id": "upg_Plunder1",
       "titles": {
-        "english": "Plunder"
+        "english": "Plunder",
+        "french": "Pillage",
+        "german": "Plünderung",
+        "russian": "Грабёж",
+        "portuguese": "Pilhagem",
+        "chinese": "掠夺",
+        "spanish": "Saqueo",
+        "chinese_traditional": "掠奪",
+        "korean": "약탈",
+        "japanese": "略奪"
       },
       "descriptions": {
-        "english": "Gain [avarice] and [titanskin]."
+        "english": "Gain [avarice] and [titanskin].",
+        "french": "Gagnez [avarice] et [titanskin].",
+        "german": "Erhalte [avarice] und [titanskin].",
+        "russian": "Получите [avarice] и [titanskin].",
+        "portuguese": "Ganhe [avarice] e [titanskin].",
+        "chinese": "获得[avarice]和[titanskin]。",
+        "spanish": "Gana [avarice] y [titanskin].",
+        "chinese_traditional": "獲得[avarice]和[titanskin]。",
+        "korean": "[avarice] 및 [titanskin] 획득.",
+        "japanese": "[avarice]と[titanskin]を得る。"
       },
       "bonus_damage": 5,
       "bonus_hp": 5,
@@ -25,10 +43,28 @@
     {
       "id": "upg_Plunder2",
       "titles": {
-        "english": "Plunder II"
+        "english": "Plunder II",
+        "french": "Pillage II",
+        "german": "Plünderung II",
+        "russian": "Грабёж II",
+        "portuguese": "Pilhagem II",
+        "chinese": "掠夺 II",
+        "spanish": "Saqueo II",
+        "chinese_traditional": "掠奪 II",
+        "korean": "약탈 II",
+        "japanese": "略奪 II"
       },
       "descriptions": {
-        "english": "Gain more [avarice] and [titanskin]."
+        "english": "Gain more [avarice] and [titanskin].",
+        "french": "Gagnez davantage de [avarice] et de [titanskin].",
+        "german": "Erhalte mehr [avarice] und [titanskin].",
+        "russian": "Получите больше [avarice] и [titanskin].",
+        "portuguese": "Ganhe mais [avarice] e [titanskin].",
+        "chinese": "获得更多[avarice]和[titanskin]。",
+        "spanish": "Gana más [avarice] y [titanskin].",
+        "chinese_traditional": "獲得更多[avarice]和[titanskin]。",
+        "korean": "[avarice] 및 [titanskin] 추가 획득.",
+        "japanese": "さらに多くの[avarice]と[titanskin]を得る。"
       },
       "bonus_damage": 12,
       "bonus_hp": 10,
@@ -49,10 +85,28 @@
     {
       "id": "upg_Plunder3",
       "titles": {
-        "english": "Plunder III"
+        "english": "Plunder III",
+        "french": "Pillage III",
+        "german": "Plünderung III",
+        "russian": "Грабёж III",
+        "portuguese": "Pilhagem III",
+        "chinese": "掠夺 III",
+        "spanish": "Saqueo III",
+        "chinese_traditional": "掠奪 III",
+        "korean": "약탈 III",
+        "japanese": "略奪 III"
       },
       "descriptions": {
-        "english": "Gain [avarice], [titanskin], and [ambush]."
+        "english": "Gain [avarice], [titanskin], and [ambush].",
+        "french": "Gagnez [avarice], [titanskin] et [ambush].",
+        "german": "Erhalte [avarice], [titanskin] und [ambush].",
+        "russian": "Получите [avarice], [titanskin] и [ambush].",
+        "portuguese": "Ganhe [avarice], [titanskin] e [ambush].",
+        "chinese": "获得[avarice], [titanskin]和[ambush]。",
+        "spanish": "Gana [avarice], [titanskin] y [ambush].",
+        "chinese_traditional": "獲得[avarice], [titanskin]和[ambush]。",
+        "korean": "[avarice], [titanskin] 및 [ambush] 획득.",
+        "japanese": "[avarice], [titanskin]と[ambush]を得る。"
       },
       "bonus_damage": 20,
       "bonus_hp": 15,

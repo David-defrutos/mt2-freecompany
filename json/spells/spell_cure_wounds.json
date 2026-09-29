@@ -4,10 +4,28 @@
     {
       "id": "CureWounds",
       "names": {
-        "english": "Cure Wounds"
+        "english": "Cure Wounds",
+        "french": "Soins",
+        "german": "Wunden heilen",
+        "russian": "Лечение ран",
+        "portuguese": "Curar Ferimentos",
+        "chinese": "治疗伤口",
+        "spanish": "Curar heridas",
+        "chinese_traditional": "治療傷口",
+        "korean": "상처 치유",
+        "japanese": "傷の治癒"
       },
       "descriptions": {
-        "english": "Restore [effect0.power] health to a friendly unit."
+        "english": "Restore [effect0.power] health to a friendly unit.",
+        "french": "Rendez [effect0.power] PV à une unité alliée.",
+        "german": "Heile eine verbündete Einheit um [effect0.power] Leben.",
+        "russian": "Восстановите [effect0.power] здоровья союзной боевой единице.",
+        "portuguese": "Restaure [effect0.power] de vida de uma unidade aliada.",
+        "chinese": "为一个友方单位恢复[effect0.power]点生命值。",
+        "spanish": "Restaura [effect0.power] de vida a una unidad aliada.",
+        "chinese_traditional": "為一個友方單位恢復[effect0.power]點生命值。",
+        "korean": "아군 유닛 하나의 체력을 [effect0.power] 회복.",
+        "japanese": "味方ユニット1体の体力を[effect0.power]回復。"
       },
       "card_art": "@CureWounds",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Billed separately."
+          "english": "Billed separately.",
+          "french": "Il est facturé séparément.",
+          "german": "Abgesondert gezahlt.",
+          "russian": "Отдельно счета.",
+          "portuguese": "Faturado separadamente.",
+          "chinese": "单独收费.",
+          "spanish": "Se factura aparte.",
+          "chinese_traditional": "單位的分別收取.",
+          "korean": "별도로 청구합니다.",
+          "japanese": "分別で請求する"
         }
       ],
       "pools": [

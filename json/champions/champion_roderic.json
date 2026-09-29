@@ -4,7 +4,16 @@
     {
       "id": "SpawnRoderic",
       "names": {
-        "english": "Roderic"
+        "english": "Roderic",
+        "french": "Roderic",
+        "german": "Roderic",
+        "russian": "Roderic",
+        "portuguese": "Roderic",
+        "chinese": "Roderic",
+        "spanish": "Roderic",
+        "chinese_traditional": "Roderic",
+        "korean": "Roderic",
+        "japanese": "Roderic"
       },
       "card_art": "@Roderic",
       "cost": 0,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Signed the contract first. Read it later."
+          "english": "Signed the contract first. Read it later.",
+          "french": "J'ai signé le contrat en premier. Lisez-le plus tard.",
+          "german": "Erst den Vertrag unterschrieben. Lesen Sie es später.",
+          "russian": "Сначала подписал контракт. Прочитай это позже.",
+          "portuguese": "Assinou o contrato primeiro. Leia mais tarde.",
+          "chinese": "首先签署了合同. 稍后读一下.",
+          "spanish": "Primero firmó el contrato. Lo leyó después.",
+          "chinese_traditional": "首先簽署了這個合同. 請稍後閱讀.",
+          "korean": "먼저 계약을 체결했어요. 나중에 읽어봐",
+          "japanese": "契約を最初に署名した 後で読む"
         }
       ]
     }
@@ -27,7 +45,16 @@
     {
       "id": "Roderic",
       "names": {
-        "english": "Roderic"
+        "english": "Roderic",
+        "french": "Roderic",
+        "german": "Roderic",
+        "russian": "Roderic",
+        "portuguese": "Roderic",
+        "chinese": "Roderic",
+        "spanish": "Roderic",
+        "chinese_traditional": "Roderic",
+        "korean": "Roderic",
+        "japanese": "Roderic"
       },
       "character_art": "@RodericCharacterArt",
       "chatter": "@CTR_Roderic",
@@ -53,7 +80,16 @@
       "id": "RodericMusterTrigger",
       "trigger": "card_monster_played",
       "descriptions": {
-        "english": "When a unit is summoned on this floor, it gains [effect0.status0.power] [armor] and this unit gains <b>+2</b> [attack] and <b>+2</b> [health] permanently."
+        "english": "When a unit is summoned on this floor, it gains [effect0.status0.power] [armor] and this unit gains <b>+2</b> [attack] and <b>+2</b> [health] permanently.",
+        "french": "Lorsqu’une unité est invoquée à cet étage, elle gagne [effect0.status0.power] [armor] et cette unité gagne définitivement <b>+2</b> [attack] et <b>+2</b> [health].",
+        "german": "Wenn eine Einheit auf diesem Stockwerk beschworen wird, erhält sie [effect0.status0.power] [armor] und diese Einheit erhält dauerhaft <b>+2</b> [attack] und <b>+2</b> [health].",
+        "russian": "Когда на этот этаж призывается боевая единица, она получает [effect0.status0.power] [armor], а эта боевая единица навсегда получает <b>+2</b> [attack] и <b>+2</b> [health].",
+        "portuguese": "Quando uma unidade é invocada neste andar, ela ganha [effect0.status0.power] [armor] e esta unidade ganha <b>+2</b> [attack] e <b>+2</b> [health] permanentemente.",
+        "chinese": "一个单位在本层被召唤时，该单位获得[effect0.status0.power]层[armor]，此单位永久获得<b>+2</b> [attack]和<b>+2</b> [health]。",
+        "spanish": "Cuando se invoca una unidad en este piso, gana [effect0.status0.power] [armor] y esta unidad gana <b>+2</b> [attack] y <b>+2</b> [health] permanentemente.",
+        "chinese_traditional": "一個單位在本層被召喚時，該單位獲得[effect0.status0.power]層[armor]，此單位永久獲得<b>+2</b> [attack]和<b>+2</b> [health]。",
+        "korean": "이 층에 유닛이 소환되면 해당 유닛은 [effect0.status0.power] [armor] 획득. 이 유닛은 영구적으로 <b>+2</b> [attack] 및 <b>+2</b> [health] 획득.",
+        "japanese": "この階にユニットが召喚されると、そのユニットは[effect0.status0.power] [armor]を得て、このユニットは永続的に<b>+2</b> [attack]と<b>+2</b> [health]を得る。"
       },
       "effects": [
         "@RodericMusterGate",
@@ -249,27 +285,90 @@
       "gender": "male",
       "added_expressions": [
         {
-          "english": "Form up!"
+          "english": "Form up!",
+          "french": "Mettez-vous en forme !",
+          "german": "Macht euch auf!",
+          "russian": "Подготовьтесь!",
+          "portuguese": "Preparem-se!",
+          "chinese": "训练起来!",
+          "spanish": "¡Formad filas!",
+          "chinese_traditional": "準備好!",
+          "korean": "준비해!",
+          "japanese": "準備する!"
         },
         {
-          "english": "Hold the line."
+          "english": "Hold the line.",
+          "french": "Gardez la ligne.",
+          "german": "Halten Sie die Schlange.",
+          "russian": "Задержите линию.",
+          "portuguese": "Mantém a linha.",
+          "chinese": "保持线路.",
+          "spanish": "Mantened la línea.",
+          "chinese_traditional": "保持線上.",
+          "korean": "라인을 잡으세요",
+          "japanese": "線を止めろ"
         },
         {
-          "english": "Payment first."
+          "english": "Payment first.",
+          "french": "Le paiement d'abord.",
+          "german": "Zuerst die Zahlung.",
+          "russian": "Сначала оплата.",
+          "portuguese": "Pagamento primeiro.",
+          "chinese": "首先要支付.",
+          "spanish": "Primero, el pago.",
+          "chinese_traditional": "首先要付款.",
+          "korean": "먼저 지불해",
+          "japanese": "支払いは先だ"
         }
       ],
       "idle_expressions": [
         {
-          "english": "Steady, lads."
+          "english": "Steady, lads.",
+          "french": "Restez calmes, les gars.",
+          "german": "Ganz ruhig, Jungs.",
+          "russian": "Успокойтесь, ребята.",
+          "portuguese": "Fiquem firmes, rapazes.",
+          "chinese": "保持稳定,小伙子.",
+          "spanish": "Firmes, muchachos.",
+          "chinese_traditional": "這裡有許多人.",
+          "korean": "진정하세요.",
+          "japanese": "落ち着いて"
         },
         {
-          "english": "We have been paid. We finish the job."
+          "english": "We have been paid. We finish the job.",
+          "french": "On a été payés. On finit le travail.",
+          "german": "Wir wurden bezahlt. Wir machen den Job fertig.",
+          "russian": "Нам заплатили. Мы закончим работу.",
+          "portuguese": "Nós fomos pagos. Terminamos o trabalho.",
+          "chinese": "我们已经得到了报酬. 我们完成了工作.",
+          "spanish": "Nos han pagado. Terminamos el trabajo.",
+          "chinese_traditional": "我們得到了薪水. 我們完成工作.",
+          "korean": "우리는 돈을 받았습니다. 우리는 일을 끝낼 것입니다.",
+          "japanese": "給料をもらった 仕事を終える"
         },
         {
-          "english": "Shields up."
+          "english": "Shields up.",
+          "french": "Les boucliers en haut.",
+          "german": "Schilde hoch.",
+          "russian": "Защиты вверх.",
+          "portuguese": "Os escudos para cima.",
+          "chinese": "盾牌上升.",
+          "spanish": "Escudos arriba.",
+          "chinese_traditional": "起我們的盾牌.",
+          "korean": "방패!",
+          "japanese": "盾を上げろ"
         },
         {
-          "english": "I have seen worse contracts."
+          "english": "I have seen worse contracts.",
+          "french": "J'ai vu des contrats pires.",
+          "german": "Ich habe schlechtere Verträge gesehen.",
+          "russian": "Я видел худшие контракты.",
+          "portuguese": "Já vi contratos piores.",
+          "chinese": "我见过更糟糕的合同.",
+          "spanish": "He visto contratos peores.",
+          "chinese_traditional": "我看到更糟糕的合同.",
+          "korean": "더 나쁜 계약도 봤어요",
+          "japanese": "私はもっと悪い契約を見た."
         }
       ]
     }

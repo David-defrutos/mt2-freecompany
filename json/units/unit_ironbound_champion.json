@@ -4,7 +4,16 @@
     {
       "id": "SpawnIronboundChampion",
       "names": {
-        "english": "Ironbound Champion"
+        "english": "Ironbound Champion",
+        "french": "Champion bardé de fer",
+        "german": "Eisenchampion",
+        "russian": "Железный чемпион",
+        "portuguese": "Campeão de Ferro",
+        "chinese": "铁甲勇士",
+        "spanish": "Campeón de hierro",
+        "chinese_traditional": "鐵甲勇士",
+        "korean": "철갑 투사",
+        "japanese": "鉄鎧の闘士"
       },
       "card_art": "@IronboundChampion",
       "cost": 2,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Paid double. Worth triple."
+          "english": "Paid double. Worth triple.",
+          "french": "Il a payé le double. Ça vaut le triple.",
+          "german": "Ich habe verdoppelt bezahlt. Das ist dreimal wert.",
+          "russian": "Я заплатил вдвое. Стоит тройной.",
+          "portuguese": "Pagou o dobro. Vale a pena triplicar.",
+          "chinese": "两倍的钱. 值得三倍.",
+          "spanish": "Cobra el doble. Vale el triple.",
+          "chinese_traditional": "兩倍的價格. 值得我們三倍.",
+          "korean": "두 배로 지불했습니다. 세 배가 될 거야",
+          "japanese": "二倍払った 価値は3倍"
         }
       ],
       "pools": [
@@ -28,10 +46,28 @@
     {
       "id": "IronboundChampionAbility",
       "names": {
-        "english": "Ironbound Oath"
+        "english": "Ironbound Oath",
+        "french": "Serment de fer",
+        "german": "Eiserner Schwur",
+        "russian": "Железная клятва",
+        "portuguese": "Juramento de Ferro",
+        "chinese": "铁甲誓言",
+        "spanish": "Juramento de hierro",
+        "chinese_traditional": "鐵甲誓言",
+        "korean": "철갑의 맹세",
+        "japanese": "鉄の誓い"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [damageshield] and [effect1.status0.power] [armor] to itself."
+        "english": "Apply [effect0.status0.power] [damageshield] and [effect1.status0.power] [armor] to itself.",
+        "french": "S’applique [effect0.status0.power] [damageshield] et [effect1.status0.power] [armor].",
+        "german": "Erhält selbst [effect0.status0.power] [damageshield] und [effect1.status0.power] [armor].",
+        "russian": "Накладывает на себя [effect0.status0.power] [damageshield] и [effect1.status0.power] [armor].",
+        "portuguese": "Aplica [effect0.status0.power] [damageshield] e [effect1.status0.power] [armor] a si mesma.",
+        "chinese": "对自身施加[effect0.status0.power] [damageshield]和[effect1.status0.power] [armor]。",
+        "spanish": "Se aplica [effect0.status0.power] [damageshield] y [effect1.status0.power] [armor].",
+        "chinese_traditional": "對自身施加[effect0.status0.power] [damageshield]和[effect1.status0.power] [armor]。",
+        "korean": "자신에게 [effect0.status0.power] [damageshield] 및 [effect1.status0.power] [armor] 부여.",
+        "japanese": "自身に[effect0.status0.power] [damageshield]と[effect1.status0.power] [armor]を付与。"
       },
       "card_art": "@IronboundChampion",
       "is_an_ability": true,
@@ -50,7 +86,16 @@
     {
       "id": "IronboundChampion",
       "names": {
-        "english": "Ironbound Champion"
+        "english": "Ironbound Champion",
+        "french": "Champion bardé de fer",
+        "german": "Eisenchampion",
+        "russian": "Железный чемпион",
+        "portuguese": "Campeão de Ferro",
+        "chinese": "铁甲勇士",
+        "spanish": "Campeón de hierro",
+        "chinese_traditional": "鐵甲勇士",
+        "korean": "철갑 투사",
+        "japanese": "鉄鎧の闘士"
       },
       "character_art": "@IronboundChampionCharacterArt",
       "size": 2,
@@ -120,7 +165,16 @@
       "id": "IronboundChampionTrigger",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to all friendly units on this floor."
+        "english": "Apply [effect0.status0.power] [armor] to all friendly units on this floor.",
+        "french": "Appliquez [effect0.status0.power] [armor] à toutes les unités alliées de cet étage.",
+        "german": "Verleihe allen verbündeten Einheiten auf diesem Stockwerk [effect0.status0.power] [armor].",
+        "russian": "Наложите [effect0.status0.power] [armor] на все союзные боевые единицы на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [armor] a todas as unidades aliadas neste andar.",
+        "chinese": "对本层所有友方单位施加[effect0.status0.power] [armor]。",
+        "spanish": "Aplica [effect0.status0.power] [armor] a todas las unidades aliadas de este piso.",
+        "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [armor]。",
+        "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [armor] 부여.",
+        "japanese": "この階の味方ユニット全体に[effect0.status0.power] [armor]を付与。"
       },
       "effects": [
         "@IronboundChampionArmor"

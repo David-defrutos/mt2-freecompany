@@ -4,10 +4,28 @@
     {
       "id": "Resurrection",
       "names": {
-        "english": "Resurrection"
+        "english": "Resurrection",
+        "french": "Résurrection",
+        "german": "Auferstehung",
+        "russian": "Воскрешение",
+        "portuguese": "Ressurreição",
+        "chinese": "复活术",
+        "spanish": "Resurrección",
+        "chinese_traditional": "復活術",
+        "korean": "부활",
+        "japanese": "蘇生"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [undying] and [effect1.status0.power] [regen] to a friendly unit."
+        "english": "Apply [effect0.status0.power] [undying] and [effect1.status0.power] [regen] to a friendly unit.",
+        "french": "Appliquez [effect0.status0.power] [undying] et [effect1.status0.power] [regen] à une unité alliée.",
+        "german": "Verleihe einer verbündeten Einheit [effect0.status0.power] [undying] und [effect1.status0.power] [regen].",
+        "russian": "Наложите на союзную боевую единицу [effect0.status0.power] [undying] и [effect1.status0.power] [regen].",
+        "portuguese": "Aplique [effect0.status0.power] [undying] e [effect1.status0.power] [regen] a uma unidade aliada.",
+        "chinese": "对一个友方单位施加[effect0.status0.power] [undying]和[effect1.status0.power] [regen]。",
+        "spanish": "Aplica [effect0.status0.power] [undying] y [effect1.status0.power] [regen] a una unidad aliada.",
+        "chinese_traditional": "對一個友方單位施加[effect0.status0.power] [undying]和[effect1.status0.power] [regen]。",
+        "korean": "아군 유닛 하나에게 [effect0.status0.power] [undying] 및 [effect1.status0.power] [regen] 부여.",
+        "japanese": "味方ユニット1体に[effect0.status0.power] [undying]と[effect1.status0.power] [regen]を付与。"
       },
       "card_art": "@Resurrection",
       "cost": 2,
@@ -22,7 +40,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "The contract does not end at death."
+          "english": "The contract does not end at death.",
+          "french": "Le contrat ne se termine pas à la mort.",
+          "german": "Der Vertrag endet nicht mit dem Tod.",
+          "russian": "Договор не заканчивается смертью.",
+          "portuguese": "O contrato não termina com a morte.",
+          "chinese": "合同不会在死亡时结束.",
+          "spanish": "El contrato no termina con la muerte.",
+          "chinese_traditional": "這項合同並不結束於死亡.",
+          "korean": "계약은 죽음으로 끝나지 않습니다.",
+          "japanese": "契約は死で終わらない."
         }
       ],
       "pools": [

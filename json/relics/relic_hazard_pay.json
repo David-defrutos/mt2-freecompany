@@ -14,17 +14,53 @@
       "id": "HazardPay",
       "type": "collectable",
       "names": {
-        "english": "Hazard Pay"
+        "english": "Hazard Pay",
+        "french": "Prime de risque",
+        "german": "Gefahrenzulage",
+        "russian": "Надбавка за риск",
+        "portuguese": "Adicional de Risco",
+        "chinese": "危险津贴",
+        "spanish": "Plus de peligrosidad",
+        "chinese_traditional": "危險津貼",
+        "korean": "위험 수당",
+        "japanese": "危険手当"
       },
       "descriptions": {
-        "english": "While you have <b>300</b> or more [coin], unit cards get <b>+3</b> [attack] and <b>+5</b> [health]."
+        "english": "While you have <b>300</b> or more [coin], unit cards get <b>+3</b> [attack] and <b>+5</b> [health].",
+        "french": "Tant que vous avez au moins <b>300</b> [coin], les cartes d’unité ont <b>+3</b> [attack] et <b>+5</b> [health].",
+        "german": "Solange du mindestens <b>300</b> [coin] hast, erhalten Einheitenkarten <b>+3</b> [attack] und <b>+5</b> [health].",
+        "russian": "Пока у вас есть не менее <b>300</b> [coin], карты боевых единиц получают <b>+3</b> [attack] и <b>+5</b> [health].",
+        "portuguese": "Enquanto você tiver <b>300</b> ou mais [coin], cartas de unidade ganham <b>+3</b> [attack] e <b>+5</b> [health].",
+        "chinese": "拥有至少<b>300</b> [coin]时，单位牌获得<b>+3</b> [attack]和<b>+5</b> [health]。",
+        "spanish": "Mientras tengas <b>300</b> [coin] o más, las cartas de unidad ganan <b>+3</b> [attack] y <b>+5</b> [health].",
+        "chinese_traditional": "擁有至少<b>300</b> [coin]時，單位牌獲得<b>+3</b> [attack]和<b>+5</b> [health]。",
+        "korean": "[coin]을 <b>300</b> 이상 보유하면 유닛 카드에 <b>+3</b> [attack] 및 <b>+5</b> [health].",
+        "japanese": "<b>300</b> [coin]以上を持っている間、ユニットカードは<b>+3</b> [attack]と<b>+5</b> [health]を得る。"
       },
       "relic_activated_texts": {
-        "english": "Rates have gone up."
+        "english": "Rates have gone up.",
+        "french": "Les tarifs ont augmenté.",
+        "german": "Die Preise sind gestiegen.",
+        "russian": "Цены выросли.",
+        "portuguese": "As taxas subiram.",
+        "chinese": "价格上了.",
+        "spanish": "Han subido las tarifas.",
+        "chinese_traditional": "價格上升了.",
+        "korean": "요금은 상승했습니다.",
+        "japanese": "料金も上がった."
       },
       "lore_tooltips": [
         {
-          "english": "The worse the contract, the better the terms."
+          "english": "The worse the contract, the better the terms.",
+          "french": "Plus le contrat est mauvais, meilleurs sont les conditions.",
+          "german": "Je schlimmer der Vertrag ist, desto besser sind die Bedingungen.",
+          "russian": "Чем хуже договор, тем лучше условия.",
+          "portuguese": "Quanto pior o contrato, melhores os termos.",
+          "chinese": "合同越糟糕,条件越好.",
+          "spanish": "Cuanto peor es el contrato, mejores son las condiciones.",
+          "chinese_traditional": "這樣的情況會越糟糕.",
+          "korean": "계약이 심해질수록 조건이 좋아질 거야",
+          "japanese": "契約が悪いほど 条件が良くなる"
         }
       ],
       "lore_style": "herzal",
@@ -60,7 +96,16 @@
     {
       "id": "HazardPayBonus",
       "titles": {
-        "english": "Hazard Pay"
+        "english": "Hazard Pay",
+        "french": "Prime de risque",
+        "german": "Gefahrenzulage",
+        "russian": "Надбавка за риск",
+        "portuguese": "Adicional de Risco",
+        "chinese": "危险津贴",
+        "spanish": "Plus de peligrosidad",
+        "chinese_traditional": "危險津貼",
+        "korean": "위험 수당",
+        "japanese": "危険手当"
       },
       "bonus_damage": 3,
       "bonus_hp": 5,

@@ -4,10 +4,28 @@
     {
       "id": "Grease",
       "names": {
-        "english": "Grease"
+        "english": "Grease",
+        "french": "Graisse",
+        "german": "Schmiere",
+        "russian": "Смазка",
+        "portuguese": "Graxa",
+        "chinese": "油腻术",
+        "spanish": "Grasa",
+        "chinese_traditional": "油膩術",
+        "korean": "기름막",
+        "japanese": "グリース"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [rooted] to all enemies on this floor."
+        "english": "Apply [effect0.status0.power] [rooted] to all enemies on this floor.",
+        "french": "Appliquez [effect0.status0.power] [rooted] à tous les ennemis de cet étage.",
+        "german": "Verleihe allen Gegnern auf diesem Stockwerk [effect0.status0.power] [rooted].",
+        "russian": "Наложите [effect0.status0.power] [rooted] на всех врагов на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [rooted] a todos os inimigos neste andar.",
+        "chinese": "对本层所有敌人施加[effect0.status0.power] [rooted]。",
+        "spanish": "Aplica [effect0.status0.power] [rooted] a todos los enemigos de este piso.",
+        "chinese_traditional": "對本層所有敵人施加[effect0.status0.power] [rooted]。",
+        "korean": "이 층의 모든 적에게 [effect0.status0.power] [rooted] 부여.",
+        "japanese": "この階の敵全体に[effect0.status0.power] [rooted]を付与。"
       },
       "card_art": "@Grease",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Bosses keep their footing."
+          "english": "Bosses keep their footing.",
+          "french": "Les patrons gardent leur position.",
+          "german": "Die Chefs halten ihren Fuß.",
+          "russian": "Босс держит свою позицию.",
+          "portuguese": "Os chefes mantêm a posição.",
+          "chinese": "总裁保持自己的位置.",
+          "spanish": "Los jefes mantienen el equilibrio.",
+          "chinese_traditional": "領導人保持自己的地位.",
+          "korean": "보스가 자리를 지키고 있어요.",
+          "japanese": "上司は位置を維持する."
         }
       ],
       "pools": [

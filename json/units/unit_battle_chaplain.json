@@ -4,7 +4,16 @@
     {
       "id": "SpawnBattleChaplain",
       "names": {
-        "english": "Battle Chaplain"
+        "english": "Battle Chaplain",
+        "french": "Aumônier de combat",
+        "german": "Kampfkaplan",
+        "russian": "Боевой капеллан",
+        "portuguese": "Capelão de Batalha",
+        "chinese": "战斗牧师",
+        "spanish": "Capellán de batalla",
+        "chinese_traditional": "戰鬥牧師",
+        "korean": "전투 군종사제",
+        "japanese": "従軍司祭"
       },
       "card_art": "@BattleChaplain",
       "cost": 2,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Prays for the company. Bills the company."
+          "english": "Prays for the company. Bills the company.",
+          "french": "Priez pour la compagnie. Il facture l'entreprise.",
+          "german": "Betet für die Gesellschaft. Rechnungen für die Firma.",
+          "russian": "Молитвы за компанию. Взимает с компании счета.",
+          "portuguese": "Reza pela companhia. Faz contas à empresa.",
+          "chinese": "为公司祈祷. 收费公司.",
+          "spanish": "Reza por la compañía. Le factura a la compañía.",
+          "chinese_traditional": "願意為他們祈禱. 收取公司的帳單.",
+          "korean": "회사를 위해 기도합니다. 회사를 청구합니다.",
+          "japanese": "社団のために祈ります 会社を請求する"
         }
       ],
       "pools": [
@@ -28,10 +46,28 @@
     {
       "id": "BattleChaplainAbility",
       "names": {
-        "english": "Last Rites"
+        "english": "Last Rites",
+        "french": "Derniers sacrements",
+        "german": "Letzte Ölung",
+        "russian": "Последние обряды",
+        "portuguese": "Últimos Ritos",
+        "chinese": "临终仪式",
+        "spanish": "Últimos ritos",
+        "chinese_traditional": "臨終儀式",
+        "korean": "종부성사",
+        "japanese": "最期の儀式"
       },
       "descriptions": {
-        "english": "Restore [effect0.power] health to all friendly units on all floors."
+        "english": "Restore [effect0.power] health to all friendly units on all floors.",
+        "french": "Rendez [effect0.power] PV à toutes les unités alliées de tous les étages.",
+        "german": "Heile alle verbündeten Einheiten auf allen Stockwerken um [effect0.power] Leben.",
+        "russian": "Восстановите [effect0.power] здоровья всем союзным боевым единицам на всех этажах.",
+        "portuguese": "Restaure [effect0.power] de vida de todas as unidades aliadas em todos os andares.",
+        "chinese": "为所有楼层的友方单位恢复[effect0.power]点生命值。",
+        "spanish": "Restaura [effect0.power] de vida a todas las unidades aliadas de todos los pisos.",
+        "chinese_traditional": "為所有樓層的友方單位恢復[effect0.power]點生命值。",
+        "korean": "모든 층의 모든 아군 유닛의 체력을 [effect0.power] 회복.",
+        "japanese": "全階層の味方ユニット全体の体力を[effect0.power]回復。"
       },
       "card_art": "@BattleChaplain",
       "is_an_ability": true,
@@ -48,7 +84,16 @@
     {
       "id": "BattleChaplain",
       "names": {
-        "english": "Battle Chaplain"
+        "english": "Battle Chaplain",
+        "french": "Aumônier de combat",
+        "german": "Kampfkaplan",
+        "russian": "Боевой капеллан",
+        "portuguese": "Capelão de Batalha",
+        "chinese": "战斗牧师",
+        "spanish": "Capellán de batalla",
+        "chinese_traditional": "戰鬥牧師",
+        "korean": "전투 군종사제",
+        "japanese": "従軍司祭"
       },
       "character_art": "@BattleChaplainCharacterArt",
       "size": 1,
@@ -97,7 +142,16 @@
       "id": "BattleChaplainTrigger",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore [effect0.power] health to all friendly units on this floor."
+        "english": "Restore [effect0.power] health to all friendly units on this floor.",
+        "french": "Rendez [effect0.power] PV à toutes les unités alliées de cet étage.",
+        "german": "Heile alle verbündeten Einheiten auf diesem Stockwerk um [effect0.power] Leben.",
+        "russian": "Восстановите [effect0.power] здоровья всем союзным боевым единицам на этом этаже.",
+        "portuguese": "Restaure [effect0.power] de vida de todas as unidades aliadas neste andar.",
+        "chinese": "为本层所有友方单位恢复[effect0.power]点生命值。",
+        "spanish": "Restaura [effect0.power] de vida a todas las unidades aliadas de este piso.",
+        "chinese_traditional": "為本層所有友方單位恢復[effect0.power]點生命值。",
+        "korean": "이 층의 모든 아군 유닛의 체력을 [effect0.power] 회복.",
+        "japanese": "この階の味方ユニット全体の体力を[effect0.power]回復。"
       },
       "effects": [
         "@BattleChaplainHeal"

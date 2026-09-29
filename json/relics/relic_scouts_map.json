@@ -16,17 +16,53 @@
       "id": "ScoutsMap",
       "type": "collectable",
       "names": {
-        "english": "Scout's Map"
+        "english": "Scout's Map",
+        "french": "Carte de l'éclaireur",
+        "german": "Späherkarte",
+        "russian": "Карта разведчика",
+        "portuguese": "Mapa do Batedor",
+        "chinese": "斥候地图",
+        "spanish": "Mapa del explorador",
+        "chinese_traditional": "斥候地圖",
+        "korean": "정찰병의 지도",
+        "japanese": "斥候の地図"
       },
       "descriptions": {
-        "english": "Whenever a <b>Rogue</b> is summoned, add a random Free Company Room card to your hand."
+        "english": "Whenever a <b>Rogue</b> is summoned, add a random Free Company Room card to your hand.",
+        "french": "Lorsqu’un <b>Voleur</b> est invoqué, ajoutez une carte de salle aléatoire de la Compagnie libre à votre main.",
+        "german": "Wenn ein <b>Schurke</b> beschworen wird, füge deiner Hand eine zufällige Raumkarte der Freien Kompanie hinzu.",
+        "russian": "При призыве <b>Плут</b> добавьте в руку случайную карту помещения Вольной компании.",
+        "portuguese": "Sempre que um <b>Ladino</b> é invocado, adicione uma carta de sala aleatória da Companhia Livre à sua mão.",
+        "chinese": "每次召唤一个<b>盗贼</b>时，将一张随机自由佣兵团房间牌加入手牌。",
+        "spanish": "Cada vez que se invoca un <b>Pícaro</b>, añade una carta de sala aleatoria de la Compañía Libre a tu mano.",
+        "chinese_traditional": "每次召喚一個<b>盜賊</b>時，將一張隨機自由傭兵團房間牌加入手牌。",
+        "korean": "<b>도적</b>이 소환될 때마다 무작위 자유 용병단 방 카드를 손에 추가.",
+        "japanese": "<b>ローグ</b>が召喚されるたび、自由傭兵団のランダムな部屋カードを手札に追加。"
       },
       "relic_activated_texts": {
-        "english": "This way."
+        "english": "This way.",
+        "french": "C'est par ici.",
+        "german": "- Hier drüben.",
+        "russian": "Сюда. Сюда.",
+        "portuguese": "- Por aqui. - Está bem.",
+        "chinese": "通过这里.",
+        "spanish": "Por aquí.",
+        "chinese_traditional": "這邊.",
+        "korean": "이쪽으로",
+        "japanese": "- こっちへ"
       },
       "lore_tooltips": [
         {
-          "english": "Drawn in soot, sold twice."
+          "english": "Drawn in soot, sold twice.",
+          "french": "Dessiné dans la suie, vendu deux fois.",
+          "german": "In Ruß gezogen, zweimal verkauft.",
+          "russian": "Сделан в саду, продан дважды.",
+          "portuguese": "Desenhado em fuligem, vendido duas vezes.",
+          "chinese": "在中画,卖了两次.",
+          "spanish": "Dibujado con hollín, vendido dos veces.",
+          "chinese_traditional": "這是一件很有趣的事.",
+          "korean": "똥으로 그려서 두 번 팔았어",
+          "japanese": "泥で描かれ 二度売られた"
         }
       ],
       "lore_style": "herzal",

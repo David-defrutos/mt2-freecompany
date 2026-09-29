@@ -5,22 +5,76 @@
       "id": "fuse",
       "class_name": "@StatusEffectFreeCompanyCountdownState",
       "names": {
-        "english": "Fuse"
+        "english": "Fuse",
+        "french": "Mèche",
+        "german": "Lunte",
+        "russian": "Запал",
+        "portuguese": "Pavio",
+        "chinese": "引信",
+        "spanish": "Mecha",
+        "chinese_traditional": "引信",
+        "korean": "도화선",
+        "japanese": "導火線"
       },
       "stackable_names": {
-        "english": "<nobr>Fuse {0}</nobr>"
+        "english": "<nobr>Fuse {0}</nobr>",
+        "french": "<nobr>Mèche {0}</nobr>",
+        "german": "<nobr>Lunte {0}</nobr>",
+        "russian": "<nobr>Запал {0}</nobr>",
+        "portuguese": "<nobr>Pavio {0}</nobr>",
+        "chinese": "<nobr>引信 {0}</nobr>",
+        "spanish": "<nobr>Mecha {0}</nobr>",
+        "chinese_traditional": "<nobr>引信 {0}</nobr>",
+        "korean": "<nobr>도화선 {0}</nobr>",
+        "japanese": "<nobr>導火線 {0}</nobr>"
       },
       "card_tooltips": {
-        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, it explodes."
+        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, it explodes.",
+        "french": "Perd une charge à chaque changement d’étage de cette unité. Lorsque la dernière charge disparaît, elle explose.",
+        "german": "Verliert bei jedem Stockwerkwechsel dieser Einheit einen Stapel. Nach dem letzten Stapel explodiert sie.",
+        "russian": "Теряет один заряд каждый раз, когда эта боевая единица меняет этаж. Когда исчезает последний заряд, она взрывается.",
+        "portuguese": "Perde uma carga sempre que esta unidade muda de andar. Ao perder a última carga, ela explode.",
+        "chinese": "该单位每次改变楼层时失去一层。失去最后一层时爆炸。",
+        "spanish": "Pierde una acumulación cada vez que esta unidad cambia de piso. Al perder la última, explota.",
+        "chinese_traditional": "該單位每次改變樓層時失去一層。失去最後一層時爆炸。",
+        "korean": "이 유닛이 층을 이동할 때마다 중첩이 1 감소합니다. 마지막 중첩을 잃으면 폭발합니다.",
+        "japanese": "このユニットが階層を移動するたびに1スタック減少。最後のスタックを失うと爆発。"
       },
       "character_tooltips": {
-        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, takes [codeint0] damage."
+        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, takes [codeint0] damage.",
+        "french": "Perd une charge à chaque changement d’étage de cette unité. Lorsque la dernière charge disparaît, elle subit [codeint0] dégâts.",
+        "german": "Verliert bei jedem Stockwerkwechsel dieser Einheit einen Stapel. Nach dem letzten Stapel erleidet sie [codeint0] Schaden.",
+        "russian": "Теряет один заряд каждый раз, когда эта боевая единица меняет этаж. Когда исчезает последний заряд, получает [codeint0] урона.",
+        "portuguese": "Perde uma carga sempre que esta unidade muda de andar. Ao perder a última carga, sofre [codeint0] de dano.",
+        "chinese": "该单位每次改变楼层时失去一层。失去最后一层时受到[codeint0]点伤害。",
+        "spanish": "Pierde una acumulación cada vez que esta unidad cambia de piso. Al perder la última, recibe [codeint0] de daño.",
+        "chinese_traditional": "該單位每次改變樓層時失去一層。失去最後一層時受到[codeint0]點傷害。",
+        "korean": "이 유닛이 층을 이동할 때마다 중첩이 1 감소합니다. 마지막 중첩을 잃으면 [codeint0]의 피해를 받습니다.",
+        "japanese": "このユニットが階層を移動するたびに1スタック減少。最後のスタックを失うと[codeint0]ダメージを受ける。"
       },
       "replacement_texts": {
-        "english": "<b>Fuse</b>"
+        "english": "<b>Fuse</b>",
+        "french": "<b>Mèche</b>",
+        "german": "<b>Lunte</b>",
+        "russian": "<b>Запал</b>",
+        "portuguese": "<b>Pavio</b>",
+        "chinese": "<b>引信</b>",
+        "spanish": "<b>Mecha</b>",
+        "chinese_traditional": "<b>引信</b>",
+        "korean": "<b>도화선</b>",
+        "japanese": "<b>導火線</b>"
       },
       "notifications": {
-        "english": "Fuse"
+        "english": "Fuse",
+        "french": "Mèche",
+        "german": "Lunte",
+        "russian": "Запал",
+        "portuguese": "Pavio",
+        "chinese": "引信",
+        "spanish": "Mecha",
+        "chinese_traditional": "引信",
+        "korean": "도화선",
+        "japanese": "導火線"
       },
       "display_category": "negative",
       "trigger_stage": "none",
@@ -33,22 +87,76 @@
       "id": "banished",
       "class_name": "@StatusEffectFreeCompanyCountdownState",
       "names": {
-        "english": "Banished"
+        "english": "Banished",
+        "french": "Banni",
+        "german": "Verbannt",
+        "russian": "Изгнание",
+        "portuguese": "Banido",
+        "chinese": "放逐",
+        "spanish": "Destierro",
+        "chinese_traditional": "放逐",
+        "korean": "추방",
+        "japanese": "追放"
       },
       "stackable_names": {
-        "english": "<nobr>Banished {0}</nobr>"
+        "english": "<nobr>Banished {0}</nobr>",
+        "french": "<nobr>Banni {0}</nobr>",
+        "german": "<nobr>Verbannt {0}</nobr>",
+        "russian": "<nobr>Изгнание {0}</nobr>",
+        "portuguese": "<nobr>Banido {0}</nobr>",
+        "chinese": "<nobr>放逐 {0}</nobr>",
+        "spanish": "<nobr>Destierro {0}</nobr>",
+        "chinese_traditional": "<nobr>放逐 {0}</nobr>",
+        "korean": "<nobr>추방 {0}</nobr>",
+        "japanese": "<nobr>追放 {0}</nobr>"
       },
       "card_tooltips": {
-        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, the unit is banished."
+        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, the unit is banished.",
+        "french": "Perd une charge à chaque changement d’étage de cette unité. Lorsque la dernière charge disparaît, l’unité est bannie.",
+        "german": "Verliert bei jedem Stockwerkwechsel dieser Einheit einen Stapel. Nach dem letzten Stapel wird die Einheit verbannt.",
+        "russian": "Теряет один заряд каждый раз, когда эта боевая единица меняет этаж. Когда исчезает последний заряд, она изгоняется.",
+        "portuguese": "Perde uma carga sempre que esta unidade muda de andar. Ao perder a última carga, a unidade é banida.",
+        "chinese": "该单位每次改变楼层时失去一层。失去最后一层时，该单位被放逐。",
+        "spanish": "Pierde una acumulación cada vez que esta unidad cambia de piso. Al perder la última, la unidad queda desterrada.",
+        "chinese_traditional": "該單位每次改變樓層時失去一層。失去最後一層時，該單位被放逐。",
+        "korean": "이 유닛이 층을 이동할 때마다 중첩이 1 감소합니다. 마지막 중첩을 잃으면 유닛이 추방됩니다.",
+        "japanese": "このユニットが階層を移動するたびに1スタック減少。最後のスタックを失うと、このユニットを追放。"
       },
       "character_tooltips": {
-        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, the unit is banished."
+        "english": "Loses a stack each time this unit changes floor. When the last stack is lost, the unit is banished.",
+        "french": "Perd une charge à chaque changement d’étage de cette unité. Lorsque la dernière charge disparaît, l’unité est bannie.",
+        "german": "Verliert bei jedem Stockwerkwechsel dieser Einheit einen Stapel. Nach dem letzten Stapel wird die Einheit verbannt.",
+        "russian": "Теряет один заряд каждый раз, когда эта боевая единица меняет этаж. Когда исчезает последний заряд, она изгоняется.",
+        "portuguese": "Perde uma carga sempre que esta unidade muda de andar. Ao perder a última carga, a unidade é banida.",
+        "chinese": "该单位每次改变楼层时失去一层。失去最后一层时，该单位被放逐。",
+        "spanish": "Pierde una acumulación cada vez que esta unidad cambia de piso. Al perder la última, la unidad queda desterrada.",
+        "chinese_traditional": "該單位每次改變樓層時失去一層。失去最後一層時，該單位被放逐。",
+        "korean": "이 유닛이 층을 이동할 때마다 중첩이 1 감소합니다. 마지막 중첩을 잃으면 유닛이 추방됩니다.",
+        "japanese": "このユニットが階層を移動するたびに1スタック減少。最後のスタックを失うと、このユニットを追放。"
       },
       "replacement_texts": {
-        "english": "<b>Banished</b>"
+        "english": "<b>Banished</b>",
+        "french": "<b>Banni</b>",
+        "german": "<b>Verbannt</b>",
+        "russian": "<b>Изгнание</b>",
+        "portuguese": "<b>Banido</b>",
+        "chinese": "<b>放逐</b>",
+        "spanish": "<b>Destierro</b>",
+        "chinese_traditional": "<b>放逐</b>",
+        "korean": "<b>추방</b>",
+        "japanese": "<b>追放</b>"
       },
       "notifications": {
-        "english": "Banished"
+        "english": "Banished",
+        "french": "Banni",
+        "german": "Verbannt",
+        "russian": "Изгнание",
+        "portuguese": "Banido",
+        "chinese": "放逐",
+        "spanish": "Destierro",
+        "chinese_traditional": "放逐",
+        "korean": "추방",
+        "japanese": "追放"
       },
       "display_category": "negative",
       "trigger_stage": "none",
@@ -80,7 +188,16 @@
     {
       "id": "CountdownTicker",
       "titles": {
-        "english": "Countdown"
+        "english": "Countdown",
+        "french": "Compte à rebours",
+        "german": "Countdown",
+        "russian": "Обратный отсчёт",
+        "portuguese": "Contagem Regressiva",
+        "chinese": "倒计时",
+        "spanish": "Cuenta atrás",
+        "chinese_traditional": "倒計時",
+        "korean": "초읽기",
+        "japanese": "カウントダウン"
       },
       "trigger_upgrades": [
         "@CountdownTickUp",

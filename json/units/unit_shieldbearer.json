@@ -4,7 +4,16 @@
     {
       "id": "SpawnShieldbearer",
       "names": {
-        "english": "Shieldbearer"
+        "english": "Shieldbearer",
+        "french": "Porte-bouclier",
+        "german": "Schildträger",
+        "russian": "Щитоносец",
+        "portuguese": "Porta-Escudo",
+        "chinese": "持盾卫士",
+        "spanish": "Portador de escudo",
+        "chinese_traditional": "持盾衛士",
+        "korean": "방패병",
+        "japanese": "盾兵"
       },
       "card_art": "@Shieldbearer",
       "cost": 2,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Paid to stand still and be hit."
+          "english": "Paid to stand still and be hit.",
+          "french": "Payé pour rester immobile et être frappé.",
+          "german": "Sie werden bezahlt, um still zu stehen und getroffen zu werden.",
+          "russian": "Заплатили за то, чтобы стоять неподвижно и получать удар.",
+          "portuguese": "Pagado por ficar parado e ser atingido.",
+          "chinese": "付钱站着,被击中.",
+          "spanish": "Le pagan por quedarse quieto y recibir golpes.",
+          "chinese_traditional": "付出錢來停下來被打.",
+          "korean": "가만히 서서 타당하기 위해 돈을 받았어요.",
+          "japanese": "止まって 撃たれるために支払った"
         }
       ],
       "pools": [
@@ -28,10 +46,28 @@
     {
       "id": "ShieldbearerAbility",
       "names": {
-        "english": "Last Stand"
+        "english": "Last Stand",
+        "french": "Dernier rempart",
+        "german": "Letztes Gefecht",
+        "russian": "Последний бой",
+        "portuguese": "Última Resistência",
+        "chinese": "背水一战",
+        "spanish": "Última resistencia",
+        "chinese_traditional": "背水一戰",
+        "korean": "최후의 저항",
+        "japanese": "最後の抵抗"
       },
       "descriptions": {
-        "english": "Deal damage to the enemy in front equal to twice this unit's [health]. Then this unit loses half its remaining [health]."
+        "english": "Deal damage to the enemy in front equal to twice this unit's [health]. Then this unit loses half its remaining [health].",
+        "french": "Inflige à l’ennemi de tête des dégâts égaux au double de la [health] de cette unité. Elle perd ensuite la moitié de sa [health] restante.",
+        "german": "Fügt dem vordersten Gegner Schaden in Höhe der doppelten [health] dieser Einheit zu. Danach verliert sie die Hälfte ihrer verbleibenden [health].",
+        "russian": "Наносит переднему врагу урон, равный удвоенному [health] этой боевой единицы. Затем она теряет половину оставшегося [health].",
+        "portuguese": "Causa dano ao inimigo da frente igual ao dobro da [health] desta unidade. Depois, ela perde metade da [health] restante.",
+        "chinese": "对最前方的敌人造成相当于此单位[health]两倍的伤害。随后，此单位失去一半剩余[health]。",
+        "spanish": "Inflige al primer enemigo un daño igual al doble de la [health] de esta unidad. Después, esta unidad pierde la mitad de su [health] restante.",
+        "chinese_traditional": "對最前方的敵人造成相當於此單位[health]兩倍的傷害。隨後，此單位失去一半剩餘[health]。",
+        "korean": "맨 앞 적에게 이 유닛의 [health] 두 배만큼 피해를 가함. 이후 이 유닛은 남은 [health]의 절반을 잃음.",
+        "japanese": "先頭の敵にこのユニットの[health]の2倍のダメージを与える。その後、このユニットは残り[health]の半分を失う。"
       },
       "card_art": "@Shieldbearer",
       "is_an_ability": true,
@@ -49,7 +85,16 @@
     {
       "id": "Shieldbearer",
       "names": {
-        "english": "Shieldbearer"
+        "english": "Shieldbearer",
+        "french": "Porte-bouclier",
+        "german": "Schildträger",
+        "russian": "Щитоносец",
+        "portuguese": "Porta-Escudo",
+        "chinese": "持盾卫士",
+        "spanish": "Portador de escudo",
+        "chinese_traditional": "持盾衛士",
+        "korean": "방패병",
+        "japanese": "盾兵"
       },
       "character_art": "@ShieldbearerCharacterArt",
       "size": 2,
@@ -108,7 +153,16 @@
       "id": "ShieldbearerSpawnTrigger",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to itself."
+        "english": "Apply [effect0.status0.power] [armor] to itself.",
+        "french": "S’applique [effect0.status0.power] [armor].",
+        "german": "Erhält selbst [effect0.status0.power] [armor].",
+        "russian": "Накладывает на себя [effect0.status0.power] [armor].",
+        "portuguese": "Aplica [effect0.status0.power] [armor] a si mesma.",
+        "chinese": "对自身施加[effect0.status0.power] [armor]。",
+        "spanish": "Se aplica [effect0.status0.power] [armor].",
+        "chinese_traditional": "對自身施加[effect0.status0.power] [armor]。",
+        "korean": "자신에게 [effect0.status0.power] [armor] 부여.",
+        "japanese": "自身に[effect0.status0.power] [armor]を付与。"
       },
       "effects": [
         "@ShieldbearerArmor"

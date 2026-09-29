@@ -4,10 +4,28 @@
     {
       "id": "Bless",
       "names": {
-        "english": "Bless"
+        "english": "Bless",
+        "french": "Bénédiction",
+        "german": "Segen",
+        "russian": "Благословение",
+        "portuguese": "Bênção",
+        "chinese": "祝福",
+        "spanish": "Bendición",
+        "chinese_traditional": "祝福",
+        "korean": "축복",
+        "japanese": "祝福"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [valor] to all friendly units on this floor."
+        "english": "Apply [effect0.status0.power] [valor] to all friendly units on this floor.",
+        "french": "Appliquez [effect0.status0.power] [valor] à toutes les unités alliées de cet étage.",
+        "german": "Verleihe allen verbündeten Einheiten auf diesem Stockwerk [effect0.status0.power] [valor].",
+        "russian": "Наложите [effect0.status0.power] [valor] на все союзные боевые единицы на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [valor] a todas as unidades aliadas neste andar.",
+        "chinese": "对本层所有友方单位施加[effect0.status0.power] [valor]。",
+        "spanish": "Aplica [effect0.status0.power] [valor] a todas las unidades aliadas de este piso.",
+        "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [valor]。",
+        "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [valor] 부여.",
+        "japanese": "この階の味方ユニット全体に[effect0.status0.power] [valor]を付与。"
       },
       "card_art": "@Bless",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Free of charge. For once."
+          "english": "Free of charge. For once.",
+          "french": "C'est gratuit. Pour une fois.",
+          "german": "Das ist kostenlos. Einmal für alle.",
+          "russian": "Бесплатно. Только один раз.",
+          "portuguese": "É grátis. Por uma vez.",
+          "chinese": "这是免费的. 这一次.",
+          "spanish": "Gratis. Por una vez.",
+          "chinese_traditional": "這是免費的. 這是一次.",
+          "korean": "무료입니다. 한 번이라도",
+          "japanese": "無料で 一度だけ"
         }
       ],
       "pools": [

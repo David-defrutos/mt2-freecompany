@@ -4,10 +4,28 @@
     {
       "id": "Silence",
       "names": {
-        "english": "Silence"
+        "english": "Silence",
+        "french": "Silence",
+        "german": "Stille",
+        "russian": "Безмолвие",
+        "portuguese": "Silêncio",
+        "chinese": "沉默术",
+        "spanish": "Silencio",
+        "chinese_traditional": "沉默術",
+        "korean": "침묵",
+        "japanese": "沈黙"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [mute] to an enemy."
+        "english": "Apply [effect0.status0.power] [mute] to an enemy.",
+        "french": "Appliquez [effect0.status0.power] [mute] à un ennemi.",
+        "german": "Verleihe einem Gegner [effect0.status0.power] [mute].",
+        "russian": "Наложите на врага [effect0.status0.power] [mute].",
+        "portuguese": "Aplique [effect0.status0.power] [mute] a um inimigo.",
+        "chinese": "对一个敌人施加[effect0.status0.power] [mute]。",
+        "spanish": "Aplica [effect0.status0.power] [mute] a un enemigo.",
+        "chinese_traditional": "對一個敵人施加[effect0.status0.power] [mute]。",
+        "korean": "적 하나에게 [effect0.status0.power] [mute] 부여.",
+        "japanese": "敵1体に[effect0.status0.power] [mute]を付与。"
       },
       "card_art": "@Silence",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "The quiet is the point."
+          "english": "The quiet is the point.",
+          "french": "Le calme est le point.",
+          "german": "Das Wichtigste ist die Ruhe.",
+          "russian": "Самое главное - тишина.",
+          "portuguese": "O silêncio é o ponto.",
+          "chinese": "关键是安静.",
+          "spanish": "El silencio es la idea.",
+          "chinese_traditional": "關鍵是安靜.",
+          "korean": "조용한 게 중요한데",
+          "japanese": "静寂が大事だ"
         }
       ],
       "pools": [

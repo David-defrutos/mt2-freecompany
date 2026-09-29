@@ -4,10 +4,28 @@
     {
       "id": "ShieldWall",
       "names": {
-        "english": "Shield Wall"
+        "english": "Shield Wall",
+        "french": "Mur de boucliers",
+        "german": "Schildwall",
+        "russian": "Стена щитов",
+        "portuguese": "Muralha de Escudos",
+        "chinese": "盾墙",
+        "spanish": "Muro de escudos",
+        "chinese_traditional": "盾牆",
+        "korean": "방패벽",
+        "japanese": "盾の壁"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to all friendly units on this floor."
+        "english": "Apply [effect0.status0.power] [armor] to all friendly units on this floor.",
+        "french": "Appliquez [effect0.status0.power] [armor] à toutes les unités alliées de cet étage.",
+        "german": "Verleihe allen verbündeten Einheiten auf diesem Stockwerk [effect0.status0.power] [armor].",
+        "russian": "Наложите [effect0.status0.power] [armor] на все союзные боевые единицы на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [armor] a todas as unidades aliadas neste andar.",
+        "chinese": "对本层所有友方单位施加[effect0.status0.power] [armor]。",
+        "spanish": "Aplica [effect0.status0.power] [armor] a todas las unidades aliadas de este piso.",
+        "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [armor]。",
+        "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [armor] 부여.",
+        "japanese": "この階の味方ユニット全体に[effect0.status0.power] [armor]を付与。"
       },
       "card_art": "@ShieldWall",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Cheaper than a funeral."
+          "english": "Cheaper than a funeral.",
+          "french": "C'est moins cher qu'un enterrement.",
+          "german": "Billiger als eine Beerdigung.",
+          "russian": "Дешевле, чем похороны.",
+          "portuguese": "É mais barato do que um funeral.",
+          "chinese": "比一个葬礼便宜.",
+          "spanish": "Más barato que un funeral.",
+          "chinese_traditional": "價格比葬禮便宜.",
+          "korean": "장례식보다 저렴해요",
+          "japanese": "葬儀よりも安い"
         }
       ],
       "pools": [

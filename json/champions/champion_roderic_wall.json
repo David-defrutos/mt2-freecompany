@@ -4,10 +4,28 @@
     {
       "id": "RodericSlam",
       "names": {
-        "english": "Power Slam I"
+        "english": "Power Slam I",
+        "french": "Frappe puissante I",
+        "german": "Wuchtiger Schlag I",
+        "russian": "Мощный удар I",
+        "portuguese": "Golpe Poderoso I",
+        "chinese": "强力猛击 I",
+        "spanish": "Golpe poderoso I",
+        "chinese_traditional": "強力猛擊 I",
+        "korean": "강타 I",
+        "japanese": "強打 I"
       },
       "descriptions": {
-        "english": "[advance]. Deal current [health] + [armor] damage to the front enemy and [effect2.power] to all enemies here."
+        "english": "[advance]. Deal current [health] + [armor] damage to the front enemy and [effect2.power] to all enemies here.",
+        "french": "[advance]. Inflige à l’ennemi de tête des dégâts égaux aux [health] + [armor] actuels, et [effect2.power] dégâts à tous les ennemis ici.",
+        "german": "[advance]. Fügt dem vordersten Gegner Schaden in Höhe der aktuellen [health] + [armor] und allen Gegnern hier [effect2.power] Schaden zu.",
+        "russian": "[advance]. Наносит переднему врагу урон, равный текущим [health] + [armor], и [effect2.power] урона всем врагам здесь.",
+        "portuguese": "[advance]. Causa ao inimigo da frente dano igual à [health] + [armor] atuais e [effect2.power] de dano a todos os inimigos aqui.",
+        "chinese": "[advance]。对最前方的敌人造成相当于当前[health] + [armor]的伤害，并对本层所有敌人造成[effect2.power]点伤害。",
+        "spanish": "[advance]. Inflige al primer enemigo un daño igual a la [health] + [armor] actuales y [effect2.power] de daño a todos los enemigos de aquí.",
+        "chinese_traditional": "[advance]。對最前方的敵人造成相當於當前[health] + [armor]的傷害，並對本層所有敵人造成[effect2.power]點傷害。",
+        "korean": "[advance]. 맨 앞 적에게 현재 [health] + [armor]만큼 피해를 가하고 이 층의 모든 적에게 [effect2.power] 피해를 가함.",
+        "japanese": "[advance]。先頭の敵に現在の[health] + [armor]と同量のダメージを与え、この階の敵全体に[effect2.power]ダメージを与える。"
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -24,10 +42,28 @@
     {
       "id": "RodericSlam2",
       "names": {
-        "english": "Power Slam II"
+        "english": "Power Slam II",
+        "french": "Frappe puissante II",
+        "german": "Wuchtiger Schlag II",
+        "russian": "Мощный удар II",
+        "portuguese": "Golpe Poderoso II",
+        "chinese": "强力猛击 II",
+        "spanish": "Golpe poderoso II",
+        "chinese_traditional": "強力猛擊 II",
+        "korean": "강타 II",
+        "japanese": "強打 II"
       },
       "descriptions": {
-        "english": "[advance]. Deal current [health] + [armor] damage to the front enemy and [effect2.power] to all enemies here."
+        "english": "[advance]. Deal current [health] + [armor] damage to the front enemy and [effect2.power] to all enemies here.",
+        "french": "[advance]. Inflige à l’ennemi de tête des dégâts égaux aux [health] + [armor] actuels, et [effect2.power] dégâts à tous les ennemis ici.",
+        "german": "[advance]. Fügt dem vordersten Gegner Schaden in Höhe der aktuellen [health] + [armor] und allen Gegnern hier [effect2.power] Schaden zu.",
+        "russian": "[advance]. Наносит переднему врагу урон, равный текущим [health] + [armor], и [effect2.power] урона всем врагам здесь.",
+        "portuguese": "[advance]. Causa ao inimigo da frente dano igual à [health] + [armor] atuais e [effect2.power] de dano a todos os inimigos aqui.",
+        "chinese": "[advance]。对最前方的敌人造成相当于当前[health] + [armor]的伤害，并对本层所有敌人造成[effect2.power]点伤害。",
+        "spanish": "[advance]. Inflige al primer enemigo un daño igual a la [health] + [armor] actuales y [effect2.power] de daño a todos los enemigos de aquí.",
+        "chinese_traditional": "[advance]。對最前方的敵人造成相當於當前[health] + [armor]的傷害，並對本層所有敵人造成[effect2.power]點傷害。",
+        "korean": "[advance]. 맨 앞 적에게 현재 [health] + [armor]만큼 피해를 가하고 이 층의 모든 적에게 [effect2.power] 피해를 가함.",
+        "japanese": "[advance]。先頭の敵に現在の[health] + [armor]と同量のダメージを与え、この階の敵全体に[effect2.power]ダメージを与える。"
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -44,10 +80,28 @@
     {
       "id": "RodericSlam3",
       "names": {
-        "english": "Power Slam III"
+        "english": "Power Slam III",
+        "french": "Frappe puissante III",
+        "german": "Wuchtiger Schlag III",
+        "russian": "Мощный удар III",
+        "portuguese": "Golpe Poderoso III",
+        "chinese": "强力猛击 III",
+        "spanish": "Golpe poderoso III",
+        "chinese_traditional": "強力猛擊 III",
+        "korean": "강타 III",
+        "japanese": "強打 III"
       },
       "descriptions": {
-        "english": "[advance]. Deal current [health] + [armor] damage to the front enemy and [effect2.power] to all enemies here."
+        "english": "[advance]. Deal current [health] + [armor] damage to the front enemy and [effect2.power] to all enemies here.",
+        "french": "[advance]. Inflige à l’ennemi de tête des dégâts égaux aux [health] + [armor] actuels, et [effect2.power] dégâts à tous les ennemis ici.",
+        "german": "[advance]. Fügt dem vordersten Gegner Schaden in Höhe der aktuellen [health] + [armor] und allen Gegnern hier [effect2.power] Schaden zu.",
+        "russian": "[advance]. Наносит переднему врагу урон, равный текущим [health] + [armor], и [effect2.power] урона всем врагам здесь.",
+        "portuguese": "[advance]. Causa ao inimigo da frente dano igual à [health] + [armor] atuais e [effect2.power] de dano a todos os inimigos aqui.",
+        "chinese": "[advance]。对最前方的敌人造成相当于当前[health] + [armor]的伤害，并对本层所有敌人造成[effect2.power]点伤害。",
+        "spanish": "[advance]. Inflige al primer enemigo un daño igual a la [health] + [armor] actuales y [effect2.power] de daño a todos los enemigos de aquí.",
+        "chinese_traditional": "[advance]。對最前方的敵人造成相當於當前[health] + [armor]的傷害，並對本層所有敵人造成[effect2.power]點傷害。",
+        "korean": "[advance]. 맨 앞 적에게 현재 [health] + [armor]만큼 피해를 가하고 이 층의 모든 적에게 [effect2.power] 피해를 가함.",
+        "japanese": "[advance]。先頭の敵に現在の[health] + [armor]と同量のダメージを与え、この階の敵全体に[effect2.power]ダメージを与える。"
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -67,7 +121,16 @@
       "id": "WallTrigger1",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room."
+        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room.",
+        "french": "Appliquez [effect0.status0.power] [armor] à toutes les unités alliées de cet étage.",
+        "german": "Verleihe allen verbündeten Einheiten auf diesem Stockwerk [effect0.status0.power] [armor].",
+        "russian": "Наложите [effect0.status0.power] [armor] на все союзные боевые единицы на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [armor] a todas as unidades aliadas neste andar.",
+        "chinese": "对本层所有友方单位施加[effect0.status0.power] [armor]。",
+        "spanish": "Aplica [effect0.status0.power] [armor] a todas las unidades aliadas de este piso.",
+        "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [armor]。",
+        "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [armor] 부여.",
+        "japanese": "この階の味方ユニット全体に[effect0.status0.power] [armor]を付与。"
       },
       "effects": [
         "@WallArmor1"
@@ -77,7 +140,16 @@
       "id": "WallTrigger2",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room."
+        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room.",
+        "french": "Appliquez [effect0.status0.power] [armor] à toutes les unités alliées de cet étage.",
+        "german": "Verleihe allen verbündeten Einheiten auf diesem Stockwerk [effect0.status0.power] [armor].",
+        "russian": "Наложите [effect0.status0.power] [armor] на все союзные боевые единицы на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [armor] a todas as unidades aliadas neste andar.",
+        "chinese": "对本层所有友方单位施加[effect0.status0.power] [armor]。",
+        "spanish": "Aplica [effect0.status0.power] [armor] a todas las unidades aliadas de este piso.",
+        "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [armor]。",
+        "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [armor] 부여.",
+        "japanese": "この階の味方ユニット全体に[effect0.status0.power] [armor]を付与。"
       },
       "effects": [
         "@WallArmor2"
@@ -87,7 +159,16 @@
       "id": "WallTrigger3",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room."
+        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room.",
+        "french": "Appliquez [effect0.status0.power] [armor] à toutes les unités alliées de cet étage.",
+        "german": "Verleihe allen verbündeten Einheiten auf diesem Stockwerk [effect0.status0.power] [armor].",
+        "russian": "Наложите [effect0.status0.power] [armor] на все союзные боевые единицы на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [armor] a todas as unidades aliadas neste andar.",
+        "chinese": "对本层所有友方单位施加[effect0.status0.power] [armor]。",
+        "spanish": "Aplica [effect0.status0.power] [armor] a todas las unidades aliadas de este piso.",
+        "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [armor]。",
+        "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [armor] 부여.",
+        "japanese": "この階の味方ユニット全体に[effect0.status0.power] [armor]を付与。"
       },
       "effects": [
         "@WallArmor3"
@@ -194,10 +275,28 @@
       "id": "upg_Wall1",
       "ability_upgrade": "@RodericSlam",
       "titles": {
-        "english": "Shield Wall"
+        "english": "Shield Wall",
+        "french": "Mur de boucliers",
+        "german": "Schildwall",
+        "russian": "Стена щитов",
+        "portuguese": "Muralha de Escudos",
+        "chinese": "盾墙",
+        "spanish": "Muro de escudos",
+        "chinese_traditional": "盾牆",
+        "korean": "방패벽",
+        "japanese": "盾の壁"
       },
       "descriptions": {
-        "english": "Give allies here <b>3</b> [armor] before combat. Power Slam hits enemies here."
+        "english": "Give allies here <b>3</b> [armor] before combat. Power Slam hits enemies here.",
+        "french": "Avant le combat, confère <b>3</b> [armor] aux alliés ici. Frappe puissante frappe les ennemis ici.",
+        "german": "Verleiht Verbündeten hier vor dem Kampf <b>3</b> [armor]. Wuchtiger Schlag trifft Gegner hier.",
+        "russian": "Перед боем даёт союзникам здесь <b>3</b> [armor]. Мощный удар поражает врагов здесь.",
+        "portuguese": "Antes do combate, concede <b>3</b> [armor] aos aliados aqui. Golpe Poderoso atinge os inimigos aqui.",
+        "chinese": "战斗前为本层友军施加<b>3</b>层[armor]。强力猛击攻击本层敌人。",
+        "spanish": "Antes del combate, da <b>3</b> [armor] a los aliados de aquí. Golpe poderoso golpea a los enemigos de aquí.",
+        "chinese_traditional": "戰鬥前為本層友軍施加<b>3</b>層[armor]。強力猛擊攻擊本層敵人。",
+        "korean": "전투 전 이 층의 아군에게 <b>3</b> [armor] 부여. 강타는 이 층의 적을 공격.",
+        "japanese": "戦闘前、この階の味方に<b>3</b> [armor]を付与。強打でこの階の敵を攻撃。"
       },
       "bonus_hp": 10,
       "trigger_upgrades": [
@@ -214,10 +313,28 @@
       "id": "upg_Wall2",
       "ability_upgrade": "@RodericSlam2",
       "titles": {
-        "english": "Shield Wall II"
+        "english": "Shield Wall II",
+        "french": "Mur de boucliers II",
+        "german": "Schildwall II",
+        "russian": "Стена щитов II",
+        "portuguese": "Muralha de Escudos II",
+        "chinese": "盾墙 II",
+        "spanish": "Muro de escudos II",
+        "chinese_traditional": "盾牆 II",
+        "korean": "방패벽 II",
+        "japanese": "盾の壁 II"
       },
       "descriptions": {
-        "english": "Give allies here <b>6</b> [armor] before combat. Power Slam hits enemies here."
+        "english": "Give allies here <b>6</b> [armor] before combat. Power Slam hits enemies here.",
+        "french": "Avant le combat, confère <b>6</b> [armor] aux alliés ici. Frappe puissante frappe les ennemis ici.",
+        "german": "Verleiht Verbündeten hier vor dem Kampf <b>6</b> [armor]. Wuchtiger Schlag trifft Gegner hier.",
+        "russian": "Перед боем даёт союзникам здесь <b>6</b> [armor]. Мощный удар поражает врагов здесь.",
+        "portuguese": "Antes do combate, concede <b>6</b> [armor] aos aliados aqui. Golpe Poderoso atinge os inimigos aqui.",
+        "chinese": "战斗前为本层友军施加<b>6</b>层[armor]。强力猛击攻击本层敌人。",
+        "spanish": "Antes del combate, da <b>6</b> [armor] a los aliados de aquí. Golpe poderoso golpea a los enemigos de aquí.",
+        "chinese_traditional": "戰鬥前為本層友軍施加<b>6</b>層[armor]。強力猛擊攻擊本層敵人。",
+        "korean": "전투 전 이 층의 아군에게 <b>6</b> [armor] 부여. 강타는 이 층의 적을 공격.",
+        "japanese": "戦闘前、この階の味方に<b>6</b> [armor]を付与。強打でこの階の敵を攻撃。"
       },
       "bonus_hp": 20,
       "remove_upgrades": [
@@ -237,10 +354,28 @@
       "id": "upg_Wall3",
       "ability_upgrade": "@RodericSlam3",
       "titles": {
-        "english": "Shield Wall III"
+        "english": "Shield Wall III",
+        "french": "Mur de boucliers III",
+        "german": "Schildwall III",
+        "russian": "Стена щитов III",
+        "portuguese": "Muralha de Escudos III",
+        "chinese": "盾墙 III",
+        "spanish": "Muro de escudos III",
+        "chinese_traditional": "盾牆 III",
+        "korean": "방패벽 III",
+        "japanese": "盾の壁 III"
       },
       "descriptions": {
-        "english": "Give allies here <b>10</b> [armor] before combat. Power Slam hits enemies here."
+        "english": "Give allies here <b>10</b> [armor] before combat. Power Slam hits enemies here.",
+        "french": "Avant le combat, confère <b>10</b> [armor] aux alliés ici. Frappe puissante frappe les ennemis ici.",
+        "german": "Verleiht Verbündeten hier vor dem Kampf <b>10</b> [armor]. Wuchtiger Schlag trifft Gegner hier.",
+        "russian": "Перед боем даёт союзникам здесь <b>10</b> [armor]. Мощный удар поражает врагов здесь.",
+        "portuguese": "Antes do combate, concede <b>10</b> [armor] aos aliados aqui. Golpe Poderoso atinge os inimigos aqui.",
+        "chinese": "战斗前为本层友军施加<b>10</b>层[armor]。强力猛击攻击本层敌人。",
+        "spanish": "Antes del combate, da <b>10</b> [armor] a los aliados de aquí. Golpe poderoso golpea a los enemigos de aquí.",
+        "chinese_traditional": "戰鬥前為本層友軍施加<b>10</b>層[armor]。強力猛擊攻擊本層敵人。",
+        "korean": "전투 전 이 층의 아군에게 <b>10</b> [armor] 부여. 강타는 이 층의 적을 공격.",
+        "japanese": "戦闘前、この階の味方に<b>10</b> [armor]を付与。強打でこの階の敵を攻撃。"
       },
       "bonus_hp": 35,
       "remove_upgrades": [

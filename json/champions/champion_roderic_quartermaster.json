@@ -4,10 +4,28 @@
     {
       "id": "RodericRequisition",
       "names": {
-        "english": "Requisition I"
+        "english": "Requisition I",
+        "french": "Réquisition I",
+        "german": "Anforderung I",
+        "russian": "Реквизиция I",
+        "portuguese": "Requisição I",
+        "chinese": "征调 I",
+        "spanish": "Requisa I",
+        "chinese_traditional": "徵調 I",
+        "korean": "징발 I",
+        "japanese": "徴発 I"
       },
       "descriptions": {
-        "english": "Add the <b>I</b> kit for that unit's role to your hand."
+        "english": "Add the <b>I</b> kit for that unit's role to your hand.",
+        "french": "Ajoutez à votre main l’équipement de rang <b>I</b> correspondant au rôle de cette unité.",
+        "german": "Füge deiner Hand Ausrüstung der Stufe <b>I</b> für die Rolle dieser Einheit hinzu.",
+        "russian": "Добавьте в руку снаряжение уровня <b>I</b>, соответствующее роли этой боевой единицы.",
+        "portuguese": "Adicione à sua mão o equipamento de nível <b>I</b> correspondente à função dessa unidade.",
+        "chinese": "将符合该单位职业的<b>I</b>级装备加入手牌。",
+        "spanish": "Añade a tu mano el equipo de nivel <b>I</b> correspondiente al rol de esa unidad.",
+        "chinese_traditional": "將符合該單位職業的<b>I</b>級裝備加入手牌。",
+        "korean": "해당 유닛의 역할에 맞는 <b>I</b>단계 장비를 손에 추가.",
+        "japanese": "そのユニットの役割に合うランク<b>I</b>装備を手札に追加。"
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -22,10 +40,28 @@
     {
       "id": "RodericRequisition2",
       "names": {
-        "english": "Requisition II"
+        "english": "Requisition II",
+        "french": "Réquisition II",
+        "german": "Anforderung II",
+        "russian": "Реквизиция II",
+        "portuguese": "Requisição II",
+        "chinese": "征调 II",
+        "spanish": "Requisa II",
+        "chinese_traditional": "徵調 II",
+        "korean": "징발 II",
+        "japanese": "徴発 II"
       },
       "descriptions": {
-        "english": "Add the <b>II</b> kit for that unit's role to your hand."
+        "english": "Add the <b>II</b> kit for that unit's role to your hand.",
+        "french": "Ajoutez à votre main l’équipement de rang <b>II</b> correspondant au rôle de cette unité.",
+        "german": "Füge deiner Hand Ausrüstung der Stufe <b>II</b> für die Rolle dieser Einheit hinzu.",
+        "russian": "Добавьте в руку снаряжение уровня <b>II</b>, соответствующее роли этой боевой единицы.",
+        "portuguese": "Adicione à sua mão o equipamento de nível <b>II</b> correspondente à função dessa unidade.",
+        "chinese": "将符合该单位职业的<b>II</b>级装备加入手牌。",
+        "spanish": "Añade a tu mano el equipo de nivel <b>II</b> correspondiente al rol de esa unidad.",
+        "chinese_traditional": "將符合該單位職業的<b>II</b>級裝備加入手牌。",
+        "korean": "해당 유닛의 역할에 맞는 <b>II</b>단계 장비를 손에 추가.",
+        "japanese": "そのユニットの役割に合うランク<b>II</b>装備を手札に追加。"
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -40,10 +76,28 @@
     {
       "id": "RodericRequisition3",
       "names": {
-        "english": "Requisition III"
+        "english": "Requisition III",
+        "french": "Réquisition III",
+        "german": "Anforderung III",
+        "russian": "Реквизиция III",
+        "portuguese": "Requisição III",
+        "chinese": "征调 III",
+        "spanish": "Requisa III",
+        "chinese_traditional": "徵調 III",
+        "korean": "징발 III",
+        "japanese": "徴発 III"
       },
       "descriptions": {
-        "english": "Add the <b>III</b> kit for that unit's role to your hand."
+        "english": "Add the <b>III</b> kit for that unit's role to your hand.",
+        "french": "Ajoutez à votre main l’équipement de rang <b>III</b> correspondant au rôle de cette unité.",
+        "german": "Füge deiner Hand Ausrüstung der Stufe <b>III</b> für die Rolle dieser Einheit hinzu.",
+        "russian": "Добавьте в руку снаряжение уровня <b>III</b>, соответствующее роли этой боевой единицы.",
+        "portuguese": "Adicione à sua mão o equipamento de nível <b>III</b> correspondente à função dessa unidade.",
+        "chinese": "将符合该单位职业的<b>III</b>级装备加入手牌。",
+        "spanish": "Añade a tu mano el equipo de nivel <b>III</b> correspondiente al rol de esa unidad.",
+        "chinese_traditional": "將符合該單位職業的<b>III</b>級裝備加入手牌。",
+        "korean": "해당 유닛의 역할에 맞는 <b>III</b>단계 장비를 손에 추가.",
+        "japanese": "そのユニットの役割に合うランク<b>III</b>装備を手札に追加。"
       },
       "card_art": "@Roderic",
       "is_an_ability": true,
@@ -86,10 +140,28 @@
     {
       "id": "upg_Quarter1",
       "titles": {
-        "english": "Quartermaster"
+        "english": "Quartermaster",
+        "french": "Intendant",
+        "german": "Quartiermeister",
+        "russian": "Интендант",
+        "portuguese": "Intendente",
+        "chinese": "军需官",
+        "spanish": "Intendente",
+        "chinese_traditional": "軍需官",
+        "korean": "병참 장교",
+        "japanese": "補給官"
       },
       "descriptions": {
-        "english": "Hold <b>1</b> extra piece of equipment. Requisition tier <b>I</b> kits."
+        "english": "Hold <b>1</b> extra piece of equipment. Requisition tier <b>I</b> kits.",
+        "french": "Peut porter <b>1</b> équipement supplémentaire. Réquisitionne de l’équipement de rang <b>I</b>.",
+        "german": "Kann <b>1</b> zusätzliche Ausrüstungsgegenstände tragen. Fordert Ausrüstung der Stufe <b>I</b> an.",
+        "russian": "Может носить на <b>1</b> предметов снаряжения больше. Реквизирует снаряжение уровня <b>I</b>.",
+        "portuguese": "Pode carregar <b>1</b> equipamento adicional. Requisita equipamentos de nível <b>I</b>.",
+        "chinese": "可额外携带<b>1</b>件装备。征调<b>I</b>级装备。",
+        "spanish": "Puede llevar <b>1</b> pieza de equipo adicional. Requisa equipo de nivel <b>I</b>.",
+        "chinese_traditional": "可額外攜帶<b>1</b>件裝備。徵調<b>I</b>級裝備。",
+        "korean": "장비 <b>1</b>개를 추가로 장착 가능. <b>I</b>단계 장비 징발.",
+        "japanese": "装備を追加で<b>1</b>個持てる。ランク<b>I</b>装備を徴発。"
       },
       "bonus_hp": 8,
       "bonus_damage": 3,
@@ -105,10 +177,28 @@
     {
       "id": "upg_Quarter2",
       "titles": {
-        "english": "Quartermaster II"
+        "english": "Quartermaster II",
+        "french": "Intendant II",
+        "german": "Quartiermeister II",
+        "russian": "Интендант II",
+        "portuguese": "Intendente II",
+        "chinese": "军需官 II",
+        "spanish": "Intendente II",
+        "chinese_traditional": "軍需官 II",
+        "korean": "병참 장교 II",
+        "japanese": "補給官 II"
       },
       "descriptions": {
-        "english": "Hold <b>2</b> extra pieces of equipment. Requisition tier <b>II</b> kits."
+        "english": "Hold <b>2</b> extra pieces of equipment. Requisition tier <b>II</b> kits.",
+        "french": "Peut porter <b>2</b> équipements supplémentaires. Réquisitionne de l’équipement de rang <b>II</b>.",
+        "german": "Kann <b>2</b> zusätzliche Ausrüstungsgegenstände tragen. Fordert Ausrüstung der Stufe <b>II</b> an.",
+        "russian": "Может носить на <b>2</b> предметов снаряжения больше. Реквизирует снаряжение уровня <b>II</b>.",
+        "portuguese": "Pode carregar <b>2</b> equipamentos adicionais. Requisita equipamentos de nível <b>II</b>.",
+        "chinese": "可额外携带<b>2</b>件装备。征调<b>II</b>级装备。",
+        "spanish": "Puede llevar <b>2</b> piezas de equipo adicionales. Requisa equipo de nivel <b>II</b>.",
+        "chinese_traditional": "可額外攜帶<b>2</b>件裝備。徵調<b>II</b>級裝備。",
+        "korean": "장비 <b>2</b>개를 추가로 장착 가능. <b>II</b>단계 장비 징발.",
+        "japanese": "装備を追加で<b>2</b>個持てる。ランク<b>II</b>装備を徴発。"
       },
       "bonus_hp": 16,
       "bonus_damage": 8,
@@ -127,10 +217,28 @@
     {
       "id": "upg_Quarter3",
       "titles": {
-        "english": "Quartermaster III"
+        "english": "Quartermaster III",
+        "french": "Intendant III",
+        "german": "Quartiermeister III",
+        "russian": "Интендант III",
+        "portuguese": "Intendente III",
+        "chinese": "军需官 III",
+        "spanish": "Intendente III",
+        "chinese_traditional": "軍需官 III",
+        "korean": "병참 장교 III",
+        "japanese": "補給官 III"
       },
       "descriptions": {
-        "english": "Hold <b>3</b> extra pieces of equipment. Requisition tier <b>III</b> kits."
+        "english": "Hold <b>3</b> extra pieces of equipment. Requisition tier <b>III</b> kits.",
+        "french": "Peut porter <b>3</b> équipements supplémentaires. Réquisitionne de l’équipement de rang <b>III</b>.",
+        "german": "Kann <b>3</b> zusätzliche Ausrüstungsgegenstände tragen. Fordert Ausrüstung der Stufe <b>III</b> an.",
+        "russian": "Может носить на <b>3</b> предметов снаряжения больше. Реквизирует снаряжение уровня <b>III</b>.",
+        "portuguese": "Pode carregar <b>3</b> equipamentos adicionais. Requisita equipamentos de nível <b>III</b>.",
+        "chinese": "可额外携带<b>3</b>件装备。征调<b>III</b>级装备。",
+        "spanish": "Puede llevar <b>3</b> piezas de equipo adicionales. Requisa equipo de nivel <b>III</b>.",
+        "chinese_traditional": "可額外攜帶<b>3</b>件裝備。徵調<b>III</b>級裝備。",
+        "korean": "장비 <b>3</b>개를 추가로 장착 가능. <b>III</b>단계 장비 징발.",
+        "japanese": "装備を追加で<b>3</b>個持てる。ランク<b>III</b>装備を徴発。"
       },
       "bonus_hp": 28,
       "bonus_damage": 14,

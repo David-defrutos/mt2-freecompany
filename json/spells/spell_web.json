@@ -4,10 +4,28 @@
     {
       "id": "Web",
       "names": {
-        "english": "Web"
+        "english": "Web",
+        "french": "Toile",
+        "german": "Spinnennetz",
+        "russian": "Паутина",
+        "portuguese": "Teia",
+        "chinese": "蛛网术",
+        "spanish": "Telaraña",
+        "chinese_traditional": "蛛網術",
+        "korean": "거미줄",
+        "japanese": "蜘蛛の巣"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [rooted] and [effect1.status0.power] [sap] to all enemies on this floor."
+        "english": "Apply [effect0.status0.power] [rooted] and [effect1.status0.power] [sap] to all enemies on this floor.",
+        "french": "Appliquez [effect0.status0.power] [rooted] et [effect1.status0.power] [sap] à tous les ennemis de cet étage.",
+        "german": "Verleihe allen Gegnern auf diesem Stockwerk [effect0.status0.power] [rooted] und [effect1.status0.power] [sap].",
+        "russian": "Наложите [effect0.status0.power] [rooted] и [effect1.status0.power] [sap] на всех врагов на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [rooted] e [effect1.status0.power] [sap] a todos os inimigos neste andar.",
+        "chinese": "对本层所有敌人施加[effect0.status0.power] [rooted]和[effect1.status0.power] [sap]。",
+        "spanish": "Aplica [effect0.status0.power] [rooted] y [effect1.status0.power] [sap] a todos los enemigos de este piso.",
+        "chinese_traditional": "對本層所有敵人施加[effect0.status0.power] [rooted]和[effect1.status0.power] [sap]。",
+        "korean": "이 층의 모든 적에게 [effect0.status0.power] [rooted] 및 [effect1.status0.power] [sap] 부여.",
+        "japanese": "この階の敵全体に[effect0.status0.power] [rooted]と[effect1.status0.power] [sap]を付与。"
       },
       "card_art": "@Web",
       "cost": 2,
@@ -22,7 +40,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Sticky work."
+          "english": "Sticky work.",
+          "french": "C'est un travail difficile.",
+          "german": "Die Arbeit ist hart.",
+          "russian": "Неплохая работа.",
+          "portuguese": "Trabalho difícil.",
+          "chinese": "这是一项艰巨的工作.",
+          "spanish": "Un trabajo pegajoso.",
+          "chinese_traditional": "這個工作很難完成.",
+          "korean": "열심히 일해요",
+          "japanese": "苦しい仕事だ"
         }
       ],
       "pools": [

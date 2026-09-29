@@ -4,7 +4,16 @@
     {
       "id": "SpawnTheNewGuy",
       "names": {
-        "english": "The New Guy"
+        "english": "The New Guy",
+        "french": "Le petit nouveau",
+        "german": "Der Neue",
+        "russian": "Новенький",
+        "portuguese": "O Novato",
+        "chinese": "新兵",
+        "spanish": "El novato",
+        "chinese_traditional": "新兵",
+        "korean": "신참",
+        "japanese": "新人"
       },
       "card_art": "@TheNewGuy",
       "cost": 1,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Nobody has learned his name yet. There has not been time."
+          "english": "Nobody has learned his name yet. There has not been time.",
+          "french": "Personne n'a encore appris son nom. Il n'y a pas eu de temps.",
+          "german": "Niemand hat seinen Namen noch gelernt. Es gab keine Zeit.",
+          "russian": "Его имя еще никто не узнал. Времени не было.",
+          "portuguese": "Ainda ninguém aprendeu o nome dele. Não houve tempo.",
+          "chinese": "没有人知道他的名字. 没有时间.",
+          "spanish": "Nadie se ha aprendido su nombre aún. No ha habido tiempo.",
+          "chinese_traditional": "沒有人知道他的名字. 沒有時間.",
+          "korean": "아직 아무도 그의 이름을 알아내지 못했습니다. 시간이 없었습니다.",
+          "japanese": "誰も彼の名前をまだ知らない. 時間がない"
         }
       ],
       "pools": [
@@ -30,7 +48,16 @@
     {
       "id": "TheNewGuy",
       "names": {
-        "english": "The New Guy"
+        "english": "The New Guy",
+        "french": "Le petit nouveau",
+        "german": "Der Neue",
+        "russian": "Новенький",
+        "portuguese": "O Novato",
+        "chinese": "新兵",
+        "spanish": "El novato",
+        "chinese_traditional": "新兵",
+        "korean": "신참",
+        "japanese": "新人"
       },
       "character_art": "@TheNewGuyCharacterArt",
       "size": 1,
@@ -69,7 +96,16 @@
       "id": "TheNewGuyTrigger",
       "trigger": "on_any_monster_death_on_floor",
       "descriptions": {
-        "english": "When a friendly unit on this floor dies, this unit gains <b>+3</b> [attack] and <b>+3</b> [health] permanently."
+        "english": "When a friendly unit on this floor dies, this unit gains <b>+3</b> [attack] and <b>+3</b> [health] permanently.",
+        "french": "Lorsqu’une unité alliée de cet étage meurt, cette unité gagne définitivement <b>+3</b> [attack] et <b>+3</b> [health].",
+        "german": "Wenn eine verbündete Einheit auf diesem Stockwerk stirbt, erhält diese Einheit dauerhaft <b>+3</b> [attack] und <b>+3</b> [health].",
+        "russian": "Когда союзная боевая единица на этом этаже погибает, эта боевая единица навсегда получает <b>+3</b> [attack] и <b>+3</b> [health].",
+        "portuguese": "Quando uma unidade aliada neste andar morre, esta unidade ganha <b>+3</b> [attack] e <b>+3</b> [health] permanentemente.",
+        "chinese": "本层一个友方单位死亡时，此单位永久获得<b>+3</b> [attack]和<b>+3</b> [health]。",
+        "spanish": "Cuando muere una unidad aliada de este piso, esta unidad gana <b>+3</b> [attack] y <b>+3</b> [health] permanentemente.",
+        "chinese_traditional": "本層一個友方單位死亡時，此單位永久獲得<b>+3</b> [attack]和<b>+3</b> [health]。",
+        "korean": "이 층의 아군 유닛이 사망하면 이 유닛은 영구적으로 <b>+3</b> [attack] 및 <b>+3</b> [health] 획득.",
+        "japanese": "この階の味方ユニットが死亡すると、このユニットは永続的に<b>+3</b> [attack]と<b>+3</b> [health]を得る。"
       },
       "effects": [
         "@TheNewGuyPromotion"

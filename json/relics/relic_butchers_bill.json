@@ -14,17 +14,53 @@
       "id": "ButchersBill",
       "type": "collectable",
       "names": {
-        "english": "Butcher's Bill"
+        "english": "Butcher's Bill",
+        "french": "Bilan du boucher",
+        "german": "Metzgerrechnung",
+        "russian": "Счёт мясника",
+        "portuguese": "Conta do Açougueiro",
+        "chinese": "屠夫账单",
+        "spanish": "La cuenta del carnicero",
+        "chinese_traditional": "屠夫帳單",
+        "korean": "도살자의 청구서",
+        "japanese": "肉屋の請求書"
       },
       "descriptions": {
-        "english": "Whenever a friendly unit slays an enemy, gain <b>5</b> [coin]."
+        "english": "Whenever a friendly unit slays an enemy, gain <b>5</b> [coin].",
+        "french": "Lorsqu’une unité alliée tue un ennemi, gagnez <b>5</b> [coin].",
+        "german": "Wenn eine verbündete Einheit einen Gegner tötet, erhalte <b>5</b> [coin].",
+        "russian": "Когда союзная боевая единица убивает врага, получите <b>5</b> [coin].",
+        "portuguese": "Sempre que uma unidade aliada mata um inimigo, ganhe <b>5</b> [coin].",
+        "chinese": "每次友方单位击杀敌人时，获得<b>5</b> [coin]。",
+        "spanish": "Cada vez que una unidad aliada mata a un enemigo, gana <b>5</b> [coin].",
+        "chinese_traditional": "每次友方單位擊殺敵人時，獲得<b>5</b> [coin]。",
+        "korean": "아군 유닛이 적을 처치할 때마다 <b>5</b> [coin] 획득.",
+        "japanese": "味方ユニットが敵を倒すたび、<b>5</b> [coin]を得る。"
       },
       "relic_activated_texts": {
-        "english": "Tally it."
+        "english": "Tally it.",
+        "french": "Fais le dénombrement.",
+        "german": "Zählen Sie es.",
+        "russian": "Подсчитай.",
+        "portuguese": "Conta-o.",
+        "chinese": "把它数起来.",
+        "spanish": "Apúntalo.",
+        "chinese_traditional": "這樣就算了.",
+        "korean": "계산해",
+        "japanese": "計算する"
       },
       "lore_tooltips": [
         {
-          "english": "Every name on the list has a price beside it."
+          "english": "Every name on the list has a price beside it.",
+          "french": "Chaque nom sur la liste a un prix à côté.",
+          "german": "Jeder Name auf der Liste hat einen Preis.",
+          "russian": "У каждого имени в списке есть цена.",
+          "portuguese": "Cada nome na lista tem um preço ao lado.",
+          "chinese": "每个名字都有一个价格.",
+          "spanish": "Cada nombre de la lista tiene un precio al lado.",
+          "chinese_traditional": "列表上的每個名字都有價格.",
+          "korean": "목록에 있는 모든 이름에는 가격이 있습니다.",
+          "japanese": "リストの名前には代償がある"
         }
       ],
       "lore_style": "herzal",

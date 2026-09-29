@@ -4,10 +4,28 @@
     {
       "id": "DoubleShift",
       "names": {
-        "english": "Double Shift"
+        "english": "Double Shift",
+        "french": "Double service",
+        "german": "Doppelschicht",
+        "russian": "Двойная смена",
+        "portuguese": "Turno Duplo",
+        "chinese": "双班轮值",
+        "spanish": "Turno doble",
+        "chinese_traditional": "雙班輪值",
+        "korean": "이중 근무",
+        "japanese": "二重勤務"
       },
       "descriptions": {
-        "english": "A friendly unit attacks immediately and gains <b>[effect1.status0.power]</b> [mt2_freecompany.Plugin_dizzy]."
+        "english": "A friendly unit attacks immediately and gains <b>[effect1.status0.power]</b> [mt2_freecompany.Plugin_dizzy].",
+        "french": "Une unité alliée attaque immédiatement et gagne <b>[effect1.status0.power]</b> [mt2_freecompany.Plugin_dizzy].",
+        "german": "Eine verbündete Einheit greift sofort an und erhält <b>[effect1.status0.power]</b> [mt2_freecompany.Plugin_dizzy].",
+        "russian": "Союзная боевая единица немедленно атакует и получает <b>[effect1.status0.power]</b> [mt2_freecompany.Plugin_dizzy].",
+        "portuguese": "Uma unidade aliada ataca imediatamente e recebe <b>[effect1.status0.power]</b> [mt2_freecompany.Plugin_dizzy].",
+        "chinese": "一个友方单位立即攻击，并获得<b>[effect1.status0.power]</b>层[mt2_freecompany.Plugin_dizzy]。",
+        "spanish": "Una unidad aliada ataca inmediatamente y gana <b>[effect1.status0.power]</b> [mt2_freecompany.Plugin_dizzy].",
+        "chinese_traditional": "一個友方單位立即攻擊，並獲得<b>[effect1.status0.power]</b>層[mt2_freecompany.Plugin_dizzy]。",
+        "korean": "아군 유닛 하나가 즉시 공격하고 <b>[effect1.status0.power]</b> [mt2_freecompany.Plugin_dizzy] 중첩을 얻습니다.",
+        "japanese": "味方ユニット1体が即座に攻撃し、<b>[effect1.status0.power]</b>スタックの[mt2_freecompany.Plugin_dizzy]を得る。"
       },
       "card_art": "@DoubleShift",
       "cost": 1,
@@ -22,7 +40,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Overtime rates apply."
+          "english": "Overtime rates apply.",
+          "french": "Le taux des heures supplémentaires s'applique.",
+          "german": "Überstunden gelten.",
+          "russian": "Применяются ставки сверхурочной работы.",
+          "portuguese": "São aplicáveis as taxas de horas extras.",
+          "chinese": "加班费用适用.",
+          "spanish": "Se cobra como horas extra.",
+          "chinese_traditional": "適用於加班時間.",
+          "korean": "과정 시간 요금은 적용됩니다.",
+          "japanese": "残業は適用されます."
         }
       ],
       "pools": [

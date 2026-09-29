@@ -4,7 +4,16 @@
     {
       "id": "SpawnChapelAcolyte",
       "names": {
-        "english": "Chapel Acolyte"
+        "english": "Chapel Acolyte",
+        "french": "Acolyte de la chapelle",
+        "german": "Kapellenakolyth",
+        "russian": "Послушник часовни",
+        "portuguese": "Acólito da Capela",
+        "chinese": "礼拜堂侍僧",
+        "spanish": "Acólito de la capilla",
+        "chinese_traditional": "禮拜堂侍僧",
+        "korean": "예배당 시종",
+        "japanese": "礼拝堂の侍祭"
       },
       "card_art": "@ChapelAcolyte",
       "cost": 1,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Took vows. Took a retainer too."
+          "english": "Took vows. Took a retainer too.",
+          "french": "J'ai fait des vœux. J'ai pris un réservoir aussi.",
+          "german": "Ich habe Gelübde gemacht. Ich hab auch einen Behälter genommen.",
+          "russian": "Принесся клятвы. Также взял ретейнер.",
+          "portuguese": "Fiz votos. Tomeu um reservatório também.",
+          "chinese": "我做了誓言. 我也拿了一张.",
+          "spanish": "Hizo votos. Y también cobró un anticipo.",
+          "chinese_traditional": "我做了誓言. 我也拿了一張子.",
+          "korean": "맹세를 했다 텐터도 가져갔어요",
+          "japanese": "誓いをした 貯金も取りました"
         }
       ]
     }
@@ -27,7 +45,16 @@
     {
       "id": "ChapelAcolyte",
       "names": {
-        "english": "Chapel Acolyte"
+        "english": "Chapel Acolyte",
+        "french": "Acolyte de la chapelle",
+        "german": "Kapellenakolyth",
+        "russian": "Послушник часовни",
+        "portuguese": "Acólito da Capela",
+        "chinese": "礼拜堂侍僧",
+        "spanish": "Acólito de la capilla",
+        "chinese_traditional": "禮拜堂侍僧",
+        "korean": "예배당 시종",
+        "japanese": "礼拝堂の侍祭"
       },
       "character_art": "@ChapelAcolyteCharacterArt",
       "size": 1,
@@ -66,7 +93,16 @@
       "id": "ChapelAcolyteTrigger",
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
-        "english": "Restore [effect0.power] health to the weakest friendly unit."
+        "english": "Restore [effect0.power] health to the weakest friendly unit.",
+        "french": "Rendez [effect0.power] PV à l’unité alliée la plus affaiblie.",
+        "german": "Heile die verbündete Einheit mit dem wenigsten Leben um [effect0.power] Leben.",
+        "russian": "Восстановите [effect0.power] здоровья самой слабой союзной боевой единице.",
+        "portuguese": "Restaure [effect0.power] de vida da unidade aliada mais fraca.",
+        "chinese": "为最虚弱的友方单位恢复[effect0.power]点生命值。",
+        "spanish": "Restaura [effect0.power] de vida a la unidad aliada más débil.",
+        "chinese_traditional": "為最虛弱的友方單位恢復[effect0.power]點生命值。",
+        "korean": "가장 약한 아군 유닛의 체력을 [effect0.power] 회복.",
+        "japanese": "最も弱った味方ユニットの体力を[effect0.power]回復。"
       },
       "effects": [
         "@ChapelAcolyteAbility"

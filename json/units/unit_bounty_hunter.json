@@ -4,7 +4,16 @@
     {
       "id": "SpawnBountyHunter",
       "names": {
-        "english": "Bounty Hunter"
+        "english": "Bounty Hunter",
+        "french": "Chasseur de primes",
+        "german": "Kopfgeldjäger",
+        "russian": "Охотник за головами",
+        "portuguese": "Caçador de Recompensas",
+        "chinese": "赏金猎人",
+        "spanish": "Cazarrecompensas",
+        "chinese_traditional": "賞金獵人",
+        "korean": "현상금 사냥꾼",
+        "japanese": "賞金稼ぎ"
       },
       "card_art": "@BountyHunter",
       "cost": 2,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Names on a list. Coin per name."
+          "english": "Names on a list. Coin per name.",
+          "french": "Des noms sur une liste. Une pièce par nom.",
+          "german": "Namen auf einer Liste. Münze nach Namen.",
+          "russian": "Имена в списке. Монета по имени.",
+          "portuguese": "Nomes numa lista. Moeda por nome.",
+          "chinese": "在列表上的名字. 每个名字的硬币.",
+          "spanish": "Nombres en una lista. Monedas por cada nombre.",
+          "chinese_traditional": "列出名單上的名字. 這是一種名字的硬幣.",
+          "korean": "목록에 이름을 올렸어 명칭으로 동전",
+          "japanese": "リストの名前だ 名前のコイン"
         }
       ],
       "pools": [
@@ -28,10 +46,28 @@
     {
       "id": "BountyHunterShot",
       "names": {
-        "english": "Claim the Bounty"
+        "english": "Claim the Bounty",
+        "french": "Réclamer la prime",
+        "german": "Kopfgeld kassieren",
+        "russian": "Получить награду",
+        "portuguese": "Resgatar a Recompensa",
+        "chinese": "领取赏金",
+        "spanish": "Cobrar la recompensa",
+        "chinese_traditional": "領取賞金",
+        "korean": "현상금 받기",
+        "japanese": "賞金の取り立て"
       },
       "descriptions": {
-        "english": "Attack an enemy unit of your choice on any floor."
+        "english": "Attack an enemy unit of your choice on any floor.",
+        "french": "Attaque une unité ennemie de votre choix, à n’importe quel étage.",
+        "german": "Greift eine gegnerische Einheit deiner Wahl auf einem beliebigen Stockwerk an.",
+        "russian": "Атакует выбранную вами вражескую боевую единицу на любом этаже.",
+        "portuguese": "Ataca uma unidade inimiga à sua escolha em qualquer andar.",
+        "chinese": "攻击任意楼层的一个指定敌方单位。",
+        "spanish": "Ataca a una unidad enemiga de tu elección en cualquier piso.",
+        "chinese_traditional": "攻擊任意樓層的一個指定敵方單位。",
+        "korean": "어느 층이든 선택한 적 유닛 하나를 공격.",
+        "japanese": "任意の階の選んだ敵ユニット1体を攻撃。"
       },
       "card_art": "@BountyHunter",
       "is_an_ability": true,
@@ -50,7 +86,16 @@
     {
       "id": "BountyHunter",
       "names": {
-        "english": "Bounty Hunter"
+        "english": "Bounty Hunter",
+        "french": "Chasseur de primes",
+        "german": "Kopfgeldjäger",
+        "russian": "Охотник за головами",
+        "portuguese": "Caçador de Recompensas",
+        "chinese": "赏金猎人",
+        "spanish": "Cazarrecompensas",
+        "chinese_traditional": "賞金獵人",
+        "korean": "현상금 사냥꾼",
+        "japanese": "賞金稼ぎ"
       },
       "character_art": "@BountyHunterCharacterArt",
       "size": 1,
@@ -130,7 +175,16 @@
       "id": "BountyHunterTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Its ability is ready again. Gain [effect1.power] [coin]."
+        "english": "Its ability is ready again. Gain [effect1.power] [coin].",
+        "french": "Sa capacité est de nouveau prête. Gagnez [effect1.power] [coin].",
+        "german": "Die Fähigkeit ist wieder bereit. Erhalte [effect1.power] [coin].",
+        "russian": "Её способность снова готова. Получите [effect1.power] [coin].",
+        "portuguese": "Sua habilidade está pronta novamente. Ganhe [effect1.power] [coin].",
+        "chinese": "其技能再次就绪。获得[effect1.power] [coin]。",
+        "spanish": "Su habilidad vuelve a estar lista. Gana [effect1.power] [coin].",
+        "chinese_traditional": "其技能再次就緒。獲得[effect1.power] [coin]。",
+        "korean": "능력이 다시 준비됨. [effect1.power] [coin] 획득.",
+        "japanese": "アビリティが再び使用可能になる。[effect1.power] [coin]を得る。"
       },
       "effects": [
         "@BountyHunterCooldown",

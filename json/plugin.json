@@ -4,13 +4,40 @@
     {
       "id": "ClassFreeCompany",
       "titles": {
-        "english": "The Free Company"
+        "english": "The Free Company",
+        "french": "La Compagnie libre",
+        "german": "Die Freie Kompanie",
+        "russian": "Вольная компания",
+        "portuguese": "A Companhia Livre",
+        "chinese": "自由佣兵团",
+        "spanish": "La Compañía Libre",
+        "chinese_traditional": "自由傭兵團",
+        "korean": "자유 용병단",
+        "japanese": "自由傭兵団"
       },
       "descriptions": {
-        "english": "A band of sellswords and hedge-mages who took the last contract on offer. Martial steel and arcane craft, paid up front."
+        "english": "A band of sellswords and hedge-mages who took the last contract on offer. Martial steel and arcane craft, paid up front.",
+        "french": "Une bande de mercenaires et de mages autodidactes qui ont accepté le dernier contrat disponible. Acier et magie, payés d’avance.",
+        "german": "Eine Bande aus Söldnern und Heckenmagiern, die den letzten verfügbaren Auftrag angenommen hat. Stahl und arkane Kunst, im Voraus bezahlt.",
+        "russian": "Отряд наёмников и магов-самоучек, взявшийся за последний доступный контракт. Сталь и чародейство — с предоплатой.",
+        "portuguese": "Um grupo de mercenários e magos autodidatas que aceitou o último contrato disponível. Aço e magia, pagos adiantados.",
+        "chinese": "一群接下最后一份可用契约的佣兵与野法师。刀剑与秘术，先付钱再办事。",
+        "spanish": "Una banda de mercenarios y magos autodidactas que aceptó el último contrato disponible. Acero y magia, con pago por adelantado.",
+        "chinese_traditional": "一群接下最後一份可用契約的傭兵與野法師。刀劍與秘術，先付錢再辦事。",
+        "korean": "마지막 남은 계약을 수락한 용병과 독학 마법사 무리. 무력과 비전 마법, 대금은 선불.",
+        "japanese": "最後に残った契約を引き受けた傭兵と在野の魔術師の一団。鋼と秘術、その報酬は前払い。"
       },
       "subclass_descriptions": {
-        "english": "A band of sellswords and hedge-mages who took the last contract on offer. Martial steel and arcane craft, paid up front."
+        "english": "A band of sellswords and hedge-mages who took the last contract on offer. Martial steel and arcane craft, paid up front.",
+        "french": "Une bande de mercenaires et de mages autodidactes qui ont accepté le dernier contrat disponible. Acier et magie, payés d’avance.",
+        "german": "Eine Bande aus Söldnern und Heckenmagiern, die den letzten verfügbaren Auftrag angenommen hat. Stahl und arkane Kunst, im Voraus bezahlt.",
+        "russian": "Отряд наёмников и магов-самоучек, взявшийся за последний доступный контракт. Сталь и чародейство — с предоплатой.",
+        "portuguese": "Um grupo de mercenários e magos autodidatas que aceitou o último contrato disponível. Aço e magia, pagos adiantados.",
+        "chinese": "一群接下最后一份可用契约的佣兵与野法师。刀剑与秘术，先付钱再办事。",
+        "spanish": "Una banda de mercenarios y magos autodidactas que aceptó el último contrato disponible. Acero y magia, con pago por adelantado.",
+        "chinese_traditional": "一群接下最後一份可用契約的傭兵與野法師。刀劍與秘術，先付錢再辦事。",
+        "korean": "마지막 남은 계약을 수락한 용병과 독학 마법사 무리. 무력과 비전 마법, 대금은 선불.",
+        "japanese": "最後に残った契約を引き受けた傭兵と在野の魔術師の一団。鋼と秘術、その報酬は前払い。"
       },
       "icons": {
         "small": "@FreeCompanyIconSmall",
@@ -107,61 +134,151 @@
     {
       "id": "Sub_Melee",
       "names": {
-        "english": "Melee"
+        "english": "Melee",
+        "french": "Corps à corps",
+        "german": "Nahkampf",
+        "russian": "Ближний бой",
+        "portuguese": "Corpo a Corpo",
+        "chinese": "近战",
+        "spanish": "Cuerpo a cuerpo",
+        "chinese_traditional": "近戰",
+        "korean": "근접",
+        "japanese": "近接"
       }
     },
     {
       "id": "Sub_Ranged",
       "names": {
-        "english": "Ranged"
+        "english": "Ranged",
+        "french": "À distance",
+        "german": "Fernkampf",
+        "russian": "Дальний бой",
+        "portuguese": "À Distância",
+        "chinese": "远程",
+        "spanish": "A distancia",
+        "chinese_traditional": "遠程",
+        "korean": "원거리",
+        "japanese": "遠距離"
       }
     },
     {
       "id": "Sub_Warrior",
       "names": {
-        "english": "Warrior"
+        "english": "Warrior",
+        "french": "Guerrier",
+        "german": "Krieger",
+        "russian": "Воин",
+        "portuguese": "Guerreiro",
+        "chinese": "战士",
+        "spanish": "Guerrero",
+        "chinese_traditional": "戰士",
+        "korean": "전사",
+        "japanese": "戦士"
       }
     },
     {
       "id": "Sub_Barbarian",
       "names": {
-        "english": "Barbarian"
+        "english": "Barbarian",
+        "french": "Barbare",
+        "german": "Barbar",
+        "russian": "Варвар",
+        "portuguese": "Bárbaro",
+        "chinese": "野蛮人",
+        "spanish": "Bárbaro",
+        "chinese_traditional": "野蠻人",
+        "korean": "야만전사",
+        "japanese": "バーバリアン"
       }
     },
     {
       "id": "Sub_Rogue",
       "names": {
-        "english": "Rogue"
+        "english": "Rogue",
+        "french": "Voleur",
+        "german": "Schurke",
+        "russian": "Плут",
+        "portuguese": "Ladino",
+        "chinese": "盗贼",
+        "spanish": "Pícaro",
+        "chinese_traditional": "盜賊",
+        "korean": "도적",
+        "japanese": "ローグ"
       }
     },
     {
       "id": "Sub_Wizard",
       "names": {
-        "english": "Wizard"
+        "english": "Wizard",
+        "french": "Magicien",
+        "german": "Magier",
+        "russian": "Волшебник",
+        "portuguese": "Mago",
+        "chinese": "法师",
+        "spanish": "Mago",
+        "chinese_traditional": "法師",
+        "korean": "마법사",
+        "japanese": "魔術師"
       }
     },
     {
       "id": "Sub_Cleric",
       "names": {
-        "english": "Cleric"
+        "english": "Cleric",
+        "french": "Clerc",
+        "german": "Kleriker",
+        "russian": "Жрец",
+        "portuguese": "Clérigo",
+        "chinese": "牧师",
+        "spanish": "Clérigo",
+        "chinese_traditional": "牧師",
+        "korean": "성직자",
+        "japanese": "クレリック"
       }
     },
     {
       "id": "Sub_Ranger",
       "names": {
-        "english": "Ranger"
+        "english": "Ranger",
+        "french": "Rôdeur",
+        "german": "Waldläufer",
+        "russian": "Следопыт",
+        "portuguese": "Patrulheiro",
+        "chinese": "游侠",
+        "spanish": "Explorador",
+        "chinese_traditional": "遊俠",
+        "korean": "레인저",
+        "japanese": "レンジャー"
       }
     },
     {
       "id": "Sub_Troll",
       "names": {
-        "english": "Troll"
+        "english": "Troll",
+        "french": "Troll",
+        "german": "Troll",
+        "russian": "Тролль",
+        "portuguese": "Troll",
+        "chinese": "巨魔",
+        "spanish": "Trol",
+        "chinese_traditional": "巨魔",
+        "korean": "트롤",
+        "japanese": "トロール"
       }
     },
     {
       "id": "Sub_Goblin",
       "names": {
-        "english": "Goblin"
+        "english": "Goblin",
+        "french": "Gobelin",
+        "german": "Goblin",
+        "russian": "Гоблин",
+        "portuguese": "Goblin",
+        "chinese": "地精",
+        "spanish": "Goblin",
+        "chinese_traditional": "哥布林",
+        "korean": "고블린",
+        "japanese": "ゴブリン"
       }
     }
   ],
@@ -173,10 +290,28 @@
       "minimap_icon": "@FreeCompanyIconSmall",
       "prefab": "@FreeCompanyMapIcon",
       "titles": {
-        "english": "Free Company Banner"
+        "english": "Free Company Banner",
+        "french": "Bannière de la Compagnie libre",
+        "german": "Banner der Freien Kompanie",
+        "russian": "Знамя Вольной компании",
+        "portuguese": "Estandarte da Companhia Livre",
+        "chinese": "自由佣兵团旗帜",
+        "spanish": "Estandarte de la Compañía Libre",
+        "chinese_traditional": "自由傭兵團旗幟",
+        "korean": "자유 용병단 깃발",
+        "japanese": "自由傭兵団の旗"
       },
       "descriptions": {
-        "english": "Gain a Free Company Unit"
+        "english": "Gain a Free Company Unit",
+        "french": "Gagnez une unité de la Compagnie libre",
+        "german": "Erhalte eine Einheit der Freien Kompanie",
+        "russian": "Получите боевую единицу Вольной компании",
+        "portuguese": "Ganhe uma unidade da Companhia Livre",
+        "chinese": "获得一个自由佣兵团单位",
+        "spanish": "Obtén una unidad de la Compañía Libre",
+        "chinese_traditional": "獲得一個自由傭兵團單位",
+        "korean": "자유 용병단 유닛 획득",
+        "japanese": "自由傭兵団のユニットを得る"
       },
       "pools": [
         "RandomChosenMainClassUnit",
@@ -500,13 +635,40 @@
       "id": "FreeCompanyTestDeck",
       "type": "collectable",
       "names": {
-        "english": "Test Orders"
+        "english": "Test Orders",
+        "french": "Ordres de test",
+        "german": "Testbefehle",
+        "russian": "Тестовые приказы",
+        "portuguese": "Ordens de Teste",
+        "chinese": "测试命令",
+        "spanish": "Órdenes de prueba",
+        "chinese_traditional": "測試命令",
+        "korean": "테스트 명령",
+        "japanese": "テスト命令"
       },
       "descriptions": {
-        "english": "TEST: <b>+10</b> [ember] every turn. Gain <b>500</b> [coin] after each battle."
+        "english": "TEST: <b>+10</b> [ember] every turn. Gain <b>500</b> [coin] after each battle.",
+        "french": "TEST : <b>+10</b> [ember] par tour. Gagnez <b>500</b> [coin] après chaque combat.",
+        "german": "TEST: Jeden Zug <b>+10</b> [ember]. Erhalte nach jedem Kampf <b>500</b> [coin].",
+        "russian": "ТЕСТ: <b>+10</b> [ember] каждый ход. Получите <b>500</b> [coin] после каждого боя.",
+        "portuguese": "TESTE: <b>+10</b> [ember] por turno. Ganhe <b>500</b> [coin] após cada batalha.",
+        "chinese": "测试：每回合<b>+10</b> [ember]。每场战斗后获得<b>500</b> [coin]。",
+        "spanish": "PRUEBA: <b>+10</b> [ember] cada turno. Gana <b>500</b> [coin] después de cada combate.",
+        "chinese_traditional": "測試：每回合<b>+10</b> [ember]。每場戰鬥後獲得<b>500</b> [coin]。",
+        "korean": "테스트: 매 턴 <b>+10</b> [ember]. 전투 후 <b>500</b> [coin] 획득.",
+        "japanese": "テスト：毎ターン<b>+10</b> [ember]。各戦闘後に<b>500</b> [coin]を得る。"
       },
       "relic_activated_texts": {
-        "english": "Test orders."
+        "english": "Test orders.",
+        "french": "Ordres de test.",
+        "german": "Testbefehle.",
+        "russian": "Тестовые приказы.",
+        "portuguese": "Ordens de teste.",
+        "chinese": "测试命令。",
+        "spanish": "Órdenes de prueba.",
+        "chinese_traditional": "測試命令。",
+        "korean": "테스트 명령.",
+        "japanese": "テスト命令。"
       },
       "lore_style": "herzal",
       "relic_effects": [

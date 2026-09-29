@@ -4,7 +4,16 @@
     {
       "id": "SpawnBerserker",
       "names": {
-        "english": "Berserker"
+        "english": "Berserker",
+        "french": "Berserker",
+        "german": "Berserker",
+        "russian": "Берсерк",
+        "portuguese": "Berserker",
+        "chinese": "狂战士",
+        "spanish": "Berserker",
+        "chinese_traditional": "狂戰士",
+        "korean": "광전사",
+        "japanese": "狂戦士"
       },
       "card_art": "@Berserker",
       "cost": 2,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Did not read the contract. Did not need to."
+          "english": "Did not read the contract. Did not need to.",
+          "french": "Je n'ai pas lu le contrat. Je n'en avais pas besoin.",
+          "german": "Ich habe den Vertrag nicht gelesen. Das musste ich nicht.",
+          "russian": "Я не прочитал контракт. Не нужно было.",
+          "portuguese": "Não li o contrato. Não precisava.",
+          "chinese": "我没有读到合同. 没有必要.",
+          "spanish": "No leyó el contrato. No le hizo falta.",
+          "chinese_traditional": "沒有閱讀合同. 沒有必要.",
+          "korean": "계약서를 읽지 않았어 필요도 없었어",
+          "japanese": "契約書を読まない する必要はなかった"
         }
       ],
       "pools": [
@@ -30,7 +48,16 @@
     {
       "id": "Berserker",
       "names": {
-        "english": "Berserker"
+        "english": "Berserker",
+        "french": "Berserker",
+        "german": "Berserker",
+        "russian": "Берсерк",
+        "portuguese": "Berserker",
+        "chinese": "狂战士",
+        "spanish": "Berserker",
+        "chinese_traditional": "狂戰士",
+        "korean": "광전사",
+        "japanese": "狂戦士"
       },
       "character_art": "@BerserkerCharacterArt",
       "size": 2,
@@ -95,7 +122,16 @@
       "id": "BerserkerKillTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] [rage]."
+        "english": "Gain [effect0.status0.power] [rage].",
+        "french": "Gagnez [effect0.status0.power] [rage].",
+        "german": "Erhalte [effect0.status0.power] [rage].",
+        "russian": "Получите [effect0.status0.power] [rage].",
+        "portuguese": "Ganhe [effect0.status0.power] [rage].",
+        "chinese": "获得[effect0.status0.power] [rage]。",
+        "spanish": "Gana [effect0.status0.power] [rage].",
+        "chinese_traditional": "獲得[effect0.status0.power] [rage]。",
+        "korean": "[effect0.status0.power] [rage] 획득.",
+        "japanese": "[effect0.status0.power] [rage]を得る。"
       },
       "effects": [
         "@BerserkerRageKill"
@@ -105,7 +141,16 @@
       "id": "BerserkerRevengeTrigger",
       "trigger": "on_hit",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] [rage]."
+        "english": "Gain [effect0.status0.power] [rage].",
+        "french": "Gagnez [effect0.status0.power] [rage].",
+        "german": "Erhalte [effect0.status0.power] [rage].",
+        "russian": "Получите [effect0.status0.power] [rage].",
+        "portuguese": "Ganhe [effect0.status0.power] [rage].",
+        "chinese": "获得[effect0.status0.power] [rage]。",
+        "spanish": "Gana [effect0.status0.power] [rage].",
+        "chinese_traditional": "獲得[effect0.status0.power] [rage]。",
+        "korean": "[effect0.status0.power] [rage] 획득.",
+        "japanese": "[effect0.status0.power] [rage]を得る。"
       },
       "effects": [
         "@BerserkerRageRevenge"

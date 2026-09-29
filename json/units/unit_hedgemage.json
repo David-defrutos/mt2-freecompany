@@ -4,7 +4,16 @@
     {
       "id": "SpawnHedgeMage",
       "names": {
-        "english": "Hedge-Mage"
+        "english": "Hedge-Mage",
+        "french": "Mage autodidacte",
+        "german": "Heckenmagier",
+        "russian": "Самоучка-маг",
+        "portuguese": "Mago Autodidata",
+        "chinese": "野法师",
+        "spanish": "Mago autodidacta",
+        "chinese_traditional": "野法師",
+        "korean": "독학 마법사",
+        "japanese": "在野の魔術師"
       },
       "card_art": "@HedgeMage",
       "cost": 2,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Self-taught. It shows, but it works."
+          "english": "Self-taught. It shows, but it works.",
+          "french": "Autodidacte. Ça se montre, mais ça marche.",
+          "german": "Ich habe mich selbst gelehrt. Es zeigt sich, aber es funktioniert.",
+          "russian": "Самоученный. Появляется, но работает.",
+          "portuguese": "Autodidacta. Aparece, mas funciona.",
+          "chinese": "他自学. 它显示,但它工作.",
+          "spanish": "Autodidacta. Se nota, pero funciona.",
+          "chinese_traditional": "他是自學的. 顯示,但它有效.",
+          "korean": "자기 교육자. 보이지만 효과가 있어요",
+          "japanese": "自分で教えた 見えますが 効果があります"
         }
       ],
       "pools": [
@@ -28,10 +46,28 @@
     {
       "id": "HedgeMageVolley",
       "names": {
-        "english": "Arcane Volley"
+        "english": "Arcane Volley",
+        "french": "Salve arcanique",
+        "german": "Arkane Salve",
+        "russian": "Чародейский залп",
+        "portuguese": "Salva Arcana",
+        "chinese": "奥术齐射",
+        "spanish": "Andanada arcana",
+        "chinese_traditional": "奧術齊射",
+        "korean": "비전 일제 사격",
+        "japanese": "秘術の一斉射撃"
       },
       "descriptions": {
-        "english": "Deal <b>2</b> damage per [mt2_freecompany.Plugin_arcane_charge] to <b>3</b> random enemies on this floor, then lose all [mt2_freecompany.Plugin_arcane_charge]."
+        "english": "Deal <b>2</b> damage per [mt2_freecompany.Plugin_arcane_charge] to <b>3</b> random enemies on this floor, then lose all [mt2_freecompany.Plugin_arcane_charge].",
+        "french": "Inflige <b>2</b> dégâts par [mt2_freecompany.Plugin_arcane_charge] à <b>3</b> ennemis aléatoires de cet étage, puis perd toutes ses [mt2_freecompany.Plugin_arcane_charge].",
+        "german": "Fügt <b>3</b> zufälligen Gegnern auf diesem Stockwerk pro [mt2_freecompany.Plugin_arcane_charge] <b>2</b> Schaden zu. Verliert danach alle [mt2_freecompany.Plugin_arcane_charge].",
+        "russian": "Наносит <b>3</b> случайным врагам на этом этаже по <b>2</b> урона за каждый [mt2_freecompany.Plugin_arcane_charge], затем теряет все [mt2_freecompany.Plugin_arcane_charge].",
+        "portuguese": "Causa <b>2</b> de dano por [mt2_freecompany.Plugin_arcane_charge] a <b>3</b> inimigos aleatórios neste andar e depois perde todas as [mt2_freecompany.Plugin_arcane_charge].",
+        "chinese": "对本层<b>3</b>个随机敌人造成伤害，每层[mt2_freecompany.Plugin_arcane_charge]造成<b>2</b>点伤害，然后失去全部[mt2_freecompany.Plugin_arcane_charge]。",
+        "spanish": "Inflige <b>2</b> de daño por [mt2_freecompany.Plugin_arcane_charge] a <b>3</b> enemigos aleatorios de este piso y luego pierde todas las [mt2_freecompany.Plugin_arcane_charge].",
+        "chinese_traditional": "對本層<b>3</b>個隨機敵人造成傷害，每層[mt2_freecompany.Plugin_arcane_charge]造成<b>2</b>點傷害，然後失去全部[mt2_freecompany.Plugin_arcane_charge]。",
+        "korean": "이 층의 무작위 적 <b>3</b>명에게 [mt2_freecompany.Plugin_arcane_charge] 중첩당 <b>2</b> 피해를 가한 뒤 모든 [mt2_freecompany.Plugin_arcane_charge] 상실.",
+        "japanese": "この階のランダムな敵<b>3</b>体に[mt2_freecompany.Plugin_arcane_charge]1スタックにつき<b>2</b>ダメージを与え、その後すべての[mt2_freecompany.Plugin_arcane_charge]を失う。"
       },
       "rarity": "common",
       "card_art": "@HedgeMage",
@@ -53,7 +89,16 @@
     {
       "id": "HedgeMage",
       "names": {
-        "english": "Hedge-Mage"
+        "english": "Hedge-Mage",
+        "french": "Mage autodidacte",
+        "german": "Heckenmagier",
+        "russian": "Самоучка-маг",
+        "portuguese": "Mago Autodidata",
+        "chinese": "野法师",
+        "spanish": "Mago autodidacta",
+        "chinese_traditional": "野法師",
+        "korean": "독학 마법사",
+        "japanese": "在野の魔術師"
       },
       "character_art": "@HedgeMageCharacterArt",
       "size": 1,
@@ -158,7 +203,16 @@
       "id": "HedgeMageSpellTrigger",
       "trigger": "card_spell_played",
       "descriptions": {
-        "english": "Gain <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge]."
+        "english": "Gain <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge].",
+        "french": "Gagnez <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge].",
+        "german": "Erhalte <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge].",
+        "russian": "Получите <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge].",
+        "portuguese": "Ganhe <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge].",
+        "chinese": "获得<b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge]。",
+        "spanish": "Gana <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge].",
+        "chinese_traditional": "獲得<b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge]。",
+        "korean": "<b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge] 획득.",
+        "japanese": "<b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_arcane_charge]を得る。"
       },
       "effects": [
         "@HedgeMageGainCharge"
@@ -216,22 +270,76 @@
       "id": "arcane_charge",
       "class_name": "@StatusEffectFreeCompanyCountdownState",
       "names": {
-        "english": "Arcane Charge"
+        "english": "Arcane Charge",
+        "french": "Charge arcanique",
+        "german": "Arkane Ladung",
+        "russian": "Чародейский заряд",
+        "portuguese": "Carga Arcana",
+        "chinese": "奥术充能",
+        "spanish": "Carga arcana",
+        "chinese_traditional": "奧術充能",
+        "korean": "비전 충전",
+        "japanese": "秘術チャージ"
       },
       "stackable_names": {
-        "english": "<nobr>Arcane Charge {0}</nobr>"
+        "english": "<nobr>Arcane Charge {0}</nobr>",
+        "french": "<nobr>Charge arcanique {0}</nobr>",
+        "german": "<nobr>Arkane Ladung {0}</nobr>",
+        "russian": "<nobr>Чародейский заряд {0}</nobr>",
+        "portuguese": "<nobr>Carga Arcana {0}</nobr>",
+        "chinese": "<nobr>奥术充能 {0}</nobr>",
+        "spanish": "<nobr>Carga arcana {0}</nobr>",
+        "chinese_traditional": "<nobr>奧術充能 {0}</nobr>",
+        "korean": "<nobr>비전 충전 {0}</nobr>",
+        "japanese": "<nobr>秘術チャージ {0}</nobr>"
       },
       "card_tooltips": {
-        "english": "Stored power for Arcane Volley."
+        "english": "Stored power for Arcane Volley.",
+        "french": "Puissance emmagasinée pour Salve arcanique.",
+        "german": "Gespeicherte Kraft für Arkane Salve.",
+        "russian": "Запасённая сила для Чародейского залпа.",
+        "portuguese": "Poder armazenado para Salva Arcana.",
+        "chinese": "为奥术齐射储存的力量。",
+        "spanish": "Poder almacenado para Andanada arcana.",
+        "chinese_traditional": "為奧術齊射儲存的力量。",
+        "korean": "비전 일제 사격에 사용되는 축적된 힘입니다.",
+        "japanese": "秘術の一斉射撃のために蓄えた力。"
       },
       "character_tooltips": {
-        "english": "Stored power for Arcane Volley."
+        "english": "Stored power for Arcane Volley.",
+        "french": "Puissance emmagasinée pour Salve arcanique.",
+        "german": "Gespeicherte Kraft für Arkane Salve.",
+        "russian": "Запасённая сила для Чародейского залпа.",
+        "portuguese": "Poder armazenado para Salva Arcana.",
+        "chinese": "为奥术齐射储存的力量。",
+        "spanish": "Poder almacenado para Andanada arcana.",
+        "chinese_traditional": "為奧術齊射儲存的力量。",
+        "korean": "비전 일제 사격에 사용되는 축적된 힘입니다.",
+        "japanese": "秘術の一斉射撃のために蓄えた力。"
       },
       "replacement_texts": {
-        "english": "<b>Arcane Charge</b>"
+        "english": "<b>Arcane Charge</b>",
+        "french": "<b>Charge arcanique</b>",
+        "german": "<b>Arkane Ladung</b>",
+        "russian": "<b>Чародейский заряд</b>",
+        "portuguese": "<b>Carga Arcana</b>",
+        "chinese": "<b>奥术充能</b>",
+        "spanish": "<b>Carga arcana</b>",
+        "chinese_traditional": "<b>奧術充能</b>",
+        "korean": "<b>비전 충전</b>",
+        "japanese": "<b>秘術チャージ</b>"
       },
       "notifications": {
-        "english": "Arcane Charge"
+        "english": "Arcane Charge",
+        "french": "Charge arcanique",
+        "german": "Arkane Ladung",
+        "russian": "Чародейский заряд",
+        "portuguese": "Carga Arcana",
+        "chinese": "奥术充能",
+        "spanish": "Carga arcana",
+        "chinese_traditional": "奧術充能",
+        "korean": "비전 충전",
+        "japanese": "秘術チャージ"
       },
       "display_category": "positive",
       "trigger_stage": "none",

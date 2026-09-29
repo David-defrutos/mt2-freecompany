@@ -4,10 +4,28 @@
     {
       "id": "PaidInFull",
       "names": {
-        "english": "Paid in Full"
+        "english": "Paid in Full",
+        "french": "Payé en totalité",
+        "german": "Vollständig bezahlt",
+        "russian": "Полный расчёт",
+        "portuguese": "Pago por Inteiro",
+        "chinese": "全额付清",
+        "spanish": "Pagado por completo",
+        "chinese_traditional": "全額付清",
+        "korean": "전액 지급",
+        "japanese": "全額支払い"
       },
       "descriptions": {
-        "english": "A friendly unit gains <b>1</b> [attack] for every [effect0.power] gold you have spent this run."
+        "english": "A friendly unit gains <b>1</b> [attack] for every [effect0.power] gold you have spent this run.",
+        "french": "Une unité alliée gagne <b>1</b> [attack] par tranche de [effect0.power] pièces d’or dépensée durant cette partie.",
+        "german": "Eine verbündete Einheit erhält <b>1</b> [attack] pro [effect0.power] Gold, die du in diesem Lauf ausgegeben hast.",
+        "russian": "Союзная боевая единица получает <b>1</b> [attack] за каждые [effect0.power] золота, потраченные вами за этот забег.",
+        "portuguese": "Uma unidade aliada ganha <b>1</b> [attack] por cada [effect0.power] de ouro que você gastou nesta partida.",
+        "chinese": "本次旅程每花费[effect0.power]金币，一个友方单位就获得<b>1</b> [attack]。",
+        "spanish": "Una unidad aliada gana <b>1</b> [attack] por cada [effect0.power] de oro que has gastado en esta partida.",
+        "chinese_traditional": "本次旅程每花費[effect0.power]金幣，一個友方單位就獲得<b>1</b> [attack]。",
+        "korean": "이번 여정에서 사용한 [effect0.power]골드마다 아군 유닛 하나가 <b>1</b> [attack] 획득.",
+        "japanese": "このプレイ中に消費した[effect0.power]ゴールドにつき、味方ユニット1体が<b>1</b> [attack]を得る。"
       },
       "card_art": "@PaidInFull",
       "cost": 2,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "The books balance. The captain smiles."
+          "english": "The books balance. The captain smiles.",
+          "french": "L'équilibre des livres. Le capitaine sourit.",
+          "german": "Die Bücher sind ausgewogen. Der Kapitän lächelt.",
+          "russian": "Книги сбалансированы. Капитан улыбается.",
+          "portuguese": "O equilíbrio dos livros. O capitão sorri.",
+          "chinese": "书籍的平衡. 船长微笑了.",
+          "spanish": "Las cuentas cuadran. El capitán sonríe.",
+          "chinese_traditional": "我們的帳簿平衡. 這位船長微笑了.",
+          "korean": "책들은 균형을 이루고 있습니다. 캡틴은 미소를 짓습니다.",
+          "japanese": "書籍のバランス キャプテンが微笑んでいる."
         }
       ],
       "pools": [
@@ -33,7 +60,16 @@
     {
       "id": "PaidInFullEdge",
       "titles": {
-        "english": "Paid in Full"
+        "english": "Paid in Full",
+        "french": "Payé en totalité",
+        "german": "Vollständig bezahlt",
+        "russian": "Полный расчёт",
+        "portuguese": "Pago por Inteiro",
+        "chinese": "全额付清",
+        "spanish": "Pagado por completo",
+        "chinese_traditional": "全額付清",
+        "korean": "전액 지급",
+        "japanese": "全額支払い"
       },
       "bonus_damage": 1,
       "hide_icon_on_card": true,

@@ -4,7 +4,16 @@
     {
       "id": "SpawnCutpurse",
       "names": {
-        "english": "Cutpurse"
+        "english": "Cutpurse",
+        "french": "Coupe-bourse",
+        "german": "Beutelschneider",
+        "russian": "Карманник",
+        "portuguese": "Batedor de Carteiras",
+        "chinese": "扒手",
+        "spanish": "Cortabolsas",
+        "chinese_traditional": "扒手",
+        "korean": "소매치기",
+        "japanese": "スリ"
       },
       "card_art": "@Cutpurse",
       "cost": 1,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Charges a finder's fee on your own purse."
+          "english": "Charges a finder's fee on your own purse.",
+          "french": "Il facture des frais de recherche sur votre propre portefeuille.",
+          "german": "Er erhebt eine Findergebühr auf Ihre eigene Handtasche.",
+          "russian": "Взимает плату за поиск на свой собственный кошелек.",
+          "portuguese": "Cobra uma taxa de descoberta na sua própria carteira.",
+          "chinese": "在你自己的钱包上收取找人费用.",
+          "spanish": "Te cobra una comisión por encontrar tu propia bolsa.",
+          "chinese_traditional": "收取您自己的錢包的搜尋費用.",
+          "korean": "자신의 지갑에 검색 수수료를 부과합니다.",
+          "japanese": "自分の財布で探査料を請求する"
         }
       ],
       "pools": [
@@ -28,10 +46,28 @@
     {
       "id": "CutpurseAbility",
       "names": {
-        "english": "Lift the Purse"
+        "english": "Lift the Purse",
+        "french": "Dérober la bourse",
+        "german": "Geldbeutel stehlen",
+        "russian": "Стащить кошелёк",
+        "portuguese": "Surrupiar a Bolsa",
+        "chinese": "顺手牵羊",
+        "spanish": "Robar la bolsa",
+        "chinese_traditional": "順手牽羊",
+        "korean": "돈주머니 훔치기",
+        "japanese": "財布を掏る"
       },
       "descriptions": {
-        "english": "Gain [effect0.status0.power] [stealth] and [effect1.power] gold."
+        "english": "Gain [effect0.status0.power] [stealth] and [effect1.power] gold.",
+        "french": "Gagnez [effect0.status0.power] [stealth] et [effect1.power] pièces d’or.",
+        "german": "Erhalte [effect0.status0.power] [stealth] und [effect1.power] Gold.",
+        "russian": "Получите [effect0.status0.power] [stealth] и [effect1.power] золота.",
+        "portuguese": "Ganhe [effect0.status0.power] [stealth] e [effect1.power] de ouro.",
+        "chinese": "获得[effect0.status0.power]层[stealth]和[effect1.power]金币。",
+        "spanish": "Gana [effect0.status0.power] [stealth] y [effect1.power] de oro.",
+        "chinese_traditional": "獲得[effect0.status0.power]層[stealth]和[effect1.power]金幣。",
+        "korean": "[effect0.status0.power] [stealth] 및 [effect1.power]골드 획득.",
+        "japanese": "[effect0.status0.power] [stealth]と[effect1.power]ゴールドを得る。"
       },
       "card_art": "@Cutpurse",
       "is_an_ability": true,
@@ -49,7 +85,16 @@
     {
       "id": "Cutpurse",
       "names": {
-        "english": "Cutpurse"
+        "english": "Cutpurse",
+        "french": "Coupe-bourse",
+        "german": "Beutelschneider",
+        "russian": "Карманник",
+        "portuguese": "Batedor de Carteiras",
+        "chinese": "扒手",
+        "spanish": "Cortabolsas",
+        "chinese_traditional": "扒手",
+        "korean": "소매치기",
+        "japanese": "スリ"
       },
       "character_art": "@CutpurseCharacterArt",
       "size": 1,

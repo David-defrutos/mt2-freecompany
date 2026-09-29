@@ -12,17 +12,53 @@
       "id": "ExpandedBillet",
       "type": "collectable",
       "names": {
-        "english": "Expanded Billet"
+        "english": "Expanded Billet",
+        "french": "Cantonnement agrandi",
+        "german": "Erweitertes Quartier",
+        "russian": "Расширенный постой",
+        "portuguese": "Alojamento Ampliado",
+        "chinese": "扩建营房",
+        "spanish": "Alojamiento ampliado",
+        "chinese_traditional": "擴建營房",
+        "korean": "확장 숙소",
+        "japanese": "増設宿舎"
       },
       "descriptions": {
-        "english": "Every floor of the train holds <b>1</b> more unit."
+        "english": "Every floor of the train holds <b>1</b> more unit.",
+        "french": "Chaque étage du train peut accueillir <b>1</b> unité supplémentaire.",
+        "german": "Jedes Stockwerk des Zuges kann <b>1</b> zusätzliche Einheit aufnehmen.",
+        "russian": "На каждом этаже поезда помещается на <b>1</b> боевую единицу больше.",
+        "portuguese": "Cada andar do trem comporta <b>1</b> unidade a mais.",
+        "chinese": "列车每层可额外容纳<b>1</b>个单位。",
+        "spanish": "Cada piso del tren puede alojar <b>1</b> unidad más.",
+        "chinese_traditional": "列車每層可額外容納<b>1</b>個單位。",
+        "korean": "열차의 각 층에 유닛 <b>1</b>개 추가 수용 가능.",
+        "japanese": "列車の各階にユニットを<b>1</b>体多く配置できる。"
       },
       "relic_activated_texts": {
-        "english": "Make room."
+        "english": "Make room.",
+        "french": "Faites de la place.",
+        "german": "Machen Sie Platz.",
+        "russian": "Сделайте место.",
+        "portuguese": "Façam espaço.",
+        "chinese": "给我一个空间.",
+        "spanish": "Haced sitio.",
+        "chinese_traditional": "讓我們有空間.",
+        "korean": "공간을 마련해",
+        "japanese": "部屋を作って"
       },
       "lore_tooltips": [
         {
-          "english": "Tighter bunks, bigger company."
+          "english": "Tighter bunks, bigger company.",
+          "french": "Des groupes plus serrés, une plus grande compagnie.",
+          "german": "Engere Gruppen, größere Gesellschaft.",
+          "russian": "Более тесные группы, большая компания.",
+          "portuguese": "Grupos mais apertados, companhia maior.",
+          "chinese": "更紧密的群体,更大的公司.",
+          "spanish": "Literas más apretadas, compañía más grande.",
+          "chinese_traditional": "更多的團體,更大的公司.",
+          "korean": "더 좁은 군집, 더 큰 회사.",
+          "japanese": "狭い群れは 大きい会社だ"
         }
       ],
       "lore_style": "herzal",

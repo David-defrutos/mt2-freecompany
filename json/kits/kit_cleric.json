@@ -4,10 +4,28 @@
     {
       "id": "Bandages",
       "names": {
-        "english": "Bandages"
+        "english": "Bandages",
+        "french": "Bandages",
+        "german": "Verbände",
+        "russian": "Бинты",
+        "portuguese": "Bandagens",
+        "chinese": "绷带",
+        "spanish": "Vendas",
+        "chinese_traditional": "繃帶",
+        "korean": "붕대",
+        "japanese": "包帯"
       },
       "descriptions": {
-        "english": "<b>+10</b> [health]. Apply <b>2</b> [regen]."
+        "english": "<b>+10</b> [health]. Apply <b>2</b> [regen].",
+        "french": "<b>+10</b> [health]. Appliquez <b>2</b> [regen].",
+        "german": "<b>+10</b> [health]. Erhalte <b>2</b> [regen].",
+        "russian": "<b>+10</b> [health]. Получите <b>2</b> [regen].",
+        "portuguese": "<b>+10</b> [health]. Aplique <b>2</b> [regen].",
+        "chinese": "<b>+10</b> [health]. 施加<b>2</b> [regen]。",
+        "spanish": "<b>+10</b> [health]. Aplica <b>2</b> [regen].",
+        "chinese_traditional": "<b>+10</b> [health]. 施加<b>2</b> [regen]。",
+        "korean": "<b>+10</b> [health]. <b>2</b> [regen] 부여.",
+        "japanese": "<b>+10</b> [health]. <b>2</b> [regen]を付与。"
       },
       "card_art": "@Bandages",
       "cost": 1,
@@ -24,7 +42,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Clean ones, even."
+          "english": "Clean ones, even.",
+          "french": "Même les plus propres.",
+          "german": "Auch saubere.",
+          "russian": "Даже чистые.",
+          "portuguese": "Mesmo limpos.",
+          "chinese": "甚至是干净的.",
+          "spanish": "Hasta están limpias.",
+          "chinese_traditional": "甚至是清潔的.",
+          "korean": "심지어 깨끗한 것도요.",
+          "japanese": "清潔なやつさえ"
         }
       ],
       "pools": [
@@ -36,10 +63,28 @@
     {
       "id": "HolySymbol",
       "names": {
-        "english": "Holy Symbol"
+        "english": "Holy Symbol",
+        "french": "Symbole sacré",
+        "german": "Heiliges Symbol",
+        "russian": "Священный символ",
+        "portuguese": "Símbolo Sagrado",
+        "chinese": "圣徽",
+        "spanish": "Símbolo sagrado",
+        "chinese_traditional": "聖徽",
+        "korean": "성스러운 상징",
+        "japanese": "聖印"
       },
       "descriptions": {
-        "english": "<b>+18</b> [health]. Apply <b>4</b> [regen]."
+        "english": "<b>+18</b> [health]. Apply <b>4</b> [regen].",
+        "french": "<b>+18</b> [health]. Appliquez <b>4</b> [regen].",
+        "german": "<b>+18</b> [health]. Erhalte <b>4</b> [regen].",
+        "russian": "<b>+18</b> [health]. Получите <b>4</b> [regen].",
+        "portuguese": "<b>+18</b> [health]. Aplique <b>4</b> [regen].",
+        "chinese": "<b>+18</b> [health]. 施加<b>4</b> [regen]。",
+        "spanish": "<b>+18</b> [health]. Aplica <b>4</b> [regen].",
+        "chinese_traditional": "<b>+18</b> [health]. 施加<b>4</b> [regen]。",
+        "korean": "<b>+18</b> [health]. <b>4</b> [regen] 부여.",
+        "japanese": "<b>+18</b> [health]. <b>4</b> [regen]を付与。"
       },
       "card_art": "@HolySymbol",
       "cost": 1,
@@ -56,7 +101,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Whose, exactly, is not asked."
+          "english": "Whose, exactly, is not asked.",
+          "french": "Qui, exactement, n'est pas demandé.",
+          "german": "Von wem wird nicht gefragt.",
+          "russian": "Кого точно не спрашивают.",
+          "portuguese": "A quem, exatamente, não se pergunta.",
+          "chinese": "谁,确切,没有被问到.",
+          "spanish": "No se pregunta de quién era exactamente.",
+          "chinese_traditional": "究竟是誰?",
+          "korean": "누가 정확히 묻지 않을까요?",
+          "japanese": "その人のことは聞かれない"
         }
       ],
       "pools": [
@@ -68,10 +122,28 @@
     {
       "id": "Reliquary",
       "names": {
-        "english": "Reliquary"
+        "english": "Reliquary",
+        "french": "Reliquaire",
+        "german": "Reliquiar",
+        "russian": "Реликварий",
+        "portuguese": "Relicário",
+        "chinese": "圣物匣",
+        "spanish": "Relicario",
+        "chinese_traditional": "聖物匣",
+        "korean": "성물함",
+        "japanese": "聖遺物箱"
       },
       "descriptions": {
-        "english": "<b>+30</b> [health]. Apply <b>6</b> [regen] and <b>1</b> [undying]."
+        "english": "<b>+30</b> [health]. Apply <b>6</b> [regen] and <b>1</b> [undying].",
+        "french": "<b>+30</b> [health]. Appliquez <b>6</b> [regen] et <b>1</b> [undying].",
+        "german": "<b>+30</b> [health]. Erhalte <b>6</b> [regen] und <b>1</b> [undying].",
+        "russian": "<b>+30</b> [health]. Получите <b>6</b> [regen] и <b>1</b> [undying].",
+        "portuguese": "<b>+30</b> [health]. Aplique <b>6</b> [regen] e <b>1</b> [undying].",
+        "chinese": "<b>+30</b> [health]. 施加<b>6</b> [regen]和<b>1</b> [undying]。",
+        "spanish": "<b>+30</b> [health]. Aplica <b>6</b> [regen] y <b>1</b> [undying].",
+        "chinese_traditional": "<b>+30</b> [health]. 施加<b>6</b> [regen]和<b>1</b> [undying]。",
+        "korean": "<b>+30</b> [health]. <b>6</b> [regen] 및 <b>1</b> [undying] 부여.",
+        "japanese": "<b>+30</b> [health]. <b>6</b> [regen]と<b>1</b> [undying]を付与。"
       },
       "card_art": "@Reliquary",
       "cost": 1,
@@ -88,7 +160,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "A finger bone and a very good story."
+          "english": "A finger bone and a very good story.",
+          "french": "Un os du doigt et une très bonne histoire.",
+          "german": "Ein Fingerbein und eine sehr gute Geschichte.",
+          "russian": "Кость пальца и очень хорошая история.",
+          "portuguese": "Um dedo e uma história muito boa.",
+          "chinese": "一个手指骨头和一个非常好的故事.",
+          "spanish": "Un hueso de dedo y una historia muy convincente.",
+          "chinese_traditional": "這是一件很好的故事.",
+          "korean": "손가락 뼈와 아주 좋은 이야기.",
+          "japanese": "指の骨ととても良い話です"
         }
       ],
       "pools": [
@@ -102,10 +183,28 @@
     {
       "id": "UpgBandages",
       "titles": {
-        "english": "Bandages"
+        "english": "Bandages",
+        "french": "Bandages",
+        "german": "Verbände",
+        "russian": "Бинты",
+        "portuguese": "Bandagens",
+        "chinese": "绷带",
+        "spanish": "Vendas",
+        "chinese_traditional": "繃帶",
+        "korean": "붕대",
+        "japanese": "包帯"
       },
       "descriptions": {
-        "english": "<b>+10</b> [health]. Apply <b>2</b> [regen]."
+        "english": "<b>+10</b> [health]. Apply <b>2</b> [regen].",
+        "french": "<b>+10</b> [health]. Appliquez <b>2</b> [regen].",
+        "german": "<b>+10</b> [health]. Erhalte <b>2</b> [regen].",
+        "russian": "<b>+10</b> [health]. Получите <b>2</b> [regen].",
+        "portuguese": "<b>+10</b> [health]. Aplique <b>2</b> [regen].",
+        "chinese": "<b>+10</b> [health]. 施加<b>2</b> [regen]。",
+        "spanish": "<b>+10</b> [health]. Aplica <b>2</b> [regen].",
+        "chinese_traditional": "<b>+10</b> [health]. 施加<b>2</b> [regen]。",
+        "korean": "<b>+10</b> [health]. <b>2</b> [regen] 부여.",
+        "japanese": "<b>+10</b> [health]. <b>2</b> [regen]を付与。"
       },
       "icon": "@Bandages",
       "bonus_hp": 10,
@@ -119,10 +218,28 @@
     {
       "id": "UpgHolySymbol",
       "titles": {
-        "english": "Holy Symbol"
+        "english": "Holy Symbol",
+        "french": "Symbole sacré",
+        "german": "Heiliges Symbol",
+        "russian": "Священный символ",
+        "portuguese": "Símbolo Sagrado",
+        "chinese": "圣徽",
+        "spanish": "Símbolo sagrado",
+        "chinese_traditional": "聖徽",
+        "korean": "성스러운 상징",
+        "japanese": "聖印"
       },
       "descriptions": {
-        "english": "<b>+18</b> [health]. Apply <b>4</b> [regen]."
+        "english": "<b>+18</b> [health]. Apply <b>4</b> [regen].",
+        "french": "<b>+18</b> [health]. Appliquez <b>4</b> [regen].",
+        "german": "<b>+18</b> [health]. Erhalte <b>4</b> [regen].",
+        "russian": "<b>+18</b> [health]. Получите <b>4</b> [regen].",
+        "portuguese": "<b>+18</b> [health]. Aplique <b>4</b> [regen].",
+        "chinese": "<b>+18</b> [health]. 施加<b>4</b> [regen]。",
+        "spanish": "<b>+18</b> [health]. Aplica <b>4</b> [regen].",
+        "chinese_traditional": "<b>+18</b> [health]. 施加<b>4</b> [regen]。",
+        "korean": "<b>+18</b> [health]. <b>4</b> [regen] 부여.",
+        "japanese": "<b>+18</b> [health]. <b>4</b> [regen]を付与。"
       },
       "icon": "@HolySymbol",
       "bonus_hp": 18,
@@ -136,10 +253,28 @@
     {
       "id": "UpgReliquary",
       "titles": {
-        "english": "Reliquary"
+        "english": "Reliquary",
+        "french": "Reliquaire",
+        "german": "Reliquiar",
+        "russian": "Реликварий",
+        "portuguese": "Relicário",
+        "chinese": "圣物匣",
+        "spanish": "Relicario",
+        "chinese_traditional": "聖物匣",
+        "korean": "성물함",
+        "japanese": "聖遺物箱"
       },
       "descriptions": {
-        "english": "<b>+30</b> [health]. Apply <b>6</b> [regen] and <b>1</b> [undying]."
+        "english": "<b>+30</b> [health]. Apply <b>6</b> [regen] and <b>1</b> [undying].",
+        "french": "<b>+30</b> [health]. Appliquez <b>6</b> [regen] et <b>1</b> [undying].",
+        "german": "<b>+30</b> [health]. Erhalte <b>6</b> [regen] und <b>1</b> [undying].",
+        "russian": "<b>+30</b> [health]. Получите <b>6</b> [regen] и <b>1</b> [undying].",
+        "portuguese": "<b>+30</b> [health]. Aplique <b>6</b> [regen] e <b>1</b> [undying].",
+        "chinese": "<b>+30</b> [health]. 施加<b>6</b> [regen]和<b>1</b> [undying]。",
+        "spanish": "<b>+30</b> [health]. Aplica <b>6</b> [regen] y <b>1</b> [undying].",
+        "chinese_traditional": "<b>+30</b> [health]. 施加<b>6</b> [regen]和<b>1</b> [undying]。",
+        "korean": "<b>+30</b> [health]. <b>6</b> [regen] 및 <b>1</b> [undying] 부여.",
+        "japanese": "<b>+30</b> [health]. <b>6</b> [regen]と<b>1</b> [undying]を付与。"
       },
       "icon": "@Reliquary",
       "bonus_hp": 30,

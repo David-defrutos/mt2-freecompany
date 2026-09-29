@@ -4,10 +4,28 @@
     {
       "id": "Invisibility",
       "names": {
-        "english": "Invisibility"
+        "english": "Invisibility",
+        "french": "Invisibilité",
+        "german": "Unsichtbarkeit",
+        "russian": "Невидимость",
+        "portuguese": "Invisibilidade",
+        "chinese": "隐形术",
+        "spanish": "Invisibilidad",
+        "chinese_traditional": "隱形術",
+        "korean": "투명화",
+        "japanese": "透明化"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [stealth] to a friendly unit."
+        "english": "Apply [effect0.status0.power] [stealth] to a friendly unit.",
+        "french": "Appliquez [effect0.status0.power] [stealth] à une unité alliée.",
+        "german": "Verleihe einer verbündeten Einheit [effect0.status0.power] [stealth].",
+        "russian": "Наложите на союзную боевую единицу [effect0.status0.power] [stealth].",
+        "portuguese": "Aplique [effect0.status0.power] [stealth] a uma unidade aliada.",
+        "chinese": "对一个友方单位施加[effect0.status0.power] [stealth]。",
+        "spanish": "Aplica [effect0.status0.power] [stealth] a una unidad aliada.",
+        "chinese_traditional": "對一個友方單位施加[effect0.status0.power] [stealth]。",
+        "korean": "아군 유닛 하나에게 [effect0.status0.power] [stealth] 부여.",
+        "japanese": "味方ユニット1体に[effect0.status0.power] [stealth]を付与。"
       },
       "card_art": "@Invisibility",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Still charges full rate."
+          "english": "Still charges full rate.",
+          "french": "Je continue de payer pleinement.",
+          "german": "Sie zahlen immer noch volle Rate.",
+          "russian": "Все еще платят полную ставку.",
+          "portuguese": "Ainda cobram a taxa total.",
+          "chinese": "仍然收取全部费用.",
+          "spanish": "Sigue cobrando la tarifa completa.",
+          "chinese_traditional": "還是收取全額收費.",
+          "korean": "여전히 전체 요금을 부과합니다.",
+          "japanese": "まだ全額料金だ"
         }
       ],
       "pools": [

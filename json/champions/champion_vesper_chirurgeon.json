@@ -4,10 +4,28 @@
     {
       "id": "ChirurgeonSurgery1",
       "names": {
-        "english": "Field Surgery"
+        "english": "Field Surgery",
+        "french": "Chirurgie de campagne",
+        "german": "Feldchirurgie",
+        "russian": "Полевая хирургия",
+        "portuguese": "Cirurgia de Campo",
+        "chinese": "战地手术",
+        "spanish": "Cirugía de campaña",
+        "chinese_traditional": "戰地手術",
+        "korean": "야전 수술",
+        "japanese": "野戦手術"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [undying] to a unit."
+        "english": "Apply [effect0.status0.power] [undying] to a unit.",
+        "french": "Appliquez [effect0.status0.power] [undying] à une unité.",
+        "german": "Verleihe einer Einheit [effect0.status0.power] [undying].",
+        "russian": "Наложите на боевую единицу [effect0.status0.power] [undying].",
+        "portuguese": "Aplique [effect0.status0.power] [undying] a uma unidade.",
+        "chinese": "对一个单位施加[effect0.status0.power] [undying]。",
+        "spanish": "Aplica [effect0.status0.power] [undying] a una unidad.",
+        "chinese_traditional": "對一個單位施加[effect0.status0.power] [undying]。",
+        "korean": "유닛 하나에게 [effect0.status0.power] [undying] 부여.",
+        "japanese": "ユニット1体に[effect0.status0.power] [undying]を付与。"
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
@@ -23,10 +41,28 @@
     {
       "id": "ChirurgeonSurgery2",
       "names": {
-        "english": "Field Surgery"
+        "english": "Field Surgery",
+        "french": "Chirurgie de campagne",
+        "german": "Feldchirurgie",
+        "russian": "Полевая хирургия",
+        "portuguese": "Cirurgia de Campo",
+        "chinese": "战地手术",
+        "spanish": "Cirugía de campaña",
+        "chinese_traditional": "戰地手術",
+        "korean": "야전 수술",
+        "japanese": "野戦手術"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [undying] to a unit."
+        "english": "Apply [effect0.status0.power] [undying] to a unit.",
+        "french": "Appliquez [effect0.status0.power] [undying] à une unité.",
+        "german": "Verleihe einer Einheit [effect0.status0.power] [undying].",
+        "russian": "Наложите на боевую единицу [effect0.status0.power] [undying].",
+        "portuguese": "Aplique [effect0.status0.power] [undying] a uma unidade.",
+        "chinese": "对一个单位施加[effect0.status0.power] [undying]。",
+        "spanish": "Aplica [effect0.status0.power] [undying] a una unidad.",
+        "chinese_traditional": "對一個單位施加[effect0.status0.power] [undying]。",
+        "korean": "유닛 하나에게 [effect0.status0.power] [undying] 부여.",
+        "japanese": "ユニット1体に[effect0.status0.power] [undying]を付与。"
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
@@ -42,10 +78,28 @@
     {
       "id": "ChirurgeonSurgery3",
       "names": {
-        "english": "Field Surgery"
+        "english": "Field Surgery",
+        "french": "Chirurgie de campagne",
+        "german": "Feldchirurgie",
+        "russian": "Полевая хирургия",
+        "portuguese": "Cirurgia de Campo",
+        "chinese": "战地手术",
+        "spanish": "Cirugía de campaña",
+        "chinese_traditional": "戰地手術",
+        "korean": "야전 수술",
+        "japanese": "野戦手術"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [undying] to a unit."
+        "english": "Apply [effect0.status0.power] [undying] to a unit.",
+        "french": "Appliquez [effect0.status0.power] [undying] à une unité.",
+        "german": "Verleihe einer Einheit [effect0.status0.power] [undying].",
+        "russian": "Наложите на боевую единицу [effect0.status0.power] [undying].",
+        "portuguese": "Aplique [effect0.status0.power] [undying] a uma unidade.",
+        "chinese": "对一个单位施加[effect0.status0.power] [undying]。",
+        "spanish": "Aplica [effect0.status0.power] [undying] a una unidad.",
+        "chinese_traditional": "對一個單位施加[effect0.status0.power] [undying]。",
+        "korean": "유닛 하나에게 [effect0.status0.power] [undying] 부여.",
+        "japanese": "ユニット1体に[effect0.status0.power] [undying]を付与。"
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
@@ -64,7 +118,16 @@
       "id": "ChirurgeonTrigger1",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Restore [effect0.power] health to all allies here. Cleanse <b>1</b> random debuffed ally here."
+        "english": "Restore [effect0.power] health to all allies here. Cleanse <b>1</b> random debuffed ally here.",
+        "french": "Rendez [effect0.power] PV à tous les alliés ici. Purifiez <b>1</b> allié aléatoire affecté par des malus ici.",
+        "german": "Heile alle Verbündeten hier um [effect0.power] Leben. Entferne Schwächungen von <b>1</b> zufälligen geschwächten Verbündeten hier.",
+        "russian": "Восстановите [effect0.power] здоровья всем союзникам здесь. Очистите <b>1</b> случайных союзников с ослаблениями здесь.",
+        "portuguese": "Restaure [effect0.power] de vida de todos os aliados aqui. Purifique <b>1</b> aliado aleatório com penalidades aqui.",
+        "chinese": "为本层所有友军恢复[effect0.power]点生命值。随机净化本层<b>1</b>个带有减益的友军。",
+        "spanish": "Restaura [effect0.power] de vida a todos los aliados de aquí. Limpia <b>1</b> aliado aleatorio con perjuicios aquí.",
+        "chinese_traditional": "為本層所有友軍恢復[effect0.power]點生命值。隨機淨化本層<b>1</b>個帶有減益的友軍。",
+        "korean": "이 층의 모든 아군의 체력을 [effect0.power] 회복. 이 층의 약화 효과가 있는 무작위 아군 <b>1</b>명을 정화.",
+        "japanese": "この階の味方全体の体力を[effect0.power]回復。この階の弱体効果を受けているランダムな味方<b>1</b>体を浄化。"
       },
       "effects": [
         "@ChirurgeonHeal1",
@@ -75,7 +138,16 @@
       "id": "ChirurgeonTrigger2",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Restore [effect0.power] health to all allies here. Cleanse <b>2</b> random debuffed allies anywhere."
+        "english": "Restore [effect0.power] health to all allies here. Cleanse <b>2</b> random debuffed allies anywhere.",
+        "french": "Rendez [effect0.power] PV à tous les alliés ici. Purifiez <b>2</b> alliés aléatoires affectés par des malus sur tous les étages.",
+        "german": "Heile alle Verbündeten hier um [effect0.power] Leben. Entferne Schwächungen von <b>2</b> zufälligen geschwächten Verbündeten auf beliebigen Stockwerken.",
+        "russian": "Восстановите [effect0.power] здоровья всем союзникам здесь. Очистите <b>2</b> случайных союзников с ослаблениями на любых этажах.",
+        "portuguese": "Restaure [effect0.power] de vida de todos os aliados aqui. Purifique <b>2</b> aliados aleatórios com penalidades em qualquer andar.",
+        "chinese": "为本层所有友军恢复[effect0.power]点生命值。随机净化任意楼层<b>2</b>个带有减益的友军。",
+        "spanish": "Restaura [effect0.power] de vida a todos los aliados de aquí. Limpia <b>2</b> aliados aleatorios con perjuicios en cualquier piso.",
+        "chinese_traditional": "為本層所有友軍恢復[effect0.power]點生命值。隨機淨化任意樓層<b>2</b>個帶有減益的友軍。",
+        "korean": "이 층의 모든 아군의 체력을 [effect0.power] 회복. 모든 층의 약화 효과가 있는 무작위 아군 <b>2</b>명을 정화.",
+        "japanese": "この階の味方全体の体力を[effect0.power]回復。任意の階の弱体効果を受けているランダムな味方<b>2</b>体を浄化。"
       },
       "effects": [
         "@ChirurgeonHeal2",
@@ -87,7 +159,16 @@
       "id": "ChirurgeonTrigger3",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Restore [effect0.power] health to all allies here. Cleanse <b>3</b> random debuffed allies anywhere."
+        "english": "Restore [effect0.power] health to all allies here. Cleanse <b>3</b> random debuffed allies anywhere.",
+        "french": "Rendez [effect0.power] PV à tous les alliés ici. Purifiez <b>3</b> alliés aléatoires affectés par des malus sur tous les étages.",
+        "german": "Heile alle Verbündeten hier um [effect0.power] Leben. Entferne Schwächungen von <b>3</b> zufälligen geschwächten Verbündeten auf beliebigen Stockwerken.",
+        "russian": "Восстановите [effect0.power] здоровья всем союзникам здесь. Очистите <b>3</b> случайных союзников с ослаблениями на любых этажах.",
+        "portuguese": "Restaure [effect0.power] de vida de todos os aliados aqui. Purifique <b>3</b> aliados aleatórios com penalidades em qualquer andar.",
+        "chinese": "为本层所有友军恢复[effect0.power]点生命值。随机净化任意楼层<b>3</b>个带有减益的友军。",
+        "spanish": "Restaura [effect0.power] de vida a todos los aliados de aquí. Limpia <b>3</b> aliados aleatorios con perjuicios en cualquier piso.",
+        "chinese_traditional": "為本層所有友軍恢復[effect0.power]點生命值。隨機淨化任意樓層<b>3</b>個帶有減益的友軍。",
+        "korean": "이 층의 모든 아군의 체력을 [effect0.power] 회복. 모든 층의 약화 효과가 있는 무작위 아군 <b>3</b>명을 정화.",
+        "japanese": "この階の味方全体の体力を[effect0.power]回復。任意の階の弱体効果を受けているランダムな味方<b>3</b>体を浄化。"
       },
       "effects": [
         "@ChirurgeonHeal3",
@@ -566,10 +647,28 @@
     {
       "id": "upg_Chirurgeon1",
       "titles": {
-        "english": "Chirurgeon"
+        "english": "Chirurgeon",
+        "french": "Chirurgien",
+        "german": "Wundarzt",
+        "russian": "Хирург",
+        "portuguese": "Cirurgião",
+        "chinese": "外科医师",
+        "spanish": "Cirujana",
+        "chinese_traditional": "外科醫師",
+        "korean": "외과의",
+        "japanese": "外科医"
       },
       "descriptions": {
-        "english": "At start of turn, heal allies here and cleanse <b>1</b> ally. Field Surgery grants [undying]."
+        "english": "At start of turn, heal allies here and cleanse <b>1</b> ally. Field Surgery grants [undying].",
+        "french": "Au début du tour, soignez les alliés ici et purifiez <b>1</b> allié ici. Chirurgie de campagne confère [undying].",
+        "german": "Heile zu Zugbeginn Verbündete hier und entferne Schwächungen von <b>1</b> Verbündeten hier. Feldchirurgie verleiht [undying].",
+        "russian": "В начале хода лечит союзников здесь и очищает <b>1</b> союзников здесь. Полевая хирургия даёт [undying].",
+        "portuguese": "No início do turno, cura aliados aqui e purifica <b>1</b> aliado aqui. Cirurgia de Campo concede [undying].",
+        "chinese": "回合开始时，治疗本层友军并净化本层<b>1</b>个友军。战地手术赋予[undying]。",
+        "spanish": "Al inicio del turno, cura a los aliados de aquí y limpia <b>1</b> aliado aquí. Cirugía de campaña otorga [undying].",
+        "chinese_traditional": "回合開始時，治療本層友軍並淨化本層<b>1</b>個友軍。戰地手術賦予[undying]。",
+        "korean": "턴 시작 시 이 층의 아군을 치유하고 이 층의 아군 <b>1</b>명을 정화. 야전 수술은 [undying] 부여.",
+        "japanese": "ターン開始時、この階の味方を回復し、この階の味方<b>1</b>体を浄化。野戦手術は[undying]を付与。"
       },
       "bonus_hp": 10,
       "trigger_upgrades": [
@@ -580,10 +679,28 @@
     {
       "id": "upg_Chirurgeon2",
       "titles": {
-        "english": "Chirurgeon II"
+        "english": "Chirurgeon II",
+        "french": "Chirurgien II",
+        "german": "Wundarzt II",
+        "russian": "Хирург II",
+        "portuguese": "Cirurgião II",
+        "chinese": "外科医师 II",
+        "spanish": "Cirujana II",
+        "chinese_traditional": "外科醫師 II",
+        "korean": "외과의 II",
+        "japanese": "外科医 II"
       },
       "descriptions": {
-        "english": "At start of turn, heal allies here and cleanse <b>2</b> allies anywhere. Field Surgery grants [undying]."
+        "english": "At start of turn, heal allies here and cleanse <b>2</b> allies anywhere. Field Surgery grants [undying].",
+        "french": "Au début du tour, soignez les alliés ici et purifiez <b>2</b> alliés sur tous les étages. Chirurgie de campagne confère [undying].",
+        "german": "Heile zu Zugbeginn Verbündete hier und entferne Schwächungen von <b>2</b> Verbündeten auf beliebigen Stockwerken. Feldchirurgie verleiht [undying].",
+        "russian": "В начале хода лечит союзников здесь и очищает <b>2</b> союзников на любых этажах. Полевая хирургия даёт [undying].",
+        "portuguese": "No início do turno, cura aliados aqui e purifica <b>2</b> aliados em qualquer andar. Cirurgia de Campo concede [undying].",
+        "chinese": "回合开始时，治疗本层友军并净化任意楼层<b>2</b>个友军。战地手术赋予[undying]。",
+        "spanish": "Al inicio del turno, cura a los aliados de aquí y limpia <b>2</b> aliados en cualquier piso. Cirugía de campaña otorga [undying].",
+        "chinese_traditional": "回合開始時，治療本層友軍並淨化任意樓層<b>2</b>個友軍。戰地手術賦予[undying]。",
+        "korean": "턴 시작 시 이 층의 아군을 치유하고 모든 층의 아군 <b>2</b>명을 정화. 야전 수술은 [undying] 부여.",
+        "japanese": "ターン開始時、この階の味方を回復し、任意の階の味方<b>2</b>体を浄化。野戦手術は[undying]を付与。"
       },
       "bonus_hp": 20,
       "remove_upgrades": [
@@ -597,10 +714,28 @@
     {
       "id": "upg_Chirurgeon3",
       "titles": {
-        "english": "Chirurgeon III"
+        "english": "Chirurgeon III",
+        "french": "Chirurgien III",
+        "german": "Wundarzt III",
+        "russian": "Хирург III",
+        "portuguese": "Cirurgião III",
+        "chinese": "外科医师 III",
+        "spanish": "Cirujana III",
+        "chinese_traditional": "外科醫師 III",
+        "korean": "외과의 III",
+        "japanese": "外科医 III"
       },
       "descriptions": {
-        "english": "At start of turn, heal allies here and cleanse <b>3</b> allies anywhere. Field Surgery grants [undying]."
+        "english": "At start of turn, heal allies here and cleanse <b>3</b> allies anywhere. Field Surgery grants [undying].",
+        "french": "Au début du tour, soignez les alliés ici et purifiez <b>3</b> alliés sur tous les étages. Chirurgie de campagne confère [undying].",
+        "german": "Heile zu Zugbeginn Verbündete hier und entferne Schwächungen von <b>3</b> Verbündeten auf beliebigen Stockwerken. Feldchirurgie verleiht [undying].",
+        "russian": "В начале хода лечит союзников здесь и очищает <b>3</b> союзников на любых этажах. Полевая хирургия даёт [undying].",
+        "portuguese": "No início do turno, cura aliados aqui e purifica <b>3</b> aliados em qualquer andar. Cirurgia de Campo concede [undying].",
+        "chinese": "回合开始时，治疗本层友军并净化任意楼层<b>3</b>个友军。战地手术赋予[undying]。",
+        "spanish": "Al inicio del turno, cura a los aliados de aquí y limpia <b>3</b> aliados en cualquier piso. Cirugía de campaña otorga [undying].",
+        "chinese_traditional": "回合開始時，治療本層友軍並淨化任意樓層<b>3</b>個友軍。戰地手術賦予[undying]。",
+        "korean": "턴 시작 시 이 층의 아군을 치유하고 모든 층의 아군 <b>3</b>명을 정화. 야전 수술은 [undying] 부여.",
+        "japanese": "ターン開始時、この階の味方を回復し、任意の階の味方<b>3</b>体を浄化。野戦手術は[undying]を付与。"
       },
       "bonus_hp": 30,
       "remove_upgrades": [

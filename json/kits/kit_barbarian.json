@@ -4,10 +4,28 @@
     {
       "id": "NotchedAxe",
       "names": {
-        "english": "Notched Axe"
+        "english": "Notched Axe",
+        "french": "Hache entaillée",
+        "german": "Schartige Axt",
+        "russian": "Зазубренный топор",
+        "portuguese": "Machado Entalhado",
+        "chinese": "缺口斧",
+        "spanish": "Hacha mellada",
+        "chinese_traditional": "缺口斧",
+        "korean": "이 빠진 도끼",
+        "japanese": "刃こぼれの斧"
       },
       "descriptions": {
-        "english": "<b>+5</b> [attack]. <b>Slay</b>: gain <b>2</b> [rage]."
+        "english": "<b>+5</b> [attack]. <b>Slay</b>: gain <b>2</b> [rage].",
+        "french": "<b>+5</b> [attack]. <b>Élimination</b> : gagnez <b>2</b> [rage].",
+        "german": "<b>+5</b> [attack]. <b>Töten</b>: Erhalte <b>2</b> [rage].",
+        "russian": "<b>+5</b> [attack]. <b>Убийство</b>: получите <b>2</b> [rage].",
+        "portuguese": "<b>+5</b> [attack]. <b>Abate</b>: ganhe <b>2</b> [rage].",
+        "chinese": "<b>+5</b> [attack]. <b>击杀</b>：获得<b>2</b> [rage]。",
+        "spanish": "<b>+5</b> [attack]. <b>Matanza</b>: gana <b>2</b> [rage].",
+        "chinese_traditional": "<b>+5</b> [attack]. <b>擊殺</b>：獲得<b>2</b> [rage]。",
+        "korean": "<b>+5</b> [attack]. <b>처치</b>: <b>2</b> [rage] 획득.",
+        "japanese": "<b>+5</b> [attack]. <b>撃破</b>：<b>2</b> [rage]を得る。"
       },
       "card_art": "@NotchedAxe",
       "cost": 1,
@@ -24,7 +42,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Every notch a name."
+          "english": "Every notch a name.",
+          "french": "Chaque notch a un nom.",
+          "german": "Jede Ecke hat einen Namen.",
+          "russian": "Каждое запястье имеет имя.",
+          "portuguese": "Cada anotação tem um nome.",
+          "chinese": "每个子都有一个名字.",
+          "spanish": "Una muesca por cada nombre.",
+          "chinese_traditional": "每個子都有個名字.",
+          "korean": "각 점에는 이름이 있습니다.",
+          "japanese": "名前がある"
         }
       ],
       "pools": [
@@ -36,10 +63,28 @@
     {
       "id": "TwinAxes",
       "names": {
-        "english": "Twin Axes"
+        "english": "Twin Axes",
+        "french": "Haches jumelles",
+        "german": "Zwillingsäxte",
+        "russian": "Парные топоры",
+        "portuguese": "Machados Gêmeos",
+        "chinese": "双斧",
+        "spanish": "Hachas gemelas",
+        "chinese_traditional": "雙斧",
+        "korean": "쌍도끼",
+        "japanese": "双斧"
       },
       "descriptions": {
-        "english": "<b>+10</b> [attack]. <b>Slay</b>: gain <b>4</b> [rage]."
+        "english": "<b>+10</b> [attack]. <b>Slay</b>: gain <b>4</b> [rage].",
+        "french": "<b>+10</b> [attack]. <b>Élimination</b> : gagnez <b>4</b> [rage].",
+        "german": "<b>+10</b> [attack]. <b>Töten</b>: Erhalte <b>4</b> [rage].",
+        "russian": "<b>+10</b> [attack]. <b>Убийство</b>: получите <b>4</b> [rage].",
+        "portuguese": "<b>+10</b> [attack]. <b>Abate</b>: ganhe <b>4</b> [rage].",
+        "chinese": "<b>+10</b> [attack]. <b>击杀</b>：获得<b>4</b> [rage]。",
+        "spanish": "<b>+10</b> [attack]. <b>Matanza</b>: gana <b>4</b> [rage].",
+        "chinese_traditional": "<b>+10</b> [attack]. <b>擊殺</b>：獲得<b>4</b> [rage]。",
+        "korean": "<b>+10</b> [attack]. <b>처치</b>: <b>4</b> [rage] 획득.",
+        "japanese": "<b>+10</b> [attack]. <b>撃破</b>：<b>4</b> [rage]を得る。"
       },
       "card_art": "@TwinAxes",
       "cost": 1,
@@ -56,7 +101,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "One for each hand."
+          "english": "One for each hand.",
+          "french": "Une pour chaque main.",
+          "german": "Eine für jede Hand.",
+          "russian": "Одна за каждую руку.",
+          "portuguese": "Uma para cada mão.",
+          "chinese": "每个手都有一个.",
+          "spanish": "Una para cada mano.",
+          "chinese_traditional": "每隻手都有一個.",
+          "korean": "한 손당 하나",
+          "japanese": "各手に1つ"
         }
       ],
       "pools": [
@@ -68,10 +122,28 @@
     {
       "id": "ReaversMaul",
       "names": {
-        "english": "Reaver's Maul"
+        "english": "Reaver's Maul",
+        "french": "Masse du ravageur",
+        "german": "Plündererhammer",
+        "russian": "Молот разорителя",
+        "portuguese": "Malho do Saqueador",
+        "chinese": "劫掠者巨锤",
+        "spanish": "Mazo del saqueador",
+        "chinese_traditional": "劫掠者巨錘",
+        "korean": "약탈자의 망치",
+        "japanese": "略奪者の大槌"
       },
       "descriptions": {
-        "english": "<b>+18</b> [attack]. <b>Slay</b>: gain <b>6</b> [rage] and <b>1</b> [burst]."
+        "english": "<b>+18</b> [attack]. <b>Slay</b>: gain <b>6</b> [rage] and <b>1</b> [burst].",
+        "french": "<b>+18</b> [attack]. <b>Élimination</b> : gagnez <b>6</b> [rage] et <b>1</b> [burst].",
+        "german": "<b>+18</b> [attack]. <b>Töten</b>: Erhalte <b>6</b> [rage] und <b>1</b> [burst].",
+        "russian": "<b>+18</b> [attack]. <b>Убийство</b>: получите <b>6</b> [rage] и <b>1</b> [burst].",
+        "portuguese": "<b>+18</b> [attack]. <b>Abate</b>: ganhe <b>6</b> [rage] e <b>1</b> [burst].",
+        "chinese": "<b>+18</b> [attack]. <b>击杀</b>：获得<b>6</b> [rage]和<b>1</b> [burst]。",
+        "spanish": "<b>+18</b> [attack]. <b>Matanza</b>: gana <b>6</b> [rage] y <b>1</b> [burst].",
+        "chinese_traditional": "<b>+18</b> [attack]. <b>擊殺</b>：獲得<b>6</b> [rage]和<b>1</b> [burst]。",
+        "korean": "<b>+18</b> [attack]. <b>처치</b>: <b>6</b> [rage] 및 <b>1</b> [burst] 획득.",
+        "japanese": "<b>+18</b> [attack]. <b>撃破</b>：<b>6</b> [rage]と<b>1</b> [burst]を得る。"
       },
       "card_art": "@ReaversMaul",
       "cost": 1,
@@ -88,7 +160,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "It does not cut. It does not need to."
+          "english": "It does not cut. It does not need to.",
+          "french": "Il ne coupe pas. Ce n'est pas nécessaire.",
+          "german": "Es schneidet nicht. Das ist nicht nötig.",
+          "russian": "Он не режет. Это не обязательно.",
+          "portuguese": "Não corta. Não é preciso.",
+          "chinese": "它不会切断. 没有必要.",
+          "spanish": "No corta. No le hace falta.",
+          "chinese_traditional": "這樣就不會剪掉. 沒有必要.",
+          "korean": "잘리지 않습니다. 그럴 필요는 없습니다.",
+          "japanese": "切らない それは必要ない."
         }
       ],
       "pools": [
@@ -102,10 +183,28 @@
     {
       "id": "UpgNotchedAxe",
       "titles": {
-        "english": "Notched Axe"
+        "english": "Notched Axe",
+        "french": "Hache entaillée",
+        "german": "Schartige Axt",
+        "russian": "Зазубренный топор",
+        "portuguese": "Machado Entalhado",
+        "chinese": "缺口斧",
+        "spanish": "Hacha mellada",
+        "chinese_traditional": "缺口斧",
+        "korean": "이 빠진 도끼",
+        "japanese": "刃こぼれの斧"
       },
       "descriptions": {
-        "english": "<b>+5</b> [attack]. <b>Slay</b>: gain <b>2</b> [rage]."
+        "english": "<b>+5</b> [attack]. <b>Slay</b>: gain <b>2</b> [rage].",
+        "french": "<b>+5</b> [attack]. <b>Élimination</b> : gagnez <b>2</b> [rage].",
+        "german": "<b>+5</b> [attack]. <b>Töten</b>: Erhalte <b>2</b> [rage].",
+        "russian": "<b>+5</b> [attack]. <b>Убийство</b>: получите <b>2</b> [rage].",
+        "portuguese": "<b>+5</b> [attack]. <b>Abate</b>: ganhe <b>2</b> [rage].",
+        "chinese": "<b>+5</b> [attack]. <b>击杀</b>：获得<b>2</b> [rage]。",
+        "spanish": "<b>+5</b> [attack]. <b>Matanza</b>: gana <b>2</b> [rage].",
+        "chinese_traditional": "<b>+5</b> [attack]. <b>擊殺</b>：獲得<b>2</b> [rage]。",
+        "korean": "<b>+5</b> [attack]. <b>처치</b>: <b>2</b> [rage] 획득.",
+        "japanese": "<b>+5</b> [attack]. <b>撃破</b>：<b>2</b> [rage]を得る。"
       },
       "icon": "@NotchedAxe",
       "bonus_damage": 5,
@@ -116,10 +215,28 @@
     {
       "id": "UpgTwinAxes",
       "titles": {
-        "english": "Twin Axes"
+        "english": "Twin Axes",
+        "french": "Haches jumelles",
+        "german": "Zwillingsäxte",
+        "russian": "Парные топоры",
+        "portuguese": "Machados Gêmeos",
+        "chinese": "双斧",
+        "spanish": "Hachas gemelas",
+        "chinese_traditional": "雙斧",
+        "korean": "쌍도끼",
+        "japanese": "双斧"
       },
       "descriptions": {
-        "english": "<b>+10</b> [attack]. <b>Slay</b>: gain <b>4</b> [rage]."
+        "english": "<b>+10</b> [attack]. <b>Slay</b>: gain <b>4</b> [rage].",
+        "french": "<b>+10</b> [attack]. <b>Élimination</b> : gagnez <b>4</b> [rage].",
+        "german": "<b>+10</b> [attack]. <b>Töten</b>: Erhalte <b>4</b> [rage].",
+        "russian": "<b>+10</b> [attack]. <b>Убийство</b>: получите <b>4</b> [rage].",
+        "portuguese": "<b>+10</b> [attack]. <b>Abate</b>: ganhe <b>4</b> [rage].",
+        "chinese": "<b>+10</b> [attack]. <b>击杀</b>：获得<b>4</b> [rage]。",
+        "spanish": "<b>+10</b> [attack]. <b>Matanza</b>: gana <b>4</b> [rage].",
+        "chinese_traditional": "<b>+10</b> [attack]. <b>擊殺</b>：獲得<b>4</b> [rage]。",
+        "korean": "<b>+10</b> [attack]. <b>처치</b>: <b>4</b> [rage] 획득.",
+        "japanese": "<b>+10</b> [attack]. <b>撃破</b>：<b>4</b> [rage]を得る。"
       },
       "icon": "@TwinAxes",
       "bonus_damage": 10,
@@ -130,10 +247,28 @@
     {
       "id": "UpgReaversMaul",
       "titles": {
-        "english": "Reaver's Maul"
+        "english": "Reaver's Maul",
+        "french": "Masse du ravageur",
+        "german": "Plündererhammer",
+        "russian": "Молот разорителя",
+        "portuguese": "Malho do Saqueador",
+        "chinese": "劫掠者巨锤",
+        "spanish": "Mazo del saqueador",
+        "chinese_traditional": "劫掠者巨錘",
+        "korean": "약탈자의 망치",
+        "japanese": "略奪者の大槌"
       },
       "descriptions": {
-        "english": "<b>+18</b> [attack]. <b>Slay</b>: gain <b>6</b> [rage] and <b>1</b> [burst]."
+        "english": "<b>+18</b> [attack]. <b>Slay</b>: gain <b>6</b> [rage] and <b>1</b> [burst].",
+        "french": "<b>+18</b> [attack]. <b>Élimination</b> : gagnez <b>6</b> [rage] et <b>1</b> [burst].",
+        "german": "<b>+18</b> [attack]. <b>Töten</b>: Erhalte <b>6</b> [rage] und <b>1</b> [burst].",
+        "russian": "<b>+18</b> [attack]. <b>Убийство</b>: получите <b>6</b> [rage] и <b>1</b> [burst].",
+        "portuguese": "<b>+18</b> [attack]. <b>Abate</b>: ganhe <b>6</b> [rage] e <b>1</b> [burst].",
+        "chinese": "<b>+18</b> [attack]. <b>击杀</b>：获得<b>6</b> [rage]和<b>1</b> [burst]。",
+        "spanish": "<b>+18</b> [attack]. <b>Matanza</b>: gana <b>6</b> [rage] y <b>1</b> [burst].",
+        "chinese_traditional": "<b>+18</b> [attack]. <b>擊殺</b>：獲得<b>6</b> [rage]和<b>1</b> [burst]。",
+        "korean": "<b>+18</b> [attack]. <b>처치</b>: <b>6</b> [rage] 및 <b>1</b> [burst] 획득.",
+        "japanese": "<b>+18</b> [attack]. <b>撃破</b>：<b>6</b> [rage]と<b>1</b> [burst]を得る。"
       },
       "icon": "@ReaversMaul",
       "bonus_damage": 18,
@@ -147,7 +282,16 @@
       "id": "NotchedAxeTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] [rage]."
+        "english": "Gain [effect0.status0.power] [rage].",
+        "french": "Gagnez [effect0.status0.power] [rage].",
+        "german": "Erhalte [effect0.status0.power] [rage].",
+        "russian": "Получите [effect0.status0.power] [rage].",
+        "portuguese": "Ganhe [effect0.status0.power] [rage].",
+        "chinese": "获得[effect0.status0.power] [rage]。",
+        "spanish": "Gana [effect0.status0.power] [rage].",
+        "chinese_traditional": "獲得[effect0.status0.power] [rage]。",
+        "korean": "[effect0.status0.power] [rage] 획득.",
+        "japanese": "[effect0.status0.power] [rage]を得る。"
       },
       "effects": [
         "@NotchedAxeTrigEffect"
@@ -157,7 +301,16 @@
       "id": "TwinAxesTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] [rage]."
+        "english": "Gain [effect0.status0.power] [rage].",
+        "french": "Gagnez [effect0.status0.power] [rage].",
+        "german": "Erhalte [effect0.status0.power] [rage].",
+        "russian": "Получите [effect0.status0.power] [rage].",
+        "portuguese": "Ganhe [effect0.status0.power] [rage].",
+        "chinese": "获得[effect0.status0.power] [rage]。",
+        "spanish": "Gana [effect0.status0.power] [rage].",
+        "chinese_traditional": "獲得[effect0.status0.power] [rage]。",
+        "korean": "[effect0.status0.power] [rage] 획득.",
+        "japanese": "[effect0.status0.power] [rage]を得る。"
       },
       "effects": [
         "@TwinAxesTrigEffect"
@@ -167,7 +320,16 @@
       "id": "ReaversMaulTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] [rage] and [effect0.status1.power] [burst]."
+        "english": "Gain [effect0.status0.power] [rage] and [effect0.status1.power] [burst].",
+        "french": "Gagnez [effect0.status0.power] [rage] et [effect0.status1.power] [burst].",
+        "german": "Erhalte [effect0.status0.power] [rage] und [effect0.status1.power] [burst].",
+        "russian": "Получите [effect0.status0.power] [rage] и [effect0.status1.power] [burst].",
+        "portuguese": "Ganhe [effect0.status0.power] [rage] e [effect0.status1.power] [burst].",
+        "chinese": "获得[effect0.status0.power] [rage]和[effect0.status1.power] [burst]。",
+        "spanish": "Gana [effect0.status0.power] [rage] y [effect0.status1.power] [burst].",
+        "chinese_traditional": "獲得[effect0.status0.power] [rage]和[effect0.status1.power] [burst]。",
+        "korean": "[effect0.status0.power] [rage] 및 [effect0.status1.power] [burst] 획득.",
+        "japanese": "[effect0.status0.power] [rage]と[effect0.status1.power] [burst]を得る。"
       },
       "effects": [
         "@ReaversMaulTrigEffect"

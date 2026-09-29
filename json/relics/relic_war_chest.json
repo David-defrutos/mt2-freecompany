@@ -13,17 +13,53 @@
       "id": "WarChest",
       "type": "collectable",
       "names": {
-        "english": "War Chest"
+        "english": "War Chest",
+        "french": "Trésor de guerre",
+        "german": "Kriegskasse",
+        "russian": "Военная казна",
+        "portuguese": "Fundo de Guerra",
+        "chinese": "军费金库",
+        "spanish": "Fondo de guerra",
+        "chinese_traditional": "軍費金庫",
+        "korean": "군자금",
+        "japanese": "軍資金"
       },
       "descriptions": {
-        "english": "Gain <b>99</b> [coin] after each battle."
+        "english": "Gain <b>99</b> [coin] after each battle.",
+        "french": "Gagnez <b>99</b> [coin] après chaque combat.",
+        "german": "Erhalte nach jedem Kampf <b>99</b> [coin].",
+        "russian": "Получите <b>99</b> [coin] после каждого боя.",
+        "portuguese": "Ganhe <b>99</b> [coin] após cada batalha.",
+        "chinese": "每场战斗后获得<b>99</b> [coin]。",
+        "spanish": "Gana <b>99</b> [coin] después de cada combate.",
+        "chinese_traditional": "每場戰鬥後獲得<b>99</b> [coin]。",
+        "korean": "전투가 끝날 때마다 <b>99</b> [coin] 획득.",
+        "japanese": "各戦闘後に<b>99</b> [coin]を得る。"
       },
       "relic_activated_texts": {
-        "english": "Paid on delivery."
+        "english": "Paid on delivery.",
+        "french": "Payé à la livraison.",
+        "german": "Bei Lieferung bezahlt.",
+        "russian": "Заплатили за доставку.",
+        "portuguese": "Pagado com a entrega.",
+        "chinese": "在交货时支付.",
+        "spanish": "Se paga a la entrega.",
+        "chinese_traditional": "交付時付出.",
+        "korean": "배달에 지불합니다.",
+        "japanese": "配達で支払った"
       },
       "lore_tooltips": [
         {
-          "english": "Nobody counts it twice. Nobody dares."
+          "english": "Nobody counts it twice. Nobody dares.",
+          "french": "Personne ne compte deux fois. Personne n'ose.",
+          "german": "Niemand zählt es zweimal. Niemand wagt es.",
+          "russian": "Никто не подсчитывает дважды. Никто не смеет.",
+          "portuguese": "Ninguém conta duas vezes. Ninguém se atreve.",
+          "chinese": "没有人会两次计算. 没有人敢.",
+          "spanish": "Nadie lo cuenta dos veces. Nadie se atreve.",
+          "chinese_traditional": "沒有人會計二次. 沒有人敢.",
+          "korean": "아무도 두 번 계산하지 않습니다. 아무도 용기가 없습니다.",
+          "japanese": "誰も2回数えない 誰も敢えてない"
         }
       ],
       "lore_style": "herzal",

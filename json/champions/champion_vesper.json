@@ -4,7 +4,16 @@
     {
       "id": "SpawnVesper",
       "names": {
-        "english": "Vesper"
+        "english": "Vesper",
+        "french": "Vesper",
+        "german": "Vesper",
+        "russian": "Vesper",
+        "portuguese": "Vesper",
+        "chinese": "Vesper",
+        "spanish": "Vesper",
+        "chinese_traditional": "Vesper",
+        "korean": "Vesper",
+        "japanese": "Vesper"
       },
       "card_art": "@Vesper",
       "cost": 0,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Charges by the hour. Collects in advance."
+          "english": "Charges by the hour. Collects in advance.",
+          "french": "Les frais par heure. Il collecte à l'avance.",
+          "german": "Gebühren pro Stunde. Sammeln Sie im Voraus.",
+          "russian": "Взимается по часам. Собирает заранее.",
+          "portuguese": "Cargas por hora. Coleta com antecedência.",
+          "chinese": "每个小时的费用. 提前收藏.",
+          "spanish": "Cobra por horas. Y por adelantado.",
+          "chinese_traditional": "按每小時收費. 提前收藏.",
+          "korean": "시간당 충전 미리 수집합니다.",
+          "japanese": "時給で充電する 前もって収集する"
         }
       ]
     }
@@ -27,7 +45,16 @@
     {
       "id": "Vesper",
       "names": {
-        "english": "Vesper"
+        "english": "Vesper",
+        "french": "Vesper",
+        "german": "Vesper",
+        "russian": "Vesper",
+        "portuguese": "Vesper",
+        "chinese": "Vesper",
+        "spanish": "Vesper",
+        "chinese_traditional": "Vesper",
+        "korean": "Vesper",
+        "japanese": "Vesper"
       },
       "character_art": "@VesperCharacterArt",
       "chatter": "@CTR_Vesper",
@@ -204,27 +231,90 @@
       "gender": "female",
       "added_expressions": [
         {
-          "english": "Terms agreed."
+          "english": "Terms agreed.",
+          "french": "Les conditions sont convenues.",
+          "german": "Die Bedingungen sind vereinbart.",
+          "russian": "Условия согласованы.",
+          "portuguese": "Os termos concordaram.",
+          "chinese": "条件一致.",
+          "spanish": "Condiciones acordadas.",
+          "chinese_traditional": "我們同意了條件.",
+          "korean": "합의된 조건입니다.",
+          "japanese": "条件が一致した"
         },
         {
-          "english": "Mind the blast radius."
+          "english": "Mind the blast radius.",
+          "french": "Attention au rayon d'explosion.",
+          "german": "Achten Sie auf den Explosionsradius.",
+          "russian": "Осторожно с радиусом взрыва.",
+          "portuguese": "Cuidado com o raio da explosão.",
+          "chinese": "注意爆炸射线.",
+          "spanish": "Cuidado con el radio de explosión.",
+          "chinese_traditional": "請注意爆炸射線.",
+          "korean": "폭발 반경에 주의하세요.",
+          "japanese": "爆発の半径に注意する"
         },
         {
-          "english": "I bill by the hour."
+          "english": "I bill by the hour.",
+          "french": "Je facture par heure.",
+          "german": "Ich zahle pro Stunde.",
+          "russian": "Я считываю по часам.",
+          "portuguese": "Eu fico a pagar por hora.",
+          "chinese": "我每小时收费.",
+          "spanish": "Facturo por horas.",
+          "chinese_traditional": "我每小時收費.",
+          "korean": "시간당 청구합니다.",
+          "japanese": "時計で請求する."
         }
       ],
       "idle_expressions": [
         {
-          "english": "Do not stand in front of me."
+          "english": "Do not stand in front of me.",
+          "french": "Ne vous arrêtez pas devant moi.",
+          "german": "Steh nicht vor mir.",
+          "russian": "Не стойте перед мной.",
+          "portuguese": "Não fiques à minha frente.",
+          "chinese": "不要站在我的面前.",
+          "spanish": "No te pongas delante de mí.",
+          "chinese_traditional": "不要站在我的面前.",
+          "korean": "내 앞에 서서는 안 돼",
+          "japanese": "私の前に立ってはいけない."
         },
         {
-          "english": "Expenses are extra."
+          "english": "Expenses are extra.",
+          "french": "Les dépenses sont supplémentaires.",
+          "german": "Die Kosten sind zusätzlich.",
+          "russian": "Расходы дополнительные.",
+          "portuguese": "As despesas são extras.",
+          "chinese": "费用是额外的.",
+          "spanish": "Los gastos van aparte.",
+          "chinese_traditional": "費用是額外的.",
+          "korean": "비용은 추가입니다.",
+          "japanese": "費用は額外です"
         },
         {
-          "english": "I read the contract. Did you?"
+          "english": "I read the contract. Did you?",
+          "french": "J'ai lu le contrat. Vous l'avez fait ?",
+          "german": "Ich habe den Vertrag gelesen. Haben Sie?",
+          "russian": "Я прочитал контракт. - Ты так и сделал?",
+          "portuguese": "Li o contrato. - É verdade?",
+          "chinese": "我读了合同. 你做了吗?",
+          "spanish": "Yo he leído el contrato. ¿Y tú?",
+          "chinese_traditional": "我閱讀了這個合同. 你是這樣的嗎?",
+          "korean": "계약서를 읽었어요 그래요?",
+          "japanese": "契約書を読んだ やったのか?"
         },
         {
-          "english": "Hold still."
+          "english": "Hold still.",
+          "french": "Ne bouge pas.",
+          "german": "Halten Sie sich still.",
+          "russian": "Держись неподвижно.",
+          "portuguese": "Mantenha-se quieto.",
+          "chinese": "停下来吧.",
+          "spanish": "No te muevas.",
+          "chinese_traditional": "保持靜止.",
+          "korean": "가만히 있어",
+          "japanese": "黙ってろ"
         }
       ]
     }

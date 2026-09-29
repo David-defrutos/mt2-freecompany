@@ -4,10 +4,28 @@
     {
       "id": "Caltrops",
       "names": {
-        "english": "Caltrops"
+        "english": "Caltrops",
+        "french": "Chausse-trappes",
+        "german": "Krähenfüße",
+        "russian": "Колючки",
+        "portuguese": "Estrepes",
+        "chinese": "铁蒺藜",
+        "spanish": "Abrojos",
+        "chinese_traditional": "鐵蒺藜",
+        "korean": "마름쇠",
+        "japanese": "撒菱"
       },
       "descriptions": {
-        "english": "Enemies on this floor have <b>2</b> [decay]."
+        "english": "Enemies on this floor have <b>2</b> [decay].",
+        "french": "Les ennemis de cet étage ont <b>2</b> [decay].",
+        "german": "Gegner auf diesem Stockwerk haben <b>2</b> [decay].",
+        "russian": "Враги на этом этаже имеют <b>2</b> [decay].",
+        "portuguese": "Os inimigos neste andar têm <b>2</b> [decay].",
+        "chinese": "本层敌人拥有<b>2</b> [decay]。",
+        "spanish": "Los enemigos de este piso tienen <b>2</b> [decay].",
+        "chinese_traditional": "本層敵人擁有<b>2</b> [decay]。",
+        "korean": "이 층의 적은 <b>2</b> [decay] 보유.",
+        "japanese": "この階の敵は<b>2</b> [decay]を持つ。"
       },
       "card_art": "@Caltrops",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Cheap, and it never stops working."
+          "english": "Cheap, and it never stops working.",
+          "french": "C'est bon marché et ça ne cesse jamais de fonctionner.",
+          "german": "Billig und funktioniert nie.",
+          "russian": "Дешевый, и он никогда не перестает работать.",
+          "portuguese": "É barato e nunca deixa de funcionar.",
+          "chinese": "价格便宜,它永远不会停止工作.",
+          "spanish": "Barato y nunca deja de funcionar.",
+          "chinese_traditional": "價格便宜, 它永遠不會停止運作.",
+          "korean": "값싸고, 절대 작동하지 않습니다.",
+          "japanese": "低価格で 効き目がない"
         }
       ],
       "pools": [
@@ -36,10 +63,28 @@
     {
       "id": "CaltropsRoomUpgrade",
       "titles": {
-        "english": "Caltrops"
+        "english": "Caltrops",
+        "french": "Chausse-trappes",
+        "german": "Krähenfüße",
+        "russian": "Колючки",
+        "portuguese": "Estrepes",
+        "chinese": "铁蒺藜",
+        "spanish": "Abrojos",
+        "chinese_traditional": "鐵蒺藜",
+        "korean": "마름쇠",
+        "japanese": "撒菱"
       },
       "descriptions": {
-        "english": "Enemies on this floor have <b>2</b> [decay]."
+        "english": "Enemies on this floor have <b>2</b> [decay].",
+        "french": "Les ennemis de cet étage ont <b>2</b> [decay].",
+        "german": "Gegner auf diesem Stockwerk haben <b>2</b> [decay].",
+        "russian": "Враги на этом этаже имеют <b>2</b> [decay].",
+        "portuguese": "Os inimigos neste andar têm <b>2</b> [decay].",
+        "chinese": "本层敌人拥有<b>2</b> [decay]。",
+        "spanish": "Los enemigos de este piso tienen <b>2</b> [decay].",
+        "chinese_traditional": "本層敵人擁有<b>2</b> [decay]。",
+        "korean": "이 층의 적은 <b>2</b> [decay] 보유.",
+        "japanese": "この階の敵は<b>2</b> [decay]を持つ。"
       },
       "status_effect_upgrades": [
         {

@@ -4,10 +4,28 @@
     {
       "id": "SpoilsOfWar",
       "names": {
-        "english": "Spoils of War"
+        "english": "Spoils of War",
+        "french": "Butin de guerre",
+        "german": "Kriegsbeute",
+        "russian": "Военные трофеи",
+        "portuguese": "Espólios de Guerra",
+        "chinese": "战利品",
+        "spanish": "Botín de guerra",
+        "chinese_traditional": "戰利品",
+        "korean": "전리품",
+        "japanese": "戦利品"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [avarice] to all friendly units on this floor."
+        "english": "Apply [effect0.status0.power] [avarice] to all friendly units on this floor.",
+        "french": "Appliquez [effect0.status0.power] [avarice] à toutes les unités alliées de cet étage.",
+        "german": "Verleihe allen verbündeten Einheiten auf diesem Stockwerk [effect0.status0.power] [avarice].",
+        "russian": "Наложите [effect0.status0.power] [avarice] на все союзные боевые единицы на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [avarice] a todas as unidades aliadas neste andar.",
+        "chinese": "对本层所有友方单位施加[effect0.status0.power] [avarice]。",
+        "spanish": "Aplica [effect0.status0.power] [avarice] a todas las unidades aliadas de este piso.",
+        "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [avarice]。",
+        "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [avarice] 부여.",
+        "japanese": "この階の味方ユニット全体に[effect0.status0.power] [avarice]を付与。"
       },
       "card_art": "@SpoilsOfWar",
       "cost": 2,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Everyone counts their own."
+          "english": "Everyone counts their own.",
+          "french": "Chacun compte les siens.",
+          "german": "Jeder zählt seinen eigenen.",
+          "russian": "Каждый считает свой.",
+          "portuguese": "Todos contam os seus.",
+          "chinese": "每个人都算自己.",
+          "spanish": "Cada cual cuenta lo suyo.",
+          "chinese_traditional": "每個人都算是自己的.",
+          "korean": "모든 사람이 자신의 것으로 간주됩니다.",
+          "japanese": "誰でも自分のことを数える"
         }
       ]
     }

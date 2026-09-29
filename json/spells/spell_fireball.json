@@ -4,10 +4,28 @@
     {
       "id": "Fireball",
       "names": {
-        "english": "Fireball"
+        "english": "Fireball",
+        "french": "Boule de feu",
+        "german": "Feuerball",
+        "russian": "Огненный шар",
+        "portuguese": "Bola de Fogo",
+        "chinese": "火球术",
+        "spanish": "Bola de fuego",
+        "chinese_traditional": "火球術",
+        "korean": "화염구",
+        "japanese": "ファイアボール"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to all enemies on this floor, then <b>Shuffle</b> them."
+        "english": "Deal [effect0.power] damage to all enemies on this floor, then <b>Shuffle</b> them.",
+        "french": "Infligez [effect0.power] dégâts à tous les ennemis de cet étage, puis <b>Mélanger</b> leurs positions.",
+        "german": "Füge allen Gegnern auf diesem Stockwerk [effect0.power] Schaden zu und <b>Mischen</b> dann ihre Positionen.",
+        "russian": "Нанесите [effect0.power] урона всем врагам на этом этаже, затем <b>Перемешать</b> их позиции.",
+        "portuguese": "Cause [effect0.power] de dano a todos os inimigos neste andar e depois <b>Embaralhar</b> suas posições.",
+        "chinese": "对本层所有敌人造成[effect0.power]点伤害，然后<b>打乱</b>其位置。",
+        "spanish": "Inflige [effect0.power] de daño a todos los enemigos de este piso y luego <b>Barajar</b> sus posiciones.",
+        "chinese_traditional": "對本層所有敵人造成[effect0.power]點傷害，然後<b>打亂</b>其位置。",
+        "korean": "이 층의 모든 적에게 [effect0.power] 피해를 가한 뒤 위치를 <b>섞기</b>.",
+        "japanese": "この階の敵全体に[effect0.power]ダメージを与え、位置を<b>シャッフル</b>。"
       },
       "card_art": "@Fireball",
       "cost": 3,
@@ -25,7 +43,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Vesper did warn you about the blast radius."
+          "english": "Vesper did warn you about the blast radius.",
+          "french": "Vesper vous a prévenu du rayon de l'explosion.",
+          "german": "Vesper warnte Sie vor dem Explosionsradius.",
+          "russian": "Вепер предупредил вас о радиусе взрыва.",
+          "portuguese": "O Vesper avisou-te sobre o raio da explosão.",
+          "chinese": "韦斯珀确实警告了你关于爆炸射线.",
+          "spanish": "Vesper te avisó del radio de explosión.",
+          "chinese_traditional": "維斯珀確實警告你爆炸射線.",
+          "korean": "베스퍼는 폭발 반경에 대해 경고했지",
+          "japanese": "ヴェスペルは 爆発の半径を警告した"
         }
       ],
       "pools": [

@@ -4,10 +4,28 @@
     {
       "id": "MassHoldPerson",
       "names": {
-        "english": "Mass Hold Person"
+        "english": "Mass Hold Person",
+        "french": "Immobilisation de groupe",
+        "german": "Massenlähmung",
+        "russian": "Массовое удержание",
+        "portuguese": "Imobilização em Massa",
+        "chinese": "群体定身术",
+        "spanish": "Inmovilización en masa",
+        "chinese_traditional": "群體定身術",
+        "korean": "집단 포박",
+        "japanese": "集団金縛り"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [dazed] to all enemies on this floor."
+        "english": "Apply [effect0.status0.power] [dazed] to all enemies on this floor.",
+        "french": "Appliquez [effect0.status0.power] [dazed] à tous les ennemis de cet étage.",
+        "german": "Verleihe allen Gegnern auf diesem Stockwerk [effect0.status0.power] [dazed].",
+        "russian": "Наложите [effect0.status0.power] [dazed] на всех врагов на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [dazed] a todos os inimigos neste andar.",
+        "chinese": "对本层所有敌人施加[effect0.status0.power] [dazed]。",
+        "spanish": "Aplica [effect0.status0.power] [dazed] a todos los enemigos de este piso.",
+        "chinese_traditional": "對本層所有敵人施加[effect0.status0.power] [dazed]。",
+        "korean": "이 층의 모든 적에게 [effect0.status0.power] [dazed] 부여.",
+        "japanese": "この階の敵全体に[effect0.status0.power] [dazed]を付与。"
       },
       "card_art": "@MassHoldPerson",
       "cost": 4,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Nobody moves. Nobody pays."
+          "english": "Nobody moves. Nobody pays.",
+          "french": "Personne ne bouge. Personne ne paie.",
+          "german": "Niemand bewegt sich. Niemand zahlt.",
+          "russian": "Никто не двигается. Никто не платит.",
+          "portuguese": "Ninguém se mexe. Ninguém paga.",
+          "chinese": "没有人移动. 没有人付钱.",
+          "spanish": "Nadie se mueve. Nadie paga.",
+          "chinese_traditional": "沒有人移動. 沒有人會付錢.",
+          "korean": "아무도 움직이지 않아요 아무도 지불하지 않습니다.",
+          "japanese": "誰も動かない 誰も払わない"
         }
       ],
       "pools": [

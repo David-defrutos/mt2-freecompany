@@ -4,10 +4,28 @@
     {
       "id": "RopeAndGrapple",
       "names": {
-        "english": "Rope & Grapple"
+        "english": "Rope & Grapple",
+        "french": "Corde et grappin",
+        "german": "Seil und Enterhaken",
+        "russian": "Верёвка и крюк",
+        "portuguese": "Corda e Gancho",
+        "chinese": "绳索与抓钩",
+        "spanish": "Cuerda y garfio",
+        "chinese_traditional": "繩索與抓鉤",
+        "korean": "밧줄과 갈고리",
+        "japanese": "縄と鉤"
       },
       "descriptions": {
-        "english": "After combat, friendly units on this floor climb to the floor above."
+        "english": "After combat, friendly units on this floor climb to the floor above.",
+        "french": "Après le combat, les unités alliées de cet étage montent à l’étage supérieur.",
+        "german": "Nach dem Kampf steigen verbündete Einheiten auf diesem Stockwerk ein Stockwerk nach oben.",
+        "russian": "После боя союзные боевые единицы на этом этаже поднимаются на этаж выше.",
+        "portuguese": "Após o combate, as unidades aliadas neste andar sobem para o andar acima.",
+        "chinese": "战斗后，本层友方单位上移一层。",
+        "spanish": "Después del combate, las unidades aliadas de este piso suben al piso superior.",
+        "chinese_traditional": "戰鬥後，本層友方單位上移一層。",
+        "korean": "전투 후 이 층의 아군 유닛이 위층으로 이동.",
+        "japanese": "戦闘後、この階の味方ユニットは1階上へ移動。"
       },
       "card_art": "@RopeAndGrapple",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Up you go."
+          "english": "Up you go.",
+          "french": "Allez vous en haut.",
+          "german": "Aufsteigen Sie.",
+          "russian": "Поднимитесь.",
+          "portuguese": "Levanta-te.",
+          "chinese": "你上去.",
+          "spanish": "Arriba vas.",
+          "chinese_traditional": "請您繼續閱讀更多內容",
+          "korean": "올라와",
+          "japanese": "上がって"
         }
       ],
       "pools": [
@@ -36,10 +63,28 @@
     {
       "id": "RopeAndGrappleRoomUpgrade",
       "titles": {
-        "english": "Rope & Grapple"
+        "english": "Rope & Grapple",
+        "french": "Corde et grappin",
+        "german": "Seil und Enterhaken",
+        "russian": "Верёвка и крюк",
+        "portuguese": "Corda e Gancho",
+        "chinese": "绳索与抓钩",
+        "spanish": "Cuerda y garfio",
+        "chinese_traditional": "繩索與抓鉤",
+        "korean": "밧줄과 갈고리",
+        "japanese": "縄と鉤"
       },
       "descriptions": {
-        "english": "After combat, friendly units on this floor climb to the floor above."
+        "english": "After combat, friendly units on this floor climb to the floor above.",
+        "french": "Après le combat, les unités alliées de cet étage montent à l’étage supérieur.",
+        "german": "Nach dem Kampf steigen verbündete Einheiten auf diesem Stockwerk ein Stockwerk nach oben.",
+        "russian": "После боя союзные боевые единицы на этом этаже поднимаются на этаж выше.",
+        "portuguese": "Após o combate, as unidades aliadas neste andar sobem para o andar acima.",
+        "chinese": "战斗后，本层友方单位上移一层。",
+        "spanish": "Después del combate, las unidades aliadas de este piso suben al piso superior.",
+        "chinese_traditional": "戰鬥後，本層友方單位上移一層。",
+        "korean": "전투 후 이 층의 아군 유닛이 위층으로 이동.",
+        "japanese": "戦闘後、この階の味方ユニットは1階上へ移動。"
       },
       "trigger_upgrades": [
         "@RopeAndGrappleClimbTrigger"
@@ -71,7 +116,16 @@
       "id": "RopeAndGrappleClimbTrigger",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "Climb to the floor above."
+        "english": "Climb to the floor above.",
+        "french": "Monte à l’étage supérieur.",
+        "german": "Steigt ein Stockwerk nach oben.",
+        "russian": "Поднимается на этаж выше.",
+        "portuguese": "Sobe para o andar acima.",
+        "chinese": "上移一层。",
+        "spanish": "Sube al piso superior.",
+        "chinese_traditional": "上移一層。",
+        "korean": "위층으로 이동.",
+        "japanese": "1階上へ移動。"
       },
       "effects": [
         "@RopeAndGrappleClimb"

@@ -4,10 +4,28 @@
     {
       "id": "Watchtower",
       "names": {
-        "english": "Watchtower"
+        "english": "Watchtower",
+        "french": "Tour de guet",
+        "german": "Wachturm",
+        "russian": "Сторожевая башня",
+        "portuguese": "Torre de Vigia",
+        "chinese": "瞭望塔",
+        "spanish": "Atalaya",
+        "chinese_traditional": "瞭望塔",
+        "korean": "망루",
+        "japanese": "見張り塔"
       },
       "descriptions": {
-        "english": "Friendly units on this floor have <b>Sniper</b>."
+        "english": "Friendly units on this floor have <b>Sniper</b>.",
+        "french": "Les unités alliées de cet étage ont <b>Tireur d’élite</b>.",
+        "german": "Verbündete Einheiten auf diesem Stockwerk haben <b>Scharfschütze</b>.",
+        "russian": "Союзные боевые единицы на этом этаже имеют <b>Снайпер</b>.",
+        "portuguese": "As unidades aliadas neste andar têm <b>Atirador de Elite</b>.",
+        "chinese": "本层友方单位拥有<b>狙击</b>。",
+        "spanish": "Las unidades aliadas de este piso tienen <b>Francotirador</b>.",
+        "chinese_traditional": "本層友方單位擁有<b>狙擊</b>。",
+        "korean": "이 층의 아군 유닛은 <b>저격</b> 보유.",
+        "japanese": "この階の味方ユニットは<b>狙撃</b>を持つ。"
       },
       "card_art": "@Watchtower",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Shoot the one giving orders."
+          "english": "Shoot the one giving orders.",
+          "french": "Tire celui qui donne les ordres.",
+          "german": "Schießen Sie den, der Befehle gibt.",
+          "russian": "Стреляй в того, кто отдает приказы.",
+          "portuguese": "Atira no que dá ordens.",
+          "chinese": "射击命令的人.",
+          "spanish": "Dispara al que da las órdenes.",
+          "chinese_traditional": "射擊命令的人.",
+          "korean": "명령을 내리는 놈을 쏴",
+          "japanese": "命令を与える人を撃つ"
         }
       ],
       "pools": [
@@ -36,10 +63,28 @@
     {
       "id": "WatchtowerRoomUpgrade",
       "titles": {
-        "english": "Watchtower"
+        "english": "Watchtower",
+        "french": "Tour de guet",
+        "german": "Wachturm",
+        "russian": "Сторожевая башня",
+        "portuguese": "Torre de Vigia",
+        "chinese": "瞭望塔",
+        "spanish": "Atalaya",
+        "chinese_traditional": "瞭望塔",
+        "korean": "망루",
+        "japanese": "見張り塔"
       },
       "descriptions": {
-        "english": "Friendly units on this floor have <b>Sniper</b>."
+        "english": "Friendly units on this floor have <b>Sniper</b>.",
+        "french": "Les unités alliées de cet étage ont <b>Tireur d’élite</b>.",
+        "german": "Verbündete Einheiten auf diesem Stockwerk haben <b>Scharfschütze</b>.",
+        "russian": "Союзные боевые единицы на этом этаже имеют <b>Снайпер</b>.",
+        "portuguese": "As unidades aliadas neste andar têm <b>Atirador de Elite</b>.",
+        "chinese": "本层友方单位拥有<b>狙击</b>。",
+        "spanish": "Las unidades aliadas de este piso tienen <b>Francotirador</b>.",
+        "chinese_traditional": "本層友方單位擁有<b>狙擊</b>。",
+        "korean": "이 층의 아군 유닛은 <b>저격</b> 보유.",
+        "japanese": "この階の味方ユニットは<b>狙撃</b>を持つ。"
       },
       "status_effect_upgrades": [
         {

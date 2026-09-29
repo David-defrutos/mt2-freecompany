@@ -4,7 +4,16 @@
     {
       "id": "SpawnFreeLance",
       "names": {
-        "english": "Free Lance"
+        "english": "Free Lance",
+        "french": "Lance libre",
+        "german": "Freie Lanze",
+        "russian": "Вольное копьё",
+        "portuguese": "Lança Livre",
+        "chinese": "自由枪兵",
+        "spanish": "Lanza libre",
+        "chinese_traditional": "自由槍兵",
+        "korean": "자유 창병",
+        "japanese": "自由槍兵"
       },
       "card_art": "@FreeLance",
       "cost": 1,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Cheapest steel that still holds a line."
+          "english": "Cheapest steel that still holds a line.",
+          "french": "L'acier le moins cher qui tient encore une ligne.",
+          "german": "Der billigste Stahl, der noch eine Linie hält.",
+          "russian": "Самая дешевая сталь, которая все еще держит линию.",
+          "portuguese": "O aço mais barato que ainda mantém uma linha.",
+          "chinese": "最便宜的钢铁,仍然有线.",
+          "spanish": "El acero más barato que aún aguanta la línea.",
+          "chinese_traditional": "這是最便宜的鋼材,",
+          "korean": "가장 저렴한 강철은 여전히 선을 유지하고 있습니다.",
+          "japanese": "最も安価な鋼で ラインを保持している"
         }
       ]
     }
@@ -27,7 +45,16 @@
     {
       "id": "FreeLance",
       "names": {
-        "english": "Free Lance"
+        "english": "Free Lance",
+        "french": "Lance libre",
+        "german": "Freie Lanze",
+        "russian": "Вольное копьё",
+        "portuguese": "Lança Livre",
+        "chinese": "自由枪兵",
+        "spanish": "Lanza libre",
+        "chinese_traditional": "自由槍兵",
+        "korean": "자유 창병",
+        "japanese": "自由槍兵"
       },
       "character_art": "@FreeLanceCharacterArt",
       "size": 1,
@@ -70,7 +97,16 @@
       "id": "FreeLanceTrigger",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to itself."
+        "english": "Apply [effect0.status0.power] [armor] to itself.",
+        "french": "S’applique [effect0.status0.power] [armor].",
+        "german": "Erhält selbst [effect0.status0.power] [armor].",
+        "russian": "Накладывает на себя [effect0.status0.power] [armor].",
+        "portuguese": "Aplica [effect0.status0.power] [armor] a si mesma.",
+        "chinese": "对自身施加[effect0.status0.power] [armor]。",
+        "spanish": "Se aplica [effect0.status0.power] [armor].",
+        "chinese_traditional": "對自身施加[effect0.status0.power] [armor]。",
+        "korean": "자신에게 [effect0.status0.power] [armor] 부여.",
+        "japanese": "自身に[effect0.status0.power] [armor]を付与。"
       },
       "effects": [
         "@FreeLanceAbility"

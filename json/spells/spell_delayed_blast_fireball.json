@@ -4,10 +4,28 @@
     {
       "id": "DelayedBlastFireball",
       "names": {
-        "english": "Delayed Blast Fireball"
+        "english": "Delayed Blast Fireball",
+        "french": "Boule de feu à retardement",
+        "german": "Verzögerter Feuerball",
+        "russian": "Огненный шар замедленного действия",
+        "portuguese": "Bola de Fogo Retardada",
+        "chinese": "延迟爆裂火球",
+        "spanish": "Bola de fuego retardada",
+        "chinese_traditional": "延遲爆裂火球",
+        "korean": "지연 폭발 화염구",
+        "japanese": "遅延爆発ファイアボール"
       },
       "descriptions": {
-        "english": "Apply <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] to an enemy. When it runs out, deal <b>[effect0.power]</b> damage to it."
+        "english": "Apply <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] to an enemy. When it runs out, deal <b>[effect0.power]</b> damage to it.",
+        "french": "Appliquez <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] à un ennemi. Lorsque les charges sont épuisées, il subit <b>[effect0.power]</b> dégâts.",
+        "german": "Verleihe einem Gegner <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse]. Wenn die Stapel aufgebraucht sind, erleidet er <b>[effect0.power]</b> Schaden.",
+        "russian": "Наложите на врага <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse]. Когда заряды закончатся, нанесите ему <b>[effect0.power]</b> урона.",
+        "portuguese": "Aplique <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] a um inimigo. Quando as cargas acabarem, ele sofre <b>[effect0.power]</b> de dano.",
+        "chinese": "对一个敌人施加<b>[effect0.status0.power]</b>层[mt2_freecompany.Plugin_fuse]。层数耗尽时，对其造成<b>[effect0.power]</b>点伤害。",
+        "spanish": "Aplica <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] a un enemigo. Cuando se agote, le inflige <b>[effect0.power]</b> de daño.",
+        "chinese_traditional": "對一個敵人施加<b>[effect0.status0.power]</b>層[mt2_freecompany.Plugin_fuse]。層數耗盡時，對其造成<b>[effect0.power]</b>點傷害。",
+        "korean": "적 하나에게 <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] 부여. 중첩이 소진되면 <b>[effect0.power]</b> 피해를 가함.",
+        "japanese": "敵1体に<b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse]を付与。スタックが尽きると、その敵に<b>[effect0.power]</b>ダメージを与える。"
       },
       "card_art": "@DelayedBlastFireball",
       "cost": 2,
@@ -22,7 +40,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Count with me."
+          "english": "Count with me.",
+          "french": "Compte avec moi.",
+          "german": "Zählen Sie mit mir.",
+          "russian": "Считай со мной.",
+          "portuguese": "Contem comigo.",
+          "chinese": "加入我.",
+          "spanish": "Cuenta conmigo.",
+          "chinese_traditional": "請與我一起計算.",
+          "korean": "나와 함께 계산해봐",
+          "japanese": "一緒に数える"
         }
       ],
       "pools": [

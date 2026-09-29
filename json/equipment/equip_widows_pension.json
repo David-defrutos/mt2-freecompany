@@ -4,10 +4,28 @@
     {
       "id": "WidowsPension",
       "names": {
-        "english": "Widow's Pension"
+        "english": "Widow's Pension",
+        "french": "Pension de veuve",
+        "german": "Witwenrente",
+        "russian": "Пенсия вдовы",
+        "portuguese": "Pensão da Viúva",
+        "chinese": "遗孀抚恤金",
+        "spanish": "Pensión de viudedad",
+        "chinese_traditional": "遺孀撫卹金",
+        "korean": "미망인 연금",
+        "japanese": "未亡人の年金"
       },
       "descriptions": {
-        "english": "<b>Extinguish</b>: gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>. Once per battle."
+        "english": "<b>Extinguish</b>: gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>. Once per battle.",
+        "french": "<b>Extinction</b> : gagnez autant de [coin] que les [attack] + [health] de base de cette unité, améliorations incluses, arrondis à <b>5</b>. Une fois par combat.",
+        "german": "<b>Erlöschen</b>: Erhalte [coin] in Höhe der Basiswerte [attack] + [health] dieser Einheit einschließlich Verbesserungen, auf <b>5</b> gerundet. Einmal pro Kampf.",
+        "russian": "<b>Угасание</b>: получите [coin], равные базовым [attack] + [health] этой боевой единицы с учётом улучшений, с округлением до <b>5</b>. Один раз за бой.",
+        "portuguese": "<b>Extinção</b>: ganhe [coin] igual à [attack] + [health] base desta unidade, incluindo melhorias, arredondado para <b>5</b>. Uma vez por batalha.",
+        "chinese": "<b>熄灭</b>：获得等于此单位基础[attack] + [health]的[coin]，包含升级，按<b>5</b>取整。每场战斗一次。",
+        "spanish": "<b>Extinción</b>: gana [coin] igual a la [attack] + [health] base de esta unidad, incluidas las mejoras, redondeado a <b>5</b>. Una vez por combate.",
+        "chinese_traditional": "<b>熄滅</b>：獲得等於此單位基礎[attack] + [health]的[coin]，包含升級，按<b>5</b>取整。每場戰鬥一次。",
+        "korean": "<b>소멸</b>: 업그레이드를 포함한 이 유닛의 기본 [attack] + [health]만큼 [coin] 획득. <b>5</b> 단위로 반올림. 전투당 1회.",
+        "japanese": "<b>消滅</b>：強化を含むこのユニットの基礎[attack] + [health]と同量の[coin]を得る。<b>5</b>単位で丸める。戦闘ごとに1回。"
       },
       "card_art": "@WidowsPension",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "The company does not lose a place in the line. Only a name."
+          "english": "The company does not lose a place in the line. Only a name.",
+          "french": "L'entreprise ne perd pas une place dans la ligne. C'est juste un nom.",
+          "german": "Das Unternehmen verliert keinen Platz in der Reihe. Nur ein Name.",
+          "russian": "Компания не теряет места в очереди. Только имя.",
+          "portuguese": "A empresa não perde um lugar na fila. Só um nome.",
+          "chinese": "公司不会失去一席之地. 只是一个名字.",
+          "spanish": "La compañía no pierde un puesto en la línea. Solo un nombre.",
+          "chinese_traditional": "這家公司並沒有失去一席之地. 只是一個名字.",
+          "korean": "회사는 선에서 자리를 잃지 않습니다. 이름만",
+          "japanese": "会社はその場を失わない. 名前だけ"
         }
       ],
       "pools": [
@@ -50,10 +77,28 @@
     {
       "id": "UpgWidowsPension",
       "titles": {
-        "english": "Widow's Pension"
+        "english": "Widow's Pension",
+        "french": "Pension de veuve",
+        "german": "Witwenrente",
+        "russian": "Пенсия вдовы",
+        "portuguese": "Pensão da Viúva",
+        "chinese": "遗孀抚恤金",
+        "spanish": "Pensión de viudedad",
+        "chinese_traditional": "遺孀撫卹金",
+        "korean": "미망인 연금",
+        "japanese": "未亡人の年金"
       },
       "descriptions": {
-        "english": "<b>Extinguish</b>: gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>. Once per battle."
+        "english": "<b>Extinguish</b>: gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>. Once per battle.",
+        "french": "<b>Extinction</b> : gagnez autant de [coin] que les [attack] + [health] de base de cette unité, améliorations incluses, arrondis à <b>5</b>. Une fois par combat.",
+        "german": "<b>Erlöschen</b>: Erhalte [coin] in Höhe der Basiswerte [attack] + [health] dieser Einheit einschließlich Verbesserungen, auf <b>5</b> gerundet. Einmal pro Kampf.",
+        "russian": "<b>Угасание</b>: получите [coin], равные базовым [attack] + [health] этой боевой единицы с учётом улучшений, с округлением до <b>5</b>. Один раз за бой.",
+        "portuguese": "<b>Extinção</b>: ganhe [coin] igual à [attack] + [health] base desta unidade, incluindo melhorias, arredondado para <b>5</b>. Uma vez por batalha.",
+        "chinese": "<b>熄灭</b>：获得等于此单位基础[attack] + [health]的[coin]，包含升级，按<b>5</b>取整。每场战斗一次。",
+        "spanish": "<b>Extinción</b>: gana [coin] igual a la [attack] + [health] base de esta unidad, incluidas las mejoras, redondeado a <b>5</b>. Una vez por combate.",
+        "chinese_traditional": "<b>熄滅</b>：獲得等於此單位基礎[attack] + [health]的[coin]，包含升級，按<b>5</b>取整。每場戰鬥一次。",
+        "korean": "<b>소멸</b>: 업그레이드를 포함한 이 유닛의 기본 [attack] + [health]만큼 [coin] 획득. <b>5</b> 단위로 반올림. 전투당 1회.",
+        "japanese": "<b>消滅</b>：強化を含むこのユニットの基礎[attack] + [health]と同量の[coin]を得る。<b>5</b>単位で丸める。戦闘ごとに1回。"
       },
       "icon": "@WidowsPension",
       "trigger_upgrades": [
@@ -66,7 +111,16 @@
       "id": "WidowsPensionTrigger",
       "trigger": "on_death",
       "descriptions": {
-        "english": "Gain [coin] equal to this unit's base [attack] + [health], rounded to <b>5</b>. Once per battle."
+        "english": "Gain [coin] equal to this unit's base [attack] + [health], rounded to <b>5</b>. Once per battle.",
+        "french": "Gagnez autant de [coin] que les [attack] + [health] de base de cette unité, arrondis à <b>5</b>. Une fois par combat.",
+        "german": "Erhalte [coin] in Höhe der Basiswerte [attack] + [health] dieser Einheit, auf <b>5</b> gerundet. Einmal pro Kampf.",
+        "russian": "Получите [coin], равные базовым [attack] + [health] этой боевой единицы, с округлением до <b>5</b>. Один раз за бой.",
+        "portuguese": "Ganhe [coin] igual à [attack] + [health] base desta unidade, arredondado para <b>5</b>. Uma vez por batalha.",
+        "chinese": "获得等于此单位基础[attack] + [health]的[coin]，按<b>5</b>取整。每场战斗一次。",
+        "spanish": "Gana [coin] igual a la [attack] + [health] base de esta unidad, redondeado a <b>5</b>. Una vez por combate.",
+        "chinese_traditional": "獲得等於此單位基礎[attack] + [health]的[coin]，按<b>5</b>取整。每場戰鬥一次。",
+        "korean": "이 유닛의 기본 [attack] + [health]만큼 [coin] 획득. <b>5</b> 단위로 반올림. 전투당 1회.",
+        "japanese": "このユニットの基礎[attack] + [health]と同量の[coin]を得る。<b>5</b>単位で丸める。戦闘ごとに1回。"
       },
       "effects": [
         "@WidowsPensionGold"

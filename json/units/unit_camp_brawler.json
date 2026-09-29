@@ -4,7 +4,16 @@
     {
       "id": "SpawnCampBrawler",
       "names": {
-        "english": "Camp Brawler"
+        "english": "Camp Brawler",
+        "french": "Bagarreur du camp",
+        "german": "Lagerraufbold",
+        "russian": "Лагерный забияка",
+        "portuguese": "Brigão do Acampamento",
+        "chinese": "营地斗士",
+        "spanish": "Camorrista del campamento",
+        "chinese_traditional": "營地鬥士",
+        "korean": "야영지 싸움꾼",
+        "japanese": "野営地の喧嘩屋"
       },
       "card_art": "@CampBrawler",
       "cost": 1,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Fights for the company. Also fights the company."
+          "english": "Fights for the company. Also fights the company.",
+          "french": "Il se bat pour la compagnie. Il se bat aussi contre la compagnie.",
+          "german": "Kämpft für die Firma. Sie kämpft auch gegen die Firma.",
+          "russian": "Борьба за компанию. Также сражается с компанией.",
+          "portuguese": "Luta pela empresa. Também luta contra a companhia.",
+          "chinese": "为了公司而战. 也与公司作斗争.",
+          "spanish": "Lucha por la compañía. Y también contra ella.",
+          "chinese_traditional": "爭取公司權利. 還是與公司作戰.",
+          "korean": "회사를 위해 싸워요 또한 회사와 싸운다.",
+          "japanese": "会社のために戦う 会社との戦いも"
         }
       ]
     }
@@ -27,7 +45,16 @@
     {
       "id": "CampBrawler",
       "names": {
-        "english": "Camp Brawler"
+        "english": "Camp Brawler",
+        "french": "Bagarreur du camp",
+        "german": "Lagerraufbold",
+        "russian": "Лагерный забияка",
+        "portuguese": "Brigão do Acampamento",
+        "chinese": "营地斗士",
+        "spanish": "Camorrista del campamento",
+        "chinese_traditional": "營地鬥士",
+        "korean": "야영지 싸움꾼",
+        "japanese": "野営地の喧嘩屋"
       },
       "character_art": "@CampBrawlerCharacterArt",
       "size": 1,
@@ -70,7 +97,16 @@
       "id": "CampBrawlerTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] [buff]."
+        "english": "Gain [effect0.status0.power] [buff].",
+        "french": "Gagnez [effect0.status0.power] [buff].",
+        "german": "Erhalte [effect0.status0.power] [buff].",
+        "russian": "Получите [effect0.status0.power] [buff].",
+        "portuguese": "Ganhe [effect0.status0.power] [buff].",
+        "chinese": "获得[effect0.status0.power] [buff]。",
+        "spanish": "Gana [effect0.status0.power] [buff].",
+        "chinese_traditional": "獲得[effect0.status0.power] [buff]。",
+        "korean": "[effect0.status0.power] [buff] 획득.",
+        "japanese": "[effect0.status0.power] [buff]を得る。"
       },
       "effects": [
         "@CampBrawlerAbility"

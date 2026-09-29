@@ -4,7 +4,16 @@
     {
       "id": "SpawnMasterOfCoin",
       "names": {
-        "english": "Master of Coin"
+        "english": "Master of Coin",
+        "french": "Maître des monnaies",
+        "german": "Münzmeister",
+        "russian": "Мастер монеты",
+        "portuguese": "Mestre da Moeda",
+        "chinese": "财政官",
+        "spanish": "Maestro de la moneda",
+        "chinese_traditional": "財政官",
+        "korean": "재무관",
+        "japanese": "財務官"
       },
       "card_art": "@MasterOfCoin",
       "cost": 2,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Keeps the ledger. Keeps the difference."
+          "english": "Keeps the ledger. Keeps the difference.",
+          "french": "Il garde le registre. Ça garde la différence.",
+          "german": "Behält das Hauptbuch. Er hält den Unterschied.",
+          "russian": "Сохраняет книгу. Сохраняет разницу.",
+          "portuguese": "Mantém o livro. Mantém a diferença.",
+          "chinese": "管理本书. 保持差异.",
+          "spanish": "Guarda el libro de cuentas. Y se queda la diferencia.",
+          "chinese_traditional": "保持帳號. 這樣才能維持差異.",
+          "korean": "사서 보관합니다. 그 차이를 유지하죠.",
+          "japanese": "帳簿を保管する 違いを保ちます"
         }
       ],
       "pools": [
@@ -30,7 +48,16 @@
     {
       "id": "MasterOfCoin",
       "names": {
-        "english": "Master of Coin"
+        "english": "Master of Coin",
+        "french": "Maître des monnaies",
+        "german": "Münzmeister",
+        "russian": "Мастер монеты",
+        "portuguese": "Mestre da Moeda",
+        "chinese": "财政官",
+        "spanish": "Maestro de la moneda",
+        "chinese_traditional": "財政官",
+        "korean": "재무관",
+        "japanese": "財務官"
       },
       "character_art": "@MasterOfCoinCharacterArt",
       "size": 1,
@@ -94,7 +121,16 @@
       "id": "MasterOfCoinGoldAttack",
       "name": "RoomStateSelfDamagePerGoldModifier",
       "descriptions": {
-        "english": "+[power][attack] per [secondarypower][coin] you started the turn with."
+        "english": "+[power][attack] per [secondarypower][coin] you started the turn with.",
+        "french": "+[power][attack] par tranche de [secondarypower][coin] possédée au début du tour.",
+        "german": "+[power][attack] pro [secondarypower][coin], die du zu Zugbeginn hattest.",
+        "russian": "+[power][attack] за каждые [secondarypower][coin], которые у вас были в начале хода.",
+        "portuguese": "+[power][attack] por cada [secondarypower][coin] que você tinha no início do turno.",
+        "chinese": "回合开始时每拥有[secondarypower][coin]，获得+[power][attack]。",
+        "spanish": "+[power][attack] por cada [secondarypower][coin] que tenías al inicio del turno.",
+        "chinese_traditional": "回合開始時每擁有[secondarypower][coin]，獲得+[power][attack]。",
+        "korean": "턴 시작 시 보유한 [secondarypower][coin]마다 +[power][attack].",
+        "japanese": "ターン開始時に持っていた[secondarypower][coin]につき+[power][attack]。"
       },
       "param_int": 5,
       "param_int_2": 100
@@ -147,7 +183,16 @@
       "id": "MasterOfCoinAvariceTrigger",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [avarice] to all friendly units on this floor."
+        "english": "Apply [effect0.status0.power] [avarice] to all friendly units on this floor.",
+        "french": "Appliquez [effect0.status0.power] [avarice] à toutes les unités alliées de cet étage.",
+        "german": "Verleihe allen verbündeten Einheiten auf diesem Stockwerk [effect0.status0.power] [avarice].",
+        "russian": "Наложите [effect0.status0.power] [avarice] на все союзные боевые единицы на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [avarice] a todas as unidades aliadas neste andar.",
+        "chinese": "对本层所有友方单位施加[effect0.status0.power] [avarice]。",
+        "spanish": "Aplica [effect0.status0.power] [avarice] a todas las unidades aliadas de este piso.",
+        "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [avarice]。",
+        "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [avarice] 부여.",
+        "japanese": "この階の味方ユニット全体に[effect0.status0.power] [avarice]を付与。"
       },
       "effects": [
         "@MasterOfCoinAvariceGain"
@@ -157,7 +202,16 @@
       "id": "MasterOfCoinCelebrate",
       "trigger": "on_encounter_complete",
       "descriptions": {
-        "english": "Gain <b>2</b> [avarice] permanently."
+        "english": "Gain <b>2</b> [avarice] permanently.",
+        "french": "Gagnez définitivement <b>2</b> [avarice].",
+        "german": "Erhalte dauerhaft <b>2</b> [avarice].",
+        "russian": "Навсегда получите <b>2</b> [avarice].",
+        "portuguese": "Ganhe <b>2</b> [avarice] permanentemente.",
+        "chinese": "永久获得<b>2</b> [avarice]。",
+        "spanish": "Gana <b>2</b> [avarice] permanentemente.",
+        "chinese_traditional": "永久獲得<b>2</b> [avarice]。",
+        "korean": "영구적으로 <b>2</b> [avarice] 획득.",
+        "japanese": "永続的に<b>2</b> [avarice]を得る。"
       },
       "effects": [
         "@MasterOfCoinCelebrateGain"

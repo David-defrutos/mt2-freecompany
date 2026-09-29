@@ -72,7 +72,7 @@ namespace mt2_freecompany.Plugin
             if (save == null) return string.Empty;
 
             int dano = CalcularDano(cardEffectState, save.GetDisplayDistance());
-            return $"Pyre damage this Ring: <b>{dano}</b>";
+            return string.Format("Default/mt2_freecompany.Plugin_SeverancePayCurrentPyreDamage".Localize(), dano);
         }
 
         // Nunca falla: si fallase, cancelaria los efectos siguientes de la carta, y el
@@ -135,3 +135,5 @@ namespace mt2_freecompany.Plugin
 }
 // 2026-09-22-2219||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRingPyreDamage.cs||fichero nuevo: dano a la pira = param_int x (param_int_2 - anillo), no letal, para Severance Pay
 // 2026-09-22-2236||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRingPyreDamage.cs||quitado el recorte no letal: el dano de Severance Pay puede matar la pira
+
+// 2026-09-30-0100||codex-freecompany-fx||src/code/CardEffectRingPyreDamage.cs||localiza la etiqueta del daño actual de la Pira mediante el término JSON y string.Format

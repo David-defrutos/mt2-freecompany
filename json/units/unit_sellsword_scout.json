@@ -4,7 +4,16 @@
     {
       "id": "SpawnSellswordScout",
       "names": {
-        "english": "Sellsword Scout"
+        "english": "Sellsword Scout",
+        "french": "Éclaireur mercenaire",
+        "german": "Söldnerspäher",
+        "russian": "Наёмный разведчик",
+        "portuguese": "Batedor Mercenário",
+        "chinese": "佣兵斥候",
+        "spanish": "Explorador mercenario",
+        "chinese_traditional": "傭兵斥候",
+        "korean": "용병 정찰병",
+        "japanese": "傭兵斥候"
       },
       "card_art": "@SellswordScout",
       "cost": 1,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Paid to be somewhere else, quietly."
+          "english": "Paid to be somewhere else, quietly.",
+          "french": "Payé pour être ailleurs, tranquillement.",
+          "german": "Gehalt, um irgendwo anders zu sein, ruhig.",
+          "russian": "Заплатил, чтобы быть где-то еще, тихо.",
+          "portuguese": "Pagou-me para estar noutro lugar, em silêncio.",
+          "chinese": "我还要去别的地方,安静地.",
+          "spanish": "Le pagan para estar en otro sitio, sin hacer ruido.",
+          "chinese_traditional": "還是為了安靜地去其他地方.",
+          "korean": "다른 곳에 있을 때 돈을 받았어요",
+          "japanese": "どこかにいるのに 給料をもらった"
         }
       ]
     }
@@ -27,7 +45,16 @@
     {
       "id": "SellswordScout",
       "names": {
-        "english": "Sellsword Scout"
+        "english": "Sellsword Scout",
+        "french": "Éclaireur mercenaire",
+        "german": "Söldnerspäher",
+        "russian": "Наёмный разведчик",
+        "portuguese": "Batedor Mercenário",
+        "chinese": "佣兵斥候",
+        "spanish": "Explorador mercenario",
+        "chinese_traditional": "傭兵斥候",
+        "korean": "용병 정찰병",
+        "japanese": "傭兵斥候"
       },
       "character_art": "@SellswordScoutCharacterArt",
       "size": 1,

@@ -4,10 +4,28 @@
     {
       "id": "Fear",
       "names": {
-        "english": "Fear"
+        "english": "Fear",
+        "french": "Terreur",
+        "german": "Furcht",
+        "russian": "Страх",
+        "portuguese": "Medo",
+        "chinese": "恐惧",
+        "spanish": "Miedo",
+        "chinese_traditional": "恐懼",
+        "korean": "공포",
+        "japanese": "恐怖"
       },
       "descriptions": {
-        "english": "Move an enemy unit to the back of its floor and apply [effect0.status0.power] [sap]."
+        "english": "Move an enemy unit to the back of its floor and apply [effect0.status0.power] [sap].",
+        "french": "Déplacez une unité ennemie à l’arrière de son étage et appliquez [effect0.status0.power] [sap].",
+        "german": "Bewege eine gegnerische Einheit ans Ende ihres Stockwerks und verleihe [effect0.status0.power] [sap].",
+        "russian": "Переместите вражескую боевую единицу в конец её этажа и наложите [effect0.status0.power] [sap].",
+        "portuguese": "Mova uma unidade inimiga para o fundo do seu andar e aplique [effect0.status0.power] [sap].",
+        "chinese": "将一个敌方单位移至所在层最后方，并施加[effect0.status0.power]层[sap]。",
+        "spanish": "Mueve una unidad enemiga al fondo de su piso y aplica [effect0.status0.power] [sap].",
+        "chinese_traditional": "將一個敵方單位移至所在層最後方，並施加[effect0.status0.power]層[sap]。",
+        "korean": "적 유닛 하나를 해당 층의 맨 뒤로 이동하고 [effect0.status0.power] [sap] 부여.",
+        "japanese": "敵ユニット1体をその階の最後尾へ移動し、[effect0.status0.power] [sap]を付与。"
       },
       "card_art": "@Fear",
       "cost": 2,
@@ -22,7 +40,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "They run. They always run."
+          "english": "They run. They always run.",
+          "french": "Ils courent. Ils courent toujours.",
+          "german": "Sie fliehen. Sie fliehen immer.",
+          "russian": "Они бегут. Они всегда бегают.",
+          "portuguese": "Eles correm. Correm sempre.",
+          "chinese": "他们跑了. 他们总是逃跑.",
+          "spanish": "Huyen. Siempre huyen.",
+          "chinese_traditional": "他們逃跑了. 他們總是逃跑.",
+          "korean": "도망쳤어 그들은 항상 달린다.",
+          "japanese": "逃げてる 彼らはいつも逃げます"
         }
       ],
       "pools": [

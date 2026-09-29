@@ -4,10 +4,28 @@
     {
       "id": "KitBash",
       "names": {
-        "english": "Kit Bash"
+        "english": "Kit Bash",
+        "french": "Équipement de fortune",
+        "german": "Ausrüstung zusammenbasteln",
+        "russian": "Сборка снаряжения",
+        "portuguese": "Equipamento Improvisado",
+        "chinese": "临时装备",
+        "spanish": "Equipo improvisado",
+        "chinese_traditional": "臨時裝備",
+        "korean": "급조 장비",
+        "japanese": "即席装備"
       },
       "descriptions": {
-        "english": "Add a random tier <b>I</b> piece of kit to your hand."
+        "english": "Add a random tier <b>I</b> piece of kit to your hand.",
+        "french": "Ajoutez une pièce d’équipement aléatoire de rang <b>I</b> à votre main.",
+        "german": "Füge deiner Hand einen zufälligen Ausrüstungsgegenstand der Stufe <b>I</b> hinzu.",
+        "russian": "Добавьте в руку случайное снаряжение уровня <b>I</b>.",
+        "portuguese": "Adicione uma peça aleatória de equipamento de nível <b>I</b> à sua mão.",
+        "chinese": "将一张随机<b>I</b>级装备加入手牌。",
+        "spanish": "Añade una pieza de equipo aleatoria de nivel <b>I</b> a tu mano.",
+        "chinese_traditional": "將一張隨機<b>I</b>級裝備加入手牌。",
+        "korean": "무작위 <b>I</b>단계 장비를 손에 추가.",
+        "japanese": "ランダムなランク<b>I</b>装備を手札に追加。"
       },
       "card_art": "@KitBash",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Whatever was on top of the pile."
+          "english": "Whatever was on top of the pile.",
+          "french": "Tout ce qui était sur la pile.",
+          "german": "Was auch immer auf dem Stapel war.",
+          "russian": "Что бы там ни было.",
+          "portuguese": "O que quer que estivesse no topo da pilha.",
+          "chinese": "任何东西都在堆上.",
+          "spanish": "Lo que hubiera encima del montón.",
+          "chinese_traditional": "任何東西都在這堆上.",
+          "korean": "덩어리 위에 있던건 뭐든",
+          "japanese": "積み重ねの上にあったもの"
         }
       ],
       "pools": [

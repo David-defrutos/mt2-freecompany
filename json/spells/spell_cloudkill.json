@@ -4,10 +4,28 @@
     {
       "id": "Cloudkill",
       "names": {
-        "english": "Cloudkill"
+        "english": "Cloudkill",
+        "french": "Nuage mortel",
+        "german": "Todeswolke",
+        "russian": "Смертельное облако",
+        "portuguese": "Nuvem Mortal",
+        "chinese": "死云术",
+        "spanish": "Nube mortal",
+        "chinese_traditional": "死雲術",
+        "korean": "죽음의 구름",
+        "japanese": "死の雲"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [frostbite] and [effect1.status0.power] [witherbloom] to all enemies on this floor."
+        "english": "Apply [effect0.status0.power] [frostbite] and [effect1.status0.power] [witherbloom] to all enemies on this floor.",
+        "french": "Appliquez [effect0.status0.power] [frostbite] et [effect1.status0.power] [witherbloom] à tous les ennemis de cet étage.",
+        "german": "Verleihe allen Gegnern auf diesem Stockwerk [effect0.status0.power] [frostbite] und [effect1.status0.power] [witherbloom].",
+        "russian": "Наложите [effect0.status0.power] [frostbite] и [effect1.status0.power] [witherbloom] на всех врагов на этом этаже.",
+        "portuguese": "Aplique [effect0.status0.power] [frostbite] e [effect1.status0.power] [witherbloom] a todos os inimigos neste andar.",
+        "chinese": "对本层所有敌人施加[effect0.status0.power] [frostbite]和[effect1.status0.power] [witherbloom]。",
+        "spanish": "Aplica [effect0.status0.power] [frostbite] y [effect1.status0.power] [witherbloom] a todos los enemigos de este piso.",
+        "chinese_traditional": "對本層所有敵人施加[effect0.status0.power] [frostbite]和[effect1.status0.power] [witherbloom]。",
+        "korean": "이 층의 모든 적에게 [effect0.status0.power] [frostbite] 및 [effect1.status0.power] [witherbloom] 부여.",
+        "japanese": "この階の敵全体に[effect0.status0.power] [frostbite]と[effect1.status0.power] [witherbloom]を付与。"
       },
       "card_art": "@Cloudkill",
       "cost": 3,
@@ -22,7 +40,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Do not breathe in."
+          "english": "Do not breathe in.",
+          "french": "Ne respirez pas.",
+          "german": "Atmen Sie nicht ein.",
+          "russian": "Не вдыхайте.",
+          "portuguese": "Não respirem.",
+          "chinese": "不要呼吸.",
+          "spanish": "No respires.",
+          "chinese_traditional": "請不要吸氣.",
+          "korean": "숨을 쉬지 마",
+          "japanese": "息を吸わないで"
         }
       ],
       "pools": [

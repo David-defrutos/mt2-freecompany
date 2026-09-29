@@ -4,10 +4,28 @@
     {
       "id": "Shortbow",
       "names": {
-        "english": "Shortbow"
+        "english": "Shortbow",
+        "french": "Arc court",
+        "german": "Kurzbogen",
+        "russian": "Короткий лук",
+        "portuguese": "Arco Curto",
+        "chinese": "短弓",
+        "spanish": "Arco corto",
+        "chinese_traditional": "短弓",
+        "korean": "단궁",
+        "japanese": "短弓"
       },
       "descriptions": {
-        "english": "<b>+5</b> [attack]. Apply <b>Sniper</b>."
+        "english": "<b>+5</b> [attack]. Apply <b>Sniper</b>.",
+        "french": "<b>+5</b> [attack]. Appliquez <b>Tireur d’élite</b>.",
+        "german": "<b>+5</b> [attack]. Erhalte <b>Scharfschütze</b>.",
+        "russian": "<b>+5</b> [attack]. Получите <b>Снайпер</b>.",
+        "portuguese": "<b>+5</b> [attack]. Aplique <b>Atirador de Elite</b>.",
+        "chinese": "<b>+5</b> [attack]. 施加<b>狙击</b>。",
+        "spanish": "<b>+5</b> [attack]. Aplica <b>Francotirador</b>.",
+        "chinese_traditional": "<b>+5</b> [attack]. 施加<b>狙擊</b>。",
+        "korean": "<b>+5</b> [attack]. <b>저격</b> 부여.",
+        "japanese": "<b>+5</b> [attack]. <b>狙撃</b>を付与。"
       },
       "card_art": "@Shortbow",
       "cost": 1,
@@ -24,7 +42,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Short range. Long grudge."
+          "english": "Short range. Long grudge.",
+          "french": "À courte portée. Une longue rancune.",
+          "german": "Kurzstrecken. Lange Groll.",
+          "russian": "Недолгий путь. Долгая ненависть.",
+          "portuguese": "Curto alcance. Longo rancor.",
+          "chinese": "短距离. 长期的怨恨.",
+          "spanish": "Poco alcance. Mucho rencor.",
+          "chinese_traditional": "這裡有很短的距離. 很久的怨恨.",
+          "korean": "단거리 긴 분노.",
+          "japanese": "短距離だ 長い恨み"
         }
       ],
       "pools": [
@@ -36,10 +63,28 @@
     {
       "id": "Longbow",
       "names": {
-        "english": "Longbow"
+        "english": "Longbow",
+        "french": "Arc long",
+        "german": "Langbogen",
+        "russian": "Длинный лук",
+        "portuguese": "Arco Longo",
+        "chinese": "长弓",
+        "spanish": "Arco largo",
+        "chinese_traditional": "長弓",
+        "korean": "장궁",
+        "japanese": "長弓"
       },
       "descriptions": {
-        "english": "<b>+12</b> [attack]. Apply <b>Sniper</b> and <b>2</b> [piercing]."
+        "english": "<b>+12</b> [attack]. Apply <b>Sniper</b> and <b>2</b> [piercing].",
+        "french": "<b>+12</b> [attack]. Appliquez <b>Tireur d’élite</b> et <b>2</b> [piercing].",
+        "german": "<b>+12</b> [attack]. Erhalte <b>Scharfschütze</b> und <b>2</b> [piercing].",
+        "russian": "<b>+12</b> [attack]. Получите <b>Снайпер</b> и <b>2</b> [piercing].",
+        "portuguese": "<b>+12</b> [attack]. Aplique <b>Atirador de Elite</b> e <b>2</b> [piercing].",
+        "chinese": "<b>+12</b> [attack]. 施加<b>狙击</b>和<b>2</b> [piercing]。",
+        "spanish": "<b>+12</b> [attack]. Aplica <b>Francotirador</b> y <b>2</b> [piercing].",
+        "chinese_traditional": "<b>+12</b> [attack]. 施加<b>狙擊</b>和<b>2</b> [piercing]。",
+        "korean": "<b>+12</b> [attack]. <b>저격</b> 및 <b>2</b> [piercing] 부여.",
+        "japanese": "<b>+12</b> [attack]. <b>狙撃</b>と<b>2</b> [piercing]を付与。"
       },
       "card_art": "@Longbow",
       "cost": 1,
@@ -56,7 +101,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Pull it and you will know why they train for years."
+          "english": "Pull it and you will know why they train for years.",
+          "french": "Tirez-le et vous saurez pourquoi ils s'entraînent pendant des années.",
+          "german": "Ziehen Sie es und Sie werden wissen, warum sie jahrelang trainieren.",
+          "russian": "Вытащи его и ты узнаешь, почему они тренируются годами.",
+          "portuguese": "Puxe-o e saberá por que treinam por anos.",
+          "chinese": "拉它,你会知道他们为什么训练多年.",
+          "spanish": "Ténsalo y entenderás por qué entrenan durante años.",
+          "chinese_traditional": "拉它,你會知道他們為什麼訓練多年.",
+          "korean": "그걸 꺼내서 몇 년 동안 훈련하는 이유를 알 수 있을 거야",
+          "japanese": "引っ張って 何年も訓練してるか分かる"
         }
       ],
       "pools": [
@@ -68,10 +122,28 @@
     {
       "id": "GreatBow",
       "names": {
-        "english": "Great Bow"
+        "english": "Great Bow",
+        "french": "Grand arc",
+        "german": "Großbogen",
+        "russian": "Большой лук",
+        "portuguese": "Arco Grande",
+        "chinese": "巨弓",
+        "spanish": "Gran arco",
+        "chinese_traditional": "巨弓",
+        "korean": "대궁",
+        "japanese": "大弓"
       },
       "descriptions": {
-        "english": "<b>+20</b> [attack]. Apply <b>Sniper</b>, <b>4</b> [piercing] and <b>1</b> [sweep]."
+        "english": "<b>+20</b> [attack]. Apply <b>Sniper</b>, <b>4</b> [piercing] and <b>1</b> [sweep].",
+        "french": "<b>+20</b> [attack]. Appliquez <b>Tireur d’élite</b>, <b>4</b> [piercing] et <b>1</b> [sweep].",
+        "german": "<b>+20</b> [attack]. Erhalte <b>Scharfschütze</b>, <b>4</b> [piercing] und <b>1</b> [sweep].",
+        "russian": "<b>+20</b> [attack]. Получите <b>Снайпер</b>, <b>4</b> [piercing] и <b>1</b> [sweep].",
+        "portuguese": "<b>+20</b> [attack]. Aplique <b>Atirador de Elite</b>, <b>4</b> [piercing] e <b>1</b> [sweep].",
+        "chinese": "<b>+20</b> [attack]. 施加<b>狙击</b>, <b>4</b> [piercing]和<b>1</b> [sweep]。",
+        "spanish": "<b>+20</b> [attack]. Aplica <b>Francotirador</b>, <b>4</b> [piercing] y <b>1</b> [sweep].",
+        "chinese_traditional": "<b>+20</b> [attack]. 施加<b>狙擊</b>, <b>4</b> [piercing]和<b>1</b> [sweep]。",
+        "korean": "<b>+20</b> [attack]. <b>저격</b>, <b>4</b> [piercing] 및 <b>1</b> [sweep] 부여.",
+        "japanese": "<b>+20</b> [attack]. <b>狙撃</b>, <b>4</b> [piercing]と<b>1</b> [sweep]を付与。"
       },
       "card_art": "@GreatBow",
       "cost": 1,
@@ -88,7 +160,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "One arrow. The whole rank."
+          "english": "One arrow. The whole rank.",
+          "french": "Une flèche. L'ensemble du rang.",
+          "german": "Ein Pfeil. Der ganze Rang.",
+          "russian": "Одна стрела. Весь класс.",
+          "portuguese": "Uma flecha. Toda a fila.",
+          "chinese": "一个箭头. 整个队伍.",
+          "spanish": "Una flecha. Toda la fila.",
+          "chinese_traditional": "只有一個箭頭. 整個隊伍.",
+          "korean": "1개의 화살표. 전체 순위.",
+          "japanese": "1本の矢印 ランク全体"
         }
       ],
       "pools": [
@@ -102,10 +183,28 @@
     {
       "id": "UpgShortbow",
       "titles": {
-        "english": "Shortbow"
+        "english": "Shortbow",
+        "french": "Arc court",
+        "german": "Kurzbogen",
+        "russian": "Короткий лук",
+        "portuguese": "Arco Curto",
+        "chinese": "短弓",
+        "spanish": "Arco corto",
+        "chinese_traditional": "短弓",
+        "korean": "단궁",
+        "japanese": "短弓"
       },
       "descriptions": {
-        "english": "<b>+5</b> [attack]. Apply <b>Sniper</b>."
+        "english": "<b>+5</b> [attack]. Apply <b>Sniper</b>.",
+        "french": "<b>+5</b> [attack]. Appliquez <b>Tireur d’élite</b>.",
+        "german": "<b>+5</b> [attack]. Erhalte <b>Scharfschütze</b>.",
+        "russian": "<b>+5</b> [attack]. Получите <b>Снайпер</b>.",
+        "portuguese": "<b>+5</b> [attack]. Aplique <b>Atirador de Elite</b>.",
+        "chinese": "<b>+5</b> [attack]. 施加<b>狙击</b>。",
+        "spanish": "<b>+5</b> [attack]. Aplica <b>Francotirador</b>.",
+        "chinese_traditional": "<b>+5</b> [attack]. 施加<b>狙擊</b>。",
+        "korean": "<b>+5</b> [attack]. <b>저격</b> 부여.",
+        "japanese": "<b>+5</b> [attack]. <b>狙撃</b>を付与。"
       },
       "icon": "@Shortbow",
       "bonus_damage": 5,
@@ -119,10 +218,28 @@
     {
       "id": "UpgLongbow",
       "titles": {
-        "english": "Longbow"
+        "english": "Longbow",
+        "french": "Arc long",
+        "german": "Langbogen",
+        "russian": "Длинный лук",
+        "portuguese": "Arco Longo",
+        "chinese": "长弓",
+        "spanish": "Arco largo",
+        "chinese_traditional": "長弓",
+        "korean": "장궁",
+        "japanese": "長弓"
       },
       "descriptions": {
-        "english": "<b>+12</b> [attack]. Apply <b>Sniper</b> and <b>2</b> [piercing]."
+        "english": "<b>+12</b> [attack]. Apply <b>Sniper</b> and <b>2</b> [piercing].",
+        "french": "<b>+12</b> [attack]. Appliquez <b>Tireur d’élite</b> et <b>2</b> [piercing].",
+        "german": "<b>+12</b> [attack]. Erhalte <b>Scharfschütze</b> und <b>2</b> [piercing].",
+        "russian": "<b>+12</b> [attack]. Получите <b>Снайпер</b> и <b>2</b> [piercing].",
+        "portuguese": "<b>+12</b> [attack]. Aplique <b>Atirador de Elite</b> e <b>2</b> [piercing].",
+        "chinese": "<b>+12</b> [attack]. 施加<b>狙击</b>和<b>2</b> [piercing]。",
+        "spanish": "<b>+12</b> [attack]. Aplica <b>Francotirador</b> y <b>2</b> [piercing].",
+        "chinese_traditional": "<b>+12</b> [attack]. 施加<b>狙擊</b>和<b>2</b> [piercing]。",
+        "korean": "<b>+12</b> [attack]. <b>저격</b> 및 <b>2</b> [piercing] 부여.",
+        "japanese": "<b>+12</b> [attack]. <b>狙撃</b>と<b>2</b> [piercing]を付与。"
       },
       "icon": "@Longbow",
       "bonus_damage": 12,
@@ -140,10 +257,28 @@
     {
       "id": "UpgGreatBow",
       "titles": {
-        "english": "Great Bow"
+        "english": "Great Bow",
+        "french": "Grand arc",
+        "german": "Großbogen",
+        "russian": "Большой лук",
+        "portuguese": "Arco Grande",
+        "chinese": "巨弓",
+        "spanish": "Gran arco",
+        "chinese_traditional": "巨弓",
+        "korean": "대궁",
+        "japanese": "大弓"
       },
       "descriptions": {
-        "english": "<b>+20</b> [attack]. Apply <b>Sniper</b>, <b>4</b> [piercing] and <b>1</b> [sweep]."
+        "english": "<b>+20</b> [attack]. Apply <b>Sniper</b>, <b>4</b> [piercing] and <b>1</b> [sweep].",
+        "french": "<b>+20</b> [attack]. Appliquez <b>Tireur d’élite</b>, <b>4</b> [piercing] et <b>1</b> [sweep].",
+        "german": "<b>+20</b> [attack]. Erhalte <b>Scharfschütze</b>, <b>4</b> [piercing] und <b>1</b> [sweep].",
+        "russian": "<b>+20</b> [attack]. Получите <b>Снайпер</b>, <b>4</b> [piercing] и <b>1</b> [sweep].",
+        "portuguese": "<b>+20</b> [attack]. Aplique <b>Atirador de Elite</b>, <b>4</b> [piercing] e <b>1</b> [sweep].",
+        "chinese": "<b>+20</b> [attack]. 施加<b>狙击</b>, <b>4</b> [piercing]和<b>1</b> [sweep]。",
+        "spanish": "<b>+20</b> [attack]. Aplica <b>Francotirador</b>, <b>4</b> [piercing] y <b>1</b> [sweep].",
+        "chinese_traditional": "<b>+20</b> [attack]. 施加<b>狙擊</b>, <b>4</b> [piercing]和<b>1</b> [sweep]。",
+        "korean": "<b>+20</b> [attack]. <b>저격</b>, <b>4</b> [piercing] 및 <b>1</b> [sweep] 부여.",
+        "japanese": "<b>+20</b> [attack]. <b>狙撃</b>, <b>4</b> [piercing]と<b>1</b> [sweep]を付与。"
       },
       "icon": "@GreatBow",
       "bonus_damage": 20,

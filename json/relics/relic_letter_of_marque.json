@@ -15,17 +15,53 @@
       "id": "LetterOfMarque",
       "type": "collectable",
       "names": {
-        "english": "Letter of Marque"
+        "english": "Letter of Marque",
+        "french": "Lettre de marque",
+        "german": "Kaperbrief",
+        "russian": "Каперская грамота",
+        "portuguese": "Carta de Corso",
+        "chinese": "私掠许可证",
+        "spanish": "Patente de corso",
+        "chinese_traditional": "私掠許可證",
+        "korean": "사략 허가장",
+        "japanese": "私掠免許状"
       },
       "descriptions": {
-        "english": "Start each battle with a random <b>III</b> piece of kit in your hand."
+        "english": "Start each battle with a random <b>III</b> piece of kit in your hand.",
+        "french": "Commencez chaque combat avec un équipement aléatoire de rang <b>III</b> en main.",
+        "german": "Beginne jeden Kampf mit einem zufälligen Ausrüstungsgegenstand der Stufe <b>III</b> auf der Hand.",
+        "russian": "Начинайте каждый бой со случайным снаряжением уровня <b>III</b> в руке.",
+        "portuguese": "Comece cada batalha com um equipamento aleatório de nível <b>III</b> na mão.",
+        "chinese": "每场战斗开始时，手牌中加入一张随机<b>III</b>级装备。",
+        "spanish": "Empieza cada combate con una pieza de equipo aleatoria de nivel <b>III</b> en la mano.",
+        "chinese_traditional": "每場戰鬥開始時，手牌中加入一張隨機<b>III</b>級裝備。",
+        "korean": "전투 시작 시 무작위 <b>III</b>단계 장비를 손에 보유.",
+        "japanese": "各戦闘をランダムなランク<b>III</b>装備が手札にある状態で開始。"
       },
       "relic_activated_texts": {
-        "english": "By order of the company."
+        "english": "By order of the company.",
+        "french": "D'après l'ordre de la compagnie.",
+        "german": "Auf Befehl der Firma.",
+        "russian": "По приказу компании.",
+        "portuguese": "Por ordem da companhia.",
+        "chinese": "根据公司的命令.",
+        "spanish": "Por orden de la compañía.",
+        "chinese_traditional": "該公司的命令.",
+        "korean": "회사 명령에 따라요",
+        "japanese": "会社の命令で"
       },
       "lore_tooltips": [
         {
-          "english": "Whatever you take, you took it lawfully."
+          "english": "Whatever you take, you took it lawfully.",
+          "french": "Tout ce que vous prenez, vous le prenez légalement.",
+          "german": "Was auch immer Sie nehmen, Sie haben es legal genommen.",
+          "russian": "Что бы ты ни взял, ты взял его законно.",
+          "portuguese": "O que quer que tomes, tomaste legalmente.",
+          "chinese": "无论你拿什么,你都拿到合法.",
+          "spanish": "Lo que te lleves, te lo has llevado legalmente.",
+          "chinese_traditional": "任何你拿的東西都是合法的.",
+          "korean": "뭐든 합법적으로 가져갔어",
+          "japanese": "何でも合法的に取った"
         }
       ],
       "lore_style": "herzal",

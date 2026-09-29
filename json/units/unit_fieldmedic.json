@@ -4,7 +4,16 @@
     {
       "id": "SpawnFieldMedic",
       "names": {
-        "english": "Field Medic"
+        "english": "Field Medic",
+        "french": "Médecin de campagne",
+        "german": "Feldsanitäter",
+        "russian": "Полевой медик",
+        "portuguese": "Médica de Campo",
+        "chinese": "战地医护兵",
+        "spanish": "Médica de campaña",
+        "chinese_traditional": "戰地醫護兵",
+        "korean": "야전 의무병",
+        "japanese": "野戦衛生兵"
       },
       "card_art": "@FieldMedic",
       "cost": 1,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Keeps a tally of who still owes her."
+          "english": "Keeps a tally of who still owes her.",
+          "french": "Il tient un compte de qui lui doit encore.",
+          "german": "Er hält eine Liste davon, wer ihr noch schulden muss.",
+          "russian": "Сохраняет подсчет того, кто еще ей должен.",
+          "portuguese": "Mantém uma lista de quem ainda lhe deve.",
+          "chinese": "他记得谁还欠她债务.",
+          "spanish": "Lleva la cuenta de quién sigue debiéndole dinero.",
+          "chinese_traditional": "記錄誰還是欠她.",
+          "korean": "누가 빚을 지고 있는지 계산합니다.",
+          "japanese": "まだ誰に負債があるかを記録する"
         }
       ],
       "pools": [
@@ -30,7 +48,16 @@
     {
       "id": "FieldMedic",
       "names": {
-        "english": "Field Medic"
+        "english": "Field Medic",
+        "french": "Médecin de campagne",
+        "german": "Feldsanitäter",
+        "russian": "Полевой медик",
+        "portuguese": "Médica de Campo",
+        "chinese": "战地医护兵",
+        "spanish": "Médica de campaña",
+        "chinese_traditional": "戰地醫護兵",
+        "korean": "야전 의무병",
+        "japanese": "野戦衛生兵"
       },
       "character_art": "@FieldMedicCharacterArt",
       "size": 1,
@@ -141,7 +168,16 @@
       "id": "FieldMedicEndTrigger",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Restore [effect0.power] health to the weakest friendly unit and remove all debuffs from a random debuffed friendly unit."
+        "english": "Restore [effect0.power] health to the weakest friendly unit and remove all debuffs from a random debuffed friendly unit.",
+        "french": "Rendez [effect0.power] PV à l’unité alliée la plus affaiblie et retirez tous les malus d’une unité alliée aléatoire affectée par des malus.",
+        "german": "Heile die verbündete Einheit mit dem wenigsten Leben um [effect0.power] Leben und entferne alle Schwächungen von einer zufälligen geschwächten verbündeten Einheit.",
+        "russian": "Восстановите [effect0.power] здоровья самой слабой союзной боевой единице и снимите все ослабления со случайной союзной боевой единицы с ослаблениями.",
+        "portuguese": "Restaure [effect0.power] de vida da unidade aliada mais fraca e remova todas as penalidades de uma unidade aliada aleatória com penalidades.",
+        "chinese": "为最虚弱的友方单位恢复[effect0.power]点生命值，并移除一个随机带有减益的友方单位的所有减益。",
+        "spanish": "Restaura [effect0.power] de vida a la unidad aliada más débil y elimina todos los perjuicios de una unidad aliada aleatoria que tenga perjuicios.",
+        "chinese_traditional": "為最虛弱的友方單位恢復[effect0.power]點生命值，並移除一個隨機帶有減益的友方單位的所有減益。",
+        "korean": "가장 약한 아군 유닛의 체력을 [effect0.power] 회복하고, 약화 효과가 있는 무작위 아군 유닛 하나의 모든 약화 효과 제거.",
+        "japanese": "最も弱った味方ユニットの体力を[effect0.power]回復し、弱体効果を受けているランダムな味方ユニット1体の弱体効果をすべて除去。"
       },
       "effects": [
         "@FieldMedicHeal",

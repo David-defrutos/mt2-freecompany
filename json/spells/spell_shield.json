@@ -4,10 +4,28 @@
     {
       "id": "Shield",
       "names": {
-        "english": "Shield"
+        "english": "Shield",
+        "french": "Bouclier",
+        "german": "Schild",
+        "russian": "Щит",
+        "portuguese": "Escudo",
+        "chinese": "护盾术",
+        "spanish": "Escudo",
+        "chinese_traditional": "護盾術",
+        "korean": "방패",
+        "japanese": "シールド"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to a friendly unit."
+        "english": "Apply [effect0.status0.power] [armor] to a friendly unit.",
+        "french": "Appliquez [effect0.status0.power] [armor] à une unité alliée.",
+        "german": "Verleihe einer verbündeten Einheit [effect0.status0.power] [armor].",
+        "russian": "Наложите на союзную боевую единицу [effect0.status0.power] [armor].",
+        "portuguese": "Aplique [effect0.status0.power] [armor] a uma unidade aliada.",
+        "chinese": "对一个友方单位施加[effect0.status0.power] [armor]。",
+        "spanish": "Aplica [effect0.status0.power] [armor] a una unidad aliada.",
+        "chinese_traditional": "對一個友方單位施加[effect0.status0.power] [armor]。",
+        "korean": "아군 유닛 하나에게 [effect0.status0.power] [armor] 부여.",
+        "japanese": "味方ユニット1体に[effect0.status0.power] [armor]を付与。"
       },
       "card_art": "@Shield",
       "cost": 0,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "A word, and the blow lands elsewhere."
+          "english": "A word, and the blow lands elsewhere.",
+          "french": "Un mot, et le coup s'arrête ailleurs.",
+          "german": "Ein Wort, und der Schlag landet woanders.",
+          "russian": "Слово, и удар приземлится в другом месте.",
+          "portuguese": "Uma palavra e o golpe cai noutro lugar.",
+          "chinese": "一句话,就能在另一个地方下降.",
+          "spanish": "Una palabra y el golpe cae en otro sitio.",
+          "chinese_traditional": "只有一個字,",
+          "korean": "한 마디만 하면 타격이 다른 곳으로 떨어질 거야",
+          "japanese": "一言すれば 撃たれは別の場所に落ちる"
         }
       ],
       "pools": [

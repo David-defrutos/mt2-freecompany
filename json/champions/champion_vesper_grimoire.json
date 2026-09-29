@@ -4,10 +4,28 @@
     {
       "id": "GrimoireSpell1",
       "names": {
-        "english": "Prepare Spell I"
+        "english": "Prepare Spell I",
+        "french": "Préparer un sort I",
+        "german": "Zauber vorbereiten I",
+        "russian": "Подготовить заклинание I",
+        "portuguese": "Preparar Feitiço I",
+        "chinese": "准备法术 I",
+        "spanish": "Preparar hechizo I",
+        "chinese_traditional": "準備法術 I",
+        "korean": "주문 준비 I",
+        "japanese": "呪文準備 I"
       },
       "descriptions": {
-        "english": "Add a random <b>Common</b> spell to your hand. It costs <b>0</b> [ember] and is [ephemeral]."
+        "english": "Add a random <b>Common</b> spell to your hand. It costs <b>0</b> [ember] and is [ephemeral].",
+        "french": "Ajoutez un sort aléatoire <b>Commun</b> à votre main. Coûte <b>0</b> [ember] et possède [ephemeral].",
+        "german": "Füge deiner Hand einen zufälligen <b>Gewöhnlich</b> Zauber hinzu. Kostet <b>0</b> [ember] und ist [ephemeral].",
+        "russian": "Добавьте в руку случайное заклинание <b>Обычный</b>. Стоит <b>0</b> [ember] и имеет [ephemeral].",
+        "portuguese": "Adicione um feitiço aleatório <b>Comum</b> à sua mão. Custa <b>0</b> [ember] e tem [ephemeral].",
+        "chinese": "将一个随机<b>普通</b>法术加入手牌。 费用为<b>0</b> [ember]，并具有[ephemeral]。",
+        "spanish": "Añade un hechizo aleatorio <b>Común</b> a tu mano. Cuesta <b>0</b> [ember] y tiene [ephemeral].",
+        "chinese_traditional": "將一個隨機<b>普通</b>法術加入手牌。 費用為<b>0</b> [ember]，並具有[ephemeral]。",
+        "korean": "무작위 <b>일반</b> 주문을 손에 추가. 비용은 <b>0</b> [ember]이며 [ephemeral] 보유.",
+        "japanese": "ランダムな<b>コモン</b>呪文を手札に追加。 コストは<b>0</b> [ember]で、[ephemeral]を持つ。"
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
@@ -23,10 +41,28 @@
     {
       "id": "GrimoireSpell2",
       "names": {
-        "english": "Prepare Spell II"
+        "english": "Prepare Spell II",
+        "french": "Préparer un sort II",
+        "german": "Zauber vorbereiten II",
+        "russian": "Подготовить заклинание II",
+        "portuguese": "Preparar Feitiço II",
+        "chinese": "准备法术 II",
+        "spanish": "Preparar hechizo II",
+        "chinese_traditional": "準備法術 II",
+        "korean": "주문 준비 II",
+        "japanese": "呪文準備 II"
       },
       "descriptions": {
-        "english": "Add a random <b>Common</b> or <b>Uncommon</b> spell to your hand. It costs <b>0</b> [ember] and is [ephemeral]."
+        "english": "Add a random <b>Common</b> or <b>Uncommon</b> spell to your hand. It costs <b>0</b> [ember] and is [ephemeral].",
+        "french": "Ajoutez un sort aléatoire <b>Commun</b> ou <b>Peu commun</b> à votre main. Coûte <b>0</b> [ember] et possède [ephemeral].",
+        "german": "Füge deiner Hand einen zufälligen <b>Gewöhnlich</b> oder <b>Ungewöhnlich</b> Zauber hinzu. Kostet <b>0</b> [ember] und ist [ephemeral].",
+        "russian": "Добавьте в руку случайное заклинание <b>Обычный</b> или <b>Необычный</b>. Стоит <b>0</b> [ember] и имеет [ephemeral].",
+        "portuguese": "Adicione um feitiço aleatório <b>Comum</b> ou <b>Incomum</b> à sua mão. Custa <b>0</b> [ember] e tem [ephemeral].",
+        "chinese": "将一个随机<b>普通</b>或<b>罕见</b>法术加入手牌。 费用为<b>0</b> [ember]，并具有[ephemeral]。",
+        "spanish": "Añade un hechizo aleatorio <b>Común</b> o <b>Infrecuente</b> a tu mano. Cuesta <b>0</b> [ember] y tiene [ephemeral].",
+        "chinese_traditional": "將一個隨機<b>普通</b>或<b>罕見</b>法術加入手牌。 費用為<b>0</b> [ember]，並具有[ephemeral]。",
+        "korean": "무작위 <b>일반</b> 또는 <b>고급</b> 주문을 손에 추가. 비용은 <b>0</b> [ember]이며 [ephemeral] 보유.",
+        "japanese": "ランダムな<b>コモン</b>または<b>アンコモン</b>呪文を手札に追加。 コストは<b>0</b> [ember]で、[ephemeral]を持つ。"
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
@@ -42,10 +78,28 @@
     {
       "id": "GrimoireSpell3",
       "names": {
-        "english": "Prepare Spell III"
+        "english": "Prepare Spell III",
+        "french": "Préparer un sort III",
+        "german": "Zauber vorbereiten III",
+        "russian": "Подготовить заклинание III",
+        "portuguese": "Preparar Feitiço III",
+        "chinese": "准备法术 III",
+        "spanish": "Preparar hechizo III",
+        "chinese_traditional": "準備法術 III",
+        "korean": "주문 준비 III",
+        "japanese": "呪文準備 III"
       },
       "descriptions": {
-        "english": "Add a random spell to your hand. It costs <b>0</b> [ember] and is [ephemeral]."
+        "english": "Add a random spell to your hand. It costs <b>0</b> [ember] and is [ephemeral].",
+        "french": "Ajoutez un sort aléatoire à votre main. Coûte <b>0</b> [ember] et possède [ephemeral].",
+        "german": "Füge deiner Hand einen zufälligen Zauber hinzu. Kostet <b>0</b> [ember] und ist [ephemeral].",
+        "russian": "Добавьте в руку случайное заклинание . Стоит <b>0</b> [ember] и имеет [ephemeral].",
+        "portuguese": "Adicione um feitiço aleatório à sua mão. Custa <b>0</b> [ember] e tem [ephemeral].",
+        "chinese": "将一个随机法术加入手牌。 费用为<b>0</b> [ember]，并具有[ephemeral]。",
+        "spanish": "Añade un hechizo aleatorio a tu mano. Cuesta <b>0</b> [ember] y tiene [ephemeral].",
+        "chinese_traditional": "將一個隨機法術加入手牌。 費用為<b>0</b> [ember]，並具有[ephemeral]。",
+        "korean": "무작위 주문을 손에 추가. 비용은 <b>0</b> [ember]이며 [ephemeral] 보유.",
+        "japanese": "ランダムな呪文を手札に追加。 コストは<b>0</b> [ember]で、[ephemeral]を持つ。"
       },
       "card_art": "@Vesper",
       "is_an_ability": true,
@@ -64,7 +118,16 @@
       "id": "GrimoireStarterTrigger",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Add a <b>Magic Missile</b> to your hand. It costs <b>0</b> [ember] and is [ephemeral]."
+        "english": "Add a <b>Magic Missile</b> to your hand. It costs <b>0</b> [ember] and is [ephemeral].",
+        "french": "Ajoutez <b>Projectile magique</b> à votre main. Coûte <b>0</b> [ember] et possède [ephemeral].",
+        "german": "Füge deiner Hand <b>Magisches Geschoss</b> hinzu. Kostet <b>0</b> [ember] und ist [ephemeral].",
+        "russian": "Добавьте в руку <b>Волшебная стрела</b>. Стоит <b>0</b> [ember] и имеет [ephemeral].",
+        "portuguese": "Adicione <b>Míssil Mágico</b> à sua mão. Custa <b>0</b> [ember] e tem [ephemeral].",
+        "chinese": "将<b>魔法飞弹</b>加入手牌。 费用为<b>0</b> [ember]，并具有[ephemeral]。",
+        "spanish": "Añade <b>Proyectil mágico</b> a tu mano. Cuesta <b>0</b> [ember] y tiene [ephemeral].",
+        "chinese_traditional": "將<b>魔法飛彈</b>加入手牌。 費用為<b>0</b> [ember]，並具有[ephemeral]。",
+        "korean": "손에 <b>마법 화살</b> 추가. 비용은 <b>0</b> [ember]이며 [ephemeral] 보유.",
+        "japanese": "手札に<b>マジックミサイル</b>を追加。 コストは<b>0</b> [ember]で、[ephemeral]を持つ。"
       },
       "effects": [
         "@GrimoireStarterCard"
@@ -74,7 +137,16 @@
       "id": "GrimoireCelebrate",
       "trigger": "on_encounter_complete",
       "descriptions": {
-        "english": "Gain <b>2</b> [conduit] permanently."
+        "english": "Gain <b>2</b> [conduit] permanently.",
+        "french": "Gagnez définitivement <b>2</b> [conduit].",
+        "german": "Erhalte dauerhaft <b>2</b> [conduit].",
+        "russian": "Навсегда получите <b>2</b> [conduit].",
+        "portuguese": "Ganhe <b>2</b> [conduit] permanentemente.",
+        "chinese": "永久获得<b>2</b> [conduit]。",
+        "spanish": "Gana <b>2</b> [conduit] permanentemente.",
+        "chinese_traditional": "永久獲得<b>2</b> [conduit]。",
+        "korean": "영구적으로 <b>2</b> [conduit] 획득.",
+        "japanese": "永続的に<b>2</b> [conduit]を得る。"
       },
       "effects": [
         "@GrimoireCelebrateGain"
@@ -127,10 +199,28 @@
     {
       "id": "upg_Grimoire1",
       "titles": {
-        "english": "Grimoire"
+        "english": "Grimoire",
+        "french": "Grimoire",
+        "german": "Grimoire",
+        "russian": "Гримуар",
+        "portuguese": "Grimório",
+        "chinese": "魔法书",
+        "spanish": "Grimorio",
+        "chinese_traditional": "魔法書",
+        "korean": "마법서",
+        "japanese": "魔導書"
       },
       "descriptions": {
-        "english": "Prepare free Common spells; gain permanent [conduit] after combat."
+        "english": "Prepare free Common spells; gain permanent [conduit] after combat.",
+        "french": "Prépare des sorts Commun gratuits ; gagne définitivement [conduit] après le combat.",
+        "german": "Bereitet kostenlose Zauber der Seltenheit Gewöhnlich vor; erhält nach dem Kampf dauerhaft [conduit].",
+        "russian": "Готовит бесплатные заклинания Обычный; после боя навсегда получает [conduit].",
+        "portuguese": "Prepara feitiços Comum gratuitos; ganha [conduit] permanentemente após o combate.",
+        "chinese": "准备免费的普通法术；战斗后永久获得[conduit]。",
+        "spanish": "Prepara hechizos Común gratis; gana [conduit] permanentemente después del combate.",
+        "chinese_traditional": "準備免費的普通法術；戰鬥後永久獲得[conduit]。",
+        "korean": "무료 일반 주문 준비. 전투 후 영구적으로 [conduit] 획득.",
+        "japanese": "無料のコモン呪文を準備。戦闘後に永続的な[conduit]を得る。"
       },
       "bonus_damage": 4,
       "trigger_upgrades": [
@@ -142,10 +232,28 @@
     {
       "id": "upg_Grimoire2",
       "titles": {
-        "english": "Grimoire II"
+        "english": "Grimoire II",
+        "french": "Grimoire II",
+        "german": "Grimoire II",
+        "russian": "Гримуар II",
+        "portuguese": "Grimório II",
+        "chinese": "魔法书 II",
+        "spanish": "Grimorio II",
+        "chinese_traditional": "魔法書 II",
+        "korean": "마법서 II",
+        "japanese": "魔導書 II"
       },
       "descriptions": {
-        "english": "Prepare free Common or Uncommon spells; gain permanent [conduit] after combat."
+        "english": "Prepare free Common or Uncommon spells; gain permanent [conduit] after combat.",
+        "french": "Prépare des sorts Commun ou Peu commun gratuits ; gagne définitivement [conduit] après le combat.",
+        "german": "Bereitet kostenlose Zauber der Seltenheit Gewöhnlich oder Ungewöhnlich vor; erhält nach dem Kampf dauerhaft [conduit].",
+        "russian": "Готовит бесплатные заклинания Обычный или Необычный; после боя навсегда получает [conduit].",
+        "portuguese": "Prepara feitiços Comum ou Incomum gratuitos; ganha [conduit] permanentemente após o combate.",
+        "chinese": "准备免费的普通或罕见法术；战斗后永久获得[conduit]。",
+        "spanish": "Prepara hechizos Común o Infrecuente gratis; gana [conduit] permanentemente después del combate.",
+        "chinese_traditional": "準備免費的普通或罕見法術；戰鬥後永久獲得[conduit]。",
+        "korean": "무료 일반 또는 고급 주문 준비. 전투 후 영구적으로 [conduit] 획득.",
+        "japanese": "無料のコモンまたはアンコモン呪文を準備。戦闘後に永続的な[conduit]を得る。"
       },
       "bonus_damage": 10,
       "remove_upgrades": [
@@ -160,10 +268,28 @@
     {
       "id": "upg_Grimoire3",
       "titles": {
-        "english": "Grimoire III"
+        "english": "Grimoire III",
+        "french": "Grimoire III",
+        "german": "Grimoire III",
+        "russian": "Гримуар III",
+        "portuguese": "Grimório III",
+        "chinese": "魔法书 III",
+        "spanish": "Grimorio III",
+        "chinese_traditional": "魔法書 III",
+        "korean": "마법서 III",
+        "japanese": "魔導書 III"
       },
       "descriptions": {
-        "english": "Prepare free spells of any rarity; gain permanent [conduit] after combat."
+        "english": "Prepare free spells of any rarity; gain permanent [conduit] after combat.",
+        "french": "Prépare des sorts de toute rareté gratuits ; gagne définitivement [conduit] après le combat.",
+        "german": "Bereitet kostenlose Zauber der Seltenheit beliebiger Seltenheit vor; erhält nach dem Kampf dauerhaft [conduit].",
+        "russian": "Готовит бесплатные заклинания любой редкости; после боя навсегда получает [conduit].",
+        "portuguese": "Prepara feitiços de qualquer raridade gratuitos; ganha [conduit] permanentemente após o combate.",
+        "chinese": "准备免费的任意稀有度法术；战斗后永久获得[conduit]。",
+        "spanish": "Prepara hechizos de cualquier rareza gratis; gana [conduit] permanentemente después del combate.",
+        "chinese_traditional": "準備免費的任意稀有度法術；戰鬥後永久獲得[conduit]。",
+        "korean": "무료 모든 희귀도의 주문 준비. 전투 후 영구적으로 [conduit] 획득.",
+        "japanese": "無料の任意のレアリティの呪文を準備。戦闘後に永続的な[conduit]を得る。"
       },
       "bonus_damage": 18,
       "remove_upgrades": [
@@ -178,7 +304,16 @@
     {
       "id": "GrimoireFreeSpell",
       "titles": {
-        "english": "Grimoire"
+        "english": "Grimoire",
+        "french": "Grimoire",
+        "german": "Grimoire",
+        "russian": "Гримуар",
+        "portuguese": "Grimório",
+        "chinese": "魔法书",
+        "spanish": "Grimorio",
+        "chinese_traditional": "魔法書",
+        "korean": "마법서",
+        "japanese": "魔導書"
       },
       "cost_reduction": 4,
       "trait_upgrades": [

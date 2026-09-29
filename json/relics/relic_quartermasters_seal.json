@@ -13,17 +13,53 @@
       "id": "QuartermastersSeal",
       "type": "collectable",
       "names": {
-        "english": "Quartermaster's Seal"
+        "english": "Quartermaster's Seal",
+        "french": "Sceau de l'intendant",
+        "german": "Quartiermeistersiegel",
+        "russian": "Печать интенданта",
+        "portuguese": "Selo do Intendente",
+        "chinese": "军需官印章",
+        "spanish": "Sello del intendente",
+        "chinese_traditional": "軍需官印章",
+        "korean": "병참 장교의 인장",
+        "japanese": "補給官の印章"
       },
       "descriptions": {
-        "english": "Friendly units can hold <b>1</b> additional piece of equipment."
+        "english": "Friendly units can hold <b>1</b> additional piece of equipment.",
+        "french": "Les unités alliées peuvent porter <b>1</b> équipement supplémentaire.",
+        "german": "Verbündete Einheiten können <b>1</b> zusätzlichen Ausrüstungsgegenstand tragen.",
+        "russian": "Союзные боевые единицы могут носить на <b>1</b> предмет снаряжения больше.",
+        "portuguese": "Unidades aliadas podem carregar <b>1</b> equipamento adicional.",
+        "chinese": "友方单位可额外携带<b>1</b>件装备。",
+        "spanish": "Las unidades aliadas pueden llevar <b>1</b> pieza de equipo adicional.",
+        "chinese_traditional": "友方單位可額外攜帶<b>1</b>件裝備。",
+        "korean": "아군 유닛은 장비 <b>1</b>개를 추가로 장착 가능.",
+        "japanese": "味方ユニットは装備を追加で<b>1</b>個持てる。"
       },
       "relic_activated_texts": {
-        "english": "Stamped and issued."
+        "english": "Stamped and issued.",
+        "french": "S'estampillé et émis.",
+        "german": "Stempelt und ausgestellt.",
+        "russian": "Опечатана и выпущена.",
+        "portuguese": "Estampado e emitido.",
+        "chinese": "盖章和发行.",
+        "spanish": "Sellado y expedido.",
+        "chinese_traditional": "封印並發行.",
+        "korean": "봉쇄하고 발급",
+        "japanese": "スタンプして発行した"
       },
       "lore_tooltips": [
         {
-          "english": "Nothing leaves the store without it."
+          "english": "Nothing leaves the store without it.",
+          "french": "Rien ne quitte le magasin sans lui.",
+          "german": "Nichts verlässt den Laden ohne ihn.",
+          "russian": "Ничто не выходит из магазина без него.",
+          "portuguese": "Nada sai da loja sem ele.",
+          "chinese": "没有任何东西离开商店.",
+          "spanish": "Nada sale del almacén sin él.",
+          "chinese_traditional": "沒有任何東西離開商店.",
+          "korean": "아무것도 그 없이 가게를 떠나지 않습니다.",
+          "japanese": "店から何も出てこない."
         }
       ],
       "lore_style": "herzal",

@@ -12,17 +12,53 @@
       "id": "MarchingOrders",
       "type": "collectable",
       "names": {
-        "english": "Marching Orders"
+        "english": "Marching Orders",
+        "french": "Ordres de marche",
+        "german": "Marschbefehl",
+        "russian": "Походный приказ",
+        "portuguese": "Ordens de Marcha",
+        "chinese": "行军令",
+        "spanish": "Órdenes de marcha",
+        "chinese_traditional": "行軍令",
+        "korean": "행군 명령",
+        "japanese": "行軍命令"
       },
       "descriptions": {
-        "english": "The first Room card you play each battle is played on every floor."
+        "english": "The first Room card you play each battle is played on every floor.",
+        "french": "La première carte de salle jouée à chaque combat est jouée à tous les étages.",
+        "german": "Die erste Raumkarte, die du in jedem Kampf spielst, wird auf jedem Stockwerk gespielt.",
+        "russian": "Первая карта помещения, разыгранная вами в каждом бою, разыгрывается на всех этажах.",
+        "portuguese": "A primeira carta de sala que você joga em cada batalha é jogada em todos os andares.",
+        "chinese": "每场战斗中打出的第一张房间牌会在所有楼层打出。",
+        "spanish": "La primera carta de sala que juegues en cada combate se juega en todos los pisos.",
+        "chinese_traditional": "每場戰鬥中打出的第一張房間牌會在所有樓層打出。",
+        "korean": "각 전투에서 처음 사용한 방 카드는 모든 층에 사용됨.",
+        "japanese": "各戦闘で最初に使用した部屋カードを全階層で使用する。"
       },
       "relic_activated_texts": {
-        "english": "All floors. Move."
+        "english": "All floors. Move.",
+        "french": "Toutes les étages. On se déplace.",
+        "german": "Alle Etagen. Bewegen Sie sich.",
+        "russian": "На всех этажах. Двигайтесь.",
+        "portuguese": "Todos os andares. Mova-te!",
+        "chinese": "所有的楼层. 移动吧!",
+        "spanish": "Todos los pisos. En marcha.",
+        "chinese_traditional": "所有的樓層. 移動!",
+        "korean": "모든 층. 움직여",
+        "japanese": "すべての階. 移動する"
       },
       "lore_tooltips": [
         {
-          "english": "One order, three camps."
+          "english": "One order, three camps.",
+          "french": "Une commande, trois camps.",
+          "german": "Ein Auftrag, drei Lager.",
+          "russian": "Один заказ, три лагеря.",
+          "portuguese": "Uma ordem, três acampamentos.",
+          "chinese": "一个订单,三个营地.",
+          "spanish": "Una orden, tres campamentos.",
+          "chinese_traditional": "只有一個命令,三個營.",
+          "korean": "한명, 세명.",
+          "japanese": "1つの命令,3つのキャンプ"
         }
       ],
       "lore_style": "herzal",

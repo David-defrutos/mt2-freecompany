@@ -4,7 +4,16 @@
     {
       "id": "SpawnBogTroll",
       "names": {
-        "english": "Bog Troll"
+        "english": "Bog Troll",
+        "french": "Troll des marais",
+        "german": "Sumpftroll",
+        "russian": "Болотный тролль",
+        "portuguese": "Troll do Pântano",
+        "chinese": "沼泽巨魔",
+        "spanish": "Trol del pantano",
+        "chinese_traditional": "沼澤巨魔",
+        "korean": "늪 트롤",
+        "japanese": "沼地のトロール"
       },
       "card_art": "@BogTroll",
       "cost": 6,
@@ -18,14 +27,32 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Old, patient and very hard to kill."
+          "english": "Old, patient and very hard to kill.",
+          "french": "Vieille, patiente et très difficile à tuer.",
+          "german": "Alt, geduldig und schwer zu töten.",
+          "russian": "Старый, терпеливый и очень трудно убить.",
+          "portuguese": "Velho, paciente e muito difícil de matar.",
+          "chinese": "老,耐心,很难杀死.",
+          "spanish": "Viejo, paciente y muy difícil de matar.",
+          "chinese_traditional": "很老,很耐心,很難殺死.",
+          "korean": "나이가 많고, 참을성이 많고, 죽이는 건 매우 어렵습니다.",
+          "japanese": "老い 忍耐強く 殺し難い"
         }
       ]
     },
     {
       "id": "SpawnStoneTroll",
       "names": {
-        "english": "Stone Troll"
+        "english": "Stone Troll",
+        "french": "Troll de pierre",
+        "german": "Steintroll",
+        "russian": "Каменный тролль",
+        "portuguese": "Troll de Pedra",
+        "chinese": "岩石巨魔",
+        "spanish": "Trol de piedra",
+        "chinese_traditional": "岩石巨魔",
+        "korean": "돌 트롤",
+        "japanese": "岩のトロール"
       },
       "card_art": "@StoneTroll",
       "cost": 6,
@@ -39,14 +66,32 @@
       ],
       "lore_tooltips": [
         {
-          "english": "It was part of the mountain until she called it."
+          "english": "It was part of the mountain until she called it.",
+          "french": "Il faisait partie de la montagne jusqu'à ce qu'elle l'appelle.",
+          "german": "Es war Teil des Berges, bis sie es genannt hat.",
+          "russian": "Он был частью горы, пока она не назвала его.",
+          "portuguese": "Era parte da montanha até que ela a chamou.",
+          "chinese": "它是山的一部分,直到她叫它.",
+          "spanish": "Era parte de la montaña hasta que ella lo llamó.",
+          "chinese_traditional": "在她呼籲之前,",
+          "korean": "그녀가 부르기 전까지는 산의 일부였습니다.",
+          "japanese": "彼女はそれを呼んだまで 山の一部だった."
         }
       ]
     },
     {
       "id": "SpawnWarTroll",
       "names": {
-        "english": "War Troll"
+        "english": "War Troll",
+        "french": "Troll de guerre",
+        "german": "Kriegstroll",
+        "russian": "Боевой тролль",
+        "portuguese": "Troll de Guerra",
+        "chinese": "战争巨魔",
+        "spanish": "Trol de guerra",
+        "chinese_traditional": "戰爭巨魔",
+        "korean": "전쟁 트롤",
+        "japanese": "戦のトロール"
       },
       "card_art": "@WarTroll",
       "cost": 6,
@@ -60,7 +105,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Someone taught it to swing first."
+          "english": "Someone taught it to swing first.",
+          "french": "Quelqu'un lui a appris à balancer d'abord.",
+          "german": "Jemand lehrte ihn zuerst zu schwenken.",
+          "russian": "Кто-то научил его сначала колебаться.",
+          "portuguese": "Alguém ensinou-lhe a balançar primeiro.",
+          "chinese": "有人先教它摇摆.",
+          "spanish": "Alguien le enseñó a golpear primero.",
+          "chinese_traditional": "某人先教導它旋轉.",
+          "korean": "누군가 먼저 흔들도록 가르쳐줬어",
+          "japanese": "誰かが最初に振り方を教えてくれた"
         }
       ],
       "traits": [
@@ -68,13 +122,31 @@
         "@WarTrollScaleHealth"
       ],
       "descriptions": {
-        "english": "Enters with +<b>3</b> [attack] and +<b>3</b> [health] for each <b>Goblin</b> in your deck."
+        "english": "Enters with +<b>3</b> [attack] and +<b>3</b> [health] for each <b>Goblin</b> in your deck.",
+        "french": "Entre en jeu avec +<b>3</b> [attack] et +<b>3</b> [health] par <b>Gobelin</b> dans votre deck.",
+        "german": "Betritt das Spiel mit +<b>3</b> [attack] und +<b>3</b> [health] pro <b>Goblin</b> in deinem Deck.",
+        "russian": "Выходит с +<b>3</b> [attack] и +<b>3</b> [health] за каждого <b>Гоблин</b> в вашей колоде.",
+        "portuguese": "Entra com +<b>3</b> [attack] e +<b>3</b> [health] por cada <b>Goblin</b> no seu deck.",
+        "chinese": "你的牌组中每有一个<b>地精</b>，入场时获得+<b>3</b> [attack]和+<b>3</b> [health]。",
+        "spanish": "Entra con +<b>3</b> [attack] y +<b>3</b> [health] por cada <b>Goblin</b> en tu mazo.",
+        "chinese_traditional": "你的牌組中每有一個<b>哥布林</b>，入場時獲得+<b>3</b> [attack]和+<b>3</b> [health]。",
+        "korean": "덱의 <b>고블린</b> 하나마다 +<b>3</b> [attack] 및 +<b>3</b> [health]을 얻고 등장.",
+        "japanese": "デッキ内の<b>ゴブリン</b>1体につき+<b>3</b> [attack]と+<b>3</b> [health]を持って登場。"
       }
     },
     {
       "id": "SpawnCautiousTroll",
       "names": {
-        "english": "Cautious Troll"
+        "english": "Cautious Troll",
+        "french": "Troll prudent",
+        "german": "Vorsichtiger Troll",
+        "russian": "Осторожный тролль",
+        "portuguese": "Troll Cauteloso",
+        "chinese": "谨慎巨魔",
+        "spanish": "Trol cauteloso",
+        "chinese_traditional": "謹慎巨魔",
+        "korean": "신중한 트롤",
+        "japanese": "慎重なトロール"
       },
       "card_art": "@CautiousTroll",
       "cost": 6,
@@ -88,14 +160,32 @@
       ],
       "lore_tooltips": [
         {
-          "english": "It has survived everything by not being there."
+          "english": "It has survived everything by not being there.",
+          "french": "Il a survécu à tout en étant absent.",
+          "german": "Es hat alles überlebt, weil es nicht da war.",
+          "russian": "Он выжил из-за отсутствия.",
+          "portuguese": "Ele sobreviveu a tudo por não estar lá.",
+          "chinese": "由于没有存在,它幸存下来了.",
+          "spanish": "Ha sobrevivido a todo gracias a no estar allí.",
+          "chinese_traditional": "因為它沒有存在.",
+          "korean": "거기 없었기 때문에 모든 것을 살아남았습니다.",
+          "japanese": "存在しなかったことで すべてを生き延びました"
         }
       ]
     },
     {
       "id": "SpawnTwoHeadedTroll",
       "names": {
-        "english": "Two-Headed Troll"
+        "english": "Two-Headed Troll",
+        "french": "Troll à deux têtes",
+        "german": "Zweiköpfiger Troll",
+        "russian": "Двухголовый тролль",
+        "portuguese": "Troll de Duas Cabeças",
+        "chinese": "双头巨魔",
+        "spanish": "Trol de dos cabezas",
+        "chinese_traditional": "雙頭巨魔",
+        "korean": "쌍두 트롤",
+        "japanese": "双頭のトロール"
       },
       "card_art": "@TwoHeadedTroll",
       "cost": 6,
@@ -109,17 +199,44 @@
       ],
       "lore_tooltips": [
         {
-          "english": "They never agree, and both are hungry."
+          "english": "They never agree, and both are hungry.",
+          "french": "Ils ne sont jamais d'accord, et ils ont tous les deux faim.",
+          "german": "Sie stimmen nie überein und beide sind hungrig.",
+          "russian": "Они никогда не соглашаются, и оба голодны.",
+          "portuguese": "Eles nunca concordam, e ambos têm fome.",
+          "chinese": "他们永远不会同意,他们都饿了.",
+          "spanish": "Nunca se ponen de acuerdo y los dos tienen hambre.",
+          "chinese_traditional": "他們永遠不會同意,",
+          "korean": "그들은 결코 동의하지 않으며, 둘 다 배고프다.",
+          "japanese": "彼らは決して同意しないし,二人とも飢えている."
         }
       ]
     },
     {
       "id": "StoneTrollAbility",
       "names": {
-        "english": "Boulder"
+        "english": "Boulder",
+        "french": "Rocher",
+        "german": "Felsbrocken",
+        "russian": "Валун",
+        "portuguese": "Pedregulho",
+        "chinese": "巨石",
+        "spanish": "Peñasco",
+        "chinese_traditional": "巨石",
+        "korean": "바위",
+        "japanese": "巨岩"
       },
       "descriptions": {
-        "english": "Attack the enemy unit with the lowest [health]."
+        "english": "Attack the enemy unit with the lowest [health].",
+        "french": "Attaque l’unité ennemie ayant le moins de [health].",
+        "german": "Greift die gegnerische Einheit mit der niedrigsten [health] an.",
+        "russian": "Атакует вражескую боевую единицу с наименьшим [health].",
+        "portuguese": "Ataca a unidade inimiga com menos [health].",
+        "chinese": "攻击[health]最低的敌方单位。",
+        "spanish": "Ataca a la unidad enemiga con menos [health].",
+        "chinese_traditional": "攻擊[health]最低的敵方單位。",
+        "korean": "[health]이 가장 낮은 적 유닛을 공격.",
+        "japanese": "[health]が最も低い敵ユニットを攻撃。"
       },
       "card_art": "@StoneTroll",
       "is_an_ability": true,
@@ -134,10 +251,28 @@
     {
       "id": "TwoHeadedWrath",
       "names": {
-        "english": "Wrath"
+        "english": "Wrath",
+        "french": "Courroux",
+        "german": "Zorn",
+        "russian": "Гнев",
+        "portuguese": "Ira",
+        "chinese": "狂怒",
+        "spanish": "Ira",
+        "chinese_traditional": "狂怒",
+        "korean": "격노",
+        "japanese": "激怒"
       },
       "descriptions": {
-        "english": "Attack immediately."
+        "english": "Attack immediately.",
+        "french": "Attaque immédiatement.",
+        "german": "Greift sofort an.",
+        "russian": "Немедленно атакует.",
+        "portuguese": "Ataca imediatamente.",
+        "chinese": "立即攻击。",
+        "spanish": "Ataca inmediatamente.",
+        "chinese_traditional": "立即攻擊。",
+        "korean": "즉시 공격.",
+        "japanese": "即座に攻撃。"
       },
       "card_art": "@TwoHeadedTroll",
       "is_an_ability": true,
@@ -152,10 +287,28 @@
     {
       "id": "TameBogTroll",
       "names": {
-        "english": "Tame the Bog Troll"
+        "english": "Tame the Bog Troll",
+        "french": "Apprivoiser : Troll des marais",
+        "german": "Sumpftroll zähmen",
+        "russian": "Приручить: Болотный тролль",
+        "portuguese": "Domar: Troll do Pântano",
+        "chinese": "驯服沼泽巨魔",
+        "spanish": "Domar al Trol del pantano",
+        "chinese_traditional": "馴服沼澤巨魔",
+        "korean": "늪 트롤 길들이기",
+        "japanese": "沼地のトロールを手なずける"
       },
       "descriptions": {
-        "english": "Add <b>Bog Troll</b> to your deck."
+        "english": "Add <b>Bog Troll</b> to your deck.",
+        "french": "Ajoutez <b>Troll des marais</b> à votre deck.",
+        "german": "Füge deinem Deck <b>Sumpftroll</b> hinzu.",
+        "russian": "Добавьте в колоду карту <b>Болотный тролль</b>.",
+        "portuguese": "Adicione <b>Troll do Pântano</b> ao seu deck.",
+        "chinese": "将<b>沼泽巨魔</b>加入你的牌组。",
+        "spanish": "Añade <b>Trol del pantano</b> a tu mazo.",
+        "chinese_traditional": "將<b>沼澤巨魔</b>加入你的牌組。",
+        "korean": "덱에 <b>늪 트롤</b> 추가.",
+        "japanese": "デッキに<b>沼地のトロール</b>を追加。"
       },
       "card_art": "@BogTroll",
       "cost": 0,
@@ -175,10 +328,28 @@
     {
       "id": "TameStoneTroll",
       "names": {
-        "english": "Tame the Stone Troll"
+        "english": "Tame the Stone Troll",
+        "french": "Apprivoiser : Troll de pierre",
+        "german": "Steintroll zähmen",
+        "russian": "Приручить: Каменный тролль",
+        "portuguese": "Domar: Troll de Pedra",
+        "chinese": "驯服岩石巨魔",
+        "spanish": "Domar al Trol de piedra",
+        "chinese_traditional": "馴服岩石巨魔",
+        "korean": "돌 트롤 길들이기",
+        "japanese": "岩のトロールを手なずける"
       },
       "descriptions": {
-        "english": "Add <b>Stone Troll</b> to your deck."
+        "english": "Add <b>Stone Troll</b> to your deck.",
+        "french": "Ajoutez <b>Troll de pierre</b> à votre deck.",
+        "german": "Füge deinem Deck <b>Steintroll</b> hinzu.",
+        "russian": "Добавьте в колоду карту <b>Каменный тролль</b>.",
+        "portuguese": "Adicione <b>Troll de Pedra</b> ao seu deck.",
+        "chinese": "将<b>岩石巨魔</b>加入你的牌组。",
+        "spanish": "Añade <b>Trol de piedra</b> a tu mazo.",
+        "chinese_traditional": "將<b>岩石巨魔</b>加入你的牌組。",
+        "korean": "덱에 <b>돌 트롤</b> 추가.",
+        "japanese": "デッキに<b>岩のトロール</b>を追加。"
       },
       "card_art": "@StoneTroll",
       "cost": 0,
@@ -198,10 +369,28 @@
     {
       "id": "TameWarTroll",
       "names": {
-        "english": "Tame the War Troll"
+        "english": "Tame the War Troll",
+        "french": "Apprivoiser : Troll de guerre",
+        "german": "Kriegstroll zähmen",
+        "russian": "Приручить: Боевой тролль",
+        "portuguese": "Domar: Troll de Guerra",
+        "chinese": "驯服战争巨魔",
+        "spanish": "Domar al Trol de guerra",
+        "chinese_traditional": "馴服戰爭巨魔",
+        "korean": "전쟁 트롤 길들이기",
+        "japanese": "戦のトロールを手なずける"
       },
       "descriptions": {
-        "english": "Add <b>War Troll</b> to your deck."
+        "english": "Add <b>War Troll</b> to your deck.",
+        "french": "Ajoutez <b>Troll de guerre</b> à votre deck.",
+        "german": "Füge deinem Deck <b>Kriegstroll</b> hinzu.",
+        "russian": "Добавьте в колоду карту <b>Боевой тролль</b>.",
+        "portuguese": "Adicione <b>Troll de Guerra</b> ao seu deck.",
+        "chinese": "将<b>战争巨魔</b>加入你的牌组。",
+        "spanish": "Añade <b>Trol de guerra</b> a tu mazo.",
+        "chinese_traditional": "將<b>戰爭巨魔</b>加入你的牌組。",
+        "korean": "덱에 <b>전쟁 트롤</b> 추가.",
+        "japanese": "デッキに<b>戦のトロール</b>を追加。"
       },
       "card_art": "@WarTroll",
       "cost": 0,
@@ -221,10 +410,28 @@
     {
       "id": "TameCautiousTroll",
       "names": {
-        "english": "Tame the Cautious Troll"
+        "english": "Tame the Cautious Troll",
+        "french": "Apprivoiser : Troll prudent",
+        "german": "Vorsichtiger Troll zähmen",
+        "russian": "Приручить: Осторожный тролль",
+        "portuguese": "Domar: Troll Cauteloso",
+        "chinese": "驯服谨慎巨魔",
+        "spanish": "Domar al Trol cauteloso",
+        "chinese_traditional": "馴服謹慎巨魔",
+        "korean": "신중한 트롤 길들이기",
+        "japanese": "慎重なトロールを手なずける"
       },
       "descriptions": {
-        "english": "Add <b>Cautious Troll</b> to your deck."
+        "english": "Add <b>Cautious Troll</b> to your deck.",
+        "french": "Ajoutez <b>Troll prudent</b> à votre deck.",
+        "german": "Füge deinem Deck <b>Vorsichtiger Troll</b> hinzu.",
+        "russian": "Добавьте в колоду карту <b>Осторожный тролль</b>.",
+        "portuguese": "Adicione <b>Troll Cauteloso</b> ao seu deck.",
+        "chinese": "将<b>谨慎巨魔</b>加入你的牌组。",
+        "spanish": "Añade <b>Trol cauteloso</b> a tu mazo.",
+        "chinese_traditional": "將<b>謹慎巨魔</b>加入你的牌組。",
+        "korean": "덱에 <b>신중한 트롤</b> 추가.",
+        "japanese": "デッキに<b>慎重なトロール</b>を追加。"
       },
       "card_art": "@CautiousTroll",
       "cost": 0,
@@ -244,10 +451,28 @@
     {
       "id": "TameTwoHeadedTroll",
       "names": {
-        "english": "Tame the Two-Headed Troll"
+        "english": "Tame the Two-Headed Troll",
+        "french": "Apprivoiser : Troll à deux têtes",
+        "german": "Zweiköpfiger Troll zähmen",
+        "russian": "Приручить: Двухголовый тролль",
+        "portuguese": "Domar: Troll de Duas Cabeças",
+        "chinese": "驯服双头巨魔",
+        "spanish": "Domar al Trol de dos cabezas",
+        "chinese_traditional": "馴服雙頭巨魔",
+        "korean": "쌍두 트롤 길들이기",
+        "japanese": "双頭のトロールを手なずける"
       },
       "descriptions": {
-        "english": "Add <b>Two-Headed Troll</b> to your deck."
+        "english": "Add <b>Two-Headed Troll</b> to your deck.",
+        "french": "Ajoutez <b>Troll à deux têtes</b> à votre deck.",
+        "german": "Füge deinem Deck <b>Zweiköpfiger Troll</b> hinzu.",
+        "russian": "Добавьте в колоду карту <b>Двухголовый тролль</b>.",
+        "portuguese": "Adicione <b>Troll de Duas Cabeças</b> ao seu deck.",
+        "chinese": "将<b>双头巨魔</b>加入你的牌组。",
+        "spanish": "Añade <b>Trol de dos cabezas</b> a tu mazo.",
+        "chinese_traditional": "將<b>雙頭巨魔</b>加入你的牌組。",
+        "korean": "덱에 <b>쌍두 트롤</b> 추가.",
+        "japanese": "デッキに<b>双頭のトロール</b>を追加。"
       },
       "card_art": "@TwoHeadedTroll",
       "cost": 0,
@@ -269,7 +494,16 @@
     {
       "id": "BogTroll",
       "names": {
-        "english": "Bog Troll"
+        "english": "Bog Troll",
+        "french": "Troll des marais",
+        "german": "Sumpftroll",
+        "russian": "Болотный тролль",
+        "portuguese": "Troll do Pântano",
+        "chinese": "沼泽巨魔",
+        "spanish": "Trol del pantano",
+        "chinese_traditional": "沼澤巨魔",
+        "korean": "늪 트롤",
+        "japanese": "沼地のトロール"
       },
       "character_art": "@BogTrollCharacterArt",
       "size": 4,
@@ -298,7 +532,16 @@
     {
       "id": "StoneTroll",
       "names": {
-        "english": "Stone Troll"
+        "english": "Stone Troll",
+        "french": "Troll de pierre",
+        "german": "Steintroll",
+        "russian": "Каменный тролль",
+        "portuguese": "Troll de Pedra",
+        "chinese": "岩石巨魔",
+        "spanish": "Trol de piedra",
+        "chinese_traditional": "岩石巨魔",
+        "korean": "돌 트롤",
+        "japanese": "岩のトロール"
       },
       "character_art": "@StoneTrollCharacterArt",
       "size": 4,
@@ -325,7 +568,16 @@
     {
       "id": "WarTroll",
       "names": {
-        "english": "War Troll"
+        "english": "War Troll",
+        "french": "Troll de guerre",
+        "german": "Kriegstroll",
+        "russian": "Боевой тролль",
+        "portuguese": "Troll de Guerra",
+        "chinese": "战争巨魔",
+        "spanish": "Trol de guerra",
+        "chinese_traditional": "戰爭巨魔",
+        "korean": "전쟁 트롤",
+        "japanese": "戦のトロール"
       },
       "character_art": "@WarTrollCharacterArt",
       "size": 4,
@@ -351,7 +603,16 @@
     {
       "id": "CautiousTroll",
       "names": {
-        "english": "Cautious Troll"
+        "english": "Cautious Troll",
+        "french": "Troll prudent",
+        "german": "Vorsichtiger Troll",
+        "russian": "Осторожный тролль",
+        "portuguese": "Troll Cauteloso",
+        "chinese": "谨慎巨魔",
+        "spanish": "Trol cauteloso",
+        "chinese_traditional": "謹慎巨魔",
+        "korean": "신중한 트롤",
+        "japanese": "慎重なトロール"
       },
       "character_art": "@CautiousTrollCharacterArt",
       "size": 4,
@@ -377,7 +638,16 @@
     {
       "id": "TwoHeadedTroll",
       "names": {
-        "english": "Two-Headed Troll"
+        "english": "Two-Headed Troll",
+        "french": "Troll à deux têtes",
+        "german": "Zweiköpfiger Troll",
+        "russian": "Двухголовый тролль",
+        "portuguese": "Troll de Duas Cabeças",
+        "chinese": "双头巨魔",
+        "spanish": "Trol de dos cabezas",
+        "chinese_traditional": "雙頭巨魔",
+        "korean": "쌍두 트롤",
+        "japanese": "双頭のトロール"
       },
       "character_art": "@TwoHeadedTrollCharacterArt",
       "size": 4,
@@ -407,7 +677,16 @@
       "id": "TrollBeastmasterSpawn",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "If <b>Beastmaster</b> Vesper is in play, gain +<b>10</b> [attack] and [health] for each Ring after the first. <b>Beastmaster II</b> or higher: also gain [trample]."
+        "english": "If <b>Beastmaster</b> Vesper is in play, gain +<b>10</b> [attack] and [health] for each Ring after the first. <b>Beastmaster II</b> or higher: also gain [trample].",
+        "french": "Si Vesper <b>Maître des bêtes</b> est en jeu, gagne +<b>10</b> [attack] et [health] par cercle après le premier. <b>Maître des bêtes II</b> ou plus : gagne aussi [trample].",
+        "german": "Wenn Vesper <b>Bestienmeister</b> im Spiel ist, erhält diese Einheit ab dem zweiten Ring pro Ring +<b>10</b> [attack] und [health]. <b>Bestienmeister II</b> oder höher: erhält auch [trample].",
+        "russian": "Если Vesper <b>Повелитель зверей</b> в игре, получает +<b>10</b> [attack] и [health] за каждый круг после первого. <b>Повелитель зверей II</b> или выше: также получает [trample].",
+        "portuguese": "Se Vesper <b>Mestre das Feras</b> estiver em jogo, ganha +<b>10</b> [attack] e [health] por anel após o primeiro. <b>Mestre das Feras II</b> ou superior: também ganha [trample].",
+        "chinese": "若<b>驯兽师</b> Vesper在场，则第一环之后每环获得+<b>10</b> [attack]和[health]。<b>驯兽师 II</b>或更高等级：同时获得[trample]。",
+        "spanish": "Si Vesper <b>Maestro de bestias</b> está en juego, gana +<b>10</b> [attack] y [health] por cada anillo después del primero. <b>Maestro de bestias II</b> o superior: también gana [trample].",
+        "chinese_traditional": "若<b>馴獸師</b> Vesper在場，則第一環之後每環獲得+<b>10</b> [attack]和[health]。<b>馴獸師 II</b>或更高等級：同時獲得[trample]。",
+        "korean": "<b>야수 조련사</b> Vesper가 전장에 있으면 첫 고리 이후 고리마다 +<b>10</b> [attack] 및 [health] 획득. <b>야수 조련사 II</b> 이상이면 [trample]도 획득.",
+        "japanese": "<b>獣使い</b> Vesperが場にいる場合、第1リング以降のリング1つにつき+<b>10</b> [attack]と[health]を得る。<b>獣使い II</b>以上なら[trample]も得る。"
       },
       "effects": [
         "@TrollRingBonus",
@@ -419,7 +698,16 @@
       "id": "BogTrollStrike",
       "trigger": "on_attacking",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [rooted] to the unit it attacks."
+        "english": "Apply [effect0.status0.power] [rooted] to the unit it attacks.",
+        "french": "Applique [effect0.status0.power] [rooted] à l’unité qu’elle attaque.",
+        "german": "Verleiht der angegriffenen Einheit [effect0.status0.power] [rooted].",
+        "russian": "Накладывает [effect0.status0.power] [rooted] на атакуемую боевую единицу.",
+        "portuguese": "Aplica [effect0.status0.power] [rooted] à unidade que ataca.",
+        "chinese": "对其攻击的单位施加[effect0.status0.power] [rooted]。",
+        "spanish": "Aplica [effect0.status0.power] [rooted] a la unidad a la que ataca.",
+        "chinese_traditional": "對其攻擊的單位施加[effect0.status0.power] [rooted]。",
+        "korean": "공격한 유닛에게 [effect0.status0.power] [rooted] 부여.",
+        "japanese": "攻撃対象のユニットに[effect0.status0.power] [rooted]を付与。"
       },
       "effects": [
         "@BogTrollRoot"

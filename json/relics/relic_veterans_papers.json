@@ -11,17 +11,53 @@
       "id": "VeteransPapers",
       "type": "collectable",
       "names": {
-        "english": "Veteran's Papers"
+        "english": "Veteran's Papers",
+        "french": "Papiers du vétéran",
+        "german": "Veteranenpapiere",
+        "russian": "Документы ветерана",
+        "portuguese": "Documentos do Veterano",
+        "chinese": "老兵证书",
+        "spanish": "Documentos del veterano",
+        "chinese_traditional": "老兵證書",
+        "korean": "고참의 증서",
+        "japanese": "古参兵の証書"
       },
       "descriptions": {
-        "english": "Unit cards have <b>1</b> additional upgrade slot."
+        "english": "Unit cards have <b>1</b> additional upgrade slot.",
+        "french": "Les cartes d’unité ont <b>1</b> emplacement d’amélioration supplémentaire.",
+        "german": "Einheitenkarten haben <b>1</b> zusätzlichen Verbesserungsplatz.",
+        "russian": "Карты боевых единиц имеют <b>1</b> дополнительную ячейку улучшения.",
+        "portuguese": "Cartas de unidade têm <b>1</b> espaço de melhoria adicional.",
+        "chinese": "单位牌额外拥有<b>1</b>个升级槽位。",
+        "spanish": "Las cartas de unidad tienen <b>1</b> espacio de mejora adicional.",
+        "chinese_traditional": "單位牌額外擁有<b>1</b>個升級槽位。",
+        "korean": "유닛 카드에 업그레이드 슬롯 <b>1</b>개 추가.",
+        "japanese": "ユニットカードの強化スロットが<b>1</b>つ増える。"
       },
       "relic_activated_texts": {
-        "english": "Signed and countersigned."
+        "english": "Signed and countersigned.",
+        "french": "Signé et contre-signé.",
+        "german": "Unterzeichnet und Gegenunterzeichnet.",
+        "russian": "Подписано и контраподписано.",
+        "portuguese": "Assinado e contra-assinado.",
+        "chinese": "签署和反签署.",
+        "spanish": "Firmado y refrendado.",
+        "chinese_traditional": "簽名與反簽名.",
+        "korean": "서명하고 반 서명",
+        "japanese": "署名と反署名"
       },
       "lore_tooltips": [
         {
-          "english": "Years of service, written down where it counts."
+          "english": "Years of service, written down where it counts.",
+          "french": "Des années de service, écrites là où ça compte.",
+          "german": "Jahre Dienst, aufgeschrieben, wo es zählt.",
+          "russian": "Годы службы, записанные там, где это имеет значение.",
+          "portuguese": "Anos de serviço, escritos onde é importante.",
+          "chinese": "很多年的服务,写下来.",
+          "spanish": "Años de servicio, registrados donde importa.",
+          "chinese_traditional": "很多年服務, 記錄在重要的地方.",
+          "korean": "수년간의 봉사활동, 중요한 곳에 적혀있어요.",
+          "japanese": "何年もの間 役立っていた"
         }
       ],
       "lore_style": "herzal",

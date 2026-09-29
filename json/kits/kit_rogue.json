@@ -4,10 +4,28 @@
     {
       "id": "Lockpicks",
       "names": {
-        "english": "Lockpicks"
+        "english": "Lockpicks",
+        "french": "Crochets",
+        "german": "Dietriche",
+        "russian": "Отмычки",
+        "portuguese": "Gazuas",
+        "chinese": "开锁工具",
+        "spanish": "Ganzúas",
+        "chinese_traditional": "開鎖工具",
+        "korean": "자물쇠 따개",
+        "japanese": "ピッキング道具"
       },
       "descriptions": {
-        "english": "<b>+4</b> [attack]. Apply <b>1</b> [avarice] and <b>2</b> [stealth]."
+        "english": "<b>+4</b> [attack]. Apply <b>1</b> [avarice] and <b>2</b> [stealth].",
+        "french": "<b>+4</b> [attack]. Appliquez <b>1</b> [avarice] et <b>2</b> [stealth].",
+        "german": "<b>+4</b> [attack]. Erhalte <b>1</b> [avarice] und <b>2</b> [stealth].",
+        "russian": "<b>+4</b> [attack]. Получите <b>1</b> [avarice] и <b>2</b> [stealth].",
+        "portuguese": "<b>+4</b> [attack]. Aplique <b>1</b> [avarice] e <b>2</b> [stealth].",
+        "chinese": "<b>+4</b> [attack]. 施加<b>1</b> [avarice]和<b>2</b> [stealth]。",
+        "spanish": "<b>+4</b> [attack]. Aplica <b>1</b> [avarice] y <b>2</b> [stealth].",
+        "chinese_traditional": "<b>+4</b> [attack]. 施加<b>1</b> [avarice]和<b>2</b> [stealth]。",
+        "korean": "<b>+4</b> [attack]. <b>1</b> [avarice] 및 <b>2</b> [stealth] 부여.",
+        "japanese": "<b>+4</b> [attack]. <b>1</b> [avarice]と<b>2</b> [stealth]を付与。"
       },
       "card_art": "@Lockpicks",
       "cost": 1,
@@ -24,7 +42,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Opens most things. Including people."
+          "english": "Opens most things. Including people.",
+          "french": "Ça ouvre la plupart des choses. Y compris les gens.",
+          "german": "Er öffnet die meisten Dinge. Einschließlich Menschen.",
+          "russian": "Открывает большинство вещей. Включая людей.",
+          "portuguese": "Abre a maioria das coisas. Incluindo pessoas.",
+          "chinese": "打开了很多东西. 包括人们.",
+          "spanish": "Abre casi todo. Incluidas las personas.",
+          "chinese_traditional": "打開了許多東西. 包括人們在內.",
+          "korean": "대부분의 것을 열어줍니다. 사람들을 포함해서",
+          "japanese": "ほとんどのものを開きます. 人を含む"
         }
       ],
       "pools": [
@@ -36,10 +63,28 @@
     {
       "id": "PoisonedDagger",
       "names": {
-        "english": "Poisoned Dagger"
+        "english": "Poisoned Dagger",
+        "french": "Dague empoisonnée",
+        "german": "Vergifteter Dolch",
+        "russian": "Отравленный кинжал",
+        "portuguese": "Adaga Envenenada",
+        "chinese": "淬毒匕首",
+        "spanish": "Daga envenenada",
+        "chinese_traditional": "淬毒匕首",
+        "korean": "독 묻은 단검",
+        "japanese": "毒の短剣"
       },
       "descriptions": {
-        "english": "<b>+9</b> [attack]. Apply <b>2</b> [avarice] and <b>4</b> [stealth]."
+        "english": "<b>+9</b> [attack]. Apply <b>2</b> [avarice] and <b>4</b> [stealth].",
+        "french": "<b>+9</b> [attack]. Appliquez <b>2</b> [avarice] et <b>4</b> [stealth].",
+        "german": "<b>+9</b> [attack]. Erhalte <b>2</b> [avarice] und <b>4</b> [stealth].",
+        "russian": "<b>+9</b> [attack]. Получите <b>2</b> [avarice] и <b>4</b> [stealth].",
+        "portuguese": "<b>+9</b> [attack]. Aplique <b>2</b> [avarice] e <b>4</b> [stealth].",
+        "chinese": "<b>+9</b> [attack]. 施加<b>2</b> [avarice]和<b>4</b> [stealth]。",
+        "spanish": "<b>+9</b> [attack]. Aplica <b>2</b> [avarice] y <b>4</b> [stealth].",
+        "chinese_traditional": "<b>+9</b> [attack]. 施加<b>2</b> [avarice]和<b>4</b> [stealth]。",
+        "korean": "<b>+9</b> [attack]. <b>2</b> [avarice] 및 <b>4</b> [stealth] 부여.",
+        "japanese": "<b>+9</b> [attack]. <b>2</b> [avarice]と<b>4</b> [stealth]を付与。"
       },
       "card_art": "@PoisonedDagger",
       "cost": 1,
@@ -56,7 +101,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "The fee is per cut."
+          "english": "The fee is per cut.",
+          "french": "Les frais sont par tranche.",
+          "german": "Die Gebühr ist pro Schnitt.",
+          "russian": "Стоимость - за сделку.",
+          "portuguese": "A taxa é por corte.",
+          "chinese": "费用是每块.",
+          "spanish": "Se cobra por corte.",
+          "chinese_traditional": "這項費用是每次削减.",
+          "korean": "수수료는 삭감당입니다.",
+          "japanese": "割引料は割引料です"
         }
       ],
       "pools": [
@@ -68,10 +122,28 @@
     {
       "id": "ThiefsMantle",
       "names": {
-        "english": "Thief's Mantle"
+        "english": "Thief's Mantle",
+        "french": "Manteau du voleur",
+        "german": "Diebesmantel",
+        "russian": "Плащ вора",
+        "portuguese": "Manto do Ladrão",
+        "chinese": "盗贼披风",
+        "spanish": "Manto del ladrón",
+        "chinese_traditional": "盜賊披風",
+        "korean": "도둑의 망토",
+        "japanese": "盗賊の外套"
       },
       "descriptions": {
-        "english": "<b>+15</b> [attack]. Apply <b>4</b> [avarice] and <b>6</b> [stealth]."
+        "english": "<b>+15</b> [attack]. Apply <b>4</b> [avarice] and <b>6</b> [stealth].",
+        "french": "<b>+15</b> [attack]. Appliquez <b>4</b> [avarice] et <b>6</b> [stealth].",
+        "german": "<b>+15</b> [attack]. Erhalte <b>4</b> [avarice] und <b>6</b> [stealth].",
+        "russian": "<b>+15</b> [attack]. Получите <b>4</b> [avarice] и <b>6</b> [stealth].",
+        "portuguese": "<b>+15</b> [attack]. Aplique <b>4</b> [avarice] e <b>6</b> [stealth].",
+        "chinese": "<b>+15</b> [attack]. 施加<b>4</b> [avarice]和<b>6</b> [stealth]。",
+        "spanish": "<b>+15</b> [attack]. Aplica <b>4</b> [avarice] y <b>6</b> [stealth].",
+        "chinese_traditional": "<b>+15</b> [attack]. 施加<b>4</b> [avarice]和<b>6</b> [stealth]。",
+        "korean": "<b>+15</b> [attack]. <b>4</b> [avarice] 및 <b>6</b> [stealth] 부여.",
+        "japanese": "<b>+15</b> [attack]. <b>4</b> [avarice]と<b>6</b> [stealth]を付与。"
       },
       "card_art": "@ThiefsMantle",
       "cost": 1,
@@ -88,7 +160,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "You paid for it. You just do not remember."
+          "english": "You paid for it. You just do not remember.",
+          "french": "Tu as payé pour ça. Vous ne vous en souvenez pas.",
+          "german": "Du hast dafür bezahlt. Du erinnerst dich einfach nicht.",
+          "russian": "Ты заплатил за это. Ты просто не помнишь.",
+          "portuguese": "Você pagou por isso. Só não te lembras.",
+          "chinese": "你为此付钱了. 你只是不记得.",
+          "spanish": "Lo pagaste. Simplemente no lo recuerdas.",
+          "chinese_traditional": "你付出了這個代價. 你只是不記得.",
+          "korean": "당신은 그 돈을 지불했습니다. 그냥 기억이 안 나",
+          "japanese": "お前が支払った 覚えてないだけよ"
         }
       ],
       "pools": [
@@ -102,10 +183,28 @@
     {
       "id": "UpgLockpicks",
       "titles": {
-        "english": "Lockpicks"
+        "english": "Lockpicks",
+        "french": "Crochets",
+        "german": "Dietriche",
+        "russian": "Отмычки",
+        "portuguese": "Gazuas",
+        "chinese": "开锁工具",
+        "spanish": "Ganzúas",
+        "chinese_traditional": "開鎖工具",
+        "korean": "자물쇠 따개",
+        "japanese": "ピッキング道具"
       },
       "descriptions": {
-        "english": "<b>+4</b> [attack]. Apply <b>1</b> [avarice] and <b>2</b> [stealth]."
+        "english": "<b>+4</b> [attack]. Apply <b>1</b> [avarice] and <b>2</b> [stealth].",
+        "french": "<b>+4</b> [attack]. Appliquez <b>1</b> [avarice] et <b>2</b> [stealth].",
+        "german": "<b>+4</b> [attack]. Erhalte <b>1</b> [avarice] und <b>2</b> [stealth].",
+        "russian": "<b>+4</b> [attack]. Получите <b>1</b> [avarice] и <b>2</b> [stealth].",
+        "portuguese": "<b>+4</b> [attack]. Aplique <b>1</b> [avarice] e <b>2</b> [stealth].",
+        "chinese": "<b>+4</b> [attack]. 施加<b>1</b> [avarice]和<b>2</b> [stealth]。",
+        "spanish": "<b>+4</b> [attack]. Aplica <b>1</b> [avarice] y <b>2</b> [stealth].",
+        "chinese_traditional": "<b>+4</b> [attack]. 施加<b>1</b> [avarice]和<b>2</b> [stealth]。",
+        "korean": "<b>+4</b> [attack]. <b>1</b> [avarice] 및 <b>2</b> [stealth] 부여.",
+        "japanese": "<b>+4</b> [attack]. <b>1</b> [avarice]と<b>2</b> [stealth]を付与。"
       },
       "icon": "@Lockpicks",
       "bonus_damage": 4,
@@ -123,10 +222,28 @@
     {
       "id": "UpgPoisonedDagger",
       "titles": {
-        "english": "Poisoned Dagger"
+        "english": "Poisoned Dagger",
+        "french": "Dague empoisonnée",
+        "german": "Vergifteter Dolch",
+        "russian": "Отравленный кинжал",
+        "portuguese": "Adaga Envenenada",
+        "chinese": "淬毒匕首",
+        "spanish": "Daga envenenada",
+        "chinese_traditional": "淬毒匕首",
+        "korean": "독 묻은 단검",
+        "japanese": "毒の短剣"
       },
       "descriptions": {
-        "english": "<b>+9</b> [attack]. Apply <b>2</b> [avarice] and <b>4</b> [stealth]."
+        "english": "<b>+9</b> [attack]. Apply <b>2</b> [avarice] and <b>4</b> [stealth].",
+        "french": "<b>+9</b> [attack]. Appliquez <b>2</b> [avarice] et <b>4</b> [stealth].",
+        "german": "<b>+9</b> [attack]. Erhalte <b>2</b> [avarice] und <b>4</b> [stealth].",
+        "russian": "<b>+9</b> [attack]. Получите <b>2</b> [avarice] и <b>4</b> [stealth].",
+        "portuguese": "<b>+9</b> [attack]. Aplique <b>2</b> [avarice] e <b>4</b> [stealth].",
+        "chinese": "<b>+9</b> [attack]. 施加<b>2</b> [avarice]和<b>4</b> [stealth]。",
+        "spanish": "<b>+9</b> [attack]. Aplica <b>2</b> [avarice] y <b>4</b> [stealth].",
+        "chinese_traditional": "<b>+9</b> [attack]. 施加<b>2</b> [avarice]和<b>4</b> [stealth]。",
+        "korean": "<b>+9</b> [attack]. <b>2</b> [avarice] 및 <b>4</b> [stealth] 부여.",
+        "japanese": "<b>+9</b> [attack]. <b>2</b> [avarice]と<b>4</b> [stealth]を付与。"
       },
       "icon": "@PoisonedDagger",
       "bonus_damage": 9,
@@ -144,10 +261,28 @@
     {
       "id": "UpgThiefsMantle",
       "titles": {
-        "english": "Thief's Mantle"
+        "english": "Thief's Mantle",
+        "french": "Manteau du voleur",
+        "german": "Diebesmantel",
+        "russian": "Плащ вора",
+        "portuguese": "Manto do Ladrão",
+        "chinese": "盗贼披风",
+        "spanish": "Manto del ladrón",
+        "chinese_traditional": "盜賊披風",
+        "korean": "도둑의 망토",
+        "japanese": "盗賊の外套"
       },
       "descriptions": {
-        "english": "<b>+15</b> [attack]. Apply <b>4</b> [avarice] and <b>6</b> [stealth]."
+        "english": "<b>+15</b> [attack]. Apply <b>4</b> [avarice] and <b>6</b> [stealth].",
+        "french": "<b>+15</b> [attack]. Appliquez <b>4</b> [avarice] et <b>6</b> [stealth].",
+        "german": "<b>+15</b> [attack]. Erhalte <b>4</b> [avarice] und <b>6</b> [stealth].",
+        "russian": "<b>+15</b> [attack]. Получите <b>4</b> [avarice] и <b>6</b> [stealth].",
+        "portuguese": "<b>+15</b> [attack]. Aplique <b>4</b> [avarice] e <b>6</b> [stealth].",
+        "chinese": "<b>+15</b> [attack]. 施加<b>4</b> [avarice]和<b>6</b> [stealth]。",
+        "spanish": "<b>+15</b> [attack]. Aplica <b>4</b> [avarice] y <b>6</b> [stealth].",
+        "chinese_traditional": "<b>+15</b> [attack]. 施加<b>4</b> [avarice]和<b>6</b> [stealth]。",
+        "korean": "<b>+15</b> [attack]. <b>4</b> [avarice] 및 <b>6</b> [stealth] 부여.",
+        "japanese": "<b>+15</b> [attack]. <b>4</b> [avarice]と<b>6</b> [stealth]を付与。"
       },
       "icon": "@ThiefsMantle",
       "bonus_damage": 15,

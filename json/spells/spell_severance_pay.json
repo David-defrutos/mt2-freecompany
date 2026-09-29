@@ -4,10 +4,28 @@
     {
       "id": "SeverancePay",
       "names": {
-        "english": "Severance Pay"
+        "english": "Severance Pay",
+        "french": "Indemnité de départ",
+        "german": "Abfindung",
+        "russian": "Выходное пособие",
+        "portuguese": "Indenização de Rescisão",
+        "chinese": "遣散费",
+        "spanish": "Indemnización por despido",
+        "chinese_traditional": "遣散費",
+        "korean": "퇴직 수당",
+        "japanese": "退職手当"
       },
       "descriptions": {
-        "english": "Gain <b>97</b> gold. Your Pyre takes <b>5</b> damage for each Ring remaining before the final Ring."
+        "english": "Gain <b>97</b> gold. Your Pyre takes <b>5</b> damage for each Ring remaining before the final Ring.",
+        "french": "Gagnez <b>97</b> pièces d’or. Votre Brasier subit <b>5</b> dégâts par cercle restant avant le dernier cercle.",
+        "german": "Erhalte <b>97</b> Gold. Deine Pyre erleidet <b>5</b> Schaden pro verbleibendem Ring vor dem letzten Ring.",
+        "russian": "Получите <b>97</b> золота. Ваше Пекло получает <b>5</b> урона за каждый оставшийся круг перед последним кругом.",
+        "portuguese": "Ganhe <b>97</b> de ouro. Sua Pira sofre <b>5</b> de dano por anel restante antes do último anel.",
+        "chinese": "获得<b>97</b>金币。最终环之前每剩一环，你的薪火就受到<b>5</b>点伤害。",
+        "spanish": "Gana <b>97</b> de oro. Tu Pira recibe <b>5</b> de daño por cada anillo que quede antes del último.",
+        "chinese_traditional": "獲得<b>97</b>金幣。最終環之前每剩一環，你的薪火就受到<b>5</b>點傷害。",
+        "korean": "<b>97</b>골드를 얻습니다. 마지막 고리 이전에 남은 고리마다 화염이 <b>5</b>의 피해를 받습니다.",
+        "japanese": "<b>97</b>ゴールドを得る。最終リングまでに残るリング1つにつき、パイアが<b>5</b>ダメージを受ける。"
       },
       "card_art": "@SeverancePay",
       "cost": 0,
@@ -25,7 +43,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Paid in full. Don't come back."
+          "english": "Paid in full. Don't come back.",
+          "french": "Tout est payé. Ne reviens pas.",
+          "german": "Voll bezahlt. Kommen Sie nicht zurück.",
+          "russian": "Заплатил полностью. Не возвращайся.",
+          "portuguese": "Pagado em pleno. Não voltes.",
+          "chinese": "完全支付了. 不要回来.",
+          "spanish": "Pagado por completo. No vuelvas.",
+          "chinese_traditional": "完全支付. 請不要回來.",
+          "korean": "전액을 지불했어요. 다시 오지 마",
+          "japanese": "全額払った 戻らないで"
         }
       ],
       "pools": [
@@ -82,6 +109,23 @@
         "asset_guid": "f5a595ac3f2ede94483684d774afd444"
       },
       "spawn_location": "room_center"
+    }
+  ],
+  "localization_terms": [
+    {
+      "key": "mt2_freecompany.Plugin_SeverancePayCurrentPyreDamage",
+      "texts": {
+        "english": "Pyre damage this Ring: <b>{0}</b>",
+        "french": "Dégâts au Brasier ce cercle : <b>{0}</b>",
+        "german": "Pyre-Schaden in diesem Ring: <b>{0}</b>",
+        "russian": "Урон Пеклу в этом круге: <b>{0}</b>",
+        "portuguese": "Dano à Pira neste anel: <b>{0}</b>",
+        "chinese": "本环薪火伤害：<b>{0}</b>",
+        "spanish": "Daño a la Pira en este anillo: <b>{0}</b>",
+        "chinese_traditional": "本環薪火傷害：<b>{0}</b>",
+        "korean": "이번 고리의 화로 피해: <b>{0}</b>",
+        "japanese": "このリングのパイアへのダメージ：<b>{0}</b>"
+      }
     }
   ]
 }

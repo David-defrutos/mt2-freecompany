@@ -4,10 +4,28 @@
     {
       "id": "DimensionDoor",
       "names": {
-        "english": "Dimension Door"
+        "english": "Dimension Door",
+        "french": "Porte dimensionnelle",
+        "german": "Dimensionstor",
+        "russian": "Дверь измерений",
+        "portuguese": "Porta Dimensional",
+        "chinese": "任意门",
+        "spanish": "Puerta dimensional",
+        "chinese_traditional": "任意門",
+        "korean": "차원문",
+        "japanese": "次元扉"
       },
       "descriptions": {
-        "english": "Move a friendly unit up one floor, or an enemy unit down one floor."
+        "english": "Move a friendly unit up one floor, or an enemy unit down one floor.",
+        "french": "Déplacez une unité alliée d’un étage vers le haut, ou une unité ennemie d’un étage vers le bas.",
+        "german": "Bewege eine verbündete Einheit ein Stockwerk nach oben oder eine gegnerische Einheit ein Stockwerk nach unten.",
+        "russian": "Переместите союзную боевую единицу на этаж выше или вражескую на этаж ниже.",
+        "portuguese": "Mova uma unidade aliada um andar para cima ou uma unidade inimiga um andar para baixo.",
+        "chinese": "将一个友方单位上移一层，或将一个敌方单位下移一层。",
+        "spanish": "Mueve una unidad aliada un piso hacia arriba o una unidad enemiga un piso hacia abajo.",
+        "chinese_traditional": "將一個友方單位上移一層，或將一個敵方單位下移一層。",
+        "korean": "아군 유닛 하나를 한 층 위로, 또는 적 유닛 하나를 한 층 아래로 이동.",
+        "japanese": "味方ユニット1体を1階上へ、または敵ユニット1体を1階下へ移動。"
       },
       "card_art": "@DimensionDoor",
       "cost": 1,
@@ -22,7 +40,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Mind the step."
+          "english": "Mind the step.",
+          "french": "Attention à l'étape.",
+          "german": "Pass auf den Schritt auf.",
+          "russian": "Осторожно с шагом.",
+          "portuguese": "Cuidado com o passo.",
+          "chinese": "注意步骤.",
+          "spanish": "Cuidado con el escalón.",
+          "chinese_traditional": "關心自己的步伐.",
+          "korean": "발걸음을 조심해",
+          "japanese": "階段を注意して"
         }
       ],
       "pools": [

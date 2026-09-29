@@ -4,10 +4,28 @@
     {
       "id": "ChalkCircle",
       "names": {
-        "english": "Chalk Circle"
+        "english": "Chalk Circle",
+        "french": "Cercle de craie",
+        "german": "Kreidekreis",
+        "russian": "Меловой круг",
+        "portuguese": "Círculo de Giz",
+        "chinese": "粉笔法阵",
+        "spanish": "Círculo de tiza",
+        "chinese_traditional": "粉筆法陣",
+        "korean": "분필 마법진",
+        "japanese": "白墨の魔法陣"
       },
       "descriptions": {
-        "english": "Apply <b>1</b> [conduit]."
+        "english": "Apply <b>1</b> [conduit].",
+        "french": "Appliquez <b>1</b> [conduit].",
+        "german": "Erhalte <b>1</b> [conduit].",
+        "russian": "Получите <b>1</b> [conduit].",
+        "portuguese": "Aplique <b>1</b> [conduit].",
+        "chinese": "施加<b>1</b> [conduit]。",
+        "spanish": "Aplica <b>1</b> [conduit].",
+        "chinese_traditional": "施加<b>1</b> [conduit]。",
+        "korean": "<b>1</b> [conduit] 부여.",
+        "japanese": "<b>1</b> [conduit]を付与。"
       },
       "card_art": "@ChalkCircle",
       "cost": 1,
@@ -24,7 +42,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Draw it twice. It is never right the first time."
+          "english": "Draw it twice. It is never right the first time.",
+          "french": "Dessine deux fois. Ce n'est jamais la première fois.",
+          "german": "Zeichnen Sie es zweimal. Das ist das erste Mal nie richtig.",
+          "russian": "Рисуй дважды. Это никогда не правильно в первый раз.",
+          "portuguese": "Desenha duas vezes. Nunca é certo a primeira vez.",
+          "chinese": "绘制两次. 第一次永远不会是正确的.",
+          "spanish": "Dibújalo dos veces. Nunca sale bien a la primera.",
+          "chinese_traditional": "畫兩次. 這不是第一次的錯誤.",
+          "korean": "두 번 그려보세요. 처음엔 절대 옳지 않습니다.",
+          "japanese": "2回描いて 初めは決して正しくない"
         }
       ],
       "pools": [
@@ -36,10 +63,28 @@
     {
       "id": "Grimoire",
       "names": {
-        "english": "Grimoire"
+        "english": "Grimoire",
+        "french": "Grimoire",
+        "german": "Grimoire",
+        "russian": "Гримуар",
+        "portuguese": "Grimório",
+        "chinese": "魔法书",
+        "spanish": "Grimorio",
+        "chinese_traditional": "魔法書",
+        "korean": "마법서",
+        "japanese": "魔導書"
       },
       "descriptions": {
-        "english": "<b>+6</b> [attack]. Apply <b>2</b> [conduit]."
+        "english": "<b>+6</b> [attack]. Apply <b>2</b> [conduit].",
+        "french": "<b>+6</b> [attack]. Appliquez <b>2</b> [conduit].",
+        "german": "<b>+6</b> [attack]. Erhalte <b>2</b> [conduit].",
+        "russian": "<b>+6</b> [attack]. Получите <b>2</b> [conduit].",
+        "portuguese": "<b>+6</b> [attack]. Aplique <b>2</b> [conduit].",
+        "chinese": "<b>+6</b> [attack]. 施加<b>2</b> [conduit]。",
+        "spanish": "<b>+6</b> [attack]. Aplica <b>2</b> [conduit].",
+        "chinese_traditional": "<b>+6</b> [attack]. 施加<b>2</b> [conduit]。",
+        "korean": "<b>+6</b> [attack]. <b>2</b> [conduit] 부여.",
+        "japanese": "<b>+6</b> [attack]. <b>2</b> [conduit]を付与。"
       },
       "card_art": "@Grimoire",
       "cost": 1,
@@ -56,7 +101,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Somebody else's notes."
+          "english": "Somebody else's notes.",
+          "french": "Les notes de quelqu'un d'autre.",
+          "german": "Die Notizen von jemand anderem.",
+          "russian": "Это чьи-то записки.",
+          "portuguese": "Notas de outra pessoa.",
+          "chinese": "另一个人的笔记.",
+          "spanish": "Los apuntes de otra persona.",
+          "chinese_traditional": "其他人的筆記.",
+          "korean": "다른 사람의 노트",
+          "japanese": "誰かのメモだ"
         }
       ],
       "pools": [
@@ -68,10 +122,28 @@
     {
       "id": "ArchmagesStaff",
       "names": {
-        "english": "Archmage's Staff"
+        "english": "Archmage's Staff",
+        "french": "Bâton d'archimage",
+        "german": "Erzmagierstab",
+        "russian": "Посох архимага",
+        "portuguese": "Cajado do Arquimago",
+        "chinese": "大法师之杖",
+        "spanish": "Bastón del archimago",
+        "chinese_traditional": "大法師之杖",
+        "korean": "대마법사의 지팡이",
+        "japanese": "大魔術師の杖"
       },
       "descriptions": {
-        "english": "<b>+12</b> [attack]. Apply <b>3</b> [conduit] and <b>2</b> [mageblade]."
+        "english": "<b>+12</b> [attack]. Apply <b>3</b> [conduit] and <b>2</b> [mageblade].",
+        "french": "<b>+12</b> [attack]. Appliquez <b>3</b> [conduit] et <b>2</b> [mageblade].",
+        "german": "<b>+12</b> [attack]. Erhalte <b>3</b> [conduit] und <b>2</b> [mageblade].",
+        "russian": "<b>+12</b> [attack]. Получите <b>3</b> [conduit] и <b>2</b> [mageblade].",
+        "portuguese": "<b>+12</b> [attack]. Aplique <b>3</b> [conduit] e <b>2</b> [mageblade].",
+        "chinese": "<b>+12</b> [attack]. 施加<b>3</b> [conduit]和<b>2</b> [mageblade]。",
+        "spanish": "<b>+12</b> [attack]. Aplica <b>3</b> [conduit] y <b>2</b> [mageblade].",
+        "chinese_traditional": "<b>+12</b> [attack]. 施加<b>3</b> [conduit]和<b>2</b> [mageblade]。",
+        "korean": "<b>+12</b> [attack]. <b>3</b> [conduit] 및 <b>2</b> [mageblade] 부여.",
+        "japanese": "<b>+12</b> [attack]. <b>3</b> [conduit]と<b>2</b> [mageblade]を付与。"
       },
       "card_art": "@ArchmagesStaff",
       "cost": 1,
@@ -88,7 +160,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "The archmage is not using it."
+          "english": "The archmage is not using it.",
+          "french": "L'archémage ne l'utilise pas.",
+          "german": "Der Archmage benutzt ihn nicht.",
+          "russian": "Архимаг не использует его.",
+          "portuguese": "O Arquimago não o está a usar.",
+          "chinese": "大魔王不用它.",
+          "spanish": "El archimago no lo está usando.",
+          "chinese_traditional": "這位大魔王不用它.",
+          "korean": "아크메이지는 사용하지 않습니다.",
+          "japanese": "魔法使いが使わない"
         }
       ],
       "pools": [
@@ -102,10 +183,28 @@
     {
       "id": "UpgChalkCircle",
       "titles": {
-        "english": "Chalk Circle"
+        "english": "Chalk Circle",
+        "french": "Cercle de craie",
+        "german": "Kreidekreis",
+        "russian": "Меловой круг",
+        "portuguese": "Círculo de Giz",
+        "chinese": "粉笔法阵",
+        "spanish": "Círculo de tiza",
+        "chinese_traditional": "粉筆法陣",
+        "korean": "분필 마법진",
+        "japanese": "白墨の魔法陣"
       },
       "descriptions": {
-        "english": "Apply <b>1</b> [conduit]."
+        "english": "Apply <b>1</b> [conduit].",
+        "french": "Appliquez <b>1</b> [conduit].",
+        "german": "Erhalte <b>1</b> [conduit].",
+        "russian": "Получите <b>1</b> [conduit].",
+        "portuguese": "Aplique <b>1</b> [conduit].",
+        "chinese": "施加<b>1</b> [conduit]。",
+        "spanish": "Aplica <b>1</b> [conduit].",
+        "chinese_traditional": "施加<b>1</b> [conduit]。",
+        "korean": "<b>1</b> [conduit] 부여.",
+        "japanese": "<b>1</b> [conduit]を付与。"
       },
       "icon": "@ChalkCircle",
       "status_effect_upgrades": [
@@ -118,10 +217,28 @@
     {
       "id": "UpgGrimoire",
       "titles": {
-        "english": "Grimoire"
+        "english": "Grimoire",
+        "french": "Grimoire",
+        "german": "Grimoire",
+        "russian": "Гримуар",
+        "portuguese": "Grimório",
+        "chinese": "魔法书",
+        "spanish": "Grimorio",
+        "chinese_traditional": "魔法書",
+        "korean": "마법서",
+        "japanese": "魔導書"
       },
       "descriptions": {
-        "english": "<b>+6</b> [attack]. Apply <b>2</b> [conduit]."
+        "english": "<b>+6</b> [attack]. Apply <b>2</b> [conduit].",
+        "french": "<b>+6</b> [attack]. Appliquez <b>2</b> [conduit].",
+        "german": "<b>+6</b> [attack]. Erhalte <b>2</b> [conduit].",
+        "russian": "<b>+6</b> [attack]. Получите <b>2</b> [conduit].",
+        "portuguese": "<b>+6</b> [attack]. Aplique <b>2</b> [conduit].",
+        "chinese": "<b>+6</b> [attack]. 施加<b>2</b> [conduit]。",
+        "spanish": "<b>+6</b> [attack]. Aplica <b>2</b> [conduit].",
+        "chinese_traditional": "<b>+6</b> [attack]. 施加<b>2</b> [conduit]。",
+        "korean": "<b>+6</b> [attack]. <b>2</b> [conduit] 부여.",
+        "japanese": "<b>+6</b> [attack]. <b>2</b> [conduit]を付与。"
       },
       "icon": "@Grimoire",
       "bonus_damage": 6,
@@ -135,10 +252,28 @@
     {
       "id": "UpgArchmagesStaff",
       "titles": {
-        "english": "Archmage's Staff"
+        "english": "Archmage's Staff",
+        "french": "Bâton d'archimage",
+        "german": "Erzmagierstab",
+        "russian": "Посох архимага",
+        "portuguese": "Cajado do Arquimago",
+        "chinese": "大法师之杖",
+        "spanish": "Bastón del archimago",
+        "chinese_traditional": "大法師之杖",
+        "korean": "대마법사의 지팡이",
+        "japanese": "大魔術師の杖"
       },
       "descriptions": {
-        "english": "<b>+12</b> [attack]. Apply <b>3</b> [conduit] and <b>2</b> [mageblade]."
+        "english": "<b>+12</b> [attack]. Apply <b>3</b> [conduit] and <b>2</b> [mageblade].",
+        "french": "<b>+12</b> [attack]. Appliquez <b>3</b> [conduit] et <b>2</b> [mageblade].",
+        "german": "<b>+12</b> [attack]. Erhalte <b>3</b> [conduit] und <b>2</b> [mageblade].",
+        "russian": "<b>+12</b> [attack]. Получите <b>3</b> [conduit] и <b>2</b> [mageblade].",
+        "portuguese": "<b>+12</b> [attack]. Aplique <b>3</b> [conduit] e <b>2</b> [mageblade].",
+        "chinese": "<b>+12</b> [attack]. 施加<b>3</b> [conduit]和<b>2</b> [mageblade]。",
+        "spanish": "<b>+12</b> [attack]. Aplica <b>3</b> [conduit] y <b>2</b> [mageblade].",
+        "chinese_traditional": "<b>+12</b> [attack]. 施加<b>3</b> [conduit]和<b>2</b> [mageblade]。",
+        "korean": "<b>+12</b> [attack]. <b>3</b> [conduit] 및 <b>2</b> [mageblade] 부여.",
+        "japanese": "<b>+12</b> [attack]. <b>3</b> [conduit]と<b>2</b> [mageblade]を付与。"
       },
       "icon": "@ArchmagesStaff",
       "bonus_damage": 12,

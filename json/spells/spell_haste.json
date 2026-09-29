@@ -4,10 +4,28 @@
     {
       "id": "Haste",
       "names": {
-        "english": "Haste"
+        "english": "Haste",
+        "french": "Hâte",
+        "german": "Hast",
+        "russian": "Ускорение",
+        "portuguese": "Aceleração",
+        "chinese": "加速术",
+        "spanish": "Acelerar",
+        "chinese_traditional": "加速術",
+        "korean": "가속",
+        "japanese": "加速"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [burst] to a friendly unit."
+        "english": "Apply [effect0.status0.power] [burst] to a friendly unit.",
+        "french": "Appliquez [effect0.status0.power] [burst] à une unité alliée.",
+        "german": "Verleihe einer verbündeten Einheit [effect0.status0.power] [burst].",
+        "russian": "Наложите на союзную боевую единицу [effect0.status0.power] [burst].",
+        "portuguese": "Aplique [effect0.status0.power] [burst] a uma unidade aliada.",
+        "chinese": "对一个友方单位施加[effect0.status0.power] [burst]。",
+        "spanish": "Aplica [effect0.status0.power] [burst] a una unidad aliada.",
+        "chinese_traditional": "對一個友方單位施加[effect0.status0.power] [burst]。",
+        "korean": "아군 유닛 하나에게 [effect0.status0.power] [burst] 부여.",
+        "japanese": "味方ユニット1体に[effect0.status0.power] [burst]を付与。"
       },
       "card_art": "@Haste",
       "cost": 2,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "One more swing, paid in advance."
+          "english": "One more swing, paid in advance.",
+          "french": "Un autre swing, payé à l'avance.",
+          "german": "Noch ein Schwung, bezahlt im Voraus.",
+          "russian": "Еще один удар, заранее оплаченный.",
+          "portuguese": "Mais um balanço, pago com antecedência.",
+          "chinese": "另一个摇摆,提前支付.",
+          "spanish": "Un golpe más, pagado por adelantado.",
+          "chinese_traditional": "還有一次, 提前付款.",
+          "korean": "한 번 더 swing, 미리 지불.",
+          "japanese": "もう\"回のスワング,事前に支払った"
         }
       ],
       "pools": [

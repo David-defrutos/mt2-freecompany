@@ -4,10 +4,28 @@
     {
       "id": "FingerOfDeath",
       "names": {
-        "english": "Finger of Death"
+        "english": "Finger of Death",
+        "french": "Doigt de mort",
+        "german": "Finger des Todes",
+        "russian": "Палец смерти",
+        "portuguese": "Dedo da Morte",
+        "chinese": "死亡一指",
+        "spanish": "Dedo de la muerte",
+        "chinese_traditional": "死亡一指",
+        "korean": "죽음의 손가락",
+        "japanese": "死の指"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [fragile] to an enemy. Cannot target bosses."
+        "english": "Apply [effect0.status0.power] [fragile] to an enemy. Cannot target bosses.",
+        "french": "Appliquez [effect0.status0.power] [fragile] à un ennemi. Ne peut pas cibler les boss.",
+        "german": "Verleihe einem Gegner [effect0.status0.power] [fragile]. Kann keine Bosse anvisieren.",
+        "russian": "Наложите на врага [effect0.status0.power] [fragile]. Нельзя выбрать босса целью.",
+        "portuguese": "Aplique [effect0.status0.power] [fragile] a um inimigo. Não pode selecionar chefes como alvo.",
+        "chinese": "对一个敌人施加[effect0.status0.power] [fragile]。 无法以首领为目标。",
+        "spanish": "Aplica [effect0.status0.power] [fragile] a un enemigo. No puede seleccionar jefes como objetivo.",
+        "chinese_traditional": "對一個敵人施加[effect0.status0.power] [fragile]。 無法以首領為目標。",
+        "korean": "적 하나에게 [effect0.status0.power] [fragile] 부여. 보스를 대상으로 지정할 수 없습니다.",
+        "japanese": "敵1体に[effect0.status0.power] [fragile]を付与。 ボスは対象にできない。"
       },
       "card_art": "@FingerOfDeath",
       "cost": 2,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "One scratch will do it."
+          "english": "One scratch will do it.",
+          "french": "Une seule égratignure suffit.",
+          "german": "Ein Kratzer wird es schaffen.",
+          "russian": "Одна царапина поможет.",
+          "portuguese": "Um arranhão vai fazer.",
+          "chinese": "一个划痕就可以了.",
+          "spanish": "Basta un rasguño.",
+          "chinese_traditional": "只有一個划痕才能做到.",
+          "korean": "한 번 긁으면 안 돼",
+          "japanese": "ほんの一回だけ"
         }
       ],
       "pools": [

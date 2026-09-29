@@ -4,10 +4,28 @@
     {
       "id": "ThePit",
       "names": {
-        "english": "The Pit"
+        "english": "The Pit",
+        "french": "La fosse",
+        "german": "Die Grube",
+        "russian": "Яма",
+        "portuguese": "O Fosso",
+        "chinese": "深坑",
+        "spanish": "El foso",
+        "chinese_traditional": "深坑",
+        "korean": "구덩이",
+        "japanese": "落とし穴"
       },
       "descriptions": {
-        "english": "Enemies on this floor have <b>1</b> [rooted]."
+        "english": "Enemies on this floor have <b>1</b> [rooted].",
+        "french": "Les ennemis de cet étage ont <b>1</b> [rooted].",
+        "german": "Gegner auf diesem Stockwerk haben <b>1</b> [rooted].",
+        "russian": "Враги на этом этаже имеют <b>1</b> [rooted].",
+        "portuguese": "Os inimigos neste andar têm <b>1</b> [rooted].",
+        "chinese": "本层敌人拥有<b>1</b> [rooted]。",
+        "spanish": "Los enemigos de este piso tienen <b>1</b> [rooted].",
+        "chinese_traditional": "本層敵人擁有<b>1</b> [rooted]。",
+        "korean": "이 층의 적은 <b>1</b> [rooted] 보유.",
+        "japanese": "この階の敵は<b>1</b> [rooted]を持つ。"
       },
       "card_art": "@ThePit",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Deep enough. Not deep enough to matter."
+          "english": "Deep enough. Not deep enough to matter.",
+          "french": "C'est assez profond. Pas assez profond pour être important.",
+          "german": "Tief genug. Nicht tief genug, um wichtig zu sein.",
+          "russian": "Достаточно глубоко. Не достаточно глубоко, чтобы иметь значение.",
+          "portuguese": "Profundo o suficiente. Não profundo o suficiente para importar.",
+          "chinese": "足够深. 没有足够的深度.",
+          "spanish": "Bastante profundo. Pero no lo suficiente para importar.",
+          "chinese_traditional": "足夠深入. 沒有足夠的深度.",
+          "korean": "충분히 깊어 중요할 만큼 깊지 않아",
+          "japanese": "十分な深さ 重要でないほど深い"
         }
       ],
       "pools": [
@@ -36,10 +63,28 @@
     {
       "id": "ThePitRoomUpgrade",
       "titles": {
-        "english": "The Pit"
+        "english": "The Pit",
+        "french": "La fosse",
+        "german": "Die Grube",
+        "russian": "Яма",
+        "portuguese": "O Fosso",
+        "chinese": "深坑",
+        "spanish": "El foso",
+        "chinese_traditional": "深坑",
+        "korean": "구덩이",
+        "japanese": "落とし穴"
       },
       "descriptions": {
-        "english": "Enemies on this floor have <b>1</b> [rooted]."
+        "english": "Enemies on this floor have <b>1</b> [rooted].",
+        "french": "Les ennemis de cet étage ont <b>1</b> [rooted].",
+        "german": "Gegner auf diesem Stockwerk haben <b>1</b> [rooted].",
+        "russian": "Враги на этом этаже имеют <b>1</b> [rooted].",
+        "portuguese": "Os inimigos neste andar têm <b>1</b> [rooted].",
+        "chinese": "本层敌人拥有<b>1</b> [rooted]。",
+        "spanish": "Los enemigos de este piso tienen <b>1</b> [rooted].",
+        "chinese_traditional": "本層敵人擁有<b>1</b> [rooted]。",
+        "korean": "이 층의 적은 <b>1</b> [rooted] 보유.",
+        "japanese": "この階の敵は<b>1</b> [rooted]を持つ。"
       },
       "status_effect_upgrades": [
         {

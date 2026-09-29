@@ -4,10 +4,28 @@
     {
       "id": "LightningBolt",
       "names": {
-        "english": "Lightning Bolt"
+        "english": "Lightning Bolt",
+        "french": "Éclair",
+        "german": "Blitzschlag",
+        "russian": "Молния",
+        "portuguese": "Relâmpago",
+        "chinese": "闪电束",
+        "spanish": "Relámpago",
+        "chinese_traditional": "閃電束",
+        "korean": "번개",
+        "japanese": "電撃"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to the front enemy on every floor and apply [effect1.status0.power] [spellweakness]."
+        "english": "Deal [effect0.power] damage to the front enemy on every floor and apply [effect1.status0.power] [spellweakness].",
+        "french": "Infligez [effect0.power] dégâts à l’ennemi de tête de chaque étage et appliquez [effect1.status0.power] [spellweakness].",
+        "german": "Füge dem vordersten Gegner auf jedem Stockwerk [effect0.power] Schaden zu und verleihe [effect1.status0.power] [spellweakness].",
+        "russian": "Нанесите [effect0.power] урона переднему врагу на каждом этаже и наложите [effect1.status0.power] [spellweakness].",
+        "portuguese": "Cause [effect0.power] de dano ao inimigo da frente de cada andar e aplique [effect1.status0.power] [spellweakness].",
+        "chinese": "对每层最前方的敌人造成[effect0.power]点伤害，并施加[effect1.status0.power]层[spellweakness]。",
+        "spanish": "Inflige [effect0.power] de daño al primer enemigo de cada piso y aplica [effect1.status0.power] [spellweakness].",
+        "chinese_traditional": "對每層最前方的敵人造成[effect0.power]點傷害，並施加[effect1.status0.power]層[spellweakness]。",
+        "korean": "각 층의 맨 앞 적에게 [effect0.power] 피해를 가하고 [effect1.status0.power] [spellweakness] 부여.",
+        "japanese": "各階の先頭の敵に[effect0.power]ダメージを与え、[effect1.status0.power] [spellweakness]を付与。"
       },
       "card_art": "@LightningBolt",
       "cost": 3,
@@ -25,7 +43,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Straight down the line."
+          "english": "Straight down the line.",
+          "french": "Tout droit sur la ligne.",
+          "german": "Direkt in die Linie.",
+          "russian": "Прямо вниз по линии.",
+          "portuguese": "Perto da linha.",
+          "chinese": "在直线.",
+          "spanish": "Directo por toda la línea.",
+          "chinese_traditional": "直接在線上進行.",
+          "korean": "바로 그 직선 아래로",
+          "japanese": "直線下まで"
         }
       ],
       "pools": [

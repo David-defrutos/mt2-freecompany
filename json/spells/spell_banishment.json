@@ -4,10 +4,28 @@
     {
       "id": "Banishment",
       "names": {
-        "english": "Banishment"
+        "english": "Banishment",
+        "french": "Bannissement",
+        "german": "Verbannung",
+        "russian": "Изгнание",
+        "portuguese": "Banimento",
+        "chinese": "放逐术",
+        "spanish": "Destierro",
+        "chinese_traditional": "放逐術",
+        "korean": "추방술",
+        "japanese": "追放術"
       },
       "descriptions": {
-        "english": "Apply <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished] to an enemy. Cannot target bosses."
+        "english": "Apply <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished] to an enemy. Cannot target bosses.",
+        "french": "Appliquez <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished] à un ennemi. Ne peut pas cibler les boss.",
+        "german": "Verleihe einem Gegner <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished]. Kann keine Bosse anvisieren.",
+        "russian": "Наложите на врага <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished]. Нельзя выбрать босса целью.",
+        "portuguese": "Aplique <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished] a um inimigo. Não pode selecionar chefes como alvo.",
+        "chinese": "对一个敌人施加<b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished]。 无法以首领为目标。",
+        "spanish": "Aplica <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished] a un enemigo. No puede seleccionar jefes como objetivo.",
+        "chinese_traditional": "對一個敵人施加<b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished]。 無法以首領為目標。",
+        "korean": "적 하나에게 <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished] 부여. 보스를 대상으로 지정할 수 없습니다.",
+        "japanese": "敵1体に<b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_banished]を付与。 ボスは対象にできない。"
       },
       "card_art": "@Banishment",
       "cost": 3,
@@ -22,7 +40,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Sent somewhere else. Not invited back."
+          "english": "Sent somewhere else. Not invited back.",
+          "french": "Envoyé ailleurs. Je n'ai pas été invité.",
+          "german": "Er wurde woanders geschickt. Nicht wieder eingeladen.",
+          "russian": "Отправили в другое место. Не приглашенный обратно.",
+          "portuguese": "Enviado para outro lugar. Não foi convidado de volta.",
+          "chinese": "送到其他地方. 没有被邀请回来.",
+          "spanish": "Enviado a otra parte. Sin invitación para volver.",
+          "chinese_traditional": "送到其他地方. 沒有被邀請回來.",
+          "korean": "다른 곳으로 보내 초대받지 않았어",
+          "japanese": "どこかに送られてきた 招待されてない"
         }
       ],
       "pools": [

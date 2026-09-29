@@ -4,10 +4,28 @@
     {
       "id": "MagicMissile",
       "names": {
-        "english": "Magic Missile"
+        "english": "Magic Missile",
+        "french": "Projectile magique",
+        "german": "Magisches Geschoss",
+        "russian": "Волшебная стрела",
+        "portuguese": "Míssil Mágico",
+        "chinese": "魔法飞弹",
+        "spanish": "Proyectil mágico",
+        "chinese_traditional": "魔法飛彈",
+        "korean": "마법 화살",
+        "japanese": "マジックミサイル"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to a random enemy three times."
+        "english": "Deal [effect0.power] damage to a random enemy three times.",
+        "french": "Infligez [effect0.power] dégâts à un ennemi aléatoire, trois fois.",
+        "german": "Füge dreimal einem zufälligen Gegner [effect0.power] Schaden zu.",
+        "russian": "Трижды нанесите [effect0.power] урона случайному врагу.",
+        "portuguese": "Cause [effect0.power] de dano a um inimigo aleatório três vezes.",
+        "chinese": "对一个随机敌人造成[effect0.power]点伤害，重复三次。",
+        "spanish": "Inflige [effect0.power] de daño a un enemigo aleatorio tres veces.",
+        "chinese_traditional": "對一個隨機敵人造成[effect0.power]點傷害，重複三次。",
+        "korean": "무작위 적에게 [effect0.power] 피해를 3회 가함.",
+        "japanese": "ランダムな敵に[effect0.power]ダメージを3回与える。"
       },
       "card_art": "@MagicMissile",
       "cost": 1,
@@ -23,7 +41,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "It never misses. That is the whole trick."
+          "english": "It never misses. That is the whole trick.",
+          "french": "Il ne manque jamais. C'est tout le truc.",
+          "german": "Es verpasst nie. Das ist der ganze Trick.",
+          "russian": "Он никогда не пропускает. В этом весь трюк.",
+          "portuguese": "Nunca falha. É esse o truque.",
+          "chinese": "它永远不会错过. 这就是整个技巧.",
+          "spanish": "Nunca falla. Ese es todo el truco.",
+          "chinese_traditional": "沒有任何錯誤. 這就是整個技巧.",
+          "korean": "절대 빠지지 않습니다. 그게 전부죠.",
+          "japanese": "失敗するな その通りだ"
         }
       ],
       "pools": [

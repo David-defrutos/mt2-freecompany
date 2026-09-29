@@ -4,10 +4,28 @@
     {
       "id": "Buckler",
       "names": {
-        "english": "Buckler"
+        "english": "Buckler",
+        "french": "Rondache",
+        "german": "Faustschild",
+        "russian": "Баклер",
+        "portuguese": "Broquel",
+        "chinese": "小圆盾",
+        "spanish": "Broquel",
+        "chinese_traditional": "小圓盾",
+        "korean": "소형 방패",
+        "japanese": "バックラー"
       },
       "descriptions": {
-        "english": "<b>+8</b> [health]. Apply <b>3</b> [armor]."
+        "english": "<b>+8</b> [health]. Apply <b>3</b> [armor].",
+        "french": "<b>+8</b> [health]. Appliquez <b>3</b> [armor].",
+        "german": "<b>+8</b> [health]. Erhalte <b>3</b> [armor].",
+        "russian": "<b>+8</b> [health]. Получите <b>3</b> [armor].",
+        "portuguese": "<b>+8</b> [health]. Aplique <b>3</b> [armor].",
+        "chinese": "<b>+8</b> [health]. 施加<b>3</b> [armor]。",
+        "spanish": "<b>+8</b> [health]. Aplica <b>3</b> [armor].",
+        "chinese_traditional": "<b>+8</b> [health]. 施加<b>3</b> [armor]。",
+        "korean": "<b>+8</b> [health]. <b>3</b> [armor] 부여.",
+        "japanese": "<b>+8</b> [health]. <b>3</b> [armor]を付与。"
       },
       "card_art": "@Buckler",
       "cost": 1,
@@ -24,7 +42,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Better than nothing. Barely."
+          "english": "Better than nothing. Barely.",
+          "french": "C'est mieux que rien. À peine.",
+          "german": "Besser als nichts. - Das kann ich kaum.",
+          "russian": "Лучше, чем ничего. Едва ли.",
+          "portuguese": "Melhor do que nada. - Quase não.",
+          "chinese": "这比什么都好. 几乎没有.",
+          "spanish": "Mejor que nada. Por poco.",
+          "chinese_traditional": "這比什麼都好. 很難做到.",
+          "korean": "아무것도 아닌 것보다 낫다. 거의 안 됐어",
+          "japanese": "何もしないより めったに"
         }
       ],
       "pools": [
@@ -36,10 +63,28 @@
     {
       "id": "KiteShield",
       "names": {
-        "english": "Kite Shield"
+        "english": "Kite Shield",
+        "french": "Écu",
+        "german": "Drachenschild",
+        "russian": "Каплевидный щит",
+        "portuguese": "Escudo de Pipa",
+        "chinese": "鸢盾",
+        "spanish": "Escudo de cometa",
+        "chinese_traditional": "鳶盾",
+        "korean": "연형 방패",
+        "japanese": "カイトシールド"
       },
       "descriptions": {
-        "english": "<b>+15</b> [health]. Apply <b>6</b> [armor] and <b>2</b> [steelguard]."
+        "english": "<b>+15</b> [health]. Apply <b>6</b> [armor] and <b>2</b> [steelguard].",
+        "french": "<b>+15</b> [health]. Appliquez <b>6</b> [armor] et <b>2</b> [steelguard].",
+        "german": "<b>+15</b> [health]. Erhalte <b>6</b> [armor] und <b>2</b> [steelguard].",
+        "russian": "<b>+15</b> [health]. Получите <b>6</b> [armor] и <b>2</b> [steelguard].",
+        "portuguese": "<b>+15</b> [health]. Aplique <b>6</b> [armor] e <b>2</b> [steelguard].",
+        "chinese": "<b>+15</b> [health]. 施加<b>6</b> [armor]和<b>2</b> [steelguard]。",
+        "spanish": "<b>+15</b> [health]. Aplica <b>6</b> [armor] y <b>2</b> [steelguard].",
+        "chinese_traditional": "<b>+15</b> [health]. 施加<b>6</b> [armor]和<b>2</b> [steelguard]。",
+        "korean": "<b>+15</b> [health]. <b>6</b> [armor] 및 <b>2</b> [steelguard] 부여.",
+        "japanese": "<b>+15</b> [health]. <b>6</b> [armor]と<b>2</b> [steelguard]を付与。"
       },
       "card_art": "@KiteShield",
       "cost": 1,
@@ -56,7 +101,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Now we are talking."
+          "english": "Now we are talking.",
+          "french": "Nous parlons maintenant.",
+          "german": "Jetzt reden wir.",
+          "russian": "Теперь мы говорим.",
+          "portuguese": "Agora estamos a falar.",
+          "chinese": "现在我们正在谈论.",
+          "spanish": "Ahora sí que hablamos.",
+          "chinese_traditional": "現在我們正在談論.",
+          "korean": "이제 얘기하고 있어요.",
+          "japanese": "今は話してる"
         }
       ],
       "pools": [
@@ -68,10 +122,28 @@
     {
       "id": "BulwarkPlate",
       "names": {
-        "english": "Bulwark Plate"
+        "english": "Bulwark Plate",
+        "french": "Armure de rempart",
+        "german": "Bollwerkpanzer",
+        "russian": "Доспех-бастион",
+        "portuguese": "Armadura Baluarte",
+        "chinese": "壁垒板甲",
+        "spanish": "Coraza baluarte",
+        "chinese_traditional": "壁壘板甲",
+        "korean": "보루 판금 갑옷",
+        "japanese": "防壁の板金鎧"
       },
       "descriptions": {
-        "english": "<b>+25</b> [health]. Apply <b>10</b> [armor], <b>3</b> [steelguard] and <b>1</b> [titanskin]."
+        "english": "<b>+25</b> [health]. Apply <b>10</b> [armor], <b>3</b> [steelguard] and <b>1</b> [titanskin].",
+        "french": "<b>+25</b> [health]. Appliquez <b>10</b> [armor], <b>3</b> [steelguard] et <b>1</b> [titanskin].",
+        "german": "<b>+25</b> [health]. Erhalte <b>10</b> [armor], <b>3</b> [steelguard] und <b>1</b> [titanskin].",
+        "russian": "<b>+25</b> [health]. Получите <b>10</b> [armor], <b>3</b> [steelguard] и <b>1</b> [titanskin].",
+        "portuguese": "<b>+25</b> [health]. Aplique <b>10</b> [armor], <b>3</b> [steelguard] e <b>1</b> [titanskin].",
+        "chinese": "<b>+25</b> [health]. 施加<b>10</b> [armor], <b>3</b> [steelguard]和<b>1</b> [titanskin]。",
+        "spanish": "<b>+25</b> [health]. Aplica <b>10</b> [armor], <b>3</b> [steelguard] y <b>1</b> [titanskin].",
+        "chinese_traditional": "<b>+25</b> [health]. 施加<b>10</b> [armor], <b>3</b> [steelguard]和<b>1</b> [titanskin]。",
+        "korean": "<b>+25</b> [health]. <b>10</b> [armor], <b>3</b> [steelguard] 및 <b>1</b> [titanskin] 부여.",
+        "japanese": "<b>+25</b> [health]. <b>10</b> [armor], <b>3</b> [steelguard]と<b>1</b> [titanskin]を付与。"
       },
       "card_art": "@BulwarkPlate",
       "cost": 1,
@@ -88,7 +160,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Two men to carry it. One to wear it."
+          "english": "Two men to carry it. One to wear it.",
+          "french": "Deux hommes pour le porter. Quelqu'un pour le porter.",
+          "german": "Zwei Männer sollen es tragen. Einer, der es trägt.",
+          "russian": "Два человека, чтобы нести его. Один, чтобы носить его.",
+          "portuguese": "Dois homens para o carregar. Um para usá-lo.",
+          "chinese": "两个人携带它. 一个穿着它.",
+          "spanish": "Dos hombres para llevarla. Uno para vestirla.",
+          "chinese_traditional": "兩個人要承載它. 穿起來的人.",
+          "korean": "2명이 짊어질 거야 입는 사람.",
+          "japanese": "運ぶのは2人 服を着る人"
         }
       ],
       "pools": [
@@ -102,10 +183,28 @@
     {
       "id": "UpgBuckler",
       "titles": {
-        "english": "Buckler"
+        "english": "Buckler",
+        "french": "Rondache",
+        "german": "Faustschild",
+        "russian": "Баклер",
+        "portuguese": "Broquel",
+        "chinese": "小圆盾",
+        "spanish": "Broquel",
+        "chinese_traditional": "小圓盾",
+        "korean": "소형 방패",
+        "japanese": "バックラー"
       },
       "descriptions": {
-        "english": "<b>+8</b> [health]. Apply <b>3</b> [armor]."
+        "english": "<b>+8</b> [health]. Apply <b>3</b> [armor].",
+        "french": "<b>+8</b> [health]. Appliquez <b>3</b> [armor].",
+        "german": "<b>+8</b> [health]. Erhalte <b>3</b> [armor].",
+        "russian": "<b>+8</b> [health]. Получите <b>3</b> [armor].",
+        "portuguese": "<b>+8</b> [health]. Aplique <b>3</b> [armor].",
+        "chinese": "<b>+8</b> [health]. 施加<b>3</b> [armor]。",
+        "spanish": "<b>+8</b> [health]. Aplica <b>3</b> [armor].",
+        "chinese_traditional": "<b>+8</b> [health]. 施加<b>3</b> [armor]。",
+        "korean": "<b>+8</b> [health]. <b>3</b> [armor] 부여.",
+        "japanese": "<b>+8</b> [health]. <b>3</b> [armor]を付与。"
       },
       "icon": "@Buckler",
       "bonus_hp": 8,
@@ -119,10 +218,28 @@
     {
       "id": "UpgKiteShield",
       "titles": {
-        "english": "Kite Shield"
+        "english": "Kite Shield",
+        "french": "Écu",
+        "german": "Drachenschild",
+        "russian": "Каплевидный щит",
+        "portuguese": "Escudo de Pipa",
+        "chinese": "鸢盾",
+        "spanish": "Escudo de cometa",
+        "chinese_traditional": "鳶盾",
+        "korean": "연형 방패",
+        "japanese": "カイトシールド"
       },
       "descriptions": {
-        "english": "<b>+15</b> [health]. Apply <b>6</b> [armor] and <b>2</b> [steelguard]."
+        "english": "<b>+15</b> [health]. Apply <b>6</b> [armor] and <b>2</b> [steelguard].",
+        "french": "<b>+15</b> [health]. Appliquez <b>6</b> [armor] et <b>2</b> [steelguard].",
+        "german": "<b>+15</b> [health]. Erhalte <b>6</b> [armor] und <b>2</b> [steelguard].",
+        "russian": "<b>+15</b> [health]. Получите <b>6</b> [armor] и <b>2</b> [steelguard].",
+        "portuguese": "<b>+15</b> [health]. Aplique <b>6</b> [armor] e <b>2</b> [steelguard].",
+        "chinese": "<b>+15</b> [health]. 施加<b>6</b> [armor]和<b>2</b> [steelguard]。",
+        "spanish": "<b>+15</b> [health]. Aplica <b>6</b> [armor] y <b>2</b> [steelguard].",
+        "chinese_traditional": "<b>+15</b> [health]. 施加<b>6</b> [armor]和<b>2</b> [steelguard]。",
+        "korean": "<b>+15</b> [health]. <b>6</b> [armor] 및 <b>2</b> [steelguard] 부여.",
+        "japanese": "<b>+15</b> [health]. <b>6</b> [armor]と<b>2</b> [steelguard]を付与。"
       },
       "icon": "@KiteShield",
       "bonus_hp": 15,
@@ -140,10 +257,28 @@
     {
       "id": "UpgBulwarkPlate",
       "titles": {
-        "english": "Bulwark Plate"
+        "english": "Bulwark Plate",
+        "french": "Armure de rempart",
+        "german": "Bollwerkpanzer",
+        "russian": "Доспех-бастион",
+        "portuguese": "Armadura Baluarte",
+        "chinese": "壁垒板甲",
+        "spanish": "Coraza baluarte",
+        "chinese_traditional": "壁壘板甲",
+        "korean": "보루 판금 갑옷",
+        "japanese": "防壁の板金鎧"
       },
       "descriptions": {
-        "english": "<b>+25</b> [health]. Apply <b>10</b> [armor], <b>3</b> [steelguard] and <b>1</b> [titanskin]."
+        "english": "<b>+25</b> [health]. Apply <b>10</b> [armor], <b>3</b> [steelguard] and <b>1</b> [titanskin].",
+        "french": "<b>+25</b> [health]. Appliquez <b>10</b> [armor], <b>3</b> [steelguard] et <b>1</b> [titanskin].",
+        "german": "<b>+25</b> [health]. Erhalte <b>10</b> [armor], <b>3</b> [steelguard] und <b>1</b> [titanskin].",
+        "russian": "<b>+25</b> [health]. Получите <b>10</b> [armor], <b>3</b> [steelguard] и <b>1</b> [titanskin].",
+        "portuguese": "<b>+25</b> [health]. Aplique <b>10</b> [armor], <b>3</b> [steelguard] e <b>1</b> [titanskin].",
+        "chinese": "<b>+25</b> [health]. 施加<b>10</b> [armor], <b>3</b> [steelguard]和<b>1</b> [titanskin]。",
+        "spanish": "<b>+25</b> [health]. Aplica <b>10</b> [armor], <b>3</b> [steelguard] y <b>1</b> [titanskin].",
+        "chinese_traditional": "<b>+25</b> [health]. 施加<b>10</b> [armor], <b>3</b> [steelguard]和<b>1</b> [titanskin]。",
+        "korean": "<b>+25</b> [health]. <b>10</b> [armor], <b>3</b> [steelguard] 및 <b>1</b> [titanskin] 부여.",
+        "japanese": "<b>+25</b> [health]. <b>10</b> [armor], <b>3</b> [steelguard]と<b>1</b> [titanskin]を付与。"
       },
       "icon": "@BulwarkPlate",
       "bonus_hp": 25,

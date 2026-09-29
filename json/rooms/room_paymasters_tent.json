@@ -4,10 +4,28 @@
     {
       "id": "PaymastersTent",
       "names": {
-        "english": "Paymaster's Tent"
+        "english": "Paymaster's Tent",
+        "french": "Tente du trésorier",
+        "german": "Zahlmeisterzelt",
+        "russian": "Палатка казначея",
+        "portuguese": "Tenda do Pagador",
+        "chinese": "军饷帐篷",
+        "spanish": "Tienda del pagador",
+        "chinese_traditional": "軍餉帳篷",
+        "korean": "급여관의 천막",
+        "japanese": "給金係の天幕"
       },
       "descriptions": {
-        "english": "Friendly units on this floor have <b>1</b> [avarice]."
+        "english": "Friendly units on this floor have <b>1</b> [avarice].",
+        "french": "Les unités alliées de cet étage ont <b>1</b> [avarice].",
+        "german": "Verbündete Einheiten auf diesem Stockwerk haben <b>1</b> [avarice].",
+        "russian": "Союзные боевые единицы на этом этаже имеют <b>1</b> [avarice].",
+        "portuguese": "As unidades aliadas neste andar têm <b>1</b> [avarice].",
+        "chinese": "本层友方单位拥有<b>1</b> [avarice]。",
+        "spanish": "Las unidades aliadas de este piso tienen <b>1</b> [avarice].",
+        "chinese_traditional": "本層友方單位擁有<b>1</b> [avarice]。",
+        "korean": "이 층의 아군 유닛은 <b>1</b> [avarice] 보유.",
+        "japanese": "この階の味方ユニットは<b>1</b> [avarice]を持つ。"
       },
       "card_art": "@PaymastersTent",
       "cost": 0,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Sign here. And here."
+          "english": "Sign here. And here.",
+          "french": "Signez ici. Et ici aussi.",
+          "german": "Unterschreiben Sie hier. Und hier.",
+          "russian": "Подпишите здесь. И вот здесь.",
+          "portuguese": "Assina aqui. E aqui.",
+          "chinese": "在这里签字. 在这里.",
+          "spanish": "Firma aquí. Y aquí.",
+          "chinese_traditional": "在此簽名. 在這裡.",
+          "korean": "여기에 서명해 그리고 여기.",
+          "japanese": "ここにサインする そしてここに"
         }
       ],
       "pools": [
@@ -36,10 +63,28 @@
     {
       "id": "PaymastersTentRoomUpgrade",
       "titles": {
-        "english": "Paymaster's Tent"
+        "english": "Paymaster's Tent",
+        "french": "Tente du trésorier",
+        "german": "Zahlmeisterzelt",
+        "russian": "Палатка казначея",
+        "portuguese": "Tenda do Pagador",
+        "chinese": "军饷帐篷",
+        "spanish": "Tienda del pagador",
+        "chinese_traditional": "軍餉帳篷",
+        "korean": "급여관의 천막",
+        "japanese": "給金係の天幕"
       },
       "descriptions": {
-        "english": "Friendly units on this floor have <b>1</b> [avarice]."
+        "english": "Friendly units on this floor have <b>1</b> [avarice].",
+        "french": "Les unités alliées de cet étage ont <b>1</b> [avarice].",
+        "german": "Verbündete Einheiten auf diesem Stockwerk haben <b>1</b> [avarice].",
+        "russian": "Союзные боевые единицы на этом этаже имеют <b>1</b> [avarice].",
+        "portuguese": "As unidades aliadas neste andar têm <b>1</b> [avarice].",
+        "chinese": "本层友方单位拥有<b>1</b> [avarice]。",
+        "spanish": "Las unidades aliadas de este piso tienen <b>1</b> [avarice].",
+        "chinese_traditional": "本層友方單位擁有<b>1</b> [avarice]。",
+        "korean": "이 층의 아군 유닛은 <b>1</b> [avarice] 보유.",
+        "japanese": "この階の味方ユニットは<b>1</b> [avarice]を持つ。"
       },
       "status_effect_upgrades": [
         {

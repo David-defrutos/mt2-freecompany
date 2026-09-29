@@ -4,10 +4,28 @@
     {
       "id": "MercenarysContract",
       "names": {
-        "english": "Mercenary's Contract"
+        "english": "Mercenary's Contract",
+        "french": "Contrat de mercenaire",
+        "german": "Söldnervertrag",
+        "russian": "Контракт наёмника",
+        "portuguese": "Contrato de Mercenário",
+        "chinese": "佣兵契约",
+        "spanish": "Contrato de mercenario",
+        "chinese_traditional": "傭兵契約",
+        "korean": "용병 계약",
+        "japanese": "傭兵契約"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [avarice] to a friendly unit."
+        "english": "Apply [effect0.status0.power] [avarice] to a friendly unit.",
+        "french": "Appliquez [effect0.status0.power] [avarice] à une unité alliée.",
+        "german": "Verleihe einer verbündeten Einheit [effect0.status0.power] [avarice].",
+        "russian": "Наложите на союзную боевую единицу [effect0.status0.power] [avarice].",
+        "portuguese": "Aplique [effect0.status0.power] [avarice] a uma unidade aliada.",
+        "chinese": "对一个友方单位施加[effect0.status0.power] [avarice]。",
+        "spanish": "Aplica [effect0.status0.power] [avarice] a una unidad aliada.",
+        "chinese_traditional": "對一個友方單位施加[effect0.status0.power] [avarice]。",
+        "korean": "아군 유닛 하나에게 [effect0.status0.power] [avarice] 부여.",
+        "japanese": "味方ユニット1体に[effect0.status0.power] [avarice]を付与。"
       },
       "card_art": "@MercenarysContract",
       "cost": 1,
@@ -21,7 +39,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Terms, rates, and a clause about dying."
+          "english": "Terms, rates, and a clause about dying.",
+          "french": "Des conditions, des tarifs et une clause sur la mort.",
+          "german": "Bedingungen, Tarife und eine Klausel zum Sterben.",
+          "russian": "Условия, ставки и положение о смерти.",
+          "portuguese": "Termos, taxas e uma cláusula sobre morrer.",
+          "chinese": "条款,费用,以及关于死亡的条款.",
+          "spanish": "Condiciones, tarifas y una cláusula sobre morir.",
+          "chinese_traditional": "這裡有條款,價格和死亡條款.",
+          "korean": "조건, 요금, 그리고 죽음에 대한 조항.",
+          "japanese": "条件 料金 死亡に関する条項"
         }
       ],
       "pools": [

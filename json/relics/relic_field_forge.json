@@ -14,17 +14,53 @@
       "id": "FieldForge",
       "type": "collectable",
       "names": {
-        "english": "Field Forge"
+        "english": "Field Forge",
+        "french": "Forge de campagne",
+        "german": "Feldschmiede",
+        "russian": "Полевая кузница",
+        "portuguese": "Forja de Campo",
+        "chinese": "战地锻炉",
+        "spanish": "Forja de campaña",
+        "chinese_traditional": "戰地鍛爐",
+        "korean": "야전 대장간",
+        "japanese": "野戦鍛冶場"
       },
       "descriptions": {
-        "english": "Equipment cards cost <b>1</b> less [ember]."
+        "english": "Equipment cards cost <b>1</b> less [ember].",
+        "french": "Les cartes d’équipement coûtent <b>1</b> [ember] de moins.",
+        "german": "Ausrüstungskarten kosten <b>1</b> [ember] weniger.",
+        "russian": "Карты снаряжения стоят на <b>1</b> [ember] меньше.",
+        "portuguese": "Cartas de equipamento custam <b>1</b> [ember] a menos.",
+        "chinese": "装备牌费用减少<b>1</b> [ember]。",
+        "spanish": "Las cartas de equipo cuestan <b>1</b> [ember] menos.",
+        "chinese_traditional": "裝備牌費用減少<b>1</b> [ember]。",
+        "korean": "장비 카드의 비용이 <b>1</b> [ember] 감소.",
+        "japanese": "装備カードのコストが<b>1</b> [ember]減る。"
       },
       "relic_activated_texts": {
-        "english": "Struck while hot."
+        "english": "Struck while hot.",
+        "french": "Touché pendant qu'il était chaud.",
+        "german": "Schlagen, während es heiß ist.",
+        "russian": "Ударенный, пока горячий.",
+        "portuguese": "Batido enquanto estava quente.",
+        "chinese": "在热的时候被击中.",
+        "spanish": "Forjado en caliente.",
+        "chinese_traditional": "在熱中被打擊.",
+        "korean": "뜨거운 상태에서 부딪혔어.",
+        "japanese": "熱い時に殴られた"
       },
       "lore_tooltips": [
         {
-          "english": "A stump, a hammer and somebody who owes you a favour."
+          "english": "A stump, a hammer and somebody who owes you a favour.",
+          "french": "Un tronc, un marteau et quelqu'un qui vous doit une faveur.",
+          "german": "Ein Stumpf, ein Hammer und jemand, der dir einen Gefallen schuldet.",
+          "russian": "Стамп, молоток и кто-то, кто должен тебе услугу.",
+          "portuguese": "Um tronco, um martelo e alguém que lhe deve um favor.",
+          "chinese": "一个子,一个子和一个欠你一个好事的人.",
+          "spanish": "Un tocón, un martillo y alguien que te debe un favor.",
+          "chinese_traditional": "子,子和一個欠你一個好事的人.",
+          "korean": "줄기, 다리, 그리고 당신에게 빚진 사람.",
+          "japanese": "ストンプとハンマーと 借りがある人"
         }
       ],
       "lore_style": "herzal",

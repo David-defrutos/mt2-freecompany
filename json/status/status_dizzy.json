@@ -5,22 +5,76 @@
       "id": "dizzy",
       "class_name": "@StatusEffectFreeCompanyDizzyState",
       "names": {
-        "english": "Dizzy"
+        "english": "Dizzy",
+        "french": "Vertige",
+        "german": "Schwindel",
+        "russian": "Головокружение",
+        "portuguese": "Tontura",
+        "chinese": "眩晕",
+        "spanish": "Mareo",
+        "chinese_traditional": "暈眩",
+        "korean": "어지럼증",
+        "japanese": "めまい"
       },
       "stackable_names": {
-        "english": "<nobr>Dizzy {0}</nobr>"
+        "english": "<nobr>Dizzy {0}</nobr>",
+        "french": "<nobr>Vertige {0}</nobr>",
+        "german": "<nobr>Schwindel {0}</nobr>",
+        "russian": "<nobr>Головокружение {0}</nobr>",
+        "portuguese": "<nobr>Tontura {0}</nobr>",
+        "chinese": "<nobr>眩晕 {0}</nobr>",
+        "spanish": "<nobr>Mareo {0}</nobr>",
+        "chinese_traditional": "<nobr>暈眩 {0}</nobr>",
+        "korean": "<nobr>어지럼증 {0}</nobr>",
+        "japanese": "<nobr>めまい {0}</nobr>"
       },
       "card_tooltips": {
-        "english": "At the start of your next turn, convert all Dizzy into an equal amount of [dazed]."
+        "english": "At the start of your next turn, convert all Dizzy into an equal amount of [dazed].",
+        "french": "Au début de votre prochain tour, convertissez toutes les charges de Vertige en autant de [dazed].",
+        "german": "Wandle zu Beginn deines nächsten Zuges alle Stapel Schwindel in ebenso viele [dazed] um.",
+        "russian": "В начале вашего следующего хода преобразуйте все заряды Головокружения в такое же количество [dazed].",
+        "portuguese": "No início do seu próximo turno, converta todas as cargas de Tontura na mesma quantidade de [dazed].",
+        "chinese": "你的下个回合开始时，将所有眩晕层数转化为等量[dazed]。",
+        "spanish": "Al empezar tu siguiente turno, convierte todas las acumulaciones de Mareo en la misma cantidad de [dazed].",
+        "chinese_traditional": "你的下個回合開始時，將所有暈眩層數轉化為等量[dazed]。",
+        "korean": "다음 내 턴 시작 시 어지럼증 중첩을 모두 같은 수의 [dazed] 중첩으로 전환합니다.",
+        "japanese": "次の自分のターン開始時、めまいの全スタックを同数の[dazed]に変換。"
       },
       "character_tooltips": {
-        "english": "At the start of your next turn, convert all Dizzy into an equal amount of [dazed]."
+        "english": "At the start of your next turn, convert all Dizzy into an equal amount of [dazed].",
+        "french": "Au début de votre prochain tour, convertissez toutes les charges de Vertige en autant de [dazed].",
+        "german": "Wandle zu Beginn deines nächsten Zuges alle Stapel Schwindel in ebenso viele [dazed] um.",
+        "russian": "В начале вашего следующего хода преобразуйте все заряды Головокружения в такое же количество [dazed].",
+        "portuguese": "No início do seu próximo turno, converta todas as cargas de Tontura na mesma quantidade de [dazed].",
+        "chinese": "你的下个回合开始时，将所有眩晕层数转化为等量[dazed]。",
+        "spanish": "Al empezar tu siguiente turno, convierte todas las acumulaciones de Mareo en la misma cantidad de [dazed].",
+        "chinese_traditional": "你的下個回合開始時，將所有暈眩層數轉化為等量[dazed]。",
+        "korean": "다음 내 턴 시작 시 어지럼증 중첩을 모두 같은 수의 [dazed] 중첩으로 전환합니다.",
+        "japanese": "次の自分のターン開始時、めまいの全スタックを同数の[dazed]に変換。"
       },
       "replacement_texts": {
-        "english": "<b>Dizzy</b>"
+        "english": "<b>Dizzy</b>",
+        "french": "<b>Vertige</b>",
+        "german": "<b>Schwindel</b>",
+        "russian": "<b>Головокружение</b>",
+        "portuguese": "<b>Tontura</b>",
+        "chinese": "<b>眩晕</b>",
+        "spanish": "<b>Mareo</b>",
+        "chinese_traditional": "<b>暈眩</b>",
+        "korean": "<b>어지럼증</b>",
+        "japanese": "<b>めまい</b>"
       },
       "notifications": {
-        "english": "Dizzy"
+        "english": "Dizzy",
+        "french": "Vertige",
+        "german": "Schwindel",
+        "russian": "Головокружение",
+        "portuguese": "Tontura",
+        "chinese": "眩晕",
+        "spanish": "Mareo",
+        "chinese_traditional": "暈眩",
+        "korean": "어지럼증",
+        "japanese": "めまい"
       },
       "display_category": "negative",
       "trigger_stage": "on_monster_team_turn_begin",

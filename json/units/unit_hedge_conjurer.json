@@ -4,7 +4,16 @@
     {
       "id": "SpawnHedgeConjurer",
       "names": {
-        "english": "Hedge Conjurer"
+        "english": "Hedge Conjurer",
+        "french": "Invocateur autodidacte",
+        "german": "Heckenbeschwörer",
+        "russian": "Самоучка-заклинатель",
+        "portuguese": "Conjurador Autodidata",
+        "chinese": "野召唤师",
+        "spanish": "Conjurador autodidacta",
+        "chinese_traditional": "野召喚師",
+        "korean": "독학 소환사",
+        "japanese": "在野の召喚士"
       },
       "card_art": "@HedgeConjurer",
       "cost": 2,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Self-taught, and it shows. Still cheaper than a guild mage."
+          "english": "Self-taught, and it shows. Still cheaper than a guild mage.",
+          "french": "Autodidacte, et ça se voit. C'est toujours moins cher qu'un magicien de guilde.",
+          "german": "Selbstunterricht, und das zeigt sich. Noch billiger als ein Gilde-Magier.",
+          "russian": "Самоученный, и это видно. Все еще дешевле, чем волшебник гильдии.",
+          "portuguese": "Autodidacta, e mostra-se. Ainda é mais barato do que um mago da guilda.",
+          "chinese": "他自学了,这就显而易见. 还比一个协会魔术师便宜.",
+          "spanish": "Autodidacta, y se nota. Aun así, más barato que un mago del gremio.",
+          "chinese_traditional": "這樣就顯示了. 還是比一個協會魔術師便宜.",
+          "korean": "자율적으로 배웠습니다. 릴드 마그보다 더 저렴해요",
+          "japanese": "自分で教えたと分かった まだギルドの魔法使いより安い"
         }
       ],
       "pools": [
@@ -28,10 +46,28 @@
     {
       "id": "ConjurerVolatile",
       "names": {
-        "english": "Volatile Reagents"
+        "english": "Volatile Reagents",
+        "french": "Réactifs instables",
+        "german": "Instabile Reagenzien",
+        "russian": "Нестабильные реагенты",
+        "portuguese": "Reagentes Voláteis",
+        "chinese": "不稳定试剂",
+        "spanish": "Reactivos volátiles",
+        "chinese_traditional": "不穩定試劑",
+        "korean": "불안정한 시약",
+        "japanese": "不安定な試薬"
       },
       "descriptions": {
-        "english": "Draw a damage spell. It becomes <b>Explosive</b>."
+        "english": "Draw a damage spell. It becomes <b>Explosive</b>.",
+        "french": "Piochez un sort de dégâts. Il devient <b>Explosif</b>.",
+        "german": "Ziehe einen Schadenszauber. Er wird <b>Explosiv</b>.",
+        "russian": "Возьмите заклинание, наносящее урон. Оно становится <b>Взрывной</b>.",
+        "portuguese": "Compre um feitiço de dano. Ele se torna <b>Explosivo</b>.",
+        "chinese": "抽取一张伤害法术。它获得<b>爆炸</b>。",
+        "spanish": "Roba un hechizo de daño. Se vuelve <b>Explosivo</b>.",
+        "chinese_traditional": "抽取一張傷害法術。它獲得<b>爆炸</b>。",
+        "korean": "피해 주문을 뽑음. 해당 주문은 <b>폭발</b> 획득.",
+        "japanese": "ダメージ呪文を引く。その呪文は<b>爆発</b>になる。"
       },
       "rarity": "common",
       "card_art": "@HedgeConjurer",
@@ -51,7 +87,16 @@
     {
       "id": "HedgeConjurer",
       "names": {
-        "english": "Hedge Conjurer"
+        "english": "Hedge Conjurer",
+        "french": "Invocateur autodidacte",
+        "german": "Heckenbeschwörer",
+        "russian": "Самоучка-заклинатель",
+        "portuguese": "Conjurador Autodidata",
+        "chinese": "野召唤师",
+        "spanish": "Conjurador autodidacta",
+        "chinese_traditional": "野召喚師",
+        "korean": "독학 소환사",
+        "japanese": "在野の召喚士"
       },
       "character_art": "@HedgeConjurerCharacterArt",
       "size": 1,
@@ -113,7 +158,16 @@
       "id": "HedgeConjurerTrigger",
       "trigger": "card_spell_played",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] [conduit]."
+        "english": "Gain [effect0.status0.power] [conduit].",
+        "french": "Gagnez [effect0.status0.power] [conduit].",
+        "german": "Erhalte [effect0.status0.power] [conduit].",
+        "russian": "Получите [effect0.status0.power] [conduit].",
+        "portuguese": "Ganhe [effect0.status0.power] [conduit].",
+        "chinese": "获得[effect0.status0.power] [conduit]。",
+        "spanish": "Gana [effect0.status0.power] [conduit].",
+        "chinese_traditional": "獲得[effect0.status0.power] [conduit]。",
+        "korean": "[effect0.status0.power] [conduit] 획득.",
+        "japanese": "[effect0.status0.power] [conduit]を得る。"
       },
       "effects": [
         "@HedgeConjurerAbility"
@@ -187,7 +241,16 @@
     {
       "id": "ExplosiveSpell",
       "titles": {
-        "english": "Volatile"
+        "english": "Volatile",
+        "french": "Instable",
+        "german": "Instabil",
+        "russian": "Нестабильность",
+        "portuguese": "Volátil",
+        "chinese": "不稳定",
+        "spanish": "Volátil",
+        "chinese_traditional": "不穩定",
+        "korean": "불안정",
+        "japanese": "不安定"
       },
       "trait_upgrades": [
         "@ExplosiveOverflow"

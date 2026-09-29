@@ -4,7 +4,16 @@
     {
       "id": "SpawnLongbowman",
       "names": {
-        "english": "Longbowman"
+        "english": "Longbowman",
+        "french": "Archer à l'arc long",
+        "german": "Langbogenschütze",
+        "russian": "Лучник",
+        "portuguese": "Arqueiro de Arco Longo",
+        "chinese": "长弓手",
+        "spanish": "Arquero de arco largo",
+        "chinese_traditional": "長弓手",
+        "korean": "장궁병",
+        "japanese": "長弓兵"
       },
       "card_art": "@Longbowman",
       "cost": 2,
@@ -18,7 +27,16 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Aims past the noise at the back of the room."
+          "english": "Aims past the noise at the back of the room.",
+          "french": "Cible au-delà du bruit à l'arrière de la pièce.",
+          "german": "Zielt hinter dem Lärm im Rücken des Raumes.",
+          "russian": "Нацелен на шум в задней части комнаты.",
+          "portuguese": "Alveja-se para além do barulho na parte de trás da sala.",
+          "chinese": "目标在房间后面的噪音.",
+          "spanish": "Apunta más allá del ruido, al fondo de la sala.",
+          "chinese_traditional": "在房間後面的噪音中,",
+          "korean": "방 뒤쪽의 잡음을 넘어서다.",
+          "japanese": "部屋の後ろの騒音を狙う."
         }
       ],
       "pools": [
@@ -28,10 +46,28 @@
     {
       "id": "LongbowmanShiftAim",
       "names": {
-        "english": "Shift Aim"
+        "english": "Shift Aim",
+        "french": "Changer de cible",
+        "german": "Ziel wechseln",
+        "russian": "Сменить цель",
+        "portuguese": "Mudar a Mira",
+        "chinese": "调整瞄准",
+        "spanish": "Cambiar de objetivo",
+        "chinese_traditional": "調整瞄準",
+        "korean": "조준 변경",
+        "japanese": "照準変更"
       },
       "descriptions": {
-        "english": "Until the start of your next turn, this unit loses <b>Sniper</b> and targets the front enemy when it attacks."
+        "english": "Until the start of your next turn, this unit loses <b>Sniper</b> and targets the front enemy when it attacks.",
+        "french": "Jusqu’au début de votre prochain tour, cette unité perd <b>Tireur d’élite</b> et cible l’ennemi de tête lorsqu’elle attaque.",
+        "german": "Bis zu Beginn deines nächsten Zuges verliert diese Einheit <b>Scharfschütze</b> und greift den vordersten Gegner an.",
+        "russian": "До начала вашего следующего хода эта боевая единица теряет <b>Снайпер</b> и при атаке выбирает переднего врага.",
+        "portuguese": "Até o início do seu próximo turno, esta unidade perde <b>Atirador de Elite</b> e ataca o inimigo da frente.",
+        "chinese": "直到你的下个回合开始，此单位失去<b>狙击</b>，攻击时改为瞄准最前方的敌人。",
+        "spanish": "Hasta el inicio de tu siguiente turno, esta unidad pierde <b>Francotirador</b> y apunta al primer enemigo cuando ataca.",
+        "chinese_traditional": "直到你的下個回合開始，此單位失去<b>狙擊</b>，攻擊時改為瞄準最前方的敵人。",
+        "korean": "다음 내 턴 시작까지 이 유닛은 <b>저격</b>을 잃고 공격 시 맨 앞 적을 대상으로 지정.",
+        "japanese": "次の自分のターン開始まで、このユニットは<b>狙撃</b>を失い、攻撃時に先頭の敵を狙う。"
       },
       "card_art": "@Longbowman",
       "is_an_ability": true,
@@ -48,7 +84,16 @@
     {
       "id": "Longbowman",
       "names": {
-        "english": "Longbowman"
+        "english": "Longbowman",
+        "french": "Archer à l'arc long",
+        "german": "Langbogenschütze",
+        "russian": "Лучник",
+        "portuguese": "Arqueiro de Arco Longo",
+        "chinese": "长弓手",
+        "spanish": "Arquero de arco largo",
+        "chinese_traditional": "長弓手",
+        "korean": "장궁병",
+        "japanese": "長弓兵"
       },
       "character_art": "@LongbowmanCharacterArt",
       "size": 1,
@@ -115,7 +160,16 @@
       "id": "LongbowmanSniperBack",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Regain <b>Sniper</b>."
+        "english": "Regain <b>Sniper</b>.",
+        "french": "Récupère <b>Tireur d’élite</b>.",
+        "german": "Erhält <b>Scharfschütze</b> zurück.",
+        "russian": "Снова получает <b>Снайпер</b>.",
+        "portuguese": "Recupera <b>Atirador de Elite</b>.",
+        "chinese": "重新获得<b>狙击</b>。",
+        "spanish": "Recupera <b>Francotirador</b>.",
+        "chinese_traditional": "重新獲得<b>狙擊</b>。",
+        "korean": "<b>저격</b> 다시 획득.",
+        "japanese": "<b>狙撃</b>を再び得る。"
       },
       "effects": [
         "@LongbowmanSniperOn"
