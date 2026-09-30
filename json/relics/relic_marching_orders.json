@@ -3,8 +3,8 @@
   "relic_effects": [
     {
       "id": "MarchingOrdersEffect",
-      "name": "RelicEffectFirstRoomCardIsPlayedOnAllFloors",
-      "param_int_2": 0
+      "name": "@RelicEffectFirstUnitDiscountEachTurn",
+      "param_int": 1
     }
   ],
   "relics": [
@@ -24,41 +24,41 @@
         "japanese": "行軍命令"
       },
       "descriptions": {
-        "english": "The first Room card you play each battle is played on every floor.",
-        "french": "La première carte de salle jouée à chaque combat est jouée à tous les étages.",
-        "german": "Die erste Raumkarte, die du in jedem Kampf spielst, wird auf jedem Stockwerk gespielt.",
-        "russian": "Первая карта помещения, разыгранная вами в каждом бою, разыгрывается на всех этажах.",
-        "portuguese": "A primeira carta de sala que você joga em cada batalha é jogada em todos os andares.",
-        "chinese": "每场战斗中打出的第一张房间牌会在所有楼层打出。",
-        "spanish": "La primera carta de sala que juegues en cada combate se juega en todos los pisos.",
-        "chinese_traditional": "每場戰鬥中打出的第一張房間牌會在所有樓層打出。",
-        "korean": "각 전투에서 처음 사용한 방 카드는 모든 층에 사용됨.",
-        "japanese": "各戦闘で最初に使用した部屋カードを全階層で使用する。"
+        "english": "The first unit card you play each turn costs <b>[effect0.power]</b> less [ember].",
+        "french": "La première carte d’unité jouée chaque tour coûte <b>[effect0.power]</b>[ember] de moins.",
+        "german": "Die erste Einheitenkarte, die du pro Zug spielst, kostet <b>[effect0.power]</b>[ember] weniger.",
+        "russian": "Первая карта бойца, разыгранная вами за ход, стоит на <b>[effect0.power]</b>[ember] меньше.",
+        "portuguese": "A primeira carta de unidade que você joga a cada turno custa <b>[effect0.power]</b>[ember] a menos.",
+        "chinese": "每回合打出的第一张单位牌费用减少<b>[effect0.power]</b>[ember]。",
+        "spanish": "La primera carta de unidad que juegues en cada turno cuesta <b>[effect0.power]</b>[ember] menos.",
+        "chinese_traditional": "每回合打出的第一張單位牌費用減少<b>[effect0.power]</b>[ember]。",
+        "korean": "매 턴 처음 사용하는 유닛 카드의 비용이 <b>[effect0.power]</b>[ember] 감소합니다.",
+        "japanese": "各ターンで最初にプレイするユニットカードのコストが<b>[effect0.power]</b>[ember]減少する。"
       },
       "relic_activated_texts": {
-        "english": "All floors. Move.",
-        "french": "Toutes les étages. On se déplace.",
-        "german": "Alle Etagen. Bewegen Sie sich.",
-        "russian": "На всех этажах. Двигайтесь.",
-        "portuguese": "Todos os andares. Mova-te!",
-        "chinese": "所有的楼层. 移动吧!",
-        "spanish": "Todos los pisos. En marcha.",
-        "chinese_traditional": "所有的樓層. 移動!",
-        "korean": "모든 층. 움직여",
-        "japanese": "すべての階. 移動する"
+        "english": "Deploy!",
+        "french": "Déployez-vous !",
+        "german": "Ausrücken!",
+        "russian": "Выдвигайтесь!",
+        "portuguese": "Avançar!",
+        "chinese": "出发！",
+        "spanish": "¡Desplegaos!",
+        "chinese_traditional": "出發！",
+        "korean": "출동!",
+        "japanese": "出撃！"
       },
       "lore_tooltips": [
         {
-          "english": "One order, three camps.",
-          "french": "Une commande, trois camps.",
-          "german": "Ein Auftrag, drei Lager.",
-          "russian": "Один заказ, три лагеря.",
-          "portuguese": "Uma ordem, três acampamentos.",
-          "chinese": "一个订单,三个营地.",
-          "spanish": "Una orden, tres campamentos.",
-          "chinese_traditional": "只有一個命令,三個營.",
-          "korean": "한명, 세명.",
-          "japanese": "1つの命令,3つのキャンプ"
+          "english": "The first soldier through the gate travels at the company’s expense.",
+          "french": "Le premier soldat à franchir la porte voyage aux frais de la compagnie.",
+          "german": "Der erste Soldat durch das Tor reist auf Kosten der Kompanie.",
+          "russian": "Первый солдат, прошедший через ворота, отправляется в путь за счёт компании.",
+          "portuguese": "O primeiro soldado a passar pelo portão viaja por conta da companhia.",
+          "chinese": "第一个穿过大门的士兵由佣兵团承担旅费。",
+          "spanish": "El primer soldado que cruza la puerta viaja a cuenta de la compañía.",
+          "chinese_traditional": "第一個穿過大門的士兵由傭兵團承擔旅費。",
+          "korean": "문을 처음 통과하는 병사의 여비는 용병단이 부담한다.",
+          "japanese": "最初に門をくぐる兵士の旅費は傭兵団が負担する。"
         }
       ],
       "lore_style": "herzal",
