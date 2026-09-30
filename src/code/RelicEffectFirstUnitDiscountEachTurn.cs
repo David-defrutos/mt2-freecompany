@@ -11,6 +11,8 @@ public sealed class RelicEffectFirstUnitDiscountEachTurn : RelicEffectBase,
     private readonly CardUpgradeState discount = new();
     private bool available = true;
 
+    public override PropDescriptions CreateEditorInspectorDescriptions() => new();
+
     public override void Initialize(RelicState relicState, RelicData relicData, RelicEffectData relicEffectData)
     {
         base.Initialize(relicState, relicData, relicEffectData);
@@ -83,3 +85,4 @@ public sealed class RelicEffectFirstUnitDiscountEachTurn : RelicEffectBase,
     }
 }
 // 2026-09-30-2208||codex-freecompany-fx||src/code/RelicEffectFirstUnitDiscountEachTurn.cs||implementa descuento temporal de 1 Ember a la primera carta de unidad de cada turno; limpia la mano al consumirlo y reinicia antes del robo
+// 2026-09-30-2215||codex-freecompany-fx||src/code/RelicEffectFirstUnitDiscountEachTurn.cs||implementa CreateEditorInspectorDescriptions requerido por la API de RelicEffectBase; corrige CS0534 de Actions
