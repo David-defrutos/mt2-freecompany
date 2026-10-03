@@ -10,8 +10,8 @@ namespace mt2_freecompany.Plugin;
 
 internal static class BeastmasterTraining
 {
-    internal const string TrainingId = "mt2_freecompany.BeastmasterTraining";
-    internal const string DiscountId = "mt2_freecompany.BeastmasterDiscount";
+    internal const string TrainingId = "bde5128c-6744-4365-8915-fc62f9f5369e";
+    internal const string DiscountId = "639a283d-790f-4f1a-b0df-de28d8796027";
     private static HashSet<string>? creatureNames;
 
     // Exact card names, including the owning mod. No hard dependency on other clans.
@@ -161,3 +161,20 @@ public sealed class CardEffectBeastmasterRecall : CardEffectBase
 // 2026-10-03-2242||codex-freecompany-fx||src/code/BeastmasterTraining.cs||Frozen en entrada de mano, entrenamiento permanente antes del robo por cada Vesper y recuperación segura del troll
 // 2026-10-03-2244||codex-freecompany-fx||src/code/BeastmasterTraining.cs||recuperación con origen Deck válido en la API
 // 2026-10-03-2248||codex-freecompany-fx||src/code/BeastmasterTraining.cs||identifica el troll por asset name estable, no por GUID interno
+
+// Older builds saved unregistered names; translate them before native loading.
+// Native LoadFromFile then restores metadata while retaining saved stat values.
+[HarmonyPatch(typeof(CardUpgradeState), nameof(CardUpgradeState.LoadFromFile))]
+internal static class BeastmasterSavedUpgradePatch
+{
+    internal static void Prefix(CardUpgradeState __instance, AllGameData allGameData)
+    {
+        string id = __instance.GetCardUpgradeDataId();
+        string? registered = id == "mt2_freecompany.BeastmasterTraining" ? BeastmasterTraining.TrainingId
+            : id == "mt2_freecompany.BeastmasterDiscount" ? BeastmasterTraining.DiscountId : null;
+        if (registered != null && allGameData.FindCardUpgradeData(registered) != null)
+            __instance.SetCardUpgradeDataId(registered);
+    }
+}
+
+// 2026-10-04-0028||codex-freecompany-fx||src\code\BeastmasterTraining.cs||usa GUIDs reales de mejoras registradas y migra IDs antiguos antes de cargar guardados

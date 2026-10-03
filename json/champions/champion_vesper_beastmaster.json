@@ -190,6 +190,40 @@
       },
       "icon": "@TamablePaw",
       "hide_icon_on_card": false
+    },
+    {
+      "id": "BeastmasterTraining",
+      "titles": {
+        "english": "Training",
+        "french": "Entraînement",
+        "german": "Training",
+        "russian": "Тренировка",
+        "portuguese": "Treinamento",
+        "chinese": "训练",
+        "spanish": "Entrenamiento",
+        "chinese_traditional": "訓練",
+        "korean": "훈련",
+        "japanese": "訓練"
+      },
+      "hide_icon_on_card": true,
+      "is_unique": true
+    },
+    {
+      "id": "BeastmasterDiscount",
+      "titles": {
+        "english": "Training",
+        "french": "Entraînement",
+        "german": "Training",
+        "russian": "Тренировка",
+        "portuguese": "Treinamento",
+        "chinese": "训练",
+        "spanish": "Entrenamiento",
+        "chinese_traditional": "訓練",
+        "korean": "훈련",
+        "japanese": "訓練"
+      },
+      "hide_icon_on_card": true,
+      "is_unique": true
     }
   ],
   "traits": [
