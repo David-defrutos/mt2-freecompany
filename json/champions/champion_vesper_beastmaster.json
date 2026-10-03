@@ -1,91 +1,10 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-  "cards": [
-    {
-      "id": "BeastmasterCall",
-      "names": {
-        "english": "Call of the Wild",
-        "french": "Appel de la nature",
-        "german": "Ruf der Wildnis",
-        "russian": "Зов дикой природы",
-        "portuguese": "Chamado da Natureza",
-        "chinese": "野性呼唤",
-        "spanish": "Llamada de lo salvaje",
-        "chinese_traditional": "野性呼喚",
-        "korean": "야생의 부름",
-        "japanese": "野生の呼び声"
-      },
-      "descriptions": {
-        "english": "Put a <b>Troll</b> in your hand. It costs <b>0</b> [ember].",
-        "french": "Ajoutez un <b>Troll</b> à votre main. Il coûte <b>0</b> [ember].",
-        "german": "Füge deiner Hand einen <b>Troll</b> hinzu. Er kostet <b>0</b> [ember].",
-        "russian": "Добавьте в руку <b>Тролль</b>. Он стоит <b>0</b> [ember].",
-        "portuguese": "Adicione um <b>Troll</b> à sua mão. Ele custa <b>0</b> [ember].",
-        "chinese": "将一个<b>巨魔</b>加入手牌。其费用为<b>0</b> [ember]。",
-        "spanish": "Añade un <b>Trol</b> a tu mano. Cuesta <b>0</b> [ember].",
-        "chinese_traditional": "將一個<b>巨魔</b>加入手牌。其費用為<b>0</b> [ember]。",
-        "korean": "손에 <b>트롤</b> 추가. 비용은 <b>0</b> [ember].",
-        "japanese": "手札に<b>トロール</b>を追加。コストは<b>0</b> [ember]。"
-      },
-      "card_art": "@Vesper",
-      "is_an_ability": true,
-      "cooldown": 4,
-      "initial_cooldown": 4,
-      "targetless": true,
-      "targets_room": false,
-      "card_type": "spell",
-      "effects": [
-        "@BeastmasterCallGate",
-        "@BeastmasterCallFromDraw",
-        "@BeastmasterCallFromDiscard",
-        "@BeastmasterCallZero"
-      ]
-    },
-    {
-      "id": "BeastmasterCall3",
-      "names": {
-        "english": "Call of the Wild",
-        "french": "Appel de la nature",
-        "german": "Ruf der Wildnis",
-        "russian": "Зов дикой природы",
-        "portuguese": "Chamado da Natureza",
-        "chinese": "野性呼唤",
-        "spanish": "Llamada de lo salvaje",
-        "chinese_traditional": "野性呼喚",
-        "korean": "야생의 부름",
-        "japanese": "野生の呼び声"
-      },
-      "descriptions": {
-        "english": "Put a <b>Troll</b> in your hand. It costs <b>0</b> [ember].",
-        "french": "Ajoutez un <b>Troll</b> à votre main. Il coûte <b>0</b> [ember].",
-        "german": "Füge deiner Hand einen <b>Troll</b> hinzu. Er kostet <b>0</b> [ember].",
-        "russian": "Добавьте в руку <b>Тролль</b>. Он стоит <b>0</b> [ember].",
-        "portuguese": "Adicione um <b>Troll</b> à sua mão. Ele custa <b>0</b> [ember].",
-        "chinese": "将一个<b>巨魔</b>加入手牌。其费用为<b>0</b> [ember]。",
-        "spanish": "Añade un <b>Trol</b> a tu mano. Cuesta <b>0</b> [ember].",
-        "chinese_traditional": "將一個<b>巨魔</b>加入手牌。其費用為<b>0</b> [ember]。",
-        "korean": "손에 <b>트롤</b> 추가. 비용은 <b>0</b> [ember].",
-        "japanese": "手札に<b>トロール</b>を追加。コストは<b>0</b> [ember]。"
-      },
-      "card_art": "@Vesper",
-      "is_an_ability": true,
-      "cooldown": 4,
-      "initial_cooldown": 3,
-      "targetless": true,
-      "targets_room": false,
-      "card_type": "spell",
-      "effects": [
-        "@BeastmasterCallGate",
-        "@BeastmasterCallFromDraw",
-        "@BeastmasterCallFromDiscard",
-        "@BeastmasterCallZero"
-      ]
-    }
-  ],
+  "cards": [],
   "character_triggers": [
     {
       "id": "BeastmasterGrantTrigger",
-      "trigger": "pre_combat",
+      "trigger": "on_spawn",
       "descriptions": {
         "english": "The first time, <b>3</b> random <b>Tame</b> spells join your hand. The one you play keeps that <b>Troll</b> for the run.",
         "french": "La première fois, ajoute <b>3</b> sorts d’<b>Apprivoisement</b> aléatoires à votre main. Celui que vous jouez conserve ce <b>Troll</b> pour la partie.",
@@ -99,7 +18,8 @@
         "japanese": "初回はランダムな<b>手なずける</b>呪文<b>3</b>枚を手札に追加。使用した呪文の<b>トロール</b>をこのプレイ中保持する。"
       },
       "effects": [
-        "@BeastmasterOffer"
+        "@BeastmasterOffer",
+        "@BeastmasterRecall"
       ]
     }
   ],
@@ -114,69 +34,14 @@
       "param_int": 3
     },
     {
-      "id": "BeastmasterCallGate",
-      "name": "@CardEffectIfSubtypeInDrawPile",
-      "param_subtype": "@Sub_Troll",
+      "id": "BeastmasterRecall",
+      "name": "@CardEffectBeastmasterRecall",
       "target_mode": "self",
-      "target_team": "monsters",
-      "should_test": true,
-      "should_fail_to_cast_if_test_fails": true,
-      "should_cancel_subsequent_effects_if_test_fails": true
-    },
-    {
-      "id": "BeastmasterCallFromDraw",
-      "name": "CardEffectRecursion",
-      "target_mode": "draw_pile",
-      "target_card_selection_mode": "random_to_hand",
-      "target_card_type": "monster",
-      "target_subtype": "@Sub_Troll",
-      "param_int": 1,
-      "should_test": true,
-      "should_fail_to_cast_if_test_fails": false,
-      "should_cancel_subsequent_effects_if_test_fails": false
-    },
-    {
-      "id": "BeastmasterCallFromDiscard",
-      "name": "CardEffectRecursion",
-      "target_mode": "discard",
-      "target_card_selection_mode": "random_to_hand",
-      "target_card_type": "monster",
-      "target_subtype": "@Sub_Troll",
-      "param_int": 1,
-      "should_test": true,
-      "should_fail_to_cast_if_test_fails": false,
-      "should_cancel_subsequent_effects_if_test_fails": false
-    },
-    {
-      "id": "BeastmasterCallZero",
-      "name": "CardEffectAddTempCardUpgradeToCardsInHand",
-      "target_mode": "pyre",
-      "target_team": "monsters",
-      "param_upgrade": "@TrollFreeSummon",
-      "should_test": false
+      "target_team": "monsters"
     }
   ],
-  "upgrade_masks": [
-    {
-      "id": "TrollOnlyMask",
-      "card_type": "monster",
-      "cost_range": {
-        "x": 0,
-        "y": 99
-      },
-      "required_subtypes": [
-        "@Sub_Troll"
-      ]
-    }
-  ],
+  "upgrade_masks": [],
   "upgrades": [
-    {
-      "id": "TrollFreeSummon",
-      "cost_reduction": 6,
-      "filters": [
-        "@TrollOnlyMask"
-      ]
-    },
     {
       "id": "upg_Beastmaster1",
       "titles": {
@@ -192,22 +57,21 @@
         "japanese": "獣使い"
       },
       "descriptions": {
-        "english": "Choose a Troll for your deck. Trolls grow stronger each Ring.",
-        "french": "Choisissez un troll pour votre deck. Les trolls deviennent plus forts à chaque cercle.",
-        "german": "Wähle einen Troll für dein Deck. Trolle werden mit jedem Ring stärker.",
-        "russian": "Выберите тролля для своей колоды. Тролли усиливаются с каждым кругом.",
-        "portuguese": "Escolha um troll para seu deck. Os trolls ficam mais fortes a cada anel.",
-        "chinese": "为你的牌组选择一个巨魔。巨魔每环都会变强。",
-        "spanish": "Elige un trol para tu mazo. Los troles se hacen más fuertes con cada anillo.",
-        "chinese_traditional": "為你的牌組選擇一個巨魔。巨魔每環都會變強。",
-        "korean": "덱에 넣을 트롤을 선택. 트롤은 고리마다 강해짐.",
-        "japanese": "デッキに加えるトロールを選ぶ。トロールはリングごとに強くなる。"
+        "english": "Creatures entering your hand gain [freeze]. Start of turn: creatures in hand cost 1 less [ember] this battle and permanently gain <b>+0/+1</b>.",
+        "spanish": "Las criaturas que llegan a tu mano ganan [freeze]. Inicio del turno: las criaturas en mano cuestan 1 [ember] menos este combate y ganan <b>+0/+1</b> permanentemente.",
+        "french": "Les créatures ajoutées à votre main gagnent [freeze]. Début du tour : les créatures en main coûtent 1 [ember] de moins pour ce combat et gagnent définitivement <b>+0/+1</b>.",
+        "german": "Kreaturen, die auf deine Hand gelangen, erhalten [freeze]. Zu Beginn des Zuges kosten Kreaturen auf der Hand in diesem Kampf 1 [ember] weniger und erhalten dauerhaft <b>+0/+1</b>.",
+        "russian": "Существа, попавшие в руку, получают [freeze]. В начале хода существа в руке стоят на 1 [ember] меньше до конца боя и навсегда получают <b>+0/+1</b>.",
+        "portuguese": "Criaturas que chegam à sua mão ganham [freeze]. No início do turno, criaturas na mão custam 1 [ember] a menos neste combate e ganham <b>+0/+1</b> permanentemente.",
+        "chinese": "进入手牌的生物获得[freeze]。回合开始时：手牌中的生物在本场战斗中费用减少1 [ember]，并永久获得<b>+0/+1</b>。",
+        "chinese_traditional": "進入手牌的生物獲得[freeze]。回合開始時：手牌中的生物在本場戰鬥中費用減少1 [ember]，並永久獲得<b>+0/+1</b>。",
+        "korean": "손에 들어오는 생물은 [freeze]을 얻습니다. 턴 시작 시 손의 생물은 이번 전투 동안 비용이 1 [ember] 감소하고 영구적으로 <b>+0/+1</b>을 얻습니다.",
+        "japanese": "手札に入るクリーチャーは[freeze]を得る。ターン開始時、手札のクリーチャーはこのバトル中のコストが1 [ember]減り、永続的に<b>+0/+1</b>を得る。"
       },
       "bonus_hp": 6,
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
-      ],
-      "ability_upgrade": "@BeastmasterCall"
+      ]
     },
     {
       "id": "upg_Beastmaster2",
@@ -224,16 +88,16 @@
         "japanese": "獣使い II"
       },
       "descriptions": {
-        "english": "Trolls grow stronger each Ring and gain [trample].",
-        "french": "Les trolls deviennent plus forts à chaque cercle et gagnent [trample].",
-        "german": "Trolle werden mit jedem Ring stärker und erhalten [trample].",
-        "russian": "Тролли усиливаются с каждым кругом и получают [trample].",
-        "portuguese": "Os trolls ficam mais fortes a cada anel e ganham [trample].",
-        "chinese": "巨魔每环都会变强，并获得[trample]。",
-        "spanish": "Los troles se hacen más fuertes con cada anillo y ganan [trample].",
-        "chinese_traditional": "巨魔每環都會變強，並獲得[trample]。",
-        "korean": "트롤은 고리마다 강해지고 [trample] 획득.",
-        "japanese": "トロールはリングごとに強くなり、[trample]を得る。"
+        "english": "Creatures entering your hand gain [freeze]. Start of turn: creatures in hand cost 1 less [ember] this battle and permanently gain <b>+1/+1</b>.",
+        "spanish": "Las criaturas que llegan a tu mano ganan [freeze]. Inicio del turno: las criaturas en mano cuestan 1 [ember] menos este combate y ganan <b>+1/+1</b> permanentemente.",
+        "french": "Les créatures ajoutées à votre main gagnent [freeze]. Début du tour : les créatures en main coûtent 1 [ember] de moins pour ce combat et gagnent définitivement <b>+1/+1</b>.",
+        "german": "Kreaturen, die auf deine Hand gelangen, erhalten [freeze]. Zu Beginn des Zuges kosten Kreaturen auf der Hand in diesem Kampf 1 [ember] weniger und erhalten dauerhaft <b>+1/+1</b>.",
+        "russian": "Существа, попавшие в руку, получают [freeze]. В начале хода существа в руке стоят на 1 [ember] меньше до конца боя и навсегда получают <b>+1/+1</b>.",
+        "portuguese": "Criaturas que chegam à sua mão ganham [freeze]. No início do turno, criaturas na mão custam 1 [ember] a menos neste combate e ganham <b>+1/+1</b> permanentemente.",
+        "chinese": "进入手牌的生物获得[freeze]。回合开始时：手牌中的生物在本场战斗中费用减少1 [ember]，并永久获得<b>+1/+1</b>。",
+        "chinese_traditional": "進入手牌的生物獲得[freeze]。回合開始時：手牌中的生物在本場戰鬥中費用減少1 [ember]，並永久獲得<b>+1/+1</b>。",
+        "korean": "손에 들어오는 생물은 [freeze]을 얻습니다. 턴 시작 시 손의 생물은 이번 전투 동안 비용이 1 [ember] 감소하고 영구적으로 <b>+1/+1</b>을 얻습니다.",
+        "japanese": "手札に入るクリーチャーは[freeze]を得る。ターン開始時、手札のクリーチャーはこのバトル中のコストが1 [ember]減り、永続的に<b>+1/+1</b>を得る。"
       },
       "bonus_hp": 12,
       "bonus_damage": 4,
@@ -242,8 +106,7 @@
       ],
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
-      ],
-      "ability_upgrade": "@BeastmasterCall"
+      ]
     },
     {
       "id": "upg_Beastmaster3",
@@ -260,16 +123,16 @@
         "japanese": "獣使い III"
       },
       "descriptions": {
-        "english": "Trolls grow stronger each Ring and gain [trample]. Call of the Wild is ready sooner.",
-        "french": "Les trolls deviennent plus forts à chaque cercle et gagnent [trample]. Appel de la nature est disponible plus tôt.",
-        "german": "Trolle werden mit jedem Ring stärker und erhalten [trample]. Ruf der Wildnis ist früher bereit.",
-        "russian": "Тролли усиливаются с каждым кругом и получают [trample]. Зов дикой природы готов раньше.",
-        "portuguese": "Os trolls ficam mais fortes a cada anel e ganham [trample]. Chamado da Natureza fica disponível mais cedo.",
-        "chinese": "巨魔每环都会变强，并获得[trample]。 野性呼唤更早就绪。",
-        "spanish": "Los troles se hacen más fuertes con cada anillo y ganan [trample]. Llamada de lo salvaje está lista antes.",
-        "chinese_traditional": "巨魔每環都會變強，並獲得[trample]。 野性呼喚更早就緒。",
-        "korean": "트롤은 고리마다 강해지고 [trample] 획득. 야생의 부름이 더 빨리 준비됨.",
-        "japanese": "トロールはリングごとに強くなり、[trample]を得る。 野生の呼び声が早く使用可能になる。"
+        "english": "Creatures entering your hand gain [freeze]. Start of turn: creatures in hand cost 1 less [ember] this battle and permanently gain <b>+1/+2</b>.",
+        "spanish": "Las criaturas que llegan a tu mano ganan [freeze]. Inicio del turno: las criaturas en mano cuestan 1 [ember] menos este combate y ganan <b>+1/+2</b> permanentemente.",
+        "french": "Les créatures ajoutées à votre main gagnent [freeze]. Début du tour : les créatures en main coûtent 1 [ember] de moins pour ce combat et gagnent définitivement <b>+1/+2</b>.",
+        "german": "Kreaturen, die auf deine Hand gelangen, erhalten [freeze]. Zu Beginn des Zuges kosten Kreaturen auf der Hand in diesem Kampf 1 [ember] weniger und erhalten dauerhaft <b>+1/+2</b>.",
+        "russian": "Существа, попавшие в руку, получают [freeze]. В начале хода существа в руке стоят на 1 [ember] меньше до конца боя и навсегда получают <b>+1/+2</b>.",
+        "portuguese": "Criaturas que chegam à sua mão ganham [freeze]. No início do turno, criaturas na mão custam 1 [ember] a menos neste combate e ganham <b>+1/+2</b> permanentemente.",
+        "chinese": "进入手牌的生物获得[freeze]。回合开始时：手牌中的生物在本场战斗中费用减少1 [ember]，并永久获得<b>+1/+2</b>。",
+        "chinese_traditional": "進入手牌的生物獲得[freeze]。回合開始時：手牌中的生物在本場戰鬥中費用減少1 [ember]，並永久獲得<b>+1/+2</b>。",
+        "korean": "손에 들어오는 생물은 [freeze]을 얻습니다. 턴 시작 시 손의 생물은 이번 전투 동안 비용이 1 [ember] 감소하고 영구적으로 <b>+1/+2</b>을 얻습니다.",
+        "japanese": "手札に入るクリーチャーは[freeze]を得る。ターン開始時、手札のクリーチャーはこのバトル中のコストが1 [ember]減り、永続的に<b>+1/+2</b>を得る。"
       },
       "bonus_hp": 18,
       "bonus_damage": 8,
@@ -278,8 +141,7 @@
       ],
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
-      ],
-      "ability_upgrade": "@BeastmasterCall3"
+      ]
     },
     {
       "id": "TrollOffer",
@@ -305,6 +167,140 @@
     {
       "id": "TrollOfferEphemeral",
       "name": "CardTraitEphemeral"
+    }
+  ],
+  "beastmaster_creatures": [
+    {
+      "clan": "Umbra",
+      "name": "Shadowsiege",
+      "card": "Shadowsiege"
+    },
+    {
+      "clan": "Umbra",
+      "name": "Overgorger",
+      "card": "FeederPermanentAttackBoost"
+    },
+    {
+      "clan": "Umbra",
+      "name": "Shadoweater",
+      "card": "FeederDamageEnemiesUnit"
+    },
+    {
+      "clan": "Awoken",
+      "name": "Steelsinger",
+      "card": "Steelsinger"
+    },
+    {
+      "clan": "Stygian Guard",
+      "name": "Eel Gorgon",
+      "card": "EelGorgon"
+    },
+    {
+      "clan": "Wurmkin",
+      "name": "Bogdeep Cocoon",
+      "card": "BogdeepCocoon"
+    },
+    {
+      "clan": "Wurmkin",
+      "name": "Kinhost Carapace",
+      "card": "KinhostCarapace"
+    },
+    {
+      "clan": "Wurmkin",
+      "name": "Glugsider",
+      "card": "Glugsider"
+    },
+    {
+      "clan": "Pyreborne",
+      "name": "Bloated Whelp",
+      "card": "BloatedWhelp"
+    },
+    {
+      "clan": "Pyreborne",
+      "name": "Snotty Whelp",
+      "card": "SnottyWhelp"
+    },
+    {
+      "clan": "Pyreborne",
+      "name": "Stuck Up Whelp",
+      "card": "RoyalWhelp"
+    },
+    {
+      "clan": "Pyreborne",
+      "name": "Wealthy Whelp",
+      "card": "GoldyWhelp"
+    },
+    {
+      "clan": "Underlegion",
+      "name": "Spore Launcher",
+      "card": "Sporelauncher"
+    },
+    {
+      "clan": "Underlegion",
+      "name": "Truffles",
+      "card": "Truffles"
+    },
+    {
+      "clan": "Underlegion",
+      "name": "Prickly Puffball",
+      "card": "PricklyPuffball"
+    },
+    {
+      "clan": "Lazarus League",
+      "name": "Hydra Armed Horror",
+      "card": "HydraArmedHorror"
+    },
+    {
+      "clan": "Lazarus League",
+      "name": "Pincushion",
+      "card": "Pincushion"
+    },
+    {
+      "clan": "Lazarus League",
+      "name": "Reforming Ooze",
+      "card": "ReformingOoze"
+    },
+    {
+      "clan": "The Free Company",
+      "name": "Bog Troll",
+      "card": "SpawnBogTroll",
+      "mod": "mt2_freecompany.Plugin"
+    },
+    {
+      "clan": "The Free Company",
+      "name": "Stone Troll",
+      "card": "SpawnStoneTroll",
+      "mod": "mt2_freecompany.Plugin"
+    },
+    {
+      "clan": "The Free Company",
+      "name": "War Troll",
+      "card": "SpawnWarTroll",
+      "mod": "mt2_freecompany.Plugin"
+    },
+    {
+      "clan": "The Free Company",
+      "name": "Cautious Troll",
+      "card": "SpawnCautiousTroll",
+      "mod": "mt2_freecompany.Plugin"
+    },
+    {
+      "clan": "The Free Company",
+      "name": "Two-Headed Troll",
+      "card": "SpawnTwoHeadedTroll",
+      "mod": "mt2_freecompany.Plugin"
+    },
+    {
+      "clan": "Pathogens",
+      "name": "Antigen Mimic",
+      "card": "AntigenMimic",
+      "mod": "mt2_pathogens.Plugin"
+    },
+    {
+      "clan": "Pathogens",
+      "name": "Spliced Monstrosity",
+      "card": "SpawnSplicedMonstrosity",
+      "mod": "mt2_pathogens.Plugin"
     }
   ]
 }

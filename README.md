@@ -145,3 +145,40 @@ el mod de ejemplo oficial del Monster Train 2 Modding Group — MIT, Copyright (
 tres texturas de marco de carta (`BorderUnit`, `BorderSpell`, `BorderEquipmentRoom`) siguen
 en uso aquí y son obra suya. Todo lo demás —las cartas, unidades, campeones y reliquias, y
 los efectos a medida del DLL— es propio. Licencia completa en `LICENSE`, detalle en `NOTICE.md`.
+
+
+## Beastmaster creatures / Criaturas de Beastmaster
+
+**Vesper Beastmaster:** eligible creatures entering your hand gain Frozen while Vesper is deployed. Before drawing each turn, eligible creatures already in hand cost 1 less Ember for this battle and permanently gain the following stats. Each active Vesper contributes according to her own path level; multiple Vesper stack. Muted or silenced Vesper cannot train creatures.
+
+| Path / Senda | Permanent attack / Ataque permanente | Permanent health / Vida permanente |
+|---|---:|---:|
+| Beastmaster I | +0 | +1 |
+| Beastmaster II | +1 | +1 |
+| Beastmaster III | +1 | +2 |
+
+**Vesper Beastmaster:** mientras Vesper está desplegada, las criaturas admitidas que llegan a la mano reciben Congelación. Antes del robo de cada turno, las que ya están en mano cuestan 1 Ember menos durante ese combate y ganan permanentemente las estadísticas de la tabla. Cada Vesper activa aporta según su propio nivel; varias Vesper acumulan sus efectos. Las Vesper silenciadas no entrenan criaturas.
+
+The stat bonuses survive into later battles. The Ember discount resets between battles, never reduces the cost below zero, and applies only to cards in hand at the start of the turn. The draw pile and cemetery receive no training. Frozen is not required for training. The initial Troll choice is unchanged; Vesper retrieves that same Troll on Summon if it is in hand or the draw pile. The Troll is not summoned for free.
+
+Las estadísticas se conservan durante toda la partida. El descuento se reinicia entre combates, nunca baja el coste de cero y solo afecta a las cartas en mano al comenzar el turno. La baraja y el cementerio no reciben entrenamiento. No hace falta conservar Congelación para entrenarse. Se mantiene la elección inicial del trol; al invocar a Vesper, recupera ese mismo trol si está en mano o en la baraja. Ya no lo invoca gratis.
+
+### Complete list / Lista completa
+
+Only these **25 individual cards** qualify; belonging to their subtype does not qualify other cards. Pathogens is an optional mod: its two creatures qualify when that clan is installed. This list will expand with selected creatures from other mod clans.
+
+Solo estas **25 cartas concretas** cuentan; no se incluye automáticamente el resto de sus subtipos. Pathogens es opcional: sus dos criaturas cuentan si el clan está instalado. La lista se ampliará con criaturas seleccionadas de otros clanes mods.
+
+| Clan | Creatures / Criaturas |
+|---|---|
+| Umbra | Shadowsiege, Overgorger, Shadoweater |
+| Awoken | Steelsinger |
+| Stygian Guard | Eel Gorgon |
+| Wurmkin | Bogdeep Cocoon, Kinhost Carapace, Glugsider |
+| Pyreborne | Bloated Whelp, Snotty Whelp, Stuck Up Whelp, Wealthy Whelp |
+| Underlegion | Spore Launcher, Truffles, Prickly Puffball |
+| Lazarus League | Hydra Armed Horror, Pincushion, Reforming Ooze |
+| The Free Company | Bog Troll, Stone Troll, War Troll, Cautious Troll, Two-Headed Troll |
+| Pathogens | Antigen Mimic, Spliced Monstrosity |
+
+<!-- 2026-10-03-2253||codex-freecompany-fx||README.md||añade reglas bilingües y listado completo de 25 criaturas para wiki y Thunderstore -->

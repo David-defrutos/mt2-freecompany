@@ -522,9 +522,6 @@
       ],
       "triggers": [
         {
-          "id": "@TrollBeastmasterSpawn"
-        },
-        {
           "id": "@BogTrollStrike"
         }
       ]
@@ -558,11 +555,7 @@
           "count": 10
         }
       ],
-      "triggers": [
-        {
-          "id": "@TrollBeastmasterSpawn"
-        }
-      ],
+      "triggers": [],
       "ability": "@StoneTrollAbility"
     },
     {
@@ -594,11 +587,7 @@
           "count": 10
         }
       ],
-      "triggers": [
-        {
-          "id": "@TrollBeastmasterSpawn"
-        }
-      ]
+      "triggers": []
     },
     {
       "id": "CautiousTroll",
@@ -629,11 +618,7 @@
           "count": 20
         }
       ],
-      "triggers": [
-        {
-          "id": "@TrollBeastmasterSpawn"
-        }
-      ]
+      "triggers": []
     },
     {
       "id": "TwoHeadedTroll",
@@ -664,36 +649,11 @@
           "count": 10
         }
       ],
-      "triggers": [
-        {
-          "id": "@TrollBeastmasterSpawn"
-        }
-      ],
+      "triggers": [],
       "ability": "@TwoHeadedWrath"
     }
   ],
   "character_triggers": [
-    {
-      "id": "TrollBeastmasterSpawn",
-      "trigger": "on_spawn",
-      "descriptions": {
-        "english": "If <b>Beastmaster</b> Vesper is in play, gain +<b>10</b> [attack] and [health] for each Ring after the first. <b>Beastmaster II</b> or higher: also gain [trample].",
-        "french": "Si Vesper <b>Maître des bêtes</b> est en jeu, gagne +<b>10</b> [attack] et [health] par cercle après le premier. <b>Maître des bêtes II</b> ou plus : gagne aussi [trample].",
-        "german": "Wenn Vesper <b>Bestienmeister</b> im Spiel ist, erhält diese Einheit ab dem zweiten Ring pro Ring +<b>10</b> [attack] und [health]. <b>Bestienmeister II</b> oder höher: erhält auch [trample].",
-        "russian": "Если Vesper <b>Повелитель зверей</b> в игре, получает +<b>10</b> [attack] и [health] за каждый круг после первого. <b>Повелитель зверей II</b> или выше: также получает [trample].",
-        "portuguese": "Se Vesper <b>Mestre das Feras</b> estiver em jogo, ganha +<b>10</b> [attack] e [health] por anel após o primeiro. <b>Mestre das Feras II</b> ou superior: também ganha [trample].",
-        "chinese": "若<b>驯兽师</b> Vesper在场，则第一环之后每环获得+<b>10</b> [attack]和[health]。<b>驯兽师 II</b>或更高等级：同时获得[trample]。",
-        "spanish": "Si Vesper <b>Maestro de bestias</b> está en juego, gana +<b>10</b> [attack] y [health] por cada anillo después del primero. <b>Maestro de bestias II</b> o superior: también gana [trample].",
-        "chinese_traditional": "若<b>馴獸師</b> Vesper在場，則第一環之後每環獲得+<b>10</b> [attack]和[health]。<b>馴獸師 II</b>或更高等級：同時獲得[trample]。",
-        "korean": "<b>야수 조련사</b> Vesper가 전장에 있으면 첫 고리 이후 고리마다 +<b>10</b> [attack] 및 [health] 획득. <b>야수 조련사 II</b> 이상이면 [trample]도 획득.",
-        "japanese": "<b>獣使い</b> Vesperが場にいる場合、第1リング以降のリング1つにつき+<b>10</b> [attack]と[health]を得る。<b>獣使い II</b>以上なら[trample]も得る。"
-      },
-      "effects": [
-        "@TrollRingBonus",
-        "@TrollBeast2",
-        "@TrollBeast3"
-      ]
-    },
     {
       "id": "BogTrollStrike",
       "trigger": "on_attacking",
@@ -755,34 +715,6 @@
       "param_character": "@TwoHeadedTroll"
     },
     {
-      "id": "TrollRingBonus",
-      "name": "@CardEffectIfAllyHasUpgrade",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_str": "upg_Beastmaster1,upg_Beastmaster2,upg_Beastmaster3",
-      "param_upgrade": "@TrollPerRing",
-      "param_int_2": 1,
-      "param_int_3": 0
-    },
-    {
-      "id": "TrollBeast2",
-      "name": "@CardEffectIfAllyHasUpgrade",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_str": "upg_Beastmaster2",
-      "param_upgrade": "@TrollBuff2",
-      "param_int_3": 0
-    },
-    {
-      "id": "TrollBeast3",
-      "name": "@CardEffectIfAllyHasUpgrade",
-      "target_mode": "self",
-      "target_team": "monsters",
-      "param_str": "upg_Beastmaster3",
-      "param_upgrade": "@TrollBuff3",
-      "param_int_3": 0
-    },
-    {
       "id": "KeepBogTroll",
       "name": "@CardEffectGrantOnce",
       "target_mode": "pyre",
@@ -790,7 +722,7 @@
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
       "param_card_pool": "@FreeCompanyOnlyBogTrollPool",
-      "param_int": 7
+      "param_int": 3
     },
     {
       "id": "KeepStoneTroll",
@@ -800,7 +732,7 @@
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
       "param_card_pool": "@FreeCompanyOnlyStoneTrollPool",
-      "param_int": 7
+      "param_int": 3
     },
     {
       "id": "KeepWarTroll",
@@ -810,7 +742,7 @@
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
       "param_card_pool": "@FreeCompanyOnlyWarTrollPool",
-      "param_int": 7
+      "param_int": 3
     },
     {
       "id": "KeepCautiousTroll",
@@ -820,7 +752,7 @@
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
       "param_card_pool": "@FreeCompanyOnlyCautiousTrollPool",
-      "param_int": 7
+      "param_int": 3
     },
     {
       "id": "KeepTwoHeadedTroll",
@@ -830,7 +762,7 @@
       "param_str": "CardEffectAddRunCard",
       "param_subtype": "@Sub_Troll",
       "param_card_pool": "@FreeCompanyOnlyTwoHeadedTrollPool",
-      "param_int": 7
+      "param_int": 3
     },
     {
       "id": "BogTrollRoot",
@@ -858,31 +790,7 @@
       "target_team": "both"
     }
   ],
-  "upgrades": [
-    {
-      "id": "TrollPerRing",
-      "bonus_damage": 10,
-      "bonus_hp": 10
-    },
-    {
-      "id": "TrollBuff2",
-      "status_effect_upgrades": [
-        {
-          "status": "trample",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "id": "TrollBuff3",
-      "status_effect_upgrades": [
-        {
-          "status": "trample",
-          "count": 1
-        }
-      ]
-    }
-  ],
+  "upgrades": [],
   "traits": [
     {
       "id": "TameEphemeral",

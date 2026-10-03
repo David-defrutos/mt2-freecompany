@@ -1,0 +1,163 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using HarmonyLib;
+using Newtonsoft.Json.Linq;
+
+namespace mt2_freecompany.Plugin;
+
+internal static class BeastmasterTraining
+{
+    internal const string TrainingId = "mt2_freecompany.BeastmasterTraining";
+    internal const string DiscountId = "mt2_freecompany.BeastmasterDiscount";
+    private static HashSet<string>? creatureNames;
+
+    // Exact card names, including the owning mod. No hard dependency on other clans.
+    internal static bool IsCreature(CardState card)
+    {
+        if (card == null || card.GetCardType() != CardType.Monster) return false;
+        if (creatureNames == null)
+        {
+            string path = Path.Combine(Path.GetDirectoryName(typeof(Plugin).Assembly.Location)!,
+                "json", "champions", "champion_vesper_beastmaster.json");
+            var entries = (JArray?)JObject.Parse(File.ReadAllText(path))["beastmaster_creatures"];
+            creatureNames = new HashSet<string>(StringComparer.Ordinal);
+            foreach (JObject entry in entries ?? new JArray())
+            {
+                string id = (string)entry["card"]!;
+                string? mod = (string?)entry["mod"];
+                if (string.IsNullOrEmpty(mod))
+                {
+                    creatureNames.Add(id);
+                    creatureNames.Add("CardData_" + id);
+                }
+                else creatureNames.Add(mod + "-Card-" + id);
+            }
+        }
+        return creatureNames.Contains(card.GetAssetName()) || creatureNames.Contains(card.GetCardDataID());
+    }
+
+    internal static int GetLevel(CharacterState character, ICoreGameManagers managers)
+    {
+        if (character == null || character.IsDead || character.HasStatusEffect("silenced") || character.HasStatusEffect("muted"))
+            return 0;
+        var card = character.GetSpawnerCard();
+        for (int level = 3; level >= 1; level--)
+        {
+            string name = MyPluginInfo.PLUGIN_GUID + "-Upgrade-upg_Beastmaster" + level;
+            var upgrade = managers.GetAllGameData().GetAllCardUpgradeData().FirstOrDefault(u => u != null && u.name == name);
+            if (upgrade != null && (character.HasUpgrade(upgrade) || (card != null && card.HasUpgrade(upgrade))))
+                return level;
+        }
+        return 0;
+    }
+
+    private static List<int> GetLevels(ICoreGameManagers managers)
+    {
+        var characters = new List<CharacterState>();
+        managers.GetMonsterManager().AddCharactersToList(characters);
+        return characters.Select(c => GetLevel(c, managers)).Where(l => l > 0).ToList();
+    }
+
+    internal static void Freeze(CardState card, ICoreGameManagers managers)
+    {
+        if (managers.GetSaveManager().PreviewMode || !IsCreature(card) || GetLevels(managers).Count == 0
+            || card.HasTrait(typeof(CardTraitFreeze))) return;
+        var trait = new CardTraitData();
+        trait.Setup("CardTraitFreeze");
+        managers.GetCardManager().AddTemporaryTraitToCard(card, trait);
+    }
+
+    internal static void TrainHand(ICoreGameManagers managers)
+    {
+        var save = managers.GetSaveManager();
+        if (save.PreviewMode) return;
+        var levels = GetLevels(managers);
+        if (levels.Count == 0) return;
+        int attack = levels.Sum(l => l >= 2 ? 1 : 0);
+        int health = levels.Sum(l => l == 3 ? 2 : 1);
+        foreach (var card in managers.GetCardManager().GetHand().ToArray())
+        {
+            if (!IsCreature(card)) continue;
+            // Keep one cumulative upgrade instead of adding one tooltip per turn.
+            var previous = card.GetCardStateModifiers().GetCardUpgrades().FirstOrDefault(u => u.GetCardUpgradeDataId() == TrainingId);
+            var training = new CardUpgradeState();
+            training.Setup();
+            training.SetCardUpgradeDataId(TrainingId);
+            training.SetIsUnique(true);
+            training.SetAttackDamage(attack + (previous?.GetAttackDamage() ?? 0));
+            training.SetAdditionalHP(health + (previous?.GetAdditionalHP() ?? 0));
+            if (previous != null) card.RemoveUpgrade(previous, card.GetCardStateModifiers());
+            // Combat uses the actual deck CardState. This survives saving and the next battle.
+            card.ApplyPermanentUpgrade(training, save, ignoreUpgradeAnimation: true);
+            var oldDiscount = card.GetTemporaryCardStateModifiers().GetCardUpgrades().FirstOrDefault(u => u.GetCardUpgradeDataId() == DiscountId);
+            var discount = new CardUpgradeState();
+            discount.Setup();
+            discount.SetCardUpgradeDataId(DiscountId);
+            discount.SetIsUnique(true);
+            discount.SetCostReduction(levels.Count + (oldDiscount?.GetCostReduction() ?? 0));
+            if (oldDiscount != null) card.RemoveUpgrade(oldDiscount, card.GetTemporaryCardStateModifiers());
+            // Temporary modifiers reset between battles, but survive ordinary pile changes.
+            card.ApplyTemporaryUpgrade(discount, save);
+            card.UpdateCardBodyText();
+            managers.GetCardManager().RefreshCardInHand(card, cleanupTweens: false);
+        }
+    }
+
+    internal static void RecallTroll(ICoreGameManagers managers)
+    {
+        if (managers.GetSaveManager().PreviewMode || GetLevels(managers).Count == 0) return;
+        var cards = managers.GetCardManager();
+        string prefix = MyPluginInfo.PLUGIN_GUID + "-Card-Spawn";
+        // Never pull a deployed or dead troll out of its standby/cemetery pile.
+        foreach (var card in cards.GetHand().Concat(cards.GetDrawPile()).ToArray())
+        {
+            if (!card.GetAssetName().StartsWith(prefix, StringComparison.Ordinal) || !IsCreature(card)) continue;
+            if (!cards.GetHand().Contains(card) && !cards.DrawSpecificCard(card, drawSource: HandUI.DrawSource.Deck)) return;
+            Freeze(card, managers);
+            return;
+        }
+    }
+
+    private static IEnumerator BeforeTurn(IEnumerator original)
+    {
+        var managers = AllGameManagers.Instance?.GetCoreManagers();
+        if (managers != null) TrainHand(managers);
+        while (original.MoveNext()) yield return original.Current;
+    }
+
+    [HarmonyPatch(typeof(CombatManager), "RunMonsterTurn")]
+    private static class StartTurnPatch
+    {
+        [HarmonyPostfix]
+        private static void Postfix(ref IEnumerator __result) => __result = BeforeTurn(__result);
+    }
+
+    [HarmonyPatch(typeof(RelicManager), nameof(RelicManager.ApplyCardAddedToHandRelicEffects))]
+    private static class HandEntryPatch
+    {
+        [HarmonyPostfix]
+        private static void Postfix(CardState cardState)
+        {
+            var managers = AllGameManagers.Instance?.GetCoreManagers();
+            if (managers != null) Freeze(cardState, managers);
+        }
+    }
+}
+
+public sealed class CardEffectBeastmasterRecall : CardEffectBase
+{
+    public override bool CanApplyInPreviewMode => false;
+    public override PropDescriptions CreateEditorInspectorDescriptions() => new();
+    public override bool TestEffect(CardEffectState state, CardEffectParams parameters, ICoreGameManagers managers) => true;
+    public override IEnumerator ApplyEffect(CardEffectState state, CardEffectParams parameters, ICoreGameManagers managers, ISystemManagers systems)
+    {
+        BeastmasterTraining.RecallTroll(managers);
+        yield break;
+    }
+}
+// 2026-10-03-2242||codex-freecompany-fx||src/code/BeastmasterTraining.cs||Frozen en entrada de mano, entrenamiento permanente antes del robo por cada Vesper y recuperación segura del troll
+// 2026-10-03-2244||codex-freecompany-fx||src/code/BeastmasterTraining.cs||recuperación con origen Deck válido en la API
+// 2026-10-03-2248||codex-freecompany-fx||src/code/BeastmasterTraining.cs||identifica el troll por asset name estable, no por GUID interno
