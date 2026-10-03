@@ -182,3 +182,12 @@ Solo estas **25 cartas concretas** cuentan; no se incluye automáticamente el re
 | Pathogens | Antigen Mimic, Spliced Monstrosity |
 
 <!-- 2026-10-03-2253||codex-freecompany-fx||README.md||añade reglas bilingües y listado completo de 25 criaturas para wiki y Thunderstore -->
+
+### Beastmaster markers / Marcas de Beastmaster
+
+- **Tamable**: gray paw on eligible creature cards in hand. Vesper can freeze and train them.
+- **Tamed**: gold paw on deployed creatures that have received permanent training at least once. It grants no additional bonus and cannot be propagated.
+- **Domesticable**: huella gris en las criaturas elegibles en la mano. Vesper puede congelarlas y entrenarlas.
+- **Domesticada**: huella dorada en las criaturas desplegadas que ya han recibido entrenamiento permanente. No concede otro bono ni se puede propagar.
+
+<!-- 2026-10-03-2352||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||documenta huellas y condición real de entrenamiento -->

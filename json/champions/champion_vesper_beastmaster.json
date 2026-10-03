@@ -161,6 +161,35 @@
         "@TrollOfferEphemeral"
       ],
       "hide_icon_on_card": true
+    },
+    {
+      "id": "TamableMarker",
+      "titles": {
+        "english": "Tamable",
+        "french": "Apprivoisable",
+        "german": "Zähmbar",
+        "russian": "Приручаемый",
+        "portuguese": "Domesticável",
+        "chinese": "可驯服",
+        "spanish": "Domesticable",
+        "chinese_traditional": "可馴服",
+        "korean": "길들이기 가능",
+        "japanese": "手なずけ可能"
+      },
+      "descriptions": {
+        "english": "Vesper's Beastmaster path can freeze and train this creature in your hand.",
+        "french": "La voie Maître des bêtes de Vesper peut geler et entraîner cette créature dans votre main.",
+        "german": "Vespers Bestienmeister-Pfad kann diese Kreatur auf deiner Hand einfrieren und trainieren.",
+        "russian": "Путь Веспер «Повелитель зверей» может замораживать и тренировать это существо в вашей руке.",
+        "portuguese": "O caminho Mestre das Feras de Vesper pode congelar e treinar esta criatura na sua mão.",
+        "chinese": "维斯珀的驯兽师路线可以冻结并训练手牌中的此生物。",
+        "spanish": "La senda Beastmaster de Vesper puede congelar y entrenar esta criatura en tu mano.",
+        "chinese_traditional": "維斯珀的馴獸師路線可以凍結並訓練手牌中的此生物。",
+        "korean": "베스퍼의 야수 조련사 경로는 손에 있는 이 생물을 동결하고 훈련할 수 있습니다.",
+        "japanese": "ヴェスパーのビーストマスターの道は、手札のこの生物を凍結し訓練できる。 "
+      },
+      "icon": "@TamablePaw",
+      "hide_icon_on_card": false
     }
   ],
   "traits": [
@@ -301,6 +330,107 @@
       "name": "Spliced Monstrosity",
       "card": "SpawnSplicedMonstrosity",
       "mod": "mt2_pathogens.Plugin"
+    }
+  ],
+  "status_effects": [
+    {
+      "id": "tamed",
+      "class_name": "@StatusEffectFreeCompanyTamedState",
+      "names": {
+        "english": "Tamed",
+        "french": "Apprivoisé",
+        "german": "Gezähmt",
+        "russian": "Приручённый",
+        "portuguese": "Domesticado",
+        "chinese": "已驯服",
+        "spanish": "Domesticada",
+        "chinese_traditional": "已馴服",
+        "korean": "길들여짐",
+        "japanese": "手なずけ済み"
+      },
+      "stackable_names": {
+        "english": "Tamed",
+        "french": "Apprivoisé",
+        "german": "Gezähmt",
+        "russian": "Приручённый",
+        "portuguese": "Domesticado",
+        "chinese": "已驯服",
+        "spanish": "Domesticada",
+        "chinese_traditional": "已馴服",
+        "korean": "길들여짐",
+        "japanese": "手なずけ済み"
+      },
+      "card_tooltips": {
+        "english": "This creature has received permanent training from Vesper. Visual marker only.",
+        "french": "Cette créature a reçu un entraînement permanent de Vesper. Marqueur visuel uniquement.",
+        "german": "Diese Kreatur wurde von Vesper dauerhaft trainiert. Rein visuelle Markierung.",
+        "russian": "Это существо получило постоянную тренировку от Веспер. Только визуальная отметка.",
+        "portuguese": "Esta criatura recebeu treinamento permanente de Vesper. Apenas um marcador visual.",
+        "chinese": "此生物已接受维斯珀的永久训练。仅为视觉标记。",
+        "spanish": "Esta criatura ha recibido entrenamiento permanente de Vesper. Marca únicamente visual.",
+        "chinese_traditional": "此生物已接受維斯珀的永久訓練。僅為視覺標記。",
+        "korean": "이 생물은 베스퍼에게 영구 훈련을 받았습니다. 시각적 표시일 뿐입니다.",
+        "japanese": "この生物はヴェスパーから永続的な訓練を受けた。見た目のみの印。 "
+      },
+      "character_tooltips": {
+        "english": "This creature has received permanent training from Vesper. Visual marker only.",
+        "french": "Cette créature a reçu un entraînement permanent de Vesper. Marqueur visuel uniquement.",
+        "german": "Diese Kreatur wurde von Vesper dauerhaft trainiert. Rein visuelle Markierung.",
+        "russian": "Это существо получило постоянную тренировку от Веспер. Только визуальная отметка.",
+        "portuguese": "Esta criatura recebeu treinamento permanente de Vesper. Apenas um marcador visual.",
+        "chinese": "此生物已接受维斯珀的永久训练。仅为视觉标记。",
+        "spanish": "Esta criatura ha recibido entrenamiento permanente de Vesper. Marca únicamente visual.",
+        "chinese_traditional": "此生物已接受維斯珀的永久訓練。僅為視覺標記。",
+        "korean": "이 생물은 베스퍼에게 영구 훈련을 받았습니다. 시각적 표시일 뿐입니다.",
+        "japanese": "この生物はヴェスパーから永続的な訓練を受けた。見た目のみの印。 "
+      },
+      "replacement_texts": {
+        "english": "Tamed",
+        "french": "Apprivoisé",
+        "german": "Gezähmt",
+        "russian": "Приручённый",
+        "portuguese": "Domesticado",
+        "chinese": "已驯服",
+        "spanish": "Domesticada",
+        "chinese_traditional": "已馴服",
+        "korean": "길들여짐",
+        "japanese": "手なずけ済み"
+      },
+      "notifications": {
+        "english": "Tamed",
+        "french": "Apprivoisé",
+        "german": "Gezähmt",
+        "russian": "Приручённый",
+        "portuguese": "Domesticado",
+        "chinese": "已驯服",
+        "spanish": "Domesticada",
+        "chinese_traditional": "已馴服",
+        "korean": "길들여짐",
+        "japanese": "手なずけ済み"
+      },
+      "display_category": "persistent",
+      "trigger_stage": "none",
+      "is_stackable": false,
+      "is_propagatable": false,
+      "show_stack_count": false,
+      "remove_stack_at_end_of_turn": false,
+      "icon": "@TamedPaw"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "TamablePaw",
+      "path": "textures/TamablePaw.png"
+    },
+    {
+      "id": "TamedPaw",
+      "path": "textures/TamedPaw.png"
+    }
+  ],
+  "atlas_icons": [
+    {
+      "id": "TamedPaw",
+      "path": "textures/TamedPaw.png"
     }
   ]
 }
