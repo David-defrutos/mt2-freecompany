@@ -60,6 +60,8 @@ namespace mt2_freecompany.Plugin
     /// </summary>
     public sealed class CardEffectGrantOnce : CardEffectBase
     {
+        public override bool CanApplyInPreviewMode => false;
+
         public override PropDescriptions CreateEditorInspectorDescriptions()
         {
             return new PropDescriptions();
@@ -160,3 +162,4 @@ namespace mt2_freecompany.Plugin
         }
     }
 }
+// 2026-10-03-2257||codex-freecompany-fx||src/code/CardEffectGrantOnce.cs||impide que Domar añada cartas permanentes durante previews, igual que el efecto interno CardEffectAddRunCard
