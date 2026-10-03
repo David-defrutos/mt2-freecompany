@@ -72,7 +72,7 @@ namespace mt2_freecompany.Plugin
             if (save == null) return string.Empty;
 
             int dano = CalcularDano(cardEffectState, save.GetDisplayDistance());
-            return string.Format("Default/mt2_freecompany.Plugin_SeverancePayCurrentPyreDamage".Localize(), dano);
+            return string.Format("mt2_freecompany.Plugin_SeverancePayCurrentPyreDamage".Localize(), dano);
         }
 
         // Nunca falla: si fallase, cancelaria los efectos siguientes de la carta, y el
@@ -137,3 +137,4 @@ namespace mt2_freecompany.Plugin
 // 2026-09-22-2236||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRingPyreDamage.cs||quitado el recorte no letal: el dano de Severance Pay puede matar la pira
 
 // 2026-09-30-0100||codex-freecompany-fx||src/code/CardEffectRingPyreDamage.cs||localiza la etiqueta del daño actual de la Pira mediante el término JSON y string.Format
+// 2026-10-03-1841||codex-freecompany-fx||src/code/CardEffectRingPyreDamage.cs||quita Default/ de la consulta del daño: I2 elimina esa categoría al registrar el término
