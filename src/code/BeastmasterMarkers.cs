@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
+using ShinyShoe;
 
 namespace mt2_freecompany.Plugin;
 
@@ -91,3 +92,46 @@ public sealed class StatusEffectFreeCompanyTamedState : StatusEffectState
 // 2026-10-03-2350||codex-freecompany-fx||src\code\BeastmasterMarkers.cs||añade indicadores visuales sin modificar mejoras reales y marca criaturas entrenadas al desplegar
 
 // 2026-10-04-0016||codex-freecompany-fx||src\code\BeastmasterMarkers.cs||evita accesos a gestores de combate desde tienda/mazo y protege inicialización de marcadores
+
+// Summon is intentionally hidden in native character tooltips. The training
+// mechanic runs in code, so show the actual champion path description explicitly.
+[HarmonyPatch(typeof(CharacterTooltipHelper), nameof(CharacterTooltipHelper.GetAdditionalTooltipContents))]
+internal static class BeastmasterChampionTooltipPatch
+{
+    private const string TooltipId = "mt2_freecompany.BeastmasterRules";
+
+    private static void Postfix(CharacterState characterState, SaveManager saveManager,
+        ref IEnumerable<(TooltipContent content, bool allowDuplicates)> __result)
+        => __result = AppendRules(__result, characterState, saveManager);
+
+    internal static IEnumerable<(TooltipContent content, bool allowDuplicates)> AppendRules(
+        IEnumerable<(TooltipContent content, bool allowDuplicates)> original,
+        CharacterState character, SaveManager save)
+    {
+        bool alreadyShown = false;
+        foreach (var item in original)
+        {
+            if (item.content.tooltipId == TooltipId) alreadyShown = true;
+            yield return item;
+        }
+        if (alreadyShown || character == null || save == null) yield break;
+        var data = save.GetAllGameData();
+        if (data == null) yield break;
+        var card = character.GetSpawnerCard();
+        for (int level = 3; level >= 1; level--)
+        {
+            string name = MyPluginInfo.PLUGIN_GUID + "-Upgrade-upg_Beastmaster" + level;
+            var upgrade = data.GetAllCardUpgradeData().FirstOrDefault(u => u != null && u.name == name);
+            if (upgrade == null || !(character.HasUpgrade(upgrade) || (card != null && card.HasUpgrade(upgrade))))
+                continue;
+            var state = new CardUpgradeState();
+            state.Setup(upgrade);
+            string body = state.GetUpgradeDescriptionKey().Localize(new CardEffectLocalizationContext(upgrade, null, card));
+            yield return (new TooltipContent(state.GetUpgradeTitle(), body,
+                TooltipDesigner.TooltipDesignType.Keyword, TooltipId), false);
+            yield break;
+        }
+    }
+}
+
+// 2026-10-04-0044||codex-freecompany-fx||src\code\BeastmasterMarkers.cs||muestra reglas localizadas de Beastmaster según senda real en tooltip de Vesper, sin añadir triggers

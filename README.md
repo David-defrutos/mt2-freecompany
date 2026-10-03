@@ -165,9 +165,9 @@ Las estadísticas se conservan durante toda la partida. El descuento se reinicia
 
 ### Complete list / Lista completa
 
-Only these **25 individual cards** qualify; belonging to their subtype does not qualify other cards. Pathogens is an optional mod: its two creatures qualify when that clan is installed. This list will expand with selected creatures from other mod clans.
+Only these **26 individual cards** qualify; belonging to their subtype does not qualify other cards. Pathogens is an optional mod: its three creatures qualify when that clan is installed. This list will expand with selected creatures from other mod clans.
 
-Solo estas **25 cartas concretas** cuentan; no se incluye automáticamente el resto de sus subtipos. Pathogens es opcional: sus dos criaturas cuentan si el clan está instalado. La lista se ampliará con criaturas seleccionadas de otros clanes mods.
+Solo estas **26 cartas concretas** cuentan; no se incluye automáticamente el resto de sus subtipos. Pathogens es opcional: sus tres criaturas cuentan si el clan está instalado. La lista se ampliará con criaturas seleccionadas de otros clanes mods.
 
 | Clan | Creatures / Criaturas |
 |---|---|
@@ -179,7 +179,7 @@ Solo estas **25 cartas concretas** cuentan; no se incluye automáticamente el re
 | Underlegion | Spore Launcher, Truffles, Prickly Puffball |
 | Lazarus League | Hydra Armed Horror, Pincushion, Reforming Ooze |
 | The Free Company | Bog Troll, Stone Troll, War Troll, Cautious Troll, Two-Headed Troll |
-| Pathogens | Antigen Mimic, Spliced Monstrosity |
+| Pathogens | Antigen Mimic, Borrelia Daemonium, Spliced Monstrosity |
 
 <!-- 2026-10-03-2253||codex-freecompany-fx||README.md||añade reglas bilingües y listado completo de 25 criaturas para wiki y Thunderstore -->
 
@@ -191,3 +191,5 @@ Solo estas **25 cartas concretas** cuentan; no se incluye automáticamente el re
 - **Domesticada**: huella dorada en las criaturas desplegadas que ya han recibido entrenamiento permanente. No concede otro bono ni se puede propagar.
 
 <!-- 2026-10-03-2352||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||documenta huellas y condición real de entrenamiento -->
+
+<!-- 2026-10-04-0037||codex-freecompany-fx||README.md||actualiza catálogo Beastmaster a 26 y Pathogens a 3 con Borrelia Daemonium -->

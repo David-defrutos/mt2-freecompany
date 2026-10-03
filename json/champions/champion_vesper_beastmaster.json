@@ -364,6 +364,12 @@
       "name": "Spliced Monstrosity",
       "card": "SpawnSplicedMonstrosity",
       "mod": "mt2_pathogens.Plugin"
+    },
+    {
+      "clan": "Pathogens",
+      "name": "Borrelia Daemonium",
+      "card": "SpawnBorreliaDaemonium",
+      "mod": "mt2_pathogens.Plugin"
     }
   ],
   "status_effects": [
