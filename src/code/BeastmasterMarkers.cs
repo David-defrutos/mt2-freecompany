@@ -11,11 +11,15 @@ internal static class BeastmasterMarkers
 
     internal static CardUpgradeState? HandMarker(CardState? card)
     {
-        var managers = AllGameManagers.Instance?.GetCoreManagers();
-        if (card == null || managers == null || !BeastmasterTraining.IsCreature(card)
-            || !managers.GetCardManager().IsCardInHand(card)) return null;
-        var data = managers.GetAllGameData().GetAllCardUpgradeData()
-            .FirstOrDefault(u => u.name == MyPluginInfo.PLUGIN_GUID + "-Upgrade-TamableMarker");
+        // Deck/shop screens render these same UI components without combat managers.
+        var all = AllGameManagers.Instance;
+        if (card == null || all == null || !all.AreMainSceneOnlyManagersInitialized()) return null;
+        var cardManager = all.GetCardManager();
+        if (cardManager == null || !cardManager.IsCardInHand(card)
+            || !BeastmasterTraining.IsCreature(card)) return null;
+        var managers = all.GetCoreManagers();
+        var data = managers.GetAllGameData()?.GetAllCardUpgradeData()
+            ?.FirstOrDefault(u => u != null && u.name == MyPluginInfo.PLUGIN_GUID + "-Upgrade-TamableMarker");
         if (data == null) return null;
         var marker = new CardUpgradeState();
         marker.Setup(data);
@@ -24,7 +28,9 @@ internal static class BeastmasterMarkers
 
     internal static void MarkTrained(CharacterState unit)
     {
-        var managers = AllGameManagers.Instance?.GetCoreManagers();
+        var all = AllGameManagers.Instance;
+        if (all == null || !all.AreMainSceneOnlyManagersInitialized()) return;
+        var managers = all.GetCoreManagers();
         var card = unit.GetSpawnerCard();
         if (managers == null || managers.GetSaveManager().PreviewMode || card == null
             || unit.HasStatusEffect(StatusId)) return;
@@ -83,3 +89,5 @@ public sealed class StatusEffectFreeCompanyTamedState : StatusEffectState
 }
 
 // 2026-10-03-2350||codex-freecompany-fx||src\code\BeastmasterMarkers.cs||añade indicadores visuales sin modificar mejoras reales y marca criaturas entrenadas al desplegar
+
+// 2026-10-04-0016||codex-freecompany-fx||src\code\BeastmasterMarkers.cs||evita accesos a gestores de combate desde tienda/mazo y protege inicialización de marcadores
