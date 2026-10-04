@@ -59,7 +59,7 @@
       "character_art": "@RodericCharacterArt",
       "chatter": "@CTR_Roderic",
       "size": 2,
-      "attack_damage": 8,
+      "attack_damage": 10,
       "health": 36,
       "death_type": "large",
       "subtypes": [

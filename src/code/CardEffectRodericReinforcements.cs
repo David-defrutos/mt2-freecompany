@@ -10,6 +10,21 @@ namespace mt2_freecompany.Plugin;
 // replay rebuilds this set when loading a battle; SetupCards starts a fresh battle.
 internal static class RodericReinforcements
 {
+    internal static readonly Dictionary<DeckScreen, List<CardState>> SelectionCards = new Dictionary<DeckScreen, List<CardState>>();
+
+    // Override only this ability's screen during Setup. This includes eaten dead
+    // units and temporary cards without creating copies or changing any pile.
+    [HarmonyPatch(typeof(DeckScreen), "CollectCardsForSelection")]
+    private static class SelectionCardsPatch
+    {
+        private static bool Prefix(DeckScreen __instance, ref List<CardState> __result)
+        {
+            if (!SelectionCards.TryGetValue(__instance, out var cards)) return true;
+            __result = new List<CardState>(cards);
+            return false;
+        }
+    }
+
     internal static readonly HashSet<CardState> DeadCards = new HashSet<CardState>();
 
     internal static List<CardState> Candidates(CardManager cards, int maximumCost, out bool revive)
@@ -51,9 +66,11 @@ internal static class RodericReinforcements
     }
 }
 
-public sealed class CardEffectRodericReinforcements : CardEffectBase
+public sealed class CardEffectRodericReinforcements : CardEffectBase, ICardEffectUiDialog
 {
     public override bool CanApplyInPreviewMode => false;
+    public override bool CanPlayAfterBossDead => false;
+    public ScreenName RequiredScreenName => ScreenName.Deck;
     public override PropDescriptions CreateEditorInspectorDescriptions() => new PropDescriptions();
 
     private static CharacterState? Owner(CardEffectParams parameters)
@@ -81,7 +98,38 @@ public sealed class CardEffectRodericReinforcements : CardEffectBase
         var cards = managers.GetCardManager();
         int cost = Math.Max(1, Math.Min(3, effect.GetParamInt()));
         var candidates = RodericReinforcements.Candidates(cards, cost, out bool revive);
-        var card = candidates[RandomManager.Range(0, candidates.Count, RngId.CardDraw)];
+        CardState? card = null;
+        bool selected = false;
+        var screens = systemManagers.GetScreenManager();
+        screens.SetScreenActive(ScreenName.Deck, active: true, screen =>
+        {
+            if (!(screen is DeckScreen deck))
+                throw new InvalidOperationException("Call to Arms requires the native DeckScreen.");
+            RodericReinforcements.SelectionCards[deck] = candidates;
+            try
+            {
+                deck.Setup(new DeckScreen.Params
+                {
+                    mode = DeckScreen.Mode.CardEffectSelection,
+                    targetMode = revive ? TargetMode.Exhaust : TargetMode.DrawPile,
+                    cardTypeFilter = CardType.Monster,
+                    showCancel = false,
+                    titleKey = effect.GetParentCardState()?.GetTitleKey() ?? string.Empty,
+                    ignoreDefaultFilters = true,
+                    excludeFilteredOutCards = true
+                });
+            }
+            finally { RodericReinforcements.SelectionCards.Remove(deck); }
+            deck.AddDeckScreenCardStateChosenDelegate(chosen =>
+            {
+                card = chosen;
+                selected = true;
+                screens.SetScreenActive(ScreenName.Deck, active: false);
+            });
+        });
+        // The native DeckScreen records the choice for battle replay.
+        while (!selected) yield return null;
+        if (card == null || !candidates.Contains(card) || !TestEffect(effect, parameters, managers)) yield break;
         CharacterState? spawned = null;
         var location = room.GetMonsterPoint(owner.GetSpawnPoint().GetIndexInRoom() + 1);
         yield return managers.GetMonsterManager().CreateMonsterState(card.GetSpawnCharacterData(), card,
@@ -112,3 +160,5 @@ public sealed class CardEffectRodericReinforcements : CardEffectBase
 }
 
 // 2026-10-04-0556||codex-freecompany-fx||src\code\CardEffectRodericReinforcements.cs||implementa Call to Arms con fallback Not Yet, coste base 1/2/3, siete unidades, muerte real y Undying 1 sin modificadores
+
+// 2026-10-04-0612||codex-freecompany-fx||src\code\CardEffectRodericReinforcements.cs||sustituye selección aleatoria por DeckScreen nativo; elección registrada para replay y candidatos exactos sin alterar pilas

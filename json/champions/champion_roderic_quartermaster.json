@@ -164,7 +164,7 @@
         "japanese": "装備を追加で<b>1</b>個持てる。ランク<b>I</b>装備を徴発。"
       },
       "bonus_hp": 9,
-      "bonus_damage": 3,
+      "bonus_damage": 0,
       "bonus_equipment": 1,
       "ability_upgrade": "@RodericRequisition",
       "status_effect_upgrades": []
@@ -196,7 +196,7 @@
         "japanese": "装備を追加で<b>2</b>個持てる。ランク<b>II</b>装備を徴発。"
       },
       "bonus_hp": 14,
-      "bonus_damage": 8,
+      "bonus_damage": 5,
       "bonus_equipment": 2,
       "ability_upgrade": "@RodericRequisition2",
       "remove_upgrades": [
@@ -231,7 +231,7 @@
         "japanese": "装備を追加で<b>3</b>個持てる。ランク<b>III</b>装備を徴発。"
       },
       "bonus_hp": 29,
-      "bonus_damage": 14,
+      "bonus_damage": 10,
       "bonus_equipment": 3,
       "ability_upgrade": "@RodericRequisition3",
       "remove_upgrades": [
