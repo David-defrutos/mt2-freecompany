@@ -68,11 +68,7 @@
         "@Sub_Warrior",
         "@Sub_Goblin"
       ],
-      "triggers": [
-        {
-          "id": "@RodericMusterTrigger"
-        }
-      ]
+      "triggers": []
     }
   ],
   "character_triggers": [

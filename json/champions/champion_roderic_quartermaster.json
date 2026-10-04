@@ -163,16 +163,11 @@
         "korean": "장비 <b>1</b>개를 추가로 장착 가능. <b>I</b>단계 장비 징발.",
         "japanese": "装備を追加で<b>1</b>個持てる。ランク<b>I</b>装備を徴発。"
       },
-      "bonus_hp": 8,
+      "bonus_hp": 9,
       "bonus_damage": 3,
       "bonus_equipment": 1,
       "ability_upgrade": "@RodericRequisition",
-      "status_effect_upgrades": [
-        {
-          "status": "titanskin",
-          "count": 2
-        }
-      ]
+      "status_effect_upgrades": []
     },
     {
       "id": "upg_Quarter2",
@@ -200,19 +195,14 @@
         "korean": "장비 <b>2</b>개를 추가로 장착 가능. <b>II</b>단계 장비 징발.",
         "japanese": "装備を追加で<b>2</b>個持てる。ランク<b>II</b>装備を徴発。"
       },
-      "bonus_hp": 16,
+      "bonus_hp": 14,
       "bonus_damage": 8,
       "bonus_equipment": 2,
       "ability_upgrade": "@RodericRequisition2",
       "remove_upgrades": [
         "@upg_Quarter1"
       ],
-      "status_effect_upgrades": [
-        {
-          "status": "titanskin",
-          "count": 4
-        }
-      ]
+      "status_effect_upgrades": []
     },
     {
       "id": "upg_Quarter3",
@@ -240,19 +230,14 @@
         "korean": "장비 <b>3</b>개를 추가로 장착 가능. <b>III</b>단계 장비 징발.",
         "japanese": "装備を追加で<b>3</b>個持てる。ランク<b>III</b>装備を徴発。"
       },
-      "bonus_hp": 28,
+      "bonus_hp": 29,
       "bonus_damage": 14,
       "bonus_equipment": 3,
       "ability_upgrade": "@RodericRequisition3",
       "remove_upgrades": [
         "@upg_Quarter2"
       ],
-      "status_effect_upgrades": [
-        {
-          "status": "titanskin",
-          "count": 6
-        }
-      ]
+      "status_effect_upgrades": []
     }
   ],
   "vfxs": [

@@ -298,7 +298,7 @@
         "korean": "전투 전 이 층의 아군에게 <b>3</b> [armor] 부여. 강타는 이 층의 적을 공격.",
         "japanese": "戦闘前、この階の味方に<b>3</b> [armor]を付与。強打でこの階の敵を攻撃。"
       },
-      "bonus_hp": 10,
+      "bonus_hp": 9,
       "trigger_upgrades": [
         "@WallTrigger1"
       ],
@@ -336,7 +336,7 @@
         "korean": "전투 전 이 층의 아군에게 <b>6</b> [armor] 부여. 강타는 이 층의 적을 공격.",
         "japanese": "戦闘前、この階の味方に<b>6</b> [armor]を付与。強打でこの階の敵を攻撃。"
       },
-      "bonus_hp": 20,
+      "bonus_hp": 19,
       "remove_upgrades": [
         "@upg_Wall1"
       ],
@@ -377,7 +377,7 @@
         "korean": "전투 전 이 층의 아군에게 <b>10</b> [armor] 부여. 강타는 이 층의 적을 공격.",
         "japanese": "戦闘前、この階の味方に<b>10</b> [armor]を付与。強打でこの階の敵を攻撃。"
       },
-      "bonus_hp": 35,
+      "bonus_hp": 34,
       "remove_upgrades": [
         "@upg_Wall2"
       ],

@@ -16,29 +16,26 @@
         "japanese": "略奪"
       },
       "descriptions": {
-        "english": "Gain [avarice] and [titanskin].",
-        "french": "Gagnez [avarice] et [titanskin].",
-        "german": "Erhalte [avarice] und [titanskin].",
-        "russian": "Получите [avarice] и [titanskin].",
-        "portuguese": "Ganhe [avarice] e [titanskin].",
-        "chinese": "获得[avarice]和[titanskin]。",
-        "spanish": "Gana [avarice] y [titanskin].",
-        "chinese_traditional": "獲得[avarice]和[titanskin]。",
-        "korean": "[avarice] 및 [titanskin] 획득.",
-        "japanese": "[avarice]と[titanskin]を得る。"
+        "english": "Gain [avarice].",
+        "french": "Gagne [avarice].",
+        "german": "Erhalte [avarice].",
+        "russian": "Получает [avarice].",
+        "portuguese": "Ganhe [avarice].",
+        "chinese": "获得[avarice]。",
+        "spanish": "Obtiene [avarice].",
+        "chinese_traditional": "獲得[avarice]。",
+        "korean": "[avarice] 획득.",
+        "japanese": "[avarice]を得る。"
       },
       "bonus_damage": 5,
-      "bonus_hp": 5,
+      "bonus_hp": 4,
       "status_effect_upgrades": [
         {
           "status": "avarice",
           "count": 5
-        },
-        {
-          "status": "titanskin",
-          "count": 2
         }
-      ]
+      ],
+      "ability_upgrade": "@RodericCallToArms"
     },
     {
       "id": "upg_Plunder2",
@@ -55,32 +52,29 @@
         "japanese": "略奪 II"
       },
       "descriptions": {
-        "english": "Gain more [avarice] and [titanskin].",
-        "french": "Gagnez davantage de [avarice] et de [titanskin].",
-        "german": "Erhalte mehr [avarice] und [titanskin].",
-        "russian": "Получите больше [avarice] и [titanskin].",
-        "portuguese": "Ganhe mais [avarice] e [titanskin].",
-        "chinese": "获得更多[avarice]和[titanskin]。",
-        "spanish": "Gana más [avarice] y [titanskin].",
-        "chinese_traditional": "獲得更多[avarice]和[titanskin]。",
-        "korean": "[avarice] 및 [titanskin] 추가 획득.",
-        "japanese": "さらに多くの[avarice]と[titanskin]を得る。"
+        "english": "Gain [avarice].",
+        "french": "Gagne [avarice].",
+        "german": "Erhalte [avarice].",
+        "russian": "Получает [avarice].",
+        "portuguese": "Ganhe [avarice].",
+        "chinese": "获得[avarice]。",
+        "spanish": "Obtiene [avarice].",
+        "chinese_traditional": "獲得[avarice]。",
+        "korean": "[avarice] 획득.",
+        "japanese": "[avarice]を得る。"
       },
       "bonus_damage": 12,
-      "bonus_hp": 10,
+      "bonus_hp": 9,
       "status_effect_upgrades": [
         {
           "status": "avarice",
           "count": 10
-        },
-        {
-          "status": "titanskin",
-          "count": 4
         }
       ],
       "remove_upgrades": [
         "@upg_Plunder1"
-      ]
+      ],
+      "ability_upgrade": "@RodericCallToArms2"
     },
     {
       "id": "upg_Plunder3",
@@ -97,19 +91,19 @@
         "japanese": "略奪 III"
       },
       "descriptions": {
-        "english": "Gain [avarice], [titanskin], and [ambush].",
-        "french": "Gagnez [avarice], [titanskin] et [ambush].",
-        "german": "Erhalte [avarice], [titanskin] und [ambush].",
-        "russian": "Получите [avarice], [titanskin] и [ambush].",
-        "portuguese": "Ganhe [avarice], [titanskin] e [ambush].",
-        "chinese": "获得[avarice], [titanskin]和[ambush]。",
-        "spanish": "Gana [avarice], [titanskin] y [ambush].",
-        "chinese_traditional": "獲得[avarice], [titanskin]和[ambush]。",
-        "korean": "[avarice], [titanskin] 및 [ambush] 획득.",
-        "japanese": "[avarice], [titanskin]と[ambush]を得る。"
+        "english": "Gain [avarice] and [quick].",
+        "french": "Gagne [avarice] et [quick].",
+        "german": "Erhalte [avarice] und [quick].",
+        "russian": "Получает [avarice] и [quick].",
+        "portuguese": "Ganhe [avarice] e [quick].",
+        "chinese": "获得[avarice]和[quick]。",
+        "spanish": "Obtiene [avarice] y [quick].",
+        "chinese_traditional": "獲得[avarice]和[quick]。",
+        "korean": "[avarice] 및 [quick] 획득.",
+        "japanese": "[avarice]と[quick]を得る。"
       },
       "bonus_damage": 20,
-      "bonus_hp": 15,
+      "bonus_hp": 14,
       "status_effect_upgrades": [
         {
           "status": "avarice",
@@ -118,15 +112,145 @@
         {
           "status": "ambush",
           "count": 1
-        },
-        {
-          "status": "titanskin",
-          "count": 6
         }
       ],
       "remove_upgrades": [
         "@upg_Plunder2"
+      ],
+      "ability_upgrade": "@RodericCallToArms3"
+    }
+  ],
+  "cards": [
+    {
+      "id": "RodericCallToArms",
+      "names": {
+        "english": "Call to Arms I",
+        "spanish": "Llamada a las armas I",
+        "french": "Appel aux armes I",
+        "german": "Zu den Waffen I",
+        "russian": "К оружию I",
+        "portuguese": "Chamado às armas I",
+        "chinese": "战斗号召 I",
+        "chinese_traditional": "戰鬥號召 I",
+        "korean": "전투 소집 I",
+        "japanese": "武装招集 I"
+      },
+      "descriptions": {
+        "english": "Summon a random unit with base cost up to <b>1</b> [ember] from your draw pile behind this unit. If none, summon a fallen unit within the same cost limit with <b>1</b> health and [undying] <b>1</b>. Can exceed capacity (maximum 7 units).",
+        "spanish": "Invoca detrás de esta unidad una unidad aleatoria de la pila de robo con coste base de hasta <b>1</b> [ember]. Si no hay ninguna, invoca una unidad muerta del mismo límite de coste con <b>1</b> de vida y [undying] <b>1</b>. Puede exceder la capacidad (máximo 7 unidades).",
+        "french": "Invoque derrière cette unité une unité aléatoire de la pioche coûtant au maximum <b>1</b> [ember] de base. À défaut, invoque une unité morte respectant la même limite de coût avec <b>1</b> PV et [undying] <b>1</b>. Peut dépasser la capacité (7 unités maximum).",
+        "german": "Beschwört hinter dieser Einheit eine zufällige Einheit aus dem Ziehstapel mit Basiskosten bis <b>1</b> [ember]. Andernfalls eine gefallene Einheit innerhalb desselben Kostenlimits mit <b>1</b> Leben und [undying] <b>1</b>. Kann die Kapazität überschreiten (maximal 7 Einheiten).",
+        "russian": "Призывает за этой боевой единицей случайную боевую единицу из колоды с базовой стоимостью до <b>1</b> [ember]. Если такой нет, призывает погибшую с той же предельной стоимостью с <b>1</b> здоровья и [undying] <b>1</b>. Может превышать вместимость (не более 7 боевых единиц).",
+        "portuguese": "Invoca atrás desta unidade uma unidade aleatória da pilha de compra com custo base de até <b>1</b> [ember]. Se não houver, invoca uma unidade morta dentro do mesmo limite de custo com <b>1</b> de vida e [undying] <b>1</b>. Pode exceder a capacidade (máximo de 7 unidades).",
+        "chinese": "从抽牌堆随机召唤基础费用不超过<b>1</b>[ember]的单位至本单位身后。若无，则召唤符合费用条件的阵亡单位，使其拥有<b>1</b>点生命和[undying]<b>1</b>。可超出容量（最多7个单位）。",
+        "chinese_traditional": "從抽牌堆隨機召喚基礎費用不超過<b>1</b>[ember]的單位至本單位身後。若無，則召喚符合費用條件的陣亡單位，使其擁有<b>1</b>點生命和[undying]<b>1</b>。可超出容量（最多7個單位）。",
+        "korean": "뽑기 더미에서 기본 비용이 <b>1</b> [ember] 이하인 무작위 유닛을 이 유닛 뒤에 소환. 없으면 같은 비용 조건의 죽은 유닛을 체력 <b>1</b>, [undying] <b>1</b>로 소환. 수용량 초과 가능 (최대 7유닛).",
+        "japanese": "山札から基本コスト<b>1</b>[ember]以下のユニットをランダムにこのユニットの後ろへ召喚。対象がなければ同じコスト条件の死亡したユニットを体力<b>1</b>、[undying]<b>1</b>で召喚。容量を超過可能（最大7体）。"
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericReinforcements1"
       ]
+    },
+    {
+      "id": "RodericCallToArms2",
+      "names": {
+        "english": "Call to Arms II",
+        "spanish": "Llamada a las armas II",
+        "french": "Appel aux armes II",
+        "german": "Zu den Waffen II",
+        "russian": "К оружию II",
+        "portuguese": "Chamado às armas II",
+        "chinese": "战斗号召 II",
+        "chinese_traditional": "戰鬥號召 II",
+        "korean": "전투 소집 II",
+        "japanese": "武装招集 II"
+      },
+      "descriptions": {
+        "english": "Summon a random unit with base cost up to <b>2</b> [ember] from your draw pile behind this unit. If none, summon a fallen unit within the same cost limit with <b>1</b> health and [undying] <b>1</b>. Can exceed capacity (maximum 7 units).",
+        "spanish": "Invoca detrás de esta unidad una unidad aleatoria de la pila de robo con coste base de hasta <b>2</b> [ember]. Si no hay ninguna, invoca una unidad muerta del mismo límite de coste con <b>1</b> de vida y [undying] <b>1</b>. Puede exceder la capacidad (máximo 7 unidades).",
+        "french": "Invoque derrière cette unité une unité aléatoire de la pioche coûtant au maximum <b>2</b> [ember] de base. À défaut, invoque une unité morte respectant la même limite de coût avec <b>1</b> PV et [undying] <b>1</b>. Peut dépasser la capacité (7 unités maximum).",
+        "german": "Beschwört hinter dieser Einheit eine zufällige Einheit aus dem Ziehstapel mit Basiskosten bis <b>2</b> [ember]. Andernfalls eine gefallene Einheit innerhalb desselben Kostenlimits mit <b>1</b> Leben und [undying] <b>1</b>. Kann die Kapazität überschreiten (maximal 7 Einheiten).",
+        "russian": "Призывает за этой боевой единицей случайную боевую единицу из колоды с базовой стоимостью до <b>2</b> [ember]. Если такой нет, призывает погибшую с той же предельной стоимостью с <b>1</b> здоровья и [undying] <b>1</b>. Может превышать вместимость (не более 7 боевых единиц).",
+        "portuguese": "Invoca atrás desta unidade uma unidade aleatória da pilha de compra com custo base de até <b>2</b> [ember]. Se não houver, invoca uma unidade morta dentro do mesmo limite de custo com <b>1</b> de vida e [undying] <b>1</b>. Pode exceder a capacidade (máximo de 7 unidades).",
+        "chinese": "从抽牌堆随机召唤基础费用不超过<b>2</b>[ember]的单位至本单位身后。若无，则召唤符合费用条件的阵亡单位，使其拥有<b>1</b>点生命和[undying]<b>1</b>。可超出容量（最多7个单位）。",
+        "chinese_traditional": "從抽牌堆隨機召喚基礎費用不超過<b>2</b>[ember]的單位至本單位身後。若無，則召喚符合費用條件的陣亡單位，使其擁有<b>1</b>點生命和[undying]<b>1</b>。可超出容量（最多7個單位）。",
+        "korean": "뽑기 더미에서 기본 비용이 <b>2</b> [ember] 이하인 무작위 유닛을 이 유닛 뒤에 소환. 없으면 같은 비용 조건의 죽은 유닛을 체력 <b>1</b>, [undying] <b>1</b>로 소환. 수용량 초과 가능 (최대 7유닛).",
+        "japanese": "山札から基本コスト<b>2</b>[ember]以下のユニットをランダムにこのユニットの後ろへ召喚。対象がなければ同じコスト条件の死亡したユニットを体力<b>1</b>、[undying]<b>1</b>で召喚。容量を超過可能（最大7体）。"
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericReinforcements2"
+      ]
+    },
+    {
+      "id": "RodericCallToArms3",
+      "names": {
+        "english": "Call to Arms III",
+        "spanish": "Llamada a las armas III",
+        "french": "Appel aux armes III",
+        "german": "Zu den Waffen III",
+        "russian": "К оружию III",
+        "portuguese": "Chamado às armas III",
+        "chinese": "战斗号召 III",
+        "chinese_traditional": "戰鬥號召 III",
+        "korean": "전투 소집 III",
+        "japanese": "武装招集 III"
+      },
+      "descriptions": {
+        "english": "Summon a random unit with base cost up to <b>3</b> [ember] from your draw pile behind this unit. If none, summon a fallen unit within the same cost limit with <b>1</b> health and [undying] <b>1</b>. Can exceed capacity (maximum 7 units).",
+        "spanish": "Invoca detrás de esta unidad una unidad aleatoria de la pila de robo con coste base de hasta <b>3</b> [ember]. Si no hay ninguna, invoca una unidad muerta del mismo límite de coste con <b>1</b> de vida y [undying] <b>1</b>. Puede exceder la capacidad (máximo 7 unidades).",
+        "french": "Invoque derrière cette unité une unité aléatoire de la pioche coûtant au maximum <b>3</b> [ember] de base. À défaut, invoque une unité morte respectant la même limite de coût avec <b>1</b> PV et [undying] <b>1</b>. Peut dépasser la capacité (7 unités maximum).",
+        "german": "Beschwört hinter dieser Einheit eine zufällige Einheit aus dem Ziehstapel mit Basiskosten bis <b>3</b> [ember]. Andernfalls eine gefallene Einheit innerhalb desselben Kostenlimits mit <b>1</b> Leben und [undying] <b>1</b>. Kann die Kapazität überschreiten (maximal 7 Einheiten).",
+        "russian": "Призывает за этой боевой единицей случайную боевую единицу из колоды с базовой стоимостью до <b>3</b> [ember]. Если такой нет, призывает погибшую с той же предельной стоимостью с <b>1</b> здоровья и [undying] <b>1</b>. Может превышать вместимость (не более 7 боевых единиц).",
+        "portuguese": "Invoca atrás desta unidade uma unidade aleatória da pilha de compra com custo base de até <b>3</b> [ember]. Se não houver, invoca uma unidade morta dentro do mesmo limite de custo com <b>1</b> de vida e [undying] <b>1</b>. Pode exceder a capacidade (máximo de 7 unidades).",
+        "chinese": "从抽牌堆随机召唤基础费用不超过<b>3</b>[ember]的单位至本单位身后。若无，则召唤符合费用条件的阵亡单位，使其拥有<b>1</b>点生命和[undying]<b>1</b>。可超出容量（最多7个单位）。",
+        "chinese_traditional": "從抽牌堆隨機召喚基礎費用不超過<b>3</b>[ember]的單位至本單位身後。若無，則召喚符合費用條件的陣亡單位，使其擁有<b>1</b>點生命和[undying]<b>1</b>。可超出容量（最多7個單位）。",
+        "korean": "뽑기 더미에서 기본 비용이 <b>3</b> [ember] 이하인 무작위 유닛을 이 유닛 뒤에 소환. 없으면 같은 비용 조건의 죽은 유닛을 체력 <b>1</b>, [undying] <b>1</b>로 소환. 수용량 초과 가능 (최대 7유닛).",
+        "japanese": "山札から基本コスト<b>3</b>[ember]以下のユニットをランダムにこのユニットの後ろへ召喚。対象がなければ同じコスト条件の死亡したユニットを体力<b>1</b>、[undying]<b>1</b>で召喚。容量を超過可能（最大7体）。"
+      },
+      "card_art": "@Roderic",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
+        "@RodericReinforcements3"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "RodericReinforcements1",
+      "name": "@CardEffectRodericReinforcements",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 1
+    },
+    {
+      "id": "RodericReinforcements2",
+      "name": "@CardEffectRodericReinforcements",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 2
+    },
+    {
+      "id": "RodericReinforcements3",
+      "name": "@CardEffectRodericReinforcements",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_int": 3
     }
   ]
 }
