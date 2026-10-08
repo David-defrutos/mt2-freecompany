@@ -194,7 +194,8 @@
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
       ],
-      "ability_upgrade": "@VesperCommand1"
+      "ability_upgrade": "@VesperCommand1",
+      "show_description_on_cards": true
     },
     {
       "id": "upg_Beastmaster2",
@@ -230,7 +231,8 @@
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
       ],
-      "ability_upgrade": "@VesperCommand2"
+      "ability_upgrade": "@VesperCommand2",
+      "show_description_on_cards": true
     },
     {
       "id": "upg_Beastmaster3",
@@ -266,7 +268,8 @@
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
       ],
-      "ability_upgrade": "@VesperCommand3"
+      "ability_upgrade": "@VesperCommand3",
+      "show_description_on_cards": true
     },
     {
       "id": "TrollOffer",
