@@ -81,17 +81,7 @@ internal static class BeastmasterTraining
         foreach (var card in managers.GetCardManager().GetHand().ToArray())
         {
             if (!IsCreature(card)) continue;
-            // Keep one cumulative upgrade instead of adding one tooltip per turn.
-            var previous = card.GetCardStateModifiers().GetCardUpgrades().FirstOrDefault(u => u.GetCardUpgradeDataId() == TrainingId);
-            var training = new CardUpgradeState();
-            training.Setup();
-            training.SetCardUpgradeDataId(TrainingId);
-            training.SetIsUnique(true);
-            training.SetAttackDamage(attack + (previous?.GetAttackDamage() ?? 0));
-            training.SetAdditionalHP(health + (previous?.GetAdditionalHP() ?? 0));
-            if (previous != null) card.RemoveUpgrade(previous, card.GetCardStateModifiers());
-            // Combat uses the actual deck CardState. This survives saving and the next battle.
-            card.ApplyPermanentUpgrade(training, save, ignoreUpgradeAnimation: true);
+            TrainPermanent(card, attack, health, save);
             var oldDiscount = card.GetTemporaryCardStateModifiers().GetCardUpgrades().FirstOrDefault(u => u.GetCardUpgradeDataId() == DiscountId);
             var discount = new CardUpgradeState();
             discount.Setup();
@@ -103,6 +93,46 @@ internal static class BeastmasterTraining
             card.ApplyTemporaryUpgrade(discount, save);
             card.UpdateCardBodyText();
             managers.GetCardManager().RefreshCardInHand(card, cleanupTweens: false);
+        }
+    }
+
+    private static void TrainPermanent(CardState card, int attack, int health, SaveManager save)
+    {
+        // Keep one cumulative upgrade instead of adding one tooltip per turn.
+        var previous = card.GetCardStateModifiers().GetCardUpgrades().FirstOrDefault(u => u.GetCardUpgradeDataId() == TrainingId);
+        var training = new CardUpgradeState();
+        training.Setup();
+        training.SetCardUpgradeDataId(TrainingId);
+        training.SetIsUnique(true);
+        training.SetAttackDamage(attack + (previous?.GetAttackDamage() ?? 0));
+        training.SetAdditionalHP(health + (previous?.GetAdditionalHP() ?? 0));
+        if (previous != null) card.RemoveUpgrade(previous, card.GetCardStateModifiers());
+        // Combat uses the actual deck CardState. This survives saving and the next battle.
+        card.ApplyPermanentUpgrade(training, save, ignoreUpgradeAnimation: true);
+    }
+
+    internal static IEnumerator TrainDeployed(ICoreGameManagers managers)
+    {
+        var save = managers.GetSaveManager();
+        if (save.PreviewMode) yield break;
+        var levels = GetLevels(managers);
+        if (levels.Count == 0) yield break;
+        int attack = levels.Sum(l => l >= 2 ? 1 : 0);
+        int health = levels.Sum(l => l == 3 ? 2 : 1);
+        var units = new List<CharacterState>();
+        managers.GetMonsterManager().AddCharactersToList(units);
+        var trained = new HashSet<CardState>(managers.GetCardManager().GetHand());
+        foreach (var unit in units)
+        {
+            if (unit == null || unit.IsDead || unit.GetHP() <= 0) continue;
+            var card = unit.GetSpawnerCard();
+            if (card == null || !IsCreature(card)) continue;
+            // If several characters share a card, persist once but buff each body.
+            if (trained.Add(card)) TrainPermanent(card, attack, health, save);
+            if (attack > 0) unit.BuffDamage(attack);
+            yield return unit.BuffMaxHP(health, triggerOnHeal: false);
+            BeastmasterMarkers.MarkTrained(unit);
+            card.UpdateCardBodyText();
         }
     }
 
@@ -124,7 +154,11 @@ internal static class BeastmasterTraining
     private static IEnumerator BeforeTurn(IEnumerator original)
     {
         var managers = AllGameManagers.Instance?.GetCoreManagers();
-        if (managers != null) TrainHand(managers);
+        if (managers != null)
+        {
+            TrainHand(managers);
+            yield return TrainDeployed(managers);
+        }
         while (original.MoveNext()) yield return original.Current;
     }
 
@@ -178,3 +212,5 @@ internal static class BeastmasterSavedUpgradePatch
 }
 
 // 2026-10-04-0028||codex-freecompany-fx||src\code\BeastmasterTraining.cs||usa GUIDs reales de mejoras registradas y migra IDs antiguos antes de cargar guardados
+
+// 2026-10-08-1936||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\BeastmasterTraining.cs||entrena criaturas vivas desplegadas en cualquier piso; mejora permanente una vez por carta y bono inmediato de ataque/vida por unidad; descuento solo en mano

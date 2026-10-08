@@ -149,7 +149,7 @@ los efectos a medida del DLL— es propio. Licencia completa en `LICENSE`, detal
 
 ## Beastmaster creatures / Criaturas de Beastmaster
 
-**Vesper Beastmaster:** eligible creatures entering your hand gain Frozen while Vesper is deployed. Before drawing each turn, eligible creatures already in hand cost 1 less Ember for this battle and permanently gain the following stats. Each active Vesper contributes according to her own path level; multiple Vesper stack. Muted or silenced Vesper cannot train creatures.
+**Vesper Beastmaster:** eligible creatures entering your hand gain Frozen while Vesper is deployed. Before drawing each turn, eligible creatures in hand or in play permanently gain the following stats. Cards in hand also cost 1 less Ember for this battle. Each active Vesper contributes according to her own path level; multiple Vesper stack. Muted or silenced Vesper cannot train creatures.
 
 | Path / Senda | Permanent attack / Ataque permanente | Permanent health / Vida permanente |
 |---|---:|---:|
@@ -157,15 +157,15 @@ los efectos a medida del DLL— es propio. Licencia completa en `LICENSE`, detal
 | Beastmaster II | +1 | +1 |
 | Beastmaster III | +1 | +2 |
 
-**Vesper Beastmaster:** mientras Vesper está desplegada, las criaturas admitidas que llegan a la mano reciben Congelación. Antes del robo de cada turno, las que ya están en mano cuestan 1 Ember menos durante ese combate y ganan permanentemente las estadísticas de la tabla. Cada Vesper activa aporta según su propio nivel; varias Vesper acumulan sus efectos. Las Vesper silenciadas no entrenan criaturas.
+**Vesper Beastmaster:** mientras Vesper está desplegada, las criaturas admitidas que llegan a la mano reciben Congelación. Antes del robo de cada turno, las criaturas en mano o en juego ganan permanentemente las estadísticas de la tabla. Las de la mano también cuestan 1 Ember menos durante ese combate. Cada Vesper activa aporta según su propio nivel; varias Vesper acumulan sus efectos. Las Vesper silenciadas no entrenan criaturas.
 
-The stat bonuses survive into later battles. The Ember discount resets between battles, never reduces the cost below zero, and applies only to cards in hand at the start of the turn. The draw pile and cemetery receive no training. Frozen is not required for training. The initial Troll choice is unchanged; Vesper retrieves that same Troll on Summon if it is in hand or the draw pile. The Troll is not summoned for free.
+Deployed creatures immediately gain attack, maximum health and the same amount of current health. The stat bonuses survive into later battles. The Ember discount resets between battles, never reduces the cost below zero, and applies only to cards in hand at the start of the turn. The draw pile and cemetery receive no training. Frozen is not required for training. The initial Troll choice is unchanged; Vesper retrieves that same Troll on Summon if it is in hand or the draw pile. The Troll is not summoned for free.
 
-Las estadísticas se conservan durante toda la partida. El descuento se reinicia entre combates, nunca baja el coste de cero y solo afecta a las cartas en mano al comenzar el turno. La baraja y el cementerio no reciben entrenamiento. No hace falta conservar Congelación para entrenarse. Se mantiene la elección inicial del trol; al invocar a Vesper, recupera ese mismo trol si está en mano o en la baraja. Ya no lo invoca gratis.
+Las criaturas desplegadas ganan de inmediato ataque, vida máxima y la misma cantidad de vida actual. Las estadísticas se conservan durante toda la partida. El descuento se reinicia entre combates, nunca baja el coste de cero y solo afecta a las cartas en mano al comenzar el turno. La baraja y el cementerio no reciben entrenamiento. No hace falta conservar Congelación para entrenarse. Se mantiene la elección inicial del trol; al invocar a Vesper, recupera ese mismo trol si está en mano o en la baraja. Ya no lo invoca gratis.
 
 ### Complete list / Lista completa
 
-Only these **26 individual cards** qualify; belonging to their subtype does not qualify other cards. Pathogens is an optional mod: its three creatures qualify when that clan is installed. This list will expand with selected creatures from other mod clans.
+Only these **29 individual cards** qualify; belonging to their subtype does not qualify other cards. Pathogens is an optional mod: its three creatures qualify when that clan is installed. This list will expand with selected creatures from other mod clans.
 
 Solo estas **26 cartas concretas** cuentan; no se incluye automáticamente el resto de sus subtipos. Pathogens es opcional: sus tres criaturas cuentan si el clan está instalado. La lista se ampliará con criaturas seleccionadas de otros clanes mods.
 
@@ -180,6 +180,7 @@ Solo estas **26 cartas concretas** cuentan; no se incluye automáticamente el re
 | Lazarus League | Hydra Armed Horror, Pincushion, Reforming Ooze |
 | The Free Company | Bog Troll, Stone Troll, War Troll, Cautious Troll, Two-Headed Troll |
 | Pathogens | Antigen Mimic, Borrelia Daemonium, Spliced Monstrosity |
+| SuccClan | Chaos Creation, Demon Pioneer, Oolioddroo |
 
 <!-- 2026-10-03-2253||codex-freecompany-fx||README.md||añade reglas bilingües y listado completo de 25 criaturas para wiki y Thunderstore -->
 
@@ -193,3 +194,7 @@ Solo estas **26 cartas concretas** cuentan; no se incluye automáticamente el re
 <!-- 2026-10-03-2352||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||documenta huellas y condición real de entrenamiento -->
 
 <!-- 2026-10-04-0037||codex-freecompany-fx||README.md||actualiza catálogo Beastmaster a 26 y Pathogens a 3 con Borrelia Daemonium -->
+
+<!-- 2026-10-08-1848||codex-freecompany-fx||README.md||lista completa Beastmaster añade tres criaturas SuccClan y total 29 -->
+
+<!-- 2026-10-08-1937||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||actualiza reglas Beastmaster: entrenamiento en mano o juego, persistencia y bono de vida actual; descuento solo mano -->
