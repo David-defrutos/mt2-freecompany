@@ -134,6 +134,102 @@
     {
       "id": "VesperCardBlend41",
       "path": "textures/VesperCardBlend41.png"
+    },
+    {
+      "id": "VesperUnitAttackFrame1",
+      "path": "textures/VesperUnitAttackFrame1.png"
+    },
+    {
+      "id": "VesperUnitAttackFrame2",
+      "path": "textures/VesperUnitAttackFrame2.png"
+    },
+    {
+      "id": "VesperUnitAttackFrame3",
+      "path": "textures/VesperUnitAttackFrame3.png"
+    },
+    {
+      "id": "VesperUnitAttackFrame4",
+      "path": "textures/VesperUnitAttackFrame4.png"
+    },
+    {
+      "id": "VesperUnitHitFrame1",
+      "path": "textures/VesperUnitHitFrame1.png"
+    },
+    {
+      "id": "VesperUnitHitFrame2",
+      "path": "textures/VesperUnitHitFrame2.png"
+    },
+    {
+      "id": "VesperUnitHitFrame3",
+      "path": "textures/VesperUnitHitFrame3.png"
+    },
+    {
+      "id": "VesperUnitHitFrame4",
+      "path": "textures/VesperUnitHitFrame4.png"
+    },
+    {
+      "id": "VesperUnitDeathV2Frame1",
+      "path": "textures/VesperUnitDeathV2Frame1.png"
+    },
+    {
+      "id": "VesperUnitDeathV2Frame2",
+      "path": "textures/VesperUnitDeathV2Frame2.png"
+    },
+    {
+      "id": "VesperUnitDeathV2Frame3",
+      "path": "textures/VesperUnitDeathV2Frame3.png"
+    },
+    {
+      "id": "VesperUnitDeathV2Frame4",
+      "path": "textures/VesperUnitDeathV2Frame4.png"
+    },
+    {
+      "id": "VesperUnitHoverV2Frame1",
+      "path": "textures/VesperUnitHoverV2Frame1.png"
+    },
+    {
+      "id": "VesperUnitHoverV2Frame2",
+      "path": "textures/VesperUnitHoverV2Frame2.png"
+    },
+    {
+      "id": "VesperUnitHoverV2Frame3",
+      "path": "textures/VesperUnitHoverV2Frame3.png"
+    },
+    {
+      "id": "VesperUnitHoverV2Frame4",
+      "path": "textures/VesperUnitHoverV2Frame4.png"
+    },
+    {
+      "id": "VesperUnitSpellV2Frame1",
+      "path": "textures/VesperUnitSpellV2Frame1.png"
+    },
+    {
+      "id": "VesperUnitSpellV2Frame2",
+      "path": "textures/VesperUnitSpellV2Frame2.png"
+    },
+    {
+      "id": "VesperUnitSpellV2Frame3",
+      "path": "textures/VesperUnitSpellV2Frame3.png"
+    },
+    {
+      "id": "VesperUnitSpellV2Frame4",
+      "path": "textures/VesperUnitSpellV2Frame4.png"
+    },
+    {
+      "id": "VesperUnitTalkV2Frame1",
+      "path": "textures/VesperUnitTalkV2Frame1.png"
+    },
+    {
+      "id": "VesperUnitTalkV2Frame2",
+      "path": "textures/VesperUnitTalkV2Frame2.png"
+    },
+    {
+      "id": "VesperUnitTalkV2Frame3",
+      "path": "textures/VesperUnitTalkV2Frame3.png"
+    },
+    {
+      "id": "VesperUnitTalkV2Frame4",
+      "path": "textures/VesperUnitTalkV2Frame4.png"
     }
   ],
   "game_objects": [
@@ -145,7 +241,7 @@
           "sprite": "@Vesper",
           "animation_clip": {
             "id": "VesperCardIdle",
-            "sample_rate": 8,
+            "sample_rate": 6,
             "loop_time": "loop",
             "frames": [
               "@VesperCardFrame1",
@@ -193,11 +289,123 @@
                 "@VesperUnitBlend33",
                 "@VesperUnitIdleFrame1"
               ],
-              "framerate": 8
+              "framerate": 6
             },
             {
               "animation": "attack",
               "frames": [
+                "@VesperUnitAttackFrame1",
+                "@VesperUnitAttackFrame1",
+                "@VesperUnitAttackFrame2",
+                "@VesperUnitAttackFrame2",
+                "@VesperUnitAttackFrame3",
+                "@VesperUnitAttackFrame3",
+                "@VesperUnitAttackFrame4",
+                "@VesperUnitAttackFrame4",
+                "@VesperUnitIdleFrame1"
+              ],
+              "framerate": 8,
+              "loop": false
+            },
+            {
+              "animation": "hit_react",
+              "frames": [
+                "@VesperUnitHitFrame1",
+                "@VesperUnitHitFrame1",
+                "@VesperUnitHitFrame2",
+                "@VesperUnitHitFrame2",
+                "@VesperUnitHitFrame3",
+                "@VesperUnitHitFrame3",
+                "@VesperUnitHitFrame4",
+                "@VesperUnitIdleFrame1"
+              ],
+              "framerate": 8,
+              "loop": false
+            },
+            {
+              "animation": "spell",
+              "frames": [
+                "@VesperUnitSpellV2Frame1",
+                "@VesperUnitSpellV2Frame2",
+                "@VesperUnitSpellV2Frame2",
+                "@VesperUnitSpellV2Frame3",
+                "@VesperUnitSpellV2Frame3",
+                "@VesperUnitSpellV2Frame4",
+                "@VesperUnitIdleFrame1"
+              ],
+              "framerate": 8,
+              "loop": false
+            },
+            {
+              "animation": "death",
+              "frames": [
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitDeathV2Frame1",
+                "@VesperUnitDeathV2Frame1",
+                "@VesperUnitDeathV2Frame2",
+                "@VesperUnitDeathV2Frame2",
+                "@VesperUnitDeathV2Frame3",
+                "@VesperUnitDeathV2Frame3",
+                "@VesperUnitDeathV2Frame4",
+                "@VesperUnitDeathV2Frame4",
+                "@VesperUnitDeathV2Frame4",
+                "@VesperUnitDeathV2Frame4",
+                "@VesperUnitDeathV2Frame4"
+              ],
+              "framerate": 18,
+              "loop": false
+            },
+            {
+              "animation": "talk",
+              "frames": [
+                "@VesperUnitTalkV2Frame1",
+                "@VesperUnitTalkV2Frame2",
+                "@VesperUnitTalkV2Frame3",
+                "@VesperUnitTalkV2Frame2",
+                "@VesperUnitTalkV2Frame4",
+                "@VesperUnitTalkV2Frame4"
+              ],
+              "framerate": 6,
+              "loop": true
+            },
+            {
+              "animation": "hover",
+              "frames": [
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitHoverV2Frame1",
+                "@VesperUnitHoverV2Frame2",
+                "@VesperUnitHoverV2Frame3",
+                "@VesperUnitHoverV2Frame3",
+                "@VesperUnitHoverV2Frame4",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1"
+              ],
+              "framerate": 6,
+              "loop": true
+            },
+            {
+              "animation": "idle_relentless",
+              "frames": [
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
+                "@VesperUnitIdleFrame1",
                 "@VesperUnitIdleFrame1",
                 "@VesperUnitBlend33",
                 "@VesperUnitBlend67",
@@ -206,13 +414,14 @@
                 "@VesperUnitBlend33",
                 "@VesperUnitIdleFrame1"
               ],
-              "framerate": 16
+              "framerate": 6,
+              "loop": true
             }
           ],
           "transform": {
             "position": {
-              "x": 0,
-              "y": 1.0,
+              "x": 0.1535,
+              "y": 0.715,
               "z": 0
             },
             "scale": {
