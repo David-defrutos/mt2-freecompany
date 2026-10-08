@@ -68,7 +68,9 @@ internal static class RodericReinforcements
 
 public sealed class CardEffectRodericReinforcements : CardEffectBase, ICardEffectUiDialog
 {
-    public override bool CanApplyInPreviewMode => false;
+    // Native targeting gates TestEffect with this flag. ApplyEffect remains
+    // side-effect-free in preview: its existing PreviewMode guard exits immediately.
+    public override bool CanApplyInPreviewMode => true;
     public override bool CanPlayAfterBossDead => false;
     public ScreenName RequiredScreenName => ScreenName.Deck;
     public override PropDescriptions CreateEditorInspectorDescriptions() => new PropDescriptions();
@@ -162,3 +164,5 @@ public sealed class CardEffectRodericReinforcements : CardEffectBase, ICardEffec
 // 2026-10-04-0556||codex-freecompany-fx||src\code\CardEffectRodericReinforcements.cs||implementa Call to Arms con fallback Not Yet, coste base 1/2/3, siete unidades, muerte real y Undying 1 sin modificadores
 
 // 2026-10-04-0612||codex-freecompany-fx||src\code\CardEffectRodericReinforcements.cs||sustituye selección aleatoria por DeckScreen nativo; elección registrada para replay y candidatos exactos sin alterar pilas
+
+// 2026-10-08-2258||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\CardEffectRodericReinforcements.cs||permite validación de habilidad en preview, conserva guarda sin diálogo ni invocación durante simulación
