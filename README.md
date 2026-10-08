@@ -149,25 +149,29 @@ los efectos a medida del DLL— es propio. Licencia completa en `LICENSE`, detal
 
 ## Beastmaster creatures / Criaturas de Beastmaster
 
-**Vesper Beastmaster:** eligible creatures entering your hand gain Frozen while Vesper is deployed. Before drawing each turn, eligible creatures in hand or in play permanently gain the following stats. Cards in hand also cost 1 less Ember for this battle. Each active Vesper contributes according to her own path level; multiple Vesper stack. Muted or silenced Vesper cannot train creatures.
+**Vesper Beastmaster:** get a Tamed Troll. Eligible creatures entering your hand gain Frozen while Vesper is deployed. At the start of each turn, eligible cards already in hand cost 1 less Ember for this battle. Each active Vesper contributes one discount; muted or silenced Vesper cannot tame or discount creatures.
 
-| Path / Senda | Permanent attack / Ataque permanente | Permanent health / Vida permanente |
-|---|---:|---:|
-| Beastmaster I | +0 | +1 |
-| Beastmaster II | +1 | +1 |
-| Beastmaster III | +1 | +2 |
+**Command:** choose one Tamed friendly creature on any floor. It immediately attacks the enemies on its own floor, using its normal attack traits and triggers. Command is ready when Vesper enters play and adds no Dazed.
 
-**Vesper Beastmaster:** mientras Vesper está desplegada, las criaturas admitidas que llegan a la mano reciben Congelación. Antes del robo de cada turno, las criaturas en mano o en juego ganan permanentemente las estadísticas de la tabla. Las de la mano también cuestan 1 Ember menos durante ese combate. Cada Vesper activa aporta según su propio nivel; varias Vesper acumulan sus efectos. Las Vesper silenciadas no entrenan criaturas.
+| Path / Senda | Command cooldown / Recarga de Orden |
+|---|---:|
+| Beastmaster I | 4 turns / turnos |
+| Beastmaster II | 3 turns / turnos |
+| Beastmaster III | 2 turns / turnos |
 
-Deployed creatures immediately gain attack, maximum health and the same amount of current health. The stat bonuses survive into later battles. The Ember discount resets between battles, never reduces the cost below zero, and applies only to cards in hand at the start of the turn. The draw pile and cemetery receive no training. Frozen is not required for training. The initial Troll choice is unchanged; Vesper retrieves that same Troll on Summon if it is in hand or the draw pile. The Troll is not summoned for free.
+**Vesper Beastmaster:** obtén un trol domesticado. Mientras Vesper está desplegada, las criaturas admitidas que llegan a la mano reciben Congelación. Al comenzar cada turno, las cartas admitidas que ya están en mano cuestan 1 Ember menos durante ese combate. Cada Vesper activa aporta un descuento; las Vesper silenciadas no domestican ni descuentan criaturas.
 
-Las criaturas desplegadas ganan de inmediato ataque, vida máxima y la misma cantidad de vida actual. Las estadísticas se conservan durante toda la partida. El descuento se reinicia entre combates, nunca baja el coste de cero y solo afecta a las cartas en mano al comenzar el turno. La baraja y el cementerio no reciben entrenamiento. No hace falta conservar Congelación para entrenarse. Se mantiene la elección inicial del trol; al invocar a Vesper, recupera ese mismo trol si está en mano o en la baraja. Ya no lo invoca gratis.
+**Orden:** elige una criatura aliada domesticada en cualquier piso. Ataca inmediatamente a los enemigos de su propio piso, con sus rasgos y efectos habituales de ataque. La habilidad está lista al entrar Vesper en juego y no añade Aturdimiento.
+
+There is no ongoing stat growth. The Ember discount resets between battles and applies only to cards in hand at the start of the turn. Frozen is not required for the discount. The initial Troll choice is unchanged; Vesper retrieves that same Troll on Summon if it is in hand or the draw pile. The Troll is not summoned for free.
+
+No hay crecimiento de atributos por turno. El descuento se reinicia entre combates y solo afecta a las cartas en mano al comenzar el turno, tengan o no Congelación. Se mantiene la elección inicial del trol; al invocar a Vesper, recupera ese mismo trol si está en mano o en la baraja. El trol se juega pagando su coste.
 
 ### Complete list / Lista completa
 
 Only these **29 individual cards** qualify; belonging to their subtype does not qualify other cards. Pathogens is an optional mod: its three creatures qualify when that clan is installed. This list will expand with selected creatures from other mod clans.
 
-Solo estas **26 cartas concretas** cuentan; no se incluye automáticamente el resto de sus subtipos. Pathogens es opcional: sus tres criaturas cuentan si el clan está instalado. La lista se ampliará con criaturas seleccionadas de otros clanes mods.
+Solo estas **29 cartas concretas** cuentan; no se incluye automáticamente el resto de sus subtipos. Pathogens es opcional: sus tres criaturas cuentan si el clan está instalado. La lista se ampliará con criaturas seleccionadas de otros clanes mods.
 
 | Clan | Creatures / Criaturas |
 |---|---|
@@ -186,10 +190,10 @@ Solo estas **26 cartas concretas** cuentan; no se incluye automáticamente el re
 
 ### Beastmaster markers / Marcas de Beastmaster
 
-- **Tamable**: gray paw on eligible creature cards in hand. Vesper can freeze and train them.
-- **Tamed**: gold paw on deployed creatures that have received permanent training at least once. It grants no additional bonus and cannot be propagated.
-- **Domesticable**: huella gris en las criaturas elegibles en la mano. Vesper puede congelarlas y entrenarlas.
-- **Domesticada**: huella dorada en las criaturas desplegadas que ya han recibido entrenamiento permanente. No concede otro bono ni se puede propagar.
+- **Tamable**: gray paw on eligible creature cards in hand. Vesper can freeze and tame them.
+- **Tamed**: gold paw on creatures tamed by Vesper. They can receive Command while deployed. The marker cannot be propagated.
+- **Domesticable**: huella gris en las criaturas elegibles en la mano. Vesper puede congelarlas y domesticarlas.
+- **Domesticada**: huella dorada en las criaturas domesticadas por Vesper. En juego pueden recibir una Orden. La marca no se puede propagar.
 
 <!-- 2026-10-03-2352||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||documenta huellas y condición real de entrenamiento -->
 
@@ -198,3 +202,7 @@ Solo estas **26 cartas concretas** cuentan; no se incluye automáticamente el re
 <!-- 2026-10-08-1848||codex-freecompany-fx||README.md||lista completa Beastmaster añade tres criaturas SuccClan y total 29 -->
 
 <!-- 2026-10-08-1937||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||actualiza reglas Beastmaster: entrenamiento en mano o juego, persistencia y bono de vida actual; descuento solo mano -->
+
+<!-- 2026-10-08-1948||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||documenta Command seleccionable, cooldown 4/3/2, Frozen y descuento sin crecimiento de atributos -->
+
+<!-- 2026-10-08-1950||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||conserva saltos CRLF existentes de README -->

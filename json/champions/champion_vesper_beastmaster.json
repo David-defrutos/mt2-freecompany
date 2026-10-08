@@ -1,6 +1,121 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-  "cards": [],
+  "cards": [
+    {
+      "id": "VesperCommand1",
+      "names": {
+        "english": "Command I",
+        "spanish": "Orden de ataque I",
+        "french": "Ordre d’attaque I",
+        "german": "Angriffsbefehl I",
+        "russian": "Приказ атаковать I",
+        "portuguese": "Ordem de ataque I",
+        "chinese": "攻击指令 I",
+        "chinese_traditional": "攻擊指令 I",
+        "korean": "공격 명령 I",
+        "japanese": "攻撃命令 I"
+      },
+      "descriptions": {
+        "english": "A Tamed creature of your choice attacks immediately on its own floor.",
+        "spanish": "Una criatura domesticada de tu elección ataca inmediatamente en su propio piso.",
+        "french": "Une créature apprivoisée de votre choix attaque immédiatement à son étage.",
+        "german": "Eine gezähmte Kreatur deiner Wahl greift sofort auf ihrem eigenen Stockwerk an.",
+        "russian": "Выбранное приручённое существо немедленно атакует на своём этаже.",
+        "portuguese": "Uma criatura domada à sua escolha ataca imediatamente no próprio andar.",
+        "chinese": "选择一个已驯服生物，使其在自身楼层立即攻击。",
+        "chinese_traditional": "選擇一個已馴服生物，使其在自身樓層立即攻擊。",
+        "korean": "선택한 길들인 생물이 자신의 층에서 즉시 공격.",
+        "japanese": "選んだ手なずけたクリーチャーが自身の階で即座に攻撃。"
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "initial_cooldown": 0,
+      "cooldown": 4,
+      "targetless": false,
+      "targets_room": true,
+      "can_ability_target_other_floors": true,
+      "card_type": "spell",
+      "effects": [
+        "@BeastmasterCommand"
+      ]
+    },
+    {
+      "id": "VesperCommand2",
+      "names": {
+        "english": "Command II",
+        "spanish": "Orden de ataque II",
+        "french": "Ordre d’attaque II",
+        "german": "Angriffsbefehl II",
+        "russian": "Приказ атаковать II",
+        "portuguese": "Ordem de ataque II",
+        "chinese": "攻击指令 II",
+        "chinese_traditional": "攻擊指令 II",
+        "korean": "공격 명령 II",
+        "japanese": "攻撃命令 II"
+      },
+      "descriptions": {
+        "english": "A Tamed creature of your choice attacks immediately on its own floor.",
+        "spanish": "Una criatura domesticada de tu elección ataca inmediatamente en su propio piso.",
+        "french": "Une créature apprivoisée de votre choix attaque immédiatement à son étage.",
+        "german": "Eine gezähmte Kreatur deiner Wahl greift sofort auf ihrem eigenen Stockwerk an.",
+        "russian": "Выбранное приручённое существо немедленно атакует на своём этаже.",
+        "portuguese": "Uma criatura domada à sua escolha ataca imediatamente no próprio andar.",
+        "chinese": "选择一个已驯服生物，使其在自身楼层立即攻击。",
+        "chinese_traditional": "選擇一個已馴服生物，使其在自身樓層立即攻擊。",
+        "korean": "선택한 길들인 생물이 자신의 층에서 즉시 공격.",
+        "japanese": "選んだ手なずけたクリーチャーが自身の階で即座に攻撃。"
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "initial_cooldown": 0,
+      "cooldown": 3,
+      "targetless": false,
+      "targets_room": true,
+      "can_ability_target_other_floors": true,
+      "card_type": "spell",
+      "effects": [
+        "@BeastmasterCommand"
+      ]
+    },
+    {
+      "id": "VesperCommand3",
+      "names": {
+        "english": "Command III",
+        "spanish": "Orden de ataque III",
+        "french": "Ordre d’attaque III",
+        "german": "Angriffsbefehl III",
+        "russian": "Приказ атаковать III",
+        "portuguese": "Ordem de ataque III",
+        "chinese": "攻击指令 III",
+        "chinese_traditional": "攻擊指令 III",
+        "korean": "공격 명령 III",
+        "japanese": "攻撃命令 III"
+      },
+      "descriptions": {
+        "english": "A Tamed creature of your choice attacks immediately on its own floor.",
+        "spanish": "Una criatura domesticada de tu elección ataca inmediatamente en su propio piso.",
+        "french": "Une créature apprivoisée de votre choix attaque immédiatement à son étage.",
+        "german": "Eine gezähmte Kreatur deiner Wahl greift sofort auf ihrem eigenen Stockwerk an.",
+        "russian": "Выбранное приручённое существо немедленно атакует на своём этаже.",
+        "portuguese": "Uma criatura domada à sua escolha ataca imediatamente no próprio andar.",
+        "chinese": "选择一个已驯服生物，使其在自身楼层立即攻击。",
+        "chinese_traditional": "選擇一個已馴服生物，使其在自身樓層立即攻擊。",
+        "korean": "선택한 길들인 생물이 자신의 층에서 즉시 공격.",
+        "japanese": "選んだ手なずけたクリーチャーが自身の階で即座に攻撃。"
+      },
+      "card_art": "@Vesper",
+      "is_an_ability": true,
+      "initial_cooldown": 0,
+      "cooldown": 2,
+      "targetless": false,
+      "targets_room": true,
+      "can_ability_target_other_floors": true,
+      "card_type": "spell",
+      "effects": [
+        "@BeastmasterCommand"
+      ]
+    }
+  ],
   "character_triggers": [
     {
       "id": "BeastmasterGrantTrigger",
@@ -38,6 +153,13 @@
       "name": "@CardEffectBeastmasterRecall",
       "target_mode": "self",
       "target_team": "monsters"
+    },
+    {
+      "id": "BeastmasterCommand",
+      "name": "@CardEffectBeastmasterCommand",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_bool2": false
     }
   ],
   "upgrade_masks": [],
@@ -57,21 +179,22 @@
         "japanese": "獣使い"
       },
       "descriptions": {
-        "english": "Get a tamed Troll. Each turn, creatures in hand or in play permanently gain <b>+0/+1</b>. Cards in hand cost 1 less [ember] this battle.",
-        "spanish": "Obtén un trol domesticado. Cada turno, las criaturas en mano o en juego ganan <b>+0/+1</b> permanentemente. Las de la mano cuestan 1 [ember] menos este combate.",
-        "french": "Obtenez un Troll apprivoisé. Chaque tour, les créatures en main ou en jeu gagnent définitivement <b>+0/+1</b>. Celles en main coûtent 1 [ember] de moins pour ce combat.",
-        "german": "Erhalte einen gezähmten Troll. Jede Runde erhalten Kreaturen auf der Hand oder im Spiel dauerhaft <b>+0/+1</b>. Karten auf der Hand kosten in diesem Kampf 1 [ember] weniger.",
-        "russian": "Получите приручённого тролля. Каждый ход существа в руке или в игре навсегда получают <b>+0/+1</b>. Карты в руке стоят на 1 [ember] меньше до конца боя.",
-        "portuguese": "Obtenha um Troll domado. A cada turno, criaturas na mão ou em jogo ganham permanentemente <b>+0/+1</b>. As cartas na mão custam 1 [ember] a menos neste combate.",
-        "chinese": "获得一只驯服的巨魔。每回合，手牌或场上的生物永久获得<b>+0/+1</b>。手牌中的生物在本场战斗中费用减少1 [ember]。",
-        "chinese_traditional": "獲得一隻馴服的巨魔。每回合，手牌或場上的生物永久獲得<b>+0/+1</b>。手牌中的生物在本場戰鬥中費用減少1 [ember]。",
-        "korean": "길들인 트롤 획득. 매 턴 손이나 전장에 있는 생물은 영구적으로 <b>+0/+1</b>을 얻음. 손의 생물은 이번 전투 동안 비용이 1 [ember] 감소.",
-        "japanese": "手なずけたトロールを得る。毎ターン、手札か場のクリーチャーは永続的に<b>+0/+1</b>を得る。手札のクリーチャーはこのバトル中のコストが1 [ember]減る。"
+        "english": "Get a tamed Troll. Creatures entering hand gain [freeze]. Each turn, creatures in hand cost 1 less [ember] this battle. Command a Tamed creature to attack.",
+        "spanish": "Obtén un trol domesticado. Las criaturas que llegan a la mano ganan [freeze]. Cada turno cuestan 1 [ember] menos este combate. Ordena atacar a una criatura domesticada.",
+        "french": "Obtenez un Troll apprivoisé. Les créatures ajoutées en main gagnent [freeze] et coûtent 1 [ember] de moins chaque tour pour ce combat. Ordonnez à une créature apprivoisée d’attaquer.",
+        "german": "Erhalte einen gezähmten Troll. Kreaturen erhalten auf der Hand [freeze] und kosten in diesem Kampf jede Runde 1 [ember] weniger. Befiehl einer gezähmten Kreatur anzugreifen.",
+        "russian": "Получите приручённого тролля. Существа в руке получают [freeze] и каждый ход стоят на 1 [ember] меньше до конца боя. Прикажите приручённому существу атаковать.",
+        "portuguese": "Obtenha um Troll domado. Criaturas na mão ganham [freeze] e custam 1 [ember] a menos a cada turno neste combate. Ordene que uma criatura domada ataque.",
+        "chinese": "获得驯服的巨魔。进入手牌的生物获得[freeze]，每回合在本场战斗中费用减少1 [ember]。命令已驯服生物攻击。",
+        "chinese_traditional": "獲得馴服的巨魔。進入手牌的生物獲得[freeze]，每回合在本場戰鬥中費用減少1 [ember]。命令已馴服生物攻擊。",
+        "korean": "길들인 트롤 획득. 손의 생물은 [freeze]을 얻고 이번 전투 동안 매 턴 비용이 1 [ember] 감소. 길들인 생물에게 공격 명령.",
+        "japanese": "手なずけたトロールを得る。手札のクリーチャーは[freeze]を得て、このバトル中は毎ターンコストが1 [ember]減る。手なずけたクリーチャーに攻撃を命じる。"
       },
       "bonus_hp": 6,
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
-      ]
+      ],
+      "ability_upgrade": "@VesperCommand1"
     },
     {
       "id": "upg_Beastmaster2",
@@ -88,16 +211,16 @@
         "japanese": "獣使い II"
       },
       "descriptions": {
-        "english": "Get a tamed Troll. Each turn, creatures in hand or in play permanently gain <b>+1/+1</b>. Cards in hand cost 1 less [ember] this battle.",
-        "spanish": "Obtén un trol domesticado. Cada turno, las criaturas en mano o en juego ganan <b>+1/+1</b> permanentemente. Las de la mano cuestan 1 [ember] menos este combate.",
-        "french": "Obtenez un Troll apprivoisé. Chaque tour, les créatures en main ou en jeu gagnent définitivement <b>+1/+1</b>. Celles en main coûtent 1 [ember] de moins pour ce combat.",
-        "german": "Erhalte einen gezähmten Troll. Jede Runde erhalten Kreaturen auf der Hand oder im Spiel dauerhaft <b>+1/+1</b>. Karten auf der Hand kosten in diesem Kampf 1 [ember] weniger.",
-        "russian": "Получите приручённого тролля. Каждый ход существа в руке или в игре навсегда получают <b>+1/+1</b>. Карты в руке стоят на 1 [ember] меньше до конца боя.",
-        "portuguese": "Obtenha um Troll domado. A cada turno, criaturas na mão ou em jogo ganham permanentemente <b>+1/+1</b>. As cartas na mão custam 1 [ember] a menos neste combate.",
-        "chinese": "获得一只驯服的巨魔。每回合，手牌或场上的生物永久获得<b>+1/+1</b>。手牌中的生物在本场战斗中费用减少1 [ember]。",
-        "chinese_traditional": "獲得一隻馴服的巨魔。每回合，手牌或場上的生物永久獲得<b>+1/+1</b>。手牌中的生物在本場戰鬥中費用減少1 [ember]。",
-        "korean": "길들인 트롤 획득. 매 턴 손이나 전장에 있는 생물은 영구적으로 <b>+1/+1</b>을 얻음. 손의 생물은 이번 전투 동안 비용이 1 [ember] 감소.",
-        "japanese": "手なずけたトロールを得る。毎ターン、手札か場のクリーチャーは永続的に<b>+1/+1</b>を得る。手札のクリーチャーはこのバトル中のコストが1 [ember]減る。"
+        "english": "Get a tamed Troll. Creatures entering hand gain [freeze]. Each turn, creatures in hand cost 1 less [ember] this battle. Command a Tamed creature to attack.",
+        "spanish": "Obtén un trol domesticado. Las criaturas que llegan a la mano ganan [freeze]. Cada turno cuestan 1 [ember] menos este combate. Ordena atacar a una criatura domesticada.",
+        "french": "Obtenez un Troll apprivoisé. Les créatures ajoutées en main gagnent [freeze] et coûtent 1 [ember] de moins chaque tour pour ce combat. Ordonnez à une créature apprivoisée d’attaquer.",
+        "german": "Erhalte einen gezähmten Troll. Kreaturen erhalten auf der Hand [freeze] und kosten in diesem Kampf jede Runde 1 [ember] weniger. Befiehl einer gezähmten Kreatur anzugreifen.",
+        "russian": "Получите приручённого тролля. Существа в руке получают [freeze] и каждый ход стоят на 1 [ember] меньше до конца боя. Прикажите приручённому существу атаковать.",
+        "portuguese": "Obtenha um Troll domado. Criaturas na mão ganham [freeze] e custam 1 [ember] a menos a cada turno neste combate. Ordene que uma criatura domada ataque.",
+        "chinese": "获得驯服的巨魔。进入手牌的生物获得[freeze]，每回合在本场战斗中费用减少1 [ember]。命令已驯服生物攻击。",
+        "chinese_traditional": "獲得馴服的巨魔。進入手牌的生物獲得[freeze]，每回合在本場戰鬥中費用減少1 [ember]。命令已馴服生物攻擊。",
+        "korean": "길들인 트롤 획득. 손의 생물은 [freeze]을 얻고 이번 전투 동안 매 턴 비용이 1 [ember] 감소. 길들인 생물에게 공격 명령.",
+        "japanese": "手なずけたトロールを得る。手札のクリーチャーは[freeze]を得て、このバトル中は毎ターンコストが1 [ember]減る。手なずけたクリーチャーに攻撃を命じる。"
       },
       "bonus_hp": 12,
       "bonus_damage": 4,
@@ -106,7 +229,8 @@
       ],
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
-      ]
+      ],
+      "ability_upgrade": "@VesperCommand2"
     },
     {
       "id": "upg_Beastmaster3",
@@ -123,16 +247,16 @@
         "japanese": "獣使い III"
       },
       "descriptions": {
-        "english": "Get a tamed Troll. Each turn, creatures in hand or in play permanently gain <b>+1/+2</b>. Cards in hand cost 1 less [ember] this battle.",
-        "spanish": "Obtén un trol domesticado. Cada turno, las criaturas en mano o en juego ganan <b>+1/+2</b> permanentemente. Las de la mano cuestan 1 [ember] menos este combate.",
-        "french": "Obtenez un Troll apprivoisé. Chaque tour, les créatures en main ou en jeu gagnent définitivement <b>+1/+2</b>. Celles en main coûtent 1 [ember] de moins pour ce combat.",
-        "german": "Erhalte einen gezähmten Troll. Jede Runde erhalten Kreaturen auf der Hand oder im Spiel dauerhaft <b>+1/+2</b>. Karten auf der Hand kosten in diesem Kampf 1 [ember] weniger.",
-        "russian": "Получите приручённого тролля. Каждый ход существа в руке или в игре навсегда получают <b>+1/+2</b>. Карты в руке стоят на 1 [ember] меньше до конца боя.",
-        "portuguese": "Obtenha um Troll domado. A cada turno, criaturas na mão ou em jogo ganham permanentemente <b>+1/+2</b>. As cartas na mão custam 1 [ember] a menos neste combate.",
-        "chinese": "获得一只驯服的巨魔。每回合，手牌或场上的生物永久获得<b>+1/+2</b>。手牌中的生物在本场战斗中费用减少1 [ember]。",
-        "chinese_traditional": "獲得一隻馴服的巨魔。每回合，手牌或場上的生物永久獲得<b>+1/+2</b>。手牌中的生物在本場戰鬥中費用減少1 [ember]。",
-        "korean": "길들인 트롤 획득. 매 턴 손이나 전장에 있는 생물은 영구적으로 <b>+1/+2</b>을 얻음. 손의 생물은 이번 전투 동안 비용이 1 [ember] 감소.",
-        "japanese": "手なずけたトロールを得る。毎ターン、手札か場のクリーチャーは永続的に<b>+1/+2</b>を得る。手札のクリーチャーはこのバトル中のコストが1 [ember]減る。"
+        "english": "Get a tamed Troll. Creatures entering hand gain [freeze]. Each turn, creatures in hand cost 1 less [ember] this battle. Command a Tamed creature to attack.",
+        "spanish": "Obtén un trol domesticado. Las criaturas que llegan a la mano ganan [freeze]. Cada turno cuestan 1 [ember] menos este combate. Ordena atacar a una criatura domesticada.",
+        "french": "Obtenez un Troll apprivoisé. Les créatures ajoutées en main gagnent [freeze] et coûtent 1 [ember] de moins chaque tour pour ce combat. Ordonnez à une créature apprivoisée d’attaquer.",
+        "german": "Erhalte einen gezähmten Troll. Kreaturen erhalten auf der Hand [freeze] und kosten in diesem Kampf jede Runde 1 [ember] weniger. Befiehl einer gezähmten Kreatur anzugreifen.",
+        "russian": "Получите приручённого тролля. Существа в руке получают [freeze] и каждый ход стоят на 1 [ember] меньше до конца боя. Прикажите приручённому существу атаковать.",
+        "portuguese": "Obtenha um Troll domado. Criaturas na mão ganham [freeze] e custam 1 [ember] a menos a cada turno neste combate. Ordene que uma criatura domada ataque.",
+        "chinese": "获得驯服的巨魔。进入手牌的生物获得[freeze]，每回合在本场战斗中费用减少1 [ember]。命令已驯服生物攻击。",
+        "chinese_traditional": "獲得馴服的巨魔。進入手牌的生物獲得[freeze]，每回合在本場戰鬥中費用減少1 [ember]。命令已馴服生物攻擊。",
+        "korean": "길들인 트롤 획득. 손의 생물은 [freeze]을 얻고 이번 전투 동안 매 턴 비용이 1 [ember] 감소. 길들인 생물에게 공격 명령.",
+        "japanese": "手なずけたトロールを得る。手札のクリーチャーは[freeze]を得て、このバトル中は毎ターンコストが1 [ember]減る。手なずけたクリーチャーに攻撃を命じる。"
       },
       "bonus_hp": 18,
       "bonus_damage": 8,
@@ -141,7 +265,8 @@
       ],
       "trigger_upgrades": [
         "@BeastmasterGrantTrigger"
-      ]
+      ],
+      "ability_upgrade": "@VesperCommand3"
     },
     {
       "id": "TrollOffer",
@@ -177,16 +302,16 @@
         "japanese": "手なずけ可能"
       },
       "descriptions": {
-        "english": "Vesper's Beastmaster path can freeze and train this creature in your hand.",
-        "french": "La voie Maître des bêtes de Vesper peut geler et entraîner cette créature dans votre main.",
-        "german": "Vespers Bestienmeister-Pfad kann diese Kreatur auf deiner Hand einfrieren und trainieren.",
-        "russian": "Путь Веспер «Повелитель зверей» может замораживать и тренировать это существо в вашей руке.",
-        "portuguese": "O caminho Mestre das Feras de Vesper pode congelar e treinar esta criatura na sua mão.",
-        "chinese": "维斯珀的驯兽师路线可以冻结并训练手牌中的此生物。",
-        "spanish": "La senda Beastmaster de Vesper puede congelar y entrenar esta criatura en tu mano.",
-        "chinese_traditional": "維斯珀的馴獸師路線可以凍結並訓練手牌中的此生物。",
-        "korean": "베스퍼의 야수 조련사 경로는 손에 있는 이 생물을 동결하고 훈련할 수 있습니다.",
-        "japanese": "ヴェスパーのビーストマスターの道は、手札のこの生物を凍結し訓練できる。 "
+        "english": "Vesper can tame this creature. Once deployed and Tamed, it can receive Command.",
+        "french": "Vesper peut apprivoiser cette créature. Une fois déployée et apprivoisée, elle peut recevoir un ordre.",
+        "german": "Vesper kann diese Kreatur zähmen. Ausgespielt und gezähmt kann sie Befehle erhalten.",
+        "russian": "Веспер может приручить это существо. После призыва и приручения оно может получать приказы.",
+        "portuguese": "Vesper pode domar esta criatura. Em jogo e domada, pode receber uma ordem.",
+        "chinese": "维斯珀可以驯服此生物。部署并驯服后可接受指令。",
+        "spanish": "Vesper puede domesticar esta criatura. En juego y domesticada, puede recibir una orden.",
+        "chinese_traditional": "維斯珀可以馴服此生物。部署並馴服後可接受指令。",
+        "korean": "베스퍼가 길들일 수 있는 생물. 배치 후 길들여지면 명령을 받을 수 있음.",
+        "japanese": "ヴェスパーが手なずけられるクリーチャー。配置して手なずけると命令を受けられる。"
       },
       "icon": "@TamablePaw",
       "hide_icon_on_card": false
@@ -419,28 +544,28 @@
         "japanese": "手なずけ済み"
       },
       "card_tooltips": {
-        "english": "This creature has received permanent training from Vesper. Visual marker only.",
-        "french": "Cette créature a reçu un entraînement permanent de Vesper. Marqueur visuel uniquement.",
-        "german": "Diese Kreatur wurde von Vesper dauerhaft trainiert. Rein visuelle Markierung.",
-        "russian": "Это существо получило постоянную тренировку от Веспер. Только визуальная отметка.",
-        "portuguese": "Esta criatura recebeu treinamento permanente de Vesper. Apenas um marcador visual.",
-        "chinese": "此生物已接受维斯珀的永久训练。仅为视觉标记。",
-        "spanish": "Esta criatura ha recibido entrenamiento permanente de Vesper. Marca únicamente visual.",
-        "chinese_traditional": "此生物已接受維斯珀的永久訓練。僅為視覺標記。",
-        "korean": "이 생물은 베스퍼에게 영구 훈련을 받았습니다. 시각적 표시일 뿐입니다.",
-        "japanese": "この生物はヴェスパーから永続的な訓練を受けた。見た目のみの印。 "
+        "english": "Tamed by Vesper. Can receive Command to attack immediately.",
+        "spanish": "Domesticada por Vesper. Puede recibir una orden para atacar inmediatamente.",
+        "french": "Apprivoisée par Vesper. Peut recevoir l’ordre d’attaquer immédiatement.",
+        "german": "Von Vesper gezähmt. Kann einen Befehl zum sofortigen Angriff erhalten.",
+        "russian": "Приручено Веспер. Может получить приказ немедленно атаковать.",
+        "portuguese": "Domada por Vesper. Pode receber uma ordem para atacar imediatamente.",
+        "chinese": "已被维斯珀驯服。可接受指令立即攻击。",
+        "chinese_traditional": "已被維斯珀馴服。可接受指令立即攻擊。",
+        "korean": "베스퍼에게 길들여짐. 명령을 받아 즉시 공격할 수 있음.",
+        "japanese": "ヴェスパーに手なずけられた。命令を受けて即座に攻撃できる。"
       },
       "character_tooltips": {
-        "english": "This creature has received permanent training from Vesper. Visual marker only.",
-        "french": "Cette créature a reçu un entraînement permanent de Vesper. Marqueur visuel uniquement.",
-        "german": "Diese Kreatur wurde von Vesper dauerhaft trainiert. Rein visuelle Markierung.",
-        "russian": "Это существо получило постоянную тренировку от Веспер. Только визуальная отметка.",
-        "portuguese": "Esta criatura recebeu treinamento permanente de Vesper. Apenas um marcador visual.",
-        "chinese": "此生物已接受维斯珀的永久训练。仅为视觉标记。",
-        "spanish": "Esta criatura ha recibido entrenamiento permanente de Vesper. Marca únicamente visual.",
-        "chinese_traditional": "此生物已接受維斯珀的永久訓練。僅為視覺標記。",
-        "korean": "이 생물은 베스퍼에게 영구 훈련을 받았습니다. 시각적 표시일 뿐입니다.",
-        "japanese": "この生物はヴェスパーから永続的な訓練を受けた。見た目のみの印。 "
+        "english": "Tamed by Vesper. Can receive Command to attack immediately.",
+        "spanish": "Domesticada por Vesper. Puede recibir una orden para atacar inmediatamente.",
+        "french": "Apprivoisée par Vesper. Peut recevoir l’ordre d’attaquer immédiatement.",
+        "german": "Von Vesper gezähmt. Kann einen Befehl zum sofortigen Angriff erhalten.",
+        "russian": "Приручено Веспер. Может получить приказ немедленно атаковать.",
+        "portuguese": "Domada por Vesper. Pode receber uma ordem para atacar imediatamente.",
+        "chinese": "已被维斯珀驯服。可接受指令立即攻击。",
+        "chinese_traditional": "已被維斯珀馴服。可接受指令立即攻擊。",
+        "korean": "베스퍼에게 길들여짐. 명령을 받아 즉시 공격할 수 있음.",
+        "japanese": "ヴェスパーに手なずけられた。命令を受けて即座に攻撃できる。"
       },
       "replacement_texts": {
         "english": "Tamed",

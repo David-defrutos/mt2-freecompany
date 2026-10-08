@@ -79,7 +79,9 @@ internal static class BeastmasterTamedSpawnPatch
     private static IEnumerator AfterSpawn(CharacterState unit, IEnumerator original)
     {
         while (original.MoveNext()) yield return original.Current;
-        BeastmasterMarkers.MarkTrained(unit);
+        var all = AllGameManagers.Instance;
+        if (all != null && all.AreMainSceneOnlyManagersInitialized())
+            yield return BeastmasterTraining.TrainDeployed(all.GetCoreManagers());
     }
 }
 
@@ -135,3 +137,5 @@ internal static class BeastmasterChampionTooltipPatch
 }
 
 // 2026-10-04-0044||codex-freecompany-fx||src\code\BeastmasterMarkers.cs||muestra reglas localizadas de Beastmaster según senda real en tooltip de Vesper, sin añadir triggers
+
+// 2026-10-08-1944||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\BeastmasterMarkers.cs||marca criaturas elegibles desplegadas al invocar Vesper o nuevas bestias, sin entrenamiento estadístico
