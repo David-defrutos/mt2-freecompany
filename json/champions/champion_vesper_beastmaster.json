@@ -57,16 +57,16 @@
         "japanese": "獣使い"
       },
       "descriptions": {
-        "english": "Creatures entering your hand gain [freeze]. Start of turn: creatures in hand cost 1 less [ember] this battle and permanently gain <b>+0/+1</b>.",
-        "spanish": "Las criaturas que llegan a tu mano ganan [freeze]. Inicio del turno: las criaturas en mano cuestan 1 [ember] menos este combate y ganan <b>+0/+1</b> permanentemente.",
-        "french": "Les créatures ajoutées à votre main gagnent [freeze]. Début du tour : les créatures en main coûtent 1 [ember] de moins pour ce combat et gagnent définitivement <b>+0/+1</b>.",
-        "german": "Kreaturen, die auf deine Hand gelangen, erhalten [freeze]. Zu Beginn des Zuges kosten Kreaturen auf der Hand in diesem Kampf 1 [ember] weniger und erhalten dauerhaft <b>+0/+1</b>.",
-        "russian": "Существа, попавшие в руку, получают [freeze]. В начале хода существа в руке стоят на 1 [ember] меньше до конца боя и навсегда получают <b>+0/+1</b>.",
-        "portuguese": "Criaturas que chegam à sua mão ganham [freeze]. No início do turno, criaturas na mão custam 1 [ember] a menos neste combate e ganham <b>+0/+1</b> permanentemente.",
-        "chinese": "进入手牌的生物获得[freeze]。回合开始时：手牌中的生物在本场战斗中费用减少1 [ember]，并永久获得<b>+0/+1</b>。",
-        "chinese_traditional": "進入手牌的生物獲得[freeze]。回合開始時：手牌中的生物在本場戰鬥中費用減少1 [ember]，並永久獲得<b>+0/+1</b>。",
-        "korean": "손에 들어오는 생물은 [freeze]을 얻습니다. 턴 시작 시 손의 생물은 이번 전투 동안 비용이 1 [ember] 감소하고 영구적으로 <b>+0/+1</b>을 얻습니다.",
-        "japanese": "手札に入るクリーチャーは[freeze]を得る。ターン開始時、手札のクリーチャーはこのバトル中のコストが1 [ember]減り、永続的に<b>+0/+1</b>を得る。"
+        "english": "Get a tamed Troll. Each turn, creatures in hand permanently gain <b>+0/+1</b> and cost 1 less [ember] this battle.",
+        "spanish": "Obtén un trol domesticado. Cada turno, las criaturas en mano ganan <b>+0/+1</b> permanentemente y cuestan 1 [ember] menos este combate.",
+        "french": "Obtenez un Troll apprivoisé. Chaque tour, les créatures en main gagnent définitivement <b>+0/+1</b> et coûtent 1 [ember] de moins pour ce combat.",
+        "german": "Erhalte einen gezähmten Troll. Jede Runde erhalten Kreaturen auf der Hand dauerhaft <b>+0/+1</b> und kosten in diesem Kampf 1 [ember] weniger.",
+        "russian": "Получите приручённого тролля. Каждый ход существа в руке навсегда получают <b>+0/+1</b> и стоят на 1 [ember] меньше до конца боя.",
+        "portuguese": "Obtenha um Troll domado. A cada turno, criaturas na mão ganham permanentemente <b>+0/+1</b> e custam 1 [ember] a menos neste combate.",
+        "chinese": "获得一只驯服的巨魔。每回合，手牌中的生物永久获得<b>+0/+1</b>，且在本场战斗中费用减少1 [ember]。",
+        "chinese_traditional": "獲得一隻馴服的巨魔。每回合，手牌中的生物永久獲得<b>+0/+1</b>，且在本場戰鬥中費用減少1 [ember]。",
+        "korean": "길들인 트롤 획득. 매 턴 손의 생물은 영구적으로 <b>+0/+1</b>을 얻고 이번 전투 동안 비용이 1 [ember] 감소.",
+        "japanese": "手なずけたトロールを得る。毎ターン、手札のクリーチャーは永続的に<b>+0/+1</b>を得て、このバトル中のコストが1 [ember]減る。"
       },
       "bonus_hp": 6,
       "trigger_upgrades": [
@@ -88,16 +88,16 @@
         "japanese": "獣使い II"
       },
       "descriptions": {
-        "english": "Creatures entering your hand gain [freeze]. Start of turn: creatures in hand cost 1 less [ember] this battle and permanently gain <b>+1/+1</b>.",
-        "spanish": "Las criaturas que llegan a tu mano ganan [freeze]. Inicio del turno: las criaturas en mano cuestan 1 [ember] menos este combate y ganan <b>+1/+1</b> permanentemente.",
-        "french": "Les créatures ajoutées à votre main gagnent [freeze]. Début du tour : les créatures en main coûtent 1 [ember] de moins pour ce combat et gagnent définitivement <b>+1/+1</b>.",
-        "german": "Kreaturen, die auf deine Hand gelangen, erhalten [freeze]. Zu Beginn des Zuges kosten Kreaturen auf der Hand in diesem Kampf 1 [ember] weniger und erhalten dauerhaft <b>+1/+1</b>.",
-        "russian": "Существа, попавшие в руку, получают [freeze]. В начале хода существа в руке стоят на 1 [ember] меньше до конца боя и навсегда получают <b>+1/+1</b>.",
-        "portuguese": "Criaturas que chegam à sua mão ganham [freeze]. No início do turno, criaturas na mão custam 1 [ember] a menos neste combate e ganham <b>+1/+1</b> permanentemente.",
-        "chinese": "进入手牌的生物获得[freeze]。回合开始时：手牌中的生物在本场战斗中费用减少1 [ember]，并永久获得<b>+1/+1</b>。",
-        "chinese_traditional": "進入手牌的生物獲得[freeze]。回合開始時：手牌中的生物在本場戰鬥中費用減少1 [ember]，並永久獲得<b>+1/+1</b>。",
-        "korean": "손에 들어오는 생물은 [freeze]을 얻습니다. 턴 시작 시 손의 생물은 이번 전투 동안 비용이 1 [ember] 감소하고 영구적으로 <b>+1/+1</b>을 얻습니다.",
-        "japanese": "手札に入るクリーチャーは[freeze]を得る。ターン開始時、手札のクリーチャーはこのバトル中のコストが1 [ember]減り、永続的に<b>+1/+1</b>を得る。"
+        "english": "Get a tamed Troll. Each turn, creatures in hand permanently gain <b>+1/+1</b> and cost 1 less [ember] this battle.",
+        "spanish": "Obtén un trol domesticado. Cada turno, las criaturas en mano ganan <b>+1/+1</b> permanentemente y cuestan 1 [ember] menos este combate.",
+        "french": "Obtenez un Troll apprivoisé. Chaque tour, les créatures en main gagnent définitivement <b>+1/+1</b> et coûtent 1 [ember] de moins pour ce combat.",
+        "german": "Erhalte einen gezähmten Troll. Jede Runde erhalten Kreaturen auf der Hand dauerhaft <b>+1/+1</b> und kosten in diesem Kampf 1 [ember] weniger.",
+        "russian": "Получите приручённого тролля. Каждый ход существа в руке навсегда получают <b>+1/+1</b> и стоят на 1 [ember] меньше до конца боя.",
+        "portuguese": "Obtenha um Troll domado. A cada turno, criaturas na mão ganham permanentemente <b>+1/+1</b> e custam 1 [ember] a menos neste combate.",
+        "chinese": "获得一只驯服的巨魔。每回合，手牌中的生物永久获得<b>+1/+1</b>，且在本场战斗中费用减少1 [ember]。",
+        "chinese_traditional": "獲得一隻馴服的巨魔。每回合，手牌中的生物永久獲得<b>+1/+1</b>，且在本場戰鬥中費用減少1 [ember]。",
+        "korean": "길들인 트롤 획득. 매 턴 손의 생물은 영구적으로 <b>+1/+1</b>을 얻고 이번 전투 동안 비용이 1 [ember] 감소.",
+        "japanese": "手なずけたトロールを得る。毎ターン、手札のクリーチャーは永続的に<b>+1/+1</b>を得て、このバトル中のコストが1 [ember]減る。"
       },
       "bonus_hp": 12,
       "bonus_damage": 4,
@@ -123,16 +123,16 @@
         "japanese": "獣使い III"
       },
       "descriptions": {
-        "english": "Creatures entering your hand gain [freeze]. Start of turn: creatures in hand cost 1 less [ember] this battle and permanently gain <b>+1/+2</b>.",
-        "spanish": "Las criaturas que llegan a tu mano ganan [freeze]. Inicio del turno: las criaturas en mano cuestan 1 [ember] menos este combate y ganan <b>+1/+2</b> permanentemente.",
-        "french": "Les créatures ajoutées à votre main gagnent [freeze]. Début du tour : les créatures en main coûtent 1 [ember] de moins pour ce combat et gagnent définitivement <b>+1/+2</b>.",
-        "german": "Kreaturen, die auf deine Hand gelangen, erhalten [freeze]. Zu Beginn des Zuges kosten Kreaturen auf der Hand in diesem Kampf 1 [ember] weniger und erhalten dauerhaft <b>+1/+2</b>.",
-        "russian": "Существа, попавшие в руку, получают [freeze]. В начале хода существа в руке стоят на 1 [ember] меньше до конца боя и навсегда получают <b>+1/+2</b>.",
-        "portuguese": "Criaturas que chegam à sua mão ganham [freeze]. No início do turno, criaturas na mão custam 1 [ember] a menos neste combate e ganham <b>+1/+2</b> permanentemente.",
-        "chinese": "进入手牌的生物获得[freeze]。回合开始时：手牌中的生物在本场战斗中费用减少1 [ember]，并永久获得<b>+1/+2</b>。",
-        "chinese_traditional": "進入手牌的生物獲得[freeze]。回合開始時：手牌中的生物在本場戰鬥中費用減少1 [ember]，並永久獲得<b>+1/+2</b>。",
-        "korean": "손에 들어오는 생물은 [freeze]을 얻습니다. 턴 시작 시 손의 생물은 이번 전투 동안 비용이 1 [ember] 감소하고 영구적으로 <b>+1/+2</b>을 얻습니다.",
-        "japanese": "手札に入るクリーチャーは[freeze]を得る。ターン開始時、手札のクリーチャーはこのバトル中のコストが1 [ember]減り、永続的に<b>+1/+2</b>を得る。"
+        "english": "Get a tamed Troll. Each turn, creatures in hand permanently gain <b>+1/+2</b> and cost 1 less [ember] this battle.",
+        "spanish": "Obtén un trol domesticado. Cada turno, las criaturas en mano ganan <b>+1/+2</b> permanentemente y cuestan 1 [ember] menos este combate.",
+        "french": "Obtenez un Troll apprivoisé. Chaque tour, les créatures en main gagnent définitivement <b>+1/+2</b> et coûtent 1 [ember] de moins pour ce combat.",
+        "german": "Erhalte einen gezähmten Troll. Jede Runde erhalten Kreaturen auf der Hand dauerhaft <b>+1/+2</b> und kosten in diesem Kampf 1 [ember] weniger.",
+        "russian": "Получите приручённого тролля. Каждый ход существа в руке навсегда получают <b>+1/+2</b> и стоят на 1 [ember] меньше до конца боя.",
+        "portuguese": "Obtenha um Troll domado. A cada turno, criaturas na mão ganham permanentemente <b>+1/+2</b> e custam 1 [ember] a menos neste combate.",
+        "chinese": "获得一只驯服的巨魔。每回合，手牌中的生物永久获得<b>+1/+2</b>，且在本场战斗中费用减少1 [ember]。",
+        "chinese_traditional": "獲得一隻馴服的巨魔。每回合，手牌中的生物永久獲得<b>+1/+2</b>，且在本場戰鬥中費用減少1 [ember]。",
+        "korean": "길들인 트롤 획득. 매 턴 손의 생물은 영구적으로 <b>+1/+2</b>을 얻고 이번 전투 동안 비용이 1 [ember] 감소.",
+        "japanese": "手なずけたトロールを得る。毎ターン、手札のクリーチャーは永続的に<b>+1/+2</b>を得て、このバトル中のコストが1 [ember]減る。"
       },
       "bonus_hp": 18,
       "bonus_damage": 8,
@@ -370,6 +370,24 @@
       "name": "Borrelia Daemonium",
       "card": "SpawnBorreliaDaemonium",
       "mod": "mt2_pathogens.Plugin"
+    },
+    {
+      "clan": "SuccClan",
+      "name": "Chaos Creation",
+      "card": "SpawnChaosCreation",
+      "mod": "mt2_succclan.Plugin"
+    },
+    {
+      "clan": "SuccClan",
+      "name": "Demon Pioneer",
+      "card": "SpawnDemonPioneer",
+      "mod": "mt2_succclan.Plugin"
+    },
+    {
+      "clan": "SuccClan",
+      "name": "Oolioddroo",
+      "card": "SpawnOolioddroo",
+      "mod": "mt2_succclan.Plugin"
     }
   ],
   "status_effects": [
