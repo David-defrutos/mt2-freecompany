@@ -230,6 +230,154 @@
     {
       "id": "VesperUnitTalkV2Frame4",
       "path": "textures/VesperUnitTalkV2Frame4.png"
+    },
+    {
+      "id": "VesperUnitAttackV3Frame1",
+      "path": "textures/VesperUnitAttackV3Frame1.png"
+    },
+    {
+      "id": "VesperUnitAttackV3Frame2",
+      "path": "textures/VesperUnitAttackV3Frame2.png"
+    },
+    {
+      "id": "VesperUnitAttackV3Frame3",
+      "path": "textures/VesperUnitAttackV3Frame3.png"
+    },
+    {
+      "id": "VesperUnitAttackV3Frame4",
+      "path": "textures/VesperUnitAttackV3Frame4.png"
+    },
+    {
+      "id": "VesperUnitAttackV3Frame5",
+      "path": "textures/VesperUnitAttackV3Frame5.png"
+    },
+    {
+      "id": "VesperUnitAttackV3Frame6",
+      "path": "textures/VesperUnitAttackV3Frame6.png"
+    },
+    {
+      "id": "VesperUnitAttackV3Frame7",
+      "path": "textures/VesperUnitAttackV3Frame7.png"
+    },
+    {
+      "id": "VesperUnitAttackV3Frame8",
+      "path": "textures/VesperUnitAttackV3Frame8.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend12_25",
+      "path": "textures/VesperUnitIdleV3Blend12_25.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend12_50",
+      "path": "textures/VesperUnitIdleV3Blend12_50.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend12_75",
+      "path": "textures/VesperUnitIdleV3Blend12_75.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend23_25",
+      "path": "textures/VesperUnitIdleV3Blend23_25.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend23_50",
+      "path": "textures/VesperUnitIdleV3Blend23_50.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend23_75",
+      "path": "textures/VesperUnitIdleV3Blend23_75.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend34_25",
+      "path": "textures/VesperUnitIdleV3Blend34_25.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend34_50",
+      "path": "textures/VesperUnitIdleV3Blend34_50.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend34_75",
+      "path": "textures/VesperUnitIdleV3Blend34_75.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend45_25",
+      "path": "textures/VesperUnitIdleV3Blend45_25.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend45_50",
+      "path": "textures/VesperUnitIdleV3Blend45_50.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend45_75",
+      "path": "textures/VesperUnitIdleV3Blend45_75.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend56_25",
+      "path": "textures/VesperUnitIdleV3Blend56_25.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend56_50",
+      "path": "textures/VesperUnitIdleV3Blend56_50.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend56_75",
+      "path": "textures/VesperUnitIdleV3Blend56_75.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend67_25",
+      "path": "textures/VesperUnitIdleV3Blend67_25.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend67_50",
+      "path": "textures/VesperUnitIdleV3Blend67_50.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend67_75",
+      "path": "textures/VesperUnitIdleV3Blend67_75.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend78_25",
+      "path": "textures/VesperUnitIdleV3Blend78_25.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend78_50",
+      "path": "textures/VesperUnitIdleV3Blend78_50.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Blend78_75",
+      "path": "textures/VesperUnitIdleV3Blend78_75.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Frame1",
+      "path": "textures/VesperUnitIdleV3Frame1.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Frame2",
+      "path": "textures/VesperUnitIdleV3Frame2.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Frame3",
+      "path": "textures/VesperUnitIdleV3Frame3.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Frame4",
+      "path": "textures/VesperUnitIdleV3Frame4.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Frame5",
+      "path": "textures/VesperUnitIdleV3Frame5.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Frame6",
+      "path": "textures/VesperUnitIdleV3Frame6.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Frame7",
+      "path": "textures/VesperUnitIdleV3Frame7.png"
+    },
+    {
+      "id": "VesperUnitIdleV3Frame8",
+      "path": "textures/VesperUnitIdleV3Frame8.png"
     }
   ],
   "game_objects": [
@@ -270,41 +418,79 @@
             {
               "animation": "idle",
               "frames": [
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitBlend33",
-                "@VesperUnitBlend67",
-                "@VesperUnitIdleFrame2",
-                "@VesperUnitBlend67",
-                "@VesperUnitBlend33",
-                "@VesperUnitIdleFrame1"
+                "@VesperUnitIdleV3Frame1",
+                "@VesperUnitIdleV3Blend12_25",
+                "@VesperUnitIdleV3Blend12_50",
+                "@VesperUnitIdleV3Blend12_75",
+                "@VesperUnitIdleV3Frame2",
+                "@VesperUnitIdleV3Blend23_25",
+                "@VesperUnitIdleV3Blend23_50",
+                "@VesperUnitIdleV3Blend23_75",
+                "@VesperUnitIdleV3Frame3",
+                "@VesperUnitIdleV3Blend34_25",
+                "@VesperUnitIdleV3Blend34_50",
+                "@VesperUnitIdleV3Blend34_75",
+                "@VesperUnitIdleV3Frame4",
+                "@VesperUnitIdleV3Blend45_25",
+                "@VesperUnitIdleV3Blend45_50",
+                "@VesperUnitIdleV3Blend45_75",
+                "@VesperUnitIdleV3Frame5",
+                "@VesperUnitIdleV3Blend56_25",
+                "@VesperUnitIdleV3Blend56_50",
+                "@VesperUnitIdleV3Blend56_75",
+                "@VesperUnitIdleV3Frame6",
+                "@VesperUnitIdleV3Blend67_25",
+                "@VesperUnitIdleV3Blend67_50",
+                "@VesperUnitIdleV3Blend67_75",
+                "@VesperUnitIdleV3Frame7",
+                "@VesperUnitIdleV3Blend78_25",
+                "@VesperUnitIdleV3Blend78_50",
+                "@VesperUnitIdleV3Blend78_75",
+                "@VesperUnitIdleV3Frame8",
+                "@VesperUnitIdleV3Blend78_75",
+                "@VesperUnitIdleV3Blend78_50",
+                "@VesperUnitIdleV3Blend78_25",
+                "@VesperUnitIdleV3Frame7",
+                "@VesperUnitIdleV3Blend67_75",
+                "@VesperUnitIdleV3Blend67_50",
+                "@VesperUnitIdleV3Blend67_25",
+                "@VesperUnitIdleV3Frame6",
+                "@VesperUnitIdleV3Blend56_75",
+                "@VesperUnitIdleV3Blend56_50",
+                "@VesperUnitIdleV3Blend56_25",
+                "@VesperUnitIdleV3Frame5",
+                "@VesperUnitIdleV3Blend45_75",
+                "@VesperUnitIdleV3Blend45_50",
+                "@VesperUnitIdleV3Blend45_25",
+                "@VesperUnitIdleV3Frame4",
+                "@VesperUnitIdleV3Blend34_75",
+                "@VesperUnitIdleV3Blend34_50",
+                "@VesperUnitIdleV3Blend34_25",
+                "@VesperUnitIdleV3Frame3",
+                "@VesperUnitIdleV3Blend23_75",
+                "@VesperUnitIdleV3Blend23_50",
+                "@VesperUnitIdleV3Blend23_25",
+                "@VesperUnitIdleV3Frame2",
+                "@VesperUnitIdleV3Blend12_75",
+                "@VesperUnitIdleV3Blend12_50",
+                "@VesperUnitIdleV3Blend12_25"
               ],
-              "framerate": 6
+              "framerate": 16,
+              "loop": true
             },
             {
               "animation": "attack",
               "frames": [
-                "@VesperUnitAttackFrame1",
-                "@VesperUnitAttackFrame1",
-                "@VesperUnitAttackFrame2",
-                "@VesperUnitAttackFrame2",
-                "@VesperUnitAttackFrame3",
-                "@VesperUnitAttackFrame3",
-                "@VesperUnitAttackFrame4",
-                "@VesperUnitAttackFrame4",
-                "@VesperUnitIdleFrame1"
+                "@VesperUnitAttackV3Frame1",
+                "@VesperUnitAttackV3Frame2",
+                "@VesperUnitAttackV3Frame3",
+                "@VesperUnitAttackV3Frame4",
+                "@VesperUnitAttackV3Frame5",
+                "@VesperUnitAttackV3Frame6",
+                "@VesperUnitAttackV3Frame7",
+                "@VesperUnitAttackV3Frame8"
               ],
-              "framerate": 8,
+              "framerate": 20,
               "loop": false
             },
             {
@@ -395,26 +581,64 @@
             {
               "animation": "idle_relentless",
               "frames": [
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitIdleFrame1",
-                "@VesperUnitBlend33",
-                "@VesperUnitBlend67",
-                "@VesperUnitIdleFrame2",
-                "@VesperUnitBlend67",
-                "@VesperUnitBlend33",
-                "@VesperUnitIdleFrame1"
+                "@VesperUnitIdleV3Frame1",
+                "@VesperUnitIdleV3Blend12_25",
+                "@VesperUnitIdleV3Blend12_50",
+                "@VesperUnitIdleV3Blend12_75",
+                "@VesperUnitIdleV3Frame2",
+                "@VesperUnitIdleV3Blend23_25",
+                "@VesperUnitIdleV3Blend23_50",
+                "@VesperUnitIdleV3Blend23_75",
+                "@VesperUnitIdleV3Frame3",
+                "@VesperUnitIdleV3Blend34_25",
+                "@VesperUnitIdleV3Blend34_50",
+                "@VesperUnitIdleV3Blend34_75",
+                "@VesperUnitIdleV3Frame4",
+                "@VesperUnitIdleV3Blend45_25",
+                "@VesperUnitIdleV3Blend45_50",
+                "@VesperUnitIdleV3Blend45_75",
+                "@VesperUnitIdleV3Frame5",
+                "@VesperUnitIdleV3Blend56_25",
+                "@VesperUnitIdleV3Blend56_50",
+                "@VesperUnitIdleV3Blend56_75",
+                "@VesperUnitIdleV3Frame6",
+                "@VesperUnitIdleV3Blend67_25",
+                "@VesperUnitIdleV3Blend67_50",
+                "@VesperUnitIdleV3Blend67_75",
+                "@VesperUnitIdleV3Frame7",
+                "@VesperUnitIdleV3Blend78_25",
+                "@VesperUnitIdleV3Blend78_50",
+                "@VesperUnitIdleV3Blend78_75",
+                "@VesperUnitIdleV3Frame8",
+                "@VesperUnitIdleV3Blend78_75",
+                "@VesperUnitIdleV3Blend78_50",
+                "@VesperUnitIdleV3Blend78_25",
+                "@VesperUnitIdleV3Frame7",
+                "@VesperUnitIdleV3Blend67_75",
+                "@VesperUnitIdleV3Blend67_50",
+                "@VesperUnitIdleV3Blend67_25",
+                "@VesperUnitIdleV3Frame6",
+                "@VesperUnitIdleV3Blend56_75",
+                "@VesperUnitIdleV3Blend56_50",
+                "@VesperUnitIdleV3Blend56_25",
+                "@VesperUnitIdleV3Frame5",
+                "@VesperUnitIdleV3Blend45_75",
+                "@VesperUnitIdleV3Blend45_50",
+                "@VesperUnitIdleV3Blend45_25",
+                "@VesperUnitIdleV3Frame4",
+                "@VesperUnitIdleV3Blend34_75",
+                "@VesperUnitIdleV3Blend34_50",
+                "@VesperUnitIdleV3Blend34_25",
+                "@VesperUnitIdleV3Frame3",
+                "@VesperUnitIdleV3Blend23_75",
+                "@VesperUnitIdleV3Blend23_50",
+                "@VesperUnitIdleV3Blend23_25",
+                "@VesperUnitIdleV3Frame2",
+                "@VesperUnitIdleV3Blend12_75",
+                "@VesperUnitIdleV3Blend12_50",
+                "@VesperUnitIdleV3Blend12_25"
               ],
-              "framerate": 6,
+              "framerate": 16,
               "loop": true
             }
           ],
