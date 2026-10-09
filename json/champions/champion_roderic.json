@@ -154,6 +154,10 @@
       "path": "textures/RodericUnitIdleFrame2.png"
     },
     {
+      "id": "RodericUnitIdleMid",
+      "path": "textures/RodericUnitIdleMid.png"
+    },
+    {
       "id": "RodericUnitBlend33",
       "path": "textures/RodericUnitBlend33.png"
     },
@@ -168,6 +172,54 @@
     {
       "id": "RodericCardBlend67",
       "path": "textures/RodericCardBlend67.png"
+    },
+    {
+      "id": "RodericUnitAttackFrame1",
+      "path": "textures/RodericUnitAttackFrame1.png"
+    },
+    {
+      "id": "RodericUnitAttackFrame2",
+      "path": "textures/RodericUnitAttackFrame2.png"
+    },
+    {
+      "id": "RodericUnitAttackFrame2to3",
+      "path": "textures/RodericUnitAttackFrame2to3.png"
+    },
+    {
+      "id": "RodericUnitAttackFrame3",
+      "path": "textures/RodericUnitAttackFrame3.png"
+    },
+    {
+      "id": "RodericUnitAttackFrame3to4",
+      "path": "textures/RodericUnitAttackFrame3to4.png"
+    },
+    {
+      "id": "RodericUnitAttackFrame4",
+      "path": "textures/RodericUnitAttackFrame4.png"
+    },
+    {
+      "id": "RodericUnitHitFrame1",
+      "path": "textures/RodericUnitHitFrame1.png"
+    },
+    {
+      "id": "RodericUnitHitFrame1to2",
+      "path": "textures/RodericUnitHitFrame1to2.png"
+    },
+    {
+      "id": "RodericUnitHitFrame2",
+      "path": "textures/RodericUnitHitFrame2.png"
+    },
+    {
+      "id": "RodericUnitHitFrame2to3",
+      "path": "textures/RodericUnitHitFrame2to3.png"
+    },
+    {
+      "id": "RodericUnitHitFrame3",
+      "path": "textures/RodericUnitHitFrame3.png"
+    },
+    {
+      "id": "RodericUnitHitFrame4",
+      "path": "textures/RodericUnitHitFrame4.png"
     }
   ],
   "game_objects": [
@@ -215,19 +267,24 @@
                 "@RodericUnitIdleFrame1",
                 "@RodericUnitIdleFrame1",
                 "@RodericUnitIdleFrame1",
-                "@RodericUnitIdleFrame1",
-                "@RodericUnitIdleFrame1",
-                "@RodericUnitIdleFrame1",
-                "@RodericUnitIdleFrame1",
-                "@RodericUnitIdleFrame1",
-                "@RodericUnitIdleFrame1",
-                "@RodericUnitIdleFrame1",
-                "@RodericUnitIdleFrame1",
                 "@RodericUnitBlend33",
+                "@RodericUnitBlend33",
+                "@RodericUnitIdleMid",
+                "@RodericUnitIdleMid",
+                "@RodericUnitBlend67",
                 "@RodericUnitBlend67",
                 "@RodericUnitIdleFrame2",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitIdleFrame2",
                 "@RodericUnitBlend67",
+                "@RodericUnitBlend67",
+                "@RodericUnitIdleMid",
+                "@RodericUnitIdleMid",
                 "@RodericUnitBlend33",
+                "@RodericUnitBlend33",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
                 "@RodericUnitIdleFrame1"
               ],
               "framerate": 8
@@ -236,38 +293,46 @@
               "animation": "attack",
               "frames": [
                 "@RodericUnitIdleFrame1",
-                "@RodericUnitBlend33",
-                "@RodericUnitBlend67",
-                "@RodericUnitIdleFrame2",
-                "@RodericUnitBlend67",
-                "@RodericUnitBlend33",
+                "@RodericUnitAttackFrame1",
+                "@RodericUnitAttackFrame1",
+                "@RodericUnitAttackFrame2",
+                "@RodericUnitAttackFrame2to3",
+                "@RodericUnitAttackFrame3",
+                "@RodericUnitAttackFrame3to4",
+                "@RodericUnitAttackFrame4",
+                "@RodericUnitAttackFrame4",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
                 "@RodericUnitIdleFrame1"
               ],
-              "framerate": 16
+              "framerate": 30
             },
             {
               "animation": "hit_react",
               "frames": [
                 "@RodericUnitIdleFrame1",
-                "@RodericUnitBlend33",
-                "@RodericUnitBlend67",
-                "@RodericUnitIdleFrame2",
-                "@RodericUnitBlend67",
-                "@RodericUnitBlend33",
+                "@RodericUnitHitFrame1",
+                "@RodericUnitHitFrame1to2",
+                "@RodericUnitHitFrame2",
+                "@RodericUnitHitFrame2to3",
+                "@RodericUnitHitFrame3",
+                "@RodericUnitHitFrame3",
+                "@RodericUnitHitFrame4",
+                "@RodericUnitIdleFrame1",
                 "@RodericUnitIdleFrame1"
               ],
-              "framerate": 16
+              "framerate": 30
             }
           ],
           "transform": {
             "position": {
-              "x": 0,
-              "y": 0.975,
+              "x": 0.0658,
+              "y": 0.5146,
               "z": 0
             },
             "scale": {
-              "x": 2.85,
-              "y": 2.85,
+              "x": 3.5186,
+              "y": 3.5186,
               "z": 1
             }
           }
