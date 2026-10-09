@@ -34,6 +34,7 @@ namespace mt2_freecompany.Plugin
                         "json/champions/champion_vesper_chirurgeon.json",
                         "json/champions/champion_vesper_beastmaster.json",
                         "json/cards/card_magic_missile.json",
+                        "json/cards/card_field_dressing.json",
                         "json/cards/card_shield_wall.json",
                         "json/units/unit_battle_chaplain.json",
                         "json/units/unit_berserker.json",
@@ -122,3 +123,5 @@ namespace mt2_freecompany.Plugin
 // 2026-09-22-2219||claude-mt2-the-free-company2-roderic-quartermaster||src/Plugin.cs||alta de json/spells/spell_severance_pay.json, spell_kit_bash.json y spell_double_shift.json: 73 --> 76 rutas
 // 2026-09-23-2130||claude-mt2-the-free-company2-mazo-pruebas||src/Plugin.cs||alta de json/status/status_countdown.json (estados Fuse y Banished)
 // 2026-09-28-2313||codex-freecompany-fx||src/Plugin.cs||activa parche Harmony de cues sonoros al jugar cartas del clan
+
+// 2026-10-09-1828||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\Plugin.cs||registra JSON Field Dressing en carga del clan

@@ -1,0 +1,89 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "FieldDressing",
+      "names": {
+        "english": "Field Dressing",
+        "spanish": "Cura de campaña",
+        "french": "Pansement de campagne",
+        "german": "Feldverband",
+        "russian": "Полевая перевязка",
+        "portuguese": "Curativo de campanha",
+        "chinese": "战地包扎",
+        "chinese_traditional": "戰地包紮",
+        "korean": "야전 붕대",
+        "japanese": "野戦包帯"
+      },
+      "descriptions": {
+        "english": "Remove one random debuff from a friendly unit. Restore [effect1.power] health.",
+        "spanish": "Elimina una aflicción al azar de una unidad aliada. Restaura [effect1.power] de vida.",
+        "french": "Retirez un malus aléatoire à une unité alliée. Rendez-lui [effect1.power] PV.",
+        "german": "Entferne einen zufälligen negativen Effekt von einer verbündeten Einheit. Heile sie um [effect1.power] Leben.",
+        "russian": "Снимите один случайный отрицательный эффект с союзной боевой единицы. Восстановите ей [effect1.power] здоровья.",
+        "portuguese": "Remova um efeito negativo aleatório de uma unidade aliada. Restaure [effect1.power] de vida.",
+        "chinese": "移除一个友方单位的一种随机减益效果。恢复[effect1.power]点生命值。",
+        "chinese_traditional": "移除一個友方單位的一種隨機減益效果。恢復[effect1.power]點生命值。",
+        "korean": "아군 유닛 하나의 무작위 약화 효과 하나를 제거. 체력을 [effect1.power] 회복.",
+        "japanese": "味方ユニット1体のランダムな弱体効果を1種類解除。体力を[effect1.power]回復。"
+      },
+      "card_art": "@FieldDressing",
+      "cost": 1,
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "@ClassFreeCompany",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@FieldDressingCleanse",
+        "@FieldDressingHeal"
+      ],
+      "pools": [
+        "StarterCardsOnly"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "FieldDressingCleanse",
+      "name": "@CardEffectRemoveRandomDebuff",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "applied_vfx": "@FieldDressingCleanseVFX"
+    },
+    {
+      "id": "FieldDressingHeal",
+      "name": "CardEffectHeal",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_int": 2
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FieldDressing",
+      "path": "textures/FieldDressingArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "FieldDressing",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@FieldDressing"
+        }
+      }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "FieldDressingCleanseVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Cleanse_PS.prefab",
+        "asset_guid": "fa43d9994ecafc64a938d8d0656c50e2"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
+}

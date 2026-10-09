@@ -105,7 +105,7 @@
         {
           "id": "VesperChampion",
           "card_data": "@SpawnVesper",
-          "starter_card": "@MagicMissile",
+          "starter_card": "@FieldDressing",
           "upgrade_tree": [
             [
               "@upg_Grimoire1",
@@ -429,6 +429,7 @@
     {
       "id": "FreeCompanySpellsCommonPool",
       "cards": [
+        "@MagicMissile",
         "@Bless",
         "@CureWounds",
         "@Grease",
