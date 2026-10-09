@@ -34,7 +34,8 @@ internal static class RodericReinforcements
             && card.GetCostWithoutAnyModifications() >= 0
             && card.GetCostWithoutAnyModifications() <= maximumCost
             && !cards.IsCardInStandByPile(card);
-        var found = cards.GetDrawPile().Where(Eligible).Distinct().ToList();
+        var found = cards.GetHand().Concat(cards.GetDrawPile()).Concat(cards.GetDiscardPile())
+            .Where(Eligible).Distinct().ToList();
         revive = found.Count == 0;
         if (revive)
             found = cards.GetExhaustedPile().Concat(cards.GetEatenPile())
@@ -145,7 +146,9 @@ public sealed class CardEffectRodericReinforcements : CardEffectBase, ICardEffec
             }, fromPlayedCard: parameters.playedCard);
         if (spawned == null) yield break;
         // Move the same CardState, preserving its upgrades and preventing duplicates.
+        // Leave hand removal to the native played-card lifecycle so its UI is updated.
         cards.GetDrawPile().Remove(card);
+        cards.GetDiscardPile().Remove(card);
         cards.GetExhaustedPile().Remove(card);
         cards.GetEatenPile().Remove(card);
         RodericReinforcements.DeadCards.Remove(card);
@@ -166,3 +169,5 @@ public sealed class CardEffectRodericReinforcements : CardEffectBase, ICardEffec
 // 2026-10-04-0612||codex-freecompany-fx||src\code\CardEffectRodericReinforcements.cs||sustituye selección aleatoria por DeckScreen nativo; elección registrada para replay y candidatos exactos sin alterar pilas
 
 // 2026-10-08-2258||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\CardEffectRodericReinforcements.cs||permite validación de habilidad en preview, conserva guarda sin diálogo ni invocación durante simulación
+
+// 2026-10-09-1435||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\CardEffectRodericReinforcements.cs||Call to Arms busca mano, robo y descarte; retira descarte y conserva retirada nativa de mano/UI
