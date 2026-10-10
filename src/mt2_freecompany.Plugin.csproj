@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>mt2_freecompany.Plugin</RootNamespace>
     <LangVersion>latest</LangVersion>
-    <Version>0.2.6</Version>
+    <Version>0.3.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,3 +28,7 @@
        del mod, no de src/. El build solo produce el DLL. -->
 </Project>
 <!-- 2026-09-28-2313||codex-freecompany-fx||src/mt2_freecompany.Plugin.csproj||referencia BepInEx.Core para parche Harmony de cues originales -->
+
+<!-- 2026-10-10-2256||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\mt2_freecompany.Plugin.csproj||version DLL 0.2.6 a 0.3.0 -->
+
+<!-- 2026-10-10-2257||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\mt2_freecompany.Plugin.csproj||restaura saltos LF del proyecto evitando diff de formato completo -->

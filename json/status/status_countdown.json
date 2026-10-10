@@ -236,11 +236,11 @@
   "atlas_icons": [
     {
       "id": "StatusFuse",
-      "path": "textures/StatusFuse.png"
+      "path": "textures/StatusFuseTooltip.png"
     },
     {
       "id": "StatusBanished",
-      "path": "textures/StatusBanished.png"
+      "path": "textures/StatusBanishedTooltip.png"
     }
   ]
 }

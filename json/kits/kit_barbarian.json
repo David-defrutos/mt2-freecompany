@@ -15,18 +15,6 @@
         "korean": "이 빠진 도끼",
         "japanese": "刃こぼれの斧"
       },
-      "descriptions": {
-        "english": "<b>+5</b> [attack]. <b>Slay</b>: gain <b>2</b> [rage].",
-        "french": "<b>+5</b> [attack]. <b>Élimination</b> : gagnez <b>2</b> [rage].",
-        "german": "<b>+5</b> [attack]. <b>Töten</b>: Erhalte <b>2</b> [rage].",
-        "russian": "<b>+5</b> [attack]. <b>Убийство</b>: получите <b>2</b> [rage].",
-        "portuguese": "<b>+5</b> [attack]. <b>Abate</b>: ganhe <b>2</b> [rage].",
-        "chinese": "<b>+5</b> [attack]. <b>击杀</b>：获得<b>2</b> [rage]。",
-        "spanish": "<b>+5</b> [attack]. <b>Matanza</b>: gana <b>2</b> [rage].",
-        "chinese_traditional": "<b>+5</b> [attack]. <b>擊殺</b>：獲得<b>2</b> [rage]。",
-        "korean": "<b>+5</b> [attack]. <b>처치</b>: <b>2</b> [rage] 획득.",
-        "japanese": "<b>+5</b> [attack]. <b>撃破</b>：<b>2</b> [rage]を得る。"
-      },
       "card_art": "@NotchedAxe",
       "cost": 1,
       "traits": [
@@ -74,18 +62,6 @@
         "korean": "쌍도끼",
         "japanese": "双斧"
       },
-      "descriptions": {
-        "english": "<b>+10</b> [attack]. <b>Slay</b>: gain <b>4</b> [rage].",
-        "french": "<b>+10</b> [attack]. <b>Élimination</b> : gagnez <b>4</b> [rage].",
-        "german": "<b>+10</b> [attack]. <b>Töten</b>: Erhalte <b>4</b> [rage].",
-        "russian": "<b>+10</b> [attack]. <b>Убийство</b>: получите <b>4</b> [rage].",
-        "portuguese": "<b>+10</b> [attack]. <b>Abate</b>: ganhe <b>4</b> [rage].",
-        "chinese": "<b>+10</b> [attack]. <b>击杀</b>：获得<b>4</b> [rage]。",
-        "spanish": "<b>+10</b> [attack]. <b>Matanza</b>: gana <b>4</b> [rage].",
-        "chinese_traditional": "<b>+10</b> [attack]. <b>擊殺</b>：獲得<b>4</b> [rage]。",
-        "korean": "<b>+10</b> [attack]. <b>처치</b>: <b>4</b> [rage] 획득.",
-        "japanese": "<b>+10</b> [attack]. <b>撃破</b>：<b>4</b> [rage]を得る。"
-      },
       "card_art": "@TwinAxes",
       "cost": 1,
       "traits": [
@@ -132,18 +108,6 @@
         "chinese_traditional": "劫掠者巨錘",
         "korean": "약탈자의 망치",
         "japanese": "略奪者の大槌"
-      },
-      "descriptions": {
-        "english": "<b>+18</b> [attack]. <b>Slay</b>: gain <b>6</b> [rage] and <b>1</b> [burst].",
-        "french": "<b>+18</b> [attack]. <b>Élimination</b> : gagnez <b>6</b> [rage] et <b>1</b> [burst].",
-        "german": "<b>+18</b> [attack]. <b>Töten</b>: Erhalte <b>6</b> [rage] und <b>1</b> [burst].",
-        "russian": "<b>+18</b> [attack]. <b>Убийство</b>: получите <b>6</b> [rage] и <b>1</b> [burst].",
-        "portuguese": "<b>+18</b> [attack]. <b>Abate</b>: ganhe <b>6</b> [rage] e <b>1</b> [burst].",
-        "chinese": "<b>+18</b> [attack]. <b>击杀</b>：获得<b>6</b> [rage]和<b>1</b> [burst]。",
-        "spanish": "<b>+18</b> [attack]. <b>Matanza</b>: gana <b>6</b> [rage] y <b>1</b> [burst].",
-        "chinese_traditional": "<b>+18</b> [attack]. <b>擊殺</b>：獲得<b>6</b> [rage]和<b>1</b> [burst]。",
-        "korean": "<b>+18</b> [attack]. <b>처치</b>: <b>6</b> [rage] 및 <b>1</b> [burst] 획득.",
-        "japanese": "<b>+18</b> [attack]. <b>撃破</b>：<b>6</b> [rage]と<b>1</b> [burst]を得る。"
       },
       "card_art": "@ReaversMaul",
       "cost": 1,

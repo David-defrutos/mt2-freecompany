@@ -6,6 +6,15 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ## English
 
+### 0.3.0 — 2026-10-10 — BETA
+
+- First **BETA** release.
+- **Vesper starter:** Field Dressing costs 1 Ember, removes one random debuff from a chosen ally and restores 2 health. New artwork. Magic Missile is now a Common reward spell.
+- **Beastmaster:** expanded creature roster, Tamable/Tamed paw icons, Frozen and accumulating Ember discounts in hand. Command orders a chosen Tamed creature on any floor to attack, with cooldown 4/3/2. Replaces stat growth. Fixes shop upgrade crashes and keeps the chosen Troll in the run deck.
+- **Roderic:** removed Rally, adjusted path stats and removed Titanskin from Quartermaster and Plunder. Plunder's Call to Arms lets you choose a unit from hand, draw or discard with base cost up to 1/2/3; falls back to fallen units with 1 health and Undying 1. Ready on summon, cooldown 2. Fixed preview targeting validation.
+- **Marching Orders:** reduces the Ember cost of the first unit each turn.
+- Smoother champion animations; improved clan/status icons and Troll positioning. Corrected Champion labels, Severance Pay localization and equipment/ability text.
+
 ### 0.2.6 — 2026-09-29
 
 - **Vesper and Roderic**: animated card artwork and unit sprites. Added intermediate frames and adjusted Vesper’s size and proportions in combat.
@@ -89,6 +98,15 @@ First upload. The clan loads, can be selected and can be played from start to fi
 Bug reports and balance feedback through GitHub issues or the package page comments.
 
 ## Spanish
+
+### 0.3.0 — 2026-10-10 — BETA
+
+- Primera versión **BETA**.
+- **Starter de Vesper:** Cura de campaña cuesta 1 Ember, elimina una aflicción aleatoria del aliado elegido y cura 2. Arte nuevo. Proyectil mágico pasa a recompensas comunes.
+- **Beastmaster:** más criaturas, patas Tamable/Tamed, Frozen y descuentos acumulables de Ember en mano. Command ordena atacar a una criatura Tamed elegida de cualquier piso, con recarga 4/3/2; sustituye el crecimiento de atributos. Corregidos el fallo en tiendas y la permanencia del troll elegido en el mazo.
+- **Roderic:** eliminado Rally, estadísticas ajustadas y Titanskin retirado de Quartermaster y Plunder. Call to Arms permite elegir una unidad de mano, robo o descarte con coste base máximo 1/2/3; si no hay, recupera una muerta con 1 de vida y Undying 1. Lista al invocar, recarga 2. Corregida la validación de objetivos en preview.
+- **Marching Orders:** reduce el coste Ember de la primera unidad de cada turno.
+- Animaciones más fluidas, iconos del clan/estados y colocación de trolls mejorados. Corregidos Champion, localización de Severance Pay y textos de equipo/habilidades.
 
 ### 0.2.6 — 2026-09-29
 
@@ -211,6 +229,14 @@ comentarios de la ficha.
 
 ## French
 
+### 0.3.0 — 2026-10-10 — BETA
+
+- Première version **BETA**.
+- Nouveau sort initial de Vesper : Field Dressing coûte 1 Ember, retire un malus aléatoire à un allié choisi et rend 2 PV. Nouvelle illustration. Magic Missile devient une récompense commune.
+- Beastmaster : plus de créatures, icônes Tamable/Tamed, Frozen et réductions cumulatives d'Ember en main. Command fait attaquer une créature Tamed choisie à n'importe quel étage ; recharge 4/3/2, remplace la croissance des statistiques. Corrections du magasin et du Troll permanent.
+- Roderic : Rally supprimé, statistiques ajustées ; Titanskin retiré de Quartermaster et Plunder. Call to Arms choisit une unité de la main, pioche ou défausse (coût de base maximal 1/2/3), sinon une unité morte avec 1 PV et Undying 1. Disponible à l'invocation, recharge 2.
+- Marching Orders réduit le coût de la première unité par tour. Animations, icônes, placement des Trolls et textes améliorés ; corrections de Champion et Severance Pay.
+
 Français
 
 ### 0.2.6 — 2026-09-29
@@ -224,6 +250,14 @@ Français
 - Cartes, unités, champions, capacités, états, équipements, salles, reliques et dialogues traduits dans les dix langues du jeu. Inclut le texte dynamique des dégâts de Severance Pay.
 
 ## German
+
+### 0.3.0 — 2026-10-10 — BETA
+
+- Erste **BETA**-Version.
+- Vespers neue Startkarte Field Dressing kostet 1 Ember, entfernt einen zufälligen negativen Effekt vom gewählten Verbündeten und heilt 2 Leben. Neue Illustration. Magic Missile ist nun eine gewöhnliche Belohnung.
+- Beastmaster: mehr Kreaturen, Tamable/Tamed-Symbole, Frozen und kumulative Ember-Rabatte auf der Hand. Command lässt eine gewählte Tamed-Kreatur auf beliebiger Etage angreifen; Abklingzeit 4/3/2, ersetzt Attributwachstum. Händlerfehler und dauerhafter Troll korrigiert.
+- Roderic: Rally entfernt, Werte angepasst; kein Titanskin für Quartermaster und Plunder. Call to Arms wählt aus Hand, Zieh- oder Ablagestapel (Basiskosten bis 1/2/3), sonst eine gefallene Einheit mit 1 Leben und Undying 1. Sofort bereit, Abklingzeit 2.
+- Marching Orders verbilligt die erste Einheit pro Zug. Animationen, Symbole, Trollpositionen und Texte verbessert; Champion und Severance Pay korrigiert.
 
 Deutsch
 
@@ -239,6 +273,14 @@ Deutsch
 
 ## Russian
 
+### 0.3.0 — 2026-10-10 — BETA
+
+- Первая версия **BETA**.
+- Новый стартовый Field Dressing Веспер: 1 Ember, снимает случайный отрицательный эффект с выбранного союзника и лечит 2 здоровья. Новая иллюстрация. Magic Missile доступен как обычная награда.
+- Beastmaster: больше существ, значки Tamable/Tamed, Frozen и накопительные скидки Ember в руке. Command заставляет выбранное Tamed-существо атаковать на любом этаже; перезарядка 4/3/2 вместо роста характеристик. Исправлены магазин и сохранение тролля в колоде.
+- Roderic: удалён Rally, изменены характеристики; Titanskin убран у Quartermaster и Plunder. Call to Arms выбирает из руки, колоды или сброса (базовая цена до 1/2/3), иначе возвращает погибшего с 1 здоровья и Undying 1. Сразу готово, перезарядка 2.
+- Marching Orders удешевляет первую боевую единицу каждого хода. Улучшены анимации, значки, положение троллей и тексты; исправлены Champion и Severance Pay.
+
 Русский
 
 ### 0.2.6 — 2026-09-29
@@ -252,6 +294,14 @@ Deutsch
 - Карты, боевые единицы, чемпионы, способности, состояния, снаряжение, помещения, реликвии и диалоги переведены на все десять языков игры. Включая динамический текст урона Severance Pay.
 
 ## Portuguese Brazil
+
+### 0.3.0 — 2026-10-10 — BETA
+
+- Primeira versão **BETA**.
+- Novo inicial de Vesper: Field Dressing custa 1 Ember, remove um efeito negativo aleatório do aliado escolhido e cura 2. Nova arte. Magic Missile vira recompensa comum.
+- Beastmaster: mais criaturas, ícones Tamable/Tamed, Frozen e descontos cumulativos de Ember na mão. Command faz uma criatura Tamed escolhida atacar em qualquer andar; recarga 4/3/2, substituindo o crescimento de atributos. Corrigidos loja e Troll permanente.
+- Roderic: Rally removido, atributos ajustados; Titanskin removido de Quartermaster e Plunder. Call to Arms escolhe da mão, compra ou descarte (custo base até 1/2/3), ou revive um morto com 1 de vida e Undying 1. Pronto ao invocar, recarga 2.
+- Marching Orders reduz o custo da primeira unidade por turno. Animações, ícones, posição dos Trolls e textos melhorados; correções de Champion e Severance Pay.
 
 Português (Brasil)
 
@@ -267,6 +317,14 @@ Português (Brasil)
 
 ## Chinese
 
+### 0.3.0 — 2026-10-10 — BETA
+
+- 首个 **BETA** 版本。
+- Vesper的新初始法术Field Dressing：费用1 Ember，移除所选友军的一种随机减益并恢复2生命。新插画。Magic Missile成为普通奖励法术。
+- Beastmaster：更多生物、Tamable/Tamed爪印、Frozen及手牌累积Ember减费。Command令任意楼层选定的Tamed生物立即攻击，冷却4/3/2，替代属性成长。修复商店错误及永久巨魔。
+- Roderic：移除Rally，调整属性，Quartermaster和Plunder移除Titanskin。Call to Arms从手牌、抽牌或弃牌堆选择基础费用不超过1/2/3的单位；无目标时复活阵亡单位，获得1生命和Undying 1。登场可用，冷却2。
+- Marching Orders降低每回合首个单位的费用。改善动画、图标、巨魔位置和文本，修复Champion及Severance Pay。
+
 简体中文
 
 ### 0.2.6 — 2026-09-29
@@ -280,6 +338,14 @@ Português (Brasil)
 - 卡牌、单位、勇者、技能、状态、装备、房间、遗物和对白已翻译为游戏的全部十种语言，包括Severance Pay的动态伤害文本。
 
 ## Chinese Traditional
+
+### 0.3.0 — 2026-10-10 — BETA
+
+- 首個 **BETA** 版本。
+- Vesper的新初始法術Field Dressing：費用1 Ember，移除所選友軍的一種隨機減益並恢復2生命。新插畫。Magic Missile成為普通獎勵法術。
+- Beastmaster：更多生物、Tamable/Tamed爪印、Frozen及手牌累積Ember減費。Command令任意樓層選定的Tamed生物立即攻擊，冷卻4/3/2，取代屬性成長。修復商店錯誤及永久巨魔。
+- Roderic：移除Rally，調整屬性，Quartermaster和Plunder移除Titanskin。Call to Arms從手牌、抽牌或棄牌堆選擇基礎費用不超過1/2/3的單位；無目標時復活陣亡單位，獲得1生命和Undying 1。登場可用，冷卻2。
+- Marching Orders降低每回合首個單位的費用。改善動畫、圖示、巨魔位置和文字，修復Champion及Severance Pay。
 
 繁體中文
 
@@ -295,6 +361,14 @@ Português (Brasil)
 
 ## Korean
 
+### 0.3.0 — 2026-10-10 — BETA
+
+- 첫 **BETA** 버전.
+- Vesper의 새 시작 주문 Field Dressing: 1 Ember, 선택한 아군의 무작위 약화 효과 하나를 제거하고 체력 2 회복. 새 그림. Magic Missile은 일반 보상 주문으로 변경.
+- Beastmaster: 생물 목록 확대, Tamable/Tamed 아이콘, Frozen과 손패의 누적 Ember 할인. Command는 어느 층이든 선택한 Tamed 생물을 즉시 공격시킴. 재사용 대기시간 4/3/2이며 능력치 성장을 대체. 상점 오류와 영구 트롤 수정.
+- Roderic: Rally 제거, 능력치 조정, Quartermaster와 Plunder의 Titanskin 제거. Call to Arms는 손패·뽑기·버린 더미에서 기본 비용 1/2/3 이하의 유닛 선택. 없으면 죽은 유닛을 체력 1과 Undying 1로 소환. 소환 즉시 준비, 대기시간 2.
+- Marching Orders는 매 턴 첫 유닛 비용 감소. 애니메이션, 아이콘, 트롤 위치와 설명 개선. Champion과 Severance Pay 수정.
+
 한국어
 
 ### 0.2.6 — 2026-09-29
@@ -308,6 +382,14 @@ Português (Brasil)
 - 카드, 유닛, 챔피언, 능력, 상태, 장비, 방, 유물 및 대사를 게임의 10개 언어로 번역했습니다. Severance Pay의 동적 피해 문구도 포함됩니다.
 
 ## Japanese
+
+### 0.3.0 — 2026-10-10 — BETA
+
+- 初の **BETA** 版。
+- Vesperの新しい初期呪文Field Dressing：1 Emberで選んだ味方の弱体効果をランダムに1種類解除し、体力を2回復。新イラスト。Magic Missileはコモン報酬に変更。
+- Beastmaster：対象生物を拡大、Tamable/Tamedアイコン、Frozenと手札の累積Ember軽減。Commandは任意の階の選んだTamed生物を即座に攻撃させる。クールダウン4/3/2で能力値成長を置換。ショップ不具合と永続トロールを修正。
+- Roderic：Rallyを削除、能力値調整、QuartermasterとPlunderのTitanskinを削除。Call to Armsは手札・山札・捨て札から基本コスト1/2/3以下を選択。対象がなければ死亡ユニットを体力1とUndying 1で召喚。登場時使用可能、クールダウン2。
+- Marching Ordersは各ターン最初のユニットを軽減。アニメーション、アイコン、トロール位置と説明を改善。ChampionとSeverance Payを修正。
 
 日本語
 
@@ -328,3 +410,5 @@ Português (Brasil)
 <!-- 2026-09-29-2349||codex-freecompany-fx||CHANGELOG.md||añade entrada 0.2.6 con animaciones, Chirurgeon, FX, balance y dependencias -->
 
 <!-- 2026-09-30-0103||codex-freecompany-fx||CHANGELOG.md||añade enlace inglés al inicio, historial inglés/español y notas 0.2.6 en diez idiomas con localización -->
+
+<!-- 2026-10-10-2256||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\CHANGELOG.md||añade changelog 0.3.0 BETA en los diez idiomas manteniendo enlace inglés superior -->

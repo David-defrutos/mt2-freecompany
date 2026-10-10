@@ -93,7 +93,7 @@
   "atlas_icons": [
     {
       "id": "StatusDizzy",
-      "path": "textures/StatusDizzy.png"
+      "path": "textures/StatusDizzyTooltip.png"
     }
   ]
 }

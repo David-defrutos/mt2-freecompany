@@ -154,8 +154,64 @@
       "path": "textures/RodericUnitIdleFrame2.png"
     },
     {
-      "id": "RodericUnitIdleMid",
-      "path": "textures/RodericUnitIdleMid.png"
+      "id": "RodericUnitIdleMorph01",
+      "path": "textures/RodericUnitIdleMorph01.png"
+    },
+    {
+      "id": "RodericUnitIdleMorph02",
+      "path": "textures/RodericUnitIdleMorph02.png"
+    },
+    {
+      "id": "RodericUnitIdleMorph03",
+      "path": "textures/RodericUnitIdleMorph03.png"
+    },
+    {
+      "id": "RodericUnitIdleMorph04",
+      "path": "textures/RodericUnitIdleMorph04.png"
+    },
+    {
+      "id": "RodericUnitIdleMorph05",
+      "path": "textures/RodericUnitIdleMorph05.png"
+    },
+    {
+      "id": "RodericUnitIdleMorph06",
+      "path": "textures/RodericUnitIdleMorph06.png"
+    },
+    {
+      "id": "RodericUnitIdleMorph07",
+      "path": "textures/RodericUnitIdleMorph07.png"
+    },
+    {
+      "id": "RodericUnitIdleMorphFine01",
+      "path": "textures/RodericUnitIdleMorphFine01.png"
+    },
+    {
+      "id": "RodericUnitIdleMorphFine03",
+      "path": "textures/RodericUnitIdleMorphFine03.png"
+    },
+    {
+      "id": "RodericUnitIdleMorphFine05",
+      "path": "textures/RodericUnitIdleMorphFine05.png"
+    },
+    {
+      "id": "RodericUnitIdleMorphFine07",
+      "path": "textures/RodericUnitIdleMorphFine07.png"
+    },
+    {
+      "id": "RodericUnitIdleMorphFine09",
+      "path": "textures/RodericUnitIdleMorphFine09.png"
+    },
+    {
+      "id": "RodericUnitIdleMorphFine11",
+      "path": "textures/RodericUnitIdleMorphFine11.png"
+    },
+    {
+      "id": "RodericUnitIdleMorphFine13",
+      "path": "textures/RodericUnitIdleMorphFine13.png"
+    },
+    {
+      "id": "RodericUnitIdleMorphFine15",
+      "path": "textures/RodericUnitIdleMorphFine15.png"
     },
     {
       "id": "RodericUnitBlend33",
@@ -267,27 +323,52 @@
                 "@RodericUnitIdleFrame1",
                 "@RodericUnitIdleFrame1",
                 "@RodericUnitIdleFrame1",
-                "@RodericUnitBlend33",
-                "@RodericUnitBlend33",
-                "@RodericUnitIdleMid",
-                "@RodericUnitIdleMid",
-                "@RodericUnitBlend67",
-                "@RodericUnitBlend67",
-                "@RodericUnitIdleFrame2",
-                "@RodericUnitIdleFrame2",
-                "@RodericUnitIdleFrame2",
-                "@RodericUnitBlend67",
-                "@RodericUnitBlend67",
-                "@RodericUnitIdleMid",
-                "@RodericUnitIdleMid",
-                "@RodericUnitBlend33",
-                "@RodericUnitBlend33",
                 "@RodericUnitIdleFrame1",
                 "@RodericUnitIdleFrame1",
                 "@RodericUnitIdleFrame1",
-                "@RodericUnitIdleFrame1"
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleFrame1",
+                "@RodericUnitIdleMorphFine01",
+                "@RodericUnitIdleMorph01",
+                "@RodericUnitIdleMorphFine03",
+                "@RodericUnitIdleMorph02",
+                "@RodericUnitIdleMorphFine05",
+                "@RodericUnitIdleMorph03",
+                "@RodericUnitIdleMorphFine07",
+                "@RodericUnitIdleMorph04",
+                "@RodericUnitIdleMorphFine09",
+                "@RodericUnitIdleMorph05",
+                "@RodericUnitIdleMorphFine11",
+                "@RodericUnitIdleMorph06",
+                "@RodericUnitIdleMorphFine13",
+                "@RodericUnitIdleMorph07",
+                "@RodericUnitIdleMorphFine15",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitIdleFrame2",
+                "@RodericUnitIdleMorphFine15",
+                "@RodericUnitIdleMorph07",
+                "@RodericUnitIdleMorphFine13",
+                "@RodericUnitIdleMorph06",
+                "@RodericUnitIdleMorphFine11",
+                "@RodericUnitIdleMorph05",
+                "@RodericUnitIdleMorphFine09",
+                "@RodericUnitIdleMorph04",
+                "@RodericUnitIdleMorphFine07",
+                "@RodericUnitIdleMorph03",
+                "@RodericUnitIdleMorphFine05",
+                "@RodericUnitIdleMorph02",
+                "@RodericUnitIdleMorphFine03",
+                "@RodericUnitIdleMorph01",
+                "@RodericUnitIdleMorphFine01"
               ],
-              "framerate": 8
+              "framerate": 24
             },
             {
               "animation": "attack",

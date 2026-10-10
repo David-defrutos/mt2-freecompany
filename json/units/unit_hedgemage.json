@@ -352,7 +352,7 @@
   "atlas_icons": [
     {
       "id": "StatusArcaneCharge",
-      "path": "textures/StatusArcaneCharge.png"
+      "path": "textures/StatusArcaneChargeTooltip.png"
     }
   ],
   "vfxs": [

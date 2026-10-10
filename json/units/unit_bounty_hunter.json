@@ -175,16 +175,16 @@
       "id": "BountyHunterTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Its ability is ready again. Gain [effect1.power] [coin].",
-        "french": "Sa capacité est de nouveau prête. Gagnez [effect1.power] [coin].",
-        "german": "Die Fähigkeit ist wieder bereit. Erhalte [effect1.power] [coin].",
-        "russian": "Её способность снова готова. Получите [effect1.power] [coin].",
-        "portuguese": "Sua habilidade está pronta novamente. Ganhe [effect1.power] [coin].",
-        "chinese": "其技能再次就绪。获得[effect1.power] [coin]。",
-        "spanish": "Su habilidad vuelve a estar lista. Gana [effect1.power] [coin].",
-        "chinese_traditional": "其技能再次就緒。獲得[effect1.power] [coin]。",
-        "korean": "능력이 다시 준비됨. [effect1.power] [coin] 획득.",
-        "japanese": "アビリティが再び使用可能になる。[effect1.power] [coin]を得る。"
+        "english": "Remove cooldown. Gain [effect1.power] [coin].",
+        "french": "Supprime le temps de recharge. Gagnez [effect1.power] [coin].",
+        "german": "Entferne die Abklingzeit. Erhalte [effect1.power] [coin].",
+        "russian": "Снимает перезарядку. Получите [effect1.power] [coin].",
+        "portuguese": "Remova o tempo de recarga. Ganhe [effect1.power] [coin].",
+        "chinese": "清除冷却。获得[effect1.power] [coin]。",
+        "spanish": "Elimina la recarga. Gana [effect1.power] [coin].",
+        "chinese_traditional": "清除冷卻。獲得[effect1.power] [coin]。",
+        "korean": "재사용 대기시간 제거. [effect1.power] [coin] 획득.",
+        "japanese": "クールダウンを解除。[effect1.power] [coin]を得る。"
       },
       "effects": [
         "@BountyHunterCooldown",
