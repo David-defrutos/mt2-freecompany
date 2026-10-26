@@ -157,39 +157,19 @@
     },
     {
       "id": "LongbowmanPierceOn",
-      "name": "CardEffectAddStatusEffect",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
       "target_team": "monsters",
-      "param_bool_2": true,
-      "disallow_status_effect_modifiers": true,
-      "param_status_effects": [
-        {
-          "status": {
-            "id": "@pierce",
-            "mod_reference": "Conductor"
-          },
-          "count": 1
-        }
-      ]
+      "param_upgrade": "@LongbowmanTemporaryPierce",
+      "param_int_3": 1
     },
     {
       "id": "LongbowmanPierceOff",
-      "name": "CardEffectRemoveStatusEffect",
+      "name": "CardEffectRemoveTempUpgradeFromUnit",
       "target_mode": "self",
       "target_team": "monsters",
-      "disallow_status_effect_modifiers": true,
-      "target_mode_status_effects_excluded_filter": [
-        "sniper"
-      ],
-      "param_status_effects": [
-        {
-          "status": {
-            "id": "@pierce",
-            "mod_reference": "Conductor"
-          },
-          "count": 1
-        }
-      ]
+      "param_upgrade": "@LongbowmanTemporaryPierce",
+      "param_bool": false
     }
   ],
   "character_triggers": [
@@ -254,6 +234,34 @@
           }
         }
       }
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "LongbowmanTemporaryPierce",
+      "titles": {
+        "english": "Shift Aim",
+        "french": "Changer de cible",
+        "german": "Ziel wechseln",
+        "russian": "Сменить цель",
+        "portuguese": "Mudar a Mira",
+        "chinese": "调整瞄准",
+        "spanish": "Cambiar de objetivo",
+        "chinese_traditional": "調整瞄準",
+        "korean": "조준 변경",
+        "japanese": "照準変更"
+      },
+      "is_unique": true,
+      "hide_icon_on_card": true,
+      "status_effect_upgrades": [
+        {
+          "status": {
+            "id": "@pierce",
+            "mod_reference": "Conductor"
+          },
+          "count": 1
+        }
+      ]
     }
   ]
 }
