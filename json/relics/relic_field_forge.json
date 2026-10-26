@@ -3,7 +3,7 @@
   "relic_effects": [
     {
       "id": "FieldForgeEffect",
-      "name": "RelicEffectModifyCardTypeCost",
+      "name": "@RelicEffectFieldForgeCost",
       "param_card_type": "equipment",
       "param_int": -1,
       "param_bool": true

@@ -26,16 +26,16 @@
         "japanese": "肉屋の請求書"
       },
       "descriptions": {
-        "english": "Whenever a friendly unit slays an enemy, gain <b>5</b> [coin].",
-        "french": "Lorsqu’une unité alliée tue un ennemi, gagnez <b>5</b> [coin].",
-        "german": "Wenn eine verbündete Einheit einen Gegner tötet, erhalte <b>5</b> [coin].",
-        "russian": "Когда союзная боевая единица убивает врага, получите <b>5</b> [coin].",
-        "portuguese": "Sempre que uma unidade aliada mata um inimigo, ganhe <b>5</b> [coin].",
-        "chinese": "每次友方单位击杀敌人时，获得<b>5</b> [coin]。",
-        "spanish": "Cada vez que una unidad aliada mata a un enemigo, gana <b>5</b> [coin].",
-        "chinese_traditional": "每次友方單位擊殺敵人時，獲得<b>5</b> [coin]。",
-        "korean": "아군 유닛이 적을 처치할 때마다 <b>5</b> [coin] 획득.",
-        "japanese": "味方ユニットが敵を倒すたび、<b>5</b> [coin]を得る。"
+        "english": "Whenever a friendly unit or your Pyre slays an enemy, gain <b>5</b> [coin].",
+        "spanish": "Cuando una unidad aliada o tu Pira mata a un enemigo, gana <b>5</b> [coin].",
+        "french": "Lorsqu’une unité alliée ou votre Brasier tue un ennemi, gagnez <b>5</b> [coin].",
+        "german": "Wenn eine verbündete Einheit oder deine Höllenglut einen Gegner tötet, erhalte <b>5</b> [coin].",
+        "russian": "Когда союзная боевая единица или ваше Пекло убивает врага, получите <b>5</b> [coin].",
+        "portuguese": "Quando uma unidade aliada ou sua Pira abate um inimigo, ganhe <b>5</b> [coin].",
+        "chinese": "友方单位或你的薪火击杀敌人时，获得<b>5</b>[coin]。",
+        "chinese_traditional": "友方單位或你的薪火擊殺敵人時，獲得<b>5</b>[coin]。",
+        "korean": "아군 유닛 또는 화로가 적을 처치할 때마다 <b>5</b> [coin] 획득.",
+        "japanese": "味方ユニットまたは炉が敵を倒すたびに<b>5</b>[coin]を得る。"
       },
       "relic_activated_texts": {
         "english": "Tally it.",

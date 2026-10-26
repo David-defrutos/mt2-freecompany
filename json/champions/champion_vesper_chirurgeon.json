@@ -206,428 +206,62 @@
     {
       "id": "ChirurgeonCleanse1_1",
       "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
-      "name": "CardEffectRemoveAllStatusEffects",
-      "target_mode": "random_in_room",
+      "name": "@CardEffectCleanseRandomDebuffed",
+      "target_mode": "room",
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "target_mode_status_effects_filter": [
-        {
-          "status": "corrupt_poison"
-        },
-        {
-          "status": "corruption"
-        },
-        {
-          "status": "dazed"
-        },
-        {
-          "status": "debuff"
-        },
-        {
-          "status": "@dizzy"
-        },
-        {
-          "status": "decay"
-        },
-        {
-          "status": "doom"
-        },
-        {
-          "status": "heal immunity"
-        },
-        {
-          "status": "malaise"
-        },
-        {
-          "status": "melee weakness"
-        },
-        {
-          "status": "muted"
-        },
-        {
-          "status": "poison"
-        },
-        {
-          "status": "pyregel"
-        },
-        {
-          "status": "pyrestain"
-        },
-        {
-          "status": "rooted"
-        },
-        {
-          "status": "scorch"
-        },
-        {
-          "status": "spell weakness"
-        },
-        {
-          "status": "timebomb"
-        },
-        {
-          "status": "unstable"
-        },
-        {
-          "status": "witherbloom"
-        }
-      ]
+      "param_bool2": false
     },
     {
       "id": "ChirurgeonCleanse2_1",
       "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
-      "name": "CardEffectRemoveAllStatusEffects",
-      "target_mode": "random_from_any_room",
+      "name": "@CardEffectCleanseRandomDebuffed",
+      "target_mode": "room",
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "target_mode_status_effects_filter": [
-        {
-          "status": "corrupt_poison"
-        },
-        {
-          "status": "corruption"
-        },
-        {
-          "status": "dazed"
-        },
-        {
-          "status": "debuff"
-        },
-        {
-          "status": "@dizzy"
-        },
-        {
-          "status": "decay"
-        },
-        {
-          "status": "doom"
-        },
-        {
-          "status": "heal immunity"
-        },
-        {
-          "status": "malaise"
-        },
-        {
-          "status": "melee weakness"
-        },
-        {
-          "status": "muted"
-        },
-        {
-          "status": "poison"
-        },
-        {
-          "status": "pyregel"
-        },
-        {
-          "status": "pyrestain"
-        },
-        {
-          "status": "rooted"
-        },
-        {
-          "status": "scorch"
-        },
-        {
-          "status": "spell weakness"
-        },
-        {
-          "status": "timebomb"
-        },
-        {
-          "status": "unstable"
-        },
-        {
-          "status": "witherbloom"
-        }
-      ]
+      "param_bool2": true
     },
     {
       "id": "ChirurgeonCleanse2_2",
       "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
-      "name": "CardEffectRemoveAllStatusEffects",
-      "target_mode": "random_from_any_room",
+      "name": "@CardEffectCleanseRandomDebuffed",
+      "target_mode": "room",
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "target_mode_status_effects_filter": [
-        {
-          "status": "corrupt_poison"
-        },
-        {
-          "status": "corruption"
-        },
-        {
-          "status": "dazed"
-        },
-        {
-          "status": "debuff"
-        },
-        {
-          "status": "@dizzy"
-        },
-        {
-          "status": "decay"
-        },
-        {
-          "status": "doom"
-        },
-        {
-          "status": "heal immunity"
-        },
-        {
-          "status": "malaise"
-        },
-        {
-          "status": "melee weakness"
-        },
-        {
-          "status": "muted"
-        },
-        {
-          "status": "poison"
-        },
-        {
-          "status": "pyregel"
-        },
-        {
-          "status": "pyrestain"
-        },
-        {
-          "status": "rooted"
-        },
-        {
-          "status": "scorch"
-        },
-        {
-          "status": "spell weakness"
-        },
-        {
-          "status": "timebomb"
-        },
-        {
-          "status": "unstable"
-        },
-        {
-          "status": "witherbloom"
-        }
-      ]
+      "param_bool2": true
     },
     {
       "id": "ChirurgeonCleanse3_1",
       "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
-      "name": "CardEffectRemoveAllStatusEffects",
-      "target_mode": "random_from_any_room",
+      "name": "@CardEffectCleanseRandomDebuffed",
+      "target_mode": "room",
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "target_mode_status_effects_filter": [
-        {
-          "status": "corrupt_poison"
-        },
-        {
-          "status": "corruption"
-        },
-        {
-          "status": "dazed"
-        },
-        {
-          "status": "debuff"
-        },
-        {
-          "status": "@dizzy"
-        },
-        {
-          "status": "decay"
-        },
-        {
-          "status": "doom"
-        },
-        {
-          "status": "heal immunity"
-        },
-        {
-          "status": "malaise"
-        },
-        {
-          "status": "melee weakness"
-        },
-        {
-          "status": "muted"
-        },
-        {
-          "status": "poison"
-        },
-        {
-          "status": "pyregel"
-        },
-        {
-          "status": "pyrestain"
-        },
-        {
-          "status": "rooted"
-        },
-        {
-          "status": "scorch"
-        },
-        {
-          "status": "spell weakness"
-        },
-        {
-          "status": "timebomb"
-        },
-        {
-          "status": "unstable"
-        },
-        {
-          "status": "witherbloom"
-        }
-      ]
+      "param_bool2": true
     },
     {
       "id": "ChirurgeonCleanse3_2",
       "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
-      "name": "CardEffectRemoveAllStatusEffects",
-      "target_mode": "random_from_any_room",
+      "name": "@CardEffectCleanseRandomDebuffed",
+      "target_mode": "room",
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "target_mode_status_effects_filter": [
-        {
-          "status": "corrupt_poison"
-        },
-        {
-          "status": "corruption"
-        },
-        {
-          "status": "dazed"
-        },
-        {
-          "status": "debuff"
-        },
-        {
-          "status": "@dizzy"
-        },
-        {
-          "status": "decay"
-        },
-        {
-          "status": "doom"
-        },
-        {
-          "status": "heal immunity"
-        },
-        {
-          "status": "malaise"
-        },
-        {
-          "status": "melee weakness"
-        },
-        {
-          "status": "muted"
-        },
-        {
-          "status": "poison"
-        },
-        {
-          "status": "pyregel"
-        },
-        {
-          "status": "pyrestain"
-        },
-        {
-          "status": "rooted"
-        },
-        {
-          "status": "scorch"
-        },
-        {
-          "status": "spell weakness"
-        },
-        {
-          "status": "timebomb"
-        },
-        {
-          "status": "unstable"
-        },
-        {
-          "status": "witherbloom"
-        }
-      ]
+      "param_bool2": true
     },
     {
       "id": "ChirurgeonCleanse3_3",
       "applied_vfx": "@ChampionVesperChirurgeonCleanseVFX",
-      "name": "CardEffectRemoveAllStatusEffects",
-      "target_mode": "random_from_any_room",
+      "name": "@CardEffectCleanseRandomDebuffed",
+      "target_mode": "room",
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "target_mode_status_effects_filter": [
-        {
-          "status": "corrupt_poison"
-        },
-        {
-          "status": "corruption"
-        },
-        {
-          "status": "dazed"
-        },
-        {
-          "status": "debuff"
-        },
-        {
-          "status": "@dizzy"
-        },
-        {
-          "status": "decay"
-        },
-        {
-          "status": "doom"
-        },
-        {
-          "status": "heal immunity"
-        },
-        {
-          "status": "malaise"
-        },
-        {
-          "status": "melee weakness"
-        },
-        {
-          "status": "muted"
-        },
-        {
-          "status": "poison"
-        },
-        {
-          "status": "pyregel"
-        },
-        {
-          "status": "pyrestain"
-        },
-        {
-          "status": "rooted"
-        },
-        {
-          "status": "scorch"
-        },
-        {
-          "status": "spell weakness"
-        },
-        {
-          "status": "timebomb"
-        },
-        {
-          "status": "unstable"
-        },
-        {
-          "status": "witherbloom"
-        }
-      ]
+      "param_bool2": true
     },
     {
       "id": "ChirurgeonSurgeryUndying",

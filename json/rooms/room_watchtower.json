@@ -16,16 +16,16 @@
         "japanese": "見張り塔"
       },
       "descriptions": {
-        "english": "Friendly units on this floor have <b>Sniper</b>.",
-        "french": "Les unités alliées de cet étage ont <b>Tireur d’élite</b>.",
-        "german": "Verbündete Einheiten auf diesem Stockwerk haben <b>Scharfschütze</b>.",
-        "russian": "Союзные боевые единицы на этом этаже имеют <b>Снайпер</b>.",
-        "portuguese": "As unidades aliadas neste andar têm <b>Atirador de Elite</b>.",
-        "chinese": "本层友方单位拥有<b>狙击</b>。",
-        "spanish": "Las unidades aliadas de este piso tienen <b>Francotirador</b>.",
-        "chinese_traditional": "本層友方單位擁有<b>狙擊</b>。",
-        "korean": "이 층의 아군 유닛은 <b>저격</b> 보유.",
-        "japanese": "この階の味方ユニットは<b>狙撃</b>を持つ。"
+        "english": "While active, friendly units here have <b>Sniper</b> and <b>+10</b> [attack].",
+        "spanish": "Mientras está activa, los aliados de este piso tienen <b>Francotirador</b> y <b>+10</b> [attack].",
+        "french": "Lorsque la tour est active, les alliés ici ont <b>Tireur d’élite</b> et <b>+10</b> [attack].",
+        "german": "Solange aktiv, haben Verbündete hier <b>Scharfschütze</b> und <b>+10</b> [attack].",
+        "russian": "Пока активна, союзники здесь имеют <b>Снайпер</b> и <b>+10</b> [attack].",
+        "portuguese": "Enquanto ativa, aliados neste andar têm <b>Atirador de Elite</b> e <b>+10</b> [attack].",
+        "chinese": "激活时，本层友军拥有<b>狙击</b>和<b>+10</b>[attack]。",
+        "chinese_traditional": "啟用時，本層友軍擁有<b>狙擊</b>和<b>+10</b>[attack]。",
+        "korean": "활성화 중 이 층의 아군은 <b>저격</b>과 <b>+10</b> [attack] 획득.",
+        "japanese": "有効時、この階の味方は<b>狙撃</b>と<b>+10</b>[attack]を得る。"
       },
       "card_art": "@Watchtower",
       "cost": 1,
@@ -57,6 +57,43 @@
         "RoomAndEquipmentDraftPool",
         "TrainRoomPool"
       ]
+    },
+    {
+      "id": "WatchtowerToggle",
+      "names": {
+        "english": "Change Firing Orders",
+        "spanish": "Cambiar orden de tiro",
+        "french": "Changer les ordres de tir",
+        "german": "Feuerbefehl wechseln",
+        "russian": "Сменить приказ огня",
+        "portuguese": "Mudar ordem de tiro",
+        "chinese": "切换射击指令",
+        "chinese_traditional": "切換射擊指令",
+        "korean": "사격 명령 변경",
+        "japanese": "射撃命令変更"
+      },
+      "descriptions": {
+        "english": "Toggle <b>Sniper</b> and <b>+10</b> [attack] for friendly units here.",
+        "spanish": "Activa o desactiva <b>Francotirador</b> y <b>+10</b> [attack] para los aliados de este piso.",
+        "french": "Activez ou désactivez <b>Tireur d’élite</b> et <b>+10</b> [attack] pour les alliés ici.",
+        "german": "Aktiviere oder deaktiviere <b>Scharfschütze</b> und <b>+10</b> [attack] für Verbündete hier.",
+        "russian": "Включите или отключите <b>Снайпер</b> и <b>+10</b> [attack] для союзников здесь.",
+        "portuguese": "Ative ou desative <b>Atirador de Elite</b> e <b>+10</b> [attack] para aliados neste andar.",
+        "chinese": "切换本层友军的<b>狙击</b>和<b>+10</b>[attack]。",
+        "chinese_traditional": "切換本層友軍的<b>狙擊</b>和<b>+10</b>[attack]。",
+        "korean": "이 층 아군의 <b>저격</b>과 <b>+10</b> [attack] 활성화/비활성화.",
+        "japanese": "この階の味方の<b>狙撃</b>と<b>+10</b>[attack]を切り替える。"
+      },
+      "card_art": "@Watchtower",
+      "card_type": "spell",
+      "is_room_ability": true,
+      "cooldown": 1,
+      "initial_cooldown": 0,
+      "targetless": true,
+      "targets_room": false,
+      "effects": [
+        "@WatchtowerToggleEffect"
+      ]
     }
   ],
   "upgrades": [
@@ -75,16 +112,16 @@
         "japanese": "見張り塔"
       },
       "descriptions": {
-        "english": "Friendly units on this floor have <b>Sniper</b>.",
-        "french": "Les unités alliées de cet étage ont <b>Tireur d’élite</b>.",
-        "german": "Verbündete Einheiten auf diesem Stockwerk haben <b>Scharfschütze</b>.",
-        "russian": "Союзные боевые единицы на этом этаже имеют <b>Снайпер</b>.",
-        "portuguese": "As unidades aliadas neste andar têm <b>Atirador de Elite</b>.",
-        "chinese": "本层友方单位拥有<b>狙击</b>。",
-        "spanish": "Las unidades aliadas de este piso tienen <b>Francotirador</b>.",
-        "chinese_traditional": "本層友方單位擁有<b>狙擊</b>。",
-        "korean": "이 층의 아군 유닛은 <b>저격</b> 보유.",
-        "japanese": "この階の味方ユニットは<b>狙撃</b>を持つ。"
+        "english": "While active, friendly units here have <b>Sniper</b> and <b>+10</b> [attack].",
+        "spanish": "Mientras está activa, los aliados de este piso tienen <b>Francotirador</b> y <b>+10</b> [attack].",
+        "french": "Lorsque la tour est active, les alliés ici ont <b>Tireur d’élite</b> et <b>+10</b> [attack].",
+        "german": "Solange aktiv, haben Verbündete hier <b>Scharfschütze</b> und <b>+10</b> [attack].",
+        "russian": "Пока активна, союзники здесь имеют <b>Снайпер</b> и <b>+10</b> [attack].",
+        "portuguese": "Enquanto ativa, aliados neste andar têm <b>Atirador de Elite</b> e <b>+10</b> [attack].",
+        "chinese": "激活时，本层友军拥有<b>狙击</b>和<b>+10</b>[attack]。",
+        "chinese_traditional": "啟用時，本層友軍擁有<b>狙擊</b>和<b>+10</b>[attack]。",
+        "korean": "활성화 중 이 층의 아군은 <b>저격</b>과 <b>+10</b> [attack] 획득.",
+        "japanese": "有効時、この階の味方は<b>狙撃</b>と<b>+10</b>[attack]を得る。"
       },
       "status_effect_upgrades": [
         {
@@ -93,7 +130,40 @@
         }
       ],
       "hide_icon_on_card": true,
-      "icon": "@Watchtower"
+      "icon": "@Watchtower",
+      "bonus_damage": 10,
+      "room_ability_upgrade": "@WatchtowerToggle"
+    },
+    {
+      "id": "WatchtowerRoomOffUpgrade",
+      "titles": {
+        "english": "Watchtower",
+        "french": "Tour de guet",
+        "german": "Wachturm",
+        "russian": "Сторожевая башня",
+        "portuguese": "Torre de Vigia",
+        "chinese": "瞭望塔",
+        "spanish": "Atalaya",
+        "chinese_traditional": "瞭望塔",
+        "korean": "망루",
+        "japanese": "見張り塔"
+      },
+      "descriptions": {
+        "english": "Inactive.",
+        "spanish": "Desactivada.",
+        "french": "Désactivée.",
+        "german": "Deaktiviert.",
+        "russian": "Отключена.",
+        "portuguese": "Desativada.",
+        "chinese": "未激活。",
+        "chinese_traditional": "未啟用。",
+        "korean": "비활성화.",
+        "japanese": "無効。"
+      },
+      "hide_icon_on_card": true,
+      "icon": "@Watchtower",
+      "bonus_damage": 0,
+      "room_ability_upgrade": "@WatchtowerToggle"
     }
   ],
   "effects": [
@@ -105,6 +175,13 @@
       "param_upgrade": "@WatchtowerRoomUpgrade",
       "param_bool": false,
       "param_bool_2": false
+    },
+    {
+      "id": "WatchtowerToggleEffect",
+      "name": "@CardEffectWatchtowerToggle",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_upgrade": "@WatchtowerRoomOffUpgrade"
     }
   ],
   "sprites": [
