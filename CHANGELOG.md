@@ -8,6 +8,8 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ### 0.3.1 — 2026-10-26 — BETA
 
+Thanks to **Rratvar, the Untitled**, **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** and everyone contributing tests, bug reports and suggestions. [Bug reports and feedback](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 - **Watchtower:** starts active. Its room ability toggles Sniper and +10 attack together, with cooldown 1. The attack bonus does not stack, and Sniper from other sources is preserved. Merged rooms keep their other bonuses.
 - **Field Medic and Chirurgeon:** random cleansing chooses an ally that actually has a visible debuff. Chirurgeon II/III retain their cross-floor range; repeated cleanses skip already cleansed allies.
 - **Field Forge:** its discount is applied once to newly merged equipment, preserving other cost modifiers.
@@ -111,6 +113,8 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 ## Spanish
 
 ### 0.3.1 — 2026-10-26 — BETA
+
+Gracias a **Rratvar, the Untitled**, **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** y a quienes aportan pruebas, informes de errores y sugerencias. [Errores y comentarios](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 - **Watchtower:** empieza activa. Su habilidad de sala alterna Francotirador y +10 ataque juntos, con recarga 1. El bono no se acumula y conserva Francotirador de otras fuentes. En salas fusionadas conserva los demás bonos.
 - **Field Medic y Chirurgeon:** la limpieza aleatoria elige un aliado que tenga aflicciones visibles. Chirurgeon II/III mantienen el alcance entre pisos; las limpiezas sucesivas excluyen aliados ya limpiados.
@@ -253,6 +257,8 @@ comentarios de la ficha.
 
 ### 0.3.1 — 2026-10-26 — BETA
 
+Merci à **Rratvar, the Untitled**, **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** et à toutes les personnes qui testent, signalent des bugs et proposent des idées. [Bugs et retours](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 - Watchtower démarre active : capacité de salle, recharge 1, alternant Tireur d’élite et +10 attaque sans cumul. Préserve Tireur d’élite d’autres sources. Les salles fusionnées conservent leurs autres bonus.
 - Field Medic et Chirurgeon choisissent uniquement des alliés avec un malus visible. Chirurgeon II/III conservent la portée entre étages et évitent les alliés déjà purifiés.
 - Field Forge applique une seule réduction au nouvel équipement fusionné, en conservant les autres modificateurs.
@@ -283,6 +289,8 @@ Français
 ## German
 
 ### 0.3.1 — 2026-10-26 — BETA
+
+Danke an **Rratvar, the Untitled**, **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** und alle, die testen, Fehler melden und Vorschläge machen. [Fehler und Feedback](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 - Watchtower startet aktiv: Raumfähigkeit mit Abklingzeit 1 schaltet Scharfschütze und +10 Angriff gemeinsam um. Kein Stapeln; andere Scharfschützen-Quellen bleiben erhalten. Verschmolzene Räume behalten ihre anderen Boni.
 - Field Medic und Chirurgeon wählen nur Verbündete mit sichtbaren negativen Effekten. Chirurgeon II/III behalten die etagenübergreifende Reichweite und überspringen bereits gereinigte Einheiten.
@@ -315,6 +323,8 @@ Deutsch
 
 ### 0.3.1 — 2026-10-26 — BETA
 
+Спасибо **Rratvar, the Untitled**, **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** и всем за тестирование, сообщения об ошибках и предложения. [Ошибки и отзывы](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 - Watchtower изначально активна: способность комнаты с перезарядкой 1 одновременно переключает Снайпер и +10 атаки без накопления. Сохраняет Снайпер из других источников. Объединённые комнаты сохраняют остальные бонусы.
 - Field Medic и Chirurgeon выбирают только союзников с видимым отрицательным эффектом. Chirurgeon II/III сохраняют дальность между этажами и пропускают уже очищенных союзников.
 - Field Forge применяет скидку к новому объединённому снаряжению только один раз, сохраняя другие изменения цены.
@@ -345,6 +355,8 @@ Deutsch
 ## Portuguese Brazil
 
 ### 0.3.1 — 2026-10-26 — BETA
+
+Obrigado a **Rratvar, the Untitled**, **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** e a todos pelos testes, relatos de erros e sugestões. [Erros e comentários](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 - Watchtower começa ativa: habilidade de sala com recarga 1 alterna Atirador de Elite e +10 de ataque juntos, sem acumular. Preserva o efeito de outras fontes. Salas fundidas preservam os outros bônus.
 - Field Medic e Chirurgeon escolhem apenas aliados com efeitos negativos visíveis. Chirurgeon II/III mantêm alcance entre andares e ignoram aliados já purificados.
@@ -377,6 +389,8 @@ Português (Brasil)
 
 ### 0.3.1 — 2026-10-26 — BETA
 
+感谢 **Rratvar, the Untitled**, **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** 以及所有参与测试、报告错误和提出建议的玩家。[错误报告与反馈](https://discord.com/channels/336546996779483136/1563998046084268032)。
+
 - Watchtower初始激活。房间技能冷却1，同时切换狙击与+10攻击；不叠加并保留其他来源的狙击。 融合房间保留其他加成。
 - Field Medic和Chirurgeon只从带有可见减益的友军中随机选择。Chirurgeon II/III保留跨层范围，连续净化跳过已净化目标。
 - Field Forge对新融合装备只应用一次减费，保留其他费用修正。
@@ -407,6 +421,8 @@ Português (Brasil)
 ## Chinese Traditional
 
 ### 0.3.1 — 2026-10-26 — BETA
+
+感謝 **Rratvar, the Untitled**, **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** 以及所有參與測試、回報錯誤和提出建議的玩家。[錯誤回報與意見](https://discord.com/channels/336546996779483136/1563998046084268032)。
 
 - Watchtower初始啟用。房間技能冷卻1，同時切換狙擊與+10攻擊；不疊加並保留其他來源的狙擊。 融合房間保留其他加成。
 - Field Medic和Chirurgeon只從帶有可見減益的友軍中隨機選擇。Chirurgeon II/III保留跨層範圍，連續淨化跳過已淨化目標。
@@ -439,6 +455,8 @@ Português (Brasil)
 
 ### 0.3.1 — 2026-10-26 — BETA
 
+**Rratvar, the Untitled**, **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** 및 테스트, 버그 제보와 제안을 해 주신 모든 분께 감사드립니다. [버그 제보 및 의견](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 - Watchtower는 활성 상태로 시작. 방 능력 대기시간 1로 저격과 공격력 +10을 함께 전환. 중첩되지 않으며 다른 출처의 저격은 유지. 융합한 방의 다른 보너스 유지.
 - Field Medic과 Chirurgeon은 보이는 약화 효과가 있는 아군만 무작위로 선택. Chirurgeon II/III는 층 간 범위를 유지하며 이미 정화한 아군 제외.
 - Field Forge는 새 융합 장비에 할인 한 번만 적용하고 다른 비용 변경 유지.
@@ -469,6 +487,8 @@ Português (Brasil)
 ## Japanese
 
 ### 0.3.1 — 2026-10-26 — BETA
+
+**Rratvar, the Untitled**, **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** をはじめ、テスト、不具合報告、ご提案をくださった皆様に感謝します。[不具合報告・ご意見](https://discord.com/channels/336546996779483136/1563998046084268032)。
 
 - Watchtowerは有効状態で開始。部屋能力のクールダウン1で狙撃と攻撃力+10を同時に切り替え。重複せず、他の効果による狙撃を保持。 融合した部屋の他のボーナスを保持。
 - Field MedicとChirurgeonは可視の弱体効果を持つ味方のみから選択。Chirurgeon II/IIIは階をまたぐ範囲を維持し、連続浄化では浄化済みの味方を除外。
@@ -512,3 +532,5 @@ Português (Brasil)
 <!-- 2026-10-26-2208||codex-freecompany-fx||CHANGELOG.md||revisión previa 0.3.1: conservación Pierce de equipos y 118 comprobaciones en diez idiomas -->
 
 <!-- 2026-10-26-2212||codex-freecompany-fx||CHANGELOG.md||revisión 0.3.1: conserva otras mejoras de salas fusionadas y total 122 comprobaciones en diez idiomas -->
+
+<!-- 2026-10-26-2222||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\CHANGELOG.md||añade agradecimientos y enlace al subhilo de bugs en los diez idiomas de 0.3.1 -->

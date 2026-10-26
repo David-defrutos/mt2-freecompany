@@ -50,10 +50,12 @@ Units, spells, rooms, equipment and artifacts, built around three pillars: **for
 
 ## Thanks
 
-Big thanks to **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone**, and to everyone else
+Big thanks to **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone**, **Rratvar, the Untitled**, and to everyone else
 on Discord's MT2 mod channel (https://discord.com/channels/336546996779483136/1377778943674810368), for testing The Free Company and pointing out what broke.
 
-Since Thunderstore has no comments, feedback is best on Discord or on GitHub issues:
+[Report bugs and leave feedback in the Discord thread](https://discord.com/channels/336546996779483136/1563998046084268032).
+
+Since Thunderstore has no comments, you can also use GitHub issues:
 https://github.com/David-defrutos/mt2-freecompany/issues
 
 ## Credits and license
@@ -126,11 +128,13 @@ Unidades, hechizos, salas, equipo y artefactos, alrededor de tres pilares: **for
 
 ## Agradecimientos
 
-Muchas gracias a **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone** y a todos los demás
+Muchas gracias a **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone**, **Rratvar, the Untitled** y a todos los demás
 del canal de mods de MT2 en Discord (https://discord.com/channels/336546996779483136/1377778943674810368) por probar The Free Company y avisar de lo que se
 rompía.
 
-Como Thunderstore no tiene comentarios, lo mejor para dar opiniones es Discord o las
+[Reporta errores y deja tus comentarios en el subhilo de Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
+
+Como Thunderstore no tiene comentarios, también puedes usar las
 incidencias de GitHub: https://github.com/David-defrutos/mt2-freecompany/issues
 
 ## Créditos y licencia
@@ -210,3 +214,5 @@ Solo estas **29 cartas concretas** cuentan; no se incluye automáticamente el re
 <!-- 2026-10-10-2256||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||ficha pública pasa de ALPHA a BETA 0.3.0 en inglés y español -->
 
 <!-- 2026-10-26-2156||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||cabeceras públicas BETA 0.3.1 en inglés y español -->
+
+<!-- 2026-10-26-2222||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||añade Rratvar a agradecimientos y subhilo específico de bugs en inglés y español -->
