@@ -99,7 +99,7 @@
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "param_bool2": false
+      "param_bool_2": false
     }
   ],
   "character_triggers": [

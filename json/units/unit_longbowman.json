@@ -160,7 +160,7 @@
       "name": "CardEffectAddStatusEffect",
       "target_mode": "self",
       "target_team": "monsters",
-      "param_bool2": true,
+      "param_bool_2": true,
       "disallow_status_effect_modifiers": true,
       "param_status_effects": [
         {

@@ -211,7 +211,7 @@
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "param_bool2": false
+      "param_bool_2": false
     },
     {
       "id": "ChirurgeonCleanse2_1",
@@ -221,7 +221,7 @@
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "param_bool2": true
+      "param_bool_2": true
     },
     {
       "id": "ChirurgeonCleanse2_2",
@@ -231,7 +231,7 @@
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "param_bool2": true
+      "param_bool_2": true
     },
     {
       "id": "ChirurgeonCleanse3_1",
@@ -241,7 +241,7 @@
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "param_bool2": true
+      "param_bool_2": true
     },
     {
       "id": "ChirurgeonCleanse3_2",
@@ -251,7 +251,7 @@
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "param_bool2": true
+      "param_bool_2": true
     },
     {
       "id": "ChirurgeonCleanse3_3",
@@ -261,7 +261,7 @@
       "target_team": "monsters",
       "param_int": 1,
       "param_bool": false,
-      "param_bool2": true
+      "param_bool_2": true
     },
     {
       "id": "ChirurgeonSurgeryUndying",
