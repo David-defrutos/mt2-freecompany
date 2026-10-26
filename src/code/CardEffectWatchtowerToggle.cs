@@ -12,7 +12,7 @@ public sealed class CardEffectWatchtowerToggle : CardEffectBase
 {
     public override bool CanApplyInPreviewMode => true;
     public override PropDescriptions CreateEditorInspectorDescriptions() => new();
-    internal static bool IsWatchtowerUpgrade(CardUpgradeData u) => u != null
+    internal static bool IsWatchtowerUpgrade(CardUpgradeData? u) => u != null
         && (u.name.EndsWith("WatchtowerRoomUpgrade", StringComparison.Ordinal)
             || u.name.EndsWith("WatchtowerRoomOffUpgrade", StringComparison.Ordinal));
     internal static TrainRoomAttachmentState? Find(RoomState room)
@@ -73,7 +73,8 @@ public sealed class CardEffectWatchtowerToggle : CardEffectBase
         if (room == null) yield break;
         var a = Find(room);
         if (a == null || a.UpgradeStates is not IList<(CardUpgradeState, CardUpgradeData)> upgrades) yield break;
-        var originalEffect = a.CardState?.GetEffectStates().FirstOrDefault(x => x.GetCardEffect() is CardEffectAttachTrainRoomAttachment);
+        var originalEffect = a.CardState?.GetEffectStates().FirstOrDefault(x =>
+            x.GetCardEffect() is CardEffectAttachTrainRoomAttachment && IsWatchtowerUpgrade(x.GetParamCardUpgradeData()));
         var on = originalEffect?.GetParamCardUpgradeData();
         var off = e.GetParamCardUpgradeData();
         if (on == null || off == null) yield break;
@@ -97,3 +98,7 @@ public sealed class CardEffectWatchtowerToggle : CardEffectBase
 // 2026-10-26-2051||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\CardEffectWatchtowerToggle.cs||interruptor Watchtower sobre misma sala: cambia mejora nativa sin acumular ni reiniciar cooldown
 
 // 2026-10-26-2103||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\CardEffectWatchtowerToggle.cs||protege Sniper no acumulable de otras fuentes mediante copia nativa por unidad y retirada de la copia real
+
+// 2026-10-26-2211||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\CardEffectWatchtowerToggle.cs||revisión: selecciona el efecto Watchtower específico en salas fusionadas, no el primer attachment de otra sala
+
+// 2026-10-26-2211||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\CardEffectWatchtowerToggle.cs||anota referencia opcional del efecto nativo al filtrar mejoras de sala
