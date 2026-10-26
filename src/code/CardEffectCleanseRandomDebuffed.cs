@@ -12,9 +12,16 @@ public sealed class CardEffectCleanseRandomDebuffed : CardEffectBase
     public override PropDescriptions CreateEditorInspectorDescriptions() => new();
     public override bool TestEffect(CardEffectState effect, CardEffectParams p, ICoreGameManagers g) => true;
 
-    internal static bool Eligible(CharacterState unit) => unit != null && unit.IsAlive && !unit.IsDestroyed
-        && !unit.HasStatusEffect("untouchable")
-        && unit.GetNumberUniqueStatusEffectsInCategory(StatusEffectData.DisplayCategory.Negative, true) > 0;
+    internal static bool Eligible(CharacterState unit)
+    {
+        if (unit == null || !unit.IsAlive || unit.IsDestroyed || unit.HasStatusEffect("untouchable")) return false;
+        var statuses = new List<CharacterState.StatusEffectStack>();
+        unit.GetStatusEffects(ref statuses);
+        // Zero-count entries can remain until native cleanup. Do not select an
+        // already cleansed ally again when Chirurgeon resolves several effects.
+        return statuses.Any(s => s.Count > 0 && !s.State.IsHidden()
+            && s.State.GetDisplayCategory() == StatusEffectData.DisplayCategory.Negative);
+    }
 
     public override IEnumerator ApplyEffect(CardEffectState effect, CardEffectParams p,
         ICoreGameManagers g, ISystemManagers systems)
@@ -37,3 +44,5 @@ public sealed class CardEffectCleanseRandomDebuffed : CardEffectBase
 }
 
 // 2026-10-26-2051||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\CardEffectCleanseRandomDebuffed.cs||selecciona aliado con cualquier aflicción visible antes del azar y delega limpieza nativa; sin RNG en preview
+
+// 2026-10-26-2105||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\CardEffectCleanseRandomDebuffed.cs||excluye aflicciones con cero acumulaciones pendientes de limpieza nativa para no repetir objetivo ya curado
