@@ -6,6 +6,17 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ## English
 
+### 0.3.1 — 2026-10-26 — BETA
+
+- **Watchtower:** starts active. Its room ability toggles Sniper and +10 attack together, with cooldown 1. The attack bonus does not stack, and Sniper from other sources is preserved.
+- **Field Medic and Chirurgeon:** random cleansing chooses an ally that actually has a visible debuff. Chirurgeon II/III retain their cross-floor range; repeated cleanses skip already cleansed allies.
+- **Field Forge:** its discount is applied once to newly merged equipment, preserving other cost modifiers.
+- **Roderic and Vesper:** adjusted animated-unit bounds, VFX anchors and the static reference sprite to address oversized deployment flashes and misplaced status effects.
+- **Longbowman:** Shift Aim cooldown increases from 1 to 2. Temporarily exchanges Sniper for Conductor's Pierce 1, which hits one additional enemy behind the front target.
+- **Butcher's Bill:** text now explicitly includes Pyre kills. Minimum Trainworks Reloaded: **0.7.33**.
+- **Known issue:** mixing champion paths can replace the previous activated ability. Still pending redesign.
+- Build and **65 automated semantic checks** passed. This release has **not been verified in gameplay**.
+
 ### 0.3.0 — 2026-10-10 — BETA
 
 - First **BETA** release.
@@ -98,6 +109,17 @@ First upload. The clan loads, can be selected and can be played from start to fi
 Bug reports and balance feedback through GitHub issues or the package page comments.
 
 ## Spanish
+
+### 0.3.1 — 2026-10-26 — BETA
+
+- **Watchtower:** empieza activa. Su habilidad de sala alterna Francotirador y +10 ataque juntos, con recarga 1. El bono no se acumula y conserva Francotirador de otras fuentes.
+- **Field Medic y Chirurgeon:** la limpieza aleatoria elige un aliado que tenga aflicciones visibles. Chirurgeon II/III mantienen el alcance entre pisos; las limpiezas sucesivas excluyen aliados ya limpiados.
+- **Field Forge:** su descuento se aplica una sola vez al equipo recién fusionado, conservando otros modificadores de coste.
+- **Roderic y Vesper:** ajustados los límites del personaje animado, anclajes VFX y sprite estático para corregir el destello gigante al desplegar y los efectos desplazados.
+- **Longbowman:** recarga de Shift Aim de 1 a 2. Cambia temporalmente Francotirador por Pierce 1 de Conductor, que golpea a un enemigo adicional detrás del delantero.
+- **Butcher’s Bill:** el texto incluye las bajas de la Pira. Mínimo Trainworks Reloaded: **0.7.33**.
+- **Problema conocido:** mezclar sendas de campeón puede reemplazar la habilidad activada anterior. Pendiente de rediseño.
+- Compilación y **65 comprobaciones semánticas automáticas** correctas. Esta versión **no se ha verificado en partida**.
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -229,6 +251,15 @@ comentarios de la ficha.
 
 ## French
 
+### 0.3.1 — 2026-10-26 — BETA
+
+- Watchtower démarre active : capacité de salle, recharge 1, alternant Tireur d’élite et +10 attaque sans cumul. Préserve Tireur d’élite d’autres sources.
+- Field Medic et Chirurgeon choisissent uniquement des alliés avec un malus visible. Chirurgeon II/III conservent la portée entre étages et évitent les alliés déjà purifiés.
+- Field Forge applique une seule réduction au nouvel équipement fusionné, en conservant les autres modificateurs.
+- Ajustements visuels de Roderic/Vesper : apparition surdimensionnée et effets décalés. Longbowman : recharge 2, échange temporairement Sniper contre Pierce 1. Butcher’s Bill mentionne le Brasier. Trainworks minimum **0.7.33**.
+- Problème connu : mélanger les voies du champion peut remplacer la capacité précédente.
+- Compilation et 65 vérifications automatiques réussies ; **version non vérifiée en partie**.
+
 ### 0.3.0 — 2026-10-10 — BETA
 
 - Première version **BETA**.
@@ -250,6 +281,15 @@ Français
 - Cartes, unités, champions, capacités, états, équipements, salles, reliques et dialogues traduits dans les dix langues du jeu. Inclut le texte dynamique des dégâts de Severance Pay.
 
 ## German
+
+### 0.3.1 — 2026-10-26 — BETA
+
+- Watchtower startet aktiv: Raumfähigkeit mit Abklingzeit 1 schaltet Scharfschütze und +10 Angriff gemeinsam um. Kein Stapeln; andere Scharfschützen-Quellen bleiben erhalten.
+- Field Medic und Chirurgeon wählen nur Verbündete mit sichtbaren negativen Effekten. Chirurgeon II/III behalten die etagenübergreifende Reichweite und überspringen bereits gereinigte Einheiten.
+- Field Forge verbilligt neu verschmolzene Ausrüstung nur einmal; andere Kostenmodifikatoren bleiben erhalten.
+- Roderic/Vesper: Anpassungen gegen riesige Einsatzbilder und versetzte VFX. Longbowman: Abklingzeit 2, zeitweiser Tausch von Sniper gegen Pierce 1. Butcher’s Bill erwähnt Höllenglut-Tötungen. Trainworks mindestens **0.7.33**.
+- Bekanntes Problem: Gemischte Championpfade können die vorherige Fähigkeit ersetzen.
+- Build und 65 automatische Prüfungen erfolgreich; **nicht im Spiel verifiziert**.
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -273,6 +313,15 @@ Deutsch
 
 ## Russian
 
+### 0.3.1 — 2026-10-26 — BETA
+
+- Watchtower изначально активна: способность комнаты с перезарядкой 1 одновременно переключает Снайпер и +10 атаки без накопления. Сохраняет Снайпер из других источников.
+- Field Medic и Chirurgeon выбирают только союзников с видимым отрицательным эффектом. Chirurgeon II/III сохраняют дальность между этажами и пропускают уже очищенных союзников.
+- Field Forge применяет скидку к новому объединённому снаряжению только один раз, сохраняя другие изменения цены.
+- Визуальные исправления Roderic/Vesper: огромная фигура при размещении и смещение VFX. Longbowman: перезарядка 2, временная замена Sniper на Pierce 1. Butcher’s Bill упоминает убийства Пеклом. Trainworks минимум **0.7.33**.
+- Известная проблема: смешение путей чемпиона может заменить прежнюю способность.
+- Сборка и 65 автоматических проверок успешны; **в игре не проверено**.
+
 ### 0.3.0 — 2026-10-10 — BETA
 
 - Первая версия **BETA**.
@@ -294,6 +343,15 @@ Deutsch
 - Карты, боевые единицы, чемпионы, способности, состояния, снаряжение, помещения, реликвии и диалоги переведены на все десять языков игры. Включая динамический текст урона Severance Pay.
 
 ## Portuguese Brazil
+
+### 0.3.1 — 2026-10-26 — BETA
+
+- Watchtower começa ativa: habilidade de sala com recarga 1 alterna Atirador de Elite e +10 de ataque juntos, sem acumular. Preserva o efeito de outras fontes.
+- Field Medic e Chirurgeon escolhem apenas aliados com efeitos negativos visíveis. Chirurgeon II/III mantêm alcance entre andares e ignoram aliados já purificados.
+- Field Forge aplica o desconto uma vez ao equipamento recém-fundido, preservando outros modificadores.
+- Ajustes visuais de Roderic/Vesper para aparição gigante e VFX deslocados. Longbowman: recarga 2, troca temporária de Sniper por Pierce 1. Butcher’s Bill menciona abates da Pira. Trainworks mínimo **0.7.33**.
+- Problema conhecido: misturar caminhos de campeão pode substituir a habilidade anterior.
+- Compilação e 65 verificações automáticas corretas; **versão não verificada em partida**.
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -317,6 +375,15 @@ Português (Brasil)
 
 ## Chinese
 
+### 0.3.1 — 2026-10-26 — BETA
+
+- Watchtower初始激活。房间技能冷却1，同时切换狙击与+10攻击；不叠加并保留其他来源的狙击。
+- Field Medic和Chirurgeon只从带有可见减益的友军中随机选择。Chirurgeon II/III保留跨层范围，连续净化跳过已净化目标。
+- Field Forge对新融合装备只应用一次减费，保留其他费用修正。
+- 调整Roderic/Vesper部署时的巨大闪现及VFX位置。Longbowman冷却改为2，暂时以Pierce 1替换Sniper。Butcher’s Bill文本包含薪火击杀。Trainworks最低版本**0.7.33**。
+- 已知问题：混合冠军路线可能覆盖原有主动技能。
+- 编译和65项自动检查通过；**尚未在实战中验证**。
+
 ### 0.3.0 — 2026-10-10 — BETA
 
 - 首个 **BETA** 版本。
@@ -338,6 +405,15 @@ Português (Brasil)
 - 卡牌、单位、勇者、技能、状态、装备、房间、遗物和对白已翻译为游戏的全部十种语言，包括Severance Pay的动态伤害文本。
 
 ## Chinese Traditional
+
+### 0.3.1 — 2026-10-26 — BETA
+
+- Watchtower初始啟用。房間技能冷卻1，同時切換狙擊與+10攻擊；不疊加並保留其他來源的狙擊。
+- Field Medic和Chirurgeon只從帶有可見減益的友軍中隨機選擇。Chirurgeon II/III保留跨層範圍，連續淨化跳過已淨化目標。
+- Field Forge對新融合裝備只套用一次減費，保留其他費用修正。
+- 調整Roderic/Vesper部署時的巨大閃現及VFX位置。Longbowman冷卻改為2，暫時以Pierce 1取代Sniper。Butcher’s Bill文字包含薪火擊殺。Trainworks最低版本**0.7.33**。
+- 已知問題：混合冠軍路線可能覆蓋原有主動技能。
+- 編譯和65項自動檢查通過；**尚未在實戰中驗證**。
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -361,6 +437,15 @@ Português (Brasil)
 
 ## Korean
 
+### 0.3.1 — 2026-10-26 — BETA
+
+- Watchtower는 활성 상태로 시작. 방 능력 대기시간 1로 저격과 공격력 +10을 함께 전환. 중첩되지 않으며 다른 출처의 저격은 유지.
+- Field Medic과 Chirurgeon은 보이는 약화 효과가 있는 아군만 무작위로 선택. Chirurgeon II/III는 층 간 범위를 유지하며 이미 정화한 아군 제외.
+- Field Forge는 새 융합 장비에 할인 한 번만 적용하고 다른 비용 변경 유지.
+- Roderic/Vesper의 배치 순간 거대한 모습과 VFX 위치 조정. Longbowman: 대기시간 2, Sniper를 일시적으로 Pierce 1로 교체. Butcher’s Bill 설명에 화로 처치 포함. Trainworks 최소 **0.7.33**.
+- 알려진 문제: 챔피언 경로를 혼합하면 이전 활성 능력이 교체될 수 있음.
+- 빌드와 자동 검사 65개 통과. **실제 플레이 검증은 미완료**.
+
 ### 0.3.0 — 2026-10-10 — BETA
 
 - 첫 **BETA** 버전.
@@ -382,6 +467,15 @@ Português (Brasil)
 - 카드, 유닛, 챔피언, 능력, 상태, 장비, 방, 유물 및 대사를 게임의 10개 언어로 번역했습니다. Severance Pay의 동적 피해 문구도 포함됩니다.
 
 ## Japanese
+
+### 0.3.1 — 2026-10-26 — BETA
+
+- Watchtowerは有効状態で開始。部屋能力のクールダウン1で狙撃と攻撃力+10を同時に切り替え。重複せず、他の効果による狙撃を保持。
+- Field MedicとChirurgeonは可視の弱体効果を持つ味方のみから選択。Chirurgeon II/IIIは階をまたぐ範囲を維持し、連続浄化では浄化済みの味方を除外。
+- Field Forgeは新しい融合装備に軽減を1回だけ適用し、他のコスト補正を保持。
+- Roderic/Vesperの配置直後の巨大表示とVFX位置を調整。Longbowmanはクールダウン2、Sniperを一時的にPierce 1へ変更。Butcher’s Billに炉の撃破を明記。Trainworks最低**0.7.33**。
+- 既知の問題：チャンピオン経路の混合で以前の能力が置き換わる場合があります。
+- ビルドと自動検証65項目を通過。**実際のプレイでは未検証**。
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -412,3 +506,5 @@ Português (Brasil)
 <!-- 2026-09-30-0103||codex-freecompany-fx||CHANGELOG.md||añade enlace inglés al inicio, historial inglés/español y notas 0.2.6 en diez idiomas con localización -->
 
 <!-- 2026-10-10-2256||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\CHANGELOG.md||añade changelog 0.3.0 BETA en los diez idiomas manteniendo enlace inglés superior -->
+
+<!-- 2026-10-26-2156||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\CHANGELOG.md||changelog 0.3.1 en diez idiomas, pruebas no jugadas y mezcla de sendas pendiente explícitas -->
