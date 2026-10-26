@@ -50,7 +50,7 @@ Units, spells, rooms, equipment and artifacts, built around three pillars: **for
 
 ## Thanks
 
-Big thanks to **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone**, **Rratvar, the Untitled**, and to everyone else
+Big thanks to these contributors (in alphabetical order): **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone**, **Rratvar, the Untitled**, and to everyone else
 on Discord's MT2 mod channel (https://discord.com/channels/336546996779483136/1377778943674810368), for testing The Free Company and pointing out what broke.
 
 [Report bugs and leave feedback in the Discord thread](https://discord.com/channels/336546996779483136/1563998046084268032).
@@ -128,7 +128,7 @@ Unidades, hechizos, salas, equipo y artefactos, alrededor de tres pilares: **for
 
 ## Agradecimientos
 
-Muchas gracias a **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone**, **Rratvar, the Untitled** y a todos los demás
+Muchas gracias a estos colaboradores (en orden alfabético): **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone**, **Rratvar, the Untitled** y a todos los demás
 del canal de mods de MT2 en Discord (https://discord.com/channels/336546996779483136/1377778943674810368) por probar The Free Company y avisar de lo que se
 rompía.
 
@@ -216,3 +216,5 @@ Solo estas **29 cartas concretas** cuentan; no se incluye automáticamente el re
 <!-- 2026-10-26-2156||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||cabeceras públicas BETA 0.3.1 en inglés y español -->
 
 <!-- 2026-10-26-2222||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\README.md||añade Rratvar a agradecimientos y subhilo específico de bugs en inglés y español -->
+
+<!-- 2026-10-26-2224||codex-freecompany-fx||README.md||explicita lista alfabética de todos los colaboradores conocidos en inglés y español -->
