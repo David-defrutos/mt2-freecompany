@@ -53,6 +53,19 @@ internal static class ChampionSpriteVisuals
         }
     }
     [HarmonyPatch]
+    private static class AwakePatch
+    {
+        private static bool Prepare() => Animated != null && AccessTools.Method(Animated, "Awake") != null;
+        private static MethodBase TargetMethod() => AccessTools.Method(Animated!, "Awake");
+        private static void Postfix(Component __instance)
+        {
+            if (!Ours(__instance)) return;
+            var ui = __instance.GetComponentInParent<CharacterUI>();
+            var reference = ui == null ? null : ui.GetComponent<SpriteRenderer>();
+            if (reference != null) reference.enabled = false;
+        }
+    }
+    [HarmonyPatch]
     private static class BoundsPatch
     {
         private static bool Prepare() => Animated != null && AccessTools.Method(Animated, "Setup") != null;
@@ -104,3 +117,5 @@ internal static class ChampionSpriteVisuals
 // 2026-10-26-2052||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\ChampionSpriteVisuals.cs||oculta SpriteRenderer de referencia y calcula bounds/anclajes sobre quad animado real de Roderic y Vesper
 
 // 2026-10-26-2053||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\ChampionSpriteVisuals.cs||conserva orientación frontal/trasera nativa en anclajes de campeones
+
+// 2026-10-26-2058||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\ChampionSpriteVisuals.cs||oculta sprite estático también en Awake de cada clon antes de su primer frame
