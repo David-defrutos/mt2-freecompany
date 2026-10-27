@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
@@ -10,6 +12,22 @@ namespace mt2_freecompany.Plugin
     public class Plugin : BaseUnityPlugin
     {
         internal static new ManualLogSource Logger = new(MyPluginInfo.PLUGIN_GUID);
+
+        // A broken game/library contract must not prevent unrelated patch classes from loading.
+        internal static int ApplyPatches(Harmony harmony, IEnumerable<Type> types)
+        {
+            int failures = 0;
+            foreach (var type in types)
+            {
+                try { harmony.CreateClassProcessor(type).Patch(); }
+                catch (Exception error)
+                {
+                    ++failures;
+                    Logger.LogError($"FreeCompany failed to patch {type.FullName}: {error}");
+                }
+            }
+            return failures;
+        }
 
         public void Awake()
         {
@@ -112,8 +130,10 @@ namespace mt2_freecompany.Plugin
             // (https://github.com/David-defrutos/mt2-custom-clan-ui-fixes), porque no tiene
             // nada que ver con este clan y debe funcionar sin el.
 
-            Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
-            new Harmony(MyPluginInfo.PLUGIN_GUID).PatchAll();
+            int failures = ApplyPatches(new Harmony(MyPluginInfo.PLUGIN_GUID), typeof(Plugin).Assembly.GetTypes());
+            if (failures == 0) Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
+            else Logger.LogError($"FreeCompany initialized with {failures} failed Harmony patch classes. "
+                + "Some features are unavailable; inspect the errors above before playing.");
         }
     }
 }
@@ -125,3 +145,5 @@ namespace mt2_freecompany.Plugin
 // 2026-09-28-2313||codex-freecompany-fx||src/Plugin.cs||activa parche Harmony de cues sonoros al jugar cartas del clan
 
 // 2026-10-09-1828||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\Plugin.cs||registra JSON Field Dressing en carga del clan
+
+// 2026-10-27-2204||codex-freecompany-fx||src/Plugin.cs||H3: aísla fallo de cada clase Harmony, registra excepción y advierte carga incompleta; continúa clases independientes

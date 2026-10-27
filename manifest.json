@@ -6,7 +6,7 @@
   "dependencies": [
     "BepInEx-BepInExPack-5.4.2100",
     "MT2-Trainworks_Reloaded-0.7.33",
-    "Conductor-Conductor-0.5.14"
+    "Conductor-Conductor-0.5.17"
   ],
   "website_url": "https://github.com/David-defrutos/mt2-freecompany",
   "FullName": "frutos-FreeCompany"

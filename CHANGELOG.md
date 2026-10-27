@@ -8,6 +8,13 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ### 0.3.2 — 2026-10-27 — BETA
 
+Thanks to the external reviewer for identifying the Beastmaster marker, Countdown reapplication and Conductor naming issues.
+
+- **Tamable:** the hand icon and tooltip only appear in runs with Vesper Beastmaster, including before she is deployed.
+- **Longbowman:** the ability follows Conductor’s current status name, **Skewer**, while retaining the translated sentences. Minimum Conductor: **0.5.17**.
+- **Beastmaster:** clarified that each deployed Vesper contributes an Ember discount; duplicates still stack.
+- **Compatibility:** a failed Harmony patch no longer prevents independent patches from loading, and errors are clearly logged. Requisition no longer depends on a misspelled Trainworks localization prefix. Unused artwork is excluded from the package.
+
 - **Battle Chaplain:** Last Rites now uses native healing and all-floor targeting, improving compatibility and following the game's standard targeting rules.
 - **Fuse and Banished:** cleansing and reapplying these effects no longer carries over damage from the previous application.
 - **Requisition:** random equipment for units without a matching role now follows the game's battle seed.
@@ -123,6 +130,13 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 ## Spanish
 
 ### 0.3.2 — 2026-10-27 — BETA
+
+Gracias al revisor externo por detectar los problemas del indicador Beastmaster, la reaplicación de Countdown y el nombre del estado de Conductor.
+
+- **Tamable:** el icono y tooltip de la mano solo aparecen en partidas con Vesper Beastmaster, incluso antes de desplegarla.
+- **Longbowman:** la habilidad usa el nombre actual del estado de Conductor, **Skewer**, conservando las frases traducidas. Conductor mínimo: **0.5.17**.
+- **Beastmaster:** el texto aclara que cada Vesper desplegada aporta un descuento de Ember; las copias siguen acumulándolo.
+- **Compatibilidad:** un parche Harmony fallido ya no impide cargar los independientes y los errores se registran claramente. Requisition deja de depender de una errata en el prefijo de localización de Trainworks. Se excluye del paquete el arte sin uso.
 
 - **Battle Chaplain:** Last Rites usa ahora curación y selección de todos los pisos nativas, mejorando la compatibilidad y respetando las reglas normales de objetivos.
 - **Fuse y Banished:** limpiar y volver a aplicar estos efectos ya no arrastra daño de la aplicación anterior.
@@ -277,6 +291,13 @@ comentarios de la ficha.
 
 ### 0.3.2 — 2026-10-27 — BETA
 
+Merci au réviseur externe pour les problèmes signalés concernant l’indicateur Beastmaster, la réapplication de Countdown et le nom de l’état de Conductor.
+
+- **Tamable :** l’icône et l’infobulle en main n’apparaissent que dans les parties avec Vesper Beastmaster, même avant son déploiement.
+- **Longbowman :** la capacité utilise le nom actuel de l’état de Conductor, **Skewer**, en conservant les phrases traduites. Conductor minimum : **0.5.17**.
+- **Beastmaster :** le texte précise que chaque Vesper déployée réduit le coût en Ember ; les copies continuent de cumuler cette réduction.
+- **Compatibilité :** un échec de patch Harmony ne bloque plus les patches indépendants et les erreurs sont clairement consignées. Requisition ne dépend plus d’une faute dans le préfixe de localisation de Trainworks. Les illustrations inutilisées sont exclues du paquet.
+
 - **Battle Chaplain :** Last Rites utilise désormais les soins et le ciblage de tous les étages natifs, pour une meilleure compatibilité et le respect des règles de ciblage du jeu.
 - **Fuse et Banished :** purifier puis réappliquer ces effets ne conserve plus les dégâts de l'application précédente.
 - **Requisition :** l'équipement aléatoire des unités sans rôle correspondant suit désormais la graine de combat du jeu.
@@ -315,6 +336,13 @@ Français
 ## German
 
 ### 0.3.2 — 2026-10-27 — BETA
+
+Danke an den externen Prüfer für die Hinweise zum Beastmaster-Symbol, zur erneuten Anwendung von Countdown und zum Statusnamen von Conductor.
+
+- **Tamable:** Symbol und Tooltip auf der Hand erscheinen nur in Läufen mit Vesper Beastmaster, auch vor ihrem Einsatz.
+- **Longbowman:** Die Fähigkeit verwendet Conductors aktuellen Statusnamen **Skewer**, während die übersetzten Sätze erhalten bleiben. Conductor mindestens **0.5.17**.
+- **Beastmaster:** Der Text erklärt, dass jede ausgespielte Vesper einen Ember-Rabatt beiträgt; Kopien wirken weiterhin zusammen.
+- **Kompatibilität:** Ein fehlgeschlagener Harmony-Patch blockiert unabhängige Patches nicht mehr; Fehler werden deutlich protokolliert. Requisition hängt nicht mehr von einem Tippfehler im Trainworks-Lokalisierungspräfix ab. Ungenutzte Bilder werden nicht mitgeliefert.
 
 - **Battle Chaplain:** Last Rites verwendet jetzt die native Heilung und Zielauswahl über alle Stockwerke, für bessere Kompatibilität und die üblichen Zielregeln des Spiels.
 - **Fuse und Banished:** Nach dem Entfernen und erneuten Anwenden wird kein Schaden der vorherigen Anwendung mehr übernommen.
@@ -355,6 +383,13 @@ Deutsch
 
 ### 0.3.2 — 2026-10-27 — BETA
 
+Спасибо внешнему рецензенту за сообщения о маркере Beastmaster, повторном применении Countdown и названии эффекта Conductor.
+
+- **Tamable:** значок и подсказка в руке появляются только в забегах с Веспер Beastmaster, даже до её призыва.
+- **Longbowman:** способность использует текущее название эффекта Conductor — **Skewer**, сохраняя переведённые предложения. Минимальная версия Conductor: **0.5.17**.
+- **Beastmaster:** текст уточняет, что каждая Веспер в бою снижает стоимость в Ember; эффекты копий по-прежнему складываются.
+- **Совместимость:** ошибка одного патча Harmony больше не мешает независимым патчам; ошибки явно записываются в журнал. Requisition больше не зависит от опечатки в префиксе локализации Trainworks. Неиспользуемые изображения исключены из пакета.
+
 - **Battle Chaplain:** Last Rites теперь использует встроенное лечение и выбор целей на всех этажах, улучшая совместимость и соблюдая обычные правила выбора целей.
 - **Fuse и Banished:** после очищения и повторного применения больше не сохраняется урон от предыдущего эффекта.
 - **Requisition:** случайное снаряжение для бойцов без подходящей роли теперь зависит от зерна боевой случайности игры.
@@ -393,6 +428,13 @@ Deutsch
 ## Portuguese Brazil
 
 ### 0.3.2 — 2026-10-27 — BETA
+
+Obrigado ao revisor externo pelos relatos sobre o marcador Beastmaster, a reaplicação de Countdown e o nome do estado de Conductor.
+
+- **Tamable:** o ícone e a dica na mão só aparecem em partidas com Vesper Beastmaster, mesmo antes de ela entrar em jogo.
+- **Longbowman:** a habilidade usa o nome atual do estado de Conductor, **Skewer**, mantendo as frases traduzidas. Conductor mínimo: **0.5.17**.
+- **Beastmaster:** o texto esclarece que cada Vesper em jogo contribui com um desconto de Ember; as cópias continuam acumulando o efeito.
+- **Compatibilidade:** uma falha em um patch Harmony não bloqueia mais os patches independentes, e os erros são registrados claramente. Requisition não depende mais de um erro de digitação no prefixo de localização de Trainworks. Artes não utilizadas são excluídas do pacote.
 
 - **Battle Chaplain:** Last Rites agora usa cura e seleção de alvos em todos os andares nativas, melhorando a compatibilidade e respeitando as regras normais do jogo.
 - **Fuse e Banished:** remover e reaplicar esses efeitos não conserva mais o dano da aplicação anterior.
@@ -433,6 +475,13 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-10-27 — BETA
 
+感谢外部审查者发现 Beastmaster 标记、Countdown 重复施加及 Conductor 状态名称的问题。
+
+- **Tamable：**只有选择了 Vesper Beastmaster 路线的旅程才显示手牌图标及提示，无须先部署她。
+- **Longbowman：**技能使用 Conductor 当前的状态名称 **Skewer**，其余句子保留翻译。Conductor 最低版本为 **0.5.17**。
+- **Beastmaster：**文本说明每位在场的维斯珀都会降低 Ember 费用；复制体的效果仍可叠加。
+- **兼容性：**某个 Harmony 补丁失败不再阻止其他独立补丁加载，并明确记录错误。Requisition 不再依赖 Trainworks 本地化前缀中的拼写错误。安装包不再包含未使用的图片。
+
 - **Battle Chaplain：**Last Rites 现使用游戏原生治疗效果和全楼层目标选择，提高兼容性并遵循游戏的正常目标规则。
 - **Fuse 和 Banished：**净化后重新施加这些效果，不再保留上一次施加时的待结算伤害。
 - **Requisition：**为没有匹配职业的单位随机生成装备时，现在使用游戏的战斗随机种子。
@@ -471,6 +520,13 @@ Português (Brasil)
 ## Chinese Traditional
 
 ### 0.3.2 — 2026-10-27 — BETA
+
+感謝外部審查者發現 Beastmaster 標記、Countdown 重複施加及 Conductor 狀態名稱的問題。
+
+- **Tamable：**只有選擇了 Vesper Beastmaster 路線的旅程才顯示手牌圖示及提示，無須先部署她。
+- **Longbowman：**技能使用 Conductor 目前的狀態名稱 **Skewer**，其餘句子保留翻譯。Conductor 最低版本為 **0.5.17**。
+- **Beastmaster：**文字說明每位在場的維斯珀都會降低 Ember 費用；複製體的效果仍可疊加。
+- **相容性：**某個 Harmony 補丁失敗不再阻止其他獨立補丁載入，並明確記錄錯誤。Requisition 不再依賴 Trainworks 本地化前綴中的拼字錯誤。安裝包不再包含未使用的圖片。
 
 - **Battle Chaplain：**Last Rites 現使用遊戲原生治療效果及全樓層目標選擇，提高相容性並遵循遊戲的正常目標規則。
 - **Fuse 和 Banished：**淨化後重新施加這些效果，不再保留上一次施加時的待結算傷害。
@@ -511,6 +567,13 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-10-27 — BETA
 
+Beastmaster 표시, Countdown 재적용 및 Conductor 상태 이름 문제를 찾아 주신 외부 검토자께 감사드립니다.
+
+- **Tamable:** 손패 아이콘과 설명은 Vesper Beastmaster가 있는 여정에서만 나타나며, 배치 전에도 표시됩니다.
+- **Longbowman:** 능력이 번역된 문장을 유지하면서 Conductor의 현재 상태 이름인 **Skewer**를 사용합니다. Conductor 최소 버전은 **0.5.17**입니다.
+- **Beastmaster:** 배치된 베스퍼마다 Ember 비용을 낮춘다는 점을 명시했습니다. 복제된 베스퍼의 효과는 계속 중첩됩니다.
+- **호환성:** Harmony 패치 하나가 실패해도 독립된 다른 패치는 로드되며 오류가 명확히 기록됩니다. Requisition은 더 이상 Trainworks 번역 키 접두사의 오타에 의존하지 않습니다. 사용하지 않는 이미지는 패키지에서 제외됩니다.
+
 - **Battle Chaplain:** Last Rites가 게임 기본 회복 효과와 모든 층 대상 선택을 사용하여 호환성을 높이고 기본 대상 지정 규칙을 따릅니다.
 - **Fuse 및 Banished:** 정화 후 다시 적용할 때 이전 효과의 예정 피해가 남지 않도록 수정했습니다.
 - **Requisition:** 일치하는 역할이 없는 유닛의 무작위 장비가 이제 게임의 전투 난수 시드를 따릅니다.
@@ -549,6 +612,13 @@ Português (Brasil)
 ## Japanese
 
 ### 0.3.2 — 2026-10-27 — BETA
+
+Beastmaster の表示、Countdown の再付与、Conductor の状態名に関する問題を指摘してくださった外部レビュアーに感謝します。
+
+- **Tamable：**手札のアイコンと説明は Vesper Beastmaster のいるプレイでのみ表示され、配置前でも表示されます。
+- **Longbowman：**翻訳済みの文章を保ちながら、Conductor の現在の状態名 **Skewer** を使用します。Conductor の最低バージョンは **0.5.17** です。
+- **Beastmaster：**場のヴェスパー1体ごとに Ember コストを下げることを明記しました。複製による効果は引き続き累積します。
+- **互換性：**Harmony パッチの一つが失敗しても独立した他のパッチは読み込まれ、エラーが明確に記録されます。Requisition は Trainworks の翻訳キー接頭辞の誤字に依存しなくなりました。未使用の画像はパッケージから除外されます。
 
 - **Battle Chaplain：**Last Rites がゲーム標準の回復効果と全階層の対象選択を使用するようになり、互換性が向上し、通常の対象選択ルールに従います。
 - **Fuse と Banished：**浄化後に再付与しても、前回の付与による保留ダメージが残らないよう修正しました。
@@ -608,3 +678,5 @@ Português (Brasil)
 <!-- 2026-10-27-2053||codex-freecompany-fx||CHANGELOG.md||añade 0.3.2 BETA en diez idiomas: curación nativa, Countdown, RNG y seis goblins; retira líneas de pruebas del texto público -->
 
 <!-- 2026-10-27-2056||codex-freecompany-fx||CHANGELOG.md||créditos por reportes concretos: Brandon en 0.2.5 y Chéradénine en 0.2.4; conserva Rratvar en 0.3.1 -->
+
+<!-- 2026-10-27-2208||codex-freecompany-fx||CHANGELOG.md||añade correcciones H1-H6/H8 y agradecimiento al revisor externo en diez idiomas; mínimo Conductor 0.5.17 -->

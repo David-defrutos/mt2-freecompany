@@ -75,8 +75,8 @@ namespace mt2_freecompany.Plugin
         // Use the game battle RNG so seeded runs and reloads remain reproducible.
 
         // Como quedan los ids una vez registrados por Trainworks.
-        private static string ClaveSubtipo(string rolId)
-            => $"SubtytpesData_nameKey-{PluginGuid}-Subtype-{rolId}";
+        private static string NombreSubtipo(string rolId)
+            => $"{PluginGuid}-Subtype-{rolId}";
 
         private static string NombreCarta(string cardId)
             => $"{PluginGuid}-Card-{cardId}";
@@ -228,10 +228,12 @@ namespace mt2_freecompany.Plugin
 
         private static bool TieneSubtipo(CharacterState target, string rolId)
         {
-            string buscado = ClaveSubtipo(rolId);
+            string buscado = NombreSubtipo(rolId);
             foreach (var st in target.GetSubtypes())
             {
-                if (st != null && st.Key == buscado) return true;
+                // The registered identity is stable; Trainworks' localization-key prefix is not.
+                if (st != null && (st.Key == buscado
+                    || st.Key.EndsWith("-" + buscado, StringComparison.Ordinal))) return true;
             }
             return false;
         }
@@ -258,3 +260,5 @@ namespace mt2_freecompany.Plugin
 // 2026-09-21-2041||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||anadido CanPlayWhenHandFull => false: con la mano llena la habilidad se gastaba la recarga sin dar nada
 
 // 2026-10-27-1531||codex-freecompany-fx||src/code/CardEffectRequisition.cs||sustituye System.Random por RandomManager.Range con RngId.Battle para selección reproducible
+
+// 2026-10-27-2204||codex-freecompany-fx||src/code/CardEffectRequisition.cs||H5: compara identidad de rol con namespace, sin depender del prefijo localizado mal escrito de Trainworks

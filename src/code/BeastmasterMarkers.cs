@@ -19,6 +19,7 @@ internal static class BeastmasterMarkers
         if (cardManager == null || !cardManager.IsCardInHand(card)
             || !BeastmasterTraining.IsCreature(card)) return null;
         var managers = all.GetCoreManagers();
+        if (!BeastmasterTraining.HasBeastmasterInRun(managers)) return null;
         var data = managers.GetAllGameData()?.GetAllCardUpgradeData()
             ?.FirstOrDefault(u => u != null && u.name == MyPluginInfo.PLUGIN_GUID + "-Upgrade-TamableMarker");
         if (data == null) return null;
@@ -142,3 +143,5 @@ internal static class BeastmasterChampionTooltipPatch
 // 2026-10-08-1944||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\BeastmasterMarkers.cs||marca criaturas elegibles desplegadas al invocar Vesper o nuevas bestias, sin entrenamiento estadístico
 
 // 2026-10-08-1952||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\BeastmasterMarkers.cs||restaura pata Tamed al desplegar una bestia ya domesticada aunque Vesper aún no esté en juego
+
+// 2026-10-27-2202||codex-freecompany-fx||src/code/BeastmasterMarkers.cs||H1: oculta pata y tooltip Tamable fuera de partidas con Vesper Beastmaster

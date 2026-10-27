@@ -58,16 +58,16 @@
         "japanese": "照準変更"
       },
       "descriptions": {
-        "english": "Until the start of your next turn, lose <b>Sniper</b> and gain <b>Pierce 1</b>.",
-        "spanish": "Hasta el inicio de tu siguiente turno, pierde <b>Francotirador</b> y gana <b>Pierce 1</b>.",
-        "french": "Jusqu’au début de votre prochain tour, perd <b>Tireur d’élite</b> et gagne <b>Pierce 1</b>.",
-        "german": "Verliert bis zu Beginn deines nächsten Zuges <b>Scharfschütze</b> und erhält <b>Pierce 1</b>.",
-        "russian": "До начала вашего следующего хода теряет <b>Снайпер</b> и получает <b>Pierce 1</b>.",
-        "portuguese": "Até o início do seu próximo turno, perde <b>Atirador de Elite</b> e ganha <b>Pierce 1</b>.",
-        "chinese": "直到你的下个回合开始，失去<b>狙击</b>并获得<b>Pierce 1</b>。",
-        "chinese_traditional": "直到你的下個回合開始，失去<b>狙擊</b>並獲得<b>Pierce 1</b>。",
-        "korean": "다음 내 턴 시작까지 <b>저격</b>을 잃고 <b>Pierce 1</b> 획득.",
-        "japanese": "次の自分のターン開始まで<b>狙撃</b>を失い、<b>Pierce 1</b>を得る。"
+        "english": "Until the start of your next turn, lose <b>Sniper</b> and gain [Conductor_pierce] 1.",
+        "spanish": "Hasta el inicio de tu siguiente turno, pierde <b>Francotirador</b> y gana [Conductor_pierce] 1.",
+        "french": "Jusqu’au début de votre prochain tour, perd <b>Tireur d’élite</b> et gagne [Conductor_pierce] 1.",
+        "german": "Verliert bis zu Beginn deines nächsten Zuges <b>Scharfschütze</b> und erhält [Conductor_pierce] 1.",
+        "russian": "До начала вашего следующего хода теряет <b>Снайпер</b> и получает [Conductor_pierce] 1.",
+        "portuguese": "Até o início do seu próximo turno, perde <b>Atirador de Elite</b> e ganha [Conductor_pierce] 1.",
+        "chinese": "直到你的下个回合开始，失去<b>狙击</b>并获得[Conductor_pierce] 1。",
+        "chinese_traditional": "直到你的下個回合開始，失去<b>狙擊</b>並獲得[Conductor_pierce] 1。",
+        "korean": "다음 내 턴 시작까지 <b>저격</b>을 잃고 [Conductor_pierce] 1 획득.",
+        "japanese": "次の自分のターン開始まで<b>狙撃</b>を失い、[Conductor_pierce] 1を得る。"
       },
       "card_art": "@Longbowman",
       "is_an_ability": true,
@@ -177,16 +177,16 @@
       "id": "LongbowmanSniperBack",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Regain <b>Sniper</b>. Remove the temporary <b>Pierce 1</b>.",
-        "french": "Récupère <b>Tireur d’élite</b>. Retire le <b>Pierce 1</b> temporaire.",
-        "german": "Erhält <b>Scharfschütze</b> zurück. Entfernt das vorübergehende <b>Pierce 1</b>.",
-        "russian": "Снова получает <b>Снайпер</b>. Снимает временный <b>Pierce 1</b>.",
-        "portuguese": "Recupera <b>Atirador de Elite</b>. Remove o <b>Pierce 1</b> temporário.",
-        "chinese": "重新获得<b>狙击</b>。移除临时的<b>Pierce 1</b>。",
-        "spanish": "Recupera <b>Francotirador</b>. Retira el <b>Pierce 1</b> temporal.",
-        "chinese_traditional": "重新獲得<b>狙擊</b>。移除暫時的<b>Pierce 1</b>。",
-        "korean": "<b>저격</b> 다시 획득. 임시 <b>Pierce 1</b> 제거.",
-        "japanese": "<b>狙撃</b>を再び得る。一時的な<b>Pierce 1</b>を解除。"
+        "english": "Regain <b>Sniper</b>. Remove the temporary [Conductor_pierce] 1.",
+        "french": "Récupère <b>Tireur d’élite</b>. Retire le [Conductor_pierce] 1 temporaire.",
+        "german": "Erhält <b>Scharfschütze</b> zurück. Entfernt das vorübergehende [Conductor_pierce] 1.",
+        "russian": "Снова получает <b>Снайпер</b>. Снимает временный [Conductor_pierce] 1.",
+        "portuguese": "Recupera <b>Atirador de Elite</b>. Remove o [Conductor_pierce] 1 temporário.",
+        "chinese": "重新获得<b>狙击</b>。移除临时的[Conductor_pierce] 1。",
+        "spanish": "Recupera <b>Francotirador</b>. Retira el [Conductor_pierce] 1 temporal.",
+        "chinese_traditional": "重新獲得<b>狙擊</b>。移除暫時的[Conductor_pierce] 1。",
+        "korean": "<b>저격</b> 다시 획득. 임시 [Conductor_pierce] 1 제거.",
+        "japanese": "<b>狙撃</b>を再び得る。一時的な[Conductor_pierce] 1を解除。"
       },
       "effects": [
         "@LongbowmanPierceOff",

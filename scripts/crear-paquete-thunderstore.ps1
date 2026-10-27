@@ -55,7 +55,22 @@ try {
     Copy-Item -LiteralPath $DllPath -Destination (Join-Path $plugins 'mt2_freecompany.Plugin.dll')
     Copy-Item -LiteralPath (Join-Path $repo 'NOTICE.md') -Destination $plugins
     Copy-Item -LiteralPath (Join-Path $repo 'json') -Destination $plugins -Recurse
-    Copy-Item -LiteralPath (Join-Path $repo 'textures') -Destination $plugins -Recurse
+    # Only ship runtime texture paths actually referenced by the registered JSON.
+    $texturePaths = @($declared | ForEach-Object {
+        $jsonText = Get-Content -LiteralPath (Join-Path $repo $_) -Raw
+        [regex]::Matches($jsonText, '"(textures/[^"\r\n]+)"') |
+            ForEach-Object { $_.Groups[1].Value }
+    } | Sort-Object -Unique)
+    foreach ($texturePath in $texturePaths) {
+        $sourceTexture = [IO.Path]::GetFullPath((Join-Path $repo $texturePath))
+        $targetTexture = [IO.Path]::GetFullPath((Join-Path $plugins $texturePath))
+        if (-not $sourceTexture.StartsWith((Join-Path $resolvedRepo 'textures') + '\', [StringComparison]::OrdinalIgnoreCase) -or
+            -not $targetTexture.StartsWith($plugins + '\textures\', [StringComparison]::OrdinalIgnoreCase)) {
+            throw "Ruta de textura inesperada: $texturePath"
+        }
+        New-Item -ItemType Directory -Path ([IO.Path]::GetDirectoryName($targetTexture)) -Force | Out-Null
+        Copy-Item -LiteralPath $sourceTexture -Destination $targetTexture
+    }
 
     Compress-Archive -Path (Join-Path $stage '*') -DestinationPath $Destination
 
@@ -85,3 +100,5 @@ try {
 finally {
     if (Test-Path -LiteralPath $stage) { Remove-Item -LiteralPath $stage -Recurse -Force }
 }
+
+# 2026-10-27-2204||codex-freecompany-fx||scripts/crear-paquete-thunderstore.ps1||H8: empaqueta solo texturas referenciadas; conserva recursos sin uso en trabajo y evita paths fuera de textures

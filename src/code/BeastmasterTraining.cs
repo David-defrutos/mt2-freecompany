@@ -61,6 +61,26 @@ internal static class BeastmasterTraining
         return characters.Select(c => GetLevel(c, managers)).Where(l => l > 0).ToList();
     }
 
+    // A hand marker describes this run's Beastmaster path, even before Vesper is deployed.
+    internal static bool HasBeastmasterInRun(ICoreGameManagers managers)
+    {
+        string vesperName = MyPluginInfo.PLUGIN_GUID + "-Card-SpawnVesper";
+        var vesperCards = managers.GetSaveManager().GetDeckState()
+            .Where(card => card != null && card.GetAssetName() == vesperName).ToArray();
+        if (vesperCards.Length > 0)
+        {
+            var paths = managers.GetAllGameData().GetAllCardUpgradeData().Where(u => u != null
+                && Enumerable.Range(1, 3).Any(level => u.name == MyPluginInfo.PLUGIN_GUID
+                    + "-Upgrade-upg_Beastmaster" + level)).ToArray();
+            if (vesperCards.Any(card => paths.Any(path => card.HasUpgrade(path)))) return true;
+        }
+        var characters = new List<CharacterState>();
+        managers.GetMonsterManager().AddCharactersToList(characters);
+        return characters.Any(character => character != null
+            && character.GetSpawnerCard()?.GetAssetName() == vesperName
+            && GetLevel(character, managers) > 0);
+    }
+
     internal static void Freeze(CardState card, ICoreGameManagers managers)
     {
         if (managers.GetSaveManager().PreviewMode || !IsCreature(card) || GetLevels(managers).Count == 0) return;
@@ -203,3 +223,7 @@ internal static class BeastmasterSavedUpgradePatch
 // 2026-10-08-1936||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\BeastmasterTraining.cs||entrena criaturas vivas desplegadas en cualquier piso; mejora permanente una vez por carta y bono inmediato de ataque/vida por unidad; descuento solo en mano
 
 // 2026-10-08-1944||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\BeastmasterTraining.cs||sustituye crecimiento de estadísticas por marcador permanente Tamed sin atributos; conserva Frozen y descuento Ember; respeta mejoras ya ganadas
+
+// 2026-10-27-2202||codex-freecompany-fx||src/code/BeastmasterTraining.cs||H1: detecta Vesper Beastmaster en mazo permanente o tablero para acotar indicadores Tamable
+
+// 2026-10-27-2205||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\code\BeastmasterTraining.cs||H1: evita búsqueda global de mejoras si no existe Vesper en mazo/tablero
