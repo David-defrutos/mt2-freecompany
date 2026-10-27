@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>mt2_freecompany.Plugin</RootNamespace>
     <LangVersion>latest</LangVersion>
-    <Version>0.3.1</Version>
+    <Version>0.3.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -34,3 +34,5 @@
 <!-- 2026-10-10-2257||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\mt2_freecompany.Plugin.csproj||restaura saltos LF del proyecto evitando diff de formato completo -->
 
 <!-- 2026-10-26-2156||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\src\mt2_freecompany.Plugin.csproj||versión DLL 0.3.0 a 0.3.1 -->
+
+<!-- 2026-10-27-2053||codex-freecompany-fx||src\mt2_freecompany.Plugin.csproj||versión DLL 0.3.1 a 0.3.2 -->

@@ -6,6 +6,13 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ## English
 
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Battle Chaplain:** Last Rites now uses native healing and all-floor targeting, improving compatibility and following the game's standard targeting rules.
+- **Fuse and Banished:** cleansing and reapplying these effects no longer carries over damage from the previous application.
+- **Requisition:** random equipment for units without a matching role now follows the game's battle seed.
+- **Goblin visuals:** slightly enlarged Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer and The New Guy by 10–20%, preserving proportions and foot placement.
+
 ### 0.3.1 — 2026-10-26 — BETA
 
 Thanks to **Rratvar, the Untitled** for reporting the cleansing, champion visual, Field Forge and Butcher's Bill issues, and for the Watchtower feedback. [Bug reports and feedback](https://discord.com/channels/336546996779483136/1563998046084268032).
@@ -17,7 +24,6 @@ Thanks to **Rratvar, the Untitled** for reporting the cleansing, champion visual
 - **Longbowman:** Shift Aim cooldown increases from 1 to 2. Temporarily exchanges Sniper for Conductor's Pierce 1, which hits one additional enemy behind the front target. Pierce granted by equipment is preserved.
 - **Butcher's Bill:** text now explicitly includes Pyre kills. Minimum Trainworks Reloaded: **0.7.33**.
 - **Known issue:** mixing champion paths can replace the previous activated ability. Still pending redesign.
-- Build and **122 automated semantic checks** passed. This release has **not been verified in gameplay**.
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -112,6 +118,13 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 
 ## Spanish
 
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Battle Chaplain:** Last Rites usa ahora curación y selección de todos los pisos nativas, mejorando la compatibilidad y respetando las reglas normales de objetivos.
+- **Fuse y Banished:** limpiar y volver a aplicar estos efectos ya no arrastra daño de la aplicación anterior.
+- **Requisition:** el equipo aleatorio de unidades sin un rol compatible respeta ahora la semilla de batalla del juego.
+- **Goblins:** aumentados ligeramente Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer y The New Guy entre un 10 y un 20 %, conservando proporciones y apoyo de pies.
+
 ### 0.3.1 — 2026-10-26 — BETA
 
 Gracias a **Rratvar, the Untitled** por los reportes sobre limpieza, visuales de campeones, Field Forge y Butcher's Bill, y por sus comentarios sobre Watchtower. [Errores y comentarios](https://discord.com/channels/336546996779483136/1563998046084268032).
@@ -123,7 +136,6 @@ Gracias a **Rratvar, the Untitled** por los reportes sobre limpieza, visuales de
 - **Longbowman:** recarga de Shift Aim de 1 a 2. Cambia temporalmente Francotirador por Pierce 1 de Conductor, que golpea a un enemigo adicional detrás del delantero. Conserva el Pierce concedido por equipos.
 - **Butcher’s Bill:** el texto incluye las bajas de la Pira. Mínimo Trainworks Reloaded: **0.7.33**.
 - **Problema conocido:** mezclar sendas de campeón puede reemplazar la habilidad activada anterior. Pendiente de rediseño.
-- Compilación y **122 comprobaciones semánticas automáticas** correctas. Esta versión **no se ha verificado en partida**.
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -255,6 +267,13 @@ comentarios de la ficha.
 
 ## French
 
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Battle Chaplain :** Last Rites utilise désormais les soins et le ciblage de tous les étages natifs, pour une meilleure compatibilité et le respect des règles de ciblage du jeu.
+- **Fuse et Banished :** purifier puis réappliquer ces effets ne conserve plus les dégâts de l'application précédente.
+- **Requisition :** l'équipement aléatoire des unités sans rôle correspondant suit désormais la graine de combat du jeu.
+- **Gobelins :** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer et The New Guy sont agrandis de 10 à 20 %, en conservant leurs proportions et la position de leurs pieds.
+
 ### 0.3.1 — 2026-10-26 — BETA
 
 Merci à **Rratvar, the Untitled** pour les signalements concernant la purification, les visuels des champions, Field Forge et Butcher's Bill, ainsi que les retours sur Watchtower. [Bugs et retours](https://discord.com/channels/336546996779483136/1563998046084268032).
@@ -264,7 +283,6 @@ Merci à **Rratvar, the Untitled** pour les signalements concernant la purificat
 - Field Forge applique une seule réduction au nouvel équipement fusionné, en conservant les autres modificateurs.
 - Ajustements visuels de Roderic/Vesper : apparition surdimensionnée et effets décalés. Longbowman : recharge 2, échange temporairement Sniper contre Pierce 1. Butcher’s Bill mentionne le Brasier. Trainworks minimum **0.7.33**. Le Pierce des équipements est conservé.
 - Problème connu : mélanger les voies du champion peut remplacer la capacité précédente.
-- Compilation et 122 vérifications automatiques réussies ; **version non vérifiée en partie**.
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -288,6 +306,13 @@ Français
 
 ## German
 
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Battle Chaplain:** Last Rites verwendet jetzt die native Heilung und Zielauswahl über alle Stockwerke, für bessere Kompatibilität und die üblichen Zielregeln des Spiels.
+- **Fuse und Banished:** Nach dem Entfernen und erneuten Anwenden wird kein Schaden der vorherigen Anwendung mehr übernommen.
+- **Requisition:** Zufällige Ausrüstung für Einheiten ohne passende Rolle folgt jetzt dem Kampf-Zufallsseed des Spiels.
+- **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer und The New Guy sind um 10–20 % größer; Proportionen und Fußposition bleiben erhalten.
+
 ### 0.3.1 — 2026-10-26 — BETA
 
 Danke an **Rratvar, the Untitled** für die Fehlerberichte zu Reinigung, Champion-Darstellung, Field Forge und Butcher's Bill sowie das Feedback zu Watchtower. [Fehler und Feedback](https://discord.com/channels/336546996779483136/1563998046084268032).
@@ -297,7 +322,6 @@ Danke an **Rratvar, the Untitled** für die Fehlerberichte zu Reinigung, Champio
 - Field Forge verbilligt neu verschmolzene Ausrüstung nur einmal; andere Kostenmodifikatoren bleiben erhalten.
 - Roderic/Vesper: Anpassungen gegen riesige Einsatzbilder und versetzte VFX. Longbowman: Abklingzeit 2, zeitweiser Tausch von Sniper gegen Pierce 1. Butcher’s Bill erwähnt Höllenglut-Tötungen. Trainworks mindestens **0.7.33**. Pierce aus Ausrüstung bleibt erhalten.
 - Bekanntes Problem: Gemischte Championpfade können die vorherige Fähigkeit ersetzen.
-- Build und 122 automatische Prüfungen erfolgreich; **nicht im Spiel verifiziert**.
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -321,6 +345,13 @@ Deutsch
 
 ## Russian
 
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Battle Chaplain:** Last Rites теперь использует встроенное лечение и выбор целей на всех этажах, улучшая совместимость и соблюдая обычные правила выбора целей.
+- **Fuse и Banished:** после очищения и повторного применения больше не сохраняется урон от предыдущего эффекта.
+- **Requisition:** случайное снаряжение для бойцов без подходящей роли теперь зависит от зерна боевой случайности игры.
+- **Гоблины:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer и The New Guy увеличены на 10–20 % с сохранением пропорций и положения ног.
+
 ### 0.3.1 — 2026-10-26 — BETA
 
 Спасибо **Rratvar, the Untitled** за сообщения о проблемах очищения, визуальных эффектов чемпионов, Field Forge и Butcher's Bill, а также отзывы о Watchtower. [Ошибки и отзывы](https://discord.com/channels/336546996779483136/1563998046084268032).
@@ -330,7 +361,6 @@ Deutsch
 - Field Forge применяет скидку к новому объединённому снаряжению только один раз, сохраняя другие изменения цены.
 - Визуальные исправления Roderic/Vesper: огромная фигура при размещении и смещение VFX. Longbowman: перезарядка 2, временная замена Sniper на Pierce 1. Butcher’s Bill упоминает убийства Пеклом. Trainworks минимум **0.7.33**. Pierce от снаряжения сохраняется.
 - Известная проблема: смешение путей чемпиона может заменить прежнюю способность.
-- Сборка и 122 автоматических проверок успешны; **в игре не проверено**.
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -354,6 +384,13 @@ Deutsch
 
 ## Portuguese Brazil
 
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Battle Chaplain:** Last Rites agora usa cura e seleção de alvos em todos os andares nativas, melhorando a compatibilidade e respeitando as regras normais do jogo.
+- **Fuse e Banished:** remover e reaplicar esses efeitos não conserva mais o dano da aplicação anterior.
+- **Requisition:** equipamentos aleatórios para unidades sem uma função correspondente agora seguem a semente de batalha do jogo.
+- **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer e The New Guy aumentaram de 10 a 20 %, mantendo as proporções e a posição dos pés.
+
 ### 0.3.1 — 2026-10-26 — BETA
 
 Obrigado a **Rratvar, the Untitled** pelos relatos sobre limpeza, visuais dos campeões, Field Forge e Butcher's Bill, e pelos comentários sobre Watchtower. [Erros e comentários](https://discord.com/channels/336546996779483136/1563998046084268032).
@@ -363,7 +400,6 @@ Obrigado a **Rratvar, the Untitled** pelos relatos sobre limpeza, visuais dos ca
 - Field Forge aplica o desconto uma vez ao equipamento recém-fundido, preservando outros modificadores.
 - Ajustes visuais de Roderic/Vesper para aparição gigante e VFX deslocados. Longbowman: recarga 2, troca temporária de Sniper por Pierce 1. Butcher’s Bill menciona abates da Pira. Trainworks mínimo **0.7.33**. Preserva Pierce concedido por equipamentos.
 - Problema conhecido: misturar caminhos de campeão pode substituir a habilidade anterior.
-- Compilação e 122 verificações automáticas corretas; **versão não verificada em partida**.
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -387,6 +423,13 @@ Português (Brasil)
 
 ## Chinese
 
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Battle Chaplain：**Last Rites 现使用游戏原生治疗效果和全楼层目标选择，提高兼容性并遵循游戏的正常目标规则。
+- **Fuse 和 Banished：**净化后重新施加这些效果，不再保留上一次施加时的待结算伤害。
+- **Requisition：**为没有匹配职业的单位随机生成装备时，现在使用游戏的战斗随机种子。
+- **哥布林外观：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例和脚部位置。
+
 ### 0.3.1 — 2026-10-26 — BETA
 
 感谢 **Rratvar, the Untitled** 报告净化、英雄视觉效果、Field Forge 和 Butcher's Bill 的问题，并对 Watchtower 提出反馈。[错误报告与反馈](https://discord.com/channels/336546996779483136/1563998046084268032)。
@@ -396,7 +439,6 @@ Português (Brasil)
 - Field Forge对新融合装备只应用一次减费，保留其他费用修正。
 - 调整Roderic/Vesper部署时的巨大闪现及VFX位置。Longbowman冷却改为2，暂时以Pierce 1替换Sniper。Butcher’s Bill文本包含薪火击杀。Trainworks最低版本**0.7.33**。 保留装备赋予的Pierce。
 - 已知问题：混合冠军路线可能覆盖原有主动技能。
-- 编译和122项自动检查通过；**尚未在实战中验证**。
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -420,6 +462,13 @@ Português (Brasil)
 
 ## Chinese Traditional
 
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Battle Chaplain：**Last Rites 現使用遊戲原生治療效果及全樓層目標選擇，提高相容性並遵循遊戲的正常目標規則。
+- **Fuse 和 Banished：**淨化後重新施加這些效果，不再保留上一次施加時的待結算傷害。
+- **Requisition：**為沒有匹配職業的單位隨機產生裝備時，現在使用遊戲的戰鬥隨機種子。
+- **哥布林外觀：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例及腳部位置。
+
 ### 0.3.1 — 2026-10-26 — BETA
 
 感謝 **Rratvar, the Untitled** 回報淨化、英雄視覺效果、Field Forge 和 Butcher's Bill 的問題，並對 Watchtower 提出意見。[錯誤回報與意見](https://discord.com/channels/336546996779483136/1563998046084268032)。
@@ -429,7 +478,6 @@ Português (Brasil)
 - Field Forge對新融合裝備只套用一次減費，保留其他費用修正。
 - 調整Roderic/Vesper部署時的巨大閃現及VFX位置。Longbowman冷卻改為2，暫時以Pierce 1取代Sniper。Butcher’s Bill文字包含薪火擊殺。Trainworks最低版本**0.7.33**。 保留裝備賦予的Pierce。
 - 已知問題：混合冠軍路線可能覆蓋原有主動技能。
-- 編譯和122項自動檢查通過；**尚未在實戰中驗證**。
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -453,6 +501,13 @@ Português (Brasil)
 
 ## Korean
 
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Battle Chaplain:** Last Rites가 게임 기본 회복 효과와 모든 층 대상 선택을 사용하여 호환성을 높이고 기본 대상 지정 규칙을 따릅니다.
+- **Fuse 및 Banished:** 정화 후 다시 적용할 때 이전 효과의 예정 피해가 남지 않도록 수정했습니다.
+- **Requisition:** 일치하는 역할이 없는 유닛의 무작위 장비가 이제 게임의 전투 난수 시드를 따릅니다.
+- **고블린 외형:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer 및 The New Guy를 10–20% 확대하고 신체 비율과 발 위치를 유지했습니다.
+
 ### 0.3.1 — 2026-10-26 — BETA
 
 정화, 챔피언 시각 효과, Field Forge 및 Butcher's Bill 문제를 제보하고 Watchtower에 의견을 주신 **Rratvar, the Untitled**께 감사드립니다. [버그 제보 및 의견](https://discord.com/channels/336546996779483136/1563998046084268032).
@@ -462,7 +517,6 @@ Português (Brasil)
 - Field Forge는 새 융합 장비에 할인 한 번만 적용하고 다른 비용 변경 유지.
 - Roderic/Vesper의 배치 순간 거대한 모습과 VFX 위치 조정. Longbowman: 대기시간 2, Sniper를 일시적으로 Pierce 1로 교체. Butcher’s Bill 설명에 화로 처치 포함. Trainworks 최소 **0.7.33**. 장비가 부여한 Pierce는 유지.
 - 알려진 문제: 챔피언 경로를 혼합하면 이전 활성 능력이 교체될 수 있음.
-- 빌드와 자동 검사 122개 통과. **실제 플레이 검증은 미완료**.
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -486,6 +540,13 @@ Português (Brasil)
 
 ## Japanese
 
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Battle Chaplain：**Last Rites がゲーム標準の回復効果と全階層の対象選択を使用するようになり、互換性が向上し、通常の対象選択ルールに従います。
+- **Fuse と Banished：**浄化後に再付与しても、前回の付与による保留ダメージが残らないよう修正しました。
+- **Requisition：**対応する役割がないユニットへのランダム装備が、ゲームの戦闘用乱数シードに従うようになりました。
+- **ゴブリンの表示：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer、The New Guy を10～20%拡大し、体の比率と足の位置を維持しました。
+
 ### 0.3.1 — 2026-10-26 — BETA
 
 浄化、チャンピオンの表示、Field Forge、Butcher's Bill の問題報告と、Watchtower へのご意見をくださった **Rratvar, the Untitled** に感謝します。[不具合報告・ご意見](https://discord.com/channels/336546996779483136/1563998046084268032)。
@@ -495,7 +556,6 @@ Português (Brasil)
 - Field Forgeは新しい融合装備に軽減を1回だけ適用し、他のコスト補正を保持。
 - Roderic/Vesperの配置直後の巨大表示とVFX位置を調整。Longbowmanはクールダウン2、Sniperを一時的にPierce 1へ変更。Butcher’s Billに炉の撃破を明記。Trainworks最低**0.7.33**。 装備由来のPierceを保持。
 - 既知の問題：チャンピオン経路の混合で以前の能力が置き換わる場合があります。
-- ビルドと自動検証122項目を通過。**実際のプレイでは未検証**。
 
 ### 0.3.0 — 2026-10-10 — BETA
 
@@ -536,3 +596,5 @@ Português (Brasil)
 <!-- 2026-10-26-2222||codex-freecompany-fx||C:\Users\david\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\plugins\David-FreeCompany\CHANGELOG.md||añade agradecimientos y enlace al subhilo de bugs en los diez idiomas de 0.3.1 -->
 
 <!-- 2026-10-26-2223||codex-freecompany-fx||CHANGELOG.md||limita agradecimientos 0.3.1 a aportaciones concretas de Rratvar; agradecimiento general permanece en README -->
+
+<!-- 2026-10-27-2053||codex-freecompany-fx||CHANGELOG.md||añade 0.3.2 BETA en diez idiomas: curación nativa, Countdown, RNG y seis goblins; retira líneas de pruebas del texto público -->
