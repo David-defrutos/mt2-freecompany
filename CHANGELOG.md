@@ -8,8 +8,6 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ### 0.3.2 — 2026-10-27 — BETA
 
-Thanks to the external reviewer for identifying the Beastmaster marker, Countdown reapplication and Conductor naming issues.
-
 - **Tamable:** the hand icon and tooltip only appear in runs with Vesper Beastmaster, including before she is deployed.
 - **Longbowman:** the ability follows Conductor’s current status name, **Skewer**, while retaining the translated sentences. Minimum Conductor: **0.5.17**.
 - **Beastmaster:** clarified that each deployed Vesper contributes an Ember discount; duplicates still stack.
@@ -130,8 +128,6 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 ## Spanish
 
 ### 0.3.2 — 2026-10-27 — BETA
-
-Gracias al revisor externo por detectar los problemas del indicador Beastmaster, la reaplicación de Countdown y el nombre del estado de Conductor.
 
 - **Tamable:** el icono y tooltip de la mano solo aparecen en partidas con Vesper Beastmaster, incluso antes de desplegarla.
 - **Longbowman:** la habilidad usa el nombre actual del estado de Conductor, **Skewer**, conservando las frases traducidas. Conductor mínimo: **0.5.17**.
@@ -291,8 +287,6 @@ comentarios de la ficha.
 
 ### 0.3.2 — 2026-10-27 — BETA
 
-Merci au réviseur externe pour les problèmes signalés concernant l’indicateur Beastmaster, la réapplication de Countdown et le nom de l’état de Conductor.
-
 - **Tamable :** l’icône et l’infobulle en main n’apparaissent que dans les parties avec Vesper Beastmaster, même avant son déploiement.
 - **Longbowman :** la capacité utilise le nom actuel de l’état de Conductor, **Skewer**, en conservant les phrases traduites. Conductor minimum : **0.5.17**.
 - **Beastmaster :** le texte précise que chaque Vesper déployée réduit le coût en Ember ; les copies continuent de cumuler cette réduction.
@@ -336,8 +330,6 @@ Français
 ## German
 
 ### 0.3.2 — 2026-10-27 — BETA
-
-Danke an den externen Prüfer für die Hinweise zum Beastmaster-Symbol, zur erneuten Anwendung von Countdown und zum Statusnamen von Conductor.
 
 - **Tamable:** Symbol und Tooltip auf der Hand erscheinen nur in Läufen mit Vesper Beastmaster, auch vor ihrem Einsatz.
 - **Longbowman:** Die Fähigkeit verwendet Conductors aktuellen Statusnamen **Skewer**, während die übersetzten Sätze erhalten bleiben. Conductor mindestens **0.5.17**.
@@ -383,8 +375,6 @@ Deutsch
 
 ### 0.3.2 — 2026-10-27 — BETA
 
-Спасибо внешнему рецензенту за сообщения о маркере Beastmaster, повторном применении Countdown и названии эффекта Conductor.
-
 - **Tamable:** значок и подсказка в руке появляются только в забегах с Веспер Beastmaster, даже до её призыва.
 - **Longbowman:** способность использует текущее название эффекта Conductor — **Skewer**, сохраняя переведённые предложения. Минимальная версия Conductor: **0.5.17**.
 - **Beastmaster:** текст уточняет, что каждая Веспер в бою снижает стоимость в Ember; эффекты копий по-прежнему складываются.
@@ -428,8 +418,6 @@ Deutsch
 ## Portuguese Brazil
 
 ### 0.3.2 — 2026-10-27 — BETA
-
-Obrigado ao revisor externo pelos relatos sobre o marcador Beastmaster, a reaplicação de Countdown e o nome do estado de Conductor.
 
 - **Tamable:** o ícone e a dica na mão só aparecem em partidas com Vesper Beastmaster, mesmo antes de ela entrar em jogo.
 - **Longbowman:** a habilidade usa o nome atual do estado de Conductor, **Skewer**, mantendo as frases traduzidas. Conductor mínimo: **0.5.17**.
@@ -475,8 +463,6 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-10-27 — BETA
 
-感谢外部审查者发现 Beastmaster 标记、Countdown 重复施加及 Conductor 状态名称的问题。
-
 - **Tamable：**只有选择了 Vesper Beastmaster 路线的旅程才显示手牌图标及提示，无须先部署她。
 - **Longbowman：**技能使用 Conductor 当前的状态名称 **Skewer**，其余句子保留翻译。Conductor 最低版本为 **0.5.17**。
 - **Beastmaster：**文本说明每位在场的维斯珀都会降低 Ember 费用；复制体的效果仍可叠加。
@@ -520,8 +506,6 @@ Português (Brasil)
 ## Chinese Traditional
 
 ### 0.3.2 — 2026-10-27 — BETA
-
-感謝外部審查者發現 Beastmaster 標記、Countdown 重複施加及 Conductor 狀態名稱的問題。
 
 - **Tamable：**只有選擇了 Vesper Beastmaster 路線的旅程才顯示手牌圖示及提示，無須先部署她。
 - **Longbowman：**技能使用 Conductor 目前的狀態名稱 **Skewer**，其餘句子保留翻譯。Conductor 最低版本為 **0.5.17**。
@@ -567,8 +551,6 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-10-27 — BETA
 
-Beastmaster 표시, Countdown 재적용 및 Conductor 상태 이름 문제를 찾아 주신 외부 검토자께 감사드립니다.
-
 - **Tamable:** 손패 아이콘과 설명은 Vesper Beastmaster가 있는 여정에서만 나타나며, 배치 전에도 표시됩니다.
 - **Longbowman:** 능력이 번역된 문장을 유지하면서 Conductor의 현재 상태 이름인 **Skewer**를 사용합니다. Conductor 최소 버전은 **0.5.17**입니다.
 - **Beastmaster:** 배치된 베스퍼마다 Ember 비용을 낮춘다는 점을 명시했습니다. 복제된 베스퍼의 효과는 계속 중첩됩니다.
@@ -612,8 +594,6 @@ Beastmaster 표시, Countdown 재적용 및 Conductor 상태 이름 문제를 �
 ## Japanese
 
 ### 0.3.2 — 2026-10-27 — BETA
-
-Beastmaster の表示、Countdown の再付与、Conductor の状態名に関する問題を指摘してくださった外部レビュアーに感謝します。
 
 - **Tamable：**手札のアイコンと説明は Vesper Beastmaster のいるプレイでのみ表示され、配置前でも表示されます。
 - **Longbowman：**翻訳済みの文章を保ちながら、Conductor の現在の状態名 **Skewer** を使用します。Conductor の最低バージョンは **0.5.17** です。
@@ -680,3 +660,5 @@ Beastmaster の表示、Countdown の再付与、Conductor の状態名に関す
 <!-- 2026-10-27-2056||codex-freecompany-fx||CHANGELOG.md||créditos por reportes concretos: Brandon en 0.2.5 y Chéradénine en 0.2.4; conserva Rratvar en 0.3.1 -->
 
 <!-- 2026-10-27-2208||codex-freecompany-fx||CHANGELOG.md||añade correcciones H1-H6/H8 y agradecimiento al revisor externo en diez idiomas; mínimo Conductor 0.5.17 -->
+
+<!-- 2026-10-27-2253||codex-freecompany-fx||CHANGELOG.md||retira agradecimiento al revisor externo de 0.3.2 en diez idiomas por petición del usuario; conserva créditos de reportantes -->
