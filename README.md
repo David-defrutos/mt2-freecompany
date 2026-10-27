@@ -56,6 +56,7 @@ Special thanks to these people, listed by their Discord names in alphabetical or
 
 - **Brandon**
 - **Chéradénine**
+- **CodePointer**
 - **fohnjarmery**
 - **lostone**
 - **Rratvar, the Untitled**
@@ -144,6 +145,7 @@ En especial, a estas personas, con sus nombres de Discord y en orden alfabético
 
 - **Brandon**
 - **Chéradénine**
+- **CodePointer**
 - **fohnjarmery**
 - **lostone**
 - **Rratvar, the Untitled**
@@ -243,3 +245,5 @@ Solo estas **29 cartas concretas** cuentan; no se incluye automáticamente el re
 <!-- 2026-10-27-2056||codex-freecompany-fx||README.md||agradecimiento general a todos los clanes; nombres conocidos alfabéticos, añade CodePointer y timeracers con evidencia -->
 
 <!-- 2026-10-27-2300||codex-freecompany-fx||README.md||lista explícita alfabética de seis nombres Discord; conserva crédito CodePointer separado hasta confirmar alias -->
+
+<!-- 2026-10-27-2301||codex-freecompany-fx||README.md||Q021 confirmado: añade CodePointer a lista alfabética Discord EN/ES; conserva crédito por permiso de port -->
