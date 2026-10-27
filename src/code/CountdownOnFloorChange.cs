@@ -126,7 +126,14 @@ namespace mt2_freecompany.Plugin
                 foreach (var e in estados)
                 {
                     if (e == null || string.IsNullOrEmpty(e.statusId)) continue;
+                    // A cleansed/expired countdown must not contribute damage to a new one.
+                    if (unidad.GetStatusEffectStacks(e.statusId) <= 0)
+                    {
+                        info.pendientes.Remove(e.statusId);
+                        info.ultimoPiso.Remove(e.statusId);
+                    }
                     unidad.AddStatusEffect(e.statusId, e.count);
+                    if (unidad.GetStatusEffectStacks(e.statusId) <= 0) continue;
 
                     if (!info.pendientes.TryGetValue(e.statusId, out var p))
                     {
@@ -187,7 +194,12 @@ namespace mt2_freecompany.Plugin
                 {
                     if (e == null || string.IsNullOrEmpty(e.statusId)) continue;
                     int cargas = unidad.GetStatusEffectStacks(e.statusId);
-                    if (cargas <= 0) continue;
+                    if (cargas <= 0)
+                    {
+                        info.pendientes.Remove(e.statusId);
+                        info.ultimoPiso.Remove(e.statusId);
+                        continue;
+                    }
 
                     // Mismo piso que la ultima cuenta: es una copia repetida del trigger, no un
                     // movimiento nuevo.
@@ -262,3 +274,5 @@ namespace mt2_freecompany.Plugin
 // 2026-09-23-2130||claude-mt2-the-free-company2-mazo-pruebas||src/code/CountdownOnFloorChange.cs||fichero nuevo: CardEffectPlantCountdown (hereda de CardEffectDamage), CardEffectCountdownTick y StatusEffectFreeCompanyCountdownState, para Banished y Fuse
 // 2026-09-23-2155||claude-mt2-the-free-company2-mazo-pruebas||src/code/CountdownOnFloorChange.cs||PlantCountdown: en PreviewMode no se apunta el dano (la previa lo acumulaba: 100 -> 300)
 // 2026-09-23-2210||claude-mt2-the-free-company2-mazo-pruebas||src/code/CountdownOnFloorChange.cs||literal de log "[previa sin acumular]" (una vez por sesion) como marca de compilacion: un comentario no llega al DLL
+
+// 2026-10-27-1531||codex-freecompany-fx||src/code/CountdownOnFloorChange.cs||limpia daño y piso pendientes al reaplicar Fuse/Banished tras limpieza; no registra estados rechazados

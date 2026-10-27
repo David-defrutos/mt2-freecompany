@@ -90,13 +90,12 @@ namespace mt2_freecompany.Plugin
             }
 
             var subtipo = cardEffectState.GetParamSubtype();
-            bool porSubtipo = subtipo != null && !subtipo.IsNone;
 
             foreach (var enMazo in save.GetDeckState())
             {
                 if (enMazo == null) continue;
 
-                if (porSubtipo)
+                if (subtipo != null && !subtipo.IsNone)
                 {
                     // (b) ?hay ya en el mazo una carta que invoque algo con ese subtipo?
                     var personaje = enMazo.GetSpawnCharacterData();
@@ -163,3 +162,5 @@ namespace mt2_freecompany.Plugin
     }
 }
 // 2026-10-03-2257||codex-freecompany-fx||src/code/CardEffectGrantOnce.cs||impide que Domar añada cartas permanentes durante previews, igual que el efecto interno CardEffectAddRunCard
+
+// 2026-10-27-1534||codex-freecompany-fx||src/code/CardEffectGrantOnce.cs||explicita guarda nullable de subtipo sin variable intermedia; elimina warning CS8602 conservando comportamiento

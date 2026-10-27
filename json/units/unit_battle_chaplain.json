@@ -130,10 +130,9 @@
     },
     {
       "id": "BattleChaplainAbilityHeal",
-      "name": "@CardEffectAllRooms",
-      "target_mode": "self",
+      "name": "CardEffectHeal",
+      "target_mode": "tower",
       "target_team": "monsters",
-      "param_str": "CardEffectHeal",
       "param_int": 18
     }
   ],

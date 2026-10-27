@@ -72,9 +72,7 @@ namespace mt2_freecompany.Plugin
             ["Sub_Ranger"]    = ["Shortbow",    "Longbow",        "GreatBow"],
         };
 
-        // System.Random a proposito: el csproj NO referencia UnityEngine.Modules, asi que
-        // UnityEngine.Random no esta disponible. Ver el comentario del propio csproj.
-        private static readonly Random Azar = new();
+        // Use the game battle RNG so seeded runs and reloads remain reproducible.
 
         // Como quedan los ids una vez registrados por Trainworks.
         private static string ClaveSubtipo(string rolId)
@@ -180,7 +178,7 @@ namespace mt2_freecompany.Plugin
             {
                 // Sin rol no hay escalera: sale un objeto al azar, del MISMO escalon.
                 var roles = new List<string[]>(Escaleras.Values);
-                cartaId = roles[Azar.Next(roles.Count)][escalon - 1];
+                cartaId = roles[RandomManager.Range(0, roles.Count, RngId.Battle)][escalon - 1];
                 Log($"Requisition: objetivo sin subtipo de rol (vistos: {ListarSubtipos(objetivo)}); al azar sale {cartaId}.");
             }
 
@@ -258,3 +256,5 @@ namespace mt2_freecompany.Plugin
 // 2026-09-21-0005||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||anadido CanApplyInPreviewMode => false
 // 2026-09-21-2017||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||revertido CanApplyInPreviewMode (rompia el apuntado) y puesta la guarda SaveManager.PreviewMode en TestEffect y en ApplyEffect
 // 2026-09-21-2041||claude-mt2-the-free-company2-roderic-quartermaster||src/code/CardEffectRequisition.cs||anadido CanPlayWhenHandFull => false: con la mano llena la habilidad se gastaba la recarga sin dar nada
+
+// 2026-10-27-1531||codex-freecompany-fx||src/code/CardEffectRequisition.cs||sustituye System.Random por RandomManager.Range con RngId.Battle para selección reproducible
