@@ -50,8 +50,7 @@ Units, spells, rooms, equipment and artifacts, built around three pillars: **for
 
 ## Thanks
 
-Big thanks to these contributors (in alphabetical order): **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone**, **Rratvar, the Untitled**, and to everyone else
-on Discord's MT2 mod channel (https://discord.com/channels/336546996779483136/1377778943674810368), for testing The Free Company and pointing out what broke.
+Thank you to everyone who has helped me with any of my Monster Train 2 clans through testing, bug reports, suggestions, technical advice, tools, permission to port their work or encouragement. Special thanks, in alphabetical order, to **Brandon**, **Chéradénine**, **CodePointer**, **fohnjarmery**, **lostone**, **Rratvar, the Untitled**, **timeracers**, and to the rest of the Monster Train 2 modding community.
 
 [Report bugs and leave feedback in the Discord thread](https://discord.com/channels/336546996779483136/1563998046084268032).
 
@@ -128,9 +127,7 @@ Unidades, hechizos, salas, equipo y artefactos, alrededor de tres pilares: **for
 
 ## Agradecimientos
 
-Muchas gracias a estos colaboradores (en orden alfabético): **Brandon**, **Chéradénine**, **fohnjarmery**, **lostone**, **Rratvar, the Untitled** y a todos los demás
-del canal de mods de MT2 en Discord (https://discord.com/channels/336546996779483136/1377778943674810368) por probar The Free Company y avisar de lo que se
-rompía.
+Gracias a todas las personas que me han ayudado con cualquiera de mis clanes de Monster Train 2: probándolos, comunicando errores, proponiendo mejoras, compartiendo conocimientos y herramientas, permitiendo adaptar su trabajo o animándome a continuar. En especial, por orden alfabético, a **Brandon**, **Chéradénine**, **CodePointer**, **fohnjarmery**, **lostone**, **Rratvar, the Untitled**, **timeracers** y al resto de la comunidad de mods de Monster Train 2.
 
 [Reporta errores y deja tus comentarios en el subhilo de Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
 
@@ -220,3 +217,5 @@ Solo estas **29 cartas concretas** cuentan; no se incluye automáticamente el re
 <!-- 2026-10-26-2224||codex-freecompany-fx||README.md||explicita lista alfabética de todos los colaboradores conocidos en inglés y español -->
 
 <!-- 2026-10-27-2053||codex-freecompany-fx||README.md||actualiza cabeceras de versión a 0.3.2 BETA -->
+
+<!-- 2026-10-27-2056||codex-freecompany-fx||README.md||agradecimiento general a todos los clanes; nombres conocidos alfabéticos, añade CodePointer y timeracers con evidencia -->

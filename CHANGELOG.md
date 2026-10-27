@@ -46,6 +46,8 @@ Thanks to **Rratvar, the Untitled** for reporting the cleansing, champion visual
 
 ### 0.2.5 — 2026-09-25
 
+Thanks to **Brandon** for reporting Double Shift's silence, duplicate-tooltip and status-stack issues, and for suggesting the Dizzy status.
+
 Rebalanced Vesper’s **Beastmaster** path and the Two-Headed Troll.
 
 - **Beastmaster**: trolls no longer grow through Celebrate after each battle. With Beastmaster Vesper in play, they now enter with **+10** attack and health **for each Ring after the first**.
@@ -60,6 +62,8 @@ Rebalanced Vesper’s **Beastmaster** path and the Two-Headed Troll.
 - New artwork for 16 cards.
 
 ### 0.2.4 — 2026-09-24
+
+Thanks to **Chéradénine** for reporting that the clan did not appear when installed through Gale and for identifying the package-layout issue.
 
 - The package keeps `json/` and `textures/` beside the DLL when installed through Gale and other BepInEx mod managers. Fixes the plugin loading without the clan appearing.
 - Severance Pay displays its current Pyre damage in the description, with a single final period.
@@ -163,6 +167,8 @@ Gracias a **Rratvar, the Untitled** por los reportes sobre limpieza, visuales de
 
 ### 0.2.5 — 2026-09-25
 
+Gracias a **Brandon** por reportar los problemas de Double Shift con silencio, tooltips duplicados y acumulaciones de estados, y por proponer el estado Dizzy.
+
 Reequilibrio de la senda **Beastmaster** de Vesper y del Two-Headed Troll.
 
 - **Beastmaster**: los trolls ya no crecen con Celebrate al acabar cada combate. Ahora,
@@ -182,6 +188,8 @@ Reequilibrio de la senda **Beastmaster** de Vesper y del Two-Headed Troll.
 - Arte nuevo en 16 cartas.
 
 ### 0.2.4 — 2026-09-24
+
+Gracias a **Chéradénine** por reportar que el clan no aparecía al instalarlo con Gale e identificar el problema de estructura del paquete.
 
 - El paquete conserva `json/` y `textures/` junto al DLL al instalarse con Gale y otros
   gestores de mods BepInEx. Corrige el caso en que el plugin cargaba, pero el clan no aparecia.
@@ -598,3 +606,5 @@ Português (Brasil)
 <!-- 2026-10-26-2223||codex-freecompany-fx||CHANGELOG.md||limita agradecimientos 0.3.1 a aportaciones concretas de Rratvar; agradecimiento general permanece en README -->
 
 <!-- 2026-10-27-2053||codex-freecompany-fx||CHANGELOG.md||añade 0.3.2 BETA en diez idiomas: curación nativa, Countdown, RNG y seis goblins; retira líneas de pruebas del texto público -->
+
+<!-- 2026-10-27-2056||codex-freecompany-fx||CHANGELOG.md||créditos por reportes concretos: Brandon en 0.2.5 y Chéradénine en 0.2.4; conserva Rratvar en 0.3.1 -->
