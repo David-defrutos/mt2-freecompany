@@ -134,16 +134,16 @@
         "japanese": "大弓"
       },
       "descriptions": {
-        "english": "<b>+20</b> [attack]. Apply <b>Sniper</b>, <b>4</b> [piercing] and <b>1</b> [sweep].",
-        "french": "<b>+20</b> [attack]. Appliquez <b>Tireur d’élite</b>, <b>4</b> [piercing] et <b>1</b> [sweep].",
-        "german": "<b>+20</b> [attack]. Erhalte <b>Scharfschütze</b>, <b>4</b> [piercing] und <b>1</b> [sweep].",
-        "russian": "<b>+20</b> [attack]. Получите <b>Снайпер</b>, <b>4</b> [piercing] и <b>1</b> [sweep].",
-        "portuguese": "<b>+20</b> [attack]. Aplique <b>Atirador de Elite</b>, <b>4</b> [piercing] e <b>1</b> [sweep].",
-        "chinese": "<b>+20</b> [attack]. 施加<b>狙击</b>, <b>4</b> [piercing]和<b>1</b> [sweep]。",
-        "spanish": "<b>+20</b> [attack]. Aplica <b>Francotirador</b>, <b>4</b> [piercing] y <b>1</b> [sweep].",
-        "chinese_traditional": "<b>+20</b> [attack]. 施加<b>狙擊</b>, <b>4</b> [piercing]和<b>1</b> [sweep]。",
-        "korean": "<b>+20</b> [attack]. <b>저격</b>, <b>4</b> [piercing] 및 <b>1</b> [sweep] 부여.",
-        "japanese": "<b>+20</b> [attack]. <b>狙撃</b>, <b>4</b> [piercing]と<b>1</b> [sweep]を付与。"
+        "english": "<b>+20</b> [attack]. Apply <b>4</b> [piercing] and <b>1</b> [sweep].",
+        "french": "<b>+20</b> [attack]. Appliquez <b>4</b> [piercing] et <b>1</b> [sweep].",
+        "german": "<b>+20</b> [attack]. Erhalte <b>4</b> [piercing] und <b>1</b> [sweep].",
+        "russian": "<b>+20</b> [attack]. Получите <b>4</b> [piercing] и <b>1</b> [sweep].",
+        "portuguese": "<b>+20</b> [attack]. Aplique <b>4</b> [piercing] e <b>1</b> [sweep].",
+        "chinese": "<b>+20</b> [attack]. 施加<b>4</b> [piercing]和<b>1</b> [sweep]。",
+        "spanish": "<b>+20</b> [attack]. Aplica <b>4</b> [piercing] y <b>1</b> [sweep].",
+        "chinese_traditional": "<b>+20</b> [attack]. 施加<b>4</b> [piercing]和<b>1</b> [sweep]。",
+        "korean": "<b>+20</b> [attack]. <b>4</b> [piercing] 및 <b>1</b> [sweep] 부여.",
+        "japanese": "<b>+20</b> [attack]. <b>4</b> [piercing]と<b>1</b> [sweep]を付与。"
       },
       "card_art": "@GreatBow",
       "cost": 1,
@@ -269,24 +269,20 @@
         "japanese": "大弓"
       },
       "descriptions": {
-        "english": "<b>+20</b> [attack]. Apply <b>Sniper</b>, <b>4</b> [piercing] and <b>1</b> [sweep].",
-        "french": "<b>+20</b> [attack]. Appliquez <b>Tireur d’élite</b>, <b>4</b> [piercing] et <b>1</b> [sweep].",
-        "german": "<b>+20</b> [attack]. Erhalte <b>Scharfschütze</b>, <b>4</b> [piercing] und <b>1</b> [sweep].",
-        "russian": "<b>+20</b> [attack]. Получите <b>Снайпер</b>, <b>4</b> [piercing] и <b>1</b> [sweep].",
-        "portuguese": "<b>+20</b> [attack]. Aplique <b>Atirador de Elite</b>, <b>4</b> [piercing] e <b>1</b> [sweep].",
-        "chinese": "<b>+20</b> [attack]. 施加<b>狙击</b>, <b>4</b> [piercing]和<b>1</b> [sweep]。",
-        "spanish": "<b>+20</b> [attack]. Aplica <b>Francotirador</b>, <b>4</b> [piercing] y <b>1</b> [sweep].",
-        "chinese_traditional": "<b>+20</b> [attack]. 施加<b>狙擊</b>, <b>4</b> [piercing]和<b>1</b> [sweep]。",
-        "korean": "<b>+20</b> [attack]. <b>저격</b>, <b>4</b> [piercing] 및 <b>1</b> [sweep] 부여.",
-        "japanese": "<b>+20</b> [attack]. <b>狙撃</b>, <b>4</b> [piercing]と<b>1</b> [sweep]を付与。"
+        "english": "<b>+20</b> [attack]. Apply <b>4</b> [piercing] and <b>1</b> [sweep].",
+        "french": "<b>+20</b> [attack]. Appliquez <b>4</b> [piercing] et <b>1</b> [sweep].",
+        "german": "<b>+20</b> [attack]. Erhalte <b>4</b> [piercing] und <b>1</b> [sweep].",
+        "russian": "<b>+20</b> [attack]. Получите <b>4</b> [piercing] и <b>1</b> [sweep].",
+        "portuguese": "<b>+20</b> [attack]. Aplique <b>4</b> [piercing] e <b>1</b> [sweep].",
+        "chinese": "<b>+20</b> [attack]. 施加<b>4</b> [piercing]和<b>1</b> [sweep]。",
+        "spanish": "<b>+20</b> [attack]. Aplica <b>4</b> [piercing] y <b>1</b> [sweep].",
+        "chinese_traditional": "<b>+20</b> [attack]. 施加<b>4</b> [piercing]和<b>1</b> [sweep]。",
+        "korean": "<b>+20</b> [attack]. <b>4</b> [piercing] 및 <b>1</b> [sweep] 부여.",
+        "japanese": "<b>+20</b> [attack]. <b>4</b> [piercing]と<b>1</b> [sweep]を付与。"
       },
       "icon": "@GreatBow",
       "bonus_damage": 20,
       "status_effect_upgrades": [
-        {
-          "status": "sniper",
-          "count": 1
-        },
         {
           "status": "piercing",
           "count": 4

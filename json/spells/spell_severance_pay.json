@@ -67,7 +67,8 @@
       "target_mode": "pyre",
       "target_team": "monsters",
       "param_int": 5,
-      "param_int_2": 8
+      "param_int_2": 8,
+      "suppress_pyre_room_focus": true
     },
     {
       "id": "SeverancePayGold",
@@ -75,7 +76,8 @@
       "name": "CardEffectRewardGold",
       "target_mode": "pyre",
       "target_team": "monsters",
-      "param_int": 97
+      "param_int": 97,
+      "suppress_pyre_room_focus": true
     }
   ],
   "traits": [

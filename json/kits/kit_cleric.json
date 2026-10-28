@@ -38,7 +38,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@EquipBandages"
+        "@EquipBandages",
+        "@BandagesApplyRegen"
       ],
       "lore_tooltips": [
         {
@@ -97,7 +98,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@EquipHolySymbol"
+        "@EquipHolySymbol",
+        "@HolySymbolApplyRegen"
       ],
       "lore_tooltips": [
         {
@@ -156,7 +158,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@EquipReliquary"
+        "@EquipReliquary",
+        "@ReliquaryApplyRegen"
       ],
       "lore_tooltips": [
         {
@@ -195,25 +198,20 @@
         "japanese": "包帯"
       },
       "descriptions": {
-        "english": "<b>+10</b> [health]. Apply <b>2</b> [regen].",
-        "french": "<b>+10</b> [health]. Appliquez <b>2</b> [regen].",
-        "german": "<b>+10</b> [health]. Erhalte <b>2</b> [regen].",
-        "russian": "<b>+10</b> [health]. Получите <b>2</b> [regen].",
-        "portuguese": "<b>+10</b> [health]. Aplique <b>2</b> [regen].",
-        "chinese": "<b>+10</b> [health]. 施加<b>2</b> [regen]。",
-        "spanish": "<b>+10</b> [health]. Aplica <b>2</b> [regen].",
-        "chinese_traditional": "<b>+10</b> [health]. 施加<b>2</b> [regen]。",
-        "korean": "<b>+10</b> [health]. <b>2</b> [regen] 부여.",
-        "japanese": "<b>+10</b> [health]. <b>2</b> [regen]を付与。"
+        "english": "<b>+10</b> [health].",
+        "french": "<b>+10</b> [health].",
+        "german": "<b>+10</b> [health].",
+        "russian": "<b>+10</b> [health].",
+        "portuguese": "<b>+10</b> [health].",
+        "chinese": "<b>+10</b> [health].",
+        "spanish": "<b>+10</b> [health].",
+        "chinese_traditional": "<b>+10</b> [health].",
+        "korean": "<b>+10</b> [health].",
+        "japanese": "<b>+10</b> [health]."
       },
       "icon": "@Bandages",
       "bonus_hp": 10,
-      "status_effect_upgrades": [
-        {
-          "status": "regen",
-          "count": 2
-        }
-      ]
+      "status_effect_upgrades": []
     },
     {
       "id": "UpgHolySymbol",
@@ -230,25 +228,20 @@
         "japanese": "聖印"
       },
       "descriptions": {
-        "english": "<b>+18</b> [health]. Apply <b>4</b> [regen].",
-        "french": "<b>+18</b> [health]. Appliquez <b>4</b> [regen].",
-        "german": "<b>+18</b> [health]. Erhalte <b>4</b> [regen].",
-        "russian": "<b>+18</b> [health]. Получите <b>4</b> [regen].",
-        "portuguese": "<b>+18</b> [health]. Aplique <b>4</b> [regen].",
-        "chinese": "<b>+18</b> [health]. 施加<b>4</b> [regen]。",
-        "spanish": "<b>+18</b> [health]. Aplica <b>4</b> [regen].",
-        "chinese_traditional": "<b>+18</b> [health]. 施加<b>4</b> [regen]。",
-        "korean": "<b>+18</b> [health]. <b>4</b> [regen] 부여.",
-        "japanese": "<b>+18</b> [health]. <b>4</b> [regen]を付与。"
+        "english": "<b>+18</b> [health].",
+        "french": "<b>+18</b> [health].",
+        "german": "<b>+18</b> [health].",
+        "russian": "<b>+18</b> [health].",
+        "portuguese": "<b>+18</b> [health].",
+        "chinese": "<b>+18</b> [health].",
+        "spanish": "<b>+18</b> [health].",
+        "chinese_traditional": "<b>+18</b> [health].",
+        "korean": "<b>+18</b> [health].",
+        "japanese": "<b>+18</b> [health]."
       },
       "icon": "@HolySymbol",
       "bonus_hp": 18,
-      "status_effect_upgrades": [
-        {
-          "status": "regen",
-          "count": 4
-        }
-      ]
+      "status_effect_upgrades": []
     },
     {
       "id": "UpgReliquary",
@@ -265,24 +258,20 @@
         "japanese": "聖遺物箱"
       },
       "descriptions": {
-        "english": "<b>+30</b> [health]. Apply <b>6</b> [regen] and <b>1</b> [undying].",
-        "french": "<b>+30</b> [health]. Appliquez <b>6</b> [regen] et <b>1</b> [undying].",
-        "german": "<b>+30</b> [health]. Erhalte <b>6</b> [regen] und <b>1</b> [undying].",
-        "russian": "<b>+30</b> [health]. Получите <b>6</b> [regen] и <b>1</b> [undying].",
-        "portuguese": "<b>+30</b> [health]. Aplique <b>6</b> [regen] e <b>1</b> [undying].",
-        "chinese": "<b>+30</b> [health]. 施加<b>6</b> [regen]和<b>1</b> [undying]。",
-        "spanish": "<b>+30</b> [health]. Aplica <b>6</b> [regen] y <b>1</b> [undying].",
-        "chinese_traditional": "<b>+30</b> [health]. 施加<b>6</b> [regen]和<b>1</b> [undying]。",
-        "korean": "<b>+30</b> [health]. <b>6</b> [regen] 및 <b>1</b> [undying] 부여.",
-        "japanese": "<b>+30</b> [health]. <b>6</b> [regen]と<b>1</b> [undying]を付与。"
+        "english": "<b>+30</b> [health]. <b>1</b> [undying].",
+        "french": "<b>+30</b> [health]. <b>1</b> [undying].",
+        "german": "<b>+30</b> [health]. <b>1</b> [undying].",
+        "russian": "<b>+30</b> [health]. <b>1</b> [undying].",
+        "portuguese": "<b>+30</b> [health]. <b>1</b> [undying].",
+        "chinese": "<b>+30</b> [health]. <b>1</b> [undying].",
+        "spanish": "<b>+30</b> [health]. <b>1</b> [undying].",
+        "chinese_traditional": "<b>+30</b> [health]. <b>1</b> [undying].",
+        "korean": "<b>+30</b> [health]. <b>1</b> [undying].",
+        "japanese": "<b>+30</b> [health]. <b>1</b> [undying]."
       },
       "icon": "@Reliquary",
       "bonus_hp": 30,
       "status_effect_upgrades": [
-        {
-          "status": "regen",
-          "count": 6
-        },
         {
           "status": "undying",
           "count": 1
@@ -314,6 +303,42 @@
       "target_mode": "drop_target_character",
       "target_team": "monsters",
       "param_upgrade": "@UpgReliquary"
+    },
+    {
+      "id": "BandagesApplyRegen",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "regen",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "HolySymbolApplyRegen",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "regen",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "ReliquaryApplyRegen",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "regen",
+          "count": 6
+        }
+      ]
     }
   ],
   "sprites": [

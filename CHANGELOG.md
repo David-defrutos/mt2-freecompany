@@ -6,7 +6,13 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ## English
 
-### 0.3.2 — 2026-10-27 — BETA
+### 0.3.2 — 2026-10-28 — BETA
+
+Thanks to **Rratvar, the Untitled** for reporting equipment replacement, redundant Sniper, misleading Steelguard counts and Severance Pay’s camera movement.
+
+- **Cleric and Warrior kits:** Regen and Armor are applied when equipping and no longer subtracted when equipment is replaced. Health and other equipment bonuses remain tied to the item; existing values are unchanged.
+- **Great Bow:** removed redundant Sniper; retains +20 attack, Piercing 4 and Sweep. **Warrior kits:** Steelguard uses the native, non-stackable effect without misleading stack counts.
+- **Severance Pay:** no longer forces the camera to the Pyre room. Gold, damage and visual effects are unchanged.
 
 - **Tamable:** the hand icon and tooltip only appear in runs with Vesper Beastmaster, including before she is deployed.
 - **Longbowman:** the ability follows Conductor’s current status name, **Skewer**, while retaining the translated sentences. Minimum Conductor: **0.5.17**.
@@ -127,7 +133,13 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 
 ## Spanish
 
-### 0.3.2 — 2026-10-27 — BETA
+### 0.3.2 — 2026-10-28 — BETA
+
+Gracias a **Rratvar, the Untitled** por reportar la sustitución de equipos, Sniper redundante, las cantidades engañosas de Steelguard y el movimiento de cámara de Severance Pay.
+
+- **Kits de Cleric y Warrior:** Regen y Armor se aplican al equipar y ya no se restan al sustituir el equipo. La vida y otras ventajas siguen ligadas al objeto; se conservan las cantidades.
+- **Great Bow:** eliminado Sniper redundante; conserva +20 de ataque, Piercing 4 y Sweep. **Kits de Warrior:** Steelguard usa el estado nativo no acumulable, sin cantidades engañosas.
+- **Severance Pay:** ya no fuerza la cámara hacia la Pira. Oro, daño y efectos visuales sin cambios.
 
 - **Tamable:** el icono y tooltip de la mano solo aparecen en partidas con Vesper Beastmaster, incluso antes de desplegarla.
 - **Longbowman:** la habilidad usa el nombre actual del estado de Conductor, **Skewer**, conservando las frases traducidas. Conductor mínimo: **0.5.17**.
@@ -285,7 +297,13 @@ comentarios de la ficha.
 
 ## French
 
-### 0.3.2 — 2026-10-27 — BETA
+### 0.3.2 — 2026-10-28 — BETA
+
+Merci à **Rratvar, the Untitled** pour ses signalements sur le remplacement d’équipement, Sniper redondant, les charges trompeuses de Steelguard et la caméra de Severance Pay.
+
+- **Kits Cleric et Warrior :** Regen et Armor sont appliquées à l’équipement et ne sont plus soustraites lors de son remplacement. Les PV et les autres bonus restent liés à l’objet ; valeurs inchangées.
+- **Great Bow :** suppression de Sniper ; conserve +20 d’attaque, Piercing 4 et Sweep. **Kits Warrior :** Steelguard utilise l’effet natif non cumulable sans nombre de charges trompeur.
+- **Severance Pay :** ne force plus la caméra vers le Brasier. Or, dégâts et effets visuels inchangés.
 
 - **Tamable :** l’icône et l’infobulle en main n’apparaissent que dans les parties avec Vesper Beastmaster, même avant son déploiement.
 - **Longbowman :** la capacité utilise le nom actuel de l’état de Conductor, **Skewer**, en conservant les phrases traduites. Conductor minimum : **0.5.17**.
@@ -329,7 +347,13 @@ Français
 
 ## German
 
-### 0.3.2 — 2026-10-27 — BETA
+### 0.3.2 — 2026-10-28 — BETA
+
+Danke an **Rratvar, the Untitled** für die Meldungen zum Ausrüstungswechsel, überflüssigen Sniper, irreführenden Steelguard-Stapeln und zum Kamerasprung bei Severance Pay.
+
+- **Cleric- und Warrior-Kits:** Regen und Armor werden beim Ausrüsten gewährt und beim Austausch nicht mehr abgezogen. Lebenspunkte und andere Boni bleiben an den Gegenstand gebunden; Werte unverändert.
+- **Great Bow:** Sniper entfernt; behält +20 Angriff, Piercing 4 und Sweep. **Warrior-Kits:** Steelguard verwendet den nativen, nicht stapelbaren Effekt ohne irreführende Stapelzahl.
+- **Severance Pay:** erzwingt keinen Kamerasprung zum Pyre-Raum mehr. Gold, Schaden und visuelle Effekte unverändert.
 
 - **Tamable:** Symbol und Tooltip auf der Hand erscheinen nur in Läufen mit Vesper Beastmaster, auch vor ihrem Einsatz.
 - **Longbowman:** Die Fähigkeit verwendet Conductors aktuellen Statusnamen **Skewer**, während die übersetzten Sätze erhalten bleiben. Conductor mindestens **0.5.17**.
@@ -373,7 +397,13 @@ Deutsch
 
 ## Russian
 
-### 0.3.2 — 2026-10-27 — BETA
+### 0.3.2 — 2026-10-28 — BETA
+
+Спасибо **Rratvar, the Untitled** за сообщения о замене снаряжения, лишнем Sniper, неверных числах Steelguard и камере Severance Pay.
+
+- **Наборы Cleric и Warrior:** Regen и Armor накладываются при экипировке и больше не вычитаются при замене. Здоровье и прочие бонусы остаются привязаны к предмету; значения не изменены.
+- **Great Bow:** убран Sniper; сохранены +20 атаки, Piercing 4 и Sweep. **Наборы Warrior:** Steelguard использует штатный несуммируемый эффект без неверного числа слоёв.
+- **Severance Pay:** больше не переводит камеру к Пеклу. Золото, урон и визуальные эффекты не изменены.
 
 - **Tamable:** значок и подсказка в руке появляются только в забегах с Веспер Beastmaster, даже до её призыва.
 - **Longbowman:** способность использует текущее название эффекта Conductor — **Skewer**, сохраняя переведённые предложения. Минимальная версия Conductor: **0.5.17**.
@@ -417,7 +447,13 @@ Deutsch
 
 ## Portuguese Brazil
 
-### 0.3.2 — 2026-10-27 — BETA
+### 0.3.2 — 2026-10-28 — BETA
+
+Obrigado a **Rratvar, the Untitled** pelos relatos sobre troca de equipamentos, Sniper redundante, contagens enganosas de Steelguard e a câmera de Severance Pay.
+
+- **Kits de Cleric e Warrior:** Regen e Armor são aplicadas ao equipar e não são mais subtraídas ao trocar o equipamento. Vida e outros bônus continuam vinculados ao item; valores mantidos.
+- **Great Bow:** removido Sniper; mantém +20 de ataque, Piercing 4 e Sweep. **Kits de Warrior:** Steelguard usa o efeito nativo não cumulativo, sem contagens enganosas.
+- **Severance Pay:** não força mais a câmera para a sala da Pira. Ouro, dano e efeitos visuais mantidos.
 
 - **Tamable:** o ícone e a dica na mão só aparecem em partidas com Vesper Beastmaster, mesmo antes de ela entrar em jogo.
 - **Longbowman:** a habilidade usa o nome atual do estado de Conductor, **Skewer**, mantendo as frases traduzidas. Conductor mínimo: **0.5.17**.
@@ -461,7 +497,13 @@ Português (Brasil)
 
 ## Chinese
 
-### 0.3.2 — 2026-10-27 — BETA
+### 0.3.2 — 2026-10-28 — BETA
+
+感谢 **Rratvar, the Untitled** 报告装备替换、多余的 Sniper、Steelguard 层数误导以及 Severance Pay 镜头移动的问题。
+
+- **Cleric 与 Warrior 套件：**装备时施加 Regen 或 Armor，替换装备时不再扣除。生命及其他装备加成仍绑定于装备；数值不变。
+- **Great Bow：**移除 Sniper；保留 +20 攻击、Piercing 4 和 Sweep。**Warrior 套件：**Steelguard 使用原生不可叠加状态，不再显示误导性的层数。
+- **Severance Pay：**不再强制将镜头移向薪火房间。金币、伤害与视觉效果不变。
 
 - **Tamable：**只有选择了 Vesper Beastmaster 路线的旅程才显示手牌图标及提示，无须先部署她。
 - **Longbowman：**技能使用 Conductor 当前的状态名称 **Skewer**，其余句子保留翻译。Conductor 最低版本为 **0.5.17**。
@@ -505,7 +547,13 @@ Português (Brasil)
 
 ## Chinese Traditional
 
-### 0.3.2 — 2026-10-27 — BETA
+### 0.3.2 — 2026-10-28 — BETA
+
+感謝 **Rratvar, the Untitled** 回報裝備替換、多餘的 Sniper、Steelguard 層數誤導以及 Severance Pay 鏡頭移動的問題。
+
+- **Cleric 與 Warrior 套件：**裝備時施加 Regen 或 Armor，替換裝備時不再扣除。生命及其他裝備加成仍綁定於裝備；數值不變。
+- **Great Bow：**移除 Sniper；保留 +20 攻擊、Piercing 4 和 Sweep。**Warrior 套件：**Steelguard 使用原生不可疊加狀態，不再顯示誤導性的層數。
+- **Severance Pay：**不再強制將鏡頭移向薪火房間。金幣、傷害與視覺效果不變。
 
 - **Tamable：**只有選擇了 Vesper Beastmaster 路線的旅程才顯示手牌圖示及提示，無須先部署她。
 - **Longbowman：**技能使用 Conductor 目前的狀態名稱 **Skewer**，其餘句子保留翻譯。Conductor 最低版本為 **0.5.17**。
@@ -549,7 +597,13 @@ Português (Brasil)
 
 ## Korean
 
-### 0.3.2 — 2026-10-27 — BETA
+### 0.3.2 — 2026-10-28 — BETA
+
+장비 교체, 불필요한 Sniper, Steelguard 중첩 수 표시 및 Severance Pay 카메라 문제를 제보한 **Rratvar, the Untitled**에게 감사드립니다.
+
+- **Cleric 및 Warrior 키트:** 장착 시 Regen과 Armor를 부여하며, 장비 교체 시 더 이상 차감하지 않습니다. 체력과 다른 장비 효과는 해당 장비에 귀속됩니다. 수치는 유지됩니다.
+- **Great Bow:** Sniper 제거. 공격력 +20, Piercing 4, Sweep 유지. **Warrior 키트:** Steelguard는 중첩되지 않는 기본 게임 효과를 사용하며 잘못된 중첩 수를 표시하지 않습니다.
+- **Severance Pay:** 카메라가 화염 방으로 강제 이동하지 않습니다. 골드, 피해 및 시각 효과는 유지됩니다.
 
 - **Tamable:** 손패 아이콘과 설명은 Vesper Beastmaster가 있는 여정에서만 나타나며, 배치 전에도 표시됩니다.
 - **Longbowman:** 능력이 번역된 문장을 유지하면서 Conductor의 현재 상태 이름인 **Skewer**를 사용합니다. Conductor 최소 버전은 **0.5.17**입니다.
@@ -593,7 +647,13 @@ Português (Brasil)
 
 ## Japanese
 
-### 0.3.2 — 2026-10-27 — BETA
+### 0.3.2 — 2026-10-28 — BETA
+
+装備交換、不要なSniper、Steelguardの誤解を招くスタック数、Severance Payのカメラ移動を報告してくれた **Rratvar, the Untitled** に感謝します。
+
+- **ClericとWarriorのキット：**装備時にRegenとArmorを付与し、装備を交換しても差し引かれなくなりました。体力とその他の効果は装備に紐づきます。数値は変更していません。
+- **Great Bow：**Sniperを削除。攻撃力+20、Piercing 4、Sweepは維持。**Warriorのキット：**Steelguardは重複しないゲーム標準の効果を使用し、誤解を招くスタック数を表示しません。
+- **Severance Pay：**カメラがパイアの部屋へ強制移動しなくなりました。ゴールド、ダメージ、視覚効果は変更していません。
 
 - **Tamable：**手札のアイコンと説明は Vesper Beastmaster のいるプレイでのみ表示され、配置前でも表示されます。
 - **Longbowman：**翻訳済みの文章を保ちながら、Conductor の現在の状態名 **Skewer** を使用します。Conductor の最低バージョンは **0.5.17** です。
@@ -662,3 +722,5 @@ Português (Brasil)
 <!-- 2026-10-27-2208||codex-freecompany-fx||CHANGELOG.md||añade correcciones H1-H6/H8 y agradecimiento al revisor externo en diez idiomas; mínimo Conductor 0.5.17 -->
 
 <!-- 2026-10-27-2253||codex-freecompany-fx||CHANGELOG.md||retira agradecimiento al revisor externo de 0.3.2 en diez idiomas por petición del usuario; conserva créditos de reportantes -->
+
+<!-- 2026-10-28-2243||codex-freecompany-fx||CHANGELOG.md||actualiza 0.3.2 con kits, Steelguard, Great Bow y camara; agradece reportes concretos a Rratvar en diez idiomas -->

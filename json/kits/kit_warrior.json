@@ -38,7 +38,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@EquipBuckler"
+        "@EquipBuckler",
+        "@BucklerApplyArmor"
       ],
       "lore_tooltips": [
         {
@@ -75,16 +76,16 @@
         "japanese": "カイトシールド"
       },
       "descriptions": {
-        "english": "<b>+15</b> [health]. Apply <b>6</b> [armor] and <b>2</b> [steelguard].",
-        "french": "<b>+15</b> [health]. Appliquez <b>6</b> [armor] et <b>2</b> [steelguard].",
-        "german": "<b>+15</b> [health]. Erhalte <b>6</b> [armor] und <b>2</b> [steelguard].",
-        "russian": "<b>+15</b> [health]. Получите <b>6</b> [armor] и <b>2</b> [steelguard].",
-        "portuguese": "<b>+15</b> [health]. Aplique <b>6</b> [armor] e <b>2</b> [steelguard].",
-        "chinese": "<b>+15</b> [health]. 施加<b>6</b> [armor]和<b>2</b> [steelguard]。",
-        "spanish": "<b>+15</b> [health]. Aplica <b>6</b> [armor] y <b>2</b> [steelguard].",
-        "chinese_traditional": "<b>+15</b> [health]. 施加<b>6</b> [armor]和<b>2</b> [steelguard]。",
-        "korean": "<b>+15</b> [health]. <b>6</b> [armor] 및 <b>2</b> [steelguard] 부여.",
-        "japanese": "<b>+15</b> [health]. <b>6</b> [armor]と<b>2</b> [steelguard]を付与。"
+        "english": "<b>+15</b> [health]. Apply <b>6</b> [armor] and [steelguard].",
+        "french": "<b>+15</b> [health]. Appliquez <b>6</b> [armor] et [steelguard].",
+        "german": "<b>+15</b> [health]. Erhalte <b>6</b> [armor] und [steelguard].",
+        "russian": "<b>+15</b> [health]. Получите <b>6</b> [armor] и [steelguard].",
+        "portuguese": "<b>+15</b> [health]. Aplique <b>6</b> [armor] e [steelguard].",
+        "chinese": "<b>+15</b> [health]. 施加<b>6</b> [armor]和[steelguard]。",
+        "spanish": "<b>+15</b> [health]. Aplica <b>6</b> [armor] y [steelguard].",
+        "chinese_traditional": "<b>+15</b> [health]. 施加<b>6</b> [armor]和[steelguard]。",
+        "korean": "<b>+15</b> [health]. <b>6</b> [armor] 및 [steelguard] 부여.",
+        "japanese": "<b>+15</b> [health]. <b>6</b> [armor]と[steelguard]を付与。"
       },
       "card_art": "@KiteShield",
       "cost": 1,
@@ -97,7 +98,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@EquipKiteShield"
+        "@EquipKiteShield",
+        "@KiteShieldApplyArmor"
       ],
       "lore_tooltips": [
         {
@@ -134,16 +136,16 @@
         "japanese": "防壁の板金鎧"
       },
       "descriptions": {
-        "english": "<b>+25</b> [health]. Apply <b>10</b> [armor], <b>3</b> [steelguard] and <b>1</b> [titanskin].",
-        "french": "<b>+25</b> [health]. Appliquez <b>10</b> [armor], <b>3</b> [steelguard] et <b>1</b> [titanskin].",
-        "german": "<b>+25</b> [health]. Erhalte <b>10</b> [armor], <b>3</b> [steelguard] und <b>1</b> [titanskin].",
-        "russian": "<b>+25</b> [health]. Получите <b>10</b> [armor], <b>3</b> [steelguard] и <b>1</b> [titanskin].",
-        "portuguese": "<b>+25</b> [health]. Aplique <b>10</b> [armor], <b>3</b> [steelguard] e <b>1</b> [titanskin].",
-        "chinese": "<b>+25</b> [health]. 施加<b>10</b> [armor], <b>3</b> [steelguard]和<b>1</b> [titanskin]。",
-        "spanish": "<b>+25</b> [health]. Aplica <b>10</b> [armor], <b>3</b> [steelguard] y <b>1</b> [titanskin].",
-        "chinese_traditional": "<b>+25</b> [health]. 施加<b>10</b> [armor], <b>3</b> [steelguard]和<b>1</b> [titanskin]。",
-        "korean": "<b>+25</b> [health]. <b>10</b> [armor], <b>3</b> [steelguard] 및 <b>1</b> [titanskin] 부여.",
-        "japanese": "<b>+25</b> [health]. <b>10</b> [armor], <b>3</b> [steelguard]と<b>1</b> [titanskin]を付与。"
+        "english": "<b>+25</b> [health]. Apply <b>10</b> [armor], [steelguard] and <b>1</b> [titanskin].",
+        "french": "<b>+25</b> [health]. Appliquez <b>10</b> [armor], [steelguard] et <b>1</b> [titanskin].",
+        "german": "<b>+25</b> [health]. Erhalte <b>10</b> [armor], [steelguard] und <b>1</b> [titanskin].",
+        "russian": "<b>+25</b> [health]. Получите <b>10</b> [armor], [steelguard] и <b>1</b> [titanskin].",
+        "portuguese": "<b>+25</b> [health]. Aplique <b>10</b> [armor], [steelguard] e <b>1</b> [titanskin].",
+        "chinese": "<b>+25</b> [health]. 施加<b>10</b> [armor], [steelguard]和<b>1</b> [titanskin]。",
+        "spanish": "<b>+25</b> [health]. Aplica <b>10</b> [armor], [steelguard] y <b>1</b> [titanskin].",
+        "chinese_traditional": "<b>+25</b> [health]. 施加<b>10</b> [armor], [steelguard]和<b>1</b> [titanskin]。",
+        "korean": "<b>+25</b> [health]. <b>10</b> [armor], [steelguard] 및 <b>1</b> [titanskin] 부여.",
+        "japanese": "<b>+25</b> [health]. <b>10</b> [armor], [steelguard]と<b>1</b> [titanskin]を付与。"
       },
       "card_art": "@BulwarkPlate",
       "cost": 1,
@@ -156,7 +158,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@EquipBulwarkPlate"
+        "@EquipBulwarkPlate",
+        "@BulwarkPlateApplyArmor"
       ],
       "lore_tooltips": [
         {
@@ -195,25 +198,20 @@
         "japanese": "バックラー"
       },
       "descriptions": {
-        "english": "<b>+8</b> [health]. Apply <b>3</b> [armor].",
-        "french": "<b>+8</b> [health]. Appliquez <b>3</b> [armor].",
-        "german": "<b>+8</b> [health]. Erhalte <b>3</b> [armor].",
-        "russian": "<b>+8</b> [health]. Получите <b>3</b> [armor].",
-        "portuguese": "<b>+8</b> [health]. Aplique <b>3</b> [armor].",
-        "chinese": "<b>+8</b> [health]. 施加<b>3</b> [armor]。",
-        "spanish": "<b>+8</b> [health]. Aplica <b>3</b> [armor].",
-        "chinese_traditional": "<b>+8</b> [health]. 施加<b>3</b> [armor]。",
-        "korean": "<b>+8</b> [health]. <b>3</b> [armor] 부여.",
-        "japanese": "<b>+8</b> [health]. <b>3</b> [armor]を付与。"
+        "english": "<b>+8</b> [health].",
+        "french": "<b>+8</b> [health].",
+        "german": "<b>+8</b> [health].",
+        "russian": "<b>+8</b> [health].",
+        "portuguese": "<b>+8</b> [health].",
+        "chinese": "<b>+8</b> [health].",
+        "spanish": "<b>+8</b> [health].",
+        "chinese_traditional": "<b>+8</b> [health].",
+        "korean": "<b>+8</b> [health].",
+        "japanese": "<b>+8</b> [health]."
       },
       "icon": "@Buckler",
       "bonus_hp": 8,
-      "status_effect_upgrades": [
-        {
-          "status": "armor",
-          "count": 3
-        }
-      ]
+      "status_effect_upgrades": []
     },
     {
       "id": "UpgKiteShield",
@@ -230,27 +228,23 @@
         "japanese": "カイトシールド"
       },
       "descriptions": {
-        "english": "<b>+15</b> [health]. Apply <b>6</b> [armor] and <b>2</b> [steelguard].",
-        "french": "<b>+15</b> [health]. Appliquez <b>6</b> [armor] et <b>2</b> [steelguard].",
-        "german": "<b>+15</b> [health]. Erhalte <b>6</b> [armor] und <b>2</b> [steelguard].",
-        "russian": "<b>+15</b> [health]. Получите <b>6</b> [armor] и <b>2</b> [steelguard].",
-        "portuguese": "<b>+15</b> [health]. Aplique <b>6</b> [armor] e <b>2</b> [steelguard].",
-        "chinese": "<b>+15</b> [health]. 施加<b>6</b> [armor]和<b>2</b> [steelguard]。",
-        "spanish": "<b>+15</b> [health]. Aplica <b>6</b> [armor] y <b>2</b> [steelguard].",
-        "chinese_traditional": "<b>+15</b> [health]. 施加<b>6</b> [armor]和<b>2</b> [steelguard]。",
-        "korean": "<b>+15</b> [health]. <b>6</b> [armor] 및 <b>2</b> [steelguard] 부여.",
-        "japanese": "<b>+15</b> [health]. <b>6</b> [armor]と<b>2</b> [steelguard]を付与。"
+        "english": "<b>+15</b> [health]. [steelguard].",
+        "french": "<b>+15</b> [health]. [steelguard].",
+        "german": "<b>+15</b> [health]. [steelguard].",
+        "russian": "<b>+15</b> [health]. [steelguard].",
+        "portuguese": "<b>+15</b> [health]. [steelguard].",
+        "chinese": "<b>+15</b> [health]. [steelguard].",
+        "spanish": "<b>+15</b> [health]. [steelguard].",
+        "chinese_traditional": "<b>+15</b> [health]. [steelguard].",
+        "korean": "<b>+15</b> [health]. [steelguard].",
+        "japanese": "<b>+15</b> [health]. [steelguard]."
       },
       "icon": "@KiteShield",
       "bonus_hp": 15,
       "status_effect_upgrades": [
         {
-          "status": "armor",
-          "count": 6
-        },
-        {
           "status": "steelguard",
-          "count": 2
+          "count": 1
         }
       ]
     },
@@ -269,27 +263,23 @@
         "japanese": "防壁の板金鎧"
       },
       "descriptions": {
-        "english": "<b>+25</b> [health]. Apply <b>10</b> [armor], <b>3</b> [steelguard] and <b>1</b> [titanskin].",
-        "french": "<b>+25</b> [health]. Appliquez <b>10</b> [armor], <b>3</b> [steelguard] et <b>1</b> [titanskin].",
-        "german": "<b>+25</b> [health]. Erhalte <b>10</b> [armor], <b>3</b> [steelguard] und <b>1</b> [titanskin].",
-        "russian": "<b>+25</b> [health]. Получите <b>10</b> [armor], <b>3</b> [steelguard] и <b>1</b> [titanskin].",
-        "portuguese": "<b>+25</b> [health]. Aplique <b>10</b> [armor], <b>3</b> [steelguard] e <b>1</b> [titanskin].",
-        "chinese": "<b>+25</b> [health]. 施加<b>10</b> [armor], <b>3</b> [steelguard]和<b>1</b> [titanskin]。",
-        "spanish": "<b>+25</b> [health]. Aplica <b>10</b> [armor], <b>3</b> [steelguard] y <b>1</b> [titanskin].",
-        "chinese_traditional": "<b>+25</b> [health]. 施加<b>10</b> [armor], <b>3</b> [steelguard]和<b>1</b> [titanskin]。",
-        "korean": "<b>+25</b> [health]. <b>10</b> [armor], <b>3</b> [steelguard] 및 <b>1</b> [titanskin] 부여.",
-        "japanese": "<b>+25</b> [health]. <b>10</b> [armor], <b>3</b> [steelguard]と<b>1</b> [titanskin]を付与。"
+        "english": "<b>+25</b> [health]. [steelguard]. <b>1</b> [titanskin].",
+        "french": "<b>+25</b> [health]. [steelguard]. <b>1</b> [titanskin].",
+        "german": "<b>+25</b> [health]. [steelguard]. <b>1</b> [titanskin].",
+        "russian": "<b>+25</b> [health]. [steelguard]. <b>1</b> [titanskin].",
+        "portuguese": "<b>+25</b> [health]. [steelguard]. <b>1</b> [titanskin].",
+        "chinese": "<b>+25</b> [health]. [steelguard]. <b>1</b> [titanskin].",
+        "spanish": "<b>+25</b> [health]. [steelguard]. <b>1</b> [titanskin].",
+        "chinese_traditional": "<b>+25</b> [health]. [steelguard]. <b>1</b> [titanskin].",
+        "korean": "<b>+25</b> [health]. [steelguard]. <b>1</b> [titanskin].",
+        "japanese": "<b>+25</b> [health]. [steelguard]. <b>1</b> [titanskin]."
       },
       "icon": "@BulwarkPlate",
       "bonus_hp": 25,
       "status_effect_upgrades": [
         {
-          "status": "armor",
-          "count": 10
-        },
-        {
           "status": "steelguard",
-          "count": 3
+          "count": 1
         },
         {
           "status": "titanskin",
@@ -322,6 +312,42 @@
       "target_mode": "drop_target_character",
       "target_team": "monsters",
       "param_upgrade": "@UpgBulwarkPlate"
+    },
+    {
+      "id": "BucklerApplyArmor",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "KiteShieldApplyArmor",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": "BulwarkPlateApplyArmor",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 10
+        }
+      ]
     }
   ],
   "sprites": [
