@@ -121,16 +121,16 @@
       "id": "WallTrigger1",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room.",
-        "french": "Appliquez [effect0.status0.power] [armor] à toutes les unités alliées de cet étage.",
-        "german": "Verleihe allen verbündeten Einheiten auf diesem Stockwerk [effect0.status0.power] [armor].",
-        "russian": "Наложите [effect0.status0.power] [armor] на все союзные боевые единицы на этом этаже.",
-        "portuguese": "Aplique [effect0.status0.power] [armor] a todas as unidades aliadas neste andar.",
-        "chinese": "对本层所有友方单位施加[effect0.status0.power] [armor]。",
-        "spanish": "Aplica [effect0.status0.power] [armor] a todas las unidades aliadas de este piso.",
-        "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [armor]。",
-        "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [armor] 부여.",
-        "japanese": "この階の味方ユニット全体に[effect0.status0.power] [armor]を付与。"
+        "english": "Gain [effect0.status0.power] [valor].",
+        "spanish": "Gana [effect0.status0.power] [valor].",
+        "french": "Gagne [effect0.status0.power] [valor].",
+        "german": "Erhält [effect0.status0.power] [valor].",
+        "russian": "Получает [effect0.status0.power] [valor].",
+        "portuguese": "Recebe [effect0.status0.power] [valor].",
+        "chinese": "获得[effect0.status0.power] [valor]。",
+        "chinese_traditional": "獲得[effect0.status0.power] [valor]。",
+        "korean": "[effect0.status0.power] [valor] 획득.",
+        "japanese": "[effect0.status0.power] [valor]を得る。"
       },
       "effects": [
         "@WallArmor1"
@@ -140,16 +140,16 @@
       "id": "WallTrigger2",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room.",
-        "french": "Appliquez [effect0.status0.power] [armor] à toutes les unités alliées de cet étage.",
-        "german": "Verleihe allen verbündeten Einheiten auf diesem Stockwerk [effect0.status0.power] [armor].",
-        "russian": "Наложите [effect0.status0.power] [armor] на все союзные боевые единицы на этом этаже.",
-        "portuguese": "Aplique [effect0.status0.power] [armor] a todas as unidades aliadas neste andar.",
-        "chinese": "对本层所有友方单位施加[effect0.status0.power] [armor]。",
-        "spanish": "Aplica [effect0.status0.power] [armor] a todas las unidades aliadas de este piso.",
-        "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [armor]。",
-        "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [armor] 부여.",
-        "japanese": "この階の味方ユニット全体に[effect0.status0.power] [armor]を付与。"
+        "english": "Gain [effect0.status0.power] [valor].",
+        "spanish": "Gana [effect0.status0.power] [valor].",
+        "french": "Gagne [effect0.status0.power] [valor].",
+        "german": "Erhält [effect0.status0.power] [valor].",
+        "russian": "Получает [effect0.status0.power] [valor].",
+        "portuguese": "Recebe [effect0.status0.power] [valor].",
+        "chinese": "获得[effect0.status0.power] [valor]。",
+        "chinese_traditional": "獲得[effect0.status0.power] [valor]。",
+        "korean": "[effect0.status0.power] [valor] 획득.",
+        "japanese": "[effect0.status0.power] [valor]を得る。"
       },
       "effects": [
         "@WallArmor2"
@@ -159,16 +159,16 @@
       "id": "WallTrigger3",
       "trigger": "pre_combat",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to all friendly units in this room.",
-        "french": "Appliquez [effect0.status0.power] [armor] à toutes les unités alliées de cet étage.",
-        "german": "Verleihe allen verbündeten Einheiten auf diesem Stockwerk [effect0.status0.power] [armor].",
-        "russian": "Наложите [effect0.status0.power] [armor] на все союзные боевые единицы на этом этаже.",
-        "portuguese": "Aplique [effect0.status0.power] [armor] a todas as unidades aliadas neste andar.",
-        "chinese": "对本层所有友方单位施加[effect0.status0.power] [armor]。",
-        "spanish": "Aplica [effect0.status0.power] [armor] a todas las unidades aliadas de este piso.",
-        "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [armor]。",
-        "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [armor] 부여.",
-        "japanese": "この階の味方ユニット全体に[effect0.status0.power] [armor]を付与。"
+        "english": "Gain [effect0.status0.power] [valor].",
+        "spanish": "Gana [effect0.status0.power] [valor].",
+        "french": "Gagne [effect0.status0.power] [valor].",
+        "german": "Erhält [effect0.status0.power] [valor].",
+        "russian": "Получает [effect0.status0.power] [valor].",
+        "portuguese": "Recebe [effect0.status0.power] [valor].",
+        "chinese": "获得[effect0.status0.power] [valor]。",
+        "chinese_traditional": "獲得[effect0.status0.power] [valor]。",
+        "korean": "[effect0.status0.power] [valor] 획득.",
+        "japanese": "[effect0.status0.power] [valor]を得る。"
       },
       "effects": [
         "@WallArmor3"
@@ -179,11 +179,11 @@
     {
       "id": "WallArmor1",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
+      "target_mode": "self",
       "target_team": "monsters",
       "param_status_effects": [
         {
-          "status": "armor",
+          "status": "valor",
           "count": 3
         }
       ]
@@ -191,11 +191,11 @@
     {
       "id": "WallArmor2",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
+      "target_mode": "self",
       "target_team": "monsters",
       "param_status_effects": [
         {
-          "status": "armor",
+          "status": "valor",
           "count": 6
         }
       ]
@@ -203,12 +203,12 @@
     {
       "id": "WallArmor3",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
+      "target_mode": "self",
       "target_team": "monsters",
       "param_status_effects": [
         {
-          "status": "armor",
-          "count": 10
+          "status": "valor",
+          "count": 9
         }
       ]
     },
@@ -273,7 +273,6 @@
   "upgrades": [
     {
       "id": "upg_Wall1",
-      "ability_upgrade": "@RodericSlam",
       "titles": {
         "english": "Shield Wall",
         "french": "Mur de boucliers",
@@ -287,16 +286,16 @@
         "japanese": "盾の壁"
       },
       "descriptions": {
-        "english": "Give allies here <b>3</b> [armor] before combat. Power Slam hits enemies here.",
-        "french": "Avant le combat, confère <b>3</b> [armor] aux alliés ici. Frappe puissante frappe les ennemis ici.",
-        "german": "Verleiht Verbündeten hier vor dem Kampf <b>3</b> [armor]. Wuchtiger Schlag trifft Gegner hier.",
-        "russian": "Перед боем даёт союзникам здесь <b>3</b> [armor]. Мощный удар поражает врагов здесь.",
-        "portuguese": "Antes do combate, concede <b>3</b> [armor] aos aliados aqui. Golpe Poderoso atinge os inimigos aqui.",
-        "chinese": "战斗前为本层友军施加<b>3</b>层[armor]。强力猛击攻击本层敌人。",
-        "spanish": "Antes del combate, da <b>3</b> [armor] a los aliados de aquí. Golpe poderoso golpea a los enemigos de aquí.",
-        "chinese_traditional": "戰鬥前為本層友軍施加<b>3</b>層[armor]。強力猛擊攻擊本層敵人。",
-        "korean": "전투 전 이 층의 아군에게 <b>3</b> [armor] 부여. 강타는 이 층의 적을 공격.",
-        "japanese": "戦闘前、この階の味方に<b>3</b> [armor]を付与。強打でこの階の敵を攻撃。"
+        "english": "Intercepts attack damage for allies behind this unit on this floor.",
+        "spanish": "Intercepta el daño de ataques a los aliados situados detrás de esta unidad en este piso.",
+        "french": "Intercepte les dégâts des attaques visant les alliés derrière cette unité à cet étage.",
+        "german": "Fängt Angriffsschaden für Verbündete hinter dieser Einheit auf dieser Ebene ab.",
+        "russian": "Перехватывает урон от атак по союзникам позади этой боевой единицы на этом этаже.",
+        "portuguese": "Intercepta o dano de ataques contra aliados atrás desta unidade neste andar.",
+        "chinese": "拦截本层位于此单位身后的友军受到的攻击伤害。",
+        "chinese_traditional": "攔截本層位於此單位身後的友軍受到的攻擊傷害。",
+        "korean": "이 층에서 이 유닛 뒤에 있는 아군이 받을 공격 피해를 대신 받습니다.",
+        "japanese": "このフロアで自身の後ろにいる味方への攻撃ダメージを肩代わりする。"
       },
       "bonus_hp": 9,
       "trigger_upgrades": [
@@ -306,12 +305,16 @@
         {
           "status": "titanskin",
           "count": 2
+        },
+        {
+          "status": "damage shield",
+          "count": 2
         }
-      ]
+      ],
+      "show_description_on_cards": true
     },
     {
       "id": "upg_Wall2",
-      "ability_upgrade": "@RodericSlam2",
       "titles": {
         "english": "Shield Wall II",
         "french": "Mur de boucliers II",
@@ -325,16 +328,16 @@
         "japanese": "盾の壁 II"
       },
       "descriptions": {
-        "english": "Give allies here <b>6</b> [armor] before combat. Power Slam hits enemies here.",
-        "french": "Avant le combat, confère <b>6</b> [armor] aux alliés ici. Frappe puissante frappe les ennemis ici.",
-        "german": "Verleiht Verbündeten hier vor dem Kampf <b>6</b> [armor]. Wuchtiger Schlag trifft Gegner hier.",
-        "russian": "Перед боем даёт союзникам здесь <b>6</b> [armor]. Мощный удар поражает врагов здесь.",
-        "portuguese": "Antes do combate, concede <b>6</b> [armor] aos aliados aqui. Golpe Poderoso atinge os inimigos aqui.",
-        "chinese": "战斗前为本层友军施加<b>6</b>层[armor]。强力猛击攻击本层敌人。",
-        "spanish": "Antes del combate, da <b>6</b> [armor] a los aliados de aquí. Golpe poderoso golpea a los enemigos de aquí.",
-        "chinese_traditional": "戰鬥前為本層友軍施加<b>6</b>層[armor]。強力猛擊攻擊本層敵人。",
-        "korean": "전투 전 이 층의 아군에게 <b>6</b> [armor] 부여. 강타는 이 층의 적을 공격.",
-        "japanese": "戦闘前、この階の味方に<b>6</b> [armor]を付与。強打でこの階の敵を攻撃。"
+        "english": "Intercepts attack damage for allies behind this unit on this floor.",
+        "spanish": "Intercepta el daño de ataques a los aliados situados detrás de esta unidad en este piso.",
+        "french": "Intercepte les dégâts des attaques visant les alliés derrière cette unité à cet étage.",
+        "german": "Fängt Angriffsschaden für Verbündete hinter dieser Einheit auf dieser Ebene ab.",
+        "russian": "Перехватывает урон от атак по союзникам позади этой боевой единицы на этом этаже.",
+        "portuguese": "Intercepta o dano de ataques contra aliados atrás desta unidade neste andar.",
+        "chinese": "拦截本层位于此单位身后的友军受到的攻击伤害。",
+        "chinese_traditional": "攔截本層位於此單位身後的友軍受到的攻擊傷害。",
+        "korean": "이 층에서 이 유닛 뒤에 있는 아군이 받을 공격 피해를 대신 받습니다.",
+        "japanese": "このフロアで自身の後ろにいる味方への攻撃ダメージを肩代わりする。"
       },
       "bonus_hp": 19,
       "remove_upgrades": [
@@ -347,12 +350,16 @@
         {
           "status": "titanskin",
           "count": 4
+        },
+        {
+          "status": "damage shield",
+          "count": 3
         }
-      ]
+      ],
+      "show_description_on_cards": true
     },
     {
       "id": "upg_Wall3",
-      "ability_upgrade": "@RodericSlam3",
       "titles": {
         "english": "Shield Wall III",
         "french": "Mur de boucliers III",
@@ -366,16 +373,16 @@
         "japanese": "盾の壁 III"
       },
       "descriptions": {
-        "english": "Give allies here <b>10</b> [armor] before combat. Power Slam hits enemies here.",
-        "french": "Avant le combat, confère <b>10</b> [armor] aux alliés ici. Frappe puissante frappe les ennemis ici.",
-        "german": "Verleiht Verbündeten hier vor dem Kampf <b>10</b> [armor]. Wuchtiger Schlag trifft Gegner hier.",
-        "russian": "Перед боем даёт союзникам здесь <b>10</b> [armor]. Мощный удар поражает врагов здесь.",
-        "portuguese": "Antes do combate, concede <b>10</b> [armor] aos aliados aqui. Golpe Poderoso atinge os inimigos aqui.",
-        "chinese": "战斗前为本层友军施加<b>10</b>层[armor]。强力猛击攻击本层敌人。",
-        "spanish": "Antes del combate, da <b>10</b> [armor] a los aliados de aquí. Golpe poderoso golpea a los enemigos de aquí.",
-        "chinese_traditional": "戰鬥前為本層友軍施加<b>10</b>層[armor]。強力猛擊攻擊本層敵人。",
-        "korean": "전투 전 이 층의 아군에게 <b>10</b> [armor] 부여. 강타는 이 층의 적을 공격.",
-        "japanese": "戦闘前、この階の味方に<b>10</b> [armor]を付与。強打でこの階の敵を攻撃。"
+        "english": "Intercepts attack damage for allies behind this unit on this floor.",
+        "spanish": "Intercepta el daño de ataques a los aliados situados detrás de esta unidad en este piso.",
+        "french": "Intercepte les dégâts des attaques visant les alliés derrière cette unité à cet étage.",
+        "german": "Fängt Angriffsschaden für Verbündete hinter dieser Einheit auf dieser Ebene ab.",
+        "russian": "Перехватывает урон от атак по союзникам позади этой боевой единицы на этом этаже.",
+        "portuguese": "Intercepta o dano de ataques contra aliados atrás desta unidade neste andar.",
+        "chinese": "拦截本层位于此单位身后的友军受到的攻击伤害。",
+        "chinese_traditional": "攔截本層位於此單位身後的友軍受到的攻擊傷害。",
+        "korean": "이 층에서 이 유닛 뒤에 있는 아군이 받을 공격 피해를 대신 받습니다.",
+        "japanese": "このフロアで自身の後ろにいる味方への攻撃ダメージを肩代わりする。"
       },
       "bonus_hp": 34,
       "remove_upgrades": [
@@ -388,8 +395,45 @@
         {
           "status": "titanskin",
           "count": 6
+        },
+        {
+          "status": "damage shield",
+          "count": 4
         }
-      ]
+      ],
+      "show_description_on_cards": true
+    }
+  ],
+  "localization_terms": [
+    {
+      "key": "mt2_freecompany.Plugin_InterceptTitle",
+      "texts": {
+        "english": "Interception",
+        "spanish": "Intercepción",
+        "french": "Interception",
+        "german": "Abfangen",
+        "russian": "Перехват",
+        "portuguese": "Interceptação",
+        "chinese": "拦截",
+        "chinese_traditional": "攔截",
+        "korean": "가로막기",
+        "japanese": "迎撃"
+      }
+    },
+    {
+      "key": "mt2_freecompany.Plugin_InterceptRules",
+      "texts": {
+        "english": "Intercepts attack damage for allies behind this unit on this floor. Their Damage Shield blocks first. Other attack effects stay on them.",
+        "spanish": "Intercepta el daño de ataques a los aliados situados detrás de esta unidad en este piso. Primero bloquea el escudo de daño del aliado. Los otros efectos del ataque permanecen en ese aliado.",
+        "french": "Intercepte les dégâts des attaques visant les alliés derrière cette unité à cet étage. Le bouclier de dégâts de l’allié bloque en premier. Les autres effets de l’attaque restent sur cet allié.",
+        "german": "Fängt Angriffsschaden für Verbündete hinter dieser Einheit auf dieser Ebene ab. Der Schadensschild des Verbündeten blockiert zuerst. Andere Angriffseffekte treffen weiterhin den Verbündeten.",
+        "russian": "Перехватывает урон от атак по союзникам позади этой боевой единицы на этом этаже. Сначала срабатывает щит союзника. Прочие эффекты атаки остаются на исходной цели.",
+        "portuguese": "Intercepta o dano de ataques contra aliados atrás desta unidade neste andar. O escudo de dano do aliado bloqueia primeiro. Os outros efeitos do ataque continuam nesse aliado.",
+        "chinese": "拦截本层位于此单位身后的友军受到的攻击伤害。 优先消耗该友军的伤害护盾。攻击的其他效果仍作用于该友军。",
+        "chinese_traditional": "攔截本層位於此單位身後的友軍受到的攻擊傷害。 優先消耗該友軍的傷害護盾。攻擊的其他效果仍作用於該友軍。",
+        "korean": "이 층에서 이 유닛 뒤에 있는 아군이 받을 공격 피해를 대신 받습니다. 해당 아군의 피해 보호막이 먼저 막습니다. 공격의 다른 효과는 해당 아군에게 적용됩니다.",
+        "japanese": "このフロアで自身の後ろにいる味方への攻撃ダメージを肩代わりする。 味方のダメージシールドが先に防ぐ。攻撃のその他の効果は元の対象に適用される。"
+      }
     }
   ]
 }

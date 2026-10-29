@@ -166,7 +166,8 @@
       "bonus_hp": 9,
       "bonus_damage": 0,
       "bonus_equipment": 1,
-      "status_effect_upgrades": []
+      "status_effect_upgrades": [],
+      "show_description_on_cards": true
     },
     {
       "id": "upg_Quarter2",
@@ -200,7 +201,8 @@
       "remove_upgrades": [
         "@upg_Quarter1"
       ],
-      "status_effect_upgrades": []
+      "status_effect_upgrades": [],
+      "show_description_on_cards": true
     },
     {
       "id": "upg_Quarter3",
@@ -234,7 +236,8 @@
       "remove_upgrades": [
         "@upg_Quarter2"
       ],
-      "status_effect_upgrades": []
+      "status_effect_upgrades": [],
+      "show_description_on_cards": true
     }
   ],
   "vfxs": [
