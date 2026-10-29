@@ -168,26 +168,8 @@ namespace mt2_freecompany.Plugin
                 yield break;
             }
 
-            string? cartaId = null;
-            foreach (var par in Escaleras)
-            {
-                if (TieneSubtipo(objetivo, par.Key)) { cartaId = par.Value[escalon - 1]; break; }
-            }
-
-            if (cartaId == null)
-            {
-                // Sin rol no hay escalera: sale un objeto al azar, del MISMO escalon.
-                var roles = new List<string[]>(Escaleras.Values);
-                cartaId = roles[RandomManager.Range(0, roles.Count, RngId.Battle)][escalon - 1];
-                Log($"Requisition: objetivo sin subtipo de rol (vistos: {ListarSubtipos(objetivo)}); al azar sale {cartaId}.");
-            }
-
-            var data = BuscarCarta(gameData, cartaId);
-            if (data == null)
-            {
-                Log($"Requisition: NO ENCUENTRO la carta {NombreCarta(cartaId)}.");
-                yield break;
-            }
+            var data = FindKitData(objetivo, escalon, coreGameManagers);
+            if (data == null) yield break;
 
             // `CardManager.AddCard` NO EXISTE: el metodo publico es `AddNewCard`, y los de
             // 8-10 parametros que se le parecen son `AddNewCardWithSpecialPlacement`
@@ -206,10 +188,32 @@ namespace mt2_freecompany.Plugin
                 null,                 // addCardUpgradingInfo
                 true);                // animate
 
-            if (creada == null) Log($"Requisition: AddNewCard devolvio null para {cartaId} (mano llena?).");
-            else Log($"Requisition: a la mano {cartaId} (escalon {escalon}).");
+            if (creada == null) Log($"Requisition: AddNewCard devolvio null para {data.name} (mano llena?).");
+            else Log($"Requisition: a la mano {data.name} (escalon {escalon}).");
 
             yield break;
+        }
+
+        // Shared by activated Requisition and Quartermaster's passive supply.
+        // Keep role matching, tier and seeded fallback identical in both paths.
+        internal static CardData? FindKitData(CharacterState target, int tier, ICoreGameManagers managers)
+        {
+            if (managers.GetSaveManager().PreviewMode) return null;
+            if (tier < 1 || tier > 3) return null;
+            string? cardId = null;
+            foreach (var role in Escaleras)
+            {
+                if (TieneSubtipo(target, role.Key)) { cardId = role.Value[tier - 1]; break; }
+            }
+            if (cardId == null)
+            {
+                var roles = new List<string[]>(Escaleras.Values);
+                cardId = roles[RandomManager.Range(0, roles.Count, RngId.Battle)][tier - 1];
+                Log($"Requisition: no matching role ({ListarSubtipos(target)}); selected {cardId}.");
+            }
+            var data = BuscarCarta(managers.GetAllGameData(), cardId);
+            if (data == null) Log($"Requisition: missing card {NombreCarta(cardId)}.");
+            return data;
         }
 
         /// <summary>
@@ -262,3 +266,5 @@ namespace mt2_freecompany.Plugin
 // 2026-10-27-1531||codex-freecompany-fx||src/code/CardEffectRequisition.cs||sustituye System.Random por RandomManager.Range con RngId.Battle para selección reproducible
 
 // 2026-10-27-2204||codex-freecompany-fx||src/code/CardEffectRequisition.cs||H5: compara identidad de rol con namespace, sin depender del prefijo localizado mal escrito de Trainworks
+
+// 2026-10-29-1402||codex-freecompany-fx||src/code/CardEffectRequisition.cs||comparte seleccion de kit por rol, nivel y RNG de batalla entre Requisition y Suministro pasivo

@@ -6,7 +6,9 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ## English
 
-### 0.3.2 — 2026-10-28 — BETA
+### 0.3.2 — 2026-10-29 — BETA
+
+- **Quartermaster:** replaces activated Requisition with passive Supply and Salvage. Once each turn, summoning another ally grants its role’s tier I/II/III kit. The first equipped ally that dies each turn returns its equipment to your hand, preserving upgrades and merged equipment. Roderic retains +1/+2/+3 equipment slots. Quartermaster no longer replaces Call to Arms when mixing paths.
 
 Thanks to **Rratvar, the Untitled** for reporting equipment replacement, redundant Sniper, misleading Steelguard counts and Severance Pay’s camera movement.
 
@@ -133,7 +135,9 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 
 ## Spanish
 
-### 0.3.2 — 2026-10-28 — BETA
+### 0.3.2 — 2026-10-29 — BETA
+
+- **Quartermaster:** sustituye Requisition activada por Suministro y Recuperación pasivos. Una vez cada turno, invocar a otro aliado concede el kit I/II/III de su rol. Los equipos del primer aliado equipado que muera cada turno vuelven a la mano, conservando mejoras y fusiones. Roderic mantiene +1/+2/+3 espacios. Quartermaster ya no sustituye Call to Arms al mezclar sendas.
 
 Gracias a **Rratvar, the Untitled** por reportar la sustitución de equipos, Sniper redundante, las cantidades engañosas de Steelguard y el movimiento de cámara de Severance Pay.
 
@@ -297,7 +301,9 @@ comentarios de la ficha.
 
 ## French
 
-### 0.3.2 — 2026-10-28 — BETA
+### 0.3.2 — 2026-10-29 — BETA
+
+- **Quartermaster :** Requisition activée devient Ravitaillement et Récupération passifs. Une fois par tour, invoquer un autre allié donne le kit I/II/III de son rôle. Les équipements du premier allié équipé qui meurt chaque tour reviennent en main, avec améliorations et fusions. Roderic conserve +1/+2/+3 emplacements. Quartermaster ne remplace plus Call to Arms en combinant les voies.
 
 Merci à **Rratvar, the Untitled** pour ses signalements sur le remplacement d’équipement, Sniper redondant, les charges trompeuses de Steelguard et la caméra de Severance Pay.
 
@@ -347,7 +353,9 @@ Français
 
 ## German
 
-### 0.3.2 — 2026-10-28 — BETA
+### 0.3.2 — 2026-10-29 — BETA
+
+- **Quartermaster:** aktive Requisition durch passiven Nachschub und Bergung ersetzt. Einmal pro Zug gewährt das Beschwören eines anderen Verbündeten dessen Rollen-Kit I/II/III. Die Ausrüstung des ersten ausgerüsteten Verbündeten, der pro Zug stirbt, kehrt mit Verbesserungen und Fusionen auf die Hand zurück. Roderic behält +1/+2/+3 Plätze. Quartermaster überschreibt Call to Arms beim Mischen der Pfade nicht mehr.
 
 Danke an **Rratvar, the Untitled** für die Meldungen zum Ausrüstungswechsel, überflüssigen Sniper, irreführenden Steelguard-Stapeln und zum Kamerasprung bei Severance Pay.
 
@@ -397,7 +405,9 @@ Deutsch
 
 ## Russian
 
-### 0.3.2 — 2026-10-28 — BETA
+### 0.3.2 — 2026-10-29 — BETA
+
+- **Quartermaster:** активная Requisition заменена пассивными Снабжением и Возвратом. Раз в ход призыв другого союзника даёт комплект I/II/III его роли. Снаряжение первого экипированного союзника, погибшего за ход, возвращается в руку с улучшениями и слияниями. Родерик сохраняет +1/+2/+3 слота. Quartermaster больше не заменяет Call to Arms при смешивании путей.
 
 Спасибо **Rratvar, the Untitled** за сообщения о замене снаряжения, лишнем Sniper, неверных числах Steelguard и камере Severance Pay.
 
@@ -447,7 +457,9 @@ Deutsch
 
 ## Portuguese Brazil
 
-### 0.3.2 — 2026-10-28 — BETA
+### 0.3.2 — 2026-10-29 — BETA
+
+- **Quartermaster:** Requisition ativa substituída por Suprimento e Recuperação passivos. Uma vez por turno, invocar outro aliado concede o kit I/II/III de sua função. O equipamento do primeiro aliado equipado que morrer a cada turno volta à mão, preservando melhorias e fusões. Roderic mantém +1/+2/+3 espaços. Quartermaster não substitui mais Call to Arms ao combinar caminhos.
 
 Obrigado a **Rratvar, the Untitled** pelos relatos sobre troca de equipamentos, Sniper redundante, contagens enganosas de Steelguard e a câmera de Severance Pay.
 
@@ -497,7 +509,9 @@ Português (Brasil)
 
 ## Chinese
 
-### 0.3.2 — 2026-10-28 — BETA
+### 0.3.2 — 2026-10-29 — BETA
+
+- **Quartermaster：**主动 Requisition 改为被动补给与回收。每回合首次召唤另一名友军时，获得其职业的 I/II/III 级装备。每回合首名阵亡的已装备友军的装备返回手牌，保留升级与融合。Roderic 保留额外 1/2/3 个装备栏。混合路线时 Quartermaster 不再替换 Call to Arms。
 
 感谢 **Rratvar, the Untitled** 报告装备替换、多余的 Sniper、Steelguard 层数误导以及 Severance Pay 镜头移动的问题。
 
@@ -547,7 +561,9 @@ Português (Brasil)
 
 ## Chinese Traditional
 
-### 0.3.2 — 2026-10-28 — BETA
+### 0.3.2 — 2026-10-29 — BETA
+
+- **Quartermaster：**主動 Requisition 改為被動補給與回收。每回合首次召喚另一名友軍時，獲得其職業的 I/II/III 級裝備。每回合首名陣亡的已裝備友軍的裝備返回手牌，保留升級與融合。Roderic 保留額外 1/2/3 個裝備欄。混合路線時 Quartermaster 不再替換 Call to Arms。
 
 感謝 **Rratvar, the Untitled** 回報裝備替換、多餘的 Sniper、Steelguard 層數誤導以及 Severance Pay 鏡頭移動的問題。
 
@@ -597,7 +613,9 @@ Português (Brasil)
 
 ## Korean
 
-### 0.3.2 — 2026-10-28 — BETA
+### 0.3.2 — 2026-10-29 — BETA
+
+- **Quartermaster:** 활성 Requisition을 지속 효과 보급과 회수로 교체했습니다. 매 턴 처음 다른 아군을 소환하면 해당 역할의 I/II/III단계 장비를 얻습니다. 매 턴 처음 사망한 장비를 장착한 아군의 장비가 강화와 융합을 유지한 채 손으로 돌아옵니다. Roderic의 추가 장비 슬롯 +1/+2/+3은 유지됩니다. 경로를 혼합해도 Quartermaster가 Call to Arms를 덮어쓰지 않습니다.
 
 장비 교체, 불필요한 Sniper, Steelguard 중첩 수 표시 및 Severance Pay 카메라 문제를 제보한 **Rratvar, the Untitled**에게 감사드립니다.
 
@@ -647,7 +665,9 @@ Português (Brasil)
 
 ## Japanese
 
-### 0.3.2 — 2026-10-28 — BETA
+### 0.3.2 — 2026-10-29 — BETA
+
+- **Quartermaster：**起動能力Requisitionを常時効果の補給と回収に変更。各ターン最初に他の味方を召喚すると、その役割のランクI/II/III装備を得ます。各ターン最初に死亡した装備中の味方の装備は、強化と融合を保って手札に戻ります。Rodericの追加装備枠+1/+2/+3は維持。混合ルートでQuartermasterがCall to Armsを上書きしなくなりました。
 
 装備交換、不要なSniper、Steelguardの誤解を招くスタック数、Severance Payのカメラ移動を報告してくれた **Rratvar, the Untitled** に感謝します。
 
@@ -724,3 +744,5 @@ Português (Brasil)
 <!-- 2026-10-27-2253||codex-freecompany-fx||CHANGELOG.md||retira agradecimiento al revisor externo de 0.3.2 en diez idiomas por petición del usuario; conserva créditos de reportantes -->
 
 <!-- 2026-10-28-2243||codex-freecompany-fx||CHANGELOG.md||actualiza 0.3.2 con kits, Steelguard, Great Bow y camara; agradece reportes concretos a Rratvar en diez idiomas -->
+
+<!-- 2026-10-29-1408||codex-freecompany-fx||CHANGELOG.md||Quartermaster pasivo Suministro/Recuperacion y coexistencia con Call to Arms en diez idiomas -->

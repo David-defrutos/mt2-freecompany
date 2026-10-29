@@ -152,21 +152,20 @@
         "japanese": "補給官"
       },
       "descriptions": {
-        "english": "Hold <b>1</b> extra piece of equipment. Requisition tier <b>I</b> kits.",
-        "french": "Peut porter <b>1</b> équipement supplémentaire. Réquisitionne de l’équipement de rang <b>I</b>.",
-        "german": "Kann <b>1</b> zusätzliche Ausrüstungsgegenstände tragen. Fordert Ausrüstung der Stufe <b>I</b> an.",
-        "russian": "Может носить на <b>1</b> предметов снаряжения больше. Реквизирует снаряжение уровня <b>I</b>.",
-        "portuguese": "Pode carregar <b>1</b> equipamento adicional. Requisita equipamentos de nível <b>I</b>.",
-        "chinese": "可额外携带<b>1</b>件装备。征调<b>I</b>级装备。",
-        "spanish": "Puede llevar <b>1</b> pieza de equipo adicional. Requisa equipo de nivel <b>I</b>.",
-        "chinese_traditional": "可額外攜帶<b>1</b>件裝備。徵調<b>I</b>級裝備。",
-        "korean": "장비 <b>1</b>개를 추가로 장착 가능. <b>I</b>단계 장비 징발.",
-        "japanese": "装備を追加で<b>1</b>個持てる。ランク<b>I</b>装備を徴発。"
+        "english": "Hold <b>1</b> extra equipment.\n<b>Supply:</b> The first other ally summoned each turn adds its tier <b>I</b> role kit to your hand.\n<b>Salvage:</b> Return the equipment of the first equipped ally that dies each turn to your hand.",
+        "spanish": "Puede llevar <b>1</b> equipos adicionales.\n<b>Suministro:</b> El primer aliado adicional invocado cada turno añade a tu mano el kit de su rol de nivel <b>I</b>.\n<b>Recuperación:</b> Devuelve a tu mano los equipos del primer aliado equipado que muera cada turno.",
+        "french": "Peut porter <b>1</b> équipements supplémentaires.\n<b>Ravitaillement :</b> Le premier autre allié invoqué chaque tour ajoute à votre main le kit de son rôle de rang <b>I</b>.\n<b>Récupération :</b> Renvoyez en main les équipements du premier allié équipé qui meurt chaque tour.",
+        "german": "Kann <b>1</b> zusätzliche Ausrüstungsgegenstände tragen.\n<b>Nachschub:</b> Der erste andere verbündete Beschworene jedes Zuges fügt seiner Rolle entsprechende Ausrüstung der Stufe <b>I</b> deiner Hand hinzu.\n<b>Bergung:</b> Die Ausrüstung des ersten ausgerüsteten Verbündeten, der pro Zug stirbt, kehrt auf deine Hand zurück.",
+        "russian": "Может носить на <b>1</b> предметов снаряжения больше.\n<b>Снабжение:</b> Первый другой союзник, призванный за ход, добавляет в руку комплект своей роли уровня <b>I</b>.\n<b>Возврат:</b> Снаряжение первого экипированного союзника, погибшего за ход, возвращается в руку.",
+        "portuguese": "Pode carregar <b>1</b> equipamentos adicionais.\n<b>Suprimento:</b> O primeiro outro aliado invocado a cada turno adiciona à sua mão o kit de sua função de nível <b>I</b>.\n<b>Recuperação:</b> Devolve à sua mão os equipamentos do primeiro aliado equipado que morrer a cada turno.",
+        "chinese": "可额外携带<b>1</b>件装备。\n<b>补给：</b>每回合首次召唤另一名友军时，将其职业的<b>I</b>级装备加入手牌。\n<b>回收：</b>每回合首名阵亡的已装备友军的装备返回手牌。",
+        "chinese_traditional": "可額外攜帶<b>1</b>件裝備。\n<b>補給：</b>每回合首次召喚另一名友軍時，將其職業的<b>I</b>級裝備加入手牌。\n<b>回收：</b>每回合首名陣亡的已裝備友軍的裝備返回手牌。",
+        "korean": "장비를 <b>1</b>개 추가로 장착할 수 있습니다.\n<b>보급:</b> 매 턴 처음으로 다른 아군을 소환하면 그 역할의 <b>I</b>단계 장비를 손에 추가합니다.\n<b>회수:</b> 매 턴 처음 사망한 장비를 장착한 아군의 장비를 손으로 돌려보냅니다.",
+        "japanese": "装備を追加で<b>1</b>個持てる。\n<b>補給：</b>各ターン最初に他の味方を召喚すると、その役割のランク<b>I</b>装備を手札に加える。\n<b>回収：</b>各ターン最初に死亡した装備中の味方の装備を手札に戻す。"
       },
       "bonus_hp": 9,
       "bonus_damage": 0,
       "bonus_equipment": 1,
-      "ability_upgrade": "@RodericRequisition",
       "status_effect_upgrades": []
     },
     {
@@ -184,21 +183,20 @@
         "japanese": "補給官 II"
       },
       "descriptions": {
-        "english": "Hold <b>2</b> extra pieces of equipment. Requisition tier <b>II</b> kits.",
-        "french": "Peut porter <b>2</b> équipements supplémentaires. Réquisitionne de l’équipement de rang <b>II</b>.",
-        "german": "Kann <b>2</b> zusätzliche Ausrüstungsgegenstände tragen. Fordert Ausrüstung der Stufe <b>II</b> an.",
-        "russian": "Может носить на <b>2</b> предметов снаряжения больше. Реквизирует снаряжение уровня <b>II</b>.",
-        "portuguese": "Pode carregar <b>2</b> equipamentos adicionais. Requisita equipamentos de nível <b>II</b>.",
-        "chinese": "可额外携带<b>2</b>件装备。征调<b>II</b>级装备。",
-        "spanish": "Puede llevar <b>2</b> piezas de equipo adicionales. Requisa equipo de nivel <b>II</b>.",
-        "chinese_traditional": "可額外攜帶<b>2</b>件裝備。徵調<b>II</b>級裝備。",
-        "korean": "장비 <b>2</b>개를 추가로 장착 가능. <b>II</b>단계 장비 징발.",
-        "japanese": "装備を追加で<b>2</b>個持てる。ランク<b>II</b>装備を徴発。"
+        "english": "Hold <b>2</b> extra equipment.\n<b>Supply:</b> The first other ally summoned each turn adds its tier <b>II</b> role kit to your hand.\n<b>Salvage:</b> Return the equipment of the first equipped ally that dies each turn to your hand.",
+        "spanish": "Puede llevar <b>2</b> equipos adicionales.\n<b>Suministro:</b> El primer aliado adicional invocado cada turno añade a tu mano el kit de su rol de nivel <b>II</b>.\n<b>Recuperación:</b> Devuelve a tu mano los equipos del primer aliado equipado que muera cada turno.",
+        "french": "Peut porter <b>2</b> équipements supplémentaires.\n<b>Ravitaillement :</b> Le premier autre allié invoqué chaque tour ajoute à votre main le kit de son rôle de rang <b>II</b>.\n<b>Récupération :</b> Renvoyez en main les équipements du premier allié équipé qui meurt chaque tour.",
+        "german": "Kann <b>2</b> zusätzliche Ausrüstungsgegenstände tragen.\n<b>Nachschub:</b> Der erste andere verbündete Beschworene jedes Zuges fügt seiner Rolle entsprechende Ausrüstung der Stufe <b>II</b> deiner Hand hinzu.\n<b>Bergung:</b> Die Ausrüstung des ersten ausgerüsteten Verbündeten, der pro Zug stirbt, kehrt auf deine Hand zurück.",
+        "russian": "Может носить на <b>2</b> предметов снаряжения больше.\n<b>Снабжение:</b> Первый другой союзник, призванный за ход, добавляет в руку комплект своей роли уровня <b>II</b>.\n<b>Возврат:</b> Снаряжение первого экипированного союзника, погибшего за ход, возвращается в руку.",
+        "portuguese": "Pode carregar <b>2</b> equipamentos adicionais.\n<b>Suprimento:</b> O primeiro outro aliado invocado a cada turno adiciona à sua mão o kit de sua função de nível <b>II</b>.\n<b>Recuperação:</b> Devolve à sua mão os equipamentos do primeiro aliado equipado que morrer a cada turno.",
+        "chinese": "可额外携带<b>2</b>件装备。\n<b>补给：</b>每回合首次召唤另一名友军时，将其职业的<b>II</b>级装备加入手牌。\n<b>回收：</b>每回合首名阵亡的已装备友军的装备返回手牌。",
+        "chinese_traditional": "可額外攜帶<b>2</b>件裝備。\n<b>補給：</b>每回合首次召喚另一名友軍時，將其職業的<b>II</b>級裝備加入手牌。\n<b>回收：</b>每回合首名陣亡的已裝備友軍的裝備返回手牌。",
+        "korean": "장비를 <b>2</b>개 추가로 장착할 수 있습니다.\n<b>보급:</b> 매 턴 처음으로 다른 아군을 소환하면 그 역할의 <b>II</b>단계 장비를 손에 추가합니다.\n<b>회수:</b> 매 턴 처음 사망한 장비를 장착한 아군의 장비를 손으로 돌려보냅니다.",
+        "japanese": "装備を追加で<b>2</b>個持てる。\n<b>補給：</b>各ターン最初に他の味方を召喚すると、その役割のランク<b>II</b>装備を手札に加える。\n<b>回収：</b>各ターン最初に死亡した装備中の味方の装備を手札に戻す。"
       },
       "bonus_hp": 14,
       "bonus_damage": 5,
       "bonus_equipment": 2,
-      "ability_upgrade": "@RodericRequisition2",
       "remove_upgrades": [
         "@upg_Quarter1"
       ],
@@ -219,21 +217,20 @@
         "japanese": "補給官 III"
       },
       "descriptions": {
-        "english": "Hold <b>3</b> extra pieces of equipment. Requisition tier <b>III</b> kits.",
-        "french": "Peut porter <b>3</b> équipements supplémentaires. Réquisitionne de l’équipement de rang <b>III</b>.",
-        "german": "Kann <b>3</b> zusätzliche Ausrüstungsgegenstände tragen. Fordert Ausrüstung der Stufe <b>III</b> an.",
-        "russian": "Может носить на <b>3</b> предметов снаряжения больше. Реквизирует снаряжение уровня <b>III</b>.",
-        "portuguese": "Pode carregar <b>3</b> equipamentos adicionais. Requisita equipamentos de nível <b>III</b>.",
-        "chinese": "可额外携带<b>3</b>件装备。征调<b>III</b>级装备。",
-        "spanish": "Puede llevar <b>3</b> piezas de equipo adicionales. Requisa equipo de nivel <b>III</b>.",
-        "chinese_traditional": "可額外攜帶<b>3</b>件裝備。徵調<b>III</b>級裝備。",
-        "korean": "장비 <b>3</b>개를 추가로 장착 가능. <b>III</b>단계 장비 징발.",
-        "japanese": "装備を追加で<b>3</b>個持てる。ランク<b>III</b>装備を徴発。"
+        "english": "Hold <b>3</b> extra equipment.\n<b>Supply:</b> The first other ally summoned each turn adds its tier <b>III</b> role kit to your hand.\n<b>Salvage:</b> Return the equipment of the first equipped ally that dies each turn to your hand.",
+        "spanish": "Puede llevar <b>3</b> equipos adicionales.\n<b>Suministro:</b> El primer aliado adicional invocado cada turno añade a tu mano el kit de su rol de nivel <b>III</b>.\n<b>Recuperación:</b> Devuelve a tu mano los equipos del primer aliado equipado que muera cada turno.",
+        "french": "Peut porter <b>3</b> équipements supplémentaires.\n<b>Ravitaillement :</b> Le premier autre allié invoqué chaque tour ajoute à votre main le kit de son rôle de rang <b>III</b>.\n<b>Récupération :</b> Renvoyez en main les équipements du premier allié équipé qui meurt chaque tour.",
+        "german": "Kann <b>3</b> zusätzliche Ausrüstungsgegenstände tragen.\n<b>Nachschub:</b> Der erste andere verbündete Beschworene jedes Zuges fügt seiner Rolle entsprechende Ausrüstung der Stufe <b>III</b> deiner Hand hinzu.\n<b>Bergung:</b> Die Ausrüstung des ersten ausgerüsteten Verbündeten, der pro Zug stirbt, kehrt auf deine Hand zurück.",
+        "russian": "Может носить на <b>3</b> предметов снаряжения больше.\n<b>Снабжение:</b> Первый другой союзник, призванный за ход, добавляет в руку комплект своей роли уровня <b>III</b>.\n<b>Возврат:</b> Снаряжение первого экипированного союзника, погибшего за ход, возвращается в руку.",
+        "portuguese": "Pode carregar <b>3</b> equipamentos adicionais.\n<b>Suprimento:</b> O primeiro outro aliado invocado a cada turno adiciona à sua mão o kit de sua função de nível <b>III</b>.\n<b>Recuperação:</b> Devolve à sua mão os equipamentos do primeiro aliado equipado que morrer a cada turno.",
+        "chinese": "可额外携带<b>3</b>件装备。\n<b>补给：</b>每回合首次召唤另一名友军时，将其职业的<b>III</b>级装备加入手牌。\n<b>回收：</b>每回合首名阵亡的已装备友军的装备返回手牌。",
+        "chinese_traditional": "可額外攜帶<b>3</b>件裝備。\n<b>補給：</b>每回合首次召喚另一名友軍時，將其職業的<b>III</b>級裝備加入手牌。\n<b>回收：</b>每回合首名陣亡的已裝備友軍的裝備返回手牌。",
+        "korean": "장비를 <b>3</b>개 추가로 장착할 수 있습니다.\n<b>보급:</b> 매 턴 처음으로 다른 아군을 소환하면 그 역할의 <b>III</b>단계 장비를 손에 추가합니다.\n<b>회수:</b> 매 턴 처음 사망한 장비를 장착한 아군의 장비를 손으로 돌려보냅니다.",
+        "japanese": "装備を追加で<b>3</b>個持てる。\n<b>補給：</b>各ターン最初に他の味方を召喚すると、その役割のランク<b>III</b>装備を手札に加える。\n<b>回収：</b>各ターン最初に死亡した装備中の味方の装備を手札に戻す。"
       },
       "bonus_hp": 29,
       "bonus_damage": 10,
       "bonus_equipment": 3,
-      "ability_upgrade": "@RodericRequisition3",
       "remove_upgrades": [
         "@upg_Quarter2"
       ],
@@ -248,6 +245,38 @@
         "asset_guid": "8b71ea7d8f6189148add8fe2945b0bc5"
       },
       "spawn_location": "character_center"
+    }
+  ],
+  "localization_terms": [
+    {
+      "key": "mt2_freecompany.Plugin_QuartermasterSupply",
+      "texts": {
+        "english": "Supply",
+        "spanish": "Suministro",
+        "french": "Ravitaillement",
+        "german": "Nachschub",
+        "russian": "Снабжение",
+        "portuguese": "Suprimento",
+        "chinese": "补给",
+        "chinese_traditional": "補給",
+        "korean": "보급",
+        "japanese": "補給"
+      }
+    },
+    {
+      "key": "mt2_freecompany.Plugin_QuartermasterSalvage",
+      "texts": {
+        "english": "Salvage",
+        "spanish": "Recuperación",
+        "french": "Récupération",
+        "german": "Bergung",
+        "russian": "Возврат",
+        "portuguese": "Recuperação",
+        "chinese": "回收",
+        "chinese_traditional": "回收",
+        "korean": "회수",
+        "japanese": "回収"
+      }
     }
   ]
 }
