@@ -16,21 +16,21 @@
         "japanese": "短弓"
       },
       "descriptions": {
-        "english": "<b>+5</b> [attack]. Apply <b>Sniper</b>.",
-        "french": "<b>+5</b> [attack]. Appliquez <b>Tireur d’élite</b>.",
-        "german": "<b>+5</b> [attack]. Erhalte <b>Scharfschütze</b>.",
-        "russian": "<b>+5</b> [attack]. Получите <b>Снайпер</b>.",
-        "portuguese": "<b>+5</b> [attack]. Aplique <b>Atirador de Elite</b>.",
-        "chinese": "<b>+5</b> [attack]. 施加<b>狙击</b>。",
-        "spanish": "<b>+5</b> [attack]. Aplica <b>Francotirador</b>.",
-        "chinese_traditional": "<b>+5</b> [attack]. 施加<b>狙擊</b>。",
-        "korean": "<b>+5</b> [attack]. <b>저격</b> 부여.",
-        "japanese": "<b>+5</b> [attack]. <b>狙撃</b>を付与。"
+        "english": "<b>+5</b> [attack].",
+        "french": "<b>+5</b> [attack].",
+        "german": "<b>+5</b> [attack].",
+        "russian": "<b>+5</b> [attack].",
+        "portuguese": "<b>+5</b> [attack].",
+        "chinese": "<b>+5</b> [attack].",
+        "spanish": "<b>+5</b> [attack].",
+        "chinese_traditional": "<b>+5</b> [attack].",
+        "korean": "<b>+5</b> [attack].",
+        "japanese": "<b>+5</b> [attack]."
       },
       "card_art": "@Shortbow",
-      "cost": 1,
+      "cost": 0,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -75,21 +75,21 @@
         "japanese": "長弓"
       },
       "descriptions": {
-        "english": "<b>+12</b> [attack]. Apply <b>Sniper</b> and [piercing].",
-        "french": "<b>+12</b> [attack]. Appliquez <b>Tireur d’élite</b> et [piercing].",
-        "german": "<b>+12</b> [attack]. Erhalte <b>Scharfschütze</b> und [piercing].",
-        "russian": "<b>+12</b> [attack]. Получите <b>Снайпер</b> и [piercing].",
-        "portuguese": "<b>+12</b> [attack]. Aplique <b>Atirador de Elite</b> e [piercing].",
-        "chinese": "<b>+12</b> [attack]. 施加<b>狙击</b>和[piercing]。",
-        "spanish": "<b>+12</b> [attack]. Aplica <b>Francotirador</b> y [piercing].",
-        "chinese_traditional": "<b>+12</b> [attack]. 施加<b>狙擊</b>和[piercing]。",
-        "korean": "<b>+12</b> [attack]. <b>저격</b> 및 [piercing] 부여.",
-        "japanese": "<b>+12</b> [attack]. <b>狙撃</b>と[piercing]を付与。"
+        "english": "<b>+10</b> [attack]. [piercing].",
+        "french": "<b>+10</b> [attack]. [piercing].",
+        "german": "<b>+10</b> [attack]. [piercing].",
+        "russian": "<b>+10</b> [attack]. [piercing].",
+        "portuguese": "<b>+10</b> [attack]. [piercing].",
+        "chinese": "<b>+10</b> [attack]. [piercing].",
+        "spanish": "<b>+10</b> [attack]. [piercing].",
+        "chinese_traditional": "<b>+10</b> [attack]. [piercing].",
+        "korean": "<b>+10</b> [attack]. [piercing].",
+        "japanese": "<b>+10</b> [attack]. [piercing]."
       },
       "card_art": "@Longbow",
       "cost": 1,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -134,21 +134,21 @@
         "japanese": "大弓"
       },
       "descriptions": {
-        "english": "<b>+20</b> [attack]. Apply [piercing] and <b>1</b> [sweep].",
-        "french": "<b>+20</b> [attack]. Appliquez [piercing] et <b>1</b> [sweep].",
-        "german": "<b>+20</b> [attack]. Erhalte [piercing] und <b>1</b> [sweep].",
-        "russian": "<b>+20</b> [attack]. Получите [piercing] и <b>1</b> [sweep].",
-        "portuguese": "<b>+20</b> [attack]. Aplique [piercing] e <b>1</b> [sweep].",
-        "chinese": "<b>+20</b> [attack]. 施加[piercing]和<b>1</b> [sweep]。",
-        "spanish": "<b>+20</b> [attack]. Aplica [piercing] y <b>1</b> [sweep].",
-        "chinese_traditional": "<b>+20</b> [attack]. 施加[piercing]和<b>1</b> [sweep]。",
-        "korean": "<b>+20</b> [attack]. [piercing] 및 <b>1</b> [sweep] 부여.",
-        "japanese": "<b>+20</b> [attack]. [piercing]と<b>1</b> [sweep]を付与。"
+        "english": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "french": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "german": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "russian": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "portuguese": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "chinese": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "spanish": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "chinese_traditional": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "korean": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "japanese": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>."
       },
       "card_art": "@GreatBow",
-      "cost": 1,
+      "cost": 2,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -195,25 +195,20 @@
         "japanese": "短弓"
       },
       "descriptions": {
-        "english": "<b>+5</b> [attack]. Apply <b>Sniper</b>.",
-        "french": "<b>+5</b> [attack]. Appliquez <b>Tireur d’élite</b>.",
-        "german": "<b>+5</b> [attack]. Erhalte <b>Scharfschütze</b>.",
-        "russian": "<b>+5</b> [attack]. Получите <b>Снайпер</b>.",
-        "portuguese": "<b>+5</b> [attack]. Aplique <b>Atirador de Elite</b>.",
-        "chinese": "<b>+5</b> [attack]. 施加<b>狙击</b>。",
-        "spanish": "<b>+5</b> [attack]. Aplica <b>Francotirador</b>.",
-        "chinese_traditional": "<b>+5</b> [attack]. 施加<b>狙擊</b>。",
-        "korean": "<b>+5</b> [attack]. <b>저격</b> 부여.",
-        "japanese": "<b>+5</b> [attack]. <b>狙撃</b>を付与。"
+        "english": "<b>+5</b> [attack].",
+        "french": "<b>+5</b> [attack].",
+        "german": "<b>+5</b> [attack].",
+        "russian": "<b>+5</b> [attack].",
+        "portuguese": "<b>+5</b> [attack].",
+        "chinese": "<b>+5</b> [attack].",
+        "spanish": "<b>+5</b> [attack].",
+        "chinese_traditional": "<b>+5</b> [attack].",
+        "korean": "<b>+5</b> [attack].",
+        "japanese": "<b>+5</b> [attack]."
       },
       "icon": "@Shortbow",
       "bonus_damage": 5,
-      "status_effect_upgrades": [
-        {
-          "status": "sniper",
-          "count": 1
-        }
-      ]
+      "status_effect_upgrades": []
     },
     {
       "id": "UpgLongbow",
@@ -230,24 +225,20 @@
         "japanese": "長弓"
       },
       "descriptions": {
-        "english": "<b>+12</b> [attack]. Apply <b>Sniper</b> and [piercing].",
-        "french": "<b>+12</b> [attack]. Appliquez <b>Tireur d’élite</b> et [piercing].",
-        "german": "<b>+12</b> [attack]. Erhalte <b>Scharfschütze</b> und [piercing].",
-        "russian": "<b>+12</b> [attack]. Получите <b>Снайпер</b> и [piercing].",
-        "portuguese": "<b>+12</b> [attack]. Aplique <b>Atirador de Elite</b> e [piercing].",
-        "chinese": "<b>+12</b> [attack]. 施加<b>狙击</b>和[piercing]。",
-        "spanish": "<b>+12</b> [attack]. Aplica <b>Francotirador</b> y [piercing].",
-        "chinese_traditional": "<b>+12</b> [attack]. 施加<b>狙擊</b>和[piercing]。",
-        "korean": "<b>+12</b> [attack]. <b>저격</b> 및 [piercing] 부여.",
-        "japanese": "<b>+12</b> [attack]. <b>狙撃</b>と[piercing]を付与。"
+        "english": "<b>+10</b> [attack]. [piercing].",
+        "french": "<b>+10</b> [attack]. [piercing].",
+        "german": "<b>+10</b> [attack]. [piercing].",
+        "russian": "<b>+10</b> [attack]. [piercing].",
+        "portuguese": "<b>+10</b> [attack]. [piercing].",
+        "chinese": "<b>+10</b> [attack]. [piercing].",
+        "spanish": "<b>+10</b> [attack]. [piercing].",
+        "chinese_traditional": "<b>+10</b> [attack]. [piercing].",
+        "korean": "<b>+10</b> [attack]. [piercing].",
+        "japanese": "<b>+10</b> [attack]. [piercing]."
       },
       "icon": "@Longbow",
-      "bonus_damage": 12,
+      "bonus_damage": 10,
       "status_effect_upgrades": [
-        {
-          "status": "sniper",
-          "count": 1
-        },
         {
           "status": "piercing",
           "count": 1
@@ -269,26 +260,29 @@
         "japanese": "大弓"
       },
       "descriptions": {
-        "english": "<b>+20</b> [attack]. Apply [piercing] and <b>1</b> [sweep].",
-        "french": "<b>+20</b> [attack]. Appliquez [piercing] et <b>1</b> [sweep].",
-        "german": "<b>+20</b> [attack]. Erhalte [piercing] und <b>1</b> [sweep].",
-        "russian": "<b>+20</b> [attack]. Получите [piercing] и <b>1</b> [sweep].",
-        "portuguese": "<b>+20</b> [attack]. Aplique [piercing] e <b>1</b> [sweep].",
-        "chinese": "<b>+20</b> [attack]. 施加[piercing]和<b>1</b> [sweep]。",
-        "spanish": "<b>+20</b> [attack]. Aplica [piercing] y <b>1</b> [sweep].",
-        "chinese_traditional": "<b>+20</b> [attack]. 施加[piercing]和<b>1</b> [sweep]。",
-        "korean": "<b>+20</b> [attack]. [piercing] 및 <b>1</b> [sweep] 부여.",
-        "japanese": "<b>+20</b> [attack]. [piercing]と<b>1</b> [sweep]を付与。"
+        "english": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "french": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "german": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "russian": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "portuguese": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "chinese": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "spanish": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "chinese_traditional": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "korean": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>.",
+        "japanese": "<b>+15</b> [attack]. [piercing]. [Conductor_pierce] <b>1</b>."
       },
       "icon": "@GreatBow",
-      "bonus_damage": 20,
+      "bonus_damage": 15,
       "status_effect_upgrades": [
         {
           "status": "piercing",
           "count": 1
         },
         {
-          "status": "sweep",
+          "status": {
+            "id": "@pierce",
+            "mod_reference": "Conductor"
+          },
           "count": 1
         }
       ]

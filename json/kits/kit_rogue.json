@@ -28,9 +28,9 @@
         "japanese": "<b>+4</b> [attack]. <b>1</b> [avarice]と<b>2</b> [stealth]を付与。"
       },
       "card_art": "@Lockpicks",
-      "cost": 1,
+      "cost": 0,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -89,7 +89,7 @@
       "card_art": "@PoisonedDagger",
       "cost": 1,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -146,9 +146,9 @@
         "japanese": "<b>+15</b> [attack]. <b>4</b> [avarice]と<b>6</b> [stealth]を付与。"
       },
       "card_art": "@ThiefsMantle",
-      "cost": 1,
+      "cost": 2,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",

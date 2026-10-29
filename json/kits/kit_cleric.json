@@ -16,21 +16,21 @@
         "japanese": "包帯"
       },
       "descriptions": {
-        "english": "<b>+10</b> [health]. Apply <b>2</b> [regen].",
-        "french": "<b>+10</b> [health]. Appliquez <b>2</b> [regen].",
-        "german": "<b>+10</b> [health]. Erhalte <b>2</b> [regen].",
-        "russian": "<b>+10</b> [health]. Получите <b>2</b> [regen].",
-        "portuguese": "<b>+10</b> [health]. Aplique <b>2</b> [regen].",
-        "chinese": "<b>+10</b> [health]. 施加<b>2</b> [regen]。",
-        "spanish": "<b>+10</b> [health]. Aplica <b>2</b> [regen].",
-        "chinese_traditional": "<b>+10</b> [health]. 施加<b>2</b> [regen]。",
-        "korean": "<b>+10</b> [health]. <b>2</b> [regen] 부여.",
-        "japanese": "<b>+10</b> [health]. <b>2</b> [regen]を付与。"
+        "english": "<b>+10</b> [health]. Restore <b>3</b> [health]. Apply <b>3</b> [regen].",
+        "french": "<b>+10</b> [health]. Restaure <b>3</b> [health]. Applique <b>3</b> [regen].",
+        "german": "<b>+10</b> [health]. Stellt <b>3</b> [health] wieder her. Verleiht <b>3</b> [regen].",
+        "russian": "<b>+10</b> [health]. Восстанавливает <b>3</b> [health]. Накладывает <b>3</b> [regen].",
+        "portuguese": "<b>+10</b> [health]. Restaura <b>3</b> [health]. Aplica <b>3</b> [regen].",
+        "chinese": "<b>+10</b> [health]. 恢复<b>3</b> [health]。 施加<b>3</b> [regen]。",
+        "spanish": "<b>+10</b> [health]. Recupera <b>3</b> [health]. Aplica <b>3</b> [regen].",
+        "chinese_traditional": "<b>+10</b> [health]. 恢復<b>3</b> [health]。 施加<b>3</b> [regen]。",
+        "korean": "<b>+10</b> [health]. <b>3</b> [health] 회복. <b>3</b> [regen] 부여.",
+        "japanese": "<b>+10</b> [health]. <b>3</b> [health]を回復。 <b>3</b> [regen]を付与。"
       },
       "card_art": "@Bandages",
-      "cost": 1,
+      "cost": 0,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -39,6 +39,7 @@
       "targetless": false,
       "effects": [
         "@EquipBandages",
+        "@BandagesHeal",
         "@BandagesApplyRegen"
       ],
       "lore_tooltips": [
@@ -76,21 +77,21 @@
         "japanese": "聖印"
       },
       "descriptions": {
-        "english": "<b>+18</b> [health]. Apply <b>4</b> [regen].",
-        "french": "<b>+18</b> [health]. Appliquez <b>4</b> [regen].",
-        "german": "<b>+18</b> [health]. Erhalte <b>4</b> [regen].",
-        "russian": "<b>+18</b> [health]. Получите <b>4</b> [regen].",
-        "portuguese": "<b>+18</b> [health]. Aplique <b>4</b> [regen].",
-        "chinese": "<b>+18</b> [health]. 施加<b>4</b> [regen]。",
-        "spanish": "<b>+18</b> [health]. Aplica <b>4</b> [regen].",
-        "chinese_traditional": "<b>+18</b> [health]. 施加<b>4</b> [regen]。",
-        "korean": "<b>+18</b> [health]. <b>4</b> [regen] 부여.",
-        "japanese": "<b>+18</b> [health]. <b>4</b> [regen]を付与。"
+        "english": "<b>+20</b> [health]. Restore <b>6</b> [health]. Apply <b>6</b> [regen].",
+        "french": "<b>+20</b> [health]. Restaure <b>6</b> [health]. Applique <b>6</b> [regen].",
+        "german": "<b>+20</b> [health]. Stellt <b>6</b> [health] wieder her. Verleiht <b>6</b> [regen].",
+        "russian": "<b>+20</b> [health]. Восстанавливает <b>6</b> [health]. Накладывает <b>6</b> [regen].",
+        "portuguese": "<b>+20</b> [health]. Restaura <b>6</b> [health]. Aplica <b>6</b> [regen].",
+        "chinese": "<b>+20</b> [health]. 恢复<b>6</b> [health]。 施加<b>6</b> [regen]。",
+        "spanish": "<b>+20</b> [health]. Recupera <b>6</b> [health]. Aplica <b>6</b> [regen].",
+        "chinese_traditional": "<b>+20</b> [health]. 恢復<b>6</b> [health]。 施加<b>6</b> [regen]。",
+        "korean": "<b>+20</b> [health]. <b>6</b> [health] 회복. <b>6</b> [regen] 부여.",
+        "japanese": "<b>+20</b> [health]. <b>6</b> [health]を回復。 <b>6</b> [regen]を付与。"
       },
       "card_art": "@HolySymbol",
       "cost": 1,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -99,6 +100,7 @@
       "targetless": false,
       "effects": [
         "@EquipHolySymbol",
+        "@HolySymbolHeal",
         "@HolySymbolApplyRegen"
       ],
       "lore_tooltips": [
@@ -136,21 +138,21 @@
         "japanese": "聖遺物箱"
       },
       "descriptions": {
-        "english": "<b>+30</b> [health]. Apply <b>6</b> [regen] and <b>1</b> [undying].",
-        "french": "<b>+30</b> [health]. Appliquez <b>6</b> [regen] et <b>1</b> [undying].",
-        "german": "<b>+30</b> [health]. Erhalte <b>6</b> [regen] und <b>1</b> [undying].",
-        "russian": "<b>+30</b> [health]. Получите <b>6</b> [regen] и <b>1</b> [undying].",
-        "portuguese": "<b>+30</b> [health]. Aplique <b>6</b> [regen] e <b>1</b> [undying].",
-        "chinese": "<b>+30</b> [health]. 施加<b>6</b> [regen]和<b>1</b> [undying]。",
-        "spanish": "<b>+30</b> [health]. Aplica <b>6</b> [regen] y <b>1</b> [undying].",
-        "chinese_traditional": "<b>+30</b> [health]. 施加<b>6</b> [regen]和<b>1</b> [undying]。",
-        "korean": "<b>+30</b> [health]. <b>6</b> [regen] 및 <b>1</b> [undying] 부여.",
-        "japanese": "<b>+30</b> [health]. <b>6</b> [regen]と<b>1</b> [undying]を付与。"
+        "english": "<b>+30</b> [health]. <b>1</b> [undying]. Restore <b>9</b> [health]. Apply <b>9</b> [regen].",
+        "french": "<b>+30</b> [health]. <b>1</b> [undying]. Restaure <b>9</b> [health]. Applique <b>9</b> [regen].",
+        "german": "<b>+30</b> [health]. <b>1</b> [undying]. Stellt <b>9</b> [health] wieder her. Verleiht <b>9</b> [regen].",
+        "russian": "<b>+30</b> [health]. <b>1</b> [undying]. Восстанавливает <b>9</b> [health]. Накладывает <b>9</b> [regen].",
+        "portuguese": "<b>+30</b> [health]. <b>1</b> [undying]. Restaura <b>9</b> [health]. Aplica <b>9</b> [regen].",
+        "chinese": "<b>+30</b> [health]. <b>1</b> [undying]. 恢复<b>9</b> [health]。 施加<b>9</b> [regen]。",
+        "spanish": "<b>+30</b> [health]. <b>1</b> [undying]. Recupera <b>9</b> [health]. Aplica <b>9</b> [regen].",
+        "chinese_traditional": "<b>+30</b> [health]. <b>1</b> [undying]. 恢復<b>9</b> [health]。 施加<b>9</b> [regen]。",
+        "korean": "<b>+30</b> [health]. <b>1</b> [undying]. <b>9</b> [health] 회복. <b>9</b> [regen] 부여.",
+        "japanese": "<b>+30</b> [health]. <b>1</b> [undying]. <b>9</b> [health]を回復。 <b>9</b> [regen]を付与。"
       },
       "card_art": "@Reliquary",
-      "cost": 1,
+      "cost": 2,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -159,6 +161,7 @@
       "targetless": false,
       "effects": [
         "@EquipReliquary",
+        "@ReliquaryHeal",
         "@ReliquaryApplyRegen"
       ],
       "lore_tooltips": [
@@ -198,16 +201,16 @@
         "japanese": "包帯"
       },
       "descriptions": {
-        "english": "<b>+10</b> [health].",
-        "french": "<b>+10</b> [health].",
-        "german": "<b>+10</b> [health].",
-        "russian": "<b>+10</b> [health].",
-        "portuguese": "<b>+10</b> [health].",
-        "chinese": "<b>+10</b> [health].",
-        "spanish": "<b>+10</b> [health].",
-        "chinese_traditional": "<b>+10</b> [health].",
-        "korean": "<b>+10</b> [health].",
-        "japanese": "<b>+10</b> [health]."
+        "english": "<b>+10</b> [health]. On equip: Restore <b>3</b> [health]. Apply <b>3</b> [regen].",
+        "french": "<b>+10</b> [health]. À l’équipement : Restaure <b>3</b> [health]. Applique <b>3</b> [regen].",
+        "german": "<b>+10</b> [health]. Beim Ausrüsten: Stellt <b>3</b> [health] wieder her. Verleiht <b>3</b> [regen].",
+        "russian": "<b>+10</b> [health]. При экипировке: Восстанавливает <b>3</b> [health]. Накладывает <b>3</b> [regen].",
+        "portuguese": "<b>+10</b> [health]. Ao equipar: Restaura <b>3</b> [health]. Aplica <b>3</b> [regen].",
+        "chinese": "<b>+10</b> [health]. 装备时： 恢复<b>3</b> [health]。 施加<b>3</b> [regen]。",
+        "spanish": "<b>+10</b> [health]. Al equipar: Recupera <b>3</b> [health]. Aplica <b>3</b> [regen].",
+        "chinese_traditional": "<b>+10</b> [health]. 裝備時： 恢復<b>3</b> [health]。 施加<b>3</b> [regen]。",
+        "korean": "<b>+10</b> [health]. 장착 시: <b>3</b> [health] 회복. <b>3</b> [regen] 부여.",
+        "japanese": "<b>+10</b> [health]. 装備時： <b>3</b> [health]を回復。 <b>3</b> [regen]を付与。"
       },
       "icon": "@Bandages",
       "bonus_hp": 10,
@@ -228,19 +231,19 @@
         "japanese": "聖印"
       },
       "descriptions": {
-        "english": "<b>+18</b> [health].",
-        "french": "<b>+18</b> [health].",
-        "german": "<b>+18</b> [health].",
-        "russian": "<b>+18</b> [health].",
-        "portuguese": "<b>+18</b> [health].",
-        "chinese": "<b>+18</b> [health].",
-        "spanish": "<b>+18</b> [health].",
-        "chinese_traditional": "<b>+18</b> [health].",
-        "korean": "<b>+18</b> [health].",
-        "japanese": "<b>+18</b> [health]."
+        "english": "<b>+20</b> [health]. On equip: Restore <b>6</b> [health]. Apply <b>6</b> [regen].",
+        "french": "<b>+20</b> [health]. À l’équipement : Restaure <b>6</b> [health]. Applique <b>6</b> [regen].",
+        "german": "<b>+20</b> [health]. Beim Ausrüsten: Stellt <b>6</b> [health] wieder her. Verleiht <b>6</b> [regen].",
+        "russian": "<b>+20</b> [health]. При экипировке: Восстанавливает <b>6</b> [health]. Накладывает <b>6</b> [regen].",
+        "portuguese": "<b>+20</b> [health]. Ao equipar: Restaura <b>6</b> [health]. Aplica <b>6</b> [regen].",
+        "chinese": "<b>+20</b> [health]. 装备时： 恢复<b>6</b> [health]。 施加<b>6</b> [regen]。",
+        "spanish": "<b>+20</b> [health]. Al equipar: Recupera <b>6</b> [health]. Aplica <b>6</b> [regen].",
+        "chinese_traditional": "<b>+20</b> [health]. 裝備時： 恢復<b>6</b> [health]。 施加<b>6</b> [regen]。",
+        "korean": "<b>+20</b> [health]. 장착 시: <b>6</b> [health] 회복. <b>6</b> [regen] 부여.",
+        "japanese": "<b>+20</b> [health]. 装備時： <b>6</b> [health]を回復。 <b>6</b> [regen]を付与。"
       },
       "icon": "@HolySymbol",
-      "bonus_hp": 18,
+      "bonus_hp": 20,
       "status_effect_upgrades": []
     },
     {
@@ -258,16 +261,16 @@
         "japanese": "聖遺物箱"
       },
       "descriptions": {
-        "english": "<b>+30</b> [health]. <b>1</b> [undying].",
-        "french": "<b>+30</b> [health]. <b>1</b> [undying].",
-        "german": "<b>+30</b> [health]. <b>1</b> [undying].",
-        "russian": "<b>+30</b> [health]. <b>1</b> [undying].",
-        "portuguese": "<b>+30</b> [health]. <b>1</b> [undying].",
-        "chinese": "<b>+30</b> [health]. <b>1</b> [undying].",
-        "spanish": "<b>+30</b> [health]. <b>1</b> [undying].",
-        "chinese_traditional": "<b>+30</b> [health]. <b>1</b> [undying].",
-        "korean": "<b>+30</b> [health]. <b>1</b> [undying].",
-        "japanese": "<b>+30</b> [health]. <b>1</b> [undying]."
+        "english": "<b>+30</b> [health]. <b>1</b> [undying]. On equip: Restore <b>9</b> [health]. Apply <b>9</b> [regen].",
+        "french": "<b>+30</b> [health]. <b>1</b> [undying]. À l’équipement : Restaure <b>9</b> [health]. Applique <b>9</b> [regen].",
+        "german": "<b>+30</b> [health]. <b>1</b> [undying]. Beim Ausrüsten: Stellt <b>9</b> [health] wieder her. Verleiht <b>9</b> [regen].",
+        "russian": "<b>+30</b> [health]. <b>1</b> [undying]. При экипировке: Восстанавливает <b>9</b> [health]. Накладывает <b>9</b> [regen].",
+        "portuguese": "<b>+30</b> [health]. <b>1</b> [undying]. Ao equipar: Restaura <b>9</b> [health]. Aplica <b>9</b> [regen].",
+        "chinese": "<b>+30</b> [health]. <b>1</b> [undying]. 装备时： 恢复<b>9</b> [health]。 施加<b>9</b> [regen]。",
+        "spanish": "<b>+30</b> [health]. <b>1</b> [undying]. Al equipar: Recupera <b>9</b> [health]. Aplica <b>9</b> [regen].",
+        "chinese_traditional": "<b>+30</b> [health]. <b>1</b> [undying]. 裝備時： 恢復<b>9</b> [health]。 施加<b>9</b> [regen]。",
+        "korean": "<b>+30</b> [health]. <b>1</b> [undying]. 장착 시: <b>9</b> [health] 회복. <b>9</b> [regen] 부여.",
+        "japanese": "<b>+30</b> [health]. <b>1</b> [undying]. 装備時： <b>9</b> [health]を回復。 <b>9</b> [regen]を付与。"
       },
       "icon": "@Reliquary",
       "bonus_hp": 30,
@@ -312,7 +315,7 @@
       "param_status_effects": [
         {
           "status": "regen",
-          "count": 2
+          "count": 3
         }
       ]
     },
@@ -324,7 +327,7 @@
       "param_status_effects": [
         {
           "status": "regen",
-          "count": 4
+          "count": 6
         }
       ]
     },
@@ -336,9 +339,30 @@
       "param_status_effects": [
         {
           "status": "regen",
-          "count": 6
+          "count": 9
         }
       ]
+    },
+    {
+      "id": "BandagesHeal",
+      "name": "CardEffectHeal",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_int": 3
+    },
+    {
+      "id": "HolySymbolHeal",
+      "name": "CardEffectHeal",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_int": 6
+    },
+    {
+      "id": "ReliquaryHeal",
+      "name": "CardEffectHeal",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_int": 9
     }
   ],
   "sprites": [

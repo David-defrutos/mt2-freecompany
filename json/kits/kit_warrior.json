@@ -28,9 +28,9 @@
         "japanese": "<b>+8</b> [health]. <b>3</b> [armor]を付与。"
       },
       "card_art": "@Buckler",
-      "cost": 1,
+      "cost": 0,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -90,7 +90,7 @@
       "card_art": "@KiteShield",
       "cost": 1,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -148,9 +148,9 @@
         "japanese": "<b>+25</b> [health]. <b>10</b> [armor], [steelguard]と<b>1</b> [titanskin]を付与。"
       },
       "card_art": "@BulwarkPlate",
-      "cost": 1,
+      "cost": 2,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",

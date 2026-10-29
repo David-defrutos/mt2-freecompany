@@ -16,9 +16,9 @@
         "japanese": "刃こぼれの斧"
       },
       "card_art": "@NotchedAxe",
-      "cost": 1,
+      "cost": 0,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -65,7 +65,7 @@
       "card_art": "@TwinAxes",
       "cost": 1,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -110,9 +110,9 @@
         "japanese": "略奪者の大槌"
       },
       "card_art": "@ReaversMaul",
-      "cost": 1,
+      "cost": 2,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",

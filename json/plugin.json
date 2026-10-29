@@ -568,6 +568,10 @@
     {
       "id": "KitEphemeral",
       "name": "CardTraitEphemeral"
+    },
+    {
+      "id": "KitFrozen",
+      "name": "CardTraitFreeze"
     }
   ],
   "rewards": [

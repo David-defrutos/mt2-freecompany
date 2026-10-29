@@ -8,15 +8,19 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ### 0.3.2 — 2026-10-29 — BETA
 
+- **All 18 kits:** tier I/II/III now costs 0/1/2 Ember. Frozen replaces Ephemeral, allowing unused kits to remain in hand.
+- **Ranger:** +5/+10/+15 attack. No Sniper or Sweep; tier II grants Piercing, tier III grants Piercing and Skewer 1.
+- **Cleric:** +10/+20/+30 health; restores 3/6/9 health and applies Regen 3/6/9 when equipped. Tier III retains Undying 1. **Wizard:** applies Conduit 2/4/6 when equipped; +0/+5/+10 attack, with Mageblade 1 at tier III. Conduit remains when equipment is replaced.
+
 - **Shieldwall:** replaces Power Slam and the room Armor trigger with Interception, starting Damage Shield 2/3/4 and Start of Turn: gain Valor 3/6/9. Intercepts attack damage for allies behind Roderic on the same floor, after their Damage Shield. Other attack effects remain on their original target. Plunder is now Roderic’s only path with an activated ability.
-- **Ranger kits:** removed misleading Piercing 2/4 counts; Piercing is a native non-stackable effect. **Quartermaster:** passive rules now appear on the card.
+- **Quartermaster:** passive rules now appear on the card.
 
 - **Quartermaster:** replaces activated Requisition with passive Supply and Salvage. Once each turn, summoning another ally grants its role’s tier I/II/III kit. The first equipped ally that dies each turn returns its equipment to your hand, preserving upgrades and merged equipment. Roderic retains +1/+2/+3 equipment slots. Quartermaster no longer replaces Call to Arms when mixing paths.
 
 Thanks to **Rratvar, the Untitled** for reporting equipment replacement, redundant Sniper, misleading Steelguard counts and Severance Pay’s camera movement.
 
 - **Cleric and Warrior kits:** Regen and Armor are applied when equipping and no longer subtracted when equipment is replaced. Health and other equipment bonuses remain tied to the item; existing values are unchanged.
-- **Great Bow:** removed redundant Sniper; retains +20 attack, Piercing and Sweep. **Warrior kits:** Steelguard uses the native, non-stackable effect without misleading stack counts.
+- **Warrior kits:** Steelguard uses the native, non-stackable effect without misleading stack counts.
 - **Severance Pay:** no longer forces the camera to the Pyre room. Gold, damage and visual effects are unchanged.
 
 - **Tamable:** the hand icon and tooltip only appear in runs with Vesper Beastmaster, including before she is deployed.
@@ -28,6 +32,7 @@ Thanks to **Rratvar, the Untitled** for reporting equipment replacement, redunda
 - **Fuse and Banished:** cleansing and reapplying these effects no longer carries over damage from the previous application.
 - **Requisition:** random equipment for units without a matching role now follows the game's battle seed.
 - **Goblin visuals:** slightly enlarged Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer and The New Guy by 10–20%, preserving proportions and foot placement.
+
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -140,15 +145,19 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 
 ### 0.3.2 — 2026-10-29 — BETA
 
+- **Los 18 kits:** coste 0/1/2 Ember para niveles I/II/III. Frozen sustituye Ephemeral y permite conservar en mano los kits sin usar.
+- **Ranger:** +5/+10/+15 de ataque. Sin Sniper ni Sweep; nivel II concede Piercing, nivel III Piercing y Skewer 1.
+- **Cleric:** +10/+20/+30 de vida; al equipar cura 3/6/9 y aplica Regen 3/6/9. Nivel III conserva Undying 1. **Wizard:** al equipar aplica Conduit 2/4/6; +0/+5/+10 de ataque y Mageblade 1 en nivel III. Conduit permanece al sustituir el equipo.
+
 - **Shieldwall:** sustituye Power Slam y el trigger de Armor del piso por Intercepción, escudos iniciales 2/3/4 e Inicio del turno: gana Valor 3/6/9. Intercepta daño de ataques a aliados detrás de Roderic en su piso, después del escudo del aliado. Los otros efectos del ataque conservan su objetivo. Plunder queda como única senda de Roderic con habilidad activada.
-- **Kits de Ranger:** eliminadas las cantidades engañosas Piercing 2/4; el estado nativo no acumula cargas. **Quartermaster:** las reglas pasivas aparecen también en la carta.
+- **Quartermaster:** las reglas pasivas aparecen también en la carta.
 
 - **Quartermaster:** sustituye Requisition activada por Suministro y Recuperación pasivos. Una vez cada turno, invocar a otro aliado concede el kit I/II/III de su rol. Los equipos del primer aliado equipado que muera cada turno vuelven a la mano, conservando mejoras y fusiones. Roderic mantiene +1/+2/+3 espacios. Quartermaster ya no sustituye Call to Arms al mezclar sendas.
 
 Gracias a **Rratvar, the Untitled** por reportar la sustitución de equipos, Sniper redundante, las cantidades engañosas de Steelguard y el movimiento de cámara de Severance Pay.
 
 - **Kits de Cleric y Warrior:** Regen y Armor se aplican al equipar y ya no se restan al sustituir el equipo. La vida y otras ventajas siguen ligadas al objeto; se conservan las cantidades.
-- **Great Bow:** eliminado Sniper redundante; conserva +20 de ataque, Piercing y Sweep. **Kits de Warrior:** Steelguard usa el estado nativo no acumulable, sin cantidades engañosas.
+- **Kits de Warrior:** Steelguard usa el estado nativo no acumulable, sin cantidades engañosas.
 - **Severance Pay:** ya no fuerza la cámara hacia la Pira. Oro, daño y efectos visuales sin cambios.
 
 - **Tamable:** el icono y tooltip de la mano solo aparecen en partidas con Vesper Beastmaster, incluso antes de desplegarla.
@@ -160,6 +169,7 @@ Gracias a **Rratvar, the Untitled** por reportar la sustitución de equipos, Sni
 - **Fuse y Banished:** limpiar y volver a aplicar estos efectos ya no arrastra daño de la aplicación anterior.
 - **Requisition:** el equipo aleatorio de unidades sin un rol compatible respeta ahora la semilla de batalla del juego.
 - **Goblins:** aumentados ligeramente Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer y The New Guy entre un 10 y un 20 %, conservando proporciones y apoyo de pies.
+
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -309,15 +319,19 @@ comentarios de la ficha.
 
 ### 0.3.2 — 2026-10-29 — BETA
 
+- **Les 18 kits :** coût de 0/1/2 Ember aux rangs I/II/III. Frozen remplace Ephemeral et conserve en main les kits inutilisés.
+- **Ranger :** +5/+10/+15 d’attaque. Sans Sniper ni Sweep ; rang II : Piercing, rang III : Piercing et Skewer 1.
+- **Cleric :** +10/+20/+30 PV ; à l’équipement, restaure 3/6/9 PV et applique Regen 3/6/9. Le rang III conserve Undying 1. **Wizard :** applique Conduit 2/4/6 à l’équipement ; +0/+5/+10 d’attaque et Mageblade 1 au rang III. Conduit reste après remplacement de l’équipement.
+
 - **Shieldwall :** Power Slam et l’Armor du groupe sont remplacés par Interception, Damage Shield 2/3/4 initial et Début du tour : gagne Valor 3/6/9. Intercepte les dégâts d’attaque visant les alliés derrière Roderic au même étage, après leur bouclier. Les autres effets gardent leur cible initiale. Plunder reste sa seule voie avec une capacité activée.
-- **Kits Ranger :** suppression des nombres trompeurs Piercing 2/4 ; l’effet natif ne se cumule pas. **Quartermaster :** les règles passives apparaissent sur la carte.
+- **Quartermaster :** les règles passives apparaissent sur la carte.
 
 - **Quartermaster :** Requisition activée devient Ravitaillement et Récupération passifs. Une fois par tour, invoquer un autre allié donne le kit I/II/III de son rôle. Les équipements du premier allié équipé qui meurt chaque tour reviennent en main, avec améliorations et fusions. Roderic conserve +1/+2/+3 emplacements. Quartermaster ne remplace plus Call to Arms en combinant les voies.
 
 Merci à **Rratvar, the Untitled** pour ses signalements sur le remplacement d’équipement, Sniper redondant, les charges trompeuses de Steelguard et la caméra de Severance Pay.
 
 - **Kits Cleric et Warrior :** Regen et Armor sont appliquées à l’équipement et ne sont plus soustraites lors de son remplacement. Les PV et les autres bonus restent liés à l’objet ; valeurs inchangées.
-- **Great Bow :** suppression de Sniper ; conserve +20 d’attaque, Piercing et Sweep. **Kits Warrior :** Steelguard utilise l’effet natif non cumulable sans nombre de charges trompeur.
+- **Kits Warrior :** Steelguard utilise l’effet natif non cumulable sans nombre de charges trompeur.
 - **Severance Pay :** ne force plus la caméra vers le Brasier. Or, dégâts et effets visuels inchangés.
 
 - **Tamable :** l’icône et l’infobulle en main n’apparaissent que dans les parties avec Vesper Beastmaster, même avant son déploiement.
@@ -329,6 +343,7 @@ Merci à **Rratvar, the Untitled** pour ses signalements sur le remplacement d�
 - **Fuse et Banished :** purifier puis réappliquer ces effets ne conserve plus les dégâts de l'application précédente.
 - **Requisition :** l'équipement aléatoire des unités sans rôle correspondant suit désormais la graine de combat du jeu.
 - **Gobelins :** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer et The New Guy sont agrandis de 10 à 20 %, en conservant leurs proportions et la position de leurs pieds.
+
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -364,15 +379,19 @@ Français
 
 ### 0.3.2 — 2026-10-29 — BETA
 
+- **Alle 18 Kits:** Rang I/II/III kostet jetzt 0/1/2 Ember. Frozen ersetzt Ephemeral und hält ungenutzte Kits auf der Hand.
+- **Ranger:** +5/+10/+15 Angriff. Kein Sniper oder Sweep; Rang II gewährt Piercing, Rang III Piercing und Skewer 1.
+- **Cleric:** +10/+20/+30 Lebenspunkte; stellt beim Ausrüsten 3/6/9 Leben wieder her und gewährt Regen 3/6/9. Rang III behält Undying 1. **Wizard:** gewährt beim Ausrüsten Conduit 2/4/6; +0/+5/+10 Angriff, mit Mageblade 1 auf Rang III. Conduit bleibt nach dem Ausrüstungswechsel erhalten.
+
 - **Shieldwall:** ersetzt Power Slam und den Armor-Auslöser durch Abfangen, anfänglich Damage Shield 2/3/4 und Zugbeginn: Valor 3/6/9 erhalten. Fängt Angriffsschaden für Verbündete hinter Roderic auf derselben Ebene nach deren Schadensschild ab. Andere Angriffseffekte behalten ihr Ziel. Nur Plunder besitzt noch eine aktivierte Fähigkeit.
-- **Ranger-Kits:** irreführende Zahlen Piercing 2/4 entfernt; der native Effekt ist nicht stapelbar. **Quartermaster:** passive Regeln werden auf der Karte angezeigt.
+- **Quartermaster:** passive Regeln werden auf der Karte angezeigt.
 
 - **Quartermaster:** aktive Requisition durch passiven Nachschub und Bergung ersetzt. Einmal pro Zug gewährt das Beschwören eines anderen Verbündeten dessen Rollen-Kit I/II/III. Die Ausrüstung des ersten ausgerüsteten Verbündeten, der pro Zug stirbt, kehrt mit Verbesserungen und Fusionen auf die Hand zurück. Roderic behält +1/+2/+3 Plätze. Quartermaster überschreibt Call to Arms beim Mischen der Pfade nicht mehr.
 
 Danke an **Rratvar, the Untitled** für die Meldungen zum Ausrüstungswechsel, überflüssigen Sniper, irreführenden Steelguard-Stapeln und zum Kamerasprung bei Severance Pay.
 
 - **Cleric- und Warrior-Kits:** Regen und Armor werden beim Ausrüsten gewährt und beim Austausch nicht mehr abgezogen. Lebenspunkte und andere Boni bleiben an den Gegenstand gebunden; Werte unverändert.
-- **Great Bow:** Sniper entfernt; behält +20 Angriff, Piercing und Sweep. **Warrior-Kits:** Steelguard verwendet den nativen, nicht stapelbaren Effekt ohne irreführende Stapelzahl.
+- **Warrior-Kits:** Steelguard verwendet den nativen, nicht stapelbaren Effekt ohne irreführende Stapelzahl.
 - **Severance Pay:** erzwingt keinen Kamerasprung zum Pyre-Raum mehr. Gold, Schaden und visuelle Effekte unverändert.
 
 - **Tamable:** Symbol und Tooltip auf der Hand erscheinen nur in Läufen mit Vesper Beastmaster, auch vor ihrem Einsatz.
@@ -384,6 +403,7 @@ Danke an **Rratvar, the Untitled** für die Meldungen zum Ausrüstungswechsel, �
 - **Fuse und Banished:** Nach dem Entfernen und erneuten Anwenden wird kein Schaden der vorherigen Anwendung mehr übernommen.
 - **Requisition:** Zufällige Ausrüstung für Einheiten ohne passende Rolle folgt jetzt dem Kampf-Zufallsseed des Spiels.
 - **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer und The New Guy sind um 10–20 % größer; Proportionen und Fußposition bleiben erhalten.
+
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -419,15 +439,19 @@ Deutsch
 
 ### 0.3.2 — 2026-10-29 — BETA
 
+- **Все 18 наборов:** стоимость I/II/III уровня — 0/1/2 Ember. Frozen заменяет Ephemeral, сохраняя неиспользованные наборы в руке.
+- **Ranger:** +5/+10/+15 атаки. Без Sniper и Sweep; уровень II даёт Piercing, уровень III — Piercing и Skewer 1.
+- **Cleric:** +10/+20/+30 здоровья; при экипировке восстанавливает 3/6/9 здоровья и даёт Regen 3/6/9. На III уровне сохраняется Undying 1. **Wizard:** при экипировке даёт Conduit 2/4/6; +0/+5/+10 атаки и Mageblade 1 на III уровне. Conduit сохраняется при замене снаряжения.
+
 - **Shieldwall:** Power Slam и групповая Armor заменены Перехватом, начальными Damage Shield 2/3/4 и получением Valor 3/6/9 в начале хода. Перехватывает урон атак по союзникам позади Родерика на его этаже после их щита. Прочие эффекты сохраняют исходную цель. Активная способность остаётся только у Plunder.
-- **Наборы Ranger:** убраны неверные числа Piercing 2/4; штатный эффект не суммируется. **Quartermaster:** пассивные правила отображаются на карте.
+- **Quartermaster:** пассивные правила отображаются на карте.
 
 - **Quartermaster:** активная Requisition заменена пассивными Снабжением и Возвратом. Раз в ход призыв другого союзника даёт комплект I/II/III его роли. Снаряжение первого экипированного союзника, погибшего за ход, возвращается в руку с улучшениями и слияниями. Родерик сохраняет +1/+2/+3 слота. Quartermaster больше не заменяет Call to Arms при смешивании путей.
 
 Спасибо **Rratvar, the Untitled** за сообщения о замене снаряжения, лишнем Sniper, неверных числах Steelguard и камере Severance Pay.
 
 - **Наборы Cleric и Warrior:** Regen и Armor накладываются при экипировке и больше не вычитаются при замене. Здоровье и прочие бонусы остаются привязаны к предмету; значения не изменены.
-- **Great Bow:** убран Sniper; сохранены +20 атаки, Piercing и Sweep. **Наборы Warrior:** Steelguard использует штатный несуммируемый эффект без неверного числа слоёв.
+- **Наборы Warrior:** Steelguard использует штатный несуммируемый эффект без неверного числа слоёв.
 - **Severance Pay:** больше не переводит камеру к Пеклу. Золото, урон и визуальные эффекты не изменены.
 
 - **Tamable:** значок и подсказка в руке появляются только в забегах с Веспер Beastmaster, даже до её призыва.
@@ -439,6 +463,7 @@ Deutsch
 - **Fuse и Banished:** после очищения и повторного применения больше не сохраняется урон от предыдущего эффекта.
 - **Requisition:** случайное снаряжение для бойцов без подходящей роли теперь зависит от зерна боевой случайности игры.
 - **Гоблины:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer и The New Guy увеличены на 10–20 % с сохранением пропорций и положения ног.
+
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -474,15 +499,19 @@ Deutsch
 
 ### 0.3.2 — 2026-10-29 — BETA
 
+- **Todos os 18 kits:** custo 0/1/2 Ember nos níveis I/II/III. Frozen substitui Ephemeral e mantém os kits não usados na mão.
+- **Ranger:** +5/+10/+15 de ataque. Sem Sniper ou Sweep; nível II concede Piercing e nível III concede Piercing e Skewer 1.
+- **Cleric:** +10/+20/+30 de vida; ao equipar, cura 3/6/9 e aplica Regen 3/6/9. Nível III mantém Undying 1. **Wizard:** aplica Conduit 2/4/6 ao equipar; +0/+5/+10 de ataque e Mageblade 1 no nível III. Conduit permanece ao trocar o equipamento.
+
 - **Shieldwall:** Power Slam e o gatilho de Armor do andar dão lugar a Interceptação, Damage Shield 2/3/4 inicial e Início do turno: recebe Valor 3/6/9. Intercepta dano de ataques contra aliados atrás de Roderic no mesmo andar, após o escudo deles. Os outros efeitos mantêm o alvo original. Só Plunder mantém habilidade ativa.
-- **Kits de Ranger:** removidas contagens enganosas Piercing 2/4; o efeito nativo não acumula. **Quartermaster:** as regras passivas aparecem na carta.
+- **Quartermaster:** as regras passivas aparecem na carta.
 
 - **Quartermaster:** Requisition ativa substituída por Suprimento e Recuperação passivos. Uma vez por turno, invocar outro aliado concede o kit I/II/III de sua função. O equipamento do primeiro aliado equipado que morrer a cada turno volta à mão, preservando melhorias e fusões. Roderic mantém +1/+2/+3 espaços. Quartermaster não substitui mais Call to Arms ao combinar caminhos.
 
 Obrigado a **Rratvar, the Untitled** pelos relatos sobre troca de equipamentos, Sniper redundante, contagens enganosas de Steelguard e a câmera de Severance Pay.
 
 - **Kits de Cleric e Warrior:** Regen e Armor são aplicadas ao equipar e não são mais subtraídas ao trocar o equipamento. Vida e outros bônus continuam vinculados ao item; valores mantidos.
-- **Great Bow:** removido Sniper; mantém +20 de ataque, Piercing e Sweep. **Kits de Warrior:** Steelguard usa o efeito nativo não cumulativo, sem contagens enganosas.
+- **Kits de Warrior:** Steelguard usa o efeito nativo não cumulativo, sem contagens enganosas.
 - **Severance Pay:** não força mais a câmera para a sala da Pira. Ouro, dano e efeitos visuais mantidos.
 
 - **Tamable:** o ícone e a dica na mão só aparecem em partidas com Vesper Beastmaster, mesmo antes de ela entrar em jogo.
@@ -494,6 +523,7 @@ Obrigado a **Rratvar, the Untitled** pelos relatos sobre troca de equipamentos, 
 - **Fuse e Banished:** remover e reaplicar esses efeitos não conserva mais o dano da aplicação anterior.
 - **Requisition:** equipamentos aleatórios para unidades sem uma função correspondente agora seguem a semente de batalha do jogo.
 - **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer e The New Guy aumentaram de 10 a 20 %, mantendo as proporções e a posição dos pés.
+
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -529,15 +559,19 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-10-29 — BETA
 
+- **全部18件套件装备：**I/II/III级费用改为0/1/2 Ember。Frozen替代Ephemeral，未使用的套件可保留在手中。
+- **Ranger：**攻击力+5/+10/+15。移除Sniper与Sweep；II级获得Piercing，III级获得Piercing和Skewer 1。
+- **Cleric：**生命+10/+20/+30；装备时恢复3/6/9生命并施加Regen 3/6/9。III级保留Undying 1。**Wizard：**装备时施加Conduit 2/4/6；攻击力+0/+5/+10，III级提供Mageblade 1。更换装备后Conduit仍保留。
+
 - **Shieldwall：**Power Slam 和全层 Armor 触发改为拦截、初始 Damage Shield 2/3/4，以及回合开始获得 Valor 3/6/9。在友军伤害护盾结算后，承担本层身后友军受到的攻击伤害；其他攻击效果仍作用于原目标。Roderic 仅 Plunder 路线保留主动能力。
-- **Ranger 套件：**移除误导性的 Piercing 2/4 层数；该原生状态不可叠加。**Quartermaster：**卡牌现在显示被动规则。
+- **Quartermaster：**卡牌现在显示被动规则。
 
 - **Quartermaster：**主动 Requisition 改为被动补给与回收。每回合首次召唤另一名友军时，获得其职业的 I/II/III 级装备。每回合首名阵亡的已装备友军的装备返回手牌，保留升级与融合。Roderic 保留额外 1/2/3 个装备栏。混合路线时 Quartermaster 不再替换 Call to Arms。
 
 感谢 **Rratvar, the Untitled** 报告装备替换、多余的 Sniper、Steelguard 层数误导以及 Severance Pay 镜头移动的问题。
 
 - **Cleric 与 Warrior 套件：**装备时施加 Regen 或 Armor，替换装备时不再扣除。生命及其他装备加成仍绑定于装备；数值不变。
-- **Great Bow：**移除 Sniper；保留 +20 攻击、Piercing 和 Sweep。**Warrior 套件：**Steelguard 使用原生不可叠加状态，不再显示误导性的层数。
+- **Warrior 套件：**Steelguard 使用原生不可叠加状态，不再显示误导性的层数。
 - **Severance Pay：**不再强制将镜头移向薪火房间。金币、伤害与视觉效果不变。
 
 - **Tamable：**只有选择了 Vesper Beastmaster 路线的旅程才显示手牌图标及提示，无须先部署她。
@@ -549,6 +583,7 @@ Português (Brasil)
 - **Fuse 和 Banished：**净化后重新施加这些效果，不再保留上一次施加时的待结算伤害。
 - **Requisition：**为没有匹配职业的单位随机生成装备时，现在使用游戏的战斗随机种子。
 - **哥布林外观：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例和脚部位置。
+
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -584,15 +619,19 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-10-29 — BETA
 
+- **全部18件套件裝備：**I/II/III級費用改為0/1/2 Ember。Frozen取代Ephemeral，未使用的套件可保留在手中。
+- **Ranger：**攻擊力+5/+10/+15。移除Sniper與Sweep；II級獲得Piercing，III級獲得Piercing和Skewer 1。
+- **Cleric：**生命+10/+20/+30；裝備時恢復3/6/9生命並施加Regen 3/6/9。III級保留Undying 1。**Wizard：**裝備時施加Conduit 2/4/6；攻擊力+0/+5/+10，III級提供Mageblade 1。更換裝備後Conduit仍保留。
+
 - **Shieldwall：**Power Slam 和全層 Armor 觸發改為攔截、初始 Damage Shield 2/3/4，以及回合開始獲得 Valor 3/6/9。在友軍傷害護盾結算後，承擔本層身後友軍受到的攻擊傷害；其他攻擊效果仍作用於原目標。Roderic 僅 Plunder 路線保留主動能力。
-- **Ranger 套件：**移除誤導性的 Piercing 2/4 層數；該原生狀態不可疊加。**Quartermaster：**卡牌現在顯示被動規則。
+- **Quartermaster：**卡牌現在顯示被動規則。
 
 - **Quartermaster：**主動 Requisition 改為被動補給與回收。每回合首次召喚另一名友軍時，獲得其職業的 I/II/III 級裝備。每回合首名陣亡的已裝備友軍的裝備返回手牌，保留升級與融合。Roderic 保留額外 1/2/3 個裝備欄。混合路線時 Quartermaster 不再替換 Call to Arms。
 
 感謝 **Rratvar, the Untitled** 回報裝備替換、多餘的 Sniper、Steelguard 層數誤導以及 Severance Pay 鏡頭移動的問題。
 
 - **Cleric 與 Warrior 套件：**裝備時施加 Regen 或 Armor，替換裝備時不再扣除。生命及其他裝備加成仍綁定於裝備；數值不變。
-- **Great Bow：**移除 Sniper；保留 +20 攻擊、Piercing 和 Sweep。**Warrior 套件：**Steelguard 使用原生不可疊加狀態，不再顯示誤導性的層數。
+- **Warrior 套件：**Steelguard 使用原生不可疊加狀態，不再顯示誤導性的層數。
 - **Severance Pay：**不再強制將鏡頭移向薪火房間。金幣、傷害與視覺效果不變。
 
 - **Tamable：**只有選擇了 Vesper Beastmaster 路線的旅程才顯示手牌圖示及提示，無須先部署她。
@@ -604,6 +643,7 @@ Português (Brasil)
 - **Fuse 和 Banished：**淨化後重新施加這些效果，不再保留上一次施加時的待結算傷害。
 - **Requisition：**為沒有匹配職業的單位隨機產生裝備時，現在使用遊戲的戰鬥隨機種子。
 - **哥布林外觀：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例及腳部位置。
+
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -639,15 +679,19 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-10-29 — BETA
 
+- **18개 키트 전체:** I/II/III단계 비용을 0/1/2 Ember로 변경했습니다. Ephemeral을 Frozen으로 교체하여 사용하지 않은 키트를 손에 보관합니다.
+- **Ranger:** 공격력 +5/+10/+15. Sniper와 Sweep 제거. II단계는 Piercing, III단계는 Piercing과 Skewer 1을 부여합니다.
+- **Cleric:** 체력 +10/+20/+30. 장착 시 체력 3/6/9를 회복하고 Regen 3/6/9를 부여합니다. III단계 Undying 1 유지. **Wizard:** 장착 시 Conduit 2/4/6 부여. 공격력 +0/+5/+10, III단계 Mageblade 1. 장비를 교체해도 Conduit는 유지됩니다.
+
 - **Shieldwall:** Power Slam과 층 전체 Armor 효과를 가로막기, 초기 Damage Shield 2/3/4, 턴 시작 시 Valor 3/6/9 획득으로 교체했습니다. 같은 층에서 뒤에 있는 아군의 보호막이 먼저 막은 뒤 남은 공격 피해를 대신 받습니다. 다른 공격 효과는 원래 대상에게 적용됩니다. Roderic은 Plunder만 활성 능력을 유지합니다.
-- **Ranger 키트:** 중첩되지 않는 기본 효과 Piercing의 잘못된 2/4 표시를 제거했습니다. **Quartermaster:** 카드에 지속 효과 규칙을 표시합니다.
+- **Quartermaster:** 카드에 지속 효과 규칙을 표시합니다.
 
 - **Quartermaster:** 활성 Requisition을 지속 효과 보급과 회수로 교체했습니다. 매 턴 처음 다른 아군을 소환하면 해당 역할의 I/II/III단계 장비를 얻습니다. 매 턴 처음 사망한 장비를 장착한 아군의 장비가 강화와 융합을 유지한 채 손으로 돌아옵니다. Roderic의 추가 장비 슬롯 +1/+2/+3은 유지됩니다. 경로를 혼합해도 Quartermaster가 Call to Arms를 덮어쓰지 않습니다.
 
 장비 교체, 불필요한 Sniper, Steelguard 중첩 수 표시 및 Severance Pay 카메라 문제를 제보한 **Rratvar, the Untitled**에게 감사드립니다.
 
 - **Cleric 및 Warrior 키트:** 장착 시 Regen과 Armor를 부여하며, 장비 교체 시 더 이상 차감하지 않습니다. 체력과 다른 장비 효과는 해당 장비에 귀속됩니다. 수치는 유지됩니다.
-- **Great Bow:** Sniper 제거. 공격력 +20, Piercing, Sweep 유지. **Warrior 키트:** Steelguard는 중첩되지 않는 기본 게임 효과를 사용하며 잘못된 중첩 수를 표시하지 않습니다.
+- **Warrior 키트:** Steelguard는 중첩되지 않는 기본 게임 효과를 사용하며 잘못된 중첩 수를 표시하지 않습니다.
 - **Severance Pay:** 카메라가 화염 방으로 강제 이동하지 않습니다. 골드, 피해 및 시각 효과는 유지됩니다.
 
 - **Tamable:** 손패 아이콘과 설명은 Vesper Beastmaster가 있는 여정에서만 나타나며, 배치 전에도 표시됩니다.
@@ -659,6 +703,7 @@ Português (Brasil)
 - **Fuse 및 Banished:** 정화 후 다시 적용할 때 이전 효과의 예정 피해가 남지 않도록 수정했습니다.
 - **Requisition:** 일치하는 역할이 없는 유닛의 무작위 장비가 이제 게임의 전투 난수 시드를 따릅니다.
 - **고블린 외형:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer 및 The New Guy를 10–20% 확대하고 신체 비율과 발 위치를 유지했습니다.
+
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -694,15 +739,19 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-10-29 — BETA
 
+- **全18種のキット：**ランクI/II/IIIのコストを0/1/2 Emberに変更。EphemeralをFrozenに置き換え、未使用のキットを手札に保持できます。
+- **Ranger：**攻撃力+5/+10/+15。SniperとSweepを削除。ランクIIはPiercing、IIIはPiercingとSkewer 1を付与。
+- **Cleric：**体力+10/+20/+30。装備時に体力3/6/9を回復し、Regen 3/6/9を付与。IIIのUndying 1は維持。**Wizard：**装備時にConduit 2/4/6を付与。攻撃力+0/+5/+10、IIIはMageblade 1。装備交換後もConduitは残ります。
+
 - **Shieldwall：**Power Slamと階全体のArmor効果を迎撃、初期Damage Shield 2/3/4、ターン開始時にValor 3/6/9を得る効果へ変更。同じ階の後ろの味方への攻撃ダメージを、その味方のシールド判定後に肩代わりします。その他の攻撃効果は元の対象に適用。Rodericの起動能力はPlunderのみになります。
-- **Rangerのキット：**重複しない標準効果Piercingの誤解を招く2/4表記を削除。**Quartermaster：**カードに常時効果の説明を表示。
+- **Quartermaster：**カードに常時効果の説明を表示。
 
 - **Quartermaster：**起動能力Requisitionを常時効果の補給と回収に変更。各ターン最初に他の味方を召喚すると、その役割のランクI/II/III装備を得ます。各ターン最初に死亡した装備中の味方の装備は、強化と融合を保って手札に戻ります。Rodericの追加装備枠+1/+2/+3は維持。混合ルートでQuartermasterがCall to Armsを上書きしなくなりました。
 
 装備交換、不要なSniper、Steelguardの誤解を招くスタック数、Severance Payのカメラ移動を報告してくれた **Rratvar, the Untitled** に感謝します。
 
 - **ClericとWarriorのキット：**装備時にRegenとArmorを付与し、装備を交換しても差し引かれなくなりました。体力とその他の効果は装備に紐づきます。数値は変更していません。
-- **Great Bow：**Sniperを削除。攻撃力+20、Piercing、Sweepは維持。**Warriorのキット：**Steelguardは重複しないゲーム標準の効果を使用し、誤解を招くスタック数を表示しません。
+- **Warriorのキット：**Steelguardは重複しないゲーム標準の効果を使用し、誤解を招くスタック数を表示しません。
 - **Severance Pay：**カメラがパイアの部屋へ強制移動しなくなりました。ゴールド、ダメージ、視覚効果は変更していません。
 
 - **Tamable：**手札のアイコンと説明は Vesper Beastmaster のいるプレイでのみ表示され、配置前でも表示されます。
@@ -714,6 +763,7 @@ Português (Brasil)
 - **Fuse と Banished：**浄化後に再付与しても、前回の付与による保留ダメージが残らないよう修正しました。
 - **Requisition：**対応する役割がないユニットへのランダム装備が、ゲームの戦闘用乱数シードに従うようになりました。
 - **ゴブリンの表示：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer、The New Guy を10～20%拡大し、体の比率と足の位置を維持しました。
+
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -778,3 +828,5 @@ Português (Brasil)
 <!-- 2026-10-29-1408||codex-freecompany-fx||CHANGELOG.md||Quartermaster pasivo Suministro/Recuperacion y coexistencia con Call to Arms en diez idiomas -->
 
 <!-- 2026-10-29-2002||codex-freecompany-fx||CHANGELOG.md||Shieldwall Intercepcion/escudos 2/3/4/Valor 3/6/9, Piercing sin cantidades y pasivas Quartermaster visibles en diez idiomas -->
+
+<!-- 2026-10-29-2035||codex-freecompany-fx||CHANGELOG.md||consolida equilibrio aprobado de kits 0/1/2, Frozen, Ranger/Cleric/Wizard en diez idiomas; elimina notas obsoletas de Great Bow de esta version -->

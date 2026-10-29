@@ -16,21 +16,21 @@
         "japanese": "白墨の魔法陣"
       },
       "descriptions": {
-        "english": "Apply <b>1</b> [conduit].",
-        "french": "Appliquez <b>1</b> [conduit].",
-        "german": "Erhalte <b>1</b> [conduit].",
-        "russian": "Получите <b>1</b> [conduit].",
-        "portuguese": "Aplique <b>1</b> [conduit].",
-        "chinese": "施加<b>1</b> [conduit]。",
-        "spanish": "Aplica <b>1</b> [conduit].",
-        "chinese_traditional": "施加<b>1</b> [conduit]。",
-        "korean": "<b>1</b> [conduit] 부여.",
-        "japanese": "<b>1</b> [conduit]を付与。"
+        "english": "Apply <b>2</b> [conduit].",
+        "french": "Applique <b>2</b> [conduit].",
+        "german": "Verleiht <b>2</b> [conduit].",
+        "russian": "Накладывает <b>2</b> [conduit].",
+        "portuguese": "Aplica <b>2</b> [conduit].",
+        "chinese": "施加<b>2</b> [conduit]。",
+        "spanish": "Aplica <b>2</b> [conduit].",
+        "chinese_traditional": "施加<b>2</b> [conduit]。",
+        "korean": "<b>2</b> [conduit] 부여.",
+        "japanese": "<b>2</b> [conduit]を付与。"
       },
       "card_art": "@ChalkCircle",
-      "cost": 1,
+      "cost": 0,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -38,7 +38,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@EquipChalkCircle"
+        "@EquipChalkCircle",
+        "@ChalkCircleApplyConduit"
       ],
       "lore_tooltips": [
         {
@@ -75,21 +76,21 @@
         "japanese": "魔導書"
       },
       "descriptions": {
-        "english": "<b>+6</b> [attack]. Apply <b>2</b> [conduit].",
-        "french": "<b>+6</b> [attack]. Appliquez <b>2</b> [conduit].",
-        "german": "<b>+6</b> [attack]. Erhalte <b>2</b> [conduit].",
-        "russian": "<b>+6</b> [attack]. Получите <b>2</b> [conduit].",
-        "portuguese": "<b>+6</b> [attack]. Aplique <b>2</b> [conduit].",
-        "chinese": "<b>+6</b> [attack]. 施加<b>2</b> [conduit]。",
-        "spanish": "<b>+6</b> [attack]. Aplica <b>2</b> [conduit].",
-        "chinese_traditional": "<b>+6</b> [attack]. 施加<b>2</b> [conduit]。",
-        "korean": "<b>+6</b> [attack]. <b>2</b> [conduit] 부여.",
-        "japanese": "<b>+6</b> [attack]. <b>2</b> [conduit]を付与。"
+        "english": "<b>+5</b> [attack]. Apply <b>4</b> [conduit].",
+        "french": "<b>+5</b> [attack]. Applique <b>4</b> [conduit].",
+        "german": "<b>+5</b> [attack]. Verleiht <b>4</b> [conduit].",
+        "russian": "<b>+5</b> [attack]. Накладывает <b>4</b> [conduit].",
+        "portuguese": "<b>+5</b> [attack]. Aplica <b>4</b> [conduit].",
+        "chinese": "<b>+5</b> [attack]. 施加<b>4</b> [conduit]。",
+        "spanish": "<b>+5</b> [attack]. Aplica <b>4</b> [conduit].",
+        "chinese_traditional": "<b>+5</b> [attack]. 施加<b>4</b> [conduit]。",
+        "korean": "<b>+5</b> [attack]. <b>4</b> [conduit] 부여.",
+        "japanese": "<b>+5</b> [attack]. <b>4</b> [conduit]を付与。"
       },
       "card_art": "@Grimoire",
       "cost": 1,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -97,7 +98,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@EquipGrimoire"
+        "@EquipGrimoire",
+        "@GrimoireApplyConduit"
       ],
       "lore_tooltips": [
         {
@@ -134,21 +136,21 @@
         "japanese": "大魔術師の杖"
       },
       "descriptions": {
-        "english": "<b>+12</b> [attack]. Apply <b>3</b> [conduit] and <b>2</b> [mageblade].",
-        "french": "<b>+12</b> [attack]. Appliquez <b>3</b> [conduit] et <b>2</b> [mageblade].",
-        "german": "<b>+12</b> [attack]. Erhalte <b>3</b> [conduit] und <b>2</b> [mageblade].",
-        "russian": "<b>+12</b> [attack]. Получите <b>3</b> [conduit] и <b>2</b> [mageblade].",
-        "portuguese": "<b>+12</b> [attack]. Aplique <b>3</b> [conduit] e <b>2</b> [mageblade].",
-        "chinese": "<b>+12</b> [attack]. 施加<b>3</b> [conduit]和<b>2</b> [mageblade]。",
-        "spanish": "<b>+12</b> [attack]. Aplica <b>3</b> [conduit] y <b>2</b> [mageblade].",
-        "chinese_traditional": "<b>+12</b> [attack]. 施加<b>3</b> [conduit]和<b>2</b> [mageblade]。",
-        "korean": "<b>+12</b> [attack]. <b>3</b> [conduit] 및 <b>2</b> [mageblade] 부여.",
-        "japanese": "<b>+12</b> [attack]. <b>3</b> [conduit]と<b>2</b> [mageblade]を付与。"
+        "english": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Apply <b>6</b> [conduit].",
+        "french": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Applique <b>6</b> [conduit].",
+        "german": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Verleiht <b>6</b> [conduit].",
+        "russian": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Накладывает <b>6</b> [conduit].",
+        "portuguese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Aplica <b>6</b> [conduit].",
+        "chinese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 施加<b>6</b> [conduit]。",
+        "spanish": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Aplica <b>6</b> [conduit].",
+        "chinese_traditional": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 施加<b>6</b> [conduit]。",
+        "korean": "<b>+10</b> [attack]. <b>1</b> [mageblade]. <b>6</b> [conduit] 부여.",
+        "japanese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. <b>6</b> [conduit]を付与。"
       },
       "card_art": "@ArchmagesStaff",
-      "cost": 1,
+      "cost": 2,
       "traits": [
-        "@KitEphemeral"
+        "@KitFrozen"
       ],
       "card_type": "equipment",
       "rarity": "uncommon",
@@ -156,7 +158,8 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        "@EquipArchmagesStaff"
+        "@EquipArchmagesStaff",
+        "@ArchmagesStaffApplyConduit"
       ],
       "lore_tooltips": [
         {
@@ -195,24 +198,19 @@
         "japanese": "白墨の魔法陣"
       },
       "descriptions": {
-        "english": "Apply <b>1</b> [conduit].",
-        "french": "Appliquez <b>1</b> [conduit].",
-        "german": "Erhalte <b>1</b> [conduit].",
-        "russian": "Получите <b>1</b> [conduit].",
-        "portuguese": "Aplique <b>1</b> [conduit].",
-        "chinese": "施加<b>1</b> [conduit]。",
-        "spanish": "Aplica <b>1</b> [conduit].",
-        "chinese_traditional": "施加<b>1</b> [conduit]。",
-        "korean": "<b>1</b> [conduit] 부여.",
-        "japanese": "<b>1</b> [conduit]を付与。"
+        "english": "On equip: Apply <b>2</b> [conduit].",
+        "french": "À l’équipement : Applique <b>2</b> [conduit].",
+        "german": "Beim Ausrüsten: Verleiht <b>2</b> [conduit].",
+        "russian": "При экипировке: Накладывает <b>2</b> [conduit].",
+        "portuguese": "Ao equipar: Aplica <b>2</b> [conduit].",
+        "chinese": "装备时： 施加<b>2</b> [conduit]。",
+        "spanish": "Al equipar: Aplica <b>2</b> [conduit].",
+        "chinese_traditional": "裝備時： 施加<b>2</b> [conduit]。",
+        "korean": "장착 시: <b>2</b> [conduit] 부여.",
+        "japanese": "装備時： <b>2</b> [conduit]を付与。"
       },
       "icon": "@ChalkCircle",
-      "status_effect_upgrades": [
-        {
-          "status": "conduit",
-          "count": 1
-        }
-      ]
+      "status_effect_upgrades": []
     },
     {
       "id": "UpgGrimoire",
@@ -229,25 +227,20 @@
         "japanese": "魔導書"
       },
       "descriptions": {
-        "english": "<b>+6</b> [attack]. Apply <b>2</b> [conduit].",
-        "french": "<b>+6</b> [attack]. Appliquez <b>2</b> [conduit].",
-        "german": "<b>+6</b> [attack]. Erhalte <b>2</b> [conduit].",
-        "russian": "<b>+6</b> [attack]. Получите <b>2</b> [conduit].",
-        "portuguese": "<b>+6</b> [attack]. Aplique <b>2</b> [conduit].",
-        "chinese": "<b>+6</b> [attack]. 施加<b>2</b> [conduit]。",
-        "spanish": "<b>+6</b> [attack]. Aplica <b>2</b> [conduit].",
-        "chinese_traditional": "<b>+6</b> [attack]. 施加<b>2</b> [conduit]。",
-        "korean": "<b>+6</b> [attack]. <b>2</b> [conduit] 부여.",
-        "japanese": "<b>+6</b> [attack]. <b>2</b> [conduit]を付与。"
+        "english": "<b>+5</b> [attack]. On equip: Apply <b>4</b> [conduit].",
+        "french": "<b>+5</b> [attack]. À l’équipement : Applique <b>4</b> [conduit].",
+        "german": "<b>+5</b> [attack]. Beim Ausrüsten: Verleiht <b>4</b> [conduit].",
+        "russian": "<b>+5</b> [attack]. При экипировке: Накладывает <b>4</b> [conduit].",
+        "portuguese": "<b>+5</b> [attack]. Ao equipar: Aplica <b>4</b> [conduit].",
+        "chinese": "<b>+5</b> [attack]. 装备时： 施加<b>4</b> [conduit]。",
+        "spanish": "<b>+5</b> [attack]. Al equipar: Aplica <b>4</b> [conduit].",
+        "chinese_traditional": "<b>+5</b> [attack]. 裝備時： 施加<b>4</b> [conduit]。",
+        "korean": "<b>+5</b> [attack]. 장착 시: <b>4</b> [conduit] 부여.",
+        "japanese": "<b>+5</b> [attack]. 装備時： <b>4</b> [conduit]を付与。"
       },
       "icon": "@Grimoire",
-      "bonus_damage": 6,
-      "status_effect_upgrades": [
-        {
-          "status": "conduit",
-          "count": 2
-        }
-      ]
+      "bonus_damage": 5,
+      "status_effect_upgrades": []
     },
     {
       "id": "UpgArchmagesStaff",
@@ -264,27 +257,23 @@
         "japanese": "大魔術師の杖"
       },
       "descriptions": {
-        "english": "<b>+12</b> [attack]. Apply <b>3</b> [conduit] and <b>2</b> [mageblade].",
-        "french": "<b>+12</b> [attack]. Appliquez <b>3</b> [conduit] et <b>2</b> [mageblade].",
-        "german": "<b>+12</b> [attack]. Erhalte <b>3</b> [conduit] und <b>2</b> [mageblade].",
-        "russian": "<b>+12</b> [attack]. Получите <b>3</b> [conduit] и <b>2</b> [mageblade].",
-        "portuguese": "<b>+12</b> [attack]. Aplique <b>3</b> [conduit] e <b>2</b> [mageblade].",
-        "chinese": "<b>+12</b> [attack]. 施加<b>3</b> [conduit]和<b>2</b> [mageblade]。",
-        "spanish": "<b>+12</b> [attack]. Aplica <b>3</b> [conduit] y <b>2</b> [mageblade].",
-        "chinese_traditional": "<b>+12</b> [attack]. 施加<b>3</b> [conduit]和<b>2</b> [mageblade]。",
-        "korean": "<b>+12</b> [attack]. <b>3</b> [conduit] 및 <b>2</b> [mageblade] 부여.",
-        "japanese": "<b>+12</b> [attack]. <b>3</b> [conduit]と<b>2</b> [mageblade]を付与。"
+        "english": "<b>+10</b> [attack]. <b>1</b> [mageblade]. On equip: Apply <b>6</b> [conduit].",
+        "french": "<b>+10</b> [attack]. <b>1</b> [mageblade]. À l’équipement : Applique <b>6</b> [conduit].",
+        "german": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Beim Ausrüsten: Verleiht <b>6</b> [conduit].",
+        "russian": "<b>+10</b> [attack]. <b>1</b> [mageblade]. При экипировке: Накладывает <b>6</b> [conduit].",
+        "portuguese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Ao equipar: Aplica <b>6</b> [conduit].",
+        "chinese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 装备时： 施加<b>6</b> [conduit]。",
+        "spanish": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Al equipar: Aplica <b>6</b> [conduit].",
+        "chinese_traditional": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 裝備時： 施加<b>6</b> [conduit]。",
+        "korean": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 장착 시: <b>6</b> [conduit] 부여.",
+        "japanese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 装備時： <b>6</b> [conduit]を付与。"
       },
       "icon": "@ArchmagesStaff",
-      "bonus_damage": 12,
+      "bonus_damage": 10,
       "status_effect_upgrades": [
         {
-          "status": "conduit",
-          "count": 3
-        },
-        {
           "status": "mageblade",
-          "count": 2
+          "count": 1
         }
       ]
     }
@@ -313,6 +302,42 @@
       "target_mode": "drop_target_character",
       "target_team": "monsters",
       "param_upgrade": "@UpgArchmagesStaff"
+    },
+    {
+      "id": "ChalkCircleApplyConduit",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "conduit",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "GrimoireApplyConduit",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "conduit",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "ArchmagesStaffApplyConduit",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "conduit",
+          "count": 6
+        }
+      ]
     }
   ],
   "sprites": [
