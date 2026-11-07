@@ -51,12 +51,9 @@
           "japanese": "ここにサインする そしてここに"
         }
       ],
-      "pools": [
-        "MegaPool",
-        "RoomAndEquipmentMerchant_RoomPool",
-        "RoomAndEquipmentDraftPool",
-        "TrainRoomPool"
-      ]
+      "pools": [],
+      "hide_in_logbook": true,
+      "unlock_level": 99
     }
   ],
   "upgrades": [

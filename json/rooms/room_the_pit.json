@@ -51,12 +51,9 @@
           "japanese": "十分な深さ 重要でないほど深い"
         }
       ],
-      "pools": [
-        "MegaPool",
-        "RoomAndEquipmentMerchant_RoomPool",
-        "RoomAndEquipmentDraftPool",
-        "TrainRoomPool"
-      ]
+      "pools": [],
+      "hide_in_logbook": true,
+      "unlock_level": 99
     }
   ],
   "upgrades": [

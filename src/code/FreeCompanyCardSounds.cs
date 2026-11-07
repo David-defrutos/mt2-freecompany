@@ -13,14 +13,13 @@ namespace mt2_freecompany.Plugin
         {
             "MagicMissile", "Cloudkill", "DelayedBlastFireball", "FingerOfDeath",
             "Fireball", "LightningBolt", "BountyHunterShot", "HedgeMageVolley",
-            "ShieldbearerAbility", "TwoHeadedWrath", "GrimoireSpell1",
-            "GrimoireSpell2", "GrimoireSpell3"
+            "ShieldbearerAbility", "TwoHeadedWrath", "GrimoireMagicMissile1",
+            "GrimoireMagicMissile2", "GrimoireMagicMissile3"
         };
 
         private static readonly HashSet<string> HealCards = new(StringComparer.Ordinal)
         {
-            "CureWounds", "Resurrection", "BattleChaplainAbility",
-            "ChirurgeonSurgery1", "ChirurgeonSurgery2", "ChirurgeonSurgery3"
+            "CureWounds", "Resurrection", "BattleChaplainAbility"
         };
 
         private static readonly HashSet<string> DebuffCards = new(StringComparer.Ordinal)
@@ -72,3 +71,4 @@ namespace mt2_freecompany.Plugin
     }
 }
 // 2026-09-28-2313||codex-freecompany-fx||src/code/FreeCompanyCardSounds.cs||asocia cartas del clan a cues globales originales al jugarlas con éxito
+// 2026-11-07-1354||codex-ww-inc||repos/MT2/repos-propios/mt2-freecompany/src/code/FreeCompanyCardSounds.cs||Asignar Combat_Attack a GrimoireMagicMissile1/2/3 y retirar IDs antiguos de las listas de sonido sin cambiar JSON

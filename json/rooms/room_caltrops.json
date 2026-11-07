@@ -51,12 +51,9 @@
           "japanese": "低価格で 効き目がない"
         }
       ],
-      "pools": [
-        "MegaPool",
-        "RoomAndEquipmentMerchant_RoomPool",
-        "RoomAndEquipmentDraftPool",
-        "TrainRoomPool"
-      ]
+      "pools": [],
+      "hide_in_logbook": true,
+      "unlock_level": 99
     }
   ],
   "upgrades": [

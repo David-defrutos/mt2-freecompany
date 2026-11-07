@@ -8,6 +8,8 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ### 0.3.2 — 2026-11-07 — BETA
 
+- **Rooms:** removed Caltrops, The Pit and Paymaster’s Tent from rewards, shops and generated room cards. Existing saved copies remain usable.
+
 - **Vesper — Grimoire:** replaces Prepare Spell with an automatic free, Ephemeral Magic Missile each turn: 3/4/5 hits, 3 base damage per hit. Starts with Conduit 5 at every path level; Celebrate permanently grants Conduit 2/4/6.
 - **Vesper — Chirurgeon:** replaces Field Surgery with automatic Undying 1 for allies without Undying each turn: one ally on her floor at I, one ally anywhere at II, two distinct allies anywhere at III. Retains healing 3/12/24 and cleansing 1/2/3.
 - **Vesper:** Beastmaster’s Command is now her only activated path ability, preventing mixed paths from replacing it. **Widow’s Pension:** clarifies that it pays on the wearer’s first death.
@@ -148,6 +150,8 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 ## Spanish
 
 ### 0.3.2 — 2026-11-07 — BETA
+
+- **Salas:** retiradas Caltrops, The Pit y Paymaster’s Tent de recompensas, tiendas y generación de salas. Las copias de partidas guardadas siguen siendo utilizables.
 
 - **Vesper — Grimoire:** sustituye Prepare Spell por un Magic Missile gratuito y Ephemeral automático cada turno: 3/4/5 impactos de 3 de daño base. Empieza con Conduit 5 en todos los niveles; Celebrate concede permanentemente Conduit 2/4/6.
 - **Vesper — Chirurgeon:** sustituye Field Surgery por Undying 1 automático cada turno para aliados sin Undying: uno de su piso en I, uno de cualquier piso en II y dos distintos de cualquier piso en III. Conserva curación 3/12/24 y limpieza 1/2/3.
@@ -327,6 +331,8 @@ comentarios de la ficha.
 
 ### 0.3.2 — 2026-11-07 — BETA
 
+- **Salles :** Caltrops, The Pit et Paymaster’s Tent ne sont plus proposés en récompense, en boutique ni par génération de salles. Les exemplaires sauvegardés restent utilisables.
+
 - **Vesper — Grimoire :** remplace Prepare Spell par un Projectile magique gratuit avec Ephemeral chaque tour : 3/4/5 impacts de 3 dégâts de base. Commence avec Conduit 5 à tous les rangs ; Celebrate accorde définitivement Conduit 2/4/6.
 - **Vesper — Chirurgeon :** remplace Field Surgery par Undying 1 automatique chaque tour pour les alliés sans Undying : un sur son étage au rang I, un sur tout étage au II, deux distincts au III. Soins 3/12/24 et purification 1/2/3 conservés.
 - **Vesper :** Command de Beastmaster est sa seule capacité de voie activée, évitant son remplacement en mélangeant les voies. **Widow’s Pension :** précise le paiement à la première mort du porteur.
@@ -390,6 +396,8 @@ Français
 ## German
 
 ### 0.3.2 — 2026-11-07 — BETA
+
+- **Räume:** Caltrops, The Pit und Paymaster’s Tent aus Belohnungen, Läden und erzeugten Raumkarten entfernt. Bereits gespeicherte Exemplare bleiben nutzbar.
 
 - **Vesper — Grimoire:** ersetzt Prepare Spell durch ein kostenloses Magisches Geschoss mit Ephemeral pro Zug: 3/4/5 Treffer mit je 3 Basisschaden. Beginnt auf jeder Stufe mit Conduit 5; Celebrate gewährt dauerhaft Conduit 2/4/6.
 - **Vesper — Chirurgeon:** ersetzt Field Surgery durch automatisches Undying 1 pro Zug für Verbündete ohne Undying: einen auf ihrem Stockwerk auf I, einen auf beliebigem Stockwerk auf II, zwei verschiedene auf III. Heilung 3/12/24 und Reinigung 1/2/3 bleiben erhalten.
@@ -455,6 +463,8 @@ Deutsch
 
 ### 0.3.2 — 2026-11-07 — BETA
 
+- **Комнаты:** Caltrops, The Pit и Paymaster’s Tent больше не появляются в наградах, магазинах и при создании комнат. Копии в сохранениях остаются доступными.
+
 - **Веспер — Grimoire:** вместо Prepare Spell каждый ход автоматически создаёт бесплатную Волшебную стрелу с Ephemeral: 3/4/5 попаданий по 3 базового урона. Начальный Conduit 5 на всех уровнях; Celebrate навсегда даёт Conduit 2/4/6.
 - **Веспер — Chirurgeon:** вместо Field Surgery каждый ход автоматически даёт Undying 1 союзникам без Undying: одному на её этаже на I, одному на любом этаже на II, двум разным на III. Лечение 3/12/24 и очищение 1/2/3 сохранены.
 - **Веспер:** Command пути Beastmaster — единственная активируемая способность пути; смешение путей больше её не заменяет. **Widow’s Pension:** уточнена выплата при первой смерти носителя.
@@ -518,6 +528,8 @@ Deutsch
 ## Portuguese Brazil
 
 ### 0.3.2 — 2026-11-07 — BETA
+
+- **Salas:** Caltrops, The Pit e Paymaster’s Tent foram removidas das recompensas, lojas e geração de salas. Cópias em partidas salvas continuam utilizáveis.
 
 - **Vesper — Grimoire:** substitui Prepare Spell por um Míssil Mágico gratuito com Ephemeral automático por turno: 3/4/5 impactos de 3 de dano base. Começa com Conduit 5 em todos os níveis; Celebrate concede Conduit 2/4/6 permanentemente.
 - **Vesper — Chirurgeon:** substitui Field Surgery por Undying 1 automático por turno em aliados sem Undying: um no seu andar em I, um em qualquer andar em II, dois distintos em III. Mantém cura 3/12/24 e purificação 1/2/3.
@@ -583,6 +595,8 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-11-07 — BETA
 
+- **房间：**Caltrops、The Pit 和 Paymaster’s Tent 不再出现在奖励、商店或生成的房间牌中。存档中的现有卡牌仍可使用。
+
 - **Vesper — Grimoire：**移除 Prepare Spell，每回合自动生成免费的 Ephemeral 魔法飞弹，攻击3/4/5次，每次基础伤害3。所有等级初始获得 Conduit 5；Celebrate 永久获得 Conduit 2/4/6。
 - **Vesper — Chirurgeon：**移除 Field Surgery，每回合自动为没有 Undying 的友军施加 Undying 1：I级本层一名，II级任意楼层一名，III级任意楼层两名不同友军。保留治疗3/12/24及净化1/2/3。
 - **Vesper：**Beastmaster 的 Command 成为唯一的路线主动技能，混合路线不再覆盖它。**Widow’s Pension：**明确为携带者首次死亡时支付金币。
@@ -646,6 +660,8 @@ Português (Brasil)
 ## Chinese Traditional
 
 ### 0.3.2 — 2026-11-07 — BETA
+
+- **房間：**Caltrops、The Pit 和 Paymaster’s Tent 不再出現在獎勵、商店或生成的房間牌中。存檔中的現有卡牌仍可使用。
 
 - **Vesper — Grimoire：**移除 Prepare Spell，每回合自動生成免費的 Ephemeral 魔法飛彈，攻擊3/4/5次，每次基礎傷害3。所有等級初始獲得 Conduit 5；Celebrate 永久獲得 Conduit 2/4/6。
 - **Vesper — Chirurgeon：**移除 Field Surgery，每回合自動為沒有 Undying 的友軍施加 Undying 1：I級本層一名，II級任意樓層一名，III級任意樓層兩名不同友軍。保留治療3/12/24及淨化1/2/3。
@@ -711,6 +727,8 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-11-07 — BETA
 
+- **객실:** Caltrops, The Pit, Paymaster’s Tent가 보상, 상점 및 객실 카드 생성에서 제외됩니다. 저장된 기존 카드는 계속 사용할 수 있습니다.
+
 - **Vesper — Grimoire:** Prepare Spell 대신 매 턴 무료 Ephemeral 마법 화살을 자동 생성합니다. 기본 피해 3을 3/4/5회 가합니다. 모든 단계에서 Conduit 5로 시작하며 Celebrate로 영구 Conduit 2/4/6을 얻습니다.
 - **Vesper — Chirurgeon:** Field Surgery 대신 매 턴 Undying이 없는 아군에게 Undying 1을 자동 부여합니다. I은 같은 층 1명, II는 모든 층 중 1명, III는 서로 다른 2명입니다. 치유 3/12/24와 정화 1/2/3은 유지됩니다.
 - **Vesper:** Beastmaster의 Command만 경로 활성 능력으로 남아 혼합 경로에서 교체되지 않습니다. **Widow’s Pension:** 장착자의 첫 사망 시 지급됨을 명시했습니다.
@@ -774,6 +792,8 @@ Português (Brasil)
 ## Japanese
 
 ### 0.3.2 — 2026-11-07 — BETA
+
+- **部屋：**Caltrops、The Pit、Paymaster’s Tentを報酬、ショップ、部屋カードの生成対象から除外。セーブ内の既存カードは引き続き使用できます。
 
 - **Vesper — Grimoire：**Prepare Spellを廃止し、各ターン無料のEphemeralマジックミサイルを自動生成。基礎ダメージ3の攻撃を3/4/5回行う。全段階で初期Conduit 5、Celebrateで永続Conduit 2/4/6を獲得。
 - **Vesper — Chirurgeon：**Field Surgeryを廃止し、毎ターンUndyingを持たない味方にUndying 1を自動付与。Iは同じ階の1体、IIは任意の階の1体、IIIは異なる2体。回復3/12/24と浄化1/2/3は維持。
@@ -872,3 +892,5 @@ Português (Brasil)
 <!-- 2026-10-29-2035||codex-freecompany-fx||CHANGELOG.md||consolida equilibrio aprobado de kits 0/1/2, Frozen, Ranger/Cleric/Wizard en diez idiomas; elimina notas obsoletas de Great Bow de esta version -->
 
 <!-- 2026-11-07-1140||codex-freecompany-fx||CHANGELOG.md||documenta rediseño pasivo de Grimoire/Chirurgeon y primera muerte de Widow en diez idiomas para 0.3.2 -->
+
+<!-- 2026-11-07-1333||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||documenta retirada de tres salas en los diez idiomas -->

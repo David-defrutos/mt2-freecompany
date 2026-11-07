@@ -41,7 +41,7 @@ Units, spells, rooms, equipment and artifacts, built around three pillars: **for
 
 ![Some of the clan's spells](https://raw.githubusercontent.com/David-defrutos/mt2-freecompany/main/screenshots/spells.png)
 
-![The six rooms](https://raw.githubusercontent.com/David-defrutos/mt2-freecompany/main/screenshots/rooms.png)
+Available rooms: **Quartermaster’s Store**, **Rope & Grapple** and **Watchtower**.
 
 ## Known rough edges
 
@@ -130,7 +130,7 @@ Unidades, hechizos, salas, equipo y artefactos, alrededor de tres pilares: **for
 
 ![Algunos hechizos del clan](https://raw.githubusercontent.com/David-defrutos/mt2-freecompany/main/screenshots/spells.png)
 
-![Las seis salas](https://raw.githubusercontent.com/David-defrutos/mt2-freecompany/main/screenshots/rooms.png)
+Salas disponibles: **Quartermaster’s Store**, **Rope & Grapple** y **Watchtower**.
 
 ## Lo que ya sé que está verde
 
@@ -270,3 +270,5 @@ Solo estas **29 cartas concretas** cuentan; no se incluye automáticamente el re
 <!-- 2026-10-27-2301||codex-freecompany-fx||README.md||Q021 confirmado: añade CodePointer a lista alfabética Discord EN/ES; conserva crédito por permiso de port -->
 
 <!-- 2026-11-07-1140||codex-freecompany-fx||README.md||añade tabla vigente de sendas Vesper I/II/III y aclara Command como única habilidad activada -->
+
+<!-- 2026-11-07-1333||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/README.md||sustituye imagen obsoleta de seis salas por lista de las tres disponibles -->
