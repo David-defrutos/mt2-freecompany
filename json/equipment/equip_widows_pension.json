@@ -77,16 +77,16 @@
         "japanese": "未亡人の年金"
       },
       "descriptions": {
-        "english": "<b>Extinguish</b>: gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>. Once per battle.",
-        "french": "<b>Extinction</b> : gagnez autant de [coin] que les [attack] + [health] de base de cette unité, améliorations incluses, arrondis à <b>5</b>. Une fois par combat.",
-        "german": "<b>Erlöschen</b>: Erhalte [coin] in Höhe der Basiswerte [attack] + [health] dieser Einheit einschließlich Verbesserungen, auf <b>5</b> gerundet. Einmal pro Kampf.",
-        "russian": "<b>Угасание</b>: получите [coin], равные базовым [attack] + [health] этой боевой единицы с учётом улучшений, с округлением до <b>5</b>. Один раз за бой.",
-        "portuguese": "<b>Extinção</b>: ganhe [coin] igual à [attack] + [health] base desta unidade, incluindo melhorias, arredondado para <b>5</b>. Uma vez por batalha.",
-        "chinese": "<b>熄灭</b>：获得等于此单位基础[attack] + [health]的[coin]，包含升级，按<b>5</b>取整。每场战斗一次。",
-        "spanish": "<b>Extinción</b>: gana [coin] igual a la [attack] + [health] base de esta unidad, incluidas las mejoras, redondeado a <b>5</b>. Una vez por combate.",
-        "chinese_traditional": "<b>熄滅</b>：獲得等於此單位基礎[attack] + [health]的[coin]，包含升級，按<b>5</b>取整。每場戰鬥一次。",
-        "korean": "<b>소멸</b>: 업그레이드를 포함한 이 유닛의 기본 [attack] + [health]만큼 [coin] 획득. <b>5</b> 단위로 반올림. 전투당 1회.",
-        "japanese": "<b>消滅</b>：強化を含むこのユニットの基礎[attack] + [health]と同量の[coin]を得る。<b>5</b>単位で丸める。戦闘ごとに1回。"
+        "english": "The first time the wearer dies, gain [coin] equal to its base [attack] + [health], including permanent upgrades, rounded to the nearest multiple of <b>5</b>.",
+        "french": "À la première mort du porteur, gagnez autant de [coin] que ses [attack] + [health] de base, améliorations permanentes incluses, arrondis au multiple de <b>5</b> le plus proche.",
+        "german": "Wenn der Träger zum ersten Mal stirbt, erhalte [coin] in Höhe seiner Basiswerte [attack] + [health], einschließlich permanenter Verbesserungen, auf das nächste Vielfache von <b>5</b> gerundet.",
+        "russian": "При первой смерти носителя получите [coin], равные его базовым [attack] + [health] с учётом постоянных улучшений, с округлением до ближайшего числа, кратного <b>5</b>.",
+        "portuguese": "Na primeira vez que o portador morrer, ganhe [coin] igual ao seu [attack] + [health] base, incluindo melhorias permanentes, arredondado para o múltiplo de <b>5</b> mais próximo.",
+        "chinese": "携带者首次死亡时，获得等于其基础[attack]与[health]之和的[coin]，包含永久升级，并四舍五入至最接近的<b>5</b>的倍数。",
+        "spanish": "La primera vez que muere el portador, gana [coin] igual a su [attack] + [health] base, incluidas las mejoras permanentes, redondeado al múltiplo de <b>5</b> más cercano.",
+        "chinese_traditional": "攜帶者首次死亡時，獲得等於其基礎[attack]與[health]之和的[coin]，包含永久升級，並四捨五入至最接近的<b>5</b>的倍數。",
+        "korean": "장착한 유닛이 처음 죽을 때, 영구 업그레이드를 포함한 기본 [attack] + [health]만큼 [coin] 획득. 가장 가까운 <b>5</b>의 배수로 반올림.",
+        "japanese": "装備者が初めて死亡した時、永続強化を含む基礎[attack]と[health]の合計を最も近い<b>5</b>の倍数に丸めた量の[coin]を得る。"
       },
       "icon": "@WidowsPension",
       "trigger_upgrades": [
@@ -99,16 +99,16 @@
       "id": "WidowsPensionTrigger",
       "trigger": "on_death",
       "descriptions": {
-        "english": "gain [coin] equal to this unit's base [attack] + [health], upgrades included, rounded to <b>5</b>. Once per battle.",
-        "french": "gagnez autant de [coin] que les [attack] + [health] de base de cette unité, améliorations incluses, arrondis à <b>5</b>. Une fois par combat.",
-        "german": "Erhalte [coin] in Höhe der Basiswerte [attack] + [health] dieser Einheit einschließlich Verbesserungen, auf <b>5</b> gerundet. Einmal pro Kampf.",
-        "russian": "получите [coin], равные базовым [attack] + [health] этой боевой единицы с учётом улучшений, с округлением до <b>5</b>. Один раз за бой.",
-        "portuguese": "ganhe [coin] igual à [attack] + [health] base desta unidade, incluindo melhorias, arredondado para <b>5</b>. Uma vez por batalha.",
-        "chinese": "获得等于此单位基础[attack] + [health]的[coin]，包含升级，按<b>5</b>取整。每场战斗一次。",
-        "spanish": "gana [coin] igual a la [attack] + [health] base de esta unidad, incluidas las mejoras, redondeado a <b>5</b>. Una vez por combate.",
-        "chinese_traditional": "獲得等於此單位基礎[attack] + [health]的[coin]，包含升級，按<b>5</b>取整。每場戰鬥一次。",
-        "korean": "업그레이드를 포함한 이 유닛의 기본 [attack] + [health]만큼 [coin] 획득. <b>5</b> 단위로 반올림. 전투당 1회.",
-        "japanese": "強化を含むこのユニットの基礎[attack] + [health]と同量の[coin]を得る。<b>5</b>単位で丸める。戦闘ごとに1回。"
+        "english": "The first time the wearer dies, gain [coin] equal to its base [attack] + [health], including permanent upgrades, rounded to the nearest multiple of <b>5</b>.",
+        "french": "À la première mort du porteur, gagnez autant de [coin] que ses [attack] + [health] de base, améliorations permanentes incluses, arrondis au multiple de <b>5</b> le plus proche.",
+        "german": "Wenn der Träger zum ersten Mal stirbt, erhalte [coin] in Höhe seiner Basiswerte [attack] + [health], einschließlich permanenter Verbesserungen, auf das nächste Vielfache von <b>5</b> gerundet.",
+        "russian": "При первой смерти носителя получите [coin], равные его базовым [attack] + [health] с учётом постоянных улучшений, с округлением до ближайшего числа, кратного <b>5</b>.",
+        "portuguese": "Na primeira vez que o portador morrer, ganhe [coin] igual ao seu [attack] + [health] base, incluindo melhorias permanentes, arredondado para o múltiplo de <b>5</b> mais próximo.",
+        "chinese": "携带者首次死亡时，获得等于其基础[attack]与[health]之和的[coin]，包含永久升级，并四舍五入至最接近的<b>5</b>的倍数。",
+        "spanish": "La primera vez que muere el portador, gana [coin] igual a su [attack] + [health] base, incluidas las mejoras permanentes, redondeado al múltiplo de <b>5</b> más cercano.",
+        "chinese_traditional": "攜帶者首次死亡時，獲得等於其基礎[attack]與[health]之和的[coin]，包含永久升級，並四捨五入至最接近的<b>5</b>的倍數。",
+        "korean": "장착한 유닛이 처음 죽을 때, 영구 업그레이드를 포함한 기본 [attack] + [health]만큼 [coin] 획득. 가장 가까운 <b>5</b>의 배수로 반올림.",
+        "japanese": "装備者が初めて死亡した時、永続強化を含む基礎[attack]と[health]の合計を最も近い<b>5</b>の倍数に丸めた量の[coin]を得る。"
       },
       "effects": [
         "@WidowsPensionGold"
