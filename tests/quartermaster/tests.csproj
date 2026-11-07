@@ -1,0 +1,5 @@
+<!-- Documento generado el 2026-10-29-1405 -->
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings></PropertyGroup><ItemGroup><Compile Include="../../src/code/CardEffectRequisition.cs" Link="Requisition.cs"/><Compile Include="../../src/code/RodericQuartermaster.cs" Link="Quartermaster.cs"/></ItemGroup></Project>
+<!-- 2026-10-29-1405||codex-freecompany-fx||salidas/build/freecompany-quartermaster-2026-10-29-1402/tests/tests.csproj||pruebas de Quartermaster: limites por turno, preview, identidad de equipo, fusiones, mano llena y coexistencia -->
+
+<!-- 2026-11-07-1203||codex-freecompany-fx||tests/quartermaster/tests.csproj||consolida arnés existente en repositorio; enlaza fuentes locales canónicas, conserva original de laboratorio -->

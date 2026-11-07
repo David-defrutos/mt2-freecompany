@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup><ItemGroup><Compile Include="../../src/code/CardEffectCleanseRandomDebuffed.cs" Link="CardEffectCleanseRandomDebuffed.cs" /><Compile Include="../../src/code/CardEffectWatchtowerToggle.cs" Link="CardEffectWatchtowerToggle.cs" /><Compile Include="../../src/code/FieldForgeMergeCost.cs" Link="FieldForgeMergeCost.cs" /></ItemGroup></Project>
+
+<!-- 2026-11-07-1203||codex-freecompany-fx||tests/cleanse-rooms/tests.csproj||consolida arnés existente en repositorio; enlaza fuentes locales canónicas, conserva original de laboratorio -->

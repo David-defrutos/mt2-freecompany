@@ -14,3 +14,17 @@ Thumbs.db
 desktop.ini
 *.tmp
 *.bak
+
+# Runtime binaries and test build products
+/mt2_freecompany.Plugin.dll
+*.dll.old*
+**/bin/
+**/obj/
+.package-stage-*/
+
+# 2026-11-07-1203||codex-freecompany-fx||.gitignore||excluye DLL local y salidas de tests; fuentes y recursos se versionan en único repositorio
+
+__pycache__/
+*.pyc
+
+# 2026-11-07-1208||codex-freecompany-fx||.gitignore||ignora caches Python del flujo local

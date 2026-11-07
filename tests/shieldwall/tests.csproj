@@ -1,0 +1,5 @@
+<!-- Documento generado el 2026-10-29-1955 -->
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings></PropertyGroup><ItemGroup><Compile Include="../../src/code/ShieldwallInterception.cs" Link="ShieldwallInterception.cs"/></ItemGroup></Project>
+<!-- 2026-10-29-1955||codex-freecompany-fx||salidas/build/freecompany-shieldwall-2026-10-29-1500/tests/tests.csproj||regresiones Intercepcion con fuente real y pipeline simulado en orden nativo, preview, escudos, muerte y efectos originales -->
+
+<!-- 2026-11-07-1203||codex-freecompany-fx||tests/shieldwall/tests.csproj||consolida arnés existente en repositorio; enlaza fuentes locales canónicas, conserva original de laboratorio -->

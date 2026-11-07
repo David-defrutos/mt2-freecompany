@@ -57,4 +57,6 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "Rutas JSON declaradas en Plugin.cs: **$(grep -oE '\"json/[A-Za-z0-9_/]+\.json\"' src/Plugin.cs | sort -u | wc -l)**" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Descarga el artefacto \`mt2_freecompany.Plugin\` y copia el DLL a la raiz de la carpeta del mod." >> $GITHUB_STEP_SUMMARY
+          echo "El desarrollo local usa scripts/freecompany.ps1: Validar compila, Instalar actualiza Default y Empaquetar prepara un ZIP identificado." >> $GITHUB_STEP_SUMMARY
+
+# 2026-11-07-1208||codex-freecompany-fx||.github/workflows/build.yml||actualiza instrucciones del resumen al flujo separado desde repositorio, sin copiar DLL sobre fuentes en plugins

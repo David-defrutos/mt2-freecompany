@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup><ItemGroup><Compile Include="../../src/Plugin.cs" Link="Plugin.cs"/></ItemGroup></Project>
+<!-- 2026-10-27-2205||codex-freecompany-fx||D:\Juegos\MT2_mod\salidas\build\freecompany-external-audit-2026-10-27\loader-tests\tests.csproj||prueba código real Plugin: fallo Harmony aislado, diagnóstico y continuación -->
+<!-- 2026-10-27-2205||codex-freecompany-fx||D:\Juegos\MT2_mod\salidas\build\freecompany-external-audit-2026-10-27\loader-tests\tests.csproj||activa nullable en arnés de Harmony -->
+
+<!-- 2026-11-07-1203||codex-freecompany-fx||tests/loader/tests.csproj||consolida arnés existente en repositorio; enlaza fuentes locales canónicas, conserva original de laboratorio -->

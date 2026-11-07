@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup><ItemGroup><Compile Include="../../src/code/CardEffectRemoveRandomDebuff.cs" Link="Effect.cs" /></ItemGroup></Project>
+
+<!-- 2026-11-07-1203||codex-freecompany-fx||tests/field-dressing/tests.csproj||consolida arnés existente en repositorio; enlaza fuentes locales canónicas, conserva original de laboratorio -->
