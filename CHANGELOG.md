@@ -7,7 +7,7 @@ Latest release in all ten game languages. Full history in English and Spanish.
 ## English
 
 
-### 0.3.2 — 2026-11-07 — BETA
+### 0.3.3 — 2026-11-07 — BETA
 
 #### Content and mechanics
 
@@ -29,32 +29,31 @@ Latest release in all ten game languages. Full history in English and Spanish.
 #### Fixes
 
 - **Severance Pay:** no longer forces the camera to the Pyre room. Gold, damage and visual effects are unchanged.
-- **Tamable:** the hand icon and tooltip only appear in runs with Vesper Beastmaster, including before she is deployed.
-- **Fuse and Banished:** cleansing and reapplying these effects no longer carries over damage from the previous application.
-- **Requisition:** random equipment for units without a matching role now follows the game's battle seed.
 - **Warrior kits:** Steelguard uses the native, non-stackable effect without misleading stack counts.
 
 #### Interface and text
 
-- **Goblin visuals:** slightly enlarged Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer and The New Guy by 10–20%, preserving proportions and foot placement.
 - **Grimoire:** added attack sounds to its Magic Missile variants.
 - **Chirurgeon III:** corrected Spanish and French text.
-- **Beastmaster:** clarified that each deployed Vesper contributes an Ember discount; duplicates still stack.
 - **Widow’s Pension:** clarifies that it pays on the wearer’s first death.
-- **Longbowman:** the ability follows Conductor’s current status name, **Skewer**, while retaining the translated sentences.
-
-#### Compatibility and requirements
-
-- **Conductor:** Minimum version **0.5.17**.
-- **Battle Chaplain:** Last Rites now uses native healing and all-floor targeting, improving compatibility and following the game's standard targeting rules.
-- **Requisition:** removed reliance on a misspelled Trainworks localization prefix.
-- **Harmony:** a failed patch no longer prevents independent patches from loading.
 
 #### Acknowledgements
 
 Thanks to **Rratvar, the Untitled** for reporting equipment replacement, redundant Sniper, misleading Steelguard counts and Severance Pay’s camera movement.
 
 **Bug reports and balance recommendations are very welcome!** Share them in the [Free Company Discord thread](https://discord.com/channels/336546996779483136/1563998046084268032).
+
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Tamable:** the hand icon and tooltip only appear in runs with Vesper Beastmaster, including before she is deployed.
+- **Longbowman:** the ability follows Conductor’s current status name, **Skewer**, while retaining the translated sentences. Minimum Conductor: **0.5.17**.
+- **Beastmaster:** clarified that each deployed Vesper contributes an Ember discount; duplicates still stack.
+- **Compatibility:** a failed Harmony patch no longer prevents independent patches from loading, and errors are clearly logged. Requisition no longer depends on a misspelled Trainworks localization prefix. Unused artwork is excluded from the package.
+
+- **Battle Chaplain:** Last Rites now uses native healing and all-floor targeting, improving compatibility and following the game's standard targeting rules.
+- **Fuse and Banished:** cleansing and reapplying these effects no longer carries over damage from the previous application.
+- **Requisition:** random equipment for units without a matching role now follows the game's battle seed.
+- **Goblin visuals:** slightly enlarged Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer and The New Guy by 10–20%, preserving proportions and foot placement.
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -166,7 +165,7 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 ## Spanish
 
 
-### 0.3.2 — 2026-11-07 — BETA
+### 0.3.3 — 2026-11-07 — BETA
 
 #### Contenido y mecánicas
 
@@ -188,32 +187,31 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 #### Correcciones
 
 - **Severance Pay:** ya no fuerza la cámara hacia la Pira. Oro, daño y efectos visuales sin cambios.
-- **Tamable:** el icono y tooltip de la mano solo aparecen en partidas con Vesper Beastmaster, incluso antes de desplegarla.
-- **Fuse y Banished:** limpiar y volver a aplicar estos efectos ya no arrastra daño de la aplicación anterior.
-- **Requisition:** el equipo aleatorio de unidades sin un rol compatible respeta ahora la semilla de batalla del juego.
 - **Kits de Warrior:** Steelguard usa el estado nativo no acumulable, sin cantidades engañosas.
 
 #### Interfaz y textos
 
-- **Goblins:** aumentados ligeramente Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer y The New Guy entre un 10 y un 20 %, conservando proporciones y apoyo de pies.
 - **Grimoire:** añadido sonido de ataque a sus variantes de Magic Missile.
 - **Chirurgeon III:** corregidos los textos en español y francés.
-- **Beastmaster:** el texto aclara que cada Vesper desplegada aporta un descuento de Ember; las copias siguen acumulándolo.
 - **Widow’s Pension:** aclara que paga en la primera muerte del portador.
-- **Longbowman:** la habilidad usa el nombre actual del estado de Conductor, **Skewer**, conservando las frases traducidas.
-
-#### Compatibilidad y requisitos
-
-- **Conductor:** Versión mínima **0.5.17**.
-- **Battle Chaplain:** Last Rites usa ahora curación y selección de todos los pisos nativas, mejorando la compatibilidad y respetando las reglas normales de objetivos.
-- **Requisition:** eliminada la dependencia de una errata en la localización de Trainworks.
-- **Harmony:** el fallo de un parche ya no impide cargar otros parches independientes.
 
 #### Agradecimientos
 
 Gracias a **Rratvar, the Untitled** por reportar la sustitución de equipos, Sniper redundante, las cantidades engañosas de Steelguard y el movimiento de cámara de Severance Pay.
 
 **¡Los reportes de errores y las recomendaciones de balance son muy bienvenidos!** Puedes compartirlos en el [hilo de Discord de Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
+
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Tamable:** el icono y tooltip de la mano solo aparecen en partidas con Vesper Beastmaster, incluso antes de desplegarla.
+- **Longbowman:** la habilidad usa el nombre actual del estado de Conductor, **Skewer**, conservando las frases traducidas. Conductor mínimo: **0.5.17**.
+- **Beastmaster:** el texto aclara que cada Vesper desplegada aporta un descuento de Ember; las copias siguen acumulándolo.
+- **Compatibilidad:** un parche Harmony fallido ya no impide cargar los independientes y los errores se registran claramente. Requisition deja de depender de una errata en el prefijo de localización de Trainworks. Se excluye del paquete el arte sin uso.
+
+- **Battle Chaplain:** Last Rites usa ahora curación y selección de todos los pisos nativas, mejorando la compatibilidad y respetando las reglas normales de objetivos.
+- **Fuse y Banished:** limpiar y volver a aplicar estos efectos ya no arrastra daño de la aplicación anterior.
+- **Requisition:** el equipo aleatorio de unidades sin un rol compatible respeta ahora la semilla de batalla del juego.
+- **Goblins:** aumentados ligeramente Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer y The New Guy entre un 10 y un 20 %, conservando proporciones y apoyo de pies.
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -362,7 +360,7 @@ comentarios de la ficha.
 ## French
 
 
-### 0.3.2 — 2026-11-07 — BETA
+### 0.3.3 — 2026-11-07 — BETA
 
 #### Contenu et mécaniques
 
@@ -384,32 +382,31 @@ comentarios de la ficha.
 #### Corrections
 
 - **Severance Pay :** ne force plus la caméra vers le Brasier. Or, dégâts et effets visuels inchangés.
-- **Tamable :** l’icône et l’infobulle en main n’apparaissent que dans les parties avec Vesper Beastmaster, même avant son déploiement.
-- **Fuse et Banished :** purifier puis réappliquer ces effets ne conserve plus les dégâts de l'application précédente.
-- **Requisition :** l'équipement aléatoire des unités sans rôle correspondant suit désormais la graine de combat du jeu.
 - **Kits Warrior :** Steelguard utilise l’effet natif non cumulable sans nombre de charges trompeur.
 
 #### Interface et textes
 
-- **Gobelins :** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer et The New Guy sont agrandis de 10 à 20 %, en conservant leurs proportions et la position de leurs pieds.
 - **Grimoire :** ajout de sons d’attaque aux variantes de Magic Missile.
 - **Chirurgeon III :** textes espagnols et français corrigés.
-- **Beastmaster :** le texte précise que chaque Vesper déployée réduit le coût en Ember ; les copies continuent de cumuler cette réduction.
 - **Widow’s Pension :** précise le paiement à la première mort du porteur.
-- **Longbowman :** la capacité utilise le nom actuel de l’état de Conductor, **Skewer**, en conservant les phrases traduites.
-
-#### Compatibilité et prérequis
-
-- **Conductor:** Version minimale **0.5.17**.
-- **Battle Chaplain :** Last Rites utilise désormais les soins et le ciblage de tous les étages natifs, pour une meilleure compatibilité et le respect des règles de ciblage du jeu.
-- **Requisition :** ne dépend plus d’une faute dans le préfixe de localisation de Trainworks.
-- **Harmony :** l’échec d’un patch ne bloque plus les patches indépendants.
 
 #### Remerciements
 
 Merci à **Rratvar, the Untitled** pour ses signalements sur le remplacement d’équipement, Sniper redondant, les charges trompeuses de Steelguard et la caméra de Severance Pay.
 
 **Les signalements de bugs et les suggestions d’équilibrage sont les bienvenus !** Partagez-les dans le [fil Discord de Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
+
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Tamable :** l’icône et l’infobulle en main n’apparaissent que dans les parties avec Vesper Beastmaster, même avant son déploiement.
+- **Longbowman :** la capacité utilise le nom actuel de l’état de Conductor, **Skewer**, en conservant les phrases traduites. Conductor minimum : **0.5.17**.
+- **Beastmaster :** le texte précise que chaque Vesper déployée réduit le coût en Ember ; les copies continuent de cumuler cette réduction.
+- **Compatibilité :** un échec de patch Harmony ne bloque plus les patches indépendants et les erreurs sont clairement consignées. Requisition ne dépend plus d’une faute dans le préfixe de localisation de Trainworks. Les illustrations inutilisées sont exclues du paquet.
+
+- **Battle Chaplain :** Last Rites utilise désormais les soins et le ciblage de tous les étages natifs, pour une meilleure compatibilité et le respect des règles de ciblage du jeu.
+- **Fuse et Banished :** purifier puis réappliquer ces effets ne conserve plus les dégâts de l'application précédente.
+- **Requisition :** l'équipement aléatoire des unités sans rôle correspondant suit désormais la graine de combat du jeu.
+- **Gobelins :** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer et The New Guy sont agrandis de 10 à 20 %, en conservant leurs proportions et la position de leurs pieds.
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -444,7 +441,7 @@ Français
 ## German
 
 
-### 0.3.2 — 2026-11-07 — BETA
+### 0.3.3 — 2026-11-07 — BETA
 
 #### Inhalte und Mechaniken
 
@@ -466,32 +463,31 @@ Français
 #### Fehlerbehebungen
 
 - **Severance Pay:** erzwingt keinen Kamerasprung zum Pyre-Raum mehr. Gold, Schaden und visuelle Effekte unverändert.
-- **Tamable:** Symbol und Tooltip auf der Hand erscheinen nur in Läufen mit Vesper Beastmaster, auch vor ihrem Einsatz.
-- **Fuse und Banished:** Nach dem Entfernen und erneuten Anwenden wird kein Schaden der vorherigen Anwendung mehr übernommen.
-- **Requisition:** Zufällige Ausrüstung für Einheiten ohne passende Rolle folgt jetzt dem Kampf-Zufallsseed des Spiels.
 - **Warrior-Kits:** Steelguard verwendet den nativen, nicht stapelbaren Effekt ohne irreführende Stapelzahl.
 
 #### Oberfläche und Texte
 
-- **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer und The New Guy sind um 10–20 % größer; Proportionen und Fußposition bleiben erhalten.
 - **Grimoire:** Angriffssounds für die Magic-Missile-Varianten ergänzt.
 - **Chirurgeon III:** spanische und französische Texte korrigiert.
-- **Beastmaster:** Der Text erklärt, dass jede ausgespielte Vesper einen Ember-Rabatt beiträgt; Kopien wirken weiterhin zusammen.
 - **Widow’s Pension:** Auszahlung beim ersten Tod des Trägers klargestellt.
-- **Longbowman:** Die Fähigkeit verwendet Conductors aktuellen Statusnamen **Skewer**, während die übersetzten Sätze erhalten bleiben.
-
-#### Kompatibilität und Voraussetzungen
-
-- **Conductor:** Mindestversion **0.5.17**.
-- **Battle Chaplain:** Last Rites verwendet jetzt die native Heilung und Zielauswahl über alle Stockwerke, für bessere Kompatibilität und die üblichen Zielregeln des Spiels.
-- **Requisition:** hängt nicht mehr von einem Tippfehler im Trainworks-Lokalisierungspräfix ab.
-- **Harmony:** ein fehlgeschlagener Patch verhindert nicht mehr das Laden unabhängiger Patches.
 
 #### Danksagungen
 
 Danke an **Rratvar, the Untitled** für die Meldungen zum Ausrüstungswechsel, überflüssigen Sniper, irreführenden Steelguard-Stapeln und zum Kamerasprung bei Severance Pay.
 
 **Fehlermeldungen und Vorschläge zur Spielbalance sind herzlich willkommen!** Teilt sie im [Discord-Thread von Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
+
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Tamable:** Symbol und Tooltip auf der Hand erscheinen nur in Läufen mit Vesper Beastmaster, auch vor ihrem Einsatz.
+- **Longbowman:** Die Fähigkeit verwendet Conductors aktuellen Statusnamen **Skewer**, während die übersetzten Sätze erhalten bleiben. Conductor mindestens **0.5.17**.
+- **Beastmaster:** Der Text erklärt, dass jede ausgespielte Vesper einen Ember-Rabatt beiträgt; Kopien wirken weiterhin zusammen.
+- **Kompatibilität:** Ein fehlgeschlagener Harmony-Patch blockiert unabhängige Patches nicht mehr; Fehler werden deutlich protokolliert. Requisition hängt nicht mehr von einem Tippfehler im Trainworks-Lokalisierungspräfix ab. Ungenutzte Bilder werden nicht mitgeliefert.
+
+- **Battle Chaplain:** Last Rites verwendet jetzt die native Heilung und Zielauswahl über alle Stockwerke, für bessere Kompatibilität und die üblichen Zielregeln des Spiels.
+- **Fuse und Banished:** Nach dem Entfernen und erneuten Anwenden wird kein Schaden der vorherigen Anwendung mehr übernommen.
+- **Requisition:** Zufällige Ausrüstung für Einheiten ohne passende Rolle folgt jetzt dem Kampf-Zufallsseed des Spiels.
+- **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer und The New Guy sind um 10–20 % größer; Proportionen und Fußposition bleiben erhalten.
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -526,7 +522,7 @@ Deutsch
 ## Russian
 
 
-### 0.3.2 — 2026-11-07 — BETA
+### 0.3.3 — 2026-11-07 — BETA
 
 #### Контент и механики
 
@@ -548,32 +544,31 @@ Deutsch
 #### Исправления
 
 - **Severance Pay:** больше не переводит камеру к Пеклу. Золото, урон и визуальные эффекты не изменены.
-- **Tamable:** значок и подсказка в руке появляются только в забегах с Веспер Beastmaster, даже до её призыва.
-- **Fuse и Banished:** после очищения и повторного применения больше не сохраняется урон от предыдущего эффекта.
-- **Requisition:** случайное снаряжение для бойцов без подходящей роли теперь зависит от зерна боевой случайности игры.
 - **Наборы Warrior:** Steelguard использует штатный несуммируемый эффект без неверного числа слоёв.
 
 #### Интерфейс и тексты
 
-- **Гоблины:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer и The New Guy увеличены на 10–20 % с сохранением пропорций и положения ног.
 - **Grimoire:** добавлены звуки атаки для вариантов Magic Missile.
 - **Chirurgeon III:** исправлены испанские и французские тексты.
-- **Beastmaster:** текст уточняет, что каждая Веспер в бою снижает стоимость в Ember; эффекты копий по-прежнему складываются.
 - **Widow’s Pension:** уточнена выплата при первой смерти носителя.
-- **Longbowman:** способность использует текущее название эффекта Conductor — **Skewer**, сохраняя переведённые предложения.
-
-#### Совместимость и требования
-
-- **Conductor:** Минимальная версия **0.5.17**.
-- **Battle Chaplain:** Last Rites теперь использует встроенное лечение и выбор целей на всех этажах, улучшая совместимость и соблюдая обычные правила выбора целей.
-- **Requisition:** устранена зависимость от опечатки в префиксе локализации Trainworks.
-- **Harmony:** сбой одного патча больше не мешает загрузке независимых патчей.
 
 #### Благодарности
 
 Спасибо **Rratvar, the Untitled** за сообщения о замене снаряжения, лишнем Sniper, неверных числах Steelguard и камере Severance Pay.
 
 **Сообщения об ошибках и предложения по балансу очень приветствуются!** Делитесь ими в [ветке Free Company в Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
+
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Tamable:** значок и подсказка в руке появляются только в забегах с Веспер Beastmaster, даже до её призыва.
+- **Longbowman:** способность использует текущее название эффекта Conductor — **Skewer**, сохраняя переведённые предложения. Минимальная версия Conductor: **0.5.17**.
+- **Beastmaster:** текст уточняет, что каждая Веспер в бою снижает стоимость в Ember; эффекты копий по-прежнему складываются.
+- **Совместимость:** ошибка одного патча Harmony больше не мешает независимым патчам; ошибки явно записываются в журнал. Requisition больше не зависит от опечатки в префиксе локализации Trainworks. Неиспользуемые изображения исключены из пакета.
+
+- **Battle Chaplain:** Last Rites теперь использует встроенное лечение и выбор целей на всех этажах, улучшая совместимость и соблюдая обычные правила выбора целей.
+- **Fuse и Banished:** после очищения и повторного применения больше не сохраняется урон от предыдущего эффекта.
+- **Requisition:** случайное снаряжение для бойцов без подходящей роли теперь зависит от зерна боевой случайности игры.
+- **Гоблины:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer и The New Guy увеличены на 10–20 % с сохранением пропорций и положения ног.
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -608,7 +603,7 @@ Deutsch
 ## Portuguese Brazil
 
 
-### 0.3.2 — 2026-11-07 — BETA
+### 0.3.3 — 2026-11-07 — BETA
 
 #### Conteúdo e mecânicas
 
@@ -630,32 +625,31 @@ Deutsch
 #### Correções
 
 - **Severance Pay:** não força mais a câmera para a sala da Pira. Ouro, dano e efeitos visuais mantidos.
-- **Tamable:** o ícone e a dica na mão só aparecem em partidas com Vesper Beastmaster, mesmo antes de ela entrar em jogo.
-- **Fuse e Banished:** remover e reaplicar esses efeitos não conserva mais o dano da aplicação anterior.
-- **Requisition:** equipamentos aleatórios para unidades sem uma função correspondente agora seguem a semente de batalha do jogo.
 - **Kits de Warrior:** Steelguard usa o efeito nativo não cumulativo, sem contagens enganosas.
 
 #### Interface e textos
 
-- **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer e The New Guy aumentaram de 10 a 20 %, mantendo as proporções e a posição dos pés.
 - **Grimoire:** sons de ataque adicionados às variantes de Magic Missile.
 - **Chirurgeon III:** textos em espanhol e francês corrigidos.
-- **Beastmaster:** o texto esclarece que cada Vesper em jogo contribui com um desconto de Ember; as cópias continuam acumulando o efeito.
 - **Widow’s Pension:** esclarece o pagamento na primeira morte do portador.
-- **Longbowman:** a habilidade usa o nome atual do estado de Conductor, **Skewer**, mantendo as frases traduzidas.
-
-#### Compatibilidade e requisitos
-
-- **Conductor:** Versão mínima **0.5.17**.
-- **Battle Chaplain:** Last Rites agora usa cura e seleção de alvos em todos os andares nativas, melhorando a compatibilidade e respeitando as regras normais do jogo.
-- **Requisition:** removida a dependência de um erro no prefixo de localização de Trainworks.
-- **Harmony:** a falha de um patch não impede mais o carregamento de patches independentes.
 
 #### Agradecimentos
 
 Obrigado a **Rratvar, the Untitled** pelos relatos sobre troca de equipamentos, Sniper redundante, contagens enganosas de Steelguard e a câmera de Severance Pay.
 
 **Relatos de bugs e sugestões de balanceamento são muito bem-vindos!** Compartilhe no [tópico de Free Company no Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
+
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Tamable:** o ícone e a dica na mão só aparecem em partidas com Vesper Beastmaster, mesmo antes de ela entrar em jogo.
+- **Longbowman:** a habilidade usa o nome atual do estado de Conductor, **Skewer**, mantendo as frases traduzidas. Conductor mínimo: **0.5.17**.
+- **Beastmaster:** o texto esclarece que cada Vesper em jogo contribui com um desconto de Ember; as cópias continuam acumulando o efeito.
+- **Compatibilidade:** uma falha em um patch Harmony não bloqueia mais os patches independentes, e os erros são registrados claramente. Requisition não depende mais de um erro de digitação no prefixo de localização de Trainworks. Artes não utilizadas são excluídas do pacote.
+
+- **Battle Chaplain:** Last Rites agora usa cura e seleção de alvos em todos os andares nativas, melhorando a compatibilidade e respeitando as regras normais do jogo.
+- **Fuse e Banished:** remover e reaplicar esses efeitos não conserva mais o dano da aplicação anterior.
+- **Requisition:** equipamentos aleatórios para unidades sem uma função correspondente agora seguem a semente de batalha do jogo.
+- **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer e The New Guy aumentaram de 10 a 20 %, mantendo as proporções e a posição dos pés.
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -690,7 +684,7 @@ Português (Brasil)
 ## Chinese
 
 
-### 0.3.2 — 2026-11-07 — BETA
+### 0.3.3 — 2026-11-07 — BETA
 
 #### 内容与机制
 
@@ -712,32 +706,31 @@ Português (Brasil)
 #### 修复
 
 - **Severance Pay：**不再强制将镜头移向薪火房间。金币、伤害与视觉效果不变。
-- **Tamable：**只有选择了 Vesper Beastmaster 路线的旅程才显示手牌图标及提示，无须先部署她。
-- **Fuse 和 Banished：**净化后重新施加这些效果，不再保留上一次施加时的待结算伤害。
-- **Requisition：**为没有匹配职业的单位随机生成装备时，现在使用游戏的战斗随机种子。
 - **Warrior 套件：**Steelguard 使用原生不可叠加状态，不再显示误导性的层数。
 
 #### 界面与文本
 
-- **哥布林外观：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例和脚部位置。
 - **Grimoire：**为 Magic Missile 变体添加攻击音效。
 - **Chirurgeon III：**修正西班牙语和法语文本。
-- **Beastmaster：**文本说明每位在场的维斯珀都会降低 Ember 费用；复制体的效果仍可叠加。
 - **Widow’s Pension：**明确为携带者首次死亡时支付金币。
-- **Longbowman：**技能使用 Conductor 当前的状态名称 **Skewer**，其余句子保留翻译。
-
-#### 兼容性与要求
-
-- **Conductor:** 最低版本 **0.5.17**.
-- **Battle Chaplain：**Last Rites 现使用游戏原生治疗效果和全楼层目标选择，提高兼容性并遵循游戏的正常目标规则。
-- **Requisition：**不再依赖 Trainworks 本地化前缀中的拼写错误。
-- **Harmony：**一个补丁失败不再阻止其他独立补丁加载。
 
 #### 致谢
 
 感谢 **Rratvar, the Untitled** 报告装备替换、多余的 Sniper、Steelguard 层数误导以及 Severance Pay 镜头移动的问题。
 
 **非常欢迎错误报告和平衡性建议！**请在 [Free Company 的 Discord 讨论串](https://discord.com/channels/336546996779483136/1563998046084268032)中分享。
+
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Tamable：**只有选择了 Vesper Beastmaster 路线的旅程才显示手牌图标及提示，无须先部署她。
+- **Longbowman：**技能使用 Conductor 当前的状态名称 **Skewer**，其余句子保留翻译。Conductor 最低版本为 **0.5.17**。
+- **Beastmaster：**文本说明每位在场的维斯珀都会降低 Ember 费用；复制体的效果仍可叠加。
+- **兼容性：**某个 Harmony 补丁失败不再阻止其他独立补丁加载，并明确记录错误。Requisition 不再依赖 Trainworks 本地化前缀中的拼写错误。安装包不再包含未使用的图片。
+
+- **Battle Chaplain：**Last Rites 现使用游戏原生治疗效果和全楼层目标选择，提高兼容性并遵循游戏的正常目标规则。
+- **Fuse 和 Banished：**净化后重新施加这些效果，不再保留上一次施加时的待结算伤害。
+- **Requisition：**为没有匹配职业的单位随机生成装备时，现在使用游戏的战斗随机种子。
+- **哥布林外观：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例和脚部位置。
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -772,7 +765,7 @@ Português (Brasil)
 ## Chinese Traditional
 
 
-### 0.3.2 — 2026-11-07 — BETA
+### 0.3.3 — 2026-11-07 — BETA
 
 #### 內容與機制
 
@@ -794,32 +787,31 @@ Português (Brasil)
 #### 修正
 
 - **Severance Pay：**不再強制將鏡頭移向薪火房間。金幣、傷害與視覺效果不變。
-- **Tamable：**只有選擇了 Vesper Beastmaster 路線的旅程才顯示手牌圖示及提示，無須先部署她。
-- **Fuse 和 Banished：**淨化後重新施加這些效果，不再保留上一次施加時的待結算傷害。
-- **Requisition：**為沒有匹配職業的單位隨機產生裝備時，現在使用遊戲的戰鬥隨機種子。
 - **Warrior 套件：**Steelguard 使用原生不可疊加狀態，不再顯示誤導性的層數。
 
 #### 介面與文字
 
-- **哥布林外觀：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例及腳部位置。
 - **Grimoire：**為 Magic Missile 變體加入攻擊音效。
 - **Chirurgeon III：**修正西班牙文與法文文字。
-- **Beastmaster：**文字說明每位在場的維斯珀都會降低 Ember 費用；複製體的效果仍可疊加。
 - **Widow’s Pension：**明確為攜帶者首次死亡時支付金幣。
-- **Longbowman：**技能使用 Conductor 目前的狀態名稱 **Skewer**，其餘句子保留翻譯。
-
-#### 相容性與需求
-
-- **Conductor:** 最低版本 **0.5.17**.
-- **Battle Chaplain：**Last Rites 現使用遊戲原生治療效果及全樓層目標選擇，提高相容性並遵循遊戲的正常目標規則。
-- **Requisition：**不再依賴 Trainworks 本地化前綴中的拼寫錯誤。
-- **Harmony：**一個修補失敗不再阻止其他獨立修補載入。
 
 #### 致謝
 
 感謝 **Rratvar, the Untitled** 回報裝備替換、多餘的 Sniper、Steelguard 層數誤導以及 Severance Pay 鏡頭移動的問題。
 
 **非常歡迎錯誤回報和平衡性建議！**請在 [Free Company 的 Discord 討論串](https://discord.com/channels/336546996779483136/1563998046084268032)中分享。
+
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Tamable：**只有選擇了 Vesper Beastmaster 路線的旅程才顯示手牌圖示及提示，無須先部署她。
+- **Longbowman：**技能使用 Conductor 目前的狀態名稱 **Skewer**，其餘句子保留翻譯。Conductor 最低版本為 **0.5.17**。
+- **Beastmaster：**文字說明每位在場的維斯珀都會降低 Ember 費用；複製體的效果仍可疊加。
+- **相容性：**某個 Harmony 補丁失敗不再阻止其他獨立補丁載入，並明確記錄錯誤。Requisition 不再依賴 Trainworks 本地化前綴中的拼字錯誤。安裝包不再包含未使用的圖片。
+
+- **Battle Chaplain：**Last Rites 現使用遊戲原生治療效果及全樓層目標選擇，提高相容性並遵循遊戲的正常目標規則。
+- **Fuse 和 Banished：**淨化後重新施加這些效果，不再保留上一次施加時的待結算傷害。
+- **Requisition：**為沒有匹配職業的單位隨機產生裝備時，現在使用遊戲的戰鬥隨機種子。
+- **哥布林外觀：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例及腳部位置。
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -854,7 +846,7 @@ Português (Brasil)
 ## Korean
 
 
-### 0.3.2 — 2026-11-07 — BETA
+### 0.3.3 — 2026-11-07 — BETA
 
 #### 콘텐츠 및 메커니즘
 
@@ -876,32 +868,31 @@ Português (Brasil)
 #### 수정
 
 - **Severance Pay:** 카메라가 화염 방으로 강제 이동하지 않습니다. 골드, 피해 및 시각 효과는 유지됩니다.
-- **Tamable:** 손패 아이콘과 설명은 Vesper Beastmaster가 있는 여정에서만 나타나며, 배치 전에도 표시됩니다.
-- **Fuse 및 Banished:** 정화 후 다시 적용할 때 이전 효과의 예정 피해가 남지 않도록 수정했습니다.
-- **Requisition:** 일치하는 역할이 없는 유닛의 무작위 장비가 이제 게임의 전투 난수 시드를 따릅니다.
 - **Warrior 키트:** Steelguard는 중첩되지 않는 기본 게임 효과를 사용하며 잘못된 중첩 수를 표시하지 않습니다.
 
 #### 인터페이스 및 텍스트
 
-- **고블린 외형:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer 및 The New Guy를 10–20% 확대하고 신체 비율과 발 위치를 유지했습니다.
 - **Grimoire:** Magic Missile 변형에 공격음을 추가했습니다.
 - **Chirurgeon III:** 스페인어와 프랑스어 문구를 수정했습니다.
-- **Beastmaster:** 배치된 베스퍼마다 Ember 비용을 낮춘다는 점을 명시했습니다. 복제된 베스퍼의 효과는 계속 중첩됩니다.
 - **Widow’s Pension:** 장착자의 첫 사망 시 지급됨을 명시했습니다.
-- **Longbowman:** 능력이 번역된 문장을 유지하면서 Conductor의 현재 상태 이름인 **Skewer**를 사용합니다.
-
-#### 호환성 및 요구 사항
-
-- **Conductor:** 최소 버전 **0.5.17**.
-- **Battle Chaplain:** Last Rites가 게임 기본 회복 효과와 모든 층 대상 선택을 사용하여 호환성을 높이고 기본 대상 지정 규칙을 따릅니다.
-- **Requisition:** Trainworks 현지화 접두사의 오타에 대한 의존성을 제거했습니다.
-- **Harmony:** 패치 하나가 실패해도 독립적인 다른 패치는 정상적으로 로드됩니다.
 
 #### 감사의 말
 
 장비 교체, 불필요한 Sniper, Steelguard 중첩 수 표시 및 Severance Pay 카메라 문제를 제보한 **Rratvar, the Untitled**에게 감사드립니다.
 
 **버그 제보와 밸런스 제안은 언제나 환영합니다!** [Free Company Discord 스레드](https://discord.com/channels/336546996779483136/1563998046084268032)에 남겨 주세요.
+
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Tamable:** 손패 아이콘과 설명은 Vesper Beastmaster가 있는 여정에서만 나타나며, 배치 전에도 표시됩니다.
+- **Longbowman:** 능력이 번역된 문장을 유지하면서 Conductor의 현재 상태 이름인 **Skewer**를 사용합니다. Conductor 최소 버전은 **0.5.17**입니다.
+- **Beastmaster:** 배치된 베스퍼마다 Ember 비용을 낮춘다는 점을 명시했습니다. 복제된 베스퍼의 효과는 계속 중첩됩니다.
+- **호환성:** Harmony 패치 하나가 실패해도 독립된 다른 패치는 로드되며 오류가 명확히 기록됩니다. Requisition은 더 이상 Trainworks 번역 키 접두사의 오타에 의존하지 않습니다. 사용하지 않는 이미지는 패키지에서 제외됩니다.
+
+- **Battle Chaplain:** Last Rites가 게임 기본 회복 효과와 모든 층 대상 선택을 사용하여 호환성을 높이고 기본 대상 지정 규칙을 따릅니다.
+- **Fuse 및 Banished:** 정화 후 다시 적용할 때 이전 효과의 예정 피해가 남지 않도록 수정했습니다.
+- **Requisition:** 일치하는 역할이 없는 유닛의 무작위 장비가 이제 게임의 전투 난수 시드를 따릅니다.
+- **고블린 외형:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer 및 The New Guy를 10–20% 확대하고 신체 비율과 발 위치를 유지했습니다.
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -936,7 +927,7 @@ Português (Brasil)
 ## Japanese
 
 
-### 0.3.2 — 2026-11-07 — BETA
+### 0.3.3 — 2026-11-07 — BETA
 
 #### コンテンツと仕組み
 
@@ -958,32 +949,31 @@ Português (Brasil)
 #### 修正
 
 - **Severance Pay：**カメラがパイアの部屋へ強制移動しなくなりました。ゴールド、ダメージ、視覚効果は変更していません。
-- **Tamable：**手札のアイコンと説明は Vesper Beastmaster のいるプレイでのみ表示され、配置前でも表示されます。
-- **Fuse と Banished：**浄化後に再付与しても、前回の付与による保留ダメージが残らないよう修正しました。
-- **Requisition：**対応する役割がないユニットへのランダム装備が、ゲームの戦闘用乱数シードに従うようになりました。
 - **Warriorのキット：**Steelguardは重複しないゲーム標準の効果を使用し、誤解を招くスタック数を表示しません。
 
 #### インターフェースとテキスト
 
-- **ゴブリンの表示：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer、The New Guy を10～20%拡大し、体の比率と足の位置を維持しました。
 - **Grimoire：**Magic Missile各種に攻撃音を追加。
 - **Chirurgeon III：**スペイン語とフランス語のテキストを修正。
-- **Beastmaster：**場のヴェスパー1体ごとに Ember コストを下げることを明記しました。複製による効果は引き続き累積します。
 - **Widow’s Pension：**装備者の最初の死亡時に支払うことを明記。
-- **Longbowman：**翻訳済みの文章を保ちながら、Conductor の現在の状態名 **Skewer** を使用します。
-
-#### 互換性と必要環境
-
-- **Conductor:** 最低バージョン **0.5.17**.
-- **Battle Chaplain：**Last Rites がゲーム標準の回復効果と全階層の対象選択を使用するようになり、互換性が向上し、通常の対象選択ルールに従います。
-- **Requisition：**Trainworksのローカライズ接頭辞の誤記への依存を解消。
-- **Harmony：**一つのパッチが失敗しても、独立した他のパッチは読み込まれます。
 
 #### 謝辞
 
 装備交換、不要なSniper、Steelguardの誤解を招くスタック数、Severance Payのカメラ移動を報告してくれた **Rratvar, the Untitled** に感謝します。
 
 **不具合報告やバランス調整のご提案を歓迎します！** [Free Company の Discord スレッド](https://discord.com/channels/336546996779483136/1563998046084268032)にお寄せください。
+
+### 0.3.2 — 2026-10-27 — BETA
+
+- **Tamable：**手札のアイコンと説明は Vesper Beastmaster のいるプレイでのみ表示され、配置前でも表示されます。
+- **Longbowman：**翻訳済みの文章を保ちながら、Conductor の現在の状態名 **Skewer** を使用します。Conductor の最低バージョンは **0.5.17** です。
+- **Beastmaster：**場のヴェスパー1体ごとに Ember コストを下げることを明記しました。複製による効果は引き続き累積します。
+- **互換性：**Harmony パッチの一つが失敗しても独立した他のパッチは読み込まれ、エラーが明確に記録されます。Requisition は Trainworks の翻訳キー接頭辞の誤字に依存しなくなりました。未使用の画像はパッケージから除外されます。
+
+- **Battle Chaplain：**Last Rites がゲーム標準の回復効果と全階層の対象選択を使用するようになり、互換性が向上し、通常の対象選択ルールに従います。
+- **Fuse と Banished：**浄化後に再付与しても、前回の付与による保留ダメージが残らないよう修正しました。
+- **Requisition：**対応する役割がないユニットへのランダム装備が、ゲームの戦闘用乱数シードに従うようになりました。
+- **ゴブリンの表示：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer、The New Guy を10～20%拡大し、体の比率と足の位置を維持しました。
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -1059,3 +1049,5 @@ Português (Brasil)
 <!-- 2026-11-07-1452||codex-ww-inc||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||Unificar formato multilingüe de cierre: agradecimientos y feedback, conservar historia y cambios -->
 
 <!-- 2026-11-07-1539||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||aplica plantilla aprobada contenido/balance/correcciones/interfaz/compatibilidad/agradecimientos en diez idiomas conservando historial -->
+
+<!-- 2026-11-07-1547||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||crea 0.3.3 con cambios nuevos y restaura íntegro historial 0.3.2 publicado, diez idiomas -->
