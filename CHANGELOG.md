@@ -8,37 +8,49 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ### 0.3.2 — 2026-11-07 — BETA
 
-- **Rooms:** removed Caltrops, The Pit and Paymaster’s Tent from rewards, shops and generated room cards. Existing saved copies remain usable.
+#### Champions and mixed paths
 
+Redesigned Roderic’s and Vesper’s paths so they can be mixed without one activated ability replacing another. This also supports upgrading multiple paths further with Soul Savior without losing abilities.
+
+- **Shieldwall:** replaces Power Slam and the room Armor trigger with Interception, starting Damage Shield 2/3/4 and Start of Turn: gain Valor 3/6/9. Intercepts attack damage for allies behind Roderic on the same floor, after their Damage Shield. Other attack effects remain on their original target. Plunder is now Roderic’s only path with an activated ability.
+- **Quartermaster:** replaces activated Requisition with passive Supply and Salvage. Once each turn, summoning another ally grants its role’s tier I/II/III kit. The first equipped ally that dies each turn returns its equipment to your hand, preserving upgrades and merged equipment. Roderic retains +1/+2/+3 equipment slots. Quartermaster no longer replaces Call to Arms when mixing paths.
 - **Vesper — Grimoire:** replaces Prepare Spell with an automatic free, Ephemeral Magic Missile each turn: 3/4/5 hits, 3 base damage per hit. Starts with Conduit 5 at every path level; Celebrate permanently grants Conduit 2/4/6.
 - **Vesper — Chirurgeon:** replaces Field Surgery with automatic Undying 1 for allies without Undying each turn: one ally on her floor at I, one ally anywhere at II, two distinct allies anywhere at III. Retains healing 3/12/24 and cleansing 1/2/3.
-- **Vesper:** Beastmaster’s Command is now her only activated path ability, preventing mixed paths from replacing it. **Widow’s Pension:** clarifies that it pays on the wearer’s first death.
+- **Beastmaster:** clarified that each deployed Vesper contributes an Ember discount; duplicates still stack.
+
+#### Equipment
 
 - **All 18 kits:** tier I/II/III now costs 0/1/2 Ember. Frozen replaces Ephemeral, allowing unused kits to remain in hand.
 - **Ranger:** +5/+10/+15 attack. No Sniper or Sweep; tier II grants Piercing, tier III grants Piercing and Skewer 1.
 - **Cleric:** +10/+20/+30 health; restores 3/6/9 health and applies Regen 3/6/9 when equipped. Tier III retains Undying 1. **Wizard:** applies Conduit 2/4/6 when equipped; +0/+5/+10 attack, with Mageblade 1 at tier III. Conduit remains when equipment is replaced.
-
-- **Shieldwall:** replaces Power Slam and the room Armor trigger with Interception, starting Damage Shield 2/3/4 and Start of Turn: gain Valor 3/6/9. Intercepts attack damage for allies behind Roderic on the same floor, after their Damage Shield. Other attack effects remain on their original target. Plunder is now Roderic’s only path with an activated ability.
-- **Quartermaster:** passive rules now appear on the card.
-
-- **Quartermaster:** replaces activated Requisition with passive Supply and Salvage. Once each turn, summoning another ally grants its role’s tier I/II/III kit. The first equipped ally that dies each turn returns its equipment to your hand, preserving upgrades and merged equipment. Roderic retains +1/+2/+3 equipment slots. Quartermaster no longer replaces Call to Arms when mixing paths.
-
-Thanks to **Rratvar, the Untitled** for reporting equipment replacement, redundant Sniper, misleading Steelguard counts and Severance Pay’s camera movement.
-
-- **Cleric and Warrior kits:** Regen and Armor are applied when equipping and no longer subtracted when equipment is replaced. Health and other equipment bonuses remain tied to the item; existing values are unchanged.
 - **Warrior kits:** Steelguard uses the native, non-stackable effect without misleading stack counts.
-- **Severance Pay:** no longer forces the camera to the Pyre room. Gold, damage and visual effects are unchanged.
+- **Replacing equipment:** Armor from Warrior, Regen from Cleric and Conduit from Wizard are applied when equipping and remain when the item is replaced. Health, attack and other equipment-bound bonuses are removed normally.
+- **Widow’s Pension:** clarifies that it pays on the wearer’s first death.
 
+#### Rooms
+
+- **Rooms:** removed Caltrops, The Pit and Paymaster’s Tent from rewards, shops and generated room cards. Existing saved copies remain usable.
+
+#### Fixes and compatibility
+
+- **Severance Pay:** no longer forces the camera to the Pyre room. Gold, damage and visual effects are unchanged.
 - **Tamable:** the hand icon and tooltip only appear in runs with Vesper Beastmaster, including before she is deployed.
 - **Longbowman:** the ability follows Conductor’s current status name, **Skewer**, while retaining the translated sentences. Minimum Conductor: **0.5.17**.
-- **Beastmaster:** clarified that each deployed Vesper contributes an Ember discount; duplicates still stack.
-- **Compatibility:** a failed Harmony patch no longer prevents independent patches from loading, and errors are clearly logged. Requisition no longer depends on a misspelled Trainworks localization prefix. Unused artwork is excluded from the package.
-
 - **Battle Chaplain:** Last Rites now uses native healing and all-floor targeting, improving compatibility and following the game's standard targeting rules.
 - **Fuse and Banished:** cleansing and reapplying these effects no longer carries over damage from the previous application.
 - **Requisition:** random equipment for units without a matching role now follows the game's battle seed.
-- **Goblin visuals:** slightly enlarged Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer and The New Guy by 10–20%, preserving proportions and foot placement.
+- **Compatibility:** a failed Harmony patch no longer prevents independent patches from loading, and errors are clearly logged. Requisition no longer depends on a misspelled Trainworks localization prefix. Unused artwork is excluded from the package.
 
+#### Presentation
+
+- **Goblin visuals:** slightly enlarged Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer and The New Guy by 10–20%, preserving proportions and foot placement.
+- Corrected Chirurgeon III’s Spanish and French text. Added attack sounds to Grimoire’s Magic Missile variants. Unused artwork is excluded from the package.
+
+#### Acknowledgements
+
+Thanks to **Rratvar, the Untitled** for reporting equipment replacement, redundant Sniper, misleading Steelguard counts and Severance Pay’s camera movement.
+
+Bug reports and balance recommendations are very welcome! Share them in the [Free Company Discord thread](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -151,37 +163,49 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 
 ### 0.3.2 — 2026-11-07 — BETA
 
-- **Salas:** retiradas Caltrops, The Pit y Paymaster’s Tent de recompensas, tiendas y generación de salas. Las copias de partidas guardadas siguen siendo utilizables.
+#### Campeones y combinación de sendas
 
+Rediseñadas las sendas de Roderic y Vesper para poder combinarlas sin que una habilidad activada sustituya a otra. Esto también permite seguir mejorando varias sendas con Soul Savior sin perder habilidades.
+
+- **Shieldwall:** sustituye Power Slam y el trigger de Armor del piso por Intercepción, escudos iniciales 2/3/4 e Inicio del turno: gana Valor 3/6/9. Intercepta daño de ataques a aliados detrás de Roderic en su piso, después del escudo del aliado. Los otros efectos del ataque conservan su objetivo. Plunder queda como única senda de Roderic con habilidad activada.
+- **Quartermaster:** sustituye Requisition activada por Suministro y Recuperación pasivos. Una vez cada turno, invocar a otro aliado concede el kit I/II/III de su rol. Los equipos del primer aliado equipado que muera cada turno vuelven a la mano, conservando mejoras y fusiones. Roderic mantiene +1/+2/+3 espacios. Quartermaster ya no sustituye Call to Arms al mezclar sendas.
 - **Vesper — Grimoire:** sustituye Prepare Spell por un Magic Missile gratuito y Ephemeral automático cada turno: 3/4/5 impactos de 3 de daño base. Empieza con Conduit 5 en todos los niveles; Celebrate concede permanentemente Conduit 2/4/6.
 - **Vesper — Chirurgeon:** sustituye Field Surgery por Undying 1 automático cada turno para aliados sin Undying: uno de su piso en I, uno de cualquier piso en II y dos distintos de cualquier piso en III. Conserva curación 3/12/24 y limpieza 1/2/3.
-- **Vesper:** Command de Beastmaster es su única habilidad de senda activada, evitando que las sendas mixtas la sustituyan. **Widow’s Pension:** aclara que paga en la primera muerte del portador.
+- **Beastmaster:** el texto aclara que cada Vesper desplegada aporta un descuento de Ember; las copias siguen acumulándolo.
+
+#### Equipamiento
 
 - **Los 18 kits:** coste 0/1/2 Ember para niveles I/II/III. Frozen sustituye Ephemeral y permite conservar en mano los kits sin usar.
 - **Ranger:** +5/+10/+15 de ataque. Sin Sniper ni Sweep; nivel II concede Piercing, nivel III Piercing y Skewer 1.
 - **Cleric:** +10/+20/+30 de vida; al equipar cura 3/6/9 y aplica Regen 3/6/9. Nivel III conserva Undying 1. **Wizard:** al equipar aplica Conduit 2/4/6; +0/+5/+10 de ataque y Mageblade 1 en nivel III. Conduit permanece al sustituir el equipo.
-
-- **Shieldwall:** sustituye Power Slam y el trigger de Armor del piso por Intercepción, escudos iniciales 2/3/4 e Inicio del turno: gana Valor 3/6/9. Intercepta daño de ataques a aliados detrás de Roderic en su piso, después del escudo del aliado. Los otros efectos del ataque conservan su objetivo. Plunder queda como única senda de Roderic con habilidad activada.
-- **Quartermaster:** las reglas pasivas aparecen también en la carta.
-
-- **Quartermaster:** sustituye Requisition activada por Suministro y Recuperación pasivos. Una vez cada turno, invocar a otro aliado concede el kit I/II/III de su rol. Los equipos del primer aliado equipado que muera cada turno vuelven a la mano, conservando mejoras y fusiones. Roderic mantiene +1/+2/+3 espacios. Quartermaster ya no sustituye Call to Arms al mezclar sendas.
-
-Gracias a **Rratvar, the Untitled** por reportar la sustitución de equipos, Sniper redundante, las cantidades engañosas de Steelguard y el movimiento de cámara de Severance Pay.
-
-- **Kits de Cleric y Warrior:** Regen y Armor se aplican al equipar y ya no se restan al sustituir el equipo. La vida y otras ventajas siguen ligadas al objeto; se conservan las cantidades.
 - **Kits de Warrior:** Steelguard usa el estado nativo no acumulable, sin cantidades engañosas.
-- **Severance Pay:** ya no fuerza la cámara hacia la Pira. Oro, daño y efectos visuales sin cambios.
+- **Sustitución de equipo:** Armor de Warrior, Regen de Cleric y Conduit de Wizard se aplican al equipar y permanecen al reemplazar el objeto. La vida, el ataque y las demás ventajas ligadas al equipo se retiran normalmente.
+- **Widow’s Pension:** aclara que paga en la primera muerte del portador.
 
+#### Salas
+
+- **Salas:** retiradas Caltrops, The Pit y Paymaster’s Tent de recompensas, tiendas y generación de salas. Las copias de partidas guardadas siguen siendo utilizables.
+
+#### Correcciones y compatibilidad
+
+- **Severance Pay:** ya no fuerza la cámara hacia la Pira. Oro, daño y efectos visuales sin cambios.
 - **Tamable:** el icono y tooltip de la mano solo aparecen en partidas con Vesper Beastmaster, incluso antes de desplegarla.
 - **Longbowman:** la habilidad usa el nombre actual del estado de Conductor, **Skewer**, conservando las frases traducidas. Conductor mínimo: **0.5.17**.
-- **Beastmaster:** el texto aclara que cada Vesper desplegada aporta un descuento de Ember; las copias siguen acumulándolo.
-- **Compatibilidad:** un parche Harmony fallido ya no impide cargar los independientes y los errores se registran claramente. Requisition deja de depender de una errata en el prefijo de localización de Trainworks. Se excluye del paquete el arte sin uso.
-
 - **Battle Chaplain:** Last Rites usa ahora curación y selección de todos los pisos nativas, mejorando la compatibilidad y respetando las reglas normales de objetivos.
 - **Fuse y Banished:** limpiar y volver a aplicar estos efectos ya no arrastra daño de la aplicación anterior.
 - **Requisition:** el equipo aleatorio de unidades sin un rol compatible respeta ahora la semilla de batalla del juego.
-- **Goblins:** aumentados ligeramente Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer y The New Guy entre un 10 y un 20 %, conservando proporciones y apoyo de pies.
+- **Compatibilidad:** un parche Harmony fallido ya no impide cargar los independientes y los errores se registran claramente. Requisition deja de depender de una errata en el prefijo de localización de Trainworks. Se excluye del paquete el arte sin uso.
 
+#### Presentación
+
+- **Goblins:** aumentados ligeramente Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer y The New Guy entre un 10 y un 20 %, conservando proporciones y apoyo de pies.
+- Corregidos los textos de Chirurgeon III en español y francés. Añadido sonido de ataque a las variantes de Magic Missile de Grimoire. Excluido del paquete el arte sin uso.
+
+#### Agradecimientos
+
+Gracias a **Rratvar, the Untitled** por reportar la sustitución de equipos, Sniper redundante, las cantidades engañosas de Steelguard y el movimiento de cámara de Severance Pay.
+
+¡Los reportes de errores y las recomendaciones de balance son muy bienvenidos! Puedes compartirlos en el [hilo de Discord de Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -331,37 +355,49 @@ comentarios de la ficha.
 
 ### 0.3.2 — 2026-11-07 — BETA
 
-- **Salles :** Caltrops, The Pit et Paymaster’s Tent ne sont plus proposés en récompense, en boutique ni par génération de salles. Les exemplaires sauvegardés restent utilisables.
+#### Champions et voies mixtes
 
+Les voies de Roderic et Vesper ont été repensées pour les combiner sans qu’une capacité activée en remplace une autre, y compris lors d’améliorations supplémentaires de plusieurs voies avec Soul Savior.
+
+- **Shieldwall :** Power Slam et l’Armor du groupe sont remplacés par Interception, Damage Shield 2/3/4 initial et Début du tour : gagne Valor 3/6/9. Intercepte les dégâts d’attaque visant les alliés derrière Roderic au même étage, après leur bouclier. Les autres effets gardent leur cible initiale. Plunder reste sa seule voie avec une capacité activée.
+- **Quartermaster :** Requisition activée devient Ravitaillement et Récupération passifs. Une fois par tour, invoquer un autre allié donne le kit I/II/III de son rôle. Les équipements du premier allié équipé qui meurt chaque tour reviennent en main, avec améliorations et fusions. Roderic conserve +1/+2/+3 emplacements. Quartermaster ne remplace plus Call to Arms en combinant les voies.
 - **Vesper — Grimoire :** remplace Prepare Spell par un Projectile magique gratuit avec Ephemeral chaque tour : 3/4/5 impacts de 3 dégâts de base. Commence avec Conduit 5 à tous les rangs ; Celebrate accorde définitivement Conduit 2/4/6.
 - **Vesper — Chirurgeon :** remplace Field Surgery par Undying 1 automatique chaque tour pour les alliés sans Undying : un sur son étage au rang I, un sur tout étage au II, deux distincts au III. Soins 3/12/24 et purification 1/2/3 conservés.
-- **Vesper :** Command de Beastmaster est sa seule capacité de voie activée, évitant son remplacement en mélangeant les voies. **Widow’s Pension :** précise le paiement à la première mort du porteur.
+- **Beastmaster :** le texte précise que chaque Vesper déployée réduit le coût en Ember ; les copies continuent de cumuler cette réduction.
+
+#### Équipement
 
 - **Les 18 kits :** coût de 0/1/2 Ember aux rangs I/II/III. Frozen remplace Ephemeral et conserve en main les kits inutilisés.
 - **Ranger :** +5/+10/+15 d’attaque. Sans Sniper ni Sweep ; rang II : Piercing, rang III : Piercing et Skewer 1.
 - **Cleric :** +10/+20/+30 PV ; à l’équipement, restaure 3/6/9 PV et applique Regen 3/6/9. Le rang III conserve Undying 1. **Wizard :** applique Conduit 2/4/6 à l’équipement ; +0/+5/+10 d’attaque et Mageblade 1 au rang III. Conduit reste après remplacement de l’équipement.
-
-- **Shieldwall :** Power Slam et l’Armor du groupe sont remplacés par Interception, Damage Shield 2/3/4 initial et Début du tour : gagne Valor 3/6/9. Intercepte les dégâts d’attaque visant les alliés derrière Roderic au même étage, après leur bouclier. Les autres effets gardent leur cible initiale. Plunder reste sa seule voie avec une capacité activée.
-- **Quartermaster :** les règles passives apparaissent sur la carte.
-
-- **Quartermaster :** Requisition activée devient Ravitaillement et Récupération passifs. Une fois par tour, invoquer un autre allié donne le kit I/II/III de son rôle. Les équipements du premier allié équipé qui meurt chaque tour reviennent en main, avec améliorations et fusions. Roderic conserve +1/+2/+3 emplacements. Quartermaster ne remplace plus Call to Arms en combinant les voies.
-
-Merci à **Rratvar, the Untitled** pour ses signalements sur le remplacement d’équipement, Sniper redondant, les charges trompeuses de Steelguard et la caméra de Severance Pay.
-
-- **Kits Cleric et Warrior :** Regen et Armor sont appliquées à l’équipement et ne sont plus soustraites lors de son remplacement. Les PV et les autres bonus restent liés à l’objet ; valeurs inchangées.
 - **Kits Warrior :** Steelguard utilise l’effet natif non cumulable sans nombre de charges trompeur.
-- **Severance Pay :** ne force plus la caméra vers le Brasier. Or, dégâts et effets visuels inchangés.
+- **Remplacement :** Armor de Warrior, Regen de Cleric et Conduit de Wizard sont appliqués à l’équipement et restent après remplacement. Les PV, l’attaque et les autres bonus liés à l’objet sont retirés normalement.
+- **Widow’s Pension :** précise le paiement à la première mort du porteur.
 
+#### Salles
+
+- **Salles :** Caltrops, The Pit et Paymaster’s Tent ne sont plus proposés en récompense, en boutique ni par génération de salles. Les exemplaires sauvegardés restent utilisables.
+
+#### Corrections et compatibilité
+
+- **Severance Pay :** ne force plus la caméra vers le Brasier. Or, dégâts et effets visuels inchangés.
 - **Tamable :** l’icône et l’infobulle en main n’apparaissent que dans les parties avec Vesper Beastmaster, même avant son déploiement.
 - **Longbowman :** la capacité utilise le nom actuel de l’état de Conductor, **Skewer**, en conservant les phrases traduites. Conductor minimum : **0.5.17**.
-- **Beastmaster :** le texte précise que chaque Vesper déployée réduit le coût en Ember ; les copies continuent de cumuler cette réduction.
-- **Compatibilité :** un échec de patch Harmony ne bloque plus les patches indépendants et les erreurs sont clairement consignées. Requisition ne dépend plus d’une faute dans le préfixe de localisation de Trainworks. Les illustrations inutilisées sont exclues du paquet.
-
 - **Battle Chaplain :** Last Rites utilise désormais les soins et le ciblage de tous les étages natifs, pour une meilleure compatibilité et le respect des règles de ciblage du jeu.
 - **Fuse et Banished :** purifier puis réappliquer ces effets ne conserve plus les dégâts de l'application précédente.
 - **Requisition :** l'équipement aléatoire des unités sans rôle correspondant suit désormais la graine de combat du jeu.
-- **Gobelins :** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer et The New Guy sont agrandis de 10 à 20 %, en conservant leurs proportions et la position de leurs pieds.
+- **Compatibilité :** un échec de patch Harmony ne bloque plus les patches indépendants et les erreurs sont clairement consignées. Requisition ne dépend plus d’une faute dans le préfixe de localisation de Trainworks. Les illustrations inutilisées sont exclues du paquet.
 
+#### Présentation
+
+- **Gobelins :** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer et The New Guy sont agrandis de 10 à 20 %, en conservant leurs proportions et la position de leurs pieds.
+- Textes espagnols et français de Chirurgeon III corrigés. Ajout de sons d’attaque aux variantes de Magic Missile de Grimoire. Illustrations inutilisées exclues du paquet.
+
+#### Remerciements
+
+Merci à **Rratvar, the Untitled** pour ses signalements sur le remplacement d’équipement, Sniper redondant, les charges trompeuses de Steelguard et la caméra de Severance Pay.
+
+Vos signalements de bugs et recommandations d’équilibrage sont les bienvenus ! Partagez-les dans le [fil Discord de Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -397,37 +433,49 @@ Français
 
 ### 0.3.2 — 2026-11-07 — BETA
 
-- **Räume:** Caltrops, The Pit und Paymaster’s Tent aus Belohnungen, Läden und erzeugten Raumkarten entfernt. Bereits gespeicherte Exemplare bleiben nutzbar.
+#### Champions und gemischte Pfade
 
+Roderics und Vespers Pfade wurden überarbeitet, damit aktivierbare Fähigkeiten beim Kombinieren nicht mehr ersetzt werden. Das gilt auch für weitere Verbesserungen mehrerer Pfade mit Soul Savior.
+
+- **Shieldwall:** ersetzt Power Slam und den Armor-Auslöser durch Abfangen, anfänglich Damage Shield 2/3/4 und Zugbeginn: Valor 3/6/9 erhalten. Fängt Angriffsschaden für Verbündete hinter Roderic auf derselben Ebene nach deren Schadensschild ab. Andere Angriffseffekte behalten ihr Ziel. Nur Plunder besitzt noch eine aktivierte Fähigkeit.
+- **Quartermaster:** aktive Requisition durch passiven Nachschub und Bergung ersetzt. Einmal pro Zug gewährt das Beschwören eines anderen Verbündeten dessen Rollen-Kit I/II/III. Die Ausrüstung des ersten ausgerüsteten Verbündeten, der pro Zug stirbt, kehrt mit Verbesserungen und Fusionen auf die Hand zurück. Roderic behält +1/+2/+3 Plätze. Quartermaster überschreibt Call to Arms beim Mischen der Pfade nicht mehr.
 - **Vesper — Grimoire:** ersetzt Prepare Spell durch ein kostenloses Magisches Geschoss mit Ephemeral pro Zug: 3/4/5 Treffer mit je 3 Basisschaden. Beginnt auf jeder Stufe mit Conduit 5; Celebrate gewährt dauerhaft Conduit 2/4/6.
 - **Vesper — Chirurgeon:** ersetzt Field Surgery durch automatisches Undying 1 pro Zug für Verbündete ohne Undying: einen auf ihrem Stockwerk auf I, einen auf beliebigem Stockwerk auf II, zwei verschiedene auf III. Heilung 3/12/24 und Reinigung 1/2/3 bleiben erhalten.
-- **Vesper:** Beastmasters Command ist ihre einzige aktivierbare Pfadfähigkeit und wird beim Mischen nicht mehr ersetzt. **Widow’s Pension:** Auszahlung beim ersten Tod des Trägers klargestellt.
+- **Beastmaster:** Der Text erklärt, dass jede ausgespielte Vesper einen Ember-Rabatt beiträgt; Kopien wirken weiterhin zusammen.
+
+#### Ausrüstung
 
 - **Alle 18 Kits:** Rang I/II/III kostet jetzt 0/1/2 Ember. Frozen ersetzt Ephemeral und hält ungenutzte Kits auf der Hand.
 - **Ranger:** +5/+10/+15 Angriff. Kein Sniper oder Sweep; Rang II gewährt Piercing, Rang III Piercing und Skewer 1.
 - **Cleric:** +10/+20/+30 Lebenspunkte; stellt beim Ausrüsten 3/6/9 Leben wieder her und gewährt Regen 3/6/9. Rang III behält Undying 1. **Wizard:** gewährt beim Ausrüsten Conduit 2/4/6; +0/+5/+10 Angriff, mit Mageblade 1 auf Rang III. Conduit bleibt nach dem Ausrüstungswechsel erhalten.
-
-- **Shieldwall:** ersetzt Power Slam und den Armor-Auslöser durch Abfangen, anfänglich Damage Shield 2/3/4 und Zugbeginn: Valor 3/6/9 erhalten. Fängt Angriffsschaden für Verbündete hinter Roderic auf derselben Ebene nach deren Schadensschild ab. Andere Angriffseffekte behalten ihr Ziel. Nur Plunder besitzt noch eine aktivierte Fähigkeit.
-- **Quartermaster:** passive Regeln werden auf der Karte angezeigt.
-
-- **Quartermaster:** aktive Requisition durch passiven Nachschub und Bergung ersetzt. Einmal pro Zug gewährt das Beschwören eines anderen Verbündeten dessen Rollen-Kit I/II/III. Die Ausrüstung des ersten ausgerüsteten Verbündeten, der pro Zug stirbt, kehrt mit Verbesserungen und Fusionen auf die Hand zurück. Roderic behält +1/+2/+3 Plätze. Quartermaster überschreibt Call to Arms beim Mischen der Pfade nicht mehr.
-
-Danke an **Rratvar, the Untitled** für die Meldungen zum Ausrüstungswechsel, überflüssigen Sniper, irreführenden Steelguard-Stapeln und zum Kamerasprung bei Severance Pay.
-
-- **Cleric- und Warrior-Kits:** Regen und Armor werden beim Ausrüsten gewährt und beim Austausch nicht mehr abgezogen. Lebenspunkte und andere Boni bleiben an den Gegenstand gebunden; Werte unverändert.
 - **Warrior-Kits:** Steelguard verwendet den nativen, nicht stapelbaren Effekt ohne irreführende Stapelzahl.
-- **Severance Pay:** erzwingt keinen Kamerasprung zum Pyre-Raum mehr. Gold, Schaden und visuelle Effekte unverändert.
+- **Ausrüstungswechsel:** Armor von Warrior, Regen von Cleric und Conduit von Wizard bleiben nach dem Wechsel erhalten. Leben, Angriff und andere an den Gegenstand gebundene Boni werden wie üblich entfernt.
+- **Widow’s Pension:** Auszahlung beim ersten Tod des Trägers klargestellt.
 
+#### Räume
+
+- **Räume:** Caltrops, The Pit und Paymaster’s Tent aus Belohnungen, Läden und erzeugten Raumkarten entfernt. Bereits gespeicherte Exemplare bleiben nutzbar.
+
+#### Fehlerbehebungen und Kompatibilität
+
+- **Severance Pay:** erzwingt keinen Kamerasprung zum Pyre-Raum mehr. Gold, Schaden und visuelle Effekte unverändert.
 - **Tamable:** Symbol und Tooltip auf der Hand erscheinen nur in Läufen mit Vesper Beastmaster, auch vor ihrem Einsatz.
 - **Longbowman:** Die Fähigkeit verwendet Conductors aktuellen Statusnamen **Skewer**, während die übersetzten Sätze erhalten bleiben. Conductor mindestens **0.5.17**.
-- **Beastmaster:** Der Text erklärt, dass jede ausgespielte Vesper einen Ember-Rabatt beiträgt; Kopien wirken weiterhin zusammen.
-- **Kompatibilität:** Ein fehlgeschlagener Harmony-Patch blockiert unabhängige Patches nicht mehr; Fehler werden deutlich protokolliert. Requisition hängt nicht mehr von einem Tippfehler im Trainworks-Lokalisierungspräfix ab. Ungenutzte Bilder werden nicht mitgeliefert.
-
 - **Battle Chaplain:** Last Rites verwendet jetzt die native Heilung und Zielauswahl über alle Stockwerke, für bessere Kompatibilität und die üblichen Zielregeln des Spiels.
 - **Fuse und Banished:** Nach dem Entfernen und erneuten Anwenden wird kein Schaden der vorherigen Anwendung mehr übernommen.
 - **Requisition:** Zufällige Ausrüstung für Einheiten ohne passende Rolle folgt jetzt dem Kampf-Zufallsseed des Spiels.
-- **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer und The New Guy sind um 10–20 % größer; Proportionen und Fußposition bleiben erhalten.
+- **Kompatibilität:** Ein fehlgeschlagener Harmony-Patch blockiert unabhängige Patches nicht mehr; Fehler werden deutlich protokolliert. Requisition hängt nicht mehr von einem Tippfehler im Trainworks-Lokalisierungspräfix ab. Ungenutzte Bilder werden nicht mitgeliefert.
 
+#### Darstellung
+
+- **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer und The New Guy sind um 10–20 % größer; Proportionen und Fußposition bleiben erhalten.
+- Spanische und französische Texte von Chirurgeon III korrigiert. Angriffssounds für Grimoires Magic-Missile-Varianten ergänzt. Ungenutzte Bilder aus dem Paket entfernt.
+
+#### Danksagungen
+
+Danke an **Rratvar, the Untitled** für die Meldungen zum Ausrüstungswechsel, überflüssigen Sniper, irreführenden Steelguard-Stapeln und zum Kamerasprung bei Severance Pay.
+
+Fehlerberichte und Balance-Vorschläge sind sehr willkommen! Teilt sie im [Discord-Thread von Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -463,37 +511,49 @@ Deutsch
 
 ### 0.3.2 — 2026-11-07 — BETA
 
-- **Комнаты:** Caltrops, The Pit и Paymaster’s Tent больше не появляются в наградах, магазинах и при создании комнат. Копии в сохранениях остаются доступными.
+#### Чемпионы и сочетание путей
 
+Пути Родерика и Веспер переработаны: их можно сочетать без замены одной активируемой способности другой, в том числе при дальнейших улучшениях нескольких путей с Soul Savior.
+
+- **Shieldwall:** Power Slam и групповая Armor заменены Перехватом, начальными Damage Shield 2/3/4 и получением Valor 3/6/9 в начале хода. Перехватывает урон атак по союзникам позади Родерика на его этаже после их щита. Прочие эффекты сохраняют исходную цель. Активная способность остаётся только у Plunder.
+- **Quartermaster:** активная Requisition заменена пассивными Снабжением и Возвратом. Раз в ход призыв другого союзника даёт комплект I/II/III его роли. Снаряжение первого экипированного союзника, погибшего за ход, возвращается в руку с улучшениями и слияниями. Родерик сохраняет +1/+2/+3 слота. Quartermaster больше не заменяет Call to Arms при смешивании путей.
 - **Веспер — Grimoire:** вместо Prepare Spell каждый ход автоматически создаёт бесплатную Волшебную стрелу с Ephemeral: 3/4/5 попаданий по 3 базового урона. Начальный Conduit 5 на всех уровнях; Celebrate навсегда даёт Conduit 2/4/6.
 - **Веспер — Chirurgeon:** вместо Field Surgery каждый ход автоматически даёт Undying 1 союзникам без Undying: одному на её этаже на I, одному на любом этаже на II, двум разным на III. Лечение 3/12/24 и очищение 1/2/3 сохранены.
-- **Веспер:** Command пути Beastmaster — единственная активируемая способность пути; смешение путей больше её не заменяет. **Widow’s Pension:** уточнена выплата при первой смерти носителя.
+- **Beastmaster:** текст уточняет, что каждая Веспер в бою снижает стоимость в Ember; эффекты копий по-прежнему складываются.
+
+#### Снаряжение
 
 - **Все 18 наборов:** стоимость I/II/III уровня — 0/1/2 Ember. Frozen заменяет Ephemeral, сохраняя неиспользованные наборы в руке.
 - **Ranger:** +5/+10/+15 атаки. Без Sniper и Sweep; уровень II даёт Piercing, уровень III — Piercing и Skewer 1.
 - **Cleric:** +10/+20/+30 здоровья; при экипировке восстанавливает 3/6/9 здоровья и даёт Regen 3/6/9. На III уровне сохраняется Undying 1. **Wizard:** при экипировке даёт Conduit 2/4/6; +0/+5/+10 атаки и Mageblade 1 на III уровне. Conduit сохраняется при замене снаряжения.
-
-- **Shieldwall:** Power Slam и групповая Armor заменены Перехватом, начальными Damage Shield 2/3/4 и получением Valor 3/6/9 в начале хода. Перехватывает урон атак по союзникам позади Родерика на его этаже после их щита. Прочие эффекты сохраняют исходную цель. Активная способность остаётся только у Plunder.
-- **Quartermaster:** пассивные правила отображаются на карте.
-
-- **Quartermaster:** активная Requisition заменена пассивными Снабжением и Возвратом. Раз в ход призыв другого союзника даёт комплект I/II/III его роли. Снаряжение первого экипированного союзника, погибшего за ход, возвращается в руку с улучшениями и слияниями. Родерик сохраняет +1/+2/+3 слота. Quartermaster больше не заменяет Call to Arms при смешивании путей.
-
-Спасибо **Rratvar, the Untitled** за сообщения о замене снаряжения, лишнем Sniper, неверных числах Steelguard и камере Severance Pay.
-
-- **Наборы Cleric и Warrior:** Regen и Armor накладываются при экипировке и больше не вычитаются при замене. Здоровье и прочие бонусы остаются привязаны к предмету; значения не изменены.
 - **Наборы Warrior:** Steelguard использует штатный несуммируемый эффект без неверного числа слоёв.
-- **Severance Pay:** больше не переводит камеру к Пеклу. Золото, урон и визуальные эффекты не изменены.
+- **Замена снаряжения:** Armor от Warrior, Regen от Cleric и Conduit от Wizard сохраняются после замены. Здоровье, атака и другие привязанные к предмету бонусы снимаются как обычно.
+- **Widow’s Pension:** уточнена выплата при первой смерти носителя.
 
+#### Комнаты
+
+- **Комнаты:** Caltrops, The Pit и Paymaster’s Tent больше не появляются в наградах, магазинах и при создании комнат. Копии в сохранениях остаются доступными.
+
+#### Исправления и совместимость
+
+- **Severance Pay:** больше не переводит камеру к Пеклу. Золото, урон и визуальные эффекты не изменены.
 - **Tamable:** значок и подсказка в руке появляются только в забегах с Веспер Beastmaster, даже до её призыва.
 - **Longbowman:** способность использует текущее название эффекта Conductor — **Skewer**, сохраняя переведённые предложения. Минимальная версия Conductor: **0.5.17**.
-- **Beastmaster:** текст уточняет, что каждая Веспер в бою снижает стоимость в Ember; эффекты копий по-прежнему складываются.
-- **Совместимость:** ошибка одного патча Harmony больше не мешает независимым патчам; ошибки явно записываются в журнал. Requisition больше не зависит от опечатки в префиксе локализации Trainworks. Неиспользуемые изображения исключены из пакета.
-
 - **Battle Chaplain:** Last Rites теперь использует встроенное лечение и выбор целей на всех этажах, улучшая совместимость и соблюдая обычные правила выбора целей.
 - **Fuse и Banished:** после очищения и повторного применения больше не сохраняется урон от предыдущего эффекта.
 - **Requisition:** случайное снаряжение для бойцов без подходящей роли теперь зависит от зерна боевой случайности игры.
-- **Гоблины:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer и The New Guy увеличены на 10–20 % с сохранением пропорций и положения ног.
+- **Совместимость:** ошибка одного патча Harmony больше не мешает независимым патчам; ошибки явно записываются в журнал. Requisition больше не зависит от опечатки в префиксе локализации Trainworks. Неиспользуемые изображения исключены из пакета.
 
+#### Оформление
+
+- **Гоблины:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer и The New Guy увеличены на 10–20 % с сохранением пропорций и положения ног.
+- Исправлены испанские и французские тексты Chirurgeon III. Варианты Magic Missile пути Grimoire получили звуки атаки. Неиспользуемые изображения исключены из пакета.
+
+#### Благодарности
+
+Спасибо **Rratvar, the Untitled** за сообщения о замене снаряжения, лишнем Sniper, неверных числах Steelguard и камере Severance Pay.
+
+Сообщения об ошибках и предложения по балансу очень приветствуются! Пишите в [ветке Free Company в Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -529,37 +589,49 @@ Deutsch
 
 ### 0.3.2 — 2026-11-07 — BETA
 
-- **Salas:** Caltrops, The Pit e Paymaster’s Tent foram removidas das recompensas, lojas e geração de salas. Cópias em partidas salvas continuam utilizáveis.
+#### Campeões e combinação de caminhos
 
+Os caminhos de Roderic e Vesper foram reformulados para permitir combinações sem substituir habilidades ativadas, inclusive ao continuar melhorando vários caminhos com Soul Savior.
+
+- **Shieldwall:** Power Slam e o gatilho de Armor do andar dão lugar a Interceptação, Damage Shield 2/3/4 inicial e Início do turno: recebe Valor 3/6/9. Intercepta dano de ataques contra aliados atrás de Roderic no mesmo andar, após o escudo deles. Os outros efeitos mantêm o alvo original. Só Plunder mantém habilidade ativa.
+- **Quartermaster:** Requisition ativa substituída por Suprimento e Recuperação passivos. Uma vez por turno, invocar outro aliado concede o kit I/II/III de sua função. O equipamento do primeiro aliado equipado que morrer a cada turno volta à mão, preservando melhorias e fusões. Roderic mantém +1/+2/+3 espaços. Quartermaster não substitui mais Call to Arms ao combinar caminhos.
 - **Vesper — Grimoire:** substitui Prepare Spell por um Míssil Mágico gratuito com Ephemeral automático por turno: 3/4/5 impactos de 3 de dano base. Começa com Conduit 5 em todos os níveis; Celebrate concede Conduit 2/4/6 permanentemente.
 - **Vesper — Chirurgeon:** substitui Field Surgery por Undying 1 automático por turno em aliados sem Undying: um no seu andar em I, um em qualquer andar em II, dois distintos em III. Mantém cura 3/12/24 e purificação 1/2/3.
-- **Vesper:** Command de Beastmaster é sua única habilidade de caminho ativada e não é substituída ao combinar caminhos. **Widow’s Pension:** esclarece o pagamento na primeira morte do portador.
+- **Beastmaster:** o texto esclarece que cada Vesper em jogo contribui com um desconto de Ember; as cópias continuam acumulando o efeito.
+
+#### Equipamentos
 
 - **Todos os 18 kits:** custo 0/1/2 Ember nos níveis I/II/III. Frozen substitui Ephemeral e mantém os kits não usados na mão.
 - **Ranger:** +5/+10/+15 de ataque. Sem Sniper ou Sweep; nível II concede Piercing e nível III concede Piercing e Skewer 1.
 - **Cleric:** +10/+20/+30 de vida; ao equipar, cura 3/6/9 e aplica Regen 3/6/9. Nível III mantém Undying 1. **Wizard:** aplica Conduit 2/4/6 ao equipar; +0/+5/+10 de ataque e Mageblade 1 no nível III. Conduit permanece ao trocar o equipamento.
-
-- **Shieldwall:** Power Slam e o gatilho de Armor do andar dão lugar a Interceptação, Damage Shield 2/3/4 inicial e Início do turno: recebe Valor 3/6/9. Intercepta dano de ataques contra aliados atrás de Roderic no mesmo andar, após o escudo deles. Os outros efeitos mantêm o alvo original. Só Plunder mantém habilidade ativa.
-- **Quartermaster:** as regras passivas aparecem na carta.
-
-- **Quartermaster:** Requisition ativa substituída por Suprimento e Recuperação passivos. Uma vez por turno, invocar outro aliado concede o kit I/II/III de sua função. O equipamento do primeiro aliado equipado que morrer a cada turno volta à mão, preservando melhorias e fusões. Roderic mantém +1/+2/+3 espaços. Quartermaster não substitui mais Call to Arms ao combinar caminhos.
-
-Obrigado a **Rratvar, the Untitled** pelos relatos sobre troca de equipamentos, Sniper redundante, contagens enganosas de Steelguard e a câmera de Severance Pay.
-
-- **Kits de Cleric e Warrior:** Regen e Armor são aplicadas ao equipar e não são mais subtraídas ao trocar o equipamento. Vida e outros bônus continuam vinculados ao item; valores mantidos.
 - **Kits de Warrior:** Steelguard usa o efeito nativo não cumulativo, sem contagens enganosas.
-- **Severance Pay:** não força mais a câmera para a sala da Pira. Ouro, dano e efeitos visuais mantidos.
+- **Substituição:** Armor de Warrior, Regen de Cleric e Conduit de Wizard permanecem após substituir o item. Vida, ataque e outros bônus vinculados ao equipamento são removidos normalmente.
+- **Widow’s Pension:** esclarece o pagamento na primeira morte do portador.
 
+#### Salas
+
+- **Salas:** Caltrops, The Pit e Paymaster’s Tent foram removidas das recompensas, lojas e geração de salas. Cópias em partidas salvas continuam utilizáveis.
+
+#### Correções e compatibilidade
+
+- **Severance Pay:** não força mais a câmera para a sala da Pira. Ouro, dano e efeitos visuais mantidos.
 - **Tamable:** o ícone e a dica na mão só aparecem em partidas com Vesper Beastmaster, mesmo antes de ela entrar em jogo.
 - **Longbowman:** a habilidade usa o nome atual do estado de Conductor, **Skewer**, mantendo as frases traduzidas. Conductor mínimo: **0.5.17**.
-- **Beastmaster:** o texto esclarece que cada Vesper em jogo contribui com um desconto de Ember; as cópias continuam acumulando o efeito.
-- **Compatibilidade:** uma falha em um patch Harmony não bloqueia mais os patches independentes, e os erros são registrados claramente. Requisition não depende mais de um erro de digitação no prefixo de localização de Trainworks. Artes não utilizadas são excluídas do pacote.
-
 - **Battle Chaplain:** Last Rites agora usa cura e seleção de alvos em todos os andares nativas, melhorando a compatibilidade e respeitando as regras normais do jogo.
 - **Fuse e Banished:** remover e reaplicar esses efeitos não conserva mais o dano da aplicação anterior.
 - **Requisition:** equipamentos aleatórios para unidades sem uma função correspondente agora seguem a semente de batalha do jogo.
-- **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer e The New Guy aumentaram de 10 a 20 %, mantendo as proporções e a posição dos pés.
+- **Compatibilidade:** uma falha em um patch Harmony não bloqueia mais os patches independentes, e os erros são registrados claramente. Requisition não depende mais de um erro de digitação no prefixo de localização de Trainworks. Artes não utilizadas são excluídas do pacote.
 
+#### Apresentação
+
+- **Goblins:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer e The New Guy aumentaram de 10 a 20 %, mantendo as proporções e a posição dos pés.
+- Corrigidos os textos em espanhol e francês de Chirurgeon III. Sons de ataque adicionados às variantes de Magic Missile de Grimoire. Arte não utilizada excluída do pacote.
+
+#### Agradecimentos
+
+Obrigado a **Rratvar, the Untitled** pelos relatos sobre troca de equipamentos, Sniper redundante, contagens enganosas de Steelguard e a câmera de Severance Pay.
+
+Relatos de bugs e recomendações de balanceamento são muito bem-vindos! Compartilhe no [tópico de Free Company no Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -595,37 +667,49 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-11-07 — BETA
 
-- **房间：**Caltrops、The Pit 和 Paymaster’s Tent 不再出现在奖励、商店或生成的房间牌中。存档中的现有卡牌仍可使用。
+#### 勇者与混合路线
 
+重做了 Roderic 和 Vesper 的路线，混合路线不再导致主动技能相互覆盖。使用 Soul Savior 继续升级多条路线时，也不会失去技能。
+
+- **Shieldwall：**Power Slam 和全层 Armor 触发改为拦截、初始 Damage Shield 2/3/4，以及回合开始获得 Valor 3/6/9。在友军伤害护盾结算后，承担本层身后友军受到的攻击伤害；其他攻击效果仍作用于原目标。Roderic 仅 Plunder 路线保留主动能力。
+- **Quartermaster：**主动 Requisition 改为被动补给与回收。每回合首次召唤另一名友军时，获得其职业的 I/II/III 级装备。每回合首名阵亡的已装备友军的装备返回手牌，保留升级与融合。Roderic 保留额外 1/2/3 个装备栏。混合路线时 Quartermaster 不再替换 Call to Arms。
 - **Vesper — Grimoire：**移除 Prepare Spell，每回合自动生成免费的 Ephemeral 魔法飞弹，攻击3/4/5次，每次基础伤害3。所有等级初始获得 Conduit 5；Celebrate 永久获得 Conduit 2/4/6。
 - **Vesper — Chirurgeon：**移除 Field Surgery，每回合自动为没有 Undying 的友军施加 Undying 1：I级本层一名，II级任意楼层一名，III级任意楼层两名不同友军。保留治疗3/12/24及净化1/2/3。
-- **Vesper：**Beastmaster 的 Command 成为唯一的路线主动技能，混合路线不再覆盖它。**Widow’s Pension：**明确为携带者首次死亡时支付金币。
+- **Beastmaster：**文本说明每位在场的维斯珀都会降低 Ember 费用；复制体的效果仍可叠加。
+
+#### 装备
 
 - **全部18件套件装备：**I/II/III级费用改为0/1/2 Ember。Frozen替代Ephemeral，未使用的套件可保留在手中。
 - **Ranger：**攻击力+5/+10/+15。移除Sniper与Sweep；II级获得Piercing，III级获得Piercing和Skewer 1。
 - **Cleric：**生命+10/+20/+30；装备时恢复3/6/9生命并施加Regen 3/6/9。III级保留Undying 1。**Wizard：**装备时施加Conduit 2/4/6；攻击力+0/+5/+10，III级提供Mageblade 1。更换装备后Conduit仍保留。
-
-- **Shieldwall：**Power Slam 和全层 Armor 触发改为拦截、初始 Damage Shield 2/3/4，以及回合开始获得 Valor 3/6/9。在友军伤害护盾结算后，承担本层身后友军受到的攻击伤害；其他攻击效果仍作用于原目标。Roderic 仅 Plunder 路线保留主动能力。
-- **Quartermaster：**卡牌现在显示被动规则。
-
-- **Quartermaster：**主动 Requisition 改为被动补给与回收。每回合首次召唤另一名友军时，获得其职业的 I/II/III 级装备。每回合首名阵亡的已装备友军的装备返回手牌，保留升级与融合。Roderic 保留额外 1/2/3 个装备栏。混合路线时 Quartermaster 不再替换 Call to Arms。
-
-感谢 **Rratvar, the Untitled** 报告装备替换、多余的 Sniper、Steelguard 层数误导以及 Severance Pay 镜头移动的问题。
-
-- **Cleric 与 Warrior 套件：**装备时施加 Regen 或 Armor，替换装备时不再扣除。生命及其他装备加成仍绑定于装备；数值不变。
 - **Warrior 套件：**Steelguard 使用原生不可叠加状态，不再显示误导性的层数。
-- **Severance Pay：**不再强制将镜头移向薪火房间。金币、伤害与视觉效果不变。
+- **替换装备：**Warrior 的 Armor、Cleric 的 Regen 和 Wizard 的 Conduit 在装备时施加，替换后仍保留。生命、攻击及其他绑定装备的加成照常移除。
+- **Widow’s Pension：**明确为携带者首次死亡时支付金币。
 
+#### 房间
+
+- **房间：**Caltrops、The Pit 和 Paymaster’s Tent 不再出现在奖励、商店或生成的房间牌中。存档中的现有卡牌仍可使用。
+
+#### 修复与兼容性
+
+- **Severance Pay：**不再强制将镜头移向薪火房间。金币、伤害与视觉效果不变。
 - **Tamable：**只有选择了 Vesper Beastmaster 路线的旅程才显示手牌图标及提示，无须先部署她。
 - **Longbowman：**技能使用 Conductor 当前的状态名称 **Skewer**，其余句子保留翻译。Conductor 最低版本为 **0.5.17**。
-- **Beastmaster：**文本说明每位在场的维斯珀都会降低 Ember 费用；复制体的效果仍可叠加。
-- **兼容性：**某个 Harmony 补丁失败不再阻止其他独立补丁加载，并明确记录错误。Requisition 不再依赖 Trainworks 本地化前缀中的拼写错误。安装包不再包含未使用的图片。
-
 - **Battle Chaplain：**Last Rites 现使用游戏原生治疗效果和全楼层目标选择，提高兼容性并遵循游戏的正常目标规则。
 - **Fuse 和 Banished：**净化后重新施加这些效果，不再保留上一次施加时的待结算伤害。
 - **Requisition：**为没有匹配职业的单位随机生成装备时，现在使用游戏的战斗随机种子。
-- **哥布林外观：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例和脚部位置。
+- **兼容性：**某个 Harmony 补丁失败不再阻止其他独立补丁加载，并明确记录错误。Requisition 不再依赖 Trainworks 本地化前缀中的拼写错误。安装包不再包含未使用的图片。
 
+#### 表现
+
+- **哥布林外观：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例和脚部位置。
+- 修正 Chirurgeon III 的西班牙语和法语文本。为 Grimoire 的 Magic Missile 变体添加攻击音效。安装包不再包含未使用的插画。
+
+#### 致谢
+
+感谢 **Rratvar, the Untitled** 报告装备替换、多余的 Sniper、Steelguard 层数误导以及 Severance Pay 镜头移动的问题。
+
+非常欢迎错误报告和平衡建议！请发到 [Free Company 的 Discord 讨论串](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -661,37 +745,49 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-11-07 — BETA
 
-- **房間：**Caltrops、The Pit 和 Paymaster’s Tent 不再出現在獎勵、商店或生成的房間牌中。存檔中的現有卡牌仍可使用。
+#### 勇者與混合路線
 
+重製了 Roderic 和 Vesper 的路線，混合路線不再導致主動技能互相覆蓋。使用 Soul Savior 繼續升級多條路線時，也不會失去技能。
+
+- **Shieldwall：**Power Slam 和全層 Armor 觸發改為攔截、初始 Damage Shield 2/3/4，以及回合開始獲得 Valor 3/6/9。在友軍傷害護盾結算後，承擔本層身後友軍受到的攻擊傷害；其他攻擊效果仍作用於原目標。Roderic 僅 Plunder 路線保留主動能力。
+- **Quartermaster：**主動 Requisition 改為被動補給與回收。每回合首次召喚另一名友軍時，獲得其職業的 I/II/III 級裝備。每回合首名陣亡的已裝備友軍的裝備返回手牌，保留升級與融合。Roderic 保留額外 1/2/3 個裝備欄。混合路線時 Quartermaster 不再替換 Call to Arms。
 - **Vesper — Grimoire：**移除 Prepare Spell，每回合自動生成免費的 Ephemeral 魔法飛彈，攻擊3/4/5次，每次基礎傷害3。所有等級初始獲得 Conduit 5；Celebrate 永久獲得 Conduit 2/4/6。
 - **Vesper — Chirurgeon：**移除 Field Surgery，每回合自動為沒有 Undying 的友軍施加 Undying 1：I級本層一名，II級任意樓層一名，III級任意樓層兩名不同友軍。保留治療3/12/24及淨化1/2/3。
-- **Vesper：**Beastmaster 的 Command 成為唯一的路線主動技能，混合路線不再覆蓋它。**Widow’s Pension：**明確為攜帶者首次死亡時支付金幣。
+- **Beastmaster：**文字說明每位在場的維斯珀都會降低 Ember 費用；複製體的效果仍可疊加。
+
+#### 裝備
 
 - **全部18件套件裝備：**I/II/III級費用改為0/1/2 Ember。Frozen取代Ephemeral，未使用的套件可保留在手中。
 - **Ranger：**攻擊力+5/+10/+15。移除Sniper與Sweep；II級獲得Piercing，III級獲得Piercing和Skewer 1。
 - **Cleric：**生命+10/+20/+30；裝備時恢復3/6/9生命並施加Regen 3/6/9。III級保留Undying 1。**Wizard：**裝備時施加Conduit 2/4/6；攻擊力+0/+5/+10，III級提供Mageblade 1。更換裝備後Conduit仍保留。
-
-- **Shieldwall：**Power Slam 和全層 Armor 觸發改為攔截、初始 Damage Shield 2/3/4，以及回合開始獲得 Valor 3/6/9。在友軍傷害護盾結算後，承擔本層身後友軍受到的攻擊傷害；其他攻擊效果仍作用於原目標。Roderic 僅 Plunder 路線保留主動能力。
-- **Quartermaster：**卡牌現在顯示被動規則。
-
-- **Quartermaster：**主動 Requisition 改為被動補給與回收。每回合首次召喚另一名友軍時，獲得其職業的 I/II/III 級裝備。每回合首名陣亡的已裝備友軍的裝備返回手牌，保留升級與融合。Roderic 保留額外 1/2/3 個裝備欄。混合路線時 Quartermaster 不再替換 Call to Arms。
-
-感謝 **Rratvar, the Untitled** 回報裝備替換、多餘的 Sniper、Steelguard 層數誤導以及 Severance Pay 鏡頭移動的問題。
-
-- **Cleric 與 Warrior 套件：**裝備時施加 Regen 或 Armor，替換裝備時不再扣除。生命及其他裝備加成仍綁定於裝備；數值不變。
 - **Warrior 套件：**Steelguard 使用原生不可疊加狀態，不再顯示誤導性的層數。
-- **Severance Pay：**不再強制將鏡頭移向薪火房間。金幣、傷害與視覺效果不變。
+- **替換裝備：**Warrior 的 Armor、Cleric 的 Regen 和 Wizard 的 Conduit 在裝備時施加，替換後仍保留。生命、攻擊及其他綁定裝備的加成照常移除。
+- **Widow’s Pension：**明確為攜帶者首次死亡時支付金幣。
 
+#### 房間
+
+- **房間：**Caltrops、The Pit 和 Paymaster’s Tent 不再出現在獎勵、商店或生成的房間牌中。存檔中的現有卡牌仍可使用。
+
+#### 修正與相容性
+
+- **Severance Pay：**不再強制將鏡頭移向薪火房間。金幣、傷害與視覺效果不變。
 - **Tamable：**只有選擇了 Vesper Beastmaster 路線的旅程才顯示手牌圖示及提示，無須先部署她。
 - **Longbowman：**技能使用 Conductor 目前的狀態名稱 **Skewer**，其餘句子保留翻譯。Conductor 最低版本為 **0.5.17**。
-- **Beastmaster：**文字說明每位在場的維斯珀都會降低 Ember 費用；複製體的效果仍可疊加。
-- **相容性：**某個 Harmony 補丁失敗不再阻止其他獨立補丁載入，並明確記錄錯誤。Requisition 不再依賴 Trainworks 本地化前綴中的拼字錯誤。安裝包不再包含未使用的圖片。
-
 - **Battle Chaplain：**Last Rites 現使用遊戲原生治療效果及全樓層目標選擇，提高相容性並遵循遊戲的正常目標規則。
 - **Fuse 和 Banished：**淨化後重新施加這些效果，不再保留上一次施加時的待結算傷害。
 - **Requisition：**為沒有匹配職業的單位隨機產生裝備時，現在使用遊戲的戰鬥隨機種子。
-- **哥布林外觀：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例及腳部位置。
+- **相容性：**某個 Harmony 補丁失敗不再阻止其他獨立補丁載入，並明確記錄錯誤。Requisition 不再依賴 Trainworks 本地化前綴中的拼字錯誤。安裝包不再包含未使用的圖片。
 
+#### 表現
+
+- **哥布林外觀：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer 和 The New Guy 增大了 10–20%，保持原有比例及腳部位置。
+- 修正 Chirurgeon III 的西班牙文與法文文字。為 Grimoire 的 Magic Missile 變體加入攻擊音效。安裝包不再包含未使用的插畫。
+
+#### 致謝
+
+感謝 **Rratvar, the Untitled** 回報裝備替換、多餘的 Sniper、Steelguard 層數誤導以及 Severance Pay 鏡頭移動的問題。
+
+非常歡迎錯誤回報與平衡建議！請發到 [Free Company 的 Discord 討論串](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -727,37 +823,49 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-11-07 — BETA
 
-- **객실:** Caltrops, The Pit, Paymaster’s Tent가 보상, 상점 및 객실 카드 생성에서 제외됩니다. 저장된 기존 카드는 계속 사용할 수 있습니다.
+#### 챔피언과 경로 조합
 
+Roderic과 Vesper의 경로를 개편하여 조합 시 활성 능력이 덮어써지지 않게 했습니다. Soul Savior로 여러 경로를 추가 강화해도 능력을 잃지 않습니다.
+
+- **Shieldwall:** Power Slam과 층 전체 Armor 효과를 가로막기, 초기 Damage Shield 2/3/4, 턴 시작 시 Valor 3/6/9 획득으로 교체했습니다. 같은 층에서 뒤에 있는 아군의 보호막이 먼저 막은 뒤 남은 공격 피해를 대신 받습니다. 다른 공격 효과는 원래 대상에게 적용됩니다. Roderic은 Plunder만 활성 능력을 유지합니다.
+- **Quartermaster:** 활성 Requisition을 지속 효과 보급과 회수로 교체했습니다. 매 턴 처음 다른 아군을 소환하면 해당 역할의 I/II/III단계 장비를 얻습니다. 매 턴 처음 사망한 장비를 장착한 아군의 장비가 강화와 융합을 유지한 채 손으로 돌아옵니다. Roderic의 추가 장비 슬롯 +1/+2/+3은 유지됩니다. 경로를 혼합해도 Quartermaster가 Call to Arms를 덮어쓰지 않습니다.
 - **Vesper — Grimoire:** Prepare Spell 대신 매 턴 무료 Ephemeral 마법 화살을 자동 생성합니다. 기본 피해 3을 3/4/5회 가합니다. 모든 단계에서 Conduit 5로 시작하며 Celebrate로 영구 Conduit 2/4/6을 얻습니다.
 - **Vesper — Chirurgeon:** Field Surgery 대신 매 턴 Undying이 없는 아군에게 Undying 1을 자동 부여합니다. I은 같은 층 1명, II는 모든 층 중 1명, III는 서로 다른 2명입니다. 치유 3/12/24와 정화 1/2/3은 유지됩니다.
-- **Vesper:** Beastmaster의 Command만 경로 활성 능력으로 남아 혼합 경로에서 교체되지 않습니다. **Widow’s Pension:** 장착자의 첫 사망 시 지급됨을 명시했습니다.
+- **Beastmaster:** 배치된 베스퍼마다 Ember 비용을 낮춘다는 점을 명시했습니다. 복제된 베스퍼의 효과는 계속 중첩됩니다.
+
+#### 장비
 
 - **18개 키트 전체:** I/II/III단계 비용을 0/1/2 Ember로 변경했습니다. Ephemeral을 Frozen으로 교체하여 사용하지 않은 키트를 손에 보관합니다.
 - **Ranger:** 공격력 +5/+10/+15. Sniper와 Sweep 제거. II단계는 Piercing, III단계는 Piercing과 Skewer 1을 부여합니다.
 - **Cleric:** 체력 +10/+20/+30. 장착 시 체력 3/6/9를 회복하고 Regen 3/6/9를 부여합니다. III단계 Undying 1 유지. **Wizard:** 장착 시 Conduit 2/4/6 부여. 공격력 +0/+5/+10, III단계 Mageblade 1. 장비를 교체해도 Conduit는 유지됩니다.
-
-- **Shieldwall:** Power Slam과 층 전체 Armor 효과를 가로막기, 초기 Damage Shield 2/3/4, 턴 시작 시 Valor 3/6/9 획득으로 교체했습니다. 같은 층에서 뒤에 있는 아군의 보호막이 먼저 막은 뒤 남은 공격 피해를 대신 받습니다. 다른 공격 효과는 원래 대상에게 적용됩니다. Roderic은 Plunder만 활성 능력을 유지합니다.
-- **Quartermaster:** 카드에 지속 효과 규칙을 표시합니다.
-
-- **Quartermaster:** 활성 Requisition을 지속 효과 보급과 회수로 교체했습니다. 매 턴 처음 다른 아군을 소환하면 해당 역할의 I/II/III단계 장비를 얻습니다. 매 턴 처음 사망한 장비를 장착한 아군의 장비가 강화와 융합을 유지한 채 손으로 돌아옵니다. Roderic의 추가 장비 슬롯 +1/+2/+3은 유지됩니다. 경로를 혼합해도 Quartermaster가 Call to Arms를 덮어쓰지 않습니다.
-
-장비 교체, 불필요한 Sniper, Steelguard 중첩 수 표시 및 Severance Pay 카메라 문제를 제보한 **Rratvar, the Untitled**에게 감사드립니다.
-
-- **Cleric 및 Warrior 키트:** 장착 시 Regen과 Armor를 부여하며, 장비 교체 시 더 이상 차감하지 않습니다. 체력과 다른 장비 효과는 해당 장비에 귀속됩니다. 수치는 유지됩니다.
 - **Warrior 키트:** Steelguard는 중첩되지 않는 기본 게임 효과를 사용하며 잘못된 중첩 수를 표시하지 않습니다.
-- **Severance Pay:** 카메라가 화염 방으로 강제 이동하지 않습니다. 골드, 피해 및 시각 효과는 유지됩니다.
+- **장비 교체:** Warrior의 Armor, Cleric의 Regen, Wizard의 Conduit는 교체 후에도 유지됩니다. 체력, 공격력 등 장비에 종속된 보너스는 정상적으로 제거됩니다.
+- **Widow’s Pension:** 장착자의 첫 사망 시 지급됨을 명시했습니다.
 
+#### 객실
+
+- **객실:** Caltrops, The Pit, Paymaster’s Tent가 보상, 상점 및 객실 카드 생성에서 제외됩니다. 저장된 기존 카드는 계속 사용할 수 있습니다.
+
+#### 수정 및 호환성
+
+- **Severance Pay:** 카메라가 화염 방으로 강제 이동하지 않습니다. 골드, 피해 및 시각 효과는 유지됩니다.
 - **Tamable:** 손패 아이콘과 설명은 Vesper Beastmaster가 있는 여정에서만 나타나며, 배치 전에도 표시됩니다.
 - **Longbowman:** 능력이 번역된 문장을 유지하면서 Conductor의 현재 상태 이름인 **Skewer**를 사용합니다. Conductor 최소 버전은 **0.5.17**입니다.
-- **Beastmaster:** 배치된 베스퍼마다 Ember 비용을 낮춘다는 점을 명시했습니다. 복제된 베스퍼의 효과는 계속 중첩됩니다.
-- **호환성:** Harmony 패치 하나가 실패해도 독립된 다른 패치는 로드되며 오류가 명확히 기록됩니다. Requisition은 더 이상 Trainworks 번역 키 접두사의 오타에 의존하지 않습니다. 사용하지 않는 이미지는 패키지에서 제외됩니다.
-
 - **Battle Chaplain:** Last Rites가 게임 기본 회복 효과와 모든 층 대상 선택을 사용하여 호환성을 높이고 기본 대상 지정 규칙을 따릅니다.
 - **Fuse 및 Banished:** 정화 후 다시 적용할 때 이전 효과의 예정 피해가 남지 않도록 수정했습니다.
 - **Requisition:** 일치하는 역할이 없는 유닛의 무작위 장비가 이제 게임의 전투 난수 시드를 따릅니다.
-- **고블린 외형:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer 및 The New Guy를 10–20% 확대하고 신체 비율과 발 위치를 유지했습니다.
+- **호환성:** Harmony 패치 하나가 실패해도 독립된 다른 패치는 로드되며 오류가 명확히 기록됩니다. Requisition은 더 이상 Trainworks 번역 키 접두사의 오타에 의존하지 않습니다. 사용하지 않는 이미지는 패키지에서 제외됩니다.
 
+#### 표현
+
+- **고블린 외형:** Battle Chaplain, Chapel Acolyte, Hedge Conjurer, Longbowman, Shieldbearer 및 The New Guy를 10–20% 확대하고 신체 비율과 발 위치를 유지했습니다.
+- Chirurgeon III의 스페인어 및 프랑스어 문구를 수정했습니다. Grimoire의 Magic Missile 변형에 공격음을 추가하고 사용하지 않는 그림을 패키지에서 제외했습니다.
+
+#### 감사의 말
+
+장비 교체, 불필요한 Sniper, Steelguard 중첩 수 표시 및 Severance Pay 카메라 문제를 제보한 **Rratvar, the Untitled**에게 감사드립니다.
+
+버그 제보와 밸런스 제안을 환영합니다! [Free Company Discord 스레드]에서 공유해 주세요(https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -793,37 +901,49 @@ Português (Brasil)
 
 ### 0.3.2 — 2026-11-07 — BETA
 
-- **部屋：**Caltrops、The Pit、Paymaster’s Tentを報酬、ショップ、部屋カードの生成対象から除外。セーブ内の既存カードは引き続き使用できます。
+#### チャンピオンとルートの組み合わせ
 
+RodericとVesperのルートを再設計し、組み合わせても起動型能力が上書きされなくなりました。Soul Saviorで複数ルートをさらに強化する場合も能力を失いません。
+
+- **Shieldwall：**Power Slamと階全体のArmor効果を迎撃、初期Damage Shield 2/3/4、ターン開始時にValor 3/6/9を得る効果へ変更。同じ階の後ろの味方への攻撃ダメージを、その味方のシールド判定後に肩代わりします。その他の攻撃効果は元の対象に適用。Rodericの起動能力はPlunderのみになります。
+- **Quartermaster：**起動能力Requisitionを常時効果の補給と回収に変更。各ターン最初に他の味方を召喚すると、その役割のランクI/II/III装備を得ます。各ターン最初に死亡した装備中の味方の装備は、強化と融合を保って手札に戻ります。Rodericの追加装備枠+1/+2/+3は維持。混合ルートでQuartermasterがCall to Armsを上書きしなくなりました。
 - **Vesper — Grimoire：**Prepare Spellを廃止し、各ターン無料のEphemeralマジックミサイルを自動生成。基礎ダメージ3の攻撃を3/4/5回行う。全段階で初期Conduit 5、Celebrateで永続Conduit 2/4/6を獲得。
 - **Vesper — Chirurgeon：**Field Surgeryを廃止し、毎ターンUndyingを持たない味方にUndying 1を自動付与。Iは同じ階の1体、IIは任意の階の1体、IIIは異なる2体。回復3/12/24と浄化1/2/3は維持。
-- **Vesper：**BeastmasterのCommandのみがルートの起動能力となり、混合ルートでも上書きされなくなる。**Widow’s Pension：**装備者の最初の死亡時に支払うことを明記。
+- **Beastmaster：**場のヴェスパー1体ごとに Ember コストを下げることを明記しました。複製による効果は引き続き累積します。
+
+#### 装備
 
 - **全18種のキット：**ランクI/II/IIIのコストを0/1/2 Emberに変更。EphemeralをFrozenに置き換え、未使用のキットを手札に保持できます。
 - **Ranger：**攻撃力+5/+10/+15。SniperとSweepを削除。ランクIIはPiercing、IIIはPiercingとSkewer 1を付与。
 - **Cleric：**体力+10/+20/+30。装備時に体力3/6/9を回復し、Regen 3/6/9を付与。IIIのUndying 1は維持。**Wizard：**装備時にConduit 2/4/6を付与。攻撃力+0/+5/+10、IIIはMageblade 1。装備交換後もConduitは残ります。
-
-- **Shieldwall：**Power Slamと階全体のArmor効果を迎撃、初期Damage Shield 2/3/4、ターン開始時にValor 3/6/9を得る効果へ変更。同じ階の後ろの味方への攻撃ダメージを、その味方のシールド判定後に肩代わりします。その他の攻撃効果は元の対象に適用。Rodericの起動能力はPlunderのみになります。
-- **Quartermaster：**カードに常時効果の説明を表示。
-
-- **Quartermaster：**起動能力Requisitionを常時効果の補給と回収に変更。各ターン最初に他の味方を召喚すると、その役割のランクI/II/III装備を得ます。各ターン最初に死亡した装備中の味方の装備は、強化と融合を保って手札に戻ります。Rodericの追加装備枠+1/+2/+3は維持。混合ルートでQuartermasterがCall to Armsを上書きしなくなりました。
-
-装備交換、不要なSniper、Steelguardの誤解を招くスタック数、Severance Payのカメラ移動を報告してくれた **Rratvar, the Untitled** に感謝します。
-
-- **ClericとWarriorのキット：**装備時にRegenとArmorを付与し、装備を交換しても差し引かれなくなりました。体力とその他の効果は装備に紐づきます。数値は変更していません。
 - **Warriorのキット：**Steelguardは重複しないゲーム標準の効果を使用し、誤解を招くスタック数を表示しません。
-- **Severance Pay：**カメラがパイアの部屋へ強制移動しなくなりました。ゴールド、ダメージ、視覚効果は変更していません。
+- **装備の交換：**WarriorのArmor、ClericのRegen、WizardのConduitは交換後も残ります。体力、攻撃力など装備に付随するボーナスは通常どおり解除されます。
+- **Widow’s Pension：**装備者の最初の死亡時に支払うことを明記。
 
+#### 部屋
+
+- **部屋：**Caltrops、The Pit、Paymaster’s Tentを報酬、ショップ、部屋カードの生成対象から除外。セーブ内の既存カードは引き続き使用できます。
+
+#### 修正と互換性
+
+- **Severance Pay：**カメラがパイアの部屋へ強制移動しなくなりました。ゴールド、ダメージ、視覚効果は変更していません。
 - **Tamable：**手札のアイコンと説明は Vesper Beastmaster のいるプレイでのみ表示され、配置前でも表示されます。
 - **Longbowman：**翻訳済みの文章を保ちながら、Conductor の現在の状態名 **Skewer** を使用します。Conductor の最低バージョンは **0.5.17** です。
-- **Beastmaster：**場のヴェスパー1体ごとに Ember コストを下げることを明記しました。複製による効果は引き続き累積します。
-- **互換性：**Harmony パッチの一つが失敗しても独立した他のパッチは読み込まれ、エラーが明確に記録されます。Requisition は Trainworks の翻訳キー接頭辞の誤字に依存しなくなりました。未使用の画像はパッケージから除外されます。
-
 - **Battle Chaplain：**Last Rites がゲーム標準の回復効果と全階層の対象選択を使用するようになり、互換性が向上し、通常の対象選択ルールに従います。
 - **Fuse と Banished：**浄化後に再付与しても、前回の付与による保留ダメージが残らないよう修正しました。
 - **Requisition：**対応する役割がないユニットへのランダム装備が、ゲームの戦闘用乱数シードに従うようになりました。
-- **ゴブリンの表示：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer、The New Guy を10～20%拡大し、体の比率と足の位置を維持しました。
+- **互換性：**Harmony パッチの一つが失敗しても独立した他のパッチは読み込まれ、エラーが明確に記録されます。Requisition は Trainworks の翻訳キー接頭辞の誤字に依存しなくなりました。未使用の画像はパッケージから除外されます。
 
+#### 演出
+
+- **ゴブリンの表示：**Battle Chaplain、Chapel Acolyte、Hedge Conjurer、Longbowman、Shieldbearer、The New Guy を10～20%拡大し、体の比率と足の位置を維持しました。
+- Chirurgeon IIIのスペイン語とフランス語を修正。GrimoireのMagic Missile各種に攻撃音を追加。未使用のイラストをパッケージから除外。
+
+#### 謝辞
+
+装備交換、不要なSniper、Steelguardの誤解を招くスタック数、Severance Payのカメラ移動を報告してくれた **Rratvar, the Untitled** に感謝します。
+
+不具合の報告やバランス調整の提案を大歓迎します！[Free CompanyのDiscordスレッド]にお寄せください(https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.1 — 2026-10-26 — BETA
 
@@ -894,3 +1014,5 @@ Português (Brasil)
 <!-- 2026-11-07-1140||codex-freecompany-fx||CHANGELOG.md||documenta rediseño pasivo de Grimoire/Chirurgeon y primera muerte de Widow en diez idiomas para 0.3.2 -->
 
 <!-- 2026-11-07-1333||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||documenta retirada de tres salas en los diez idiomas -->
+
+<!-- 2026-11-07-1449||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||organiza 0.3.2 en seis apartados y diez idiomas; mezcla de sendas/Soul Savior e invitación a reportes con Discord -->
