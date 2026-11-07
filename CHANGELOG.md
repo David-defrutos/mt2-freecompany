@@ -6,7 +6,11 @@ Latest release in all ten game languages. Full history in English and Spanish.
 
 ## English
 
-### 0.3.2 — 2026-10-29 — BETA
+### 0.3.2 — 2026-11-07 — BETA
+
+- **Vesper — Grimoire:** replaces Prepare Spell with an automatic free, Ephemeral Magic Missile each turn: 3/4/5 hits, 3 base damage per hit. Starts with Conduit 5 at every path level; Celebrate permanently grants Conduit 2/4/6.
+- **Vesper — Chirurgeon:** replaces Field Surgery with automatic Undying 1 for allies without Undying each turn: one ally on her floor at I, one ally anywhere at II, two distinct allies anywhere at III. Retains healing 3/12/24 and cleansing 1/2/3.
+- **Vesper:** Beastmaster’s Command is now her only activated path ability, preventing mixed paths from replacing it. **Widow’s Pension:** clarifies that it pays on the wearer’s first death.
 
 - **All 18 kits:** tier I/II/III now costs 0/1/2 Ember. Frozen replaces Ephemeral, allowing unused kits to remain in hand.
 - **Ranger:** +5/+10/+15 attack. No Sniper or Sweep; tier II grants Piercing, tier III grants Piercing and Skewer 1.
@@ -143,7 +147,11 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 
 ## Spanish
 
-### 0.3.2 — 2026-10-29 — BETA
+### 0.3.2 — 2026-11-07 — BETA
+
+- **Vesper — Grimoire:** sustituye Prepare Spell por un Magic Missile gratuito y Ephemeral automático cada turno: 3/4/5 impactos de 3 de daño base. Empieza con Conduit 5 en todos los niveles; Celebrate concede permanentemente Conduit 2/4/6.
+- **Vesper — Chirurgeon:** sustituye Field Surgery por Undying 1 automático cada turno para aliados sin Undying: uno de su piso en I, uno de cualquier piso en II y dos distintos de cualquier piso en III. Conserva curación 3/12/24 y limpieza 1/2/3.
+- **Vesper:** Command de Beastmaster es su única habilidad de senda activada, evitando que las sendas mixtas la sustituyan. **Widow’s Pension:** aclara que paga en la primera muerte del portador.
 
 - **Los 18 kits:** coste 0/1/2 Ember para niveles I/II/III. Frozen sustituye Ephemeral y permite conservar en mano los kits sin usar.
 - **Ranger:** +5/+10/+15 de ataque. Sin Sniper ni Sweep; nivel II concede Piercing, nivel III Piercing y Skewer 1.
@@ -317,7 +325,11 @@ comentarios de la ficha.
 
 ## French
 
-### 0.3.2 — 2026-10-29 — BETA
+### 0.3.2 — 2026-11-07 — BETA
+
+- **Vesper — Grimoire :** remplace Prepare Spell par un Projectile magique gratuit avec Ephemeral chaque tour : 3/4/5 impacts de 3 dégâts de base. Commence avec Conduit 5 à tous les rangs ; Celebrate accorde définitivement Conduit 2/4/6.
+- **Vesper — Chirurgeon :** remplace Field Surgery par Undying 1 automatique chaque tour pour les alliés sans Undying : un sur son étage au rang I, un sur tout étage au II, deux distincts au III. Soins 3/12/24 et purification 1/2/3 conservés.
+- **Vesper :** Command de Beastmaster est sa seule capacité de voie activée, évitant son remplacement en mélangeant les voies. **Widow’s Pension :** précise le paiement à la première mort du porteur.
 
 - **Les 18 kits :** coût de 0/1/2 Ember aux rangs I/II/III. Frozen remplace Ephemeral et conserve en main les kits inutilisés.
 - **Ranger :** +5/+10/+15 d’attaque. Sans Sniper ni Sweep ; rang II : Piercing, rang III : Piercing et Skewer 1.
@@ -377,7 +389,11 @@ Français
 
 ## German
 
-### 0.3.2 — 2026-10-29 — BETA
+### 0.3.2 — 2026-11-07 — BETA
+
+- **Vesper — Grimoire:** ersetzt Prepare Spell durch ein kostenloses Magisches Geschoss mit Ephemeral pro Zug: 3/4/5 Treffer mit je 3 Basisschaden. Beginnt auf jeder Stufe mit Conduit 5; Celebrate gewährt dauerhaft Conduit 2/4/6.
+- **Vesper — Chirurgeon:** ersetzt Field Surgery durch automatisches Undying 1 pro Zug für Verbündete ohne Undying: einen auf ihrem Stockwerk auf I, einen auf beliebigem Stockwerk auf II, zwei verschiedene auf III. Heilung 3/12/24 und Reinigung 1/2/3 bleiben erhalten.
+- **Vesper:** Beastmasters Command ist ihre einzige aktivierbare Pfadfähigkeit und wird beim Mischen nicht mehr ersetzt. **Widow’s Pension:** Auszahlung beim ersten Tod des Trägers klargestellt.
 
 - **Alle 18 Kits:** Rang I/II/III kostet jetzt 0/1/2 Ember. Frozen ersetzt Ephemeral und hält ungenutzte Kits auf der Hand.
 - **Ranger:** +5/+10/+15 Angriff. Kein Sniper oder Sweep; Rang II gewährt Piercing, Rang III Piercing und Skewer 1.
@@ -437,7 +453,11 @@ Deutsch
 
 ## Russian
 
-### 0.3.2 — 2026-10-29 — BETA
+### 0.3.2 — 2026-11-07 — BETA
+
+- **Веспер — Grimoire:** вместо Prepare Spell каждый ход автоматически создаёт бесплатную Волшебную стрелу с Ephemeral: 3/4/5 попаданий по 3 базового урона. Начальный Conduit 5 на всех уровнях; Celebrate навсегда даёт Conduit 2/4/6.
+- **Веспер — Chirurgeon:** вместо Field Surgery каждый ход автоматически даёт Undying 1 союзникам без Undying: одному на её этаже на I, одному на любом этаже на II, двум разным на III. Лечение 3/12/24 и очищение 1/2/3 сохранены.
+- **Веспер:** Command пути Beastmaster — единственная активируемая способность пути; смешение путей больше её не заменяет. **Widow’s Pension:** уточнена выплата при первой смерти носителя.
 
 - **Все 18 наборов:** стоимость I/II/III уровня — 0/1/2 Ember. Frozen заменяет Ephemeral, сохраняя неиспользованные наборы в руке.
 - **Ranger:** +5/+10/+15 атаки. Без Sniper и Sweep; уровень II даёт Piercing, уровень III — Piercing и Skewer 1.
@@ -497,7 +517,11 @@ Deutsch
 
 ## Portuguese Brazil
 
-### 0.3.2 — 2026-10-29 — BETA
+### 0.3.2 — 2026-11-07 — BETA
+
+- **Vesper — Grimoire:** substitui Prepare Spell por um Míssil Mágico gratuito com Ephemeral automático por turno: 3/4/5 impactos de 3 de dano base. Começa com Conduit 5 em todos os níveis; Celebrate concede Conduit 2/4/6 permanentemente.
+- **Vesper — Chirurgeon:** substitui Field Surgery por Undying 1 automático por turno em aliados sem Undying: um no seu andar em I, um em qualquer andar em II, dois distintos em III. Mantém cura 3/12/24 e purificação 1/2/3.
+- **Vesper:** Command de Beastmaster é sua única habilidade de caminho ativada e não é substituída ao combinar caminhos. **Widow’s Pension:** esclarece o pagamento na primeira morte do portador.
 
 - **Todos os 18 kits:** custo 0/1/2 Ember nos níveis I/II/III. Frozen substitui Ephemeral e mantém os kits não usados na mão.
 - **Ranger:** +5/+10/+15 de ataque. Sem Sniper ou Sweep; nível II concede Piercing e nível III concede Piercing e Skewer 1.
@@ -557,7 +581,11 @@ Português (Brasil)
 
 ## Chinese
 
-### 0.3.2 — 2026-10-29 — BETA
+### 0.3.2 — 2026-11-07 — BETA
+
+- **Vesper — Grimoire：**移除 Prepare Spell，每回合自动生成免费的 Ephemeral 魔法飞弹，攻击3/4/5次，每次基础伤害3。所有等级初始获得 Conduit 5；Celebrate 永久获得 Conduit 2/4/6。
+- **Vesper — Chirurgeon：**移除 Field Surgery，每回合自动为没有 Undying 的友军施加 Undying 1：I级本层一名，II级任意楼层一名，III级任意楼层两名不同友军。保留治疗3/12/24及净化1/2/3。
+- **Vesper：**Beastmaster 的 Command 成为唯一的路线主动技能，混合路线不再覆盖它。**Widow’s Pension：**明确为携带者首次死亡时支付金币。
 
 - **全部18件套件装备：**I/II/III级费用改为0/1/2 Ember。Frozen替代Ephemeral，未使用的套件可保留在手中。
 - **Ranger：**攻击力+5/+10/+15。移除Sniper与Sweep；II级获得Piercing，III级获得Piercing和Skewer 1。
@@ -617,7 +645,11 @@ Português (Brasil)
 
 ## Chinese Traditional
 
-### 0.3.2 — 2026-10-29 — BETA
+### 0.3.2 — 2026-11-07 — BETA
+
+- **Vesper — Grimoire：**移除 Prepare Spell，每回合自動生成免費的 Ephemeral 魔法飛彈，攻擊3/4/5次，每次基礎傷害3。所有等級初始獲得 Conduit 5；Celebrate 永久獲得 Conduit 2/4/6。
+- **Vesper — Chirurgeon：**移除 Field Surgery，每回合自動為沒有 Undying 的友軍施加 Undying 1：I級本層一名，II級任意樓層一名，III級任意樓層兩名不同友軍。保留治療3/12/24及淨化1/2/3。
+- **Vesper：**Beastmaster 的 Command 成為唯一的路線主動技能，混合路線不再覆蓋它。**Widow’s Pension：**明確為攜帶者首次死亡時支付金幣。
 
 - **全部18件套件裝備：**I/II/III級費用改為0/1/2 Ember。Frozen取代Ephemeral，未使用的套件可保留在手中。
 - **Ranger：**攻擊力+5/+10/+15。移除Sniper與Sweep；II級獲得Piercing，III級獲得Piercing和Skewer 1。
@@ -677,7 +709,11 @@ Português (Brasil)
 
 ## Korean
 
-### 0.3.2 — 2026-10-29 — BETA
+### 0.3.2 — 2026-11-07 — BETA
+
+- **Vesper — Grimoire:** Prepare Spell 대신 매 턴 무료 Ephemeral 마법 화살을 자동 생성합니다. 기본 피해 3을 3/4/5회 가합니다. 모든 단계에서 Conduit 5로 시작하며 Celebrate로 영구 Conduit 2/4/6을 얻습니다.
+- **Vesper — Chirurgeon:** Field Surgery 대신 매 턴 Undying이 없는 아군에게 Undying 1을 자동 부여합니다. I은 같은 층 1명, II는 모든 층 중 1명, III는 서로 다른 2명입니다. 치유 3/12/24와 정화 1/2/3은 유지됩니다.
+- **Vesper:** Beastmaster의 Command만 경로 활성 능력으로 남아 혼합 경로에서 교체되지 않습니다. **Widow’s Pension:** 장착자의 첫 사망 시 지급됨을 명시했습니다.
 
 - **18개 키트 전체:** I/II/III단계 비용을 0/1/2 Ember로 변경했습니다. Ephemeral을 Frozen으로 교체하여 사용하지 않은 키트를 손에 보관합니다.
 - **Ranger:** 공격력 +5/+10/+15. Sniper와 Sweep 제거. II단계는 Piercing, III단계는 Piercing과 Skewer 1을 부여합니다.
@@ -737,7 +773,11 @@ Português (Brasil)
 
 ## Japanese
 
-### 0.3.2 — 2026-10-29 — BETA
+### 0.3.2 — 2026-11-07 — BETA
+
+- **Vesper — Grimoire：**Prepare Spellを廃止し、各ターン無料のEphemeralマジックミサイルを自動生成。基礎ダメージ3の攻撃を3/4/5回行う。全段階で初期Conduit 5、Celebrateで永続Conduit 2/4/6を獲得。
+- **Vesper — Chirurgeon：**Field Surgeryを廃止し、毎ターンUndyingを持たない味方にUndying 1を自動付与。Iは同じ階の1体、IIは任意の階の1体、IIIは異なる2体。回復3/12/24と浄化1/2/3は維持。
+- **Vesper：**BeastmasterのCommandのみがルートの起動能力となり、混合ルートでも上書きされなくなる。**Widow’s Pension：**装備者の最初の死亡時に支払うことを明記。
 
 - **全18種のキット：**ランクI/II/IIIのコストを0/1/2 Emberに変更。EphemeralをFrozenに置き換え、未使用のキットを手札に保持できます。
 - **Ranger：**攻撃力+5/+10/+15。SniperとSweepを削除。ランクIIはPiercing、IIIはPiercingとSkewer 1を付与。
@@ -830,3 +870,5 @@ Português (Brasil)
 <!-- 2026-10-29-2002||codex-freecompany-fx||CHANGELOG.md||Shieldwall Intercepcion/escudos 2/3/4/Valor 3/6/9, Piercing sin cantidades y pasivas Quartermaster visibles en diez idiomas -->
 
 <!-- 2026-10-29-2035||codex-freecompany-fx||CHANGELOG.md||consolida equilibrio aprobado de kits 0/1/2, Frozen, Ranger/Cleric/Wizard en diez idiomas; elimina notas obsoletas de Great Bow de esta version -->
+
+<!-- 2026-11-07-1140||codex-freecompany-fx||CHANGELOG.md||documenta rediseño pasivo de Grimoire/Chirurgeon y primera muerte de Widow en diez idiomas para 0.3.2 -->

@@ -172,6 +172,27 @@ en uso aquí y son obra suya. Todo lo demás —las cartas, unidades, campeones 
 los efectos a medida del DLL— es propio. Licencia completa en `LICENSE`, detalle en `NOTICE.md`.
 
 
+## Vesper paths / Sendas de Vesper
+
+Only Beastmaster grants an activated ability: Command. Grimoire and Chirurgeon are automatic passives, so mixing Vesper paths preserves Command.
+
+| Path | I | II | III |
+|---|---|---|---|
+| Grimoire — Start of Turn | Free Ephemeral Magic Missile, 3 hits | 4 hits | 5 hits |
+| Grimoire — initial Conduit | 5 | 5 | 5 |
+| Grimoire — Celebrate, permanent Conduit | +2 | +4 | +6 |
+| Chirurgeon — Start of Turn, healing on her floor | 3 | 12 | 24 |
+| Chirurgeon — random debuffed allies cleansed | 1 on her floor | Up to 2 anywhere | Up to 3 anywhere |
+| Chirurgeon — Undying 1, random allies without Undying | 1 on her floor | 1 anywhere | Up to 2 distinct allies anywhere |
+
+Magic Missile deals 3 base damage per hit and chooses a random enemy on the selected floor for each hit. Generated copies cost 0 and have Ephemeral. The normal draftable Magic Missile remains unchanged. Grimoire’s initial Conduit 5 is a fixed path bonus, not another +5 on each upgrade.
+
+Solo Beastmaster concede una habilidad activada: Command. Grimoire y Chirurgeon son pasivas automáticas y no la sustituyen al mezclar sendas.
+
+Grimoire genera cada turno un Magic Missile gratuito y Ephemeral de 3/4/5 impactos de 3 de daño base. Empieza con Conduit 5 fijo en los tres niveles y Celebrate concede permanentemente +2/+4/+6 Conduit. Cada impacto elige un enemigo aleatorio del piso seleccionado. El hechizo común del mazo no cambia.
+
+Chirurgeon cura 3/12/24 a los aliados de su piso y limpia las aflicciones de 1/2/3 aliados afectados al azar; nivel I se limita al mismo piso, II/III alcanzan cualquier piso. Además aplica Undying 1 a aliados aleatorios que no lo tengan: uno del mismo piso en I, uno de cualquier piso en II y hasta dos distintos de cualquier piso en III.
+
 ## Beastmaster creatures / Criaturas de Beastmaster
 
 **Vesper Beastmaster:** get a Tamed Troll. Eligible creatures entering your hand gain Frozen while Vesper is deployed. At the start of each turn, eligible cards already in hand cost 1 less Ember for this battle. Each active Vesper contributes one discount; muted or silenced Vesper cannot tame or discount creatures.
@@ -247,3 +268,5 @@ Solo estas **29 cartas concretas** cuentan; no se incluye automáticamente el re
 <!-- 2026-10-27-2300||codex-freecompany-fx||README.md||lista explícita alfabética de seis nombres Discord; conserva crédito CodePointer separado hasta confirmar alias -->
 
 <!-- 2026-10-27-2301||codex-freecompany-fx||README.md||Q021 confirmado: añade CodePointer a lista alfabética Discord EN/ES; conserva crédito por permiso de port -->
+
+<!-- 2026-11-07-1140||codex-freecompany-fx||README.md||añade tabla vigente de sendas Vesper I/II/III y aclara Command como única habilidad activada -->
