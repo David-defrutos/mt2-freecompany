@@ -3,7 +3,7 @@
 A mercenary clan for Monster Train 2: sellswords and hedge-mages who took the last
 contract on offer. Martial steel and arcane craft, paid up front.
 
-## BETA — 0.3.3
+## BETA — 0.3.4
 
 This clan is playable but **unfinished**, and I am publishing it at this stage on purpose:
 I would rather have real games behind it than keep guessing on my own. What helps most is
@@ -89,7 +89,7 @@ the custom effects in the DLL — is my own. Full licence in `LICENSE`, detail i
 Un clan de mercenarios para Monster Train 2: espadas de alquiler y magos de seto que
 aceptaron el último contrato que quedaba. Acero y magia, cobrado por adelantado.
 
-## BETA — 0.3.3
+## BETA — 0.3.4
 
 El clan se puede jugar, pero **no está terminado**, y lo publico así a propósito: prefiero
 que le caigan partidas de verdad a seguir adivinando yo solo. Lo que más ayuda son los
@@ -274,3 +274,5 @@ Solo estas **29 cartas concretas** cuentan; no se incluye automáticamente el re
 <!-- 2026-11-07-1333||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/README.md||sustituye imagen obsoleta de seis salas por lista de las tres disponibles -->
 
 <!-- 2026-11-07-1547||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/README.md||cabeceras públicas EN/ES 0.3.2 a 0.3.3 BETA -->
+
+<!-- 2026-11-08-2044||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/README.md||cabeceras públicas EN/ES 0.3.4 BETA -->

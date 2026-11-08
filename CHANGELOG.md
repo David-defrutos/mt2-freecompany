@@ -7,6 +7,20 @@ Latest release in all ten game languages. Full history in English and Spanish.
 ## English
 
 
+### 0.3.4 — 2026-11-08 — BETA
+
+#### Fixes
+
+- **Bounty Hunter — Claim the Bounty:** now deals damage equal to Bounty Hunter’s Attack once to the chosen enemy. Multistrike no longer adds hits or strikes another enemy.
+
+#### Interface and text
+
+- **Claim the Bounty:** updated the description to say it deals damage rather than performing an attack.
+- **Units:** removed the Melee/Ranged labels; classes and species are retained.
+- **Roderic — Quartermaster:** revised the descriptions of additional equipment slots.
+
+**Bug reports and balance recommendations are very welcome!** Share them in the [Free Company Discord thread](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 ### 0.3.3 — 2026-11-07 — BETA
 
 #### Content and mechanics
@@ -164,6 +178,20 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 
 ## Spanish
 
+
+### 0.3.4 — 2026-11-08 — BETA
+
+#### Correcciones
+
+- **Bounty Hunter — Claim the Bounty:** ahora inflige una sola vez daño igual al ataque de Bounty Hunter al enemigo elegido. Multistrike ya no añade golpes ni alcanza a otro enemigo.
+
+#### Interfaz y textos
+
+- **Claim the Bounty:** descripción actualizada para indicar que inflige daño, en lugar de ejecutar un ataque.
+- **Unidades:** retiradas las etiquetas Melee/Ranged; se conservan sus clases y especies.
+- **Roderic — Quartermaster:** revisadas las descripciones de los espacios adicionales de equipo.
+
+**¡Los reportes de errores y las recomendaciones de balance son muy bienvenidos!** Puedes compartirlos en el [hilo de Discord de Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.3 — 2026-11-07 — BETA
 
@@ -360,6 +388,20 @@ comentarios de la ficha.
 ## French
 
 
+### 0.3.4 — 2026-11-08 — BETA
+
+#### Corrections
+
+- **Bounty Hunter — Claim the Bounty :** inflige une seule fois à l’ennemi choisi des dégâts égaux à l’Attaque de Bounty Hunter. Multistrike n’ajoute plus de coups et ne touche plus un autre ennemi.
+
+#### Interface et textes
+
+- **Claim the Bounty :** la description indique désormais des dégâts plutôt qu’une attaque.
+- **Unités :** suppression des étiquettes Melee/Ranged ; classes et espèces conservées.
+- **Roderic — Quartermaster :** descriptions des emplacements d’équipement supplémentaires révisées.
+
+**Les signalements de bugs et les suggestions d’équilibrage sont les bienvenus !** Partagez-les dans le [fil Discord de Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 ### 0.3.3 — 2026-11-07 — BETA
 
 #### Contenu et mécaniques
@@ -440,6 +482,20 @@ Français
 
 ## German
 
+
+### 0.3.4 — 2026-11-08 — BETA
+
+#### Fehlerbehebungen
+
+- **Bounty Hunter — Claim the Bounty:** fügt dem gewählten Gegner einmal Schaden in Höhe von Bounty Hunters Angriff zu. Multistrike fügt keine weiteren Treffer hinzu und trifft keinen anderen Gegner.
+
+#### Oberfläche und Texte
+
+- **Claim the Bounty:** die Beschreibung nennt jetzt Schaden statt eines Angriffs.
+- **Einheiten:** Melee/Ranged-Bezeichnungen entfernt; Klassen und Spezies bleiben erhalten.
+- **Roderic — Quartermaster:** Beschreibungen zusätzlicher Ausrüstungsplätze überarbeitet.
+
+**Fehlermeldungen und Vorschläge zur Spielbalance sind herzlich willkommen!** Teilt sie im [Discord-Thread von Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.3 — 2026-11-07 — BETA
 
@@ -522,6 +578,20 @@ Deutsch
 ## Russian
 
 
+### 0.3.4 — 2026-11-08 — BETA
+
+#### Исправления
+
+- **Bounty Hunter — Claim the Bounty:** однократно наносит выбранному врагу урон, равный атаке Bounty Hunter. Multistrike больше не добавляет удары и не поражает другого врага.
+
+#### Интерфейс и тексты
+
+- **Claim the Bounty:** описание теперь говорит о нанесении урона, а не о выполнении атаки.
+- **Бойцы:** удалены метки Melee/Ranged; классы и виды сохранены.
+- **Roderic — Quartermaster:** уточнены описания дополнительных слотов снаряжения.
+
+**Сообщения об ошибках и предложения по балансу очень приветствуются!** Делитесь ими в [ветке Free Company в Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 ### 0.3.3 — 2026-11-07 — BETA
 
 #### Контент и механики
@@ -602,6 +672,20 @@ Deutsch
 
 ## Portuguese Brazil
 
+
+### 0.3.4 — 2026-11-08 — BETA
+
+#### Correções
+
+- **Bounty Hunter — Claim the Bounty:** causa uma única vez dano igual ao Ataque de Bounty Hunter ao inimigo escolhido. Multistrike não adiciona mais golpes nem atinge outro inimigo.
+
+#### Interface e textos
+
+- **Claim the Bounty:** descrição atualizada para indicar dano, em vez de executar um ataque.
+- **Unidades:** removidas as etiquetas Melee/Ranged; classes e espécies mantidas.
+- **Roderic — Quartermaster:** revisadas as descrições dos espaços adicionais de equipamento.
+
+**Relatos de bugs e sugestões de balanceamento são muito bem-vindos!** Compartilhe no [tópico de Free Company no Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.3 — 2026-11-07 — BETA
 
@@ -684,6 +768,20 @@ Português (Brasil)
 ## Chinese
 
 
+### 0.3.4 — 2026-11-08 — BETA
+
+#### 修复
+
+- **Bounty Hunter — Claim the Bounty：**对选定敌人造成一次等同于 Bounty Hunter 攻击力的伤害。Multistrike 不再增加打击次数或击中其他敌人。
+
+#### 界面与文本
+
+- **Claim the Bounty：**描述改为造成伤害，而非执行攻击。
+- **单位：**移除 Melee/Ranged 标签，保留职业和种族。
+- **Roderic — Quartermaster：**修订额外装备栏位的描述。
+
+**非常欢迎错误报告和平衡性建议！**请在 [Free Company 的 Discord 讨论串](https://discord.com/channels/336546996779483136/1563998046084268032)中分享。
+
 ### 0.3.3 — 2026-11-07 — BETA
 
 #### 内容与机制
@@ -764,6 +862,20 @@ Português (Brasil)
 
 ## Chinese Traditional
 
+
+### 0.3.4 — 2026-11-08 — BETA
+
+#### 修正
+
+- **Bounty Hunter — Claim the Bounty：**對選定敵人造成一次等同於 Bounty Hunter 攻擊力的傷害。Multistrike 不再增加打擊次數或擊中其他敵人。
+
+#### 介面與文字
+
+- **Claim the Bounty：**描述改為造成傷害，而非執行攻擊。
+- **單位：**移除 Melee/Ranged 標籤，保留職業和種族。
+- **Roderic — Quartermaster：**修訂額外裝備欄位的描述。
+
+**非常歡迎錯誤回報和平衡性建議！**請在 [Free Company 的 Discord 討論串](https://discord.com/channels/336546996779483136/1563998046084268032)中分享。
 
 ### 0.3.3 — 2026-11-07 — BETA
 
@@ -846,6 +958,20 @@ Português (Brasil)
 ## Korean
 
 
+### 0.3.4 — 2026-11-08 — BETA
+
+#### 수정
+
+- **Bounty Hunter — Claim the Bounty:** 선택한 적에게 Bounty Hunter의 공격력만큼 피해를 한 번 줍니다. Multistrike로 추가 타격하거나 다른 적을 공격하지 않습니다.
+
+#### 인터페이스 및 텍스트
+
+- **Claim the Bounty:** 공격을 수행하는 대신 피해를 준다는 설명으로 수정했습니다.
+- **유닛:** Melee/Ranged 표기를 제거하고 직업과 종족은 유지했습니다.
+- **Roderic — Quartermaster:** 추가 장비 슬롯 설명을 수정했습니다.
+
+**버그 제보와 밸런스 제안은 언제나 환영합니다!** [Free Company Discord 스레드](https://discord.com/channels/336546996779483136/1563998046084268032)에 남겨 주세요.
+
 ### 0.3.3 — 2026-11-07 — BETA
 
 #### 콘텐츠 및 메커니즘
@@ -926,6 +1052,20 @@ Português (Brasil)
 
 ## Japanese
 
+
+### 0.3.4 — 2026-11-08 — BETA
+
+#### 修正
+
+- **Bounty Hunter — Claim the Bounty：**選んだ敵にBounty Hunterの攻撃力と同じダメージを1回与えます。Multistrikeによる追加攻撃や別の敵への攻撃は発生しません。
+
+#### インターフェースとテキスト
+
+- **Claim the Bounty：**攻撃ではなくダメージを与える効果として説明を修正。
+- **ユニット：**Melee/Ranged表記を削除し、クラスと種族は維持。
+- **Roderic — Quartermaster：**追加装備スロットの説明を修正。
+
+**不具合報告やバランス調整のご提案を歓迎します！** [Free Company の Discord スレッド](https://discord.com/channels/336546996779483136/1563998046084268032)にお寄せください。
 
 ### 0.3.3 — 2026-11-07 — BETA
 
@@ -1051,3 +1191,5 @@ Português (Brasil)
 <!-- 2026-11-07-1539||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||aplica plantilla aprobada contenido/balance/correcciones/interfaz/compatibilidad/agradecimientos en diez idiomas conservando historial -->
 
 <!-- 2026-11-07-1547||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||crea 0.3.3 con cambios nuevos y restaura íntegro historial 0.3.2 publicado, diez idiomas -->
+
+<!-- 2026-11-08-2044||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||añade changelog 0.3.4 aprobado, sin aclaraciones de idioma ni efectos conservados, en diez traducciones -->

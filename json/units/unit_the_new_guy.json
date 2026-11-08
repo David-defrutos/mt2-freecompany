@@ -64,7 +64,6 @@
       "attack_damage": 1,
       "health": 1,
       "subtypes": [
-        "@Sub_Melee",
         "@Sub_Warrior",
         "@Sub_Goblin"
       ],

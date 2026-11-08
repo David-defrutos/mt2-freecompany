@@ -65,7 +65,6 @@
       "health": 16,
       "subtypes": [
         "SubtypesData_BannerUnit",
-        "@Sub_Melee",
         "@Sub_Barbarian",
         "@Sub_Goblin"
       ],

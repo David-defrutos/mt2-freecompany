@@ -58,16 +58,16 @@
         "japanese": "賞金の取り立て"
       },
       "descriptions": {
-        "english": "Attack an enemy unit of your choice on any floor.",
-        "french": "Attaque une unité ennemie de votre choix, à n’importe quel étage.",
-        "german": "Greift eine gegnerische Einheit deiner Wahl auf einem beliebigen Stockwerk an.",
-        "russian": "Атакует выбранную вами вражескую боевую единицу на любом этаже.",
-        "portuguese": "Ataca uma unidade inimiga à sua escolha em qualquer andar.",
-        "chinese": "攻击任意楼层的一个指定敌方单位。",
-        "spanish": "Ataca a una unidad enemiga de tu elección en cualquier piso.",
-        "chinese_traditional": "攻擊任意樓層的一個指定敵方單位。",
-        "korean": "어느 층이든 선택한 적 유닛 하나를 공격.",
-        "japanese": "任意の階の選んだ敵ユニット1体を攻撃。"
+        "english": "Deal damage equal to this unit’s Attack to an enemy unit of your choice on any floor.",
+        "french": "Inflige des dégâts égaux à l’Attaque de cette unité à une unité ennemie de votre choix, à n’importe quel étage.",
+        "german": "Füge einer gegnerischen Einheit deiner Wahl auf einem beliebigen Stockwerk Schaden in Höhe des Angriffs dieser Einheit zu.",
+        "russian": "Наносит выбранному врагу на любом этаже урон, равный атаке этого бойца.",
+        "portuguese": "Cause dano igual ao Ataque desta unidade a uma unidade inimiga à sua escolha em qualquer andar.",
+        "chinese": "对任意楼层的一个指定敌方单位造成等同于本单位攻击力的伤害。",
+        "spanish": "Inflige daño igual al ataque de esta unidad a una unidad enemiga de tu elección en cualquier piso.",
+        "chinese_traditional": "對任意樓層的一個指定敵方單位造成等同於本單位攻擊力的傷害。",
+        "korean": "어느 층이든 선택한 적 유닛 하나에게 이 유닛의 공격력만큼 피해를 줍니다.",
+        "japanese": "任意の階の選んだ敵ユニット1体に、このユニットの攻撃力に等しいダメージを与える。"
       },
       "card_art": "@BountyHunter",
       "is_an_ability": true,
@@ -103,7 +103,6 @@
       "health": 16,
       "subtypes": [
         "SubtypesData_BannerUnit",
-        "@Sub_Ranged",
         "@Sub_Ranger",
         "@Sub_Goblin"
       ],
@@ -137,9 +136,11 @@
     {
       "id": "BountyHunterShotAttack",
       "applied_vfx": "@UnitBountyHunterImpactVFX",
-      "name": "CardEffectAttackTargetsWithSelfUnit",
+      "name": "CardEffectDamagePerSourceAttack",
       "target_mode": "drop_target_character",
-      "target_team": "heroes"
+      "target_team": "heroes",
+      "param_int": 1,
+      "param_bool": false
     },
     {
       "id": "BountyHunterCooldown",

@@ -61,7 +61,6 @@
       "attack_damage": 2,
       "health": 14,
       "subtypes": [
-        "@Sub_Ranged",
         "@Sub_Cleric",
         "@Sub_Goblin"
       ],

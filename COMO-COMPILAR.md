@@ -74,3 +74,11 @@ Si se crea un JSON nuevo, añadir su ruta a `src/Plugin.cs` y validar/compilar. 
 GitHub Actions sigue disponible para compilar la DLL del código subido, pero el flujo local no descarga fuentes remotas ni depende de ese artefacto. No usar un DLL antiguo versionado como si fuese el build actual. La DLL raíz local es una semilla ignorada; Validar/Instalar/Empaquetar usan el nuevo resultado identificado.
 
 <!-- 2026-11-07-1207||codex-freecompany-fx||COMO-COMPILAR.md||documenta repositorio único, comandos separados, Default instalado, respaldos, obsoletos, descarga Thunderstore y ZIP identificado -->
+
+## Cambios de prueba e instalación — 2026-11-07-2329
+
+Instrucción vigente de David: los cambios solicitados deben actualizarse también en la copia instalada `frutos-FreeCompany` de Default, donde realiza las pruebas; el repositorio canónico sigue siendo la fuente editable. Crear ZIP **solo bajo demanda**. Comprobar juego cerrado y conservar ajustes ajenos al cambio. Los cambios concurrentes de objetos a Ephemeral quedan fuera de esta tarea, sin revertirlos ni instalarlos con ella.
+
+Instalado el cambio exclusivo de Claim the Bounty: `BountyHunterShotAttack` usa `CardEffectDamagePerSourceAttack`, multiplicador 1 y param_bool false. Se ha transferido solo ese efecto desde la fuente para conservar todos los demás campos del JSON instalado y no arrastrar cambios concurrentes. Recarga, oro y resto intactos; sin límite nuevo de usos. Juego cerrado comprobado, respaldo en `D:\Juegos\MT2_mod\backups\freecompany\bounty-single-hit-install-2026-11-07-232939\unit_bounty_hunter.json`, JSON posterior verificado. No se sustituye DLL ni se genera ZIP. La instalación completa y los demás cambios pendientes no quedan certificados por esta actualización puntual.
+
+<!-- 2026-11-07-2329||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/COMO-COMPILAR.md||documenta instalación puntual Bounty Hunter y preferencia permanente copia de pruebas actualizada, ZIP solo bajo demanda -->

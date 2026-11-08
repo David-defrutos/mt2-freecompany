@@ -135,36 +135,6 @@
   ],
   "subtypes": [
     {
-      "id": "Sub_Melee",
-      "names": {
-        "english": "Melee",
-        "french": "Corps à corps",
-        "german": "Nahkampf",
-        "russian": "Ближний бой",
-        "portuguese": "Corpo a Corpo",
-        "chinese": "近战",
-        "spanish": "Cuerpo a cuerpo",
-        "chinese_traditional": "近戰",
-        "korean": "근접",
-        "japanese": "近接"
-      }
-    },
-    {
-      "id": "Sub_Ranged",
-      "names": {
-        "english": "Ranged",
-        "french": "À distance",
-        "german": "Fernkampf",
-        "russian": "Дальний бой",
-        "portuguese": "À Distância",
-        "chinese": "远程",
-        "spanish": "A distancia",
-        "chinese_traditional": "遠程",
-        "korean": "원거리",
-        "japanese": "遠距離"
-      }
-    },
-    {
       "id": "Sub_Warrior",
       "names": {
         "english": "Warrior",
@@ -600,8 +570,16 @@
         "character_art": {
           "sprite": "@RodericCharacterArt",
           "transform": {
-            "position": { "x": 1.7, "y": 0.9, "z": 0 },
-            "scale": { "x": 2.7, "y": 2.7, "z": 1 }
+            "position": {
+              "x": 1.7,
+              "y": 0.9,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.7,
+              "y": 2.7,
+              "z": 1
+            }
           }
         }
       }
@@ -613,8 +591,16 @@
         "character_art": {
           "sprite": "@VesperCharacterArt",
           "transform": {
-            "position": { "x": 2.1, "y": 0.8, "z": 0 },
-            "scale": { "x": 2.5, "y": 2.5, "z": 1 }
+            "position": {
+              "x": 2.1,
+              "y": 0.8,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.5,
+              "y": 2.5,
+              "z": 1
+            }
           }
         }
       }
