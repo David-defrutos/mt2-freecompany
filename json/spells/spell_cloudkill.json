@@ -22,7 +22,7 @@
         "russian": "Наложите [effect0.status0.power] [frostbite] и [effect1.status0.power] [witherbloom] на всех врагов на этом этаже.",
         "portuguese": "Aplique [effect0.status0.power] [frostbite] e [effect1.status0.power] [witherbloom] a todos os inimigos neste andar.",
         "chinese": "对本层所有敌人施加[effect0.status0.power] [frostbite]和[effect1.status0.power] [witherbloom]。",
-        "spanish": "Aplica [effect0.status0.power] [frostbite] y [effect1.status0.power] [witherbloom] a todos los enemigos de este piso.",
+        "spanish": "Añade [effect0.status0.power] [frostbite] y [effect1.status0.power] [witherbloom] a todos los enemigos de este piso.",
         "chinese_traditional": "對本層所有敵人施加[effect0.status0.power] [frostbite]和[effect1.status0.power] [witherbloom]。",
         "korean": "이 층의 모든 적에게 [effect0.status0.power] [frostbite] 및 [effect1.status0.power] [witherbloom] 부여.",
         "japanese": "この階の敵全体に[effect0.status0.power] [frostbite]と[effect1.status0.power] [witherbloom]を付与。"

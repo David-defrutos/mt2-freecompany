@@ -22,7 +22,7 @@
         "russian": "Наложите на союзную боевую единицу [effect0.status0.power] [undying] и [effect1.status0.power] [regen].",
         "portuguese": "Aplique [effect0.status0.power] [undying] e [effect1.status0.power] [regen] a uma unidade aliada.",
         "chinese": "对一个友方单位施加[effect0.status0.power] [undying]和[effect1.status0.power] [regen]。",
-        "spanish": "Aplica [effect0.status0.power] [undying] y [effect1.status0.power] [regen] a una unidad aliada.",
+        "spanish": "Añade [effect0.status0.power] [undying] y [effect1.status0.power] [regen] a una unidad aliada.",
         "chinese_traditional": "對一個友方單位施加[effect0.status0.power] [undying]和[effect1.status0.power] [regen]。",
         "korean": "아군 유닛 하나에게 [effect0.status0.power] [undying] 및 [effect1.status0.power] [regen] 부여.",
         "japanese": "味方ユニット1体に[effect0.status0.power] [undying]と[effect1.status0.power] [regen]を付与。"

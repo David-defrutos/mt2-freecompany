@@ -116,16 +116,16 @@
       "id": "RopeAndGrappleClimbTrigger",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "Climb to the floor above.",
-        "french": "Monte à l’étage supérieur.",
-        "german": "Steigt ein Stockwerk nach oben.",
-        "russian": "Поднимается на этаж выше.",
-        "portuguese": "Sobe para o andar acima.",
-        "chinese": "上移一层。",
-        "spanish": "Sube al piso superior.",
-        "chinese_traditional": "上移一層。",
-        "korean": "위층으로 이동.",
-        "japanese": "1階上へ移動。"
+        "english": "[ascend].",
+        "spanish": "[ascend].",
+        "french": "[ascend].",
+        "german": "[ascend].",
+        "russian": "[ascend].",
+        "portuguese": "[ascend].",
+        "chinese": "[ascend].",
+        "chinese_traditional": "[ascend].",
+        "korean": "[ascend].",
+        "japanese": "[ascend]."
       },
       "effects": [
         "@RopeAndGrappleClimb"

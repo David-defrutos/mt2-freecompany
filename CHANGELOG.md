@@ -7,6 +7,19 @@ Latest release in all ten game languages. Full history in English and Spanish.
 ## English
 
 
+### 0.3.5 — 2026-11-09 — BETA
+
+#### Fixes
+
+- **Camp Brawler:** corrected the description to show Rage instead of the generic buff category.
+
+#### Interface and text
+
+- **Berserker:** increased combat sprite size by 30%, preserving proportions and foot placement.
+- **Text and tooltips:** revised card, champion, ability and artifact descriptions. Standardized terminology, clarified targets and effects, corrected grammar and simplified redundant wording.
+
+**Bug reports and balance recommendations are very welcome!** Share them in the [Free Company Discord thread](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 ### 0.3.4 — 2026-11-08 — BETA
 
 #### Fixes
@@ -178,6 +191,19 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 
 ## Spanish
 
+
+### 0.3.5 — 2026-11-09 — BETA
+
+#### Correcciones
+
+- **Camp Brawler:** corregida la descripción para mostrar Rage en lugar de la categoría genérica de beneficios.
+
+#### Interfaz y textos
+
+- **Berserker:** aumentado su tamaño visual en combate un 30 %, conservando proporciones y apoyo de los pies.
+- **Textos y tooltips:** revisadas las descripciones de cartas, campeones, habilidades y reliquias. Terminología unificada, objetivos y efectos aclarados, gramática corregida y redacción redundante simplificada.
+
+**¡Los reportes de errores y las recomendaciones de balance son muy bienvenidos!** Puedes compartirlos en el [hilo de Discord de Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.4 — 2026-11-08 — BETA
 
@@ -388,6 +414,19 @@ comentarios de la ficha.
 ## French
 
 
+### 0.3.5 — 2026-11-09 — BETA
+
+#### Corrections
+
+- **Camp Brawler:** description corrigée pour afficher Rage au lieu de la catégorie générique des bonus.
+
+#### Interface et textes
+
+- **Berserker:** taille en combat augmentée de 30 %, en conservant les proportions et la position des pieds.
+- **Textes et infobulles:** descriptions des cartes, champions, capacités et artefacts révisées : terminologie harmonisée, cibles et effets précisés, grammaire corrigée et formulations redondantes simplifiées.
+
+**Les signalements de bugs et les suggestions d’équilibrage sont les bienvenus !** Partagez-les dans le [fil Discord de Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 ### 0.3.4 — 2026-11-08 — BETA
 
 #### Corrections
@@ -482,6 +521,19 @@ Français
 
 ## German
 
+
+### 0.3.5 — 2026-11-09 — BETA
+
+#### Fehlerbehebungen
+
+- **Camp Brawler:** Beschreibung zeigt jetzt Rage statt der allgemeinen Kategorie positiver Effekte.
+
+#### Oberfläche und Texte
+
+- **Berserker:** Darstellung im Kampf um 30 % vergrößert, bei gleichen Proportionen und unveränderter Fußposition.
+- **Texte und Tooltips:** Beschreibungen von Karten, Champions, Fähigkeiten und Artefakten überarbeitet. Begriffe vereinheitlicht, Ziele und Effekte präzisiert, Grammatik korrigiert und redundante Formulierungen vereinfacht.
+
+**Fehlermeldungen und Vorschläge zur Spielbalance sind herzlich willkommen!** Teilt sie im [Discord-Thread von Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.4 — 2026-11-08 — BETA
 
@@ -578,6 +630,19 @@ Deutsch
 ## Russian
 
 
+### 0.3.5 — 2026-11-09 — BETA
+
+#### Исправления
+
+- **Camp Brawler:** в описании теперь указана Rage вместо общей категории положительных эффектов.
+
+#### Интерфейс и тексты
+
+- **Berserker:** размер в бою увеличен на 30 % с сохранением пропорций и положения ступней.
+- **Тексты и подсказки:** переработаны описания карт, чемпионов, способностей и артефактов: унифицированы термины, уточнены цели и эффекты, исправлена грамматика и сокращены избыточные пояснения.
+
+**Сообщения об ошибках и предложения по балансу очень приветствуются!** Делитесь ими в [ветке Free Company в Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 ### 0.3.4 — 2026-11-08 — BETA
 
 #### Исправления
@@ -672,6 +737,19 @@ Deutsch
 
 ## Portuguese Brazil
 
+
+### 0.3.5 — 2026-11-09 — BETA
+
+#### Correções
+
+- **Camp Brawler:** descrição corrigida para mostrar Rage em vez da categoria genérica de efeitos positivos.
+
+#### Interface e textos
+
+- **Berserker:** tamanho em combate aumentado em 30%, mantendo proporções e posição dos pés.
+- **Textos e dicas:** descrições de cartas, campeões, habilidades e artefatos revisadas. Terminologia padronizada, alvos e efeitos esclarecidos, gramática corrigida e explicações redundantes simplificadas.
+
+**Relatos de bugs e sugestões de balanceamento são muito bem-vindos!** Compartilhe no [tópico de Free Company no Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.4 — 2026-11-08 — BETA
 
@@ -768,6 +846,19 @@ Português (Brasil)
 ## Chinese
 
 
+### 0.3.5 — 2026-11-09 — BETA
+
+#### 修复
+
+- **Camp Brawler:** 修正描述，显示 Rage，而非泛指增益效果。
+
+#### 界面与文本
+
+- **Berserker:** 战斗形象放大30%，保持比例和脚部位置。
+- **文本与提示:** 修订卡牌、勇者、技能和神器描述，统一术语，明确目标和效果，修正语法并精简冗余措辞。
+
+**非常欢迎错误报告和平衡性建议！**请在 [Free Company 的 Discord 讨论串](https://discord.com/channels/336546996779483136/1563998046084268032)中分享。
+
 ### 0.3.4 — 2026-11-08 — BETA
 
 #### 修复
@@ -862,6 +953,19 @@ Português (Brasil)
 
 ## Chinese Traditional
 
+
+### 0.3.5 — 2026-11-09 — BETA
+
+#### 修正
+
+- **Camp Brawler:** 修正描述，顯示 Rage，而非泛指增益效果。
+
+#### 介面與文字
+
+- **Berserker:** 戰鬥形象放大30%，保持比例與腳部位置。
+- **文字與提示:** 修訂卡牌、勇者、技能和神器描述，統一術語，明確目標和效果，修正語法並精簡冗餘措辭。
+
+**非常歡迎錯誤回報和平衡性建議！**請在 [Free Company 的 Discord 討論串](https://discord.com/channels/336546996779483136/1563998046084268032)中分享。
 
 ### 0.3.4 — 2026-11-08 — BETA
 
@@ -958,6 +1062,19 @@ Português (Brasil)
 ## Korean
 
 
+### 0.3.5 — 2026-11-09 — BETA
+
+#### 수정
+
+- **Camp Brawler:** 일반적인 강화 효과 대신 Rage를 표시하도록 설명을 수정했습니다.
+
+#### 인터페이스 및 텍스트
+
+- **Berserker:** 전투 모습의 크기를 30% 키우고 비율과 발 위치를 유지했습니다.
+- **텍스트 및 툴팁:** 카드, 챔피언, 능력 및 유물 설명을 검토했습니다. 용어를 통일하고 대상과 효과를 명확히 하며 문법과 중복 표현을 수정했습니다.
+
+**버그 제보와 밸런스 제안은 언제나 환영합니다!** [Free Company Discord 스레드](https://discord.com/channels/336546996779483136/1563998046084268032)에 남겨 주세요.
+
 ### 0.3.4 — 2026-11-08 — BETA
 
 #### 수정
@@ -1052,6 +1169,19 @@ Português (Brasil)
 
 ## Japanese
 
+
+### 0.3.5 — 2026-11-09 — BETA
+
+#### 修正
+
+- **Camp Brawler:** 一般的な強化効果ではなくRageを示すよう説明を修正。
+
+#### インターフェースとテキスト
+
+- **Berserker:** 戦闘中の表示を30%拡大し、縦横比と足の位置を維持。
+- **テキストとツールチップ:** カード、チャンピオン、能力、アーティファクトの説明を見直し、用語を統一。対象と効果を明確にし、文法と冗長な表現を修正。
+
+**不具合報告やバランス調整のご提案を歓迎します！** [Free Company の Discord スレッド](https://discord.com/channels/336546996779483136/1563998046084268032)にお寄せください。
 
 ### 0.3.4 — 2026-11-08 — BETA
 
@@ -1193,3 +1323,5 @@ Português (Brasil)
 <!-- 2026-11-07-1547||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||crea 0.3.3 con cambios nuevos y restaura íntegro historial 0.3.2 publicado, diez idiomas -->
 
 <!-- 2026-11-08-2044||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||añade changelog 0.3.4 aprobado, sin aclaraciones de idioma ni efectos conservados, en diez traducciones -->
+
+<!-- 2026-11-09-2336||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||añade 0.3.5 con resumen aprobado y listas ordenadas por nombre inglés en diez idiomas -->

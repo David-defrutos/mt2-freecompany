@@ -22,7 +22,7 @@
         "russian": "Наложите на врага [effect0.status0.power] [fragile]. Нельзя выбрать босса целью.",
         "portuguese": "Aplique [effect0.status0.power] [fragile] a um inimigo. Não pode selecionar chefes como alvo.",
         "chinese": "对一个敌人施加[effect0.status0.power] [fragile]。 无法以首领为目标。",
-        "spanish": "Aplica [effect0.status0.power] [fragile] a un enemigo. No puede seleccionar jefes como objetivo.",
+        "spanish": "Añade [effect0.status0.power] [fragile] a un enemigo. No puede seleccionar jefes como objetivo.",
         "chinese_traditional": "對一個敵人施加[effect0.status0.power] [fragile]。 無法以首領為目標。",
         "korean": "적 하나에게 [effect0.status0.power] [fragile] 부여. 보스를 대상으로 지정할 수 없습니다.",
         "japanese": "敵1体に[effect0.status0.power] [fragile]を付与。 ボスは対象にできない。"

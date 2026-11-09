@@ -112,7 +112,7 @@
         "russian": "Восстановите [effect0.power] здоровья самой слабой союзной боевой единице и снимите все ослабления со случайной союзной боевой единицы с ослаблениями.",
         "portuguese": "Restaure [effect0.power] de vida da unidade aliada mais fraca e remova todas as penalidades de uma unidade aliada aleatória com penalidades.",
         "chinese": "为最虚弱的友方单位恢复[effect0.power]点生命值，并移除一个随机带有减益的友方单位的所有减益。",
-        "spanish": "Restaura [effect0.power] de vida a la unidad aliada más débil y elimina todos los perjuicios de una unidad aliada aleatoria que tenga perjuicios.",
+        "spanish": "Restaura [effect0.power] de salud a la unidad aliada más débil y elimina todos los perjuicios de una unidad aliada aleatoria que tenga perjuicios.",
         "chinese_traditional": "為最虛弱的友方單位恢復[effect0.power]點生命值，並移除一個隨機帶有減益的友方單位的所有減益。",
         "korean": "가장 약한 아군 유닛의 체력을 [effect0.power] 회복하고, 약화 효과가 있는 무작위 아군 유닛 하나의 모든 약화 효과 제거.",
         "japanese": "最も弱った味方ユニットの体力を[effect0.power]回復し、弱体効果を受けているランダムな味方ユニット1体の弱体効果をすべて除去。"

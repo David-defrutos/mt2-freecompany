@@ -22,7 +22,7 @@
         "russian": "Наложите [effect0.status0.power] [valor] на все союзные боевые единицы на этом этаже.",
         "portuguese": "Aplique [effect0.status0.power] [valor] a todas as unidades aliadas neste andar.",
         "chinese": "对本层所有友方单位施加[effect0.status0.power] [valor]。",
-        "spanish": "Aplica [effect0.status0.power] [valor] a todas las unidades aliadas de este piso.",
+        "spanish": "Añade [effect0.status0.power] [valor] a todas las unidades aliadas de este piso.",
         "chinese_traditional": "對本層所有友方單位施加[effect0.status0.power] [valor]。",
         "korean": "이 층의 모든 아군 유닛에게 [effect0.status0.power] [valor] 부여.",
         "japanese": "この階の味方ユニット全体に[effect0.status0.power] [valor]を付与。"

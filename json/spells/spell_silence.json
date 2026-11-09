@@ -22,7 +22,7 @@
         "russian": "Наложите на врага [effect0.status0.power] [mute].",
         "portuguese": "Aplique [effect0.status0.power] [mute] a um inimigo.",
         "chinese": "对一个敌人施加[effect0.status0.power] [mute]。",
-        "spanish": "Aplica [effect0.status0.power] [mute] a un enemigo.",
+        "spanish": "Añade [effect0.status0.power] [mute] a un enemigo.",
         "chinese_traditional": "對一個敵人施加[effect0.status0.power] [mute]。",
         "korean": "적 하나에게 [effect0.status0.power] [mute] 부여.",
         "japanese": "敵1体に[effect0.status0.power] [mute]を付与。"

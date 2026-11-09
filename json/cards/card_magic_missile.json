@@ -16,7 +16,7 @@
         "japanese": "マジックミサイル"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to a random enemy three times.",
+        "english": "Deal [effect0.power] damage to a random enemy 3 times.",
         "french": "Infligez [effect0.power] dégâts à un ennemi aléatoire, trois fois.",
         "german": "Füge dreimal einem zufälligen Gegner [effect0.power] Schaden zu.",
         "russian": "Трижды нанесите [effect0.power] урона случайному врагу.",

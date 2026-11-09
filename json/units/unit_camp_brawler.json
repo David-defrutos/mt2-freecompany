@@ -96,16 +96,16 @@
       "id": "CampBrawlerTrigger",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] [buff].",
-        "french": "Gagnez [effect0.status0.power] [buff].",
-        "german": "Erhalte [effect0.status0.power] [buff].",
-        "russian": "Получите [effect0.status0.power] [buff].",
-        "portuguese": "Ganhe [effect0.status0.power] [buff].",
-        "chinese": "获得[effect0.status0.power] [buff]。",
-        "spanish": "Gana [effect0.status0.power] [buff].",
-        "chinese_traditional": "獲得[effect0.status0.power] [buff]。",
-        "korean": "[effect0.status0.power] [buff] 획득.",
-        "japanese": "[effect0.status0.power] [buff]を得る。"
+        "english": "Gain [effect0.status0.power] [rage].",
+        "french": "Gagnez [effect0.status0.power] [rage].",
+        "german": "Erhalte [effect0.status0.power] [rage].",
+        "russian": "Получите [effect0.status0.power] [rage].",
+        "portuguese": "Ganhe [effect0.status0.power] [rage].",
+        "chinese": "获得[effect0.status0.power] [rage]。",
+        "spanish": "Gana [effect0.status0.power] [rage].",
+        "chinese_traditional": "獲得[effect0.status0.power] [rage]。",
+        "korean": "[effect0.status0.power] [rage] 획득.",
+        "japanese": "[effect0.status0.power] [rage]を得る。"
       },
       "effects": [
         "@CampBrawlerAbility"

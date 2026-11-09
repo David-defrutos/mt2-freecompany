@@ -22,7 +22,7 @@
         "russian": "<b>+10</b> [health]. Восстанавливает <b>3</b> [health]. Накладывает <b>3</b> [regen].",
         "portuguese": "<b>+10</b> [health]. Restaura <b>3</b> [health]. Aplica <b>3</b> [regen].",
         "chinese": "<b>+10</b> [health]. 恢复<b>3</b> [health]。 施加<b>3</b> [regen]。",
-        "spanish": "<b>+10</b> [health]. Recupera <b>3</b> [health]. Aplica <b>3</b> [regen].",
+        "spanish": "<b>+10</b> [health]. Recupera <b>3</b> [health]. Añade <b>3</b> [regen].",
         "chinese_traditional": "<b>+10</b> [health]. 恢復<b>3</b> [health]。 施加<b>3</b> [regen]。",
         "korean": "<b>+10</b> [health]. <b>3</b> [health] 회복. <b>3</b> [regen] 부여.",
         "japanese": "<b>+10</b> [health]. <b>3</b> [health]を回復。 <b>3</b> [regen]を付与。"
@@ -83,7 +83,7 @@
         "russian": "<b>+20</b> [health]. Восстанавливает <b>6</b> [health]. Накладывает <b>6</b> [regen].",
         "portuguese": "<b>+20</b> [health]. Restaura <b>6</b> [health]. Aplica <b>6</b> [regen].",
         "chinese": "<b>+20</b> [health]. 恢复<b>6</b> [health]。 施加<b>6</b> [regen]。",
-        "spanish": "<b>+20</b> [health]. Recupera <b>6</b> [health]. Aplica <b>6</b> [regen].",
+        "spanish": "<b>+20</b> [health]. Recupera <b>6</b> [health]. Añade <b>6</b> [regen].",
         "chinese_traditional": "<b>+20</b> [health]. 恢復<b>6</b> [health]。 施加<b>6</b> [regen]。",
         "korean": "<b>+20</b> [health]. <b>6</b> [health] 회복. <b>6</b> [regen] 부여.",
         "japanese": "<b>+20</b> [health]. <b>6</b> [health]を回復。 <b>6</b> [regen]を付与。"
@@ -144,7 +144,7 @@
         "russian": "<b>+30</b> [health]. <b>1</b> [undying]. Восстанавливает <b>9</b> [health]. Накладывает <b>9</b> [regen].",
         "portuguese": "<b>+30</b> [health]. <b>1</b> [undying]. Restaura <b>9</b> [health]. Aplica <b>9</b> [regen].",
         "chinese": "<b>+30</b> [health]. <b>1</b> [undying]. 恢复<b>9</b> [health]。 施加<b>9</b> [regen]。",
-        "spanish": "<b>+30</b> [health]. <b>1</b> [undying]. Recupera <b>9</b> [health]. Aplica <b>9</b> [regen].",
+        "spanish": "<b>+30</b> [health]. <b>1</b> [undying]. Recupera <b>9</b> [health]. Añade <b>9</b> [regen].",
         "chinese_traditional": "<b>+30</b> [health]. <b>1</b> [undying]. 恢復<b>9</b> [health]。 施加<b>9</b> [regen]。",
         "korean": "<b>+30</b> [health]. <b>1</b> [undying]. <b>9</b> [health] 회복. <b>9</b> [regen] 부여.",
         "japanese": "<b>+30</b> [health]. <b>1</b> [undying]. <b>9</b> [health]を回復。 <b>9</b> [regen]を付与。"
@@ -207,7 +207,7 @@
         "russian": "<b>+10</b> [health]. При экипировке: Восстанавливает <b>3</b> [health]. Накладывает <b>3</b> [regen].",
         "portuguese": "<b>+10</b> [health]. Ao equipar: Restaura <b>3</b> [health]. Aplica <b>3</b> [regen].",
         "chinese": "<b>+10</b> [health]. 装备时： 恢复<b>3</b> [health]。 施加<b>3</b> [regen]。",
-        "spanish": "<b>+10</b> [health]. Al equipar: Recupera <b>3</b> [health]. Aplica <b>3</b> [regen].",
+        "spanish": "<b>+10</b> [health]. Al equipar: Recupera <b>3</b> [health]. Añade <b>3</b> [regen].",
         "chinese_traditional": "<b>+10</b> [health]. 裝備時： 恢復<b>3</b> [health]。 施加<b>3</b> [regen]。",
         "korean": "<b>+10</b> [health]. 장착 시: <b>3</b> [health] 회복. <b>3</b> [regen] 부여.",
         "japanese": "<b>+10</b> [health]. 装備時： <b>3</b> [health]を回復。 <b>3</b> [regen]を付与。"
@@ -237,7 +237,7 @@
         "russian": "<b>+20</b> [health]. При экипировке: Восстанавливает <b>6</b> [health]. Накладывает <b>6</b> [regen].",
         "portuguese": "<b>+20</b> [health]. Ao equipar: Restaura <b>6</b> [health]. Aplica <b>6</b> [regen].",
         "chinese": "<b>+20</b> [health]. 装备时： 恢复<b>6</b> [health]。 施加<b>6</b> [regen]。",
-        "spanish": "<b>+20</b> [health]. Al equipar: Recupera <b>6</b> [health]. Aplica <b>6</b> [regen].",
+        "spanish": "<b>+20</b> [health]. Al equipar: Recupera <b>6</b> [health]. Añade <b>6</b> [regen].",
         "chinese_traditional": "<b>+20</b> [health]. 裝備時： 恢復<b>6</b> [health]。 施加<b>6</b> [regen]。",
         "korean": "<b>+20</b> [health]. 장착 시: <b>6</b> [health] 회복. <b>6</b> [regen] 부여.",
         "japanese": "<b>+20</b> [health]. 装備時： <b>6</b> [health]を回復。 <b>6</b> [regen]を付与。"
@@ -267,7 +267,7 @@
         "russian": "<b>+30</b> [health]. <b>1</b> [undying]. При экипировке: Восстанавливает <b>9</b> [health]. Накладывает <b>9</b> [regen].",
         "portuguese": "<b>+30</b> [health]. <b>1</b> [undying]. Ao equipar: Restaura <b>9</b> [health]. Aplica <b>9</b> [regen].",
         "chinese": "<b>+30</b> [health]. <b>1</b> [undying]. 装备时： 恢复<b>9</b> [health]。 施加<b>9</b> [regen]。",
-        "spanish": "<b>+30</b> [health]. <b>1</b> [undying]. Al equipar: Recupera <b>9</b> [health]. Aplica <b>9</b> [regen].",
+        "spanish": "<b>+30</b> [health]. <b>1</b> [undying]. Al equipar: Recupera <b>9</b> [health]. Añade <b>9</b> [regen].",
         "chinese_traditional": "<b>+30</b> [health]. <b>1</b> [undying]. 裝備時： 恢復<b>9</b> [health]。 施加<b>9</b> [regen]。",
         "korean": "<b>+30</b> [health]. <b>1</b> [undying]. 장착 시: <b>9</b> [health] 회복. <b>9</b> [regen] 부여.",
         "japanese": "<b>+30</b> [health]. <b>1</b> [undying]. 装備時： <b>9</b> [health]を回復。 <b>9</b> [regen]を付与。"

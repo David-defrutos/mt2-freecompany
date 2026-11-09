@@ -22,7 +22,7 @@
         "russian": "<b>+8</b> [health]. Получите <b>3</b> [armor].",
         "portuguese": "<b>+8</b> [health]. Aplique <b>3</b> [armor].",
         "chinese": "<b>+8</b> [health]. 施加<b>3</b> [armor]。",
-        "spanish": "<b>+8</b> [health]. Aplica <b>3</b> [armor].",
+        "spanish": "<b>+8</b> [health]. Añade <b>3</b> [armor].",
         "chinese_traditional": "<b>+8</b> [health]. 施加<b>3</b> [armor]。",
         "korean": "<b>+8</b> [health]. <b>3</b> [armor] 부여.",
         "japanese": "<b>+8</b> [health]. <b>3</b> [armor]を付与。"
@@ -82,7 +82,7 @@
         "russian": "<b>+15</b> [health]. Получите <b>6</b> [armor] и [steelguard].",
         "portuguese": "<b>+15</b> [health]. Aplique <b>6</b> [armor] e [steelguard].",
         "chinese": "<b>+15</b> [health]. 施加<b>6</b> [armor]和[steelguard]。",
-        "spanish": "<b>+15</b> [health]. Aplica <b>6</b> [armor] y [steelguard].",
+        "spanish": "<b>+15</b> [health]. Añade <b>6</b> [armor] y [steelguard].",
         "chinese_traditional": "<b>+15</b> [health]. 施加<b>6</b> [armor]和[steelguard]。",
         "korean": "<b>+15</b> [health]. <b>6</b> [armor] 및 [steelguard] 부여.",
         "japanese": "<b>+15</b> [health]. <b>6</b> [armor]と[steelguard]を付与。"
@@ -142,7 +142,7 @@
         "russian": "<b>+25</b> [health]. Получите <b>10</b> [armor], [steelguard] и <b>1</b> [titanskin].",
         "portuguese": "<b>+25</b> [health]. Aplique <b>10</b> [armor], [steelguard] e <b>1</b> [titanskin].",
         "chinese": "<b>+25</b> [health]. 施加<b>10</b> [armor], [steelguard]和<b>1</b> [titanskin]。",
-        "spanish": "<b>+25</b> [health]. Aplica <b>10</b> [armor], [steelguard] y <b>1</b> [titanskin].",
+        "spanish": "<b>+25</b> [health]. Añade <b>10</b> [armor], [steelguard] y <b>1</b> [titanskin].",
         "chinese_traditional": "<b>+25</b> [health]. 施加<b>10</b> [armor], [steelguard]和<b>1</b> [titanskin]。",
         "korean": "<b>+25</b> [health]. <b>10</b> [armor], [steelguard] 및 <b>1</b> [titanskin] 부여.",
         "japanese": "<b>+25</b> [health]. <b>10</b> [armor], [steelguard]と<b>1</b> [titanskin]を付与。"

@@ -22,7 +22,7 @@
         "russian": "Накладывает <b>2</b> [conduit].",
         "portuguese": "Aplica <b>2</b> [conduit].",
         "chinese": "施加<b>2</b> [conduit]。",
-        "spanish": "Aplica <b>2</b> [conduit].",
+        "spanish": "Añade <b>2</b> [conduit].",
         "chinese_traditional": "施加<b>2</b> [conduit]。",
         "korean": "<b>2</b> [conduit] 부여.",
         "japanese": "<b>2</b> [conduit]を付与。"
@@ -82,7 +82,7 @@
         "russian": "<b>+5</b> [attack]. Накладывает <b>4</b> [conduit].",
         "portuguese": "<b>+5</b> [attack]. Aplica <b>4</b> [conduit].",
         "chinese": "<b>+5</b> [attack]. 施加<b>4</b> [conduit]。",
-        "spanish": "<b>+5</b> [attack]. Aplica <b>4</b> [conduit].",
+        "spanish": "<b>+5</b> [attack]. Añade <b>4</b> [conduit].",
         "chinese_traditional": "<b>+5</b> [attack]. 施加<b>4</b> [conduit]。",
         "korean": "<b>+5</b> [attack]. <b>4</b> [conduit] 부여.",
         "japanese": "<b>+5</b> [attack]. <b>4</b> [conduit]を付与。"
@@ -142,7 +142,7 @@
         "russian": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Накладывает <b>6</b> [conduit].",
         "portuguese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Aplica <b>6</b> [conduit].",
         "chinese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 施加<b>6</b> [conduit]。",
-        "spanish": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Aplica <b>6</b> [conduit].",
+        "spanish": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Añade <b>6</b> [conduit].",
         "chinese_traditional": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 施加<b>6</b> [conduit]。",
         "korean": "<b>+10</b> [attack]. <b>1</b> [mageblade]. <b>6</b> [conduit] 부여.",
         "japanese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. <b>6</b> [conduit]を付与。"
@@ -204,7 +204,7 @@
         "russian": "При экипировке: Накладывает <b>2</b> [conduit].",
         "portuguese": "Ao equipar: Aplica <b>2</b> [conduit].",
         "chinese": "装备时： 施加<b>2</b> [conduit]。",
-        "spanish": "Al equipar: Aplica <b>2</b> [conduit].",
+        "spanish": "Al equipar: Añade <b>2</b> [conduit].",
         "chinese_traditional": "裝備時： 施加<b>2</b> [conduit]。",
         "korean": "장착 시: <b>2</b> [conduit] 부여.",
         "japanese": "装備時： <b>2</b> [conduit]を付与。"
@@ -233,7 +233,7 @@
         "russian": "<b>+5</b> [attack]. При экипировке: Накладывает <b>4</b> [conduit].",
         "portuguese": "<b>+5</b> [attack]. Ao equipar: Aplica <b>4</b> [conduit].",
         "chinese": "<b>+5</b> [attack]. 装备时： 施加<b>4</b> [conduit]。",
-        "spanish": "<b>+5</b> [attack]. Al equipar: Aplica <b>4</b> [conduit].",
+        "spanish": "<b>+5</b> [attack]. Al equipar: Añade <b>4</b> [conduit].",
         "chinese_traditional": "<b>+5</b> [attack]. 裝備時： 施加<b>4</b> [conduit]。",
         "korean": "<b>+5</b> [attack]. 장착 시: <b>4</b> [conduit] 부여.",
         "japanese": "<b>+5</b> [attack]. 装備時： <b>4</b> [conduit]を付与。"
@@ -263,7 +263,7 @@
         "russian": "<b>+10</b> [attack]. <b>1</b> [mageblade]. При экипировке: Накладывает <b>6</b> [conduit].",
         "portuguese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Ao equipar: Aplica <b>6</b> [conduit].",
         "chinese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 装备时： 施加<b>6</b> [conduit]。",
-        "spanish": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Al equipar: Aplica <b>6</b> [conduit].",
+        "spanish": "<b>+10</b> [attack]. <b>1</b> [mageblade]. Al equipar: Añade <b>6</b> [conduit].",
         "chinese_traditional": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 裝備時： 施加<b>6</b> [conduit]。",
         "korean": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 장착 시: <b>6</b> [conduit] 부여.",
         "japanese": "<b>+10</b> [attack]. <b>1</b> [mageblade]. 装備時： <b>6</b> [conduit]を付与。"

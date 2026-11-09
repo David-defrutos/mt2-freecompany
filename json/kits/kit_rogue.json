@@ -22,7 +22,7 @@
         "russian": "<b>+4</b> [attack]. Получите <b>1</b> [avarice] и <b>2</b> [stealth].",
         "portuguese": "<b>+4</b> [attack]. Aplique <b>1</b> [avarice] e <b>2</b> [stealth].",
         "chinese": "<b>+4</b> [attack]. 施加<b>1</b> [avarice]和<b>2</b> [stealth]。",
-        "spanish": "<b>+4</b> [attack]. Aplica <b>1</b> [avarice] y <b>2</b> [stealth].",
+        "spanish": "<b>+4</b> [attack]. Añade <b>1</b> [avarice] y <b>2</b> [stealth].",
         "chinese_traditional": "<b>+4</b> [attack]. 施加<b>1</b> [avarice]和<b>2</b> [stealth]。",
         "korean": "<b>+4</b> [attack]. <b>1</b> [avarice] 및 <b>2</b> [stealth] 부여.",
         "japanese": "<b>+4</b> [attack]. <b>1</b> [avarice]と<b>2</b> [stealth]を付与。"
@@ -81,7 +81,7 @@
         "russian": "<b>+9</b> [attack]. Получите <b>2</b> [avarice] и <b>4</b> [stealth].",
         "portuguese": "<b>+9</b> [attack]. Aplique <b>2</b> [avarice] e <b>4</b> [stealth].",
         "chinese": "<b>+9</b> [attack]. 施加<b>2</b> [avarice]和<b>4</b> [stealth]。",
-        "spanish": "<b>+9</b> [attack]. Aplica <b>2</b> [avarice] y <b>4</b> [stealth].",
+        "spanish": "<b>+9</b> [attack]. Añade <b>2</b> [avarice] y <b>4</b> [stealth].",
         "chinese_traditional": "<b>+9</b> [attack]. 施加<b>2</b> [avarice]和<b>4</b> [stealth]。",
         "korean": "<b>+9</b> [attack]. <b>2</b> [avarice] 및 <b>4</b> [stealth] 부여.",
         "japanese": "<b>+9</b> [attack]. <b>2</b> [avarice]と<b>4</b> [stealth]を付与。"
@@ -140,7 +140,7 @@
         "russian": "<b>+15</b> [attack]. Получите <b>4</b> [avarice] и <b>6</b> [stealth].",
         "portuguese": "<b>+15</b> [attack]. Aplique <b>4</b> [avarice] e <b>6</b> [stealth].",
         "chinese": "<b>+15</b> [attack]. 施加<b>4</b> [avarice]和<b>6</b> [stealth]。",
-        "spanish": "<b>+15</b> [attack]. Aplica <b>4</b> [avarice] y <b>6</b> [stealth].",
+        "spanish": "<b>+15</b> [attack]. Añade <b>4</b> [avarice] y <b>6</b> [stealth].",
         "chinese_traditional": "<b>+15</b> [attack]. 施加<b>4</b> [avarice]和<b>6</b> [stealth]。",
         "korean": "<b>+15</b> [attack]. <b>4</b> [avarice] 및 <b>6</b> [stealth] 부여.",
         "japanese": "<b>+15</b> [attack]. <b>4</b> [avarice]と<b>6</b> [stealth]を付与。"
@@ -201,7 +201,7 @@
         "russian": "<b>+4</b> [attack]. Получите <b>1</b> [avarice] и <b>2</b> [stealth].",
         "portuguese": "<b>+4</b> [attack]. Aplique <b>1</b> [avarice] e <b>2</b> [stealth].",
         "chinese": "<b>+4</b> [attack]. 施加<b>1</b> [avarice]和<b>2</b> [stealth]。",
-        "spanish": "<b>+4</b> [attack]. Aplica <b>1</b> [avarice] y <b>2</b> [stealth].",
+        "spanish": "<b>+4</b> [attack]. Añade <b>1</b> [avarice] y <b>2</b> [stealth].",
         "chinese_traditional": "<b>+4</b> [attack]. 施加<b>1</b> [avarice]和<b>2</b> [stealth]。",
         "korean": "<b>+4</b> [attack]. <b>1</b> [avarice] 및 <b>2</b> [stealth] 부여.",
         "japanese": "<b>+4</b> [attack]. <b>1</b> [avarice]と<b>2</b> [stealth]を付与。"
@@ -240,7 +240,7 @@
         "russian": "<b>+9</b> [attack]. Получите <b>2</b> [avarice] и <b>4</b> [stealth].",
         "portuguese": "<b>+9</b> [attack]. Aplique <b>2</b> [avarice] e <b>4</b> [stealth].",
         "chinese": "<b>+9</b> [attack]. 施加<b>2</b> [avarice]和<b>4</b> [stealth]。",
-        "spanish": "<b>+9</b> [attack]. Aplica <b>2</b> [avarice] y <b>4</b> [stealth].",
+        "spanish": "<b>+9</b> [attack]. Añade <b>2</b> [avarice] y <b>4</b> [stealth].",
         "chinese_traditional": "<b>+9</b> [attack]. 施加<b>2</b> [avarice]和<b>4</b> [stealth]。",
         "korean": "<b>+9</b> [attack]. <b>2</b> [avarice] 및 <b>4</b> [stealth] 부여.",
         "japanese": "<b>+9</b> [attack]. <b>2</b> [avarice]と<b>4</b> [stealth]を付与。"
@@ -279,7 +279,7 @@
         "russian": "<b>+15</b> [attack]. Получите <b>4</b> [avarice] и <b>6</b> [stealth].",
         "portuguese": "<b>+15</b> [attack]. Aplique <b>4</b> [avarice] e <b>6</b> [stealth].",
         "chinese": "<b>+15</b> [attack]. 施加<b>4</b> [avarice]和<b>6</b> [stealth]。",
-        "spanish": "<b>+15</b> [attack]. Aplica <b>4</b> [avarice] y <b>6</b> [stealth].",
+        "spanish": "<b>+15</b> [attack]. Añade <b>4</b> [avarice] y <b>6</b> [stealth].",
         "chinese_traditional": "<b>+15</b> [attack]. 施加<b>4</b> [avarice]和<b>6</b> [stealth]。",
         "korean": "<b>+15</b> [attack]. <b>4</b> [avarice] 및 <b>6</b> [stealth] 부여.",
         "japanese": "<b>+15</b> [attack]. <b>4</b> [avarice]と<b>6</b> [stealth]を付与。"

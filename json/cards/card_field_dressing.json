@@ -17,7 +17,7 @@
       },
       "descriptions": {
         "english": "Remove one random debuff from a friendly unit. Restore [effect1.power] health.",
-        "spanish": "Elimina una aflicción al azar de una unidad aliada. Restaura [effect1.power] de vida.",
+        "spanish": "Elimina un perjuicio aleatorio de una unidad aliada. Restaura [effect1.power] de salud.",
         "french": "Retirez un malus aléatoire à une unité alliée. Rendez-lui [effect1.power] PV.",
         "german": "Entferne einen zufälligen negativen Effekt von einer verbündeten Einheit. Heile sie um [effect1.power] Leben.",
         "russian": "Снимите один случайный отрицательный эффект с союзной боевой единицы. Восстановите ей [effect1.power] здоровья.",

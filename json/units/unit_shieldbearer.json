@@ -152,16 +152,16 @@
       "id": "ShieldbearerSpawnTrigger",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [armor] to itself.",
-        "french": "S’applique [effect0.status0.power] [armor].",
-        "german": "Erhält selbst [effect0.status0.power] [armor].",
-        "russian": "Накладывает на себя [effect0.status0.power] [armor].",
-        "portuguese": "Aplica [effect0.status0.power] [armor] a si mesma.",
-        "chinese": "对自身施加[effect0.status0.power] [armor]。",
-        "spanish": "Se aplica [effect0.status0.power] [armor].",
-        "chinese_traditional": "對自身施加[effect0.status0.power] [armor]。",
-        "korean": "자신에게 [effect0.status0.power] [armor] 부여.",
-        "japanese": "自身に[effect0.status0.power] [armor]を付与。"
+        "english": "Gain [effect0.status0.power] [armor].",
+        "french": "Gagnez [effect0.status0.power] [armor].",
+        "german": "Erhalte [effect0.status0.power] [armor].",
+        "russian": "Получите [effect0.status0.power] [armor].",
+        "portuguese": "Ganhe [effect0.status0.power] [armor].",
+        "chinese": "获得[effect0.status0.power] [armor]。",
+        "spanish": "Gana [effect0.status0.power] [armor].",
+        "chinese_traditional": "獲得[effect0.status0.power] [armor]。",
+        "korean": "[effect0.status0.power] [armor] 획득.",
+        "japanese": "[effect0.status0.power] [armor]を得る。"
       },
       "effects": [
         "@ShieldbearerArmor"

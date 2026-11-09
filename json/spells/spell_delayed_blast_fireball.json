@@ -22,7 +22,7 @@
         "russian": "Наложите на врага <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse]. Когда заряды закончатся, нанесите ему <b>[effect0.power]</b> урона.",
         "portuguese": "Aplique <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] a um inimigo. Quando as cargas acabarem, ele sofre <b>[effect0.power]</b> de dano.",
         "chinese": "对一个敌人施加<b>[effect0.status0.power]</b>层[mt2_freecompany.Plugin_fuse]。层数耗尽时，对其造成<b>[effect0.power]</b>点伤害。",
-        "spanish": "Aplica <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] a un enemigo. Cuando se agote, le inflige <b>[effect0.power]</b> de daño.",
+        "spanish": "Añade <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] a un enemigo. Cuando se agote, le inflige <b>[effect0.power]</b> de daño.",
         "chinese_traditional": "對一個敵人施加<b>[effect0.status0.power]</b>層[mt2_freecompany.Plugin_fuse]。層數耗盡時，對其造成<b>[effect0.power]</b>點傷害。",
         "korean": "적 하나에게 <b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse] 부여. 중첩이 소진되면 <b>[effect0.power]</b> 피해를 가함.",
         "japanese": "敵1体に<b>[effect0.status0.power]</b> [mt2_freecompany.Plugin_fuse]を付与。スタックが尽きると、その敵に<b>[effect0.power]</b>ダメージを与える。"

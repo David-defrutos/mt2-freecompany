@@ -16,16 +16,16 @@
         "japanese": "ファイアボール"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to all enemies on this floor, then <b>Shuffle</b> them.",
-        "french": "Infligez [effect0.power] dégâts à tous les ennemis de cet étage, puis <b>Mélanger</b> leurs positions.",
-        "german": "Füge allen Gegnern auf diesem Stockwerk [effect0.power] Schaden zu und <b>Mischen</b> dann ihre Positionen.",
-        "russian": "Нанесите [effect0.power] урона всем врагам на этом этаже, затем <b>Перемешать</b> их позиции.",
-        "portuguese": "Cause [effect0.power] de dano a todos os inimigos neste andar e depois <b>Embaralhar</b> suas posições.",
-        "chinese": "对本层所有敌人造成[effect0.power]点伤害，然后<b>打乱</b>其位置。",
-        "spanish": "Inflige [effect0.power] de daño a todos los enemigos de este piso y luego <b>Barajar</b> sus posiciones.",
-        "chinese_traditional": "對本層所有敵人造成[effect0.power]點傷害，然後<b>打亂</b>其位置。",
-        "korean": "이 층의 모든 적에게 [effect0.power] 피해를 가한 뒤 위치를 <b>섞기</b>.",
-        "japanese": "この階の敵全体に[effect0.power]ダメージを与え、位置を<b>シャッフル</b>。"
+        "english": "Deal [effect0.power] damage to all enemies on this floor, then shuffle their positions.",
+        "spanish": "Inflige [effect0.power] de daño a todos los enemigos de este piso y luego baraja sus posiciones.",
+        "french": "Infligez [effect0.power] dégâts à tous les ennemis de cet étage, puis mélangez leurs positions.",
+        "german": "Füge allen Gegnern auf diesem Stockwerk [effect0.power] Schaden zu und mische dann ihre Positionen.",
+        "russian": "Нанесите [effect0.power] урона всем врагам на этом этаже, затем перемешайте их позиции.",
+        "portuguese": "Cause [effect0.power] de dano a todos os inimigos neste andar e depois embaralhe suas posições.",
+        "chinese": "对本层所有敌人造成[effect0.power]点伤害，然后打乱其位置。",
+        "chinese_traditional": "對本層所有敵人造成[effect0.power]點傷害，然後打亂其位置。",
+        "korean": "이 층의 모든 적에게 [effect0.power] 피해를 준 뒤 위치를 섞습니다.",
+        "japanese": "この階の敵全体に[effect0.power]ダメージを与え、その後、位置をシャッフルする。"
       },
       "card_art": "@Fireball",
       "cost": 3,

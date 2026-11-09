@@ -24,16 +24,16 @@
         "japanese": "増設宿舎"
       },
       "descriptions": {
-        "english": "Every floor of the train holds <b>1</b> more unit.",
-        "french": "Chaque étage du train peut accueillir <b>1</b> unité supplémentaire.",
-        "german": "Jedes Stockwerk des Zuges kann <b>1</b> zusätzliche Einheit aufnehmen.",
-        "russian": "На каждом этаже поезда помещается на <b>1</b> боевую единицу больше.",
-        "portuguese": "Cada andar do trem comporta <b>1</b> unidade a mais.",
-        "chinese": "列车每层可额外容纳<b>1</b>个单位。",
-        "spanish": "Cada piso del tren puede alojar <b>1</b> unidad más.",
-        "chinese_traditional": "列車每層可額外容納<b>1</b>個單位。",
-        "korean": "열차의 각 층에 유닛 <b>1</b>개 추가 수용 가능.",
-        "japanese": "列車の各階にユニットを<b>1</b>体多く配置できる。"
+        "english": "+[effect0.power][capacity] on each floor.",
+        "french": "+[effect0.power][capacity] à chaque niveau.",
+        "german": "+[effect0.power][capacity] auf jeder Ebene.",
+        "russian": "+[effect0.power][capacity] на каждом этаже.",
+        "portuguese": "+[effect0.power][capacity] em cada andar.",
+        "chinese": "每层 +[effect0.power][capacity]。",
+        "spanish": "+[effect0.power][capacity] en cada piso.",
+        "chinese_traditional": "在每個樓層+[effect0.power][capacity]。",
+        "korean": "각 층이 +[effect0.power][capacity]을 갖습니다.",
+        "japanese": "各フロアに+[effect0.power][capacity]。"
       },
       "relic_activated_texts": {
         "english": "Make room.",

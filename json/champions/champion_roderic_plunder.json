@@ -137,7 +137,7 @@
       },
       "descriptions": {
         "english": "Choose a unit with base cost up to <b>1</b> [ember] from your hand, draw pile or discard pile and summon it behind this unit. If none, choose a fallen unit within the same cost limit and summon it with <b>1</b> health and [undying] <b>1</b>.",
-        "spanish": "Elige una unidad de tu mano, pila de robo o descarte con coste base de hasta <b>1</b> [ember] e invócala detrás de esta unidad. Si no hay ninguna, elige una unidad muerta del mismo límite de coste e invócala con <b>1</b> de vida y [undying] <b>1</b>.",
+        "spanish": "Elige una unidad de tu mano, pila de robo o descarte con coste base de hasta <b>1</b> [ember] e invócala detrás de esta unidad. Si no hay ninguna, elige una unidad muerta del mismo límite de coste e invócala con <b>1</b> de salud y [undying] <b>1</b>.",
         "french": "Choisissez une unité de votre main, de la pioche ou de la défausse coûtant au maximum <b>1</b> [ember] de base et invoquez-la derrière cette unité. À défaut, choisissez une unité morte respectant la même limite de coût et invoquez-la avec <b>1</b> PV et [undying] <b>1</b>.",
         "german": "Wähle eine Einheit aus deiner Hand, dem Ziehstapel oder dem Ablagestapel mit Basiskosten bis <b>1</b> [ember] und beschwöre sie hinter dieser Einheit. Andernfalls wähle eine gefallene Einheit innerhalb desselben Kostenlimits und beschwöre sie mit <b>1</b> Leben und [undying] <b>1</b>.",
         "russian": "Выберите боевую единицу из руки, колоды или сброса с базовой стоимостью до <b>1</b> [ember] и призовите её за этой боевой единицей. Если такой нет, выберите погибшую с той же предельной стоимостью и призовите её с <b>1</b> здоровья и [undying] <b>1</b>.",
@@ -174,7 +174,7 @@
       },
       "descriptions": {
         "english": "Choose a unit with base cost up to <b>2</b> [ember] from your hand, draw pile or discard pile and summon it behind this unit. If none, choose a fallen unit within the same cost limit and summon it with <b>1</b> health and [undying] <b>1</b>.",
-        "spanish": "Elige una unidad de tu mano, pila de robo o descarte con coste base de hasta <b>2</b> [ember] e invócala detrás de esta unidad. Si no hay ninguna, elige una unidad muerta del mismo límite de coste e invócala con <b>1</b> de vida y [undying] <b>1</b>.",
+        "spanish": "Elige una unidad de tu mano, pila de robo o descarte con coste base de hasta <b>2</b> [ember] e invócala detrás de esta unidad. Si no hay ninguna, elige una unidad muerta del mismo límite de coste e invócala con <b>1</b> de salud y [undying] <b>1</b>.",
         "french": "Choisissez une unité de votre main, de la pioche ou de la défausse coûtant au maximum <b>2</b> [ember] de base et invoquez-la derrière cette unité. À défaut, choisissez une unité morte respectant la même limite de coût et invoquez-la avec <b>1</b> PV et [undying] <b>1</b>.",
         "german": "Wähle eine Einheit aus deiner Hand, dem Ziehstapel oder dem Ablagestapel mit Basiskosten bis <b>2</b> [ember] und beschwöre sie hinter dieser Einheit. Andernfalls wähle eine gefallene Einheit innerhalb desselben Kostenlimits und beschwöre sie mit <b>1</b> Leben und [undying] <b>1</b>.",
         "russian": "Выберите боевую единицу из руки, колоды или сброса с базовой стоимостью до <b>2</b> [ember] и призовите её за этой боевой единицей. Если такой нет, выберите погибшую с той же предельной стоимостью и призовите её с <b>1</b> здоровья и [undying] <b>1</b>.",
@@ -211,7 +211,7 @@
       },
       "descriptions": {
         "english": "Choose a unit with base cost up to <b>3</b> [ember] from your hand, draw pile or discard pile and summon it behind this unit. If none, choose a fallen unit within the same cost limit and summon it with <b>1</b> health and [undying] <b>1</b>.",
-        "spanish": "Elige una unidad de tu mano, pila de robo o descarte con coste base de hasta <b>3</b> [ember] e invócala detrás de esta unidad. Si no hay ninguna, elige una unidad muerta del mismo límite de coste e invócala con <b>1</b> de vida y [undying] <b>1</b>.",
+        "spanish": "Elige una unidad de tu mano, pila de robo o descarte con coste base de hasta <b>3</b> [ember] e invócala detrás de esta unidad. Si no hay ninguna, elige una unidad muerta del mismo límite de coste e invócala con <b>1</b> de salud y [undying] <b>1</b>.",
         "french": "Choisissez une unité de votre main, de la pioche ou de la défausse coûtant au maximum <b>3</b> [ember] de base et invoquez-la derrière cette unité. À défaut, choisissez une unité morte respectant la même limite de coût et invoquez-la avec <b>1</b> PV et [undying] <b>1</b>.",
         "german": "Wähle eine Einheit aus deiner Hand, dem Ziehstapel oder dem Ablagestapel mit Basiskosten bis <b>3</b> [ember] und beschwöre sie hinter dieser Einheit. Andernfalls wähle eine gefallene Einheit innerhalb desselben Kostenlimits und beschwöre sie mit <b>1</b> Leben und [undying] <b>1</b>.",
         "russian": "Выберите боевую единицу из руки, колоды или сброса с базовой стоимостью до <b>3</b> [ember] и призовите её за этой боевой единицей. Если такой нет, выберите погибшую с той же предельной стоимостью и призовите её с <b>1</b> здоровья и [undying] <b>1</b>.",

@@ -22,7 +22,7 @@
         "russian": "Наложите на союзную боевую единицу [effect0.status0.power] [stealth].",
         "portuguese": "Aplique [effect0.status0.power] [stealth] a uma unidade aliada.",
         "chinese": "对一个友方单位施加[effect0.status0.power] [stealth]。",
-        "spanish": "Aplica [effect0.status0.power] [stealth] a una unidad aliada.",
+        "spanish": "Añade [effect0.status0.power] [stealth] a una unidad aliada.",
         "chinese_traditional": "對一個友方單位施加[effect0.status0.power] [stealth]。",
         "korean": "아군 유닛 하나에게 [effect0.status0.power] [stealth] 부여.",
         "japanese": "味方ユニット1体に[effect0.status0.power] [stealth]を付与。"

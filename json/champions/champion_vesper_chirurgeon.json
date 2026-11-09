@@ -22,7 +22,7 @@
         "russian": "Наложите на боевую единицу [effect0.status0.power] [undying].",
         "portuguese": "Aplique [effect0.status0.power] [undying] a uma unidade.",
         "chinese": "对一个单位施加[effect0.status0.power] [undying]。",
-        "spanish": "Aplica [effect0.status0.power] [undying] a una unidad.",
+        "spanish": "Añade [effect0.status0.power] [undying] a una unidad.",
         "chinese_traditional": "對一個單位施加[effect0.status0.power] [undying]。",
         "korean": "유닛 하나에게 [effect0.status0.power] [undying] 부여.",
         "japanese": "ユニット1体に[effect0.status0.power] [undying]を付与。"
@@ -59,7 +59,7 @@
         "russian": "Наложите на боевую единицу [effect0.status0.power] [undying].",
         "portuguese": "Aplique [effect0.status0.power] [undying] a uma unidade.",
         "chinese": "对一个单位施加[effect0.status0.power] [undying]。",
-        "spanish": "Aplica [effect0.status0.power] [undying] a una unidad.",
+        "spanish": "Añade [effect0.status0.power] [undying] a una unidad.",
         "chinese_traditional": "對一個單位施加[effect0.status0.power] [undying]。",
         "korean": "유닛 하나에게 [effect0.status0.power] [undying] 부여.",
         "japanese": "ユニット1体に[effect0.status0.power] [undying]を付与。"
@@ -96,7 +96,7 @@
         "russian": "Наложите на боевую единицу [effect0.status0.power] [undying].",
         "portuguese": "Aplique [effect0.status0.power] [undying] a uma unidade.",
         "chinese": "对一个单位施加[effect0.status0.power] [undying]。",
-        "spanish": "Aplica [effect0.status0.power] [undying] a una unidad.",
+        "spanish": "Añade [effect0.status0.power] [undying] a una unidad.",
         "chinese_traditional": "對一個單位施加[effect0.status0.power] [undying]。",
         "korean": "유닛 하나에게 [effect0.status0.power] [undying] 부여.",
         "japanese": "ユニット1体に[effect0.status0.power] [undying]を付与。"
@@ -124,7 +124,7 @@
         "russian": "Восстановите [effect0.power] здоровья всем союзникам здесь. Очистите <b>1</b> случайных союзников с ослаблениями здесь. Наложите <b>1</b> [undying] на одного случайного союзника на этом этаже без [undying].",
         "portuguese": "Restaure [effect0.power] de vida de todos os aliados aqui. Purifique <b>1</b> aliado aleatório com penalidades aqui. Aplique <b>1</b> [undying] a um aliado aleatório neste andar sem [undying].",
         "chinese": "为本层所有友军恢复[effect0.power]点生命值。随机净化本层<b>1</b>个带有减益的友军。 随机为本层<b>1</b>个没有[undying]的友军施加<b>1</b> [undying]。",
-        "spanish": "Restaura [effect0.power] de vida a todos los aliados de aquí. Limpia <b>1</b> aliado aleatorio con perjuicios aquí. Aplica <b>1</b> [undying] a un aliado aleatorio de este piso sin [undying].",
+        "spanish": "Restaura [effect0.power] de salud a todos los aliados de aquí. Elimina todos los perjuicios de <b>1</b> aliado aleatorio afectado aquí. Añade <b>1</b> [undying] a un aliado aleatorio de este piso sin [undying].",
         "chinese_traditional": "為本層所有友軍恢復[effect0.power]點生命值。隨機淨化本層<b>1</b>個帶有減益的友軍。 隨機為本層<b>1</b>個沒有[undying]的友軍施加<b>1</b> [undying]。",
         "korean": "이 층의 모든 아군의 체력을 [effect0.power] 회복. 이 층의 약화 효과가 있는 무작위 아군 <b>1</b>명을 정화. [undying]이 없는 이 층의 무작위 아군 <b>1</b>명에게 <b>1</b> [undying] 부여.",
         "japanese": "この階の味方全体の体力を[effect0.power]回復。この階の弱体効果を受けているランダムな味方<b>1</b>体を浄化。 [undying]を持たないこの階のランダムな味方<b>1</b>体に<b>1</b> [undying]を付与。"
@@ -145,7 +145,7 @@
         "russian": "Восстановите [effect0.power] здоровья всем союзникам здесь. Очистите <b>2</b> случайных союзников с ослаблениями на любых этажах. Наложите <b>1</b> [undying] на одного случайного союзника на любом этаже без [undying].",
         "portuguese": "Restaure [effect0.power] de vida de todos os aliados aqui. Purifique <b>2</b> aliados aleatórios com penalidades em qualquer andar. Aplique <b>1</b> [undying] a um aliado aleatório em qualquer andar sem [undying].",
         "chinese": "为本层所有友军恢复[effect0.power]点生命值。随机净化任意楼层<b>2</b>个带有减益的友军。 随机为任意楼层<b>1</b>个没有[undying]的友军施加<b>1</b> [undying]。",
-        "spanish": "Restaura [effect0.power] de vida a todos los aliados de aquí. Limpia <b>2</b> aliados aleatorios con perjuicios en cualquier piso. Aplica <b>1</b> [undying] a un aliado aleatorio de cualquier piso sin [undying].",
+        "spanish": "Restaura [effect0.power] de salud a todos los aliados de aquí. Elimina todos los perjuicios de <b>2</b> aliados aleatorios afectados en cualquier piso. Añade <b>1</b> [undying] a un aliado aleatorio de cualquier piso sin [undying].",
         "chinese_traditional": "為本層所有友軍恢復[effect0.power]點生命值。隨機淨化任意樓層<b>2</b>個帶有減益的友軍。 隨機為任意樓層<b>1</b>個沒有[undying]的友軍施加<b>1</b> [undying]。",
         "korean": "이 층의 모든 아군의 체력을 [effect0.power] 회복. 모든 층의 약화 효과가 있는 무작위 아군 <b>2</b>명을 정화. [undying]이 없는 모든 층의 무작위 아군 <b>1</b>명에게 <b>1</b> [undying] 부여.",
         "japanese": "この階の味方全体の体力を[effect0.power]回復。任意の階の弱体効果を受けているランダムな味方<b>2</b>体を浄化。 [undying]を持たない任意の階のランダムな味方<b>1</b>体に<b>1</b> [undying]を付与。"
@@ -167,7 +167,7 @@
         "russian": "Восстановите [effect0.power] здоровья всем союзникам здесь. Очистите <b>3</b> случайных союзников с ослаблениями на любых этажах. Наложите <b>1</b> [undying] на <b>2</b> случайных союзников на любых этажах без [undying].",
         "portuguese": "Restaure [effect0.power] de vida de todos os aliados aqui. Purifique <b>3</b> aliados aleatórios com penalidades em qualquer andar. Aplique <b>1</b> [undying] a <b>2</b> aliados em qualquer andar aleatórios sem [undying].",
         "chinese": "为本层所有友军恢复[effect0.power]点生命值。随机净化任意楼层<b>3</b>个带有减益的友军。 随机为任意楼层<b>2</b>个没有[undying]的友军施加<b>1</b> [undying]。",
-        "spanish": "Restaura [effect0.power] de vida a todos los aliados de aquí. Limpia <b>3</b> aliados aleatorios con perjuicios en cualquier piso. Aplica <b>1</b> [undying] a <b>2</b> aliados aleatorios de cualquier piso sin [undying].",
+        "spanish": "Restaura [effect0.power] de salud a todos los aliados de aquí. Elimina todos los perjuicios de <b>3</b> aliados aleatorios afectados en cualquier piso. Añade <b>1</b> [undying] a <b>2</b> aliados aleatorios de cualquier piso sin [undying].",
         "chinese_traditional": "為本層所有友軍恢復[effect0.power]點生命值。隨機淨化任意樓層<b>3</b>個帶有減益的友軍。 隨機為任意樓層<b>2</b>個沒有[undying]的友軍施加<b>1</b> [undying]。",
         "korean": "이 층의 모든 아군의 체력을 [effect0.power] 회복. 모든 층의 약화 효과가 있는 무작위 아군 <b>3</b>명을 정화. [undying]이 없는 모든 층의 무작위 아군 <b>2</b>명에게 <b>1</b> [undying] 부여.",
         "japanese": "この階の味方全体の体力を[effect0.power]回復。任意の階の弱体効果を受けているランダムな味方<b>3</b>体を浄化。 [undying]を持たない任意の階のランダムな味方<b>2</b>体に<b>1</b> [undying]を付与。"
@@ -377,7 +377,7 @@
         "french": "Au début du tour : Rendez 3 PV à tous les alliés ici. Purifiez <b>1</b> allié aléatoire affecté par des malus ici. Appliquez <b>1</b> [undying] à un allié aléatoire ici sans [undying].",
         "russian": "В начале хода: Восстановите 3 здоровья всем союзникам здесь. Очистите <b>1</b> случайных союзников с ослаблениями здесь. Наложите <b>1</b> [undying] на одного случайного союзника на этом этаже без [undying].",
         "chinese_traditional": "回合開始時：為本層所有友軍恢復3點生命值。隨機淨化本層<b>1</b>個帶有減益的友軍。 隨機為本層<b>1</b>個沒有[undying]的友軍施加<b>1</b> [undying]。",
-        "spanish": "Al inicio del turno: Restaura 3 de vida a todos los aliados de aquí. Limpia <b>1</b> aliado aleatorio con perjuicios aquí. Aplica <b>1</b> [undying] a un aliado aleatorio de este piso sin [undying].",
+        "spanish": "Al inicio del turno: Restaura 3 de salud a todos los aliados de aquí. Elimina todos los perjuicios de <b>1</b> aliado aleatorio afectado aquí. Añade <b>1</b> [undying] a un aliado aleatorio de este piso sin [undying].",
         "english": "At start of turn: Restore 3 health to all allies here. Cleanse <b>1</b> random debuffed ally here. Apply <b>1</b> [undying] to a random ally here without [undying]."
       },
       "bonus_hp": 10,
@@ -409,7 +409,7 @@
         "french": "Au début du tour : Rendez 12 PV à tous les alliés ici. Purifiez <b>2</b> alliés aléatoires affectés par des malus sur tous les étages. Appliquez <b>1</b> [undying] à un allié aléatoire sur tous les étages sans [undying].",
         "russian": "В начале хода: Восстановите 12 здоровья всем союзникам здесь. Очистите <b>2</b> случайных союзников с ослаблениями на любых этажах. Наложите <b>1</b> [undying] на одного случайного союзника на любом этаже без [undying].",
         "chinese_traditional": "回合開始時：為本層所有友軍恢復12點生命值。隨機淨化任意樓層<b>2</b>個帶有減益的友軍。 隨機為任意樓層<b>1</b>個沒有[undying]的友軍施加<b>1</b> [undying]。",
-        "spanish": "Al inicio del turno: Restaura 12 de vida a todos los aliados de aquí. Limpia <b>2</b> aliados aleatorios con perjuicios en cualquier piso. Aplica <b>1</b> [undying] a un aliado aleatorio de cualquier piso sin [undying].",
+        "spanish": "Al inicio del turno: Restaura 12 de salud a todos los aliados de aquí. Elimina todos los perjuicios de <b>2</b> aliados aleatorios afectados en cualquier piso. Añade <b>1</b> [undying] a un aliado aleatorio de cualquier piso sin [undying].",
         "english": "At start of turn: Restore 12 health to all allies here. Cleanse <b>2</b> random debuffed allies anywhere. Apply <b>1</b> [undying] to a random ally anywhere without [undying]."
       },
       "bonus_hp": 20,
@@ -444,7 +444,7 @@
         "french": "Au début du tour : Rendez 24 PV à tous les alliés ici. Purifiez <b>3</b> alliés aléatoires affectés par des malus sur tous les étages. Appliquez <b>1</b> [undying] à <b>2</b> alliés aléatoires sur tous les étages sans [undying].",
         "russian": "В начале хода: Восстановите 24 здоровья всем союзникам здесь. Очистите <b>3</b> случайных союзников с ослаблениями на любых этажах. Наложите <b>1</b> [undying] на <b>2</b> случайных союзников на любых этажах без [undying].",
         "chinese_traditional": "回合開始時：為本層所有友軍恢復24點生命值。隨機淨化任意樓層<b>3</b>個帶有減益的友軍。 隨機為任意樓層<b>2</b>個沒有[undying]的友軍施加<b>1</b> [undying]。",
-        "spanish": "Al inicio del turno: Restaura 24 de vida a todos los aliados de aquí. Limpia <b>3</b> aliados aleatorios con perjuicios en cualquier piso. Aplica <b>1</b> [undying] a <b>2</b> aliados aleatorios de cualquier piso sin [undying].",
+        "spanish": "Al inicio del turno: Restaura 24 de salud a todos los aliados de aquí. Elimina todos los perjuicios de <b>3</b> aliados aleatorios afectados en cualquier piso. Añade <b>1</b> [undying] a <b>2</b> aliados aleatorios de cualquier piso sin [undying].",
         "english": "At start of turn: Restore 24 health to all allies here. Cleanse <b>3</b> random debuffed allies anywhere. Apply <b>1</b> [undying] to <b>2</b> random allies anywhere without [undying]."
       },
       "bonus_hp": 30,

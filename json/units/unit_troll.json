@@ -659,7 +659,7 @@
         "russian": "Накладывает [effect0.status0.power] [rooted] на атакуемую боевую единицу.",
         "portuguese": "Aplica [effect0.status0.power] [rooted] à unidade que ataca.",
         "chinese": "对其攻击的单位施加[effect0.status0.power] [rooted]。",
-        "spanish": "Aplica [effect0.status0.power] [rooted] a la unidad a la que ataca.",
+        "spanish": "Añade [effect0.status0.power] [rooted] a la unidad a la que ataca.",
         "chinese_traditional": "對其攻擊的單位施加[effect0.status0.power] [rooted]。",
         "korean": "공격한 유닛에게 [effect0.status0.power] [rooted] 부여.",
         "japanese": "攻撃対象のユニットに[effect0.status0.power] [rooted]を付与。"

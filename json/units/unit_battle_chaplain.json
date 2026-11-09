@@ -64,7 +64,7 @@
         "russian": "Восстановите [effect0.power] здоровья всем союзным боевым единицам на всех этажах.",
         "portuguese": "Restaure [effect0.power] de vida de todas as unidades aliadas em todos os andares.",
         "chinese": "为所有楼层的友方单位恢复[effect0.power]点生命值。",
-        "spanish": "Restaura [effect0.power] de vida a todas las unidades aliadas de todos los pisos.",
+        "spanish": "Restaura [effect0.power] de salud a todas las unidades aliadas de todos los pisos.",
         "chinese_traditional": "為所有樓層的友方單位恢復[effect0.power]點生命值。",
         "korean": "모든 층의 모든 아군 유닛의 체력을 [effect0.power] 회복.",
         "japanese": "全階層の味方ユニット全体の体力を[effect0.power]回復。"
@@ -146,7 +146,7 @@
         "russian": "Восстановите [effect0.power] здоровья всем союзным боевым единицам на этом этаже.",
         "portuguese": "Restaure [effect0.power] de vida de todas as unidades aliadas neste andar.",
         "chinese": "为本层所有友方单位恢复[effect0.power]点生命值。",
-        "spanish": "Restaura [effect0.power] de vida a todas las unidades aliadas de este piso.",
+        "spanish": "Restaura [effect0.power] de salud a todas las unidades aliadas de este piso.",
         "chinese_traditional": "為本層所有友方單位恢復[effect0.power]點生命值。",
         "korean": "이 층의 모든 아군 유닛의 체력을 [effect0.power] 회복.",
         "japanese": "この階の味方ユニット全体の体力を[effect0.power]回復。"
