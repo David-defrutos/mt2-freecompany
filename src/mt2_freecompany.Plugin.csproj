@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>mt2_freecompany.Plugin</RootNamespace>
     <LangVersion>latest</LangVersion>
-    <Version>0.3.5</Version>
+    <Version>0.3.6</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -42,3 +42,5 @@
 <!-- 2026-11-08-2044||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/src/mt2_freecompany.Plugin.csproj||versión DLL 0.3.3 a 0.3.4 -->
 
 <!-- 2026-11-09-2336||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/src/mt2_freecompany.Plugin.csproj||versión DLL 0.3.4 a 0.3.5 -->
+
+<!-- 2026-11-12-0928||codex-freecompany-fx||src/mt2_freecompany.Plugin.csproj||prepara 0.3.6 BETA con corrección de biblioteca y agradecimientos a Viv y Brandon -->

@@ -159,7 +159,10 @@
       "name": "@CardEffectBeastmasterCommand",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_bool_2": false
+      "param_bool_2": false,
+      "additional_tooltips": [
+        "@BeastmasterRules"
+      ]
     }
   ],
   "upgrade_masks": [],
@@ -617,6 +620,35 @@
     {
       "id": "TamedPaw",
       "path": "textures/TamedPaw.png"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "BeastmasterRules",
+      "titles": {
+        "english": "Beastmaster",
+        "french": "Maître des bêtes",
+        "german": "Bestienmeister",
+        "russian": "Повелитель зверей",
+        "portuguese": "Mestre das Feras",
+        "chinese": "驯兽师",
+        "spanish": "Maestro de bestias",
+        "chinese_traditional": "馴獸師",
+        "korean": "야수 조련사",
+        "japanese": "獣使い"
+      },
+      "descriptions": {
+        "english": "Get a Tamed Troll. Tamable creatures entering your hand gain [freeze]. Each turn, each deployed Vesper reduces their cost in hand by 1 [ember] for this battle.",
+        "spanish": "Obtén un trol domesticado. Las criaturas domesticables que llegan a tu mano ganan [freeze]. Cada turno, cada Vesper desplegada reduce su coste en la mano en 1 [ember] durante este combate.",
+        "french": "Obtenez un Troll apprivoisé. Les créatures apprivoisables ajoutées à votre main gagnent [freeze]. Chaque tour, chaque Vesper déployée réduit leur coût en main de 1 [ember] pour ce combat.",
+        "german": "Erhalte einen gezähmten Troll. Zähmbare Kreaturen erhalten beim Hinzufügen zu deiner Hand [freeze]. Jeder Zug senkt pro ausgespielter Vesper ihre Kosten auf der Hand für diesen Kampf um 1 [ember].",
+        "russian": "Получите приручённого тролля. Существа, которых можно приручить, получают [freeze] при попадании в руку. Каждый ход каждая Веспер в бою снижает их стоимость в руке на 1 [ember] до конца боя.",
+        "portuguese": "Obtenha um Troll domado. Criaturas domáveis que entram na sua mão ganham [freeze]. A cada turno, cada Vesper em jogo reduz seu custo na mão em 1 [ember] neste combate.",
+        "chinese": "获得一只已驯服的巨魔。可驯服生物进入手牌时获得[freeze]。每回合，每位在场的维斯珀使它们在手牌中的费用减少1 [ember]，持续本场战斗。",
+        "chinese_traditional": "獲得一隻已馴服的巨魔。可馴服生物進入手牌時獲得[freeze]。每回合，每位在場的維斯珀使牠們在手牌中的費用減少1 [ember]，持續本場戰鬥。",
+        "korean": "길들인 트롤을 얻습니다. 길들일 수 있는 생물이 손에 들어오면 [freeze]을 얻습니다. 매 턴 배치된 베스퍼마다 해당 생물의 손에서의 비용이 이번 전투 동안 1 [ember] 감소합니다.",
+        "japanese": "手なずけたトロールを得る。手なずけ可能なクリーチャーが手札に加わると[freeze]を得る。毎ターン、場のヴェスパー1体につき、手札にあるそれらのコストがこのバトル中1 [ember]減る。"
+      }
     }
   ]
 }

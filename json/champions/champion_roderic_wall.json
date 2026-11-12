@@ -186,6 +186,9 @@
           "status": "valor",
           "count": 3
         }
+      ],
+      "additional_tooltips": [
+        "@ShieldwallInterceptionRules"
       ]
     },
     {
@@ -198,6 +201,9 @@
           "status": "valor",
           "count": 6
         }
+      ],
+      "additional_tooltips": [
+        "@ShieldwallInterceptionRules"
       ]
     },
     {
@@ -210,6 +216,9 @@
           "status": "valor",
           "count": 9
         }
+      ],
+      "additional_tooltips": [
+        "@ShieldwallInterceptionRules"
       ]
     },
     {
@@ -423,6 +432,35 @@
     {
       "key": "mt2_freecompany.Plugin_InterceptRules",
       "texts": {
+        "english": "Intercepts attack damage for allies behind this unit on this floor. Their Damage Shield blocks first. Other attack effects stay on them.",
+        "spanish": "Intercepta el daño de ataques a los aliados situados detrás de esta unidad en este piso. Primero bloquea el escudo de daño del aliado. Los otros efectos del ataque permanecen en ese aliado.",
+        "french": "Intercepte les dégâts des attaques visant les alliés derrière cette unité à cet étage. Le bouclier de dégâts de l’allié bloque en premier. Les autres effets de l’attaque restent sur cet allié.",
+        "german": "Fängt Angriffsschaden für Verbündete hinter dieser Einheit auf dieser Ebene ab. Der Schadensschild des Verbündeten blockiert zuerst. Andere Angriffseffekte treffen weiterhin den Verbündeten.",
+        "russian": "Перехватывает урон от атак по союзникам позади этой боевой единицы на этом этаже. Сначала срабатывает щит союзника. Прочие эффекты атаки остаются на исходной цели.",
+        "portuguese": "Intercepta o dano de ataques contra aliados atrás desta unidade neste andar. O escudo de dano do aliado bloqueia primeiro. Os outros efeitos do ataque continuam nesse aliado.",
+        "chinese": "拦截本层位于此单位身后的友军受到的攻击伤害。 优先消耗该友军的伤害护盾。攻击的其他效果仍作用于该友军。",
+        "chinese_traditional": "攔截本層位於此單位身後的友軍受到的攻擊傷害。 優先消耗該友軍的傷害護盾。攻擊的其他效果仍作用於該友軍。",
+        "korean": "이 층에서 이 유닛 뒤에 있는 아군이 받을 공격 피해를 대신 받습니다. 해당 아군의 피해 보호막이 먼저 막습니다. 공격의 다른 효과는 해당 아군에게 적용됩니다.",
+        "japanese": "このフロアで自身の後ろにいる味方への攻撃ダメージを肩代わりする。 味方のダメージシールドが先に防ぐ。攻撃のその他の効果は元の対象に適用される。"
+      }
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "ShieldwallInterceptionRules",
+      "titles": {
+        "english": "Interception",
+        "spanish": "Intercepción",
+        "french": "Interception",
+        "german": "Abfangen",
+        "russian": "Перехват",
+        "portuguese": "Interceptação",
+        "chinese": "拦截",
+        "chinese_traditional": "攔截",
+        "korean": "가로막기",
+        "japanese": "迎撃"
+      },
+      "descriptions": {
         "english": "Intercepts attack damage for allies behind this unit on this floor. Their Damage Shield blocks first. Other attack effects stay on them.",
         "spanish": "Intercepta el daño de ataques a los aliados situados detrás de esta unidad en este piso. Primero bloquea el escudo de daño del aliado. Los otros efectos del ataque permanecen en ese aliado.",
         "french": "Intercepte les dégâts des attaques visant les alliés derrière cette unité à cet étage. Le bouclier de dégâts de l’allié bloque en premier. Les autres effets de l’attaque restent sur cet allié.",

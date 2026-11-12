@@ -74,15 +74,17 @@ static class Program {
  Check(c.permanent.upgrades[0].LoadFromFile(m.data,m.save),"new training uses a loadable registered upgrade ID");
 
  m.save.data=m.data;
- var originalTooltip=new List<(TooltipContent content,bool allowDuplicates)>{(new("native","keep me",TooltipDesigner.TooltipDesignType.Keyword,"native"),false)};
+ var nativeRules=Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(Path.Combine(AppContext.BaseDirectory,"json/champions/champion_vesper_beastmaster.json")));
+ var tooltipDef=nativeRules["additional_tooltips"]![0]!;
+ Check(((Newtonsoft.Json.Linq.JObject)tooltipDef["descriptions"]!).Count==10,"native Beastmaster rules retain all translations");
  for(int rank=1;rank<=3;rank++){
-  var vesper=new CharacterState(rank);var contents=BeastmasterChampionTooltipPatch.AppendRules(originalTooltip,vesper,m.save).ToList();
-  Check(contents.Count==2&&contents[0].content.body=="keep me"&&contents[1].content.title.EndsWith(rank.ToString()),"Vesper rank "+rank+" shows its rules and preserves native tooltips");
+  var upgrade=nativeRules["upgrades"]!.Single(u=>(string?)u["id"]=="upg_Beastmaster"+rank);
+  Check((string?)upgrade["ability_upgrade"]=="@VesperCommand"+rank,"native tooltip carrier remains available at Beastmaster rank "+rank);
+  Check(Newtonsoft.Json.Linq.JToken.DeepEquals(upgrade["descriptions"],tooltipDef["descriptions"]),"native rules equal passive description at rank "+rank);
  }
- var mutedVesper=new CharacterState(2){muted=true};Check(BeastmasterChampionTooltipPatch.AppendRules(originalTooltip,mutedVesper,m.save).Count()==2,"silence does not hide explanation of champion path");
- var nonBeastmaster=new CharacterState(1);nonBeastmaster.card.paths.Clear();Check(BeastmasterChampionTooltipPatch.AppendRules(originalTooltip,nonBeastmaster,m.save).Count()==1,"other champion paths get no Beastmaster tooltip");
- var v3=new CharacterState(3);var once=BeastmasterChampionTooltipPatch.AppendRules(originalTooltip,v3,m.save).ToList();Check(BeastmasterChampionTooltipPatch.AppendRules(once,v3,m.save).Count()==2,"repeated tooltip composition does not duplicate rules");
-
+ var commandEffect=nativeRules["effects"]!.Single(e=>(string?)e["id"]=="BeastmasterCommand");
+ Check((string?)commandEffect["additional_tooltips"]![0]=="@BeastmasterRules","Command exposes native passive tooltip without extra gameplay effects");
+ Check(typeof(BeastmasterMarkers).Assembly.GetType("mt2_freecompany.Plugin.BeastmasterChampionTooltipPatch")==null,"global Beastmaster character tooltip patch removed");
  for(int rank=1;rank<=3;rank++){
   var battle=new Managers();AllGameManagers.Core=battle;AllGameManagers.Instance=new();
   var beastCard=new CardState("mt2_freecompany.Plugin-Card-SpawnBogTroll");var beast=new CharacterState(0){card=beastCard};var v=new CharacterState(rank);
@@ -177,3 +179,5 @@ static class Program {
 // 2026-10-27-2205||codex-freecompany-fx||D:\Juegos\MT2_mod\salidas\dll\freecompany-beastmaster-tests\Program.cs||H1: seis escenarios de icono, ausencia de Vesper/senda y presencia en mazo o tablero
 
 // 2026-11-07-1203||codex-freecompany-fx||tests/beastmaster/Program.cs||consolida arnés existente en repositorio; enlaza fuentes locales canónicas, conserva original de laboratorio
+
+// 2026-11-12-0912||codex-freecompany-fx||tests/beastmaster/Program.cs||migra reglas Beastmaster a AdditionalTooltipData en Command y retira parche de personaje

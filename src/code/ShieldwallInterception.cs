@@ -10,7 +10,6 @@ namespace mt2_freecompany.Plugin;
 // Native damage resolution still owns defenses, HP, death, Undying and preview.
 internal static class ShieldwallInterception
 {
-    internal const string TooltipId = "mt2_freecompany.ShieldwallIntercept";
 
     internal static CardUpgradeData? FindUpgrade(CardState? card, CharacterState? unit, AllGameData data)
     {
@@ -123,7 +122,7 @@ internal static class ShieldwallInterception
             || source.Parameters.attacker != input.attacker || source.Parameters.damageType != input.damageType
             || !IsEnemyAttack(unit, source.Parameters) || output.damage <= 0) yield break;
         var receiver = FindInterceptor(unit, source.Managers);
-        if (receiver == null) yield break;
+        if (receiver == null || !EnsureNativeBeforeAttack()) yield break;
         int raw = output.damage;
         source.Transferred = true;
         output.damage = 0;
@@ -148,9 +147,35 @@ internal static class ShieldwallInterception
         yield return damage;
     }
 
-    private static readonly Func<CharacterState, CharacterState, Damage.Type, IEnumerator> NativeBeforeAttack
-        = AccessTools.MethodDelegate<Func<CharacterState, CharacterState, Damage.Type, IEnumerator>>(
-            AccessTools.Method(typeof(CharacterState), "AttackingBeforeDamage"));
+    // Bind only when interception is needed. A changed game method must never
+    // poison this type and break unrelated card/library tooltip callbacks.
+    private static Func<CharacterState, CharacterState, Damage.Type, int, IEnumerator>? nativeBeforeAttack;
+    private static bool nativeBeforeAttackChecked;
+
+    private static bool EnsureNativeBeforeAttack()
+    {
+        if (nativeBeforeAttackChecked) return nativeBeforeAttack != null;
+        nativeBeforeAttackChecked = true;
+        try
+        {
+            var method = AccessTools.Method(typeof(CharacterState), "AttackingBeforeDamage");
+            if (method == null) throw new MissingMethodException("CharacterState.AttackingBeforeDamage");
+            var parameters = method.GetParameters();
+            if (parameters?.Length == 3 && parameters[2].ParameterType == typeof(int))
+                nativeBeforeAttack = AccessTools.MethodDelegate<Func<CharacterState, CharacterState, Damage.Type, int, IEnumerator>>(method);
+            else if (parameters?.Length == 2)
+            {
+                var legacy = AccessTools.MethodDelegate<Func<CharacterState, CharacterState, Damage.Type, IEnumerator>>(method);
+                nativeBeforeAttack = (attacker, target, type, damage) => legacy(attacker, target, type);
+            }
+            else throw new MissingMethodException("Unsupported CharacterState.AttackingBeforeDamage signature");
+        }
+        catch (Exception error)
+        {
+            Plugin.Logger.LogError("Shieldwall interception disabled: " + error);
+        }
+        return nativeBeforeAttack != null;
+    }
 
     private static IEnumerator Empty() { yield break; }
 
@@ -205,7 +230,7 @@ internal static class ShieldwallInterception
     private static class BeforeAttackPatch
     {
         private static bool Prefix(CharacterState __instance, CharacterState attackedCharacter,
-            Damage.Type damageType, ref IEnumerator __result)
+            Damage.Type damageType, object[] __args, ref IEnumerator __result)
         {
             var frame = current;
             if (frame == null || frame.Target != attackedCharacter || frame.Parameters.attacker != __instance) return true;
@@ -218,7 +243,8 @@ internal static class ShieldwallInterception
             // Keep Before Damage effects on the original target, but run them at
             // the native time, before HP is committed on the interceptor.
             frame.Source!.BeforeAttackRan = true;
-            __result = NativeBeforeAttack(__instance, frame.Source.Target, damageType);
+            int attackDamageDealt = __args.Length > 2 && __args[2] is int value ? value : 0;
+            __result = nativeBeforeAttack!(__instance, frame.Source.Target, damageType, attackDamageDealt);
             return false;
         }
     }
@@ -265,41 +291,15 @@ internal static class ShieldwallInterception
         }
     }
 
-    internal static TooltipContent RulesTooltip()
-        => new((MyPluginInfo.PLUGIN_GUID + "_InterceptTitle").Localize(),
-            (MyPluginInfo.PLUGIN_GUID + "_InterceptRules").Localize(),
-            TooltipDesigner.TooltipDesignType.Keyword, TooltipId);
 
-    [HarmonyPatch(typeof(CardTooltipContainer), "AddTooltipsForCardState")]
-    private static class CardRulesPatch
-    {
-        private static void Postfix(CardTooltipContainer __instance, CardState cardState, SaveManager saveManager)
-        {
-            if (cardState == null || saveManager == null || __instance.HasTooltip(TooltipId)) return;
-            var data = saveManager.GetAllGameData();
-            if (data != null && FindUpgrade(cardState, null, data) != null) __instance.ShowTooltip(RulesTooltip());
-        }
-    }
-
-    [HarmonyPatch(typeof(CharacterTooltipHelper), nameof(CharacterTooltipHelper.GetAdditionalTooltipContents))]
-    private static class UnitRulesPatch
-    {
-        private static void Postfix(CharacterState characterState, SaveManager saveManager,
-            ref IEnumerable<(TooltipContent content, bool allowDuplicates)> __result)
-            => __result = Append(__result, characterState, saveManager);
-
-        internal static IEnumerable<(TooltipContent content, bool allowDuplicates)> Append(
-            IEnumerable<(TooltipContent content, bool allowDuplicates)> original, CharacterState unit, SaveManager save)
-        {
-            bool shown = false;
-            foreach (var item in original) { if (item.content.tooltipId == TooltipId) shown = true; yield return item; }
-            if (shown || unit == null || save == null) yield break;
-            var data = save.GetAllGameData();
-            if (data != null && FindUpgrade(unit.GetSpawnerCard(), unit, data) != null) yield return (RulesTooltip(), false);
-        }
-    }
 }
 
 // 2026-10-29-1950||codex-freecompany-fx||src/code/ShieldwallInterception.cs||intercepta dano tras Damage Shield nativo solo detras; conserva ataques y aflicciones en objetivo, defensas/muerte/preview nativos y tooltips localizados
 
 // 2026-10-29-1957||codex-freecompany-fx||src/code/ShieldwallInterception.cs||conserva momento y objetivo de Before Damage mediante metodo nativo; evita duplicarlo y elimina aviso nullable validado
+
+// 2026-11-12-0901||codex-freecompany-fx||src/code/ShieldwallInterception.cs||enlace diferido protegido de AttackingBeforeDamage con firmas actual y anterior; conserva nuevo daño y evita fallo global de tooltips
+
+// 2026-11-12-0901||codex-freecompany-fx||src/code/ShieldwallInterception.cs||añade prueba de enlace fallido sin daño global y elimina aviso nullable
+
+// 2026-11-12-0907||codex-freecompany-fx||src/code/ShieldwallInterception.cs||sustituye tooltips Harmony de Intercepción por AdditionalTooltipData nativo y actualiza regresiones

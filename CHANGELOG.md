@@ -7,6 +7,19 @@ Latest release in all ten game languages. Full history in English and Spanish.
 ## English
 
 
+### 0.3.6 — 2026-11-12 — BETA
+
+#### Fixes
+
+- **Card tooltips:** fixed an incompatibility with the latest game update that prevented card effects and flavor text from displaying in the library.
+- **Roderic and Vesper:** replaced custom tooltip patches with Trainworks-configured tooltips for Interception and Beastmaster. Removed a redundant patch for Vesper’s card description.
+
+#### Acknowledgements
+
+Thanks to **Viv** for reporting the issue and **Brandon** for identifying the cause and suggesting the Trainworks tooltip solution.
+
+**Bug reports and balance recommendations are very welcome!** Share them in the [Free Company Discord thread](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 ### 0.3.5 — 2026-11-09 — BETA
 
 #### Fixes
@@ -191,6 +204,19 @@ Bug reports and balance feedback through GitHub issues or the package page comme
 
 ## Spanish
 
+
+### 0.3.6 — 2026-11-12 — BETA
+
+#### Correcciones
+
+- **Tooltips de cartas:** corregida una incompatibilidad con la última actualización del juego que impedía mostrar los efectos y textos de ambientación en la biblioteca.
+- **Roderic y Vesper:** sustituidos los parches personalizados de tooltips de Intercepción y Beastmaster por tooltips configurados mediante Trainworks. Retirado un parche redundante de la descripción de Vesper.
+
+#### Agradecimientos
+
+Gracias a **Viv** por reportar el error y a **Brandon** por identificar la causa y proponer la solución de tooltips mediante Trainworks.
+
+**¡Los reportes de errores y las recomendaciones de balance son muy bienvenidos!** Puedes compartirlos en el [hilo de Discord de Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.5 — 2026-11-09 — BETA
 
@@ -414,6 +440,19 @@ comentarios de la ficha.
 ## French
 
 
+### 0.3.6 — 2026-11-12 — BETA
+
+#### Corrections
+
+- **Infobulles des cartes :** correction d’une incompatibilité avec la dernière mise à jour du jeu qui empêchait l’affichage des effets et textes d’ambiance dans la bibliothèque.
+- **Roderic et Vesper :** remplacement des patches d’infobulles d’Interception et Beastmaster par des infobulles configurées avec Trainworks. Suppression d’un patch redondant de la description de Vesper.
+
+#### Remerciements
+
+Merci à **Viv** pour le signalement et à **Brandon** pour avoir identifié la cause et proposé la solution avec Trainworks.
+
+**Les signalements de bugs et les suggestions d’équilibrage sont les bienvenus !** Partagez-les dans le [fil Discord de Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 ### 0.3.5 — 2026-11-09 — BETA
 
 #### Corrections
@@ -521,6 +560,19 @@ Français
 
 ## German
 
+
+### 0.3.6 — 2026-11-12 — BETA
+
+#### Fehlerbehebungen
+
+- **Karten-Tooltips:** eine Inkompatibilität mit dem neuesten Spielupdate behoben, durch die Effekte und Hintergrundtexte in der Bibliothek fehlten.
+- **Roderic und Vesper:** eigene Tooltip-Patches für Interception und Beastmaster durch mit Trainworks konfigurierte Tooltips ersetzt. Einen redundanten Patch für Vespers Kartenbeschreibung entfernt.
+
+#### Danksagungen
+
+Danke an **Viv** für die Meldung und **Brandon** für die Ursachenanalyse und den Vorschlag der Trainworks-Tooltip-Lösung.
+
+**Fehlermeldungen und Vorschläge zur Spielbalance sind herzlich willkommen!** Teilt sie im [Discord-Thread von Free Company](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.5 — 2026-11-09 — BETA
 
@@ -630,6 +682,19 @@ Deutsch
 ## Russian
 
 
+### 0.3.6 — 2026-11-12 — BETA
+
+#### Исправления
+
+- **Подсказки карт:** исправлена несовместимость с последним обновлением игры, из-за которой эффекты и художественные тексты не отображались в библиотеке.
+- **Roderic и Vesper:** патчи подсказок Interception и Beastmaster заменены подсказками, настроенными через Trainworks. Удалён избыточный патч описания карты Веспер.
+
+#### Благодарности
+
+Спасибо **Viv** за сообщение об ошибке и **Brandon** за выявление причины и предложение решения через Trainworks.
+
+**Сообщения об ошибках и предложения по балансу очень приветствуются!** Делитесь ими в [ветке Free Company в Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
+
 ### 0.3.5 — 2026-11-09 — BETA
 
 #### Исправления
@@ -737,6 +802,19 @@ Deutsch
 
 ## Portuguese Brazil
 
+
+### 0.3.6 — 2026-11-12 — BETA
+
+#### Correções
+
+- **Dicas das cartas:** corrigida uma incompatibilidade com a atualização mais recente do jogo que impedia a exibição de efeitos e textos de ambientação na biblioteca.
+- **Roderic e Vesper:** patches personalizados de dicas de Interception e Beastmaster substituídos por dicas configuradas com Trainworks. Removido um patch redundante da descrição de Vesper.
+
+#### Agradecimentos
+
+Obrigado a **Viv** por relatar o problema e a **Brandon** por identificar a causa e sugerir a solução com Trainworks.
+
+**Relatos de bugs e sugestões de balanceamento são muito bem-vindos!** Compartilhe no [tópico de Free Company no Discord](https://discord.com/channels/336546996779483136/1563998046084268032).
 
 ### 0.3.5 — 2026-11-09 — BETA
 
@@ -846,6 +924,19 @@ Português (Brasil)
 ## Chinese
 
 
+### 0.3.6 — 2026-11-12 — BETA
+
+#### 修复
+
+- **卡牌提示：**修复与最新游戏更新的不兼容问题，该问题导致卡牌库中无法显示效果和背景文本。
+- **Roderic 和 Vesper：**将 Interception 和 Beastmaster 的自定义提示补丁替换为通过 Trainworks 配置的提示。移除 Vesper 卡牌描述的冗余补丁。
+
+#### 致谢
+
+感谢 **Viv** 报告问题，感谢 **Brandon** 找出原因并提出 Trainworks 提示解决方案。
+
+**非常欢迎错误报告和平衡性建议！**请在 [Free Company 的 Discord 讨论串](https://discord.com/channels/336546996779483136/1563998046084268032)中分享。
+
 ### 0.3.5 — 2026-11-09 — BETA
 
 #### 修复
@@ -953,6 +1044,19 @@ Português (Brasil)
 
 ## Chinese Traditional
 
+
+### 0.3.6 — 2026-11-12 — BETA
+
+#### 修正
+
+- **卡牌提示：**修復與最新遊戲更新的不相容問題，該問題導致卡牌庫中無法顯示效果和背景文字。
+- **Roderic 和 Vesper：**將 Interception 和 Beastmaster 的自訂提示修補替換為透過 Trainworks 設定的提示。移除 Vesper 卡牌描述的多餘修補。
+
+#### 致謝
+
+感謝 **Viv** 回報問題，感謝 **Brandon** 找出原因並提出 Trainworks 提示解決方案。
+
+**非常歡迎錯誤回報和平衡性建議！**請在 [Free Company 的 Discord 討論串](https://discord.com/channels/336546996779483136/1563998046084268032)中分享。
 
 ### 0.3.5 — 2026-11-09 — BETA
 
@@ -1062,6 +1166,19 @@ Português (Brasil)
 ## Korean
 
 
+### 0.3.6 — 2026-11-12 — BETA
+
+#### 수정
+
+- **카드 툴팁:** 최신 게임 업데이트와의 호환성 문제로 도서관에서 효과와 배경 설명이 표시되지 않던 오류를 수정했습니다.
+- **Roderic 및 Vesper:** Interception과 Beastmaster의 툴팁 패치를 Trainworks로 설정한 툴팁으로 교체했습니다. Vesper 카드 설명의 불필요한 패치를 제거했습니다.
+
+#### 감사의 말
+
+문제를 제보한 **Viv**, 원인을 찾고 Trainworks 툴팁 해결책을 제안한 **Brandon**에게 감사드립니다.
+
+**버그 제보와 밸런스 제안은 언제나 환영합니다!** [Free Company Discord 스레드](https://discord.com/channels/336546996779483136/1563998046084268032)에 남겨 주세요.
+
 ### 0.3.5 — 2026-11-09 — BETA
 
 #### 수정
@@ -1169,6 +1286,19 @@ Português (Brasil)
 
 ## Japanese
 
+
+### 0.3.6 — 2026-11-12 — BETA
+
+#### 修正
+
+- **カードのツールチップ：**最新アップデートとの非互換により、ライブラリに効果やフレーバーテキストが表示されない問題を修正。
+- **RodericとVesper：**InterceptionとBeastmasterの独自ツールチップパッチをTrainworksで設定したツールチップに置換。Vesperのカード説明の冗長なパッチを削除。
+
+#### 謝辞
+
+問題を報告した **Viv** と、原因を特定しTrainworksのツールチップによる解決を提案した **Brandon** に感謝します。
+
+**不具合報告やバランス調整のご提案を歓迎します！** [Free Company の Discord スレッド](https://discord.com/channels/336546996779483136/1563998046084268032)にお寄せください。
 
 ### 0.3.5 — 2026-11-09 — BETA
 
@@ -1325,3 +1455,5 @@ Português (Brasil)
 <!-- 2026-11-08-2044||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||añade changelog 0.3.4 aprobado, sin aclaraciones de idioma ni efectos conservados, en diez traducciones -->
 
 <!-- 2026-11-09-2336||codex-freecompany-fx||repos/MT2/repos-propios/mt2-freecompany/CHANGELOG.md||añade 0.3.5 con resumen aprobado y listas ordenadas por nombre inglés en diez idiomas -->
+
+<!-- 2026-11-12-0928||codex-freecompany-fx||CHANGELOG.md||prepara 0.3.6 BETA con corrección de biblioteca y agradecimientos a Viv y Brandon -->

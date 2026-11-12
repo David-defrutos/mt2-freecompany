@@ -24,16 +24,16 @@ public class CharacterState {
  public Dictionary<string,int> Status=>PreviewMode?previewStacks:stacks;
  public bool IsDead=>HP<=0;public int GetHP()=>HP;public bool HasStatusEffect(string id)=>Status.GetValueOrDefault(id)>0;
  public Team.Type team=Team.Type.Monsters;public RoomState room=new();public SpawnPoint point=new();public CardState? card;
- public HashSet<CardUpgradeData> upgrades=[];public int before,attacks,debuffs,slays,healed,revenge,spikesReturned,bonusCalls,crit=1;public bool shieldPierced,throwInShield;
+ public HashSet<CardUpgradeData> upgrades=[];public int lastBeforeDamage;public int before,attacks,debuffs,slays,healed,revenge,spikesReturned,bonusCalls,crit=1;public bool shieldPierced,throwInShield;
  public CharacterState? nestedTarget;public bool nestedOnce;
  public Team.Type GetTeamType()=>team;public RoomState GetCurrentRoom()=>room;public SpawnPoint GetSpawnPoint()=>point;
  public CardState? GetSpawnerCard()=>card;public bool HasUpgrade(CardUpgradeData u)=>upgrades.Contains(u);
  public CharacterState GetCharacterStateThatHasMesh()=>this;public CharacterUI GetCharacterUI()=>new();
  public Action<CharacterState>? beforeAction;
- public IEnumerator AttackingBeforeDamageForTests(CharacterState target,Damage.Type type)=>AttackingBeforeDamage(target,type);
- private IEnumerator AttackingBeforeDamage(CharacterState target,Damage.Type type){
-  IEnumerator Native(){before++;beforeAction?.Invoke(target);yield break;}
-  object?[] a={this,target,type,Native()};return (bool)Bridge.Call("BeforeAttackPatch","Prefix",a)!?Native():(IEnumerator)a[3]!;
+ public IEnumerator AttackingBeforeDamageForTests(CharacterState target,Damage.Type type,int damage)=>AttackingBeforeDamage(target,type,damage);
+ private IEnumerator AttackingBeforeDamage(CharacterState target,Damage.Type type,int attackDamageDealt){
+  IEnumerator Native(){lastBeforeDamage=attackDamageDealt;before++;beforeAction?.Invoke(target);yield break;}
+  object?[] a={this,target,type,new object[]{target,type,attackDamageDealt},Native()};return (bool)Bridge.Call("BeforeAttackPatch","Prefix",a)!?Native():(IEnumerator)a[4]!;
  }
  public IEnumerator ApplyDamage(int damage,ApplyDamageParams damageParams,PlayerManager playerManager,CardStatistics cardStatistics){
   IEnumerator original=NativeDamage(damage,damageParams,playerManager,cardStatistics);object?[] a={this,damageParams,playerManager,cardStatistics,original};Bridge.Call("DamageScopePatch","Postfix",a);return (IEnumerator)a[4]!;
@@ -60,7 +60,7 @@ public class CharacterState {
   }
   if(output.damage>0&&HasStatusEffect("fragile"))output.damage=HP;
   if(HasStatusEffect("untouchable")){output.damage=0;output.damageBlocked=0;}
-  if(p.attacker!=null)yield return p.attacker.AttackingBeforeDamageForTests(this,p.damageType);
+  if(p.attacker!=null)yield return p.attacker.AttackingBeforeDamageForTests(this,p.damageType,Math.Min(HP,output.damage));
   int sustained=Math.Min(HP,output.damage);HP=Math.Max(0,HP-output.damage);
   if(p.attacker!=null){object?[] a={p.attacker,this,output.damage,sustained,output.damageBlocked,raw,0,Bridge.Empty()};if((bool)Bridge.Call("AttackEffectsPatch","Prefix",a)!){p.attacker.attacks++;debuffs++;p.attacker.healed+=(int)a[3]!;if(IsDead)p.attacker.slays++;}else yield return (IEnumerator)a[7]!;}
   object?[] reactions={this,Bridge.Empty()};if((bool)Bridge.Call("OriginalTargetReactionsPatch","Prefix",reactions)!){if(p.attacker!=null&&Status.GetValueOrDefault("spikes")>0){p.attacker.HP-=Status["spikes"];spikesReturned++;}}else yield return (IEnumerator)reactions[1]!;
@@ -83,7 +83,7 @@ public static class TooltipDesigner {public enum TooltipDesignType {Keyword}}
 public class CardTooltipContainer {public List<TooltipContent> shown=[];public bool HasTooltip(string id)=>shown.Any(t=>t.tooltipId==id);public void ShowTooltip(TooltipContent t)=>shown.Add(t);}
 public static class CharacterTooltipHelper {public static IEnumerable<(TooltipContent content,bool allowDuplicates)> GetAdditionalTooltipContents(CharacterState unit,SaveManager save)=>[];}
 public static class Localization {public static string Localize(this string s)=>s;}
-namespace HarmonyLib {[AttributeUsage(AttributeTargets.Class|AttributeTargets.Method,AllowMultiple=true)]public class HarmonyPatch:Attribute {public HarmonyPatch(Type t,string method){}}public static class AccessTools {public static MethodInfo Method(Type t,string name)=>t.GetMethod(name,BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic)!;public static T MethodDelegate<T>(MethodInfo m) where T:Delegate=>m.CreateDelegate<T>();}}
+namespace HarmonyLib {[AttributeUsage(AttributeTargets.Class|AttributeTargets.Method,AllowMultiple=true)]public class HarmonyPatch:Attribute {public HarmonyPatch(Type t,string method){}}public static class AccessTools {public static bool FailBinding;public static MethodInfo Method(Type t,string name)=>t.GetMethod(name,BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic)!;public static T MethodDelegate<T>(MethodInfo m) where T:Delegate=>FailBinding?throw new ArgumentException("simulated incompatible API"):m.CreateDelegate<T>();}}
 namespace mt2_freecompany.Plugin {public static class MyPluginInfo {public const string PLUGIN_GUID="mt2_freecompany.Plugin";}}
 
 // 2026-10-29-1955||codex-freecompany-fx||salidas/build/freecompany-shieldwall-2026-10-29-1500/tests/Api.cs||regresiones Intercepcion con fuente real y pipeline simulado en orden nativo, preview, escudos, muerte y efectos originales
@@ -91,3 +91,9 @@ namespace mt2_freecompany.Plugin {public static class MyPluginInfo {public const
 // 2026-10-29-1957||codex-freecompany-fx||salidas/build/freecompany-shieldwall-2026-10-29-1500/tests/Api.cs||simula llamada nativa Before Damage y enlace delegado para verificar orden real sin duplicacion
 
 // 2026-11-07-1203||codex-freecompany-fx||tests/shieldwall/Api.cs||consolida arnés existente en repositorio; enlaza fuentes locales canónicas, conserva original de laboratorio
+
+namespace mt2_freecompany.Plugin { public static class Plugin { public static TestLogger Logger=new(); } public sealed class TestLogger { public void LogError(object message) {} } }
+
+// 2026-11-12-0901||codex-freecompany-fx||tests/shieldwall/Api.cs||actualiza API simulada a firma de juego con attackDamageDealt para reproducir fallo reportado
+
+// 2026-11-12-0901||codex-freecompany-fx||tests/shieldwall/Api.cs||añade prueba de enlace fallido sin daño global y elimina aviso nullable
